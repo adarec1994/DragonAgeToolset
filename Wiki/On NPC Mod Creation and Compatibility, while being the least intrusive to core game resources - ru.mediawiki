@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -278,15 +278,15 @@ Everything on this wiki is currently written in such a way that only item 2, req
 <span class="br0">&#125;</span></pre></div></div>
 <h2><span class="mw-headline" id="Structure_of_the_file_valeria_random_banter.dlg">Structure of the file valeria_random_banter.dlg</span></h2>
 <p>Everything should be set to AMBIENT. First notice where we call the random_banter_script.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters1.JPG"><img alt="Banters1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Banters1.JPG" width="562" height="331" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters1.JPG"><img alt="Banters1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/Banters1.JPG" width="562" height="331" /></a>
 </p><p>Now, notice how we structure all the npc's we want Valeria to banter with. First is Alistair, if he's in the party, and so forth.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters2.JPG"><img alt="Banters2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/04/Banters2.JPG" width="480" height="376" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters2.JPG"><img alt="Banters2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/04/Banters2.JPG" width="480" height="376" /></a>
 </p><p>Second is Morrigan and so forth.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters5.JPG"><img alt="Banters5.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/11/Banters5.JPG" width="575" height="371" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters5.JPG"><img alt="Banters5.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/11/Banters5.JPG" width="575" height="371" /></a>
 </p><p>Notice that once a banter starts, it will never be shown again.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters3.JPG"><img alt="Banters3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG" width="494" height="383" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters3.JPG"><img alt="Banters3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Banters3.JPG" width="494" height="383" /></a>
 </p><p>An example with 3 NPC's (this is a dog banter with Valeria, and Zevran, if he's in the party(notice the condition C, using the valeria_random_banters flag) he joins in).
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters4.JPG"><img alt="Banters4.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Banters4.JPG" width="567" height="260" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters4.JPG"><img alt="Banters4.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Banters4.JPG" width="567" height="260" /></a>
 </p>
 <h1><span class="mw-headline" id="End_game_Slideshow">End game Slideshow</span></h1>
 <h2><span class="mw-headline" id="What_we_need_2">What we need</span></h2>
@@ -313,9 +313,9 @@ Everything on this wiki is currently written in such a way that only item 2, req
 ...</pre></div></div>
 <h2><span class="mw-headline" id="Structure_of_the_file_valeria_npc.dlg">Structure of the file valeria_npc.dlg</span></h2>
 <p>Note the check to see if the end game slides have run. I'm assuming the game ends after, so this runs only once and it's done. If another mod has the same setup (with different names for plots, flags etc) that mod script should run and continue the slideshow until the bioware credits run.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow1.JPG"><img alt="Slideshow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Slideshow1.JPG" width="582" height="369" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow1.JPG"><img alt="Slideshow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/33/Slideshow1.JPG" width="582" height="369" /></a>
 </p><p>Now display the appropriate text and picture (it is set on the slideshow tab) depending on which flags from the companion mod are true (depending on whether the PC helped the companion and so forth)
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow2.JPG"><img alt="Slideshow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Slideshow2.JPG" width="571" height="372" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow2.JPG"><img alt="Slideshow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8a/Slideshow2.JPG" width="571" height="372" /></a>
 </p>
 <h1><span class="mw-headline" id="Valeria_at_the_gates_in_the_climax">Valeria at the gates in the climax</span></h1>
 <p>In the climax, you get a last chance to switch your party, where everyone parades in front of you. Well... the right behavior is to first talk to Riordan, he opens the partypicker, you may choose whom you want and then the parade begins. 
@@ -359,9 +359,9 @@ WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_CLI_MAI
     <span class="br0">&#125;</span></pre></div></div>
 <h2><span class="mw-headline" id="Changing_the_Valeria_dialog_appropriately:_valeria_npc.dlg">Changing the Valeria dialog appropriately: valeria_npc.dlg</span></h2>
 <p>Use the flag here, and depending on whether the PC added Valeria to the party, follow a different path.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Gates1.JPG"><img alt="Gates1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Gates1.JPG" width="583" height="402" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Gates1.JPG"><img alt="Gates1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cb/Gates1.JPG" width="583" height="402" /></a>
 </p><p>She complains if she wasn't selected to fight the archdemon, and she has every right.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Gates2.JPG"><img alt="Gates2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/Gates2.JPG" width="562" height="393" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Gates2.JPG"><img alt="Gates2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/55/Gates2.JPG" width="562" height="393" /></a>
 </p>
 <h1><span class="mw-headline" id="Valeria_initiates_dialog_at_any_point_we_feel_like._Example:_Killing_Wynne.28NOOO.21.21.21.29">Valeria initiates dialog at any point we feel like. Example: Killing Wynne(NOOO!!!)</span></h1>
 <p>I love this char, no-one should ever kill her, but if they do the char should lose approval unless it is that b... Morrigan, or Zevran etc.
@@ -403,11 +403,11 @@ WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_CLI_MAI
 </p>
 <h2><span class="mw-headline" id="Changes_in_valeria_npc.dlg">Changes in valeria_npc.dlg</span></h2>
 <p>Use the flag VALERIA_RESPONSE_TO_BAD, first to enter the bad reaction node in the dialog.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne1.JPG"><img alt="Wynne1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/12/Wynne1.JPG" width="581" height="400" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne1.JPG"><img alt="Wynne1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/12/Wynne1.JPG" width="581" height="400" /></a>
 </p><p>Reset the flag
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne2.JPG"><img alt="Wynne2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/Wynne2.JPG" width="584" height="404" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne2.JPG"><img alt="Wynne2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/Wynne2.JPG" width="584" height="404" /></a>
 </p><p>Depending on which situation we're in display the appropriate node (once per game). Showing what happens when Wynne is killed when first meeting her. But you should never do that...
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne3.JPG"><img alt="Wynne3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/Wynne3.JPG" width="583" height="402" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Wynne3.JPG"><img alt="Wynne3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/Wynne3.JPG" width="583" height="402" /></a>
 </p>
 <h1><span class="mw-headline" id="Valeria.27s_behavior_when_the_PC_is_captured.28while_saving_Anora.29">Valeria's behavior when the PC is captured(while saving Anora)</span></h1>
 <p>While saving Anora, you might end up fighting Sir Cauthrien (or just surrender). If you lose you get captured and sent to prison. Valeria must be removed from the party otherwise she'll still be following the PC around. She cannot be chosen to go save the PC without changing the game resources, unless you capture it after the initial selection is done. Haven't done it but I'm guessing it could be done if you find the right flag.
@@ -582,11 +582,11 @@ The partypicker is the only resource what you really have to change in order to 
 </p>
 <h2><span class="mw-headline" id="What_we_need_7">What we need</span></h2>
 <p>In your npc dialog, say valeria_npc.dlg, we build an option as you see in the pretty pictures. You first notice that this option is available only if we haven't been through the last partypicker choosing  at the gates in the climax (when we talk to Riordan).
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp1.JPG"><img alt="Camp1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/82/Camp1.JPG" width="584" height="398" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp1.JPG"><img alt="Camp1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/82/Camp1.JPG" width="584" height="398" /></a>
 </p><p>Notice how we call the script valeria_come_with_me, to have her join the active party.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp2.JPG"><img alt="Camp2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Camp2.JPG" width="574" height="387" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp2.JPG"><img alt="Camp2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/53/Camp2.JPG" width="574" height="387" /></a>
 </p><p>Notice how we call the script valeria_go_back_to_camp, to sent her back to camp(remove from active party).
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp3.JPG"><img alt="Camp3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/12/Camp3.JPG" width="578" height="385" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camp3.JPG"><img alt="Camp3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/12/Camp3.JPG" width="578" height="385" /></a>
 </p>
 <h2><span class="mw-headline" id="The_come_hither_script">The come hither script</span></h2>
 <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;utility_h&quot;</span>
@@ -829,27 +829,27 @@ The partypicker is the only resource what you really have to change in order to 
     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nResult;
 <span class="br0">&#125;</span></pre></div></div>
 <p>Forgot(told ye I would). Here's how to add the right journal entries, and also, how to define the plot properties (see the object inspector on the right). Notice this plot has to be a subplot to cir300pt_fade so what we get the correct Journal behavior as well (like the game does). Notice when the quest is done and we set this as the final entry (Final=Yes).
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare11.JPG"><img alt="Nightmare11.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a6/Nightmare11.JPG" width="794" height="355" /></a>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare12.JPG"><img alt="Nightmare12.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d4/Nightmare12.JPG" width="796" height="376" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare11.JPG"><img alt="Nightmare11.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a6/Nightmare11.JPG" width="794" height="355" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare12.JPG"><img alt="Nightmare12.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d4/Nightmare12.JPG" width="796" height="376" /></a>
 </p>
 <h2><span class="mw-headline" id="Taking_care_of_Valeria.27s_dialog_in_her_nightmare_area">Taking care of Valeria's dialog in her nightmare area</span></h2>
 <p>I am using a stage for this, with the appropriate options set in the dialog. I won't go into it. You can do that.
 </p><p>The flags in VALERIA_FADE_NIGHTMARE are important here. Notice the check for the SLEEP flag here. Also notice we only run this dialog once.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare1.JPG"><img alt="Nightmare1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/Nightmare1.JPG" width="577" height="352" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare1.JPG"><img alt="Nightmare1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/23/Nightmare1.JPG" width="577" height="352" /></a>
 </p><p>Now you can do whatever you want, but I find this approach best. Notice the first of two options, checks to see if the PC has 3 ranks in persuasion. If that happens, Valeria snaps out of it right away. 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare2.JPG"><img alt="Nightmare2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG" width="547" height="297" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare2.JPG"><img alt="Nightmare2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/Nightmare2.JPG" width="547" height="297" /></a>
 </p><p>Now notice how the REALISES_DEMON variable is set, so that Valeria will help in the battle with the demon acting as her sister.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare3.JPG"><img alt="Nightmare3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6c/Nightmare3.JPG" width="572" height="351" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare3.JPG"><img alt="Nightmare3.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6c/Nightmare3.JPG" width="572" height="351" /></a>
 </p><p>Notice how we set the flag VALERIA_DEMON_HOSTILE in the plot valeria_fade_nightmare (see the script). It will initiate the battle.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare4.JPG"><img alt="Nightmare4.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ed/Nightmare4.JPG" width="567" height="357" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare4.JPG"><img alt="Nightmare4.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ed/Nightmare4.JPG" width="567" height="357" /></a>
 </p><p>Notice that if she's a mage she snaps out of it (second way). Notice how this links back up so we set the flag VALERIA_DEMON_HOSTILE in the plot valeria_fade_nightmare again.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare5.JPG"><img alt="Nightmare5.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Nightmare5.JPG" width="574" height="300" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare5.JPG"><img alt="Nightmare5.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/87/Nightmare5.JPG" width="574" height="300" /></a>
 </p><p>Otherwise, you fight the demon alone. Notice how this links back so we set the flag VALERIA_DEMON_HOSTILE in the plot valeria_fade_nightmare again as we did above.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare6.JPG"><img alt="Nightmare6.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Nightmare6.JPG" width="581" height="272" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare6.JPG"><img alt="Nightmare6.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b2/Nightmare6.JPG" width="581" height="272" /></a>
 </p><p>Set the VALERIA_TALKED_TO_IN_THE_FADE flag (so she'll help in the final demon battle). We show this option only once per game.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare9.JPG"><img alt="Nightmare9.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/66/Nightmare9.JPG" width="573" height="365" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare9.JPG"><img alt="Nightmare9.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/66/Nightmare9.JPG" width="573" height="365" /></a>
 </p><p>Set the VALERIA_RETURNS_TO_PARTY flag (removes Valeria from party). See the valeria_fade_nightmare plot script.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare10.JPG"><img alt="Nightmare10.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Nightmare10.JPG" width="589" height="367" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare10.JPG"><img alt="Nightmare10.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c3/Nightmare10.JPG" width="589" height="367" /></a>
 </p>
 <h2><span class="mw-headline" id="Valeria_Nightmare_Area_specifics">Valeria Nightmare Area specifics</span></h2>
 <p>Create a duplicate copy of a game companion nightmare area resource. I call it valeria_fade_nightmare(.are). Mine is using the predefined area layout lak526d for this (similar to Morrigan's nightmare I think, I probably duplicated her nightmare area and edited it). You need to do this so you'll have the fade pedistal in the area and atmosphere sounds, setting etc. You can remove some of the waypoints etc and edit it to what you want the nightmare to be. That's up to you can't help you there. Make sure the entry waypoint is tagged "start".
@@ -924,9 +924,9 @@ First here's the area script.
 <span class="br0">&#125;</span></pre></div></div>
 <p>My setup in the area. I don't know if you can see the inactive (red box) and active (yellow) Victoria versions.
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare7.JPG"><img alt="Nightmare7.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Nightmare7.JPG" width="580" height="360" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare7.JPG"><img alt="Nightmare7.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b2/Nightmare7.JPG" width="580" height="360" /></a>
 </p><p>The pedestal.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare8.JPG"><img alt="Nightmare8.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Nightmare8.JPG" width="796" height="373" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Nightmare8.JPG"><img alt="Nightmare8.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/Nightmare8.JPG" width="796" height="373" /></a>
 </p>
 <h2><span class="mw-headline" id="So_you_think_you.27re_done.2C_think_again._Changes_in_Event_Handling">So you think you're done, think again. Changes in Event Handling</span></h2>
 <p>We finally need to capture when the PC selects the right nightmare area (the one area that contains Valeria, it will be loaded appropriately)

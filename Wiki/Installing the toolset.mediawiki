@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -70,7 +70,7 @@
 </p>
 <h2><span class="mw-headline" id="Configuration">Configuration</span></h2>
 <p>The external configuration utility <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ConfigureToolset.exe" title="ConfigureToolset.exe">ConfigureToolset.exe</a> (found in the Dragon Age\tools directory) is used to configure the toolset's database connection and to tell the toolset where the game's executable is. You shouldn't need to run the configuration utility during routine usage of the toolset, and if the defaults set up by your installer work you may not need to run it at all.
-</p><p>The default database string is "<code>Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\SQLEXPRESS</code>". For advanced configuration, click on the ellipsis button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to open the data link properties window.
+</p><p>The default database string is "<code>Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\SQLEXPRESS</code>". For advanced configuration, click on the ellipsis button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to open the data link properties window.
 </p>
 <h4><span class="mw-headline" id="Moving_the_database_files_from_the_default_location">Moving the database files from the default location</span></h4>
 <p>By default, the database data and log files are loaded into C:\Program Files\DAODB\data and are called bw_dragonage_content.mdf and bw_dragonage_content.ldf.

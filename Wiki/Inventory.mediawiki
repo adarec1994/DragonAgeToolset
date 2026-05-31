@@ -1,4 +1,4 @@
-<p>A creature or container object can contain one or more <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">items</a> in inventory. 
+﻿<p>A creature or container object can contain one or more <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">items</a> in inventory. 
 </p><p>If a container is destroyed the contents of its inventory are transferred to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bodybag" title="Bodybag">Bodybag</a>.
 </p><p>Each item can have the following properties set:
 </p>
@@ -8,7 +8,7 @@
 <li>StackSize - how many copies of this item are present in a stack</li>
 <li>Droppable - a checkbox that indicates whether the item is dropped when the creature is killed</li>
 <li>Stealable - a checkbox that indicates whether the item can be stolen from the creature</li></ul>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png" width="400" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png" title="Enlarge"></a></div>A typical creature inventory screen</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/73/Creature_inventory.png" width="400" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/73/Creature_inventory.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/73/Creature_inventory.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png" title="Enlarge"></a></div>A typical creature inventory screen</div></div></div></div>
 <p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchants</a> also have an inventory.
 </p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%20system" title="Treasure system">Treasure system</a> for auto-generated loot.
 </p>

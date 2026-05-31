@@ -1,4 +1,4 @@
-<p>The Web Application is a tool created by Adam Miller. It can currently be found on the SFTP server under the directory /SFTP_USERS/PIPBoy3000/WebApplication.
+﻿<p>The Web Application is a tool created by Adam Miller. It can currently be found on the SFTP server under the directory /SFTP_USERS/PIPBoy3000/WebApplication.
 </p><p>It is a sample web application that allows you to:
 </p>
 <ul><li> Search and view scripts.</li>
@@ -17,5 +17,5 @@ The translation scripts are very much beta and should only be used by the clinic
 <li>Next open the Internet Information Services tool.</li>
 <li>Expand the tree until you see the Dragon Age folder.  Right-click on it and select Properties.</li>
 <li>Next to Application, click Create.</li></ol>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Web%20application%20setup.gif"><img alt="Web application setup.gif" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3f/Web_application_setup.gif" width="719" height="547" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Web%20application%20setup.gif"><img alt="Web application setup.gif" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3f/Web_application_setup.gif" width="719" height="547" /></a>
 </p>

@@ -1,4 +1,4 @@
-<p>The Dragon Age Toolset Wiki supports two of the standard MediaWiki skins: the more traditional MonoBook skin and the newer Vector skin. Some of the new MediaWiki features, such as simple search will only be available if you are using the Vector skin.
+﻿<p>The Dragon Age Toolset Wiki supports two of the standard MediaWiki skins: the more traditional MonoBook skin and the newer Vector skin. Some of the new MediaWiki features, such as simple search will only be available if you are using the Vector skin.
 </p>
 <h2><span class="mw-headline" id="Step-by-step">Step-by-step</span></h2>
 <p>To start using the Vector skin use the following steps:
@@ -12,35 +12,35 @@
 <h2><span class="mw-headline" id="Visual_Step-by-step">Visual Step-by-step</span></h2>
 <ul class="gallery mw-gallery-traditional" style="max-width: 1215px;_width: 1215px;">
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2001.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8c/How_to_change_your_skin_01.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8c/How_to_change_your_skin_01.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8c/How_to_change_your_skin_01.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2001.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8c/How_to_change_your_skin_01.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8c/How_to_change_your_skin_01.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8c/How_to_change_your_skin_01.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>1. Click 'my preferences'
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2002.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4f/How_to_change_your_skin_02.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4f/How_to_change_your_skin_02.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4f/How_to_change_your_skin_02.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2002.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4f/How_to_change_your_skin_02.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4f/How_to_change_your_skin_02.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4f/How_to_change_your_skin_02.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>2. Click 'Appearance'
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2003.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/144px-How_to_change_your_skin_03.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/216px-How_to_change_your_skin_03.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/288px-How_to_change_your_skin_03.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2003.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/144px-How_to_change_your_skin_03.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/216px-How_to_change_your_skin_03.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/10/How_to_change_your_skin_03.png/288px-How_to_change_your_skin_03.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>3. Select 'Vector'
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2004.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/How_to_change_your_skin_04.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/How_to_change_your_skin_04.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/How_to_change_your_skin_04.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2004.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/87/How_to_change_your_skin_04.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/87/How_to_change_your_skin_04.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/87/How_to_change_your_skin_04.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>4. Click 'Save'
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2005.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/How_to_change_your_skin_05.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/How_to_change_your_skin_05.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/How_to_change_your_skin_05.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20change%20your%20skin%2005.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d9/How_to_change_your_skin_05.png" width="144" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d9/How_to_change_your_skin_05.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d9/How_to_change_your_skin_05.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Success!
 </p>

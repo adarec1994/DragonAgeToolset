@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Cutscene topics
@@ -44,12 +44,12 @@
 </div>
 
 <h2><span class="mw-headline" id="Setting_the_animation">Setting the animation</span></h2>
-<p>To select which animation to play first click on the Play Animation action to select it. Then look to the Animation field that is displayed in the Object Inspector. Clicking the ellipsis (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) button there will open up the Select Animation window. This will list all animations that the object has available. Select the animation and hit OK.
+<p>To select which animation to play first click on the Play Animation action to select it. Then look to the Animation field that is displayed in the Object Inspector. Clicking the ellipsis (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) button there will open up the Select Animation window. This will list all animations that the object has available. Select the animation and hit OK.
 </p>
 <h2><span class="mw-headline" id="Looping_animations">Looping animations</span></h2>
 <p>By default the animation will play through once. To loop the animation the Looping End Time value must be changed. There are two methods for doing this.
 </p><p>The first way is to type in a new Looping End Time in the Object Inspector.
-</p><p>The second way is to drag the looping icon (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png"><img alt="IconLoopAnimation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/IconLoopAnimation.png" width="8" height="8" /></a>) on the Play Animation action. Click and drag the Looping Icon to the right. The animation will then loop until it hits the end of the action.
+</p><p>The second way is to drag the looping icon (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png"><img alt="IconLoopAnimation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5f/IconLoopAnimation.png" width="8" height="8" /></a>) on the Play Animation action. Click and drag the Looping Icon to the right. The animation will then loop until it hits the end of the action.
 </p>
 <h2><span class="mw-headline" id="Animation_speed">Animation speed</span></h2>
 <p>To change the speed of the animation, use the Speed field in the Object Inspector. A value of 1.0 is the normal speed of the animation. Smaller values mean the animation plays slower, and larger values will play the animation faster. A value of 0.5 will play it at half-speed; a value of 2.0 will play twice as fast as normal.
@@ -63,7 +63,7 @@
 <p>GAD is a displacement that is automatically added to the actor's current position as the animation plays. Each animation has its own GAD information built into it, custom-designed to make the actor move in a manner appropriate to its actions. If we enable it the actor will be moved forward as the animation plays.
 </p><p>Not all animations have GAD associated with them. For example, having an actor wave his hand wouldn't displace him, so there would be no GAD assocaited with that animation. We only need to worry about GAD in cases where the animation should accompany movement.
 </p><p>To enable GAD select the animation action and set "Play Gad" to true in the object inspector. If no key frames have been defined for the actor the cutscene editor will pop up a warning at this point suggesting that we add position and orientation keys before we add GAD:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20gad%20warning.png"><img alt="Cutscene gad warning.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/Cutscene_gad_warning.png" width="1013" height="170" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20gad%20warning.png"><img alt="Cutscene gad warning.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/Cutscene_gad_warning.png" width="1013" height="170" /></a>
 </p><p>It's important to set at least one set of keys for an object using GAD. The animation's GAD may seem to work correctly without it at first, but unexpected and unpredictable errors could occur later that send the actor careening off into the distance.
 </p><p>The other GAD properties are set to the most appropriate defaults automatically when you select an animation.
 </p><p>Note that if you use orientation keys to change an actor's orientation while the actor is playing an animation with GAD, the actor will change direction in an appropriate manner. For example, an actor that is walking north due to a GAD animation and then has its orientation changed 90 degrees to the right will continue walking in an easterly direction after the turn.
@@ -85,14 +85,14 @@
 <h3><span class="mw-headline" id="Transitions">Transitions</span></h3>
 <p>A transition can be added between two blended animations. The transition affects how much each animation is blended.
 </p><p>To add a transition, select both of the animations, right-click one of them and select Add Transition. The transition is represented by a triangle between the two animations.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20add%20animation%20transition.png"><img alt="Cutscene add animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b0/Cutscene_add_animation_transition.png" width="329" height="295" /></a>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20transition.png"><img alt="Cutscene animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Cutscene_animation_transition.png" width="289" height="78" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20add%20animation%20transition.png"><img alt="Cutscene add animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b0/Cutscene_add_animation_transition.png" width="329" height="295" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20transition.png"><img alt="Cutscene animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/ce/Cutscene_animation_transition.png" width="289" height="78" /></a>
 </p><p>Selecting the transition (clicking the triangle) will display the Transition Type field in the Object Inspector. The different transition types will blend the two animations differently. The types are: Linear, Ease In, Ease Out, Ease In/Out, and Instant.
 </p>
 <h3><span class="mw-headline" id="Weight_Curves">Weight Curves</span></h3>
 <p>For more complex control of the blending the weight curves can be edited. Selecting a animation action will display its weight curve in the timeline. By default animations are weighted at 100% throughout. 
 </p><p>To add a weight key, ensure the animation is selected and then press "k" or select "key selection" from the right-click menu. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">curve editor</a> for more detail on the use of the curve editor.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20weight%20curve.png"><img alt="Cutscene animation weight curve.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/Cutscene_animation_weight_curve.png" width="1018" height="522" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20weight%20curve.png"><img alt="Cutscene animation weight curve.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/Cutscene_animation_weight_curve.png" width="1018" height="522" /></a>
 </p>
 <table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
 <tr>

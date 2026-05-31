@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Cutscene topics
@@ -47,7 +47,7 @@
 </p><p>During a continuous update the head won’t update until there has been a noticeable change. However, from that point on it will update every frame for the rest of the action, regardless of how big the change is.
 </p>
 <h2><span class="mw-headline" id="Cutscene_editor_performance">Cutscene editor performance</span></h2>
-<p>If you have a long scene and you jump to the end, the only way to accurately reflect the characters head is to replay all the headtracking to that point. This can cause significant performance issues in the cutscene editor. You can tell the toolset to take a shortcut by disabling "Accurate Headtracking", either by using the toolbar button <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="16" height="16" /></a> or by a setting in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20editor%20options" title="Cutscene editor options">cutscene editor options</a>. The cutscene editor will then use a variety of assumptions to approximate proper head orientation, usually getting something very close to the "proper" headlook behavior.
+<p>If you have a long scene and you jump to the end, the only way to accurately reflect the characters head is to replay all the headtracking to that point. This can cause significant performance issues in the cutscene editor. You can tell the toolset to take a shortcut by disabling "Accurate Headtracking", either by using the toolbar button <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="16" height="16" /></a> or by a setting in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20editor%20options" title="Cutscene editor options">cutscene editor options</a>. The cutscene editor will then use a variety of assumptions to approximate proper head orientation, usually getting something very close to the "proper" headlook behavior.
 </p><p><br />
 </p>
 <table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">

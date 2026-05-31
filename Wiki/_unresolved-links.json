@@ -1,4 +1,4 @@
-{
+﻿{
   "generated_redlinks": {
     "- - - - 2da": [
       "**** 2da",
@@ -5541,7 +5541,7 @@
   },
   "missing_assets": {
     "assets/mw/images/a/a2/%D0%97%D0%B0%D0%BA%D0%B0%D1%82.jpg": [
-      "https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/%25D0%2597%25D0%25B0%25D0%25BA%25D0%25B0%25D1%2582.jpg"
+      "https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a2/%25D0%2597%25D0%25B0%25D0%25BA%25D0%25B0%25D1%2582.jpg"
     ]
   }
 }

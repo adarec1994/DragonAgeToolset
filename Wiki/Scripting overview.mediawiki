@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
@@ -82,13 +82,13 @@
 <li>Jump to definition</li></ul>
 <p>To the right of the script editor is a sidebar with a browser that can display all currently-defined functions, variables, or constants, or a set of 'template' scripts that can serve as a starting point when writing a script from scratch. The browser also has a filter field where you can type in a partial string and have the list automatically exclude everything that doesn't include it in the name.
 </p><p>This is the constant browser:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="Scripting constant browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png" width="205" height="256" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="Scripting constant browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b3/Scripting_constant_browser.png" width="205" height="256" /></a>
 </p><p>Here it is with "team" typed into the filter field, displaying only constants with names that contain the substring "team" (not case sensitive):
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="Scripting constant browser filtered.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="205" height="157" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="Scripting constant browser filtered.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="205" height="157" /></a>
 </p><p>The templates that come with Dragon Age include frameworks for the most common event scripts found in the game. You can add your own templates quite easily, just create a text file with the template code in it and place it in the Dragon Age\Toolset\scripttemplates directory with the others.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20template%20browser.png"><img alt="Scripting template browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Scripting_template_browser.png" width="240" height="206" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20template%20browser.png"><img alt="Scripting template browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Scripting_template_browser.png" width="240" height="206" /></a>
 </p><p>Dragon Age's toolset supports Doxygen-style comments. If you double-click on a function name a help window will pop open to display its documentation. You can also jump to a function's definition (provided it isn't an engine-defined function in script.ldf) by right-clicking on it and selecting "go to definition".
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20help%20window.png"><img alt="Scripting help window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Scripting_help_window.png" width="1023" height="697" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20help%20window.png"><img alt="Scripting help window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Scripting_help_window.png" width="1023" height="697" /></a>
 </p>
 <h2><span class="mw-headline" id="Writing_scripts">Writing scripts</span></h2>
 <p>For a script to compile, it needs a body:

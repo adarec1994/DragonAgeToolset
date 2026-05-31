@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Редактор строк</b>
 </td></tr></table> 
@@ -25,19 +25,19 @@
 Строки, связанные с ресурсами, могут быть отредактированы и в инспекторе объектов, но чтобы увидеть последние изменения текста необходимо сделать чекин объекта.
 </p>
 <h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.82.D0.B0_.D1.81_.D1.80.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80.D0.BE.D0.BC_.D1.81.D1.82.D1.80.D0.BE.D0.BA">Работа с редактором строк</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20main%20screen.png"><img alt="String editor main screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/String_editor_main_screen.png" width="918" height="393" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20main%20screen.png"><img alt="String editor main screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7e/String_editor_main_screen.png" width="918" height="393" /></a>
 </p><p>В верхней части основного экрана есть два поля, которые позволяют настроить отображение конкретных строк. Для начала надо определить таблицу (String Table), строки которой необходимо вывести для редактирования. Эта таблица формируется отдельно для каждого модуля, поэтому выберите таблицу, которая была создана для вашего модуля.
 </p><p>Если вы хотите отредактировать конкретную строку и вам известен её ID, например реплика диалога, то вы можете ввести этот ID в "String ID". 
 </p><p>Если вы хотите вывести в редакторе всю таблицу модуля, то убедитесь, что кнопка <b>Filter</b> имеет надпись "<i>Filter: Off</i>", и установите флажок <b>Do NOT use Filter</b>.
 </p><p>Но и это ещё не всё! Нажатие кнопки <b>Filter</b> вызовет окно настройки фильтра, который позволит использовать широкий спектр критериев отбора!
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20filters.png"><img alt="String editor filters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/String_editor_filters.png" width="554" height="383" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20filters.png"><img alt="String editor filters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/String_editor_filters.png" width="554" height="383" /></a>
 </p><p>В случае использования нескольких условий для их связки применяется оператор "AND".
 </p><p><b>Нужна помощь в переводе:</b>
 <i>There seems to be a bug - both "Contains" and "Is Exactly" sometimes only return a match if you enter the entire string you're searching for. The workaround seems to be to do a successful "Is Exactly" search, after which "Contains" works as expected.</i>
 </p><p><b>Вариант перевода:</b>
 <i>Похоже, что здесь есть баг - оба параметра поиска ("искать любое, содержащее часть введенной в поиск строки" и "искать точное совпадение строк") иногда показывает только "точное совпадение" при вводе искомой строки в поиск. Успешный обходной путь, как предпологается - искать по запросу "искать точное совпадение строк", после чего запрос "искать любое, содержащее часть строки" работает так, как и положено. (перевел Warslav)</i>
 </p><p>Как только вы нашли строку, которую необходимо отредактировать, дважды кликните на ней мышкой.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20edit%20string.png"><img alt="String editor edit string.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/String_editor_edit_string.png" width="545" height="369" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20edit%20string.png"><img alt="String editor edit string.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c3/String_editor_edit_string.png" width="545" height="369" /></a>
 </p><p>Когда вы закончите редактирование, используйте пункт меню Tools &gt; Export &gt; Export String Table, потом Tools &gt; Export &gt; Export Talk Table, чтобы в игре отображался отредактированный вами текст. 
 </p><p><b>Внимание:</b> 
 </p><p>В Export Talk Table есть известная <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override%20-%20ru" title="Bug: Talk table exported to packages override/ru (page does not exist)">ошибка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override">(en)</a>.

@@ -1,4 +1,4 @@
-<p>This tutorial illustrates how to create <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20with%20codex%20entries%20tutorial" title="Items with codex entries tutorial (page does not exist)">items with codex entries</a> for both a new standalone module or an extension to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign" title="Single Player Campaign (page does not exist)">Single Player Campaign</a>. Additionally it will show you how to destroy, or avoid destroying, the item once the codex entry has been created.
+﻿<p>This tutorial illustrates how to create <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20with%20codex%20entries%20tutorial" title="Items with codex entries tutorial (page does not exist)">items with codex entries</a> for both a new standalone module or an extension to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign" title="Single Player Campaign (page does not exist)">Single Player Campaign</a>. Additionally it will show you how to destroy, or avoid destroying, the item once the codex entry has been created.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -39,9 +39,9 @@ This tutorial assumes, you are familiar with creating a standalone module or an 
 <li> In the <b>Manage Modules</b> window, select your module (if not already selected)</li>
 <li> Click the <b>Properties...</b> button</li>
 <li> In the <b>Object Inspector</b> window, select the <b>Script</b> property</li>
-<li> Click the <b>Browse</b> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) button</li>
+<li> Click the <b>Browse</b> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) button</li>
 <li> In the Resource Open/Save window, click the New button</li>
-<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Create%20new%20resource.png"><img alt="Create new resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Create_new_resource.png" width="375" height="219" /></a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Create%20new%20resource.png"><img alt="Create new resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/Create_new_resource.png" width="375" height="219" /></a></li>
 <li> Enter the </li></ul>
 <p><br />
 </p>

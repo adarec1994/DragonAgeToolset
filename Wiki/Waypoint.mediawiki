@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Area topics
@@ -15,11 +15,11 @@
 <p>Waypoints are one of the simplest resources in Dragon Age, but they are used extensively for a wide variety of tasks. They are a means of marking a specific point (and facing) within an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> map.
 </p><p>Waypoints and their location on the map can be seen in the menu on the left hand side of the area editor:
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:233px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints%20in%20the%20area%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/42/Waypoints_in_the_area_menu.png" width="231" height="56" class="thumbimage" /></a>  <div class="thumbcaption">Placed waypoints in the menu.</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:233px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints%20in%20the%20area%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/42/Waypoints_in_the_area_menu.png" width="231" height="56" class="thumbimage" /></a>  <div class="thumbcaption">Placed waypoints in the menu.</div></div></div></div>
 <p>Selecting and double clicking on a waypoint will take you to that waypoint’s location on the map, provided that “Show waypoints” is toggled on in the toolbar. Waypoints are shown as little red and blue flags:
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:115px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/Show_waypoints.png" width="113" height="66" class="thumbimage" /></a>  <div class="thumbcaption">The waypoint toggle.</div></div></div></div>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:217px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Waypoints.png" width="215" height="147" class="thumbimage" /></a>  <div class="thumbcaption">Waypoints in a level.</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:115px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/Show_waypoints.png" width="113" height="66" class="thumbimage" /></a>  <div class="thumbcaption">The waypoint toggle.</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:217px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8a/Waypoints.png" width="215" height="147" class="thumbimage" /></a>  <div class="thumbcaption">Waypoints in a level.</div></div></div></div>
 <h2><span class="mw-headline" id="Properties">Properties</span></h2>
 <p>Waypoints have only a few properties.
 </p>

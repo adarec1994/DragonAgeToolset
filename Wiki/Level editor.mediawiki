@@ -1,4 +1,4 @@
-<table style="float:right;">
+﻿<table style="float:right;">
 
 <tr>
 <td>
@@ -11,42 +11,42 @@
 <table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
 
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
 </td></tr></table>
 </th></tr>
 
@@ -66,7 +66,7 @@
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
 </td></tr>
 <tr>
@@ -93,67 +93,67 @@
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
 </td></tr>
 <tr>
@@ -193,7 +193,7 @@
 </td></tr></table>
 </td></tr></table>
 <p>The level editor is used to generate the level layouts (also called Area layouts) that are the basis for creating <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">areas</a>. A level layout is a non-interactive <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">resource</a>; the objects placed within it serve only to provide the physical structure and appearance of the area. If you need the player to interact with objects within an area you'll need to use interactive <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">placeables</a> instead.
-</p><p>Note that unlike the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a> editor, only two modes of camera control are currently supported: "flycam" mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconFlycamStyle.png"><img alt="IconFlycamStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2d/IconFlycamStyle.png" width="16" height="16" /></a> button in the toolbar) and 3DS Max mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3DSMaxStyle.png"><img alt="Icon3DSMaxStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/Icon3DSMaxStyle.png" width="16" height="16" /></a> button). NWN style is not currently supported.  (Use a combination of the mouse wheel + Ctrl or/and Alt (dependant on camera mode) to control the camera.  In either mode Numpad 5 will reset the camera.)
+</p><p>Note that unlike the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a> editor, only two modes of camera control are currently supported: "flycam" mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconFlycamStyle.png"><img alt="IconFlycamStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2d/IconFlycamStyle.png" width="16" height="16" /></a> button in the toolbar) and 3DS Max mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3DSMaxStyle.png"><img alt="Icon3DSMaxStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a1/Icon3DSMaxStyle.png" width="16" height="16" /></a> button). NWN style is not currently supported.  (Use a combination of the mouse wheel + Ctrl or/and Alt (dependant on camera mode) to control the camera.  In either mode Numpad 5 will reset the camera.)
 </p><p>Area layouts are an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resource</a>.
 </p><p>You can download the source files for the levels in the main campaign from here: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1331/#files">[1]</a>.  (See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20layouts%20used%20in%20the%20single%20player%20module" title="Area layouts used in the single player module">Area layouts used in the single player module</a> for a listing of what each one is.)
 </p>
@@ -256,12 +256,12 @@
 <p>There are two basic types of levels; interior and exterior. Many features of these two level types are the same and level editor documentation will generally be applicable to both types unless specifically noted. Their key difference is that exterior levels have a terrain mesh (the "ground") and interior levels don't. Note however that there's no reason why you couldn't use one level type to "fake" the other - for example you could create a an entirely underground cave using an "exterior" level with the terrain mesh as the cave's floor.
 </p>
 <h2><span class="mw-headline" id="Toolbar">Toolbar</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20toolbar%20labeled.png"><img alt="Level editor toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/Level_editor_toolbar_labeled.png" width="1020" height="425" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20toolbar%20labeled.png"><img alt="Level editor toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7e/Level_editor_toolbar_labeled.png" width="1020" height="425" /></a>
 </p><p>See sections below for detailed information on level editor specific toolbar buttons.
 </p>
 <h3><span class="mw-headline" id="Terrain_mesh">Terrain mesh</span></h3>
 <p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20mesh" title="Terrain mesh">terrain mesh</a> is a deformable surface used in exterior levels to provide a "ground". This toolbar contains the tools that deals with the terrain mesh:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20toolbar%20terrain%20editing.png"><img alt="Level editor toolbar terrain editing.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/Level_editor_toolbar_terrain_editing.png" width="194" height="107" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20toolbar%20terrain%20editing.png"><img alt="Level editor toolbar terrain editing.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/95/Level_editor_toolbar_terrain_editing.png" width="194" height="107" /></a>
 </p><p>Each of these buttons brings up a "brush" that's used for various tasks. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20mesh" title="Terrain mesh">Terrain mesh</a> for details.
 </p>
 <h3><span class="mw-headline" id="Other_tools">Other tools</span></h3>
@@ -281,10 +281,10 @@
 </p><p><br />
 </p>
 <h2><span class="mw-headline" id="Models">Models</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Models</a> are used to create any other objects that may be used as part of the level art - walls, floors, ceilings, non-interactive furnishings, visual effects, etc. (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModelPlacement.png"><img alt="IconModelPlacement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2f/IconModelPlacement.png" width="16" height="16" /></a>)
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Models</a> are used to create any other objects that may be used as part of the level art - walls, floors, ceilings, non-interactive furnishings, visual effects, etc. (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModelPlacement.png"><img alt="IconModelPlacement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2f/IconModelPlacement.png" width="16" height="16" /></a>)
 </p>
 <dl><dd><i>See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a></i></dd></dl>
-<p>Trees and Vegetation is added using the "scatter object" mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>).
+<p>Trees and Vegetation is added using the "scatter object" mode (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>).
 </p>
 <dl><dd><i>See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation Placement</a></i></dd></dl>
 <h3><span class="mw-headline" id="Animations">Animations</span></h3>
@@ -310,8 +310,8 @@
 </p>
 <h2><span class="mw-headline" id="Trees.2C_grass.2C_and_shrubberies">Trees, grass, and shrubberies</span></h2>
 <p>Trees, grass and shrubberies are handled somewhat differently from other models. They are created using a program called SpeedTree that includes information allowing them to respond to the wind. To place trees on a level, you first need to add that tree type's tree controller:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20insert%20tree%20controller.png"><img alt="Level editor insert tree controller.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b4/Level_editor_insert_tree_controller.png" width="669" height="395" /></a>
-</p><p>Once this is done you can use the scatter object tool (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>) to place specific examples of the vegetation you've added controllers for.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20insert%20tree%20controller.png"><img alt="Level editor insert tree controller.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b4/Level_editor_insert_tree_controller.png" width="669" height="395" /></a>
+</p><p>Once this is done you can use the scatter object tool (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>) to place specific examples of the vegetation you've added controllers for.
 </p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation</a> for a gallery of the vegetation types included with the core resources.
 </p><p><br />
 </p>
@@ -340,25 +340,25 @@
 <p>Each level can have one active wind object in it. The location of the wind object doesn't matter. The wind object defines how wind behaves on this level, which is used for such things as flapping banners and swaying trees.
 </p><p>To insert a wind object, right click on the terrain, and choose Insert &gt; New Wind Object.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20wind%20object.png"><img alt="Level editor wind object.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/Level_editor_wind_object.png" width="390" height="220" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20wind%20object.png"><img alt="Level editor wind object.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/Level_editor_wind_object.png" width="390" height="220" /></a></div></div>
 <p>For other weather effects, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Weather" title="Weather">Weather</a>.
 </p><p><br />
 </p>
 <h2><span class="mw-headline" id="Pathfinding">Pathfinding</span></h2>
-<p>Pathfinding is generated by clicking the toolbar button <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGeneratePathfinding.png"><img alt="IconGeneratePathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e7/IconGeneratePathfinding.png" width="16" height="16" /></a>. The pathfinding process lays down a grid of points that are marked "accessable" if they can be reached from a pathfinding start spot via passable terrain. This is essentially a flood-fill algorithm.
+<p>Pathfinding is generated by clicking the toolbar button <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGeneratePathfinding.png"><img alt="IconGeneratePathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e7/IconGeneratePathfinding.png" width="16" height="16" /></a>. The pathfinding process lays down a grid of points that are marked "accessable" if they can be reached from a pathfinding start spot via passable terrain. This is essentially a flood-fill algorithm.
 </p><p>In the case of exterior areas, you must select an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">exportable area</a> before it will generate it, the error message will reflect this.
-</p><p>To see the existing pathfinding grid, click on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDisplayPathfinding.png"><img alt="IconDisplayPathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/IconDisplayPathfinding.png" width="14" height="16" /></a> toolbar button or select "Pathfinding nodes" under the "View" menu.
+</p><p>To see the existing pathfinding grid, click on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDisplayPathfinding.png"><img alt="IconDisplayPathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/IconDisplayPathfinding.png" width="14" height="16" /></a> toolbar button or select "Pathfinding nodes" under the "View" menu.
 </p><p>"Passable" or "impassable" depends on a variety of factors such as the slope of the land, obstructions, or water depth. Accessibility Start points are represented by a blue ring with a red arrow. Note that these are different from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">waypoints</a>, and are only used by the level editor for pathfinding purposes.
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20pathfinding%20start%20spot.png"><img alt="Level editor pathfinding start spot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/300px-Level_editor_pathfinding_start_spot.png" width="300" height="215" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/450px-Level_editor_pathfinding_start_spot.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/600px-Level_editor_pathfinding_start_spot.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20pathfinding%20start%20spot.png" title="Enlarge"></a></div></div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20pathfinding%20start%20spot.png"><img alt="Level editor pathfinding start spot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/300px-Level_editor_pathfinding_start_spot.png" width="300" height="215" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/450px-Level_editor_pathfinding_start_spot.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/0c/Level_editor_pathfinding_start_spot.png/600px-Level_editor_pathfinding_start_spot.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20pathfinding%20start%20spot.png" title="Enlarge"></a></div></div></div></div></div>
 <p>Models will often contain collision volumes that will automatically make the places they're located impassible. Likewise, you can set a certain depth of water as being impassible and pathfinding will take this into account. 
 </p><p>In order to get pathfinding to work, you must generate your starting point AFTER you create the exportable area, and use the name that is automatically generated for the starting point. DO NOT change the name of the starting point otherwise pathfinding will fail.
 </p>
 <h3><span class="mw-headline" id="Terrain_Collision">Terrain Collision</span></h3>
-<p>You will need to block off terrain using the Terrain Block tools <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockButtons.png"><img alt="TerrainBlockButtons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/94/TerrainBlockButtons.png" width="85" height="26" /></a>.  The first button toggles the display of the terrain blocks, the second button enables you to place terrain blocks, and the third snaps existing blocks to terrain verticies.  Left-clicking will start a new block, with additional left-clicks chaining the blocks together.  Right-clicking will end the current chain.  In addition, right-clicking on an existing block will delete it.
+<p>You will need to block off terrain using the Terrain Block tools <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockButtons.png"><img alt="TerrainBlockButtons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/94/TerrainBlockButtons.png" width="85" height="26" /></a>.  The first button toggles the display of the terrain blocks, the second button enables you to place terrain blocks, and the third snaps existing blocks to terrain verticies.  Left-clicking will start a new block, with additional left-clicks chaining the blocks together.  Right-clicking will end the current chain.  In addition, right-clicking on an existing block will delete it.
 </p><p>An example of a terrain block chain showing the path finding
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockExample.png"><img alt="TerrainBlockExample.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/TerrainBlockExample.png" width="600" height="369" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/TerrainBlockExample.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/TerrainBlockExample.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockExample.png" title="Enlarge"></a></div></div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockExample.png"><img alt="TerrainBlockExample.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/TerrainBlockExample.png" width="600" height="369" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/TerrainBlockExample.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/TerrainBlockExample.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TerrainBlockExample.png" title="Enlarge"></a></div></div></div></div></div>
 <h2><span class="mw-headline" id="Hotkeys">Hotkeys</span></h2>
 <table border="1" cellspacing="0" cellpadding="2">
 
@@ -489,13 +489,13 @@ This allows you to move several objects at the same time as well as apply other 
 </p><p>This also makes placing several grouped objects like torches with flame and lights very quick and easy.
 For example, Setting several candles with flame effects would take a lot of time to place each candle stick individually, and then placing the flame effect exactly on top of the candle for each. By using group folders you only need to set this up once. To place more candles simply select the group folder, Ctrl+C to copy, select its parent group, or other place you want to put the next candle and Ctrl+V to past the new group. Then simply drag it to where you want it.
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tip%201.jpg"><img alt="Tip 1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Tip_1.jpg" width="600" height="434" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Tip_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Tip_1.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tip%201.jpg" title="Enlarge"></a></div></div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tip%201.jpg"><img alt="Tip 1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Tip_1.jpg" width="600" height="434" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Tip_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Tip_1.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tip%201.jpg" title="Enlarge"></a></div></div></div></div></div>
 <p>In addition, the Selection Lock and Visible properties of objects can be useful when trying to manipulate objects when larger objects obscure or get in the way of the desired selection. This is especially handy with water meshes.
 </p>
 <h2><span class="mw-headline" id="Manage_exports">Manage exports</span></h2>
 <p>The "Manage Exports" window is accessible from the Tools -&gt; Exports -&gt; Do All Export Operations menu option. It brings up a window where you can select from all steps in the level-exporting process:
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Manage%20exports.png"><img alt="Manage exports.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Manage_exports.png" width="731" height="264" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Manage%20exports.png"><img alt="Manage exports.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/21/Manage_exports.png" width="731" height="264" /></a></div></div>
 <h2><span class="mw-headline" id="Known_Issues">Known Issues</span></h2>
 <ul><li> Owing to path bugs, the safe approach is to do all custom level processing (light mapping and local posts) in the Single Player module. For compatibility, move the output to your add-in's core override folder before distribution to players. Note that if you try to play Dragon Age with any exported Single Player resources, your game may have strange bugs (not being able to add party members) - so never play without removing all output from the Single Player module!</li></ul>
 <ul><li> "RPU process failed with a return code of -1073741811" may occur if AVG anti-virus Identity Protection is enabled.</li></ul>

@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Area topics
@@ -12,7 +12,7 @@
 <li><strong class="selflink">Volume objects</strong> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">triggers</a>, audio, reverb, music)</li>
 <li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">Area editor options</a></li></ul>
 </td></tr></table>
-<div class="thumb tright"><div class="thumbinner" style="width:154px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20volume%20object.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/43/Area_editor_volume_object.png" width="152" height="125" class="thumbimage" /></a>  <div class="thumbcaption">A volume object</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:154px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20volume%20object.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/43/Area_editor_volume_object.png" width="152" height="125" class="thumbimage" /></a>  <div class="thumbcaption">A volume object</div></div></div>
 <p>There are four types of object that are defined by enclosed polygons drawn within the area; triggers, audio volumes, reverb volumes, and music volumes. Their areas are defined by clicking once for each vertex, with the final vertex being marked with a double-click that connects the final vertex to the initial vertex and closes the polygon. The interior of the area is shaded blue and when the area is selected the corner points are marked with large yellow spheres that can be dragged with the mouse pointer to adjust their location. To abort drawing an area before you've finished placing the vertexes, press the escape key.
 </p><p>Volumes extend vertically through space. Parts of a volume might be visually obscured by the ground or by other objects in an area, but the volume still exists and entering or exiting it works normally.
 </p>
@@ -30,13 +30,13 @@
 <p>All vertices and emitters can be moved in 2D or 3D space, as a group or singly. You can multiply select and vertex or emitter by clicking on each desired object while holding the “Ctrl” key. These can then be moved or deleted as desired.
 </p><p>Any vertex can be moved up and down in height as a group or singly by selecting the desired objects and holding shift to move them up or down.
 </p><p>Vertices can be added to or deleted from a volume in a very simple manner. To delete a vertex select it (it will turn white) and press the “Del” key on your keyboard. They can also be deleted by right clicking on the vertex and choosing “Delete Vertex.” Vertices can be deleted either singly or in groups.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20delete%20vertex.png"><img alt="Area editor delete vertex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Area_editor_delete_vertex.png" width="267" height="93" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20delete%20vertex.png"><img alt="Area editor delete vertex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/96/Area_editor_delete_vertex.png" width="267" height="93" /></a>
 </p><p>Vertices can be added to an existing line segment by selecting an adjacent vertex and right clicking on it. A menu window will pop up and you can add vertices to either side of the existing vertex.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Insert%20vertex%20before.png"><img alt="Insert vertex before.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Insert_vertex_before.png" width="260" height="67" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Insert%20vertex%20before.png"><img alt="Insert vertex before.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/Insert_vertex_before.png" width="260" height="67" /></a>
 </p><p>One can use as many vertices as needed to define volumes.
 </p>
 <h2><span class="mw-headline" id="Triggers">Triggers</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20triggers.png"><img alt="Show triggers.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/Show_triggers.png" width="99" height="60" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20triggers.png"><img alt="Show triggers.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a0/Show_triggers.png" width="99" height="60" /></a></div>
 <p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Triggers</a> are sent an event whenever a player enters or leaves their area, which is used to trigger a script to perform some action in response. Triggers are complex resources that are constructed with a separate resource editor. To select and insert one:
 </p>
 <ul><li> open the trigger palette window</li>
@@ -45,17 +45,17 @@
 <p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Triggers</a> for information on how to set what a trigger does when its events are triggered.
 </p>
 <h2><span class="mw-headline" id="Audio_volumes">Audio volumes</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20audio%20volumes.png"><img alt="Show audio volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/79/Show_audio_volumes.png" width="124" height="63" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20audio%20volumes.png"><img alt="Show audio volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/79/Show_audio_volumes.png" width="124" height="63" /></a></div>
 <p>To define an audio volume, right click on the area display and select "insert audio volume". Your mouse pointer will turn into crosshairs to draw an area with.
 </p><p>The resulting area has only a few properties, the most important of which is "Sounds." Click on the "..." button or double-click on the empty field and you'll be presented with a sound instance selection screen that displays all the available <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound resources">Sound</a> and allows you to select one or more to add to the audio volume.
 </p><p>You can apply a reverb preset to the sounds by selecting one from the "Reverb Preset" dropdown menu.
 </p>
 <h2><span class="mw-headline" id="Reverb_volumes">Reverb volumes</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20reverb%20volumes.png"><img alt="Show reverb volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/Show_reverb_volumes.png" width="127" height="61" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20reverb%20volumes.png"><img alt="Show reverb volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/Show_reverb_volumes.png" width="127" height="61" /></a></div>
 <p>Even simpler than an audio volume, a reverb volume is defined by selecting "insert reverb volume" from the right-click menu. The only relevant parameter is the Reverb Preset.
 </p>
 <h2><span class="mw-headline" id="Music_volumes">Music volumes</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20music%20volumes.png"><img alt="Show music volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2c/Show_music_volumes.png" width="124" height="63" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20music%20volumes.png"><img alt="Show music volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2c/Show_music_volumes.png" width="124" height="63" /></a></div>
 <p>A music volume can have an event script assigned. It also has four enter and exit state properties:
 </p>
 <ul><li>Enter State</li>

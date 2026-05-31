@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8_%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2">Поделиться ВКонтакте</a>
 <hr />
@@ -17,7 +17,7 @@
 <table class="collapsible collapsed" style="style" width="583" align="" cellpadding="0" cellspacing="0">
 
 <tr>
-<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black"><font style="font-size:80%; color:red; font-weight: normal;">..... нажмите <b>[show]</b> для просмотра → </font> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Conversation_toolbar.png" width="573" height="100" /></a></div>
+<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black"><font style="font-size:80%; color:red; font-weight: normal;">..... нажмите <b>[show]</b> для просмотра → </font> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Conversation_toolbar.png" width="573" height="100" /></a></div>
 </th></tr>
 <tr>
 <td><div style="background-color: #F6F6F6; padding:4px 4px 4px 4px; border-top:0; border-bottom:thin solid #AAAAAA; border-left:thin dashed #AAAAAA; border-right:thin dashed #AAAAAA; border-bottom-right-radius:7px; border-bottom-left-radius:7px; clear: both;">Список кнопок панели редактора диалогов:
@@ -59,13 +59,13 @@
 <li> Очистить жесты для реплики, выбранной на данный момент.</li>
 <li> Расположить камеры для реплики, выбранной на данный момент.</li>
 <li> Скрыть/Показать панель деталей диалога, расположенную ниже основного окна.</li></ol>
-Если вы хотите сверить с английским описанием, то откройте в новом окне этот <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Conversation_toolbar_labeled.png" title="Conversation toolbar labeled.png">скриншот</a>.</div>
+Если вы хотите сверить с английским описанием, то откройте в новом окне этот <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Conversation_toolbar_labeled.png" title="Conversation toolbar labeled.png">скриншот</a>.</div>
 </td></tr></table>
 <h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B9">Редактор локаций</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20toolbar.png"><img alt="Area toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Area_toolbar.png" width="649" height="97" /></a>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20toolbar%20labeled.png"><img alt="Area toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e0/Area_toolbar_labeled.png" width="743" height="324" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20toolbar.png"><img alt="Area toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Area_toolbar.png" width="649" height="97" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20toolbar%20labeled.png"><img alt="Area toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e0/Area_toolbar_labeled.png" width="743" height="324" /></a>
 </p>
 <h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D1.80.D0.BE.D0.BB.D0.B8.D0.BA.D0.BE.D0.B2">Редактор роликов</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20toolbar.png"><img alt="Cutscene toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Cutscene_toolbar.png" width="506" height="100" /></a>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20toolbar%20labeled.png"><img alt="Cutscene toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a9/Cutscene_toolbar_labeled.png" width="565" height="343" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20toolbar.png"><img alt="Cutscene toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Cutscene_toolbar.png" width="506" height="100" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20toolbar%20labeled.png"><img alt="Cutscene toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a9/Cutscene_toolbar_labeled.png" width="565" height="343" /></a>
 </p>

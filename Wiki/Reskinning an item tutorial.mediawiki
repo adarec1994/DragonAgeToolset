@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#General_considerations"><span class="tocnumber">1</span> <span class="toctext">General considerations</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Locating_the_Model_Textures_the_Hard_Way"><span class="tocnumber">2</span> <span class="toctext">Locating the Model Textures the Hard Way</span></a></li>
@@ -57,7 +57,7 @@ C:\Program Files\Dragon Age\packages\core\textures\medium\texturepack.erf</pre>
 </p><p>Once this has been done for all of the robe textures (in both the "High" and "Medium" folders), we'll be ready to override the default textures in Dragon Age.
 </p>
 <h2><span class="mw-headline" id="Overriding_the_Existing_Textures">Overriding the Existing Textures</span></h2>
-<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Demo-retexture.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Demo-retexture.jpg" width="300" height="767" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Demo-retexture.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Demo-retexture.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Demo-retexture.jpg" title="Enlarge"></a></div>The end result: reskinned default mage robes.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Demo-retexture.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/Demo-retexture.jpg" width="300" height="767" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/Demo-retexture.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/Demo-retexture.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Demo-retexture.jpg" title="Enlarge"></a></div>The end result: reskinned default mage robes.</div></div></div>
 <p>Comment&#160;: this section doesn't agree with the guidance on <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">Compatibility</a>. Surely textures should be placed in the module's texture folder?  
 </p><p>To override the existing textures, copy the "textures" folder containing the modified textures, and paste this folder into the Dragon Age override folder. The override folder is found in:
 </p>

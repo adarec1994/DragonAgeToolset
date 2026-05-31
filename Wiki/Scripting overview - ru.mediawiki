@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Обзор языка DAScript</b>
 </td></tr></table> 
@@ -90,28 +90,28 @@
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b3/Scripting_constant_browser.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b3/Scripting_constant_browser.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b3/Scripting_constant_browser.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Перечень констант
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:29px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="120" height="92" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:29px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="120" height="92" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/21/Scripting_constant_browser_filtered.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/21/Scripting_constant_browser_filtered.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Фильтр констант
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:23.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20template%20browser.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Scripting_template_browser.png" width="120" height="103" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Scripting_template_browser.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Scripting_template_browser.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:23.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20template%20browser.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Scripting_template_browser.png" width="120" height="103" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Scripting_template_browser.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Scripting_template_browser.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Шаблоны скриптов
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:34px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20help%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Scripting_help_window.png" width="120" height="82" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Scripting_help_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Scripting_help_window.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:34px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20help%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Scripting_help_window.png" width="120" height="82" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Scripting_help_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Scripting_help_window.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Окно помощи
 </p>

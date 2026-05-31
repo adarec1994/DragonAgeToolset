@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Getting_Started"><span class="tocnumber">1</span> <span class="toctext">Getting Started</span></a>
 <ul>
@@ -68,11 +68,11 @@
 <li> <a rel="nofollow" class="external text" href="http://aluigi.altervista.org/papers/fsbext.zip">FSB Extractor</a>:  hit the "qui" link.</li></ul>
 <p>You will only need one file from the Core_FDP zip.  Find the <b>music.fdp</b>, and copy it to your <b>Build Directory</b>.  Then you will want to extract the FSB_Ext folder to your Music Source folder.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Work%20Folder.jpg"><img alt="Work Folder.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Work_Folder.jpg" width="785" height="278" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Work%20Folder.jpg"><img alt="Work Folder.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Work_Folder.jpg" width="785" height="278" /></a></div></div>
 <p>Next you will need to navigate to your <i>C:\Program Files\Dragon Age\packages\core\audio\sound</i> folder.  Main game install.  Find and copy the following to your <b>Music Source</b> folder:
 </p>
 <ul><li> <b>music_bank_strm_new.fsb</b></li></ul>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CoreFSB.jpg"><img alt="CoreFSB.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/CoreFSB.jpg" width="772" height="284" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CoreFSB.jpg"><img alt="CoreFSB.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/CoreFSB.jpg" width="772" height="284" /></a></div></div>
 <h3><span class="mw-headline" id="Sound_Extraction">Sound Extraction</span></h3>
 <p>Unfortunately, FMOD will want to have access to two sounds in the above listed Core <b>music.fdp</b>.  I tried many ways to get around this, a few were successful to an extent... but it is just simpler to do it this way.  Who knows?  You might want to have all the Dragon Age sounds available to you, so feel free to copy and extract more than just the single FSB listed.
 </p><p>We are looking for two sounds in particular that we will need only for FMOD to find.  We wont need any other DA sounds unless you want them, but you will still have access to all the DA sounds in the toolset.  We are making a new FDP and will later merge it with the core <b>music.fev</b> (FDP).
@@ -82,7 +82,7 @@
 <p>I like to make a new folder inside my Music Source to house all the DA sounds, but its up to you as you only have to set a path to them once.  Take each of the three core fsb's and drag/drop them on the <b>FSB_Ext.exe</b>.  The sound will unpack into the <b>Music Source</b> folder where you have the FSB's.  They can really clutter up the folder, so I suggest that you create another folder inside called <b>DA Sounds</b>.  Drag them all into this folder and delete the FSB's (to save space).
 </p><p>All the DA sounds contained in those files will extract as <b>MP3</b>.  We need to convert them to <b>WAV</b>.  <i><b>Goldwave</b></i> and <i><b>Audacity</b></i> have batch conversion capability.  Use whatever you can find.  I am afraid this step is necessary, FMOD will look for these sounds and must be able to find them.  When prompted, you will navigate to this folder, but the sounds will not be used.  More on that later.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20MusicSource.jpg"><img alt="MusicSource.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/MusicSource.jpg" width="791" height="273" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20MusicSource.jpg"><img alt="MusicSource.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/db/MusicSource.jpg" width="791" height="273" /></a></div></div>
 <h2><span class="mw-headline" id="Creating_a_Project">Creating a Project</span></h2>
 <p>Creating a new FMOD project requires only opening up FMOD.exe and hitting the "new project" button under "File".   However, we are NOT going to do it that way. Instead, we are going to open the core <b>music.fdp</b> and edit it, then save it under the name <b>my_music.fdp</b>. The reason we will do this is that we want to keep the exact same structure and parameters of the original as we will be merging them later in this tutorial. 
 </p>
@@ -93,7 +93,7 @@
 <h3><span class="mw-headline" id="Editing_the_FDP">Editing the FDP</span></h3>
 <p>Now we get to the 'meat' of the tutorial.  Creating our own music project file.  This is tedious and time consuming, so will try to be brief but not move too quickly.  We will start by opening the <b>music.fdp</b> that we have placed into our <b>Build Directory</b>.  FMOD can be found in your main game install folder: <i>C:\Program Files\Dragon Age\tools\FMOD Designer</i>.  You can either run that, or you can simply double-click on your music.fdp.  We will now do four quick steps and then save this project under a new name.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Music%20FMOD.jpg"><img alt="Music FMOD.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e1/Music_FMOD.jpg" width="1077" height="311" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Music%20FMOD.jpg"><img alt="Music FMOD.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e1/Music_FMOD.jpg" width="1077" height="311" /></a></div></div>
 <h4><span class="mw-headline" id="Build_Directory">Build Directory</span></h4>
 <p>Clear the Build Directory entry under properties.  It will say this: <i>C:\tag\main\build\packages\core\override</i>.  This is something left over from a developer.  We have no such directory.
 </p>
@@ -103,12 +103,12 @@
 <h4><span class="mw-headline" id="Clean_House">Clean House</span></h4>
 <p>In the Hierarchy tab under <b>Events</b>, delete everything below <b>Human_noble_origin</b>.  Yes, you read that right... <b>DELETE IT</b>!  Now expand the <b>Human_noble_origin</b> folder and delete the last four events shown, leave the rest.  What you are deleting are: <b>bhn100_father</b>, <b>bhn100_dog</b>, <b>bhn_door_stinger_new</b>, and <b>bhn_dog_lp</b>. One more thing while we are in here; change <b>credits_df</b> name to simply <b>credits</b>.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FDPClean.jpg"><img alt="FDPClean.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/56/FDPClean.jpg" width="785" height="489" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FDPClean.jpg"><img alt="FDPClean.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/56/FDPClean.jpg" width="785" height="489" /></a></div></div>
 <h4><span class="mw-headline" id="Save">Save</span></h4>
 <p>Now you can <b>File: Save Project As...</b> a new file.  Call it <b>my_music.fdp</b> and save to your <b>Build Directory</b>.
 You will notice that what is left has very generic names; main, precache, chargen, credits, and Death.  DO NOT change any of these.  That is how we will override the main music for our module.  We will need to re-assign which wav is assigned to them a bit later on.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build%20Directory.jpg"><img alt="Build Directory.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Build_Directory.jpg" width="795" height="288" /></a></div></div><br /><div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FDPClean2.jpg"><img alt="FDPClean2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/FDPClean2.jpg" width="1070" height="434" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build%20Directory.jpg"><img alt="Build Directory.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/75/Build_Directory.jpg" width="795" height="288" /></a></div></div><br /><div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FDPClean2.jpg"><img alt="FDPClean2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/50/FDPClean2.jpg" width="1070" height="434" /></a></div></div>
 <h2><span class="mw-headline" id="Creating_Events_and_Hierarchy">Creating Events and Hierarchy</span></h2>
 <p>We are only making one Event entry for this tutorial, but you could add as many as you like.  We will next be re-naming the 4th event in the hierarchy: <b>Human_noble_origin</b> will now be changed to <b>My_mod_music</b>.   You can change names of events on the right side in the lower property screen.  <b>DO NOT TOUCH</b> the name on the top/right property screen.  It should read as <b>music</b> regardless of what you named your FDP.  That name: <b>music</b> is the name of the <b>.FEV</b> that is called by the engine for sound events we want to change.  We are overwriting DA sounds and adding sounds for our module, and this <b>FDP</b> will create the <b>music.fev</b>.
 </p>
@@ -117,31 +117,31 @@ You will notice that what is left has very generic names; main, precache, charge
 </p><p><b>My_mod_music</b> will become a <b>Music Preset</b> that you can assign to an area(s).  If you wish to have more than one <b>Music Preset</b>, then just don't delete as many folders in the main hierarchy and rename them also. You will understand more about this later in the tutorial when we build our sound files.
 </p><p>Let's go ahead and add a few more folders inside our <b>My_mod_music</b> folder.  To do this, right click on our folder and select <b>Add Event Group</b>.  Then you will be prompted to give it a name.  We have named it Level_1, and we can also add other folders as seen in the picture.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FoldStruct.jpg"><img alt="FoldStruct.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/86/FoldStruct.jpg" width="1067" height="553" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FoldStruct.jpg"><img alt="FoldStruct.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/86/FoldStruct.jpg" width="1067" height="553" /></a></div></div>
 <ul><li> Don't forget to save your project often.  Get in this habit.  FMOD has been known to crash.</li></ul>
 <h3><span class="mw-headline" id="Events">Events</span></h3>
 <p>Still working in <b>Events/Heirarchy</b>: Now we can add events to our folders.  The folder structure is the way it will show in the toolset under the <b>music</b> folder in <b>Sounds</b>.  Let's start with our <b>Level_1</b> event group and add an event (by right clicking on the folder) we will call <b>Fireplace</b>, since we may have a fireplace in the area and will want that sound as an ambient or as a placeable. You can choose "no template" as we will further adjust the sounds when we actually add them.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.jpg"><img alt="Events.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0b/Events.jpg" width="1064" height="536" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.jpg"><img alt="Events.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/0b/Events.jpg" width="1064" height="536" /></a></div></div>
 <h3><span class="mw-headline" id="Moving_and_Organizing">Moving and Organizing</span></h3>
 <p>This next step is purely optional, but it will help to keep track of your events.  We now go to the <b>Categories</b> tab of <b>Events</b>.  We will add a new category folder and drag/drop our events into that folder.  Won't spend any more time on that, but recommended if you have alot of events and more than one event category.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Categories.jpg"><img alt="Categories.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Categories.jpg" width="862" height="308" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Categories.jpg"><img alt="Categories.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/22/Categories.jpg" width="862" height="308" /></a></div></div>
 <h2><span class="mw-headline" id="Sound_Definitions">Sound Definitions</span></h2>
 <p>Time to move to another tab in our project.  Go to the <b>Sound Definitions</b> tab.  You will see a red folder called <b>music_ingame</b>, and a bunch of folders beneath it.  Delete everything except the <b>music_ingame</b> top folder.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Delete.jpg"><img alt="Delete.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Delete.jpg" width="642" height="399" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Delete.jpg"><img alt="Delete.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d1/Delete.jpg" width="642" height="399" /></a></div></div>
 <p>We won't be using any DA sounds in our sound banks, so they are not needed.
 </p>
 <h2><span class="mw-headline" id="Sound_Banks">Sound Banks</span></h2>
 <p>Now go to the <b>Wave Banks</b> tab. If you have followed the directions up to this point, then the wav banks in this tab will be empty with the exception of two sounds in <b>music_bank_strm_new</b>.  Select that bank, and on ther right/bottom you will see the two sounds.  These are the two we extracted at the beginning under <b>Getting Started</b>.  Drag/Drop these two files into the <b>music_bank_strm_death</b> bank, thus emptying the top two sound banks.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound1.jpg"><img alt="Sound1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/26/Sound1.jpg" width="1059" height="315" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound1.jpg"><img alt="Sound1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/26/Sound1.jpg" width="1059" height="315" /></a></div></div>
 <p>Now that the sounds have been moved.  We are going to rename the existing top two banks for our use.  The reason we want to do it this way is that these two sound banks are already set up for streaming and loading sounds and are configured.  We could surely make our own blank sound banks and use either of these as templates, but for this tutorial we only need the two banks.  <b>Sound Bank</b> naming style is entirely up to you, the names don't matter.  I have renamed them for clarity:
 </p>
 <ul><li> my_music_notstrm_sting</li>
 <li> my_music_strm_new</li></ul>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound2.jpg"><img alt="Sound2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Sound2.jpg" width="1074" height="309" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound2.jpg"><img alt="Sound2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/Sound2.jpg" width="1074" height="309" /></a></div></div>
 <p>We have finished getting evrything setup for our new sounds.  It is time to add our sounds.
 </p>
 <ul><li> One more reminder to <b>SAVE OFTEN</b>.</li></ul>
@@ -149,21 +149,21 @@ You will notice that what is left has very generic names; main, precache, charge
 <p>Since I haven't created 'tutorial' sounds, will have to use what I have.  This is a shameless plug for <a rel="nofollow" class="external text" href="http://www.gamersnexus.net/bgr-home">BG2 Redux</a>, but I have those sounds ready to be added.  You will be using the sounds you have ready.  We will start with the DA presets which are <b>main, combat and Death</b>.  
 </p><p>Before you begin, know what type of sounds you will be adding.  Are they single-shots? Streaming music? Stingers?  Streaming sounds like music you will want in your <b>my_music_bank_strm_new</b>, since that bank is configured for streaming sounds already.  Single shots and stingers will go in the <b>my_music_bank_notstrm_sting</b>, since they can be loaded into memory.  So go to the <b>Sound Banks</b> tab and select the appropriate bank, right-click and set as the <b>Set as current bank</b>.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Set%20Bank.jpg"><img alt="Set Bank.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Set_Bank.jpg" width="1074" height="288" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Set%20Bank.jpg"><img alt="Set Bank.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/53/Set_Bank.jpg" width="1074" height="288" /></a></div></div>
 <p>Now in your <b>my_music.fdp</b>, go to the <b>Events</b> tab/<b>Hierarchy</b>. Go to the top folder, <b>_EndOfGameCredits</b>.  Double-click on the event <b>main</b> and <b>add sound</b> by right-clicking inside the big grey box on the right.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editor1.jpg"><img alt="Editor1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Editor1.jpg" width="1074" height="555" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editor1.jpg"><img alt="Editor1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c0/Editor1.jpg" width="1074" height="555" /></a></div></div>
 <p>Select a <b>New Wavetable...</b>, then browse to the sound you want to use for your <b>End Credits</b>.  I have chosen BG2_Main for my end credits.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editor2.jpg"><img alt="Editor2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Editor2.jpg" width="1077" height="342" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editor2.jpg"><img alt="Editor2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e8/Editor2.jpg" width="1077" height="342" /></a></div></div>
 <p>Do the same thing for each of the presets that we didnt add ourselves: _main, _precache, _main, _chargen, _credits in the top three event folders.  The main, combat and Death and stingers we will assign our level specific music.
 </p><p>Each time you assign a new sound to an event, a new <b>Sound Definition</b> will appear in that tab as a folder.  You can organize these also if you wish, but I have not seen a need.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20Definition.jpg"><img alt="New Definition.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/New_Definition.jpg" width="1077" height="369" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20Definition.jpg"><img alt="New Definition.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/96/New_Definition.jpg" width="1077" height="369" /></a></div></div>
 <h3><span class="mw-headline" id="Verify_your_work">Verify your work</span></h3>
 <p>You should have all your events assigned with wavs from your Music Source folder.  It will be tedious, but in the end you will be glad you took the time to setup everything in an organized manner.  I am going to switch gears and show a picture of the finished hierarchy for my module.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Redux.jpg"><img alt="Redux.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/99/Redux.jpg" width="1029" height="633" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Redux.jpg"><img alt="Redux.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/99/Redux.jpg" width="1029" height="633" /></a></div></div>
 <p>Remember, the folder setup you use in the <b>Event/Hierarchy</b> will be the folder setup in the toolset.  Although, once you know how to do this, its not that hard to re-do just about any part.  Time for the final steps.  <b>Save your project</b> and make a backup.
 </p>
 <h2><span class="mw-headline" id="Project_Merging">Project Merging</span></h2>
@@ -181,11 +181,11 @@ You will notice that what is left has very generic names; main, precache, charge
 <li> Look in the <b>Wave banks</b>, you will see your new banks.</li>
 <li> Change <b>Build Directory</b> again to blank.  Reset your <b>Audio Source Directory</b>.</li>
 <li> Save <b>music.fdp</b> to your <b>Build Directory</b></li></ul>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Post%20Merge.jpg"><img alt="Post Merge.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Post_Merge.jpg" width="1020" height="528" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Post%20Merge.jpg"><img alt="Post Merge.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Post_Merge.jpg" width="1020" height="528" /></a></div></div>
 <h2><span class="mw-headline" id="Re-assigning_Main_and_Chargen">Re-assigning Main and Chargen</span></h2>
 <p>Now we need to go back through the top 3 <b>Event Categories</b> and re-assign <b>main, credits, chargen, etc</b>.  Double-click on each event one at a time.  Starting with <b>_EndOfGameCredits / main</b>.  Right-click on the sound and choose: <b>Replace Sound</b>.  Now browse to the sound you chose before, it should already have a sound definition folder to choose.  Do this for each that were in YOUR FDP that you assigned an underscore to the name.  When finished, you can delete your underscored events.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Replace%20Sound.jpg"><img alt="Replace Sound.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/Replace_Sound.jpg" width="1068" height="414" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Replace%20Sound.jpg"><img alt="Replace Sound.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bb/Replace_Sound.jpg" width="1068" height="414" /></a></div></div>
 <p>This step isnt really necessary if you choose to leave the original names intact during your FDP building, but I am not sure how that will affect the regular game.  It will overwrite the DA sounds for the entire single player game, I believe, and for a module we don't want to do that. This is still unexplored at the moment.
 </p>
 <h2><span class="mw-headline" id="FDP_Cleanup">FDP Cleanup</span></h2>
@@ -196,10 +196,10 @@ You will notice that what is left has very generic names; main, precache, charge
 </p>
 <ul><li> Goto --&gt; <b>Wave banks</b> tab</li>
 <li> Right-click on the new bank(s) and select <b>Build</b>.  You can choose multiple banks by Ctrl + select.  You can also simply hit the <b>Build</b> button at the top of the screen in FMOD and deselect any banks you don't wish to build.  But I like to see just what I am making.</li></ul>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build1.jpg"><img alt="Build1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/af/Build1.jpg" width="1077" height="558" /></a></div></div><br /><div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build2.jpg"><img alt="Build2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/Build2.jpg" width="1065" height="435" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build1.jpg"><img alt="Build1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/af/Build1.jpg" width="1077" height="558" /></a></div></div><br /><div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build2.jpg"><img alt="Build2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/Build2.jpg" width="1065" height="435" /></a></div></div>
 <p>Select the bank to build, hit <b>build</b> and then follow the directions.  You may be asked to navigate to wav locations.  Just do whatever it says.  Double-check your <b>Build Directory</b> in the FDP.  This is what you should have where you built the files:
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build3.jpg"><img alt="Build3.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e0/Build3.jpg" width="552" height="474" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Build3.jpg"><img alt="Build3.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e0/Build3.jpg" width="552" height="474" /></a></div></div>
 <h2><span class="mw-headline" id="Placing_Files">Placing Files</span></h2>
 <p>Home stretch.  Now copy out the following files:
 </p>
@@ -212,7 +212,7 @@ You will notice that what is left has very generic names; main, precache, charge
 <h2><span class="mw-headline" id="Toolset_Access_and_Usage">Toolset Access and Usage</span></h2>
 <p>In the toolset, open your module and an area.  You can now assign sound events or music presets.
 </p>
-<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Presets.jpg"><img alt="Presets.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Presets.jpg" width="1074" height="564" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Presets.jpg"><img alt="Presets.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Presets.jpg" width="1074" height="564" /></a></div></div>
 <h2><span class="mw-headline" id="Final_Notes">Final Notes</span></h2>
 <p>You can always opt to skip changing music, and just use this method for area presets, cutscene sounds, stingers, whatever you need to add in the realm of sounds.
 </p><p>I hope this tutorial has been helpful.  Will try to add more detail in the future concerning sound definitions and events parameters and flags.

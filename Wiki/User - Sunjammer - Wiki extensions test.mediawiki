@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Wiki_Table_Test"><span class="tocnumber">1</span> <span class="toctext">Wiki Table Test</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Lightbox_2_Test"><span class="tocnumber">2</span> <span class="toctext">Lightbox 2 Test</span></a>
@@ -127,65 +127,65 @@
 </td></tr></table>
 <h2><span class="mw-headline" id="Lightbox_2_Test">Lightbox 2 Test</span></h2>
 <h3><span class="mw-headline" id="Images">Images</span></h3>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc000d.jpg" title="Dalish Camp"><img alt="Dalish Camp" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg 2x" /></a>
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc100d.jpg" title="Brecilian Forest: West Brecilian Forest"><img alt="Brecilian Forest: West Brecilian Forest" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg 2x" /></a> 
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc101d.jpg" title="Brecilian Forest: East Brecilian Forest"><img alt="Brecilian Forest: East Brecilian Forest" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg 2x" /></a>
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc200d.jpg" title="Dalish Elf Origins: Elven Ruins"><img alt="Dalish Elf Origins: Elven Ruins" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/200px-Brc200d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/300px-Brc200d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/400px-Brc200d.jpg 2x" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc000d.jpg" title="Dalish Camp"><img alt="Dalish Camp" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc100d.jpg" title="Brecilian Forest: West Brecilian Forest"><img alt="Brecilian Forest: West Brecilian Forest" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg 2x" /></a> 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc101d.jpg" title="Brecilian Forest: East Brecilian Forest"><img alt="Brecilian Forest: East Brecilian Forest" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc200d.jpg" title="Dalish Elf Origins: Elven Ruins"><img alt="Dalish Elf Origins: Elven Ruins" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/200px-Brc200d.jpg" width="200" height="114" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/300px-Brc200d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/400px-Brc200d.jpg 2x" /></a>
 </p><p><br />
 </p>
 <h3><span class="mw-headline" id="Gallery">Gallery</span></h3>
 <ul class="gallery mw-gallery-traditional" style="max-width: 972px;_width: 972px;">
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc000d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/72/Brc000d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc000d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/72/Brc000d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc000d</b><br />Dalish Camp
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc100d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/Brc100d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc100d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b7/Brc100d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc100d</b><br />Brecilian Forest: West Brecilian Forest
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc101d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Brc101d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc101d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9b/Brc101d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc101d</b><br />Brecilian Forest: East Brecilian Forest
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc200d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/200px-Brc200d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/300px-Brc200d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Brc200d.jpg/400px-Brc200d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc200d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/200px-Brc200d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/300px-Brc200d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Brc200d.jpg/400px-Brc200d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc200d</b><br />Dalish Elf Origins: Elven Ruins
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:16px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc201d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/60/Brc201d.jpg" width="200" height="113" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/60/Brc201d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/60/Brc201d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:16px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc201d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/60/Brc201d.jpg" width="200" height="113" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/60/Brc201d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/60/Brc201d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc201d</b><br />Cavern (Unused?)
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc202d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Brc202d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Brc202d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Brc202d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc202d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/Brc202d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/Brc202d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/Brc202d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc202d</b><br />The Brecilian Ruins: Lower Ruins
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc203d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Brc203d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Brc203d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Brc203d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc203d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e3/Brc203d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e3/Brc203d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e3/Brc203d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc203d</b><br />The Brecilian Ruins: Lair of the Werewolves
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc204d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Brc204d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Brc204d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Brc204d.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Brc204d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/Brc204d.jpg" width="200" height="114" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/Brc204d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/Brc204d.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p><b>brc204d</b><br />The Brecilian Ruins: Ruins Upper Levels
 </p>
@@ -203,7 +203,7 @@
 <td> &lt;mediaplayer&gt;<a rel="nofollow" class="external free" href="http://dragonagepodcast.com/sites/default/files/dapodcast_ep30_warloveandspecialsauce.mp3">http://dragonagepodcast.com/sites/default/files/dapodcast_ep30_warloveandspecialsauce.mp3</a>&lt;/mediaplayer&gt;
 </td></tr></table>
 <h2><span class="mw-headline" id="TutorialNavBar_Test">TutorialNavBar Test</span></h2>
-<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Item%20upgrades%20%28draft%29" title="Item_upgrades_(draft)"><img alt="Item_upgrades_(draft)" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer"><img alt="User:Sunjammer" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Plot%20flags%20%28draft%29" title="Plot_flags_(draft)"><img alt="Plot_flags_(draft)" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Item%20upgrades%20%28draft%29" title="Item_upgrades_(draft)"><img alt="Item_upgrades_(draft)" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer"><img alt="User:Sunjammer" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Plot%20flags%20%28draft%29" title="Plot_flags_(draft)"><img alt="Plot_flags_(draft)" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
 </div>
 <p><br />
 </p>

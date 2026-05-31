@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Basics"><span class="tocnumber">1</span> <span class="toctext">Basics</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Generated_string_IDs"><span class="tocnumber">2</span> <span class="toctext">Generated string IDs</span></a></li>
@@ -14,16 +14,16 @@
 </p><p>The string editor is a basic means of accessing this collection of strings.
 </p><p>Of course, strings associated with resources can often be edited in the object inspector, but viewing strings en masse is sometimes convenient, especially when engaged in global activities like trying to remove Ferelden lore from core descriptions. 
 </p><p>IMPORTANT - all objects must be checked in if you want to see the latest text. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor#Generated_string_IDs" title="String editor"> Generated string IDs</a> for more details.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20main%20screen.png"><img alt="String editor main screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/String_editor_main_screen.png" width="918" height="393" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20main%20screen.png"><img alt="String editor main screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7e/String_editor_main_screen.png" width="918" height="393" /></a>
 </p><p>At the top of the main screen is a set of options to help winnow down the displayed strings to just the set that you want to work with. First you will need to identify which string table you want to edit; this table is generated on a per-module basis, so select the table that's been generated for your module.
 </p><p>If you want to access a single string that you know the ID for, such as a line in a conversation, you can enter it into the "String ID" field to bring it up immediately. (To find the string ID for a line in a conversation, look in the lower left corner of that line's Dialogue tab in the conversation editor).
 </p><p>If you want to load the entire string table into the editor's string display, ensure that the filter button reads "Filter: Off" and check the "Do NOT use Filter" checkbox.
 </p><p>If you aren't sure where the line is, or if you want to look at a whole class of lines, you can filter the displayed list of strings on a wide variety of criteria. Click on the "Filter: Off" button and you'll be presented with a screen where you can add filters:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20filters.png"><img alt="String editor filters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/String_editor_filters.png" width="554" height="383" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20filters.png"><img alt="String editor filters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/String_editor_filters.png" width="554" height="383" /></a>
 </p><p>For a string to pass the filters all conditions have to evaluate true - they are "AND" conditions.
 </p><p>There seems to be a bug - both "Contains" and "Is Exactly" sometimes only return a match if you enter the entire string you're searching for. The workaround seems to be to do a successful "Is Exactly" search, after which "Contains" works as expected.
 </p><p>Once you've found the string you're interested in editing, double-click to open it:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20edit%20string.png"><img alt="String editor edit string.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/String_editor_edit_string.png" width="545" height="369" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20edit%20string.png"><img alt="String editor edit string.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c3/String_editor_edit_string.png" width="545" height="369" /></a>
 </p><p>When finished, use Tools &gt; Export &gt; Export String Table then Tools &gt; Export &gt; Export Talk Table so that the results are available in game.
 </p><p>There is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bug</a> in Export Talk Table.
 </p>

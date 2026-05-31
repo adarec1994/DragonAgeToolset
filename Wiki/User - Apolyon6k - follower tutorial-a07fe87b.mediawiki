@@ -1,4 +1,4 @@
-<div id="mw-page-base" class="noprint"></div>
+﻿<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 		<div id="content" class="mw-body" role="main">
 			<a id="top"></a>
@@ -145,7 +145,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									</ul>
 										<ul id="footer-icons" class="noprint">
 											<li id="footer-poweredbyico">
-															<a href="//www.mediawiki.org/"><img src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/resources/assets/poweredby_mediawiki_132x47.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
+															<a href="//www.mediawiki.org/"><img src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/resources/assets/poweredby_mediawiki_132x47.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
 													</li>
 									</ul>
 						<div style="clear:both"></div>

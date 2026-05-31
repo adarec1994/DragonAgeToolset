@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -31,10 +31,10 @@
 <h2><span class="mw-headline" id="Adding_music_to_cutscenes">Adding music to cutscenes</span></h2>
 <p>The way we have been doing the music changes is via placed sound objects.  These sound objects are generally created in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a>, and in FMOD you can say if the music will persist after the cutscene or end when the cutscene ends.
 </p><p>We are just using other sounds to switch music tracks. Designers can add music switch parameter to any sound in Fmod Designer, usually this is just VO line to change music track, for example:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20music%20switch.jpg"><img alt="FMOD music switch.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6d/FMOD_music_switch.jpg" width="628" height="283" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20music%20switch.jpg"><img alt="FMOD music switch.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6d/FMOD_music_switch.jpg" width="628" height="283" /></a>
 </p><p>If there are no other sounds, designers can create empty sound event and add #music parameter there and place this sound on cutscene timeline.
 Music track has to be defined in the same group as music in current area in “music.fdp” to work.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20music%20switch%202.jpg"><img alt="FMOD music switch 2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/FMOD_music_switch_2.jpg" width="628" height="401" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20music%20switch%202.jpg"><img alt="FMOD music switch 2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/36/FMOD_music_switch_2.jpg" width="628" height="401" /></a>
 </p>
 <pre>
  #music:name,1 – non looping, for stingers

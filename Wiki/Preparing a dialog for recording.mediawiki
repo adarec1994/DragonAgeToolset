@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Conversation topics
@@ -27,7 +27,7 @@
 <p>First of all, you need Microsoft SQL Server Management Studio Express to be installed: <a rel="nofollow" class="external free" href="http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&amp;displaylang=en</a>
 </p><p>Install and run it.  The first time it starts, it should find your Dragon Age database (BWDATOOLSET).  Just click OK.
 </p><p>Remember to start the tool with administrator privileges, if necessary. Otherwise you won't be granted permission to access the database.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ServerManagementTool.jpg"><img alt="ServerManagementTool.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/ServerManagementTool.jpg" width="800" height="269" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ServerManagementTool.jpg"><img alt="ServerManagementTool.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/ServerManagementTool.jpg" width="800" height="269" /></a>
 </p><p>Click on "New query" at the upper Left.  Enter the text below into the right pane.
 Find the String ID from any line of your conversation inside the toolset, and substitute it where the #### is:
 </p>

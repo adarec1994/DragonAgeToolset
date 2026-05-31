@@ -1,4 +1,4 @@
-<p>The purpose of the <strong class="selflink">TutorialRef</strong> template, to place a small box under each  segment of a tutorial, which adds up to 5 Links. This is meant to link  to pages that can extend a topic in the tutorial. The box shall not be  very prominent, but follow a noticeable pattern. 
+﻿<p>The purpose of the <strong class="selflink">TutorialRef</strong> template, to place a small box under each  segment of a tutorial, which adds up to 5 Links. This is meant to link  to pages that can extend a topic in the tutorial. The box shall not be  very prominent, but follow a noticeable pattern. 
 </p><p>Often tutorials cut topics, and the reader does not know where  to find more information about a topic. Similarly links may be scattered throughout the tutorial. This template allows additional links which extend the topic and allows links to be collated in neat box.
 </p>
 <h2><span class="mw-headline" id="Usage">Usage</span></h2>
@@ -9,7 +9,7 @@
 </p>
 <h2><span class="mw-headline" id="Example">Example</span></h2>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Excel_file_formatting" title="2DA">2DA#Excel file formatting</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature#Appearance" title="Creature">Creature#Appearance</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a></i></td>
 </tr></table>
 <p>The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text. The tutorial reference box should to the right of the main body text.

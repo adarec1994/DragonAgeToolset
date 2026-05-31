@@ -1,4 +1,4 @@
-<p>Maybe need separation between Art and Designer Resources. As well as cleanup the Design Page, which is cluttered with everything.
+﻿<p>Maybe need separation between Art and Designer Resources. As well as cleanup the Design Page, which is cluttered with everything.
 </p>
 <hr />
 <p>Would something like this be worth replacing the image in overview? Im not sure if i see it correctly. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 02:44, 26 January 2010 (UTC)
@@ -26,11 +26,11 @@
 </td>
 <td>
 </td>
-<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
 </td>
 <td>
 </td>
-<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
 </td>
 <td>
 </td></tr>
@@ -52,11 +52,11 @@
 <tr>
 <td>
 </td>
-<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
 </td>
 <td>
 </td>
-<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
 </td>
 <td>
 </td>

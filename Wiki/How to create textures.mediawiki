@@ -1,4 +1,4 @@
-<p>How to make a texture for an item
+﻿<p>How to make a texture for an item
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -52,7 +52,7 @@ You can also have 2048 by 1024 and so on.
 4096 
 </p><p><b>Saving formats - the basics</b>
 </p>
-<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Dxt5.png/200px-Dxt5.png" width="200" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/11/Dxt5.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/11/Dxt5.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png" title="Enlarge"></a></div>Dtx5 option</div></div></div>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/11/Dxt5.png/200px-Dxt5.png" width="200" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/11/Dxt5.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/11/Dxt5.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png" title="Enlarge"></a></div>Dtx5 option</div></div></div>
 <p>Use DTX5 compression for anything with an alpha- diffuses, normal maps, speculars. If something has an alpha, it may have transparent elements (cutouts around fur or feathers) or look transparent.
 </p><p>If something has no transparent elements, such as a diffuse with no fur or feathers, DXT1 can be used instead, which takes up less space. Technically speaking it has an alpha channel, but it's pure black and white. 
 </p><p>Use U8888 for tint maps, hair textures, tattoos. It is uncompressed and therefore very large. You can create it by selecting [none] under compression options.
@@ -99,7 +99,7 @@ Origins maps are set up to have the X axis in the alpha channel, and the Y axis 
 </p><p><br />
 To modify a standard purple normal map to Origins format:
 </p>
-<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png" width="200" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png" title="Enlarge"></a></div>How to decompose an image</div></div></div>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d0/Decm1.png" width="200" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d0/Decm1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d0/Decm1.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png" title="Enlarge"></a></div>How to decompose an image</div></div></div>
 <p>Decompose it.
 Identify which is the X axis and which is the Y
 Rename the X axis one Alpha. 
@@ -107,7 +107,7 @@ Invert the Y channel one, the RGB, so it looks as though it is inside out.
 </p><p>Colours&gt;Components&gt;Compose
 Compose colour model, RGBA
 </p>
-<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png" width="200" height="131" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png" title="Enlarge"></a></div>How to recompose an image</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4b/Decm4.png" width="200" height="131" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4b/Decm4.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4b/Decm4.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png" title="Enlarge"></a></div>How to recompose an image</div></div></div>
 <p><br />
 Put the x axis in the alpha slot
 Put the y axis in the RGB slots

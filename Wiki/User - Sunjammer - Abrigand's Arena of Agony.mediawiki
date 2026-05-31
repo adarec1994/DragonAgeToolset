@@ -1,4 +1,4 @@
-<p><b>Abrigand's Arena of Agony</b> is a collaborative Dragon Age Origins module which will extend the Single Player campaign and will provide a framework for a series of strongly themed Community Contests.
+﻿<p><b>Abrigand's Arena of Agony</b> is a collaborative Dragon Age Origins module which will extend the Single Player campaign and will provide a framework for a series of strongly themed Community Contests.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -83,7 +83,7 @@
 <li> Locke's Lock Boxes (guaranteed unpickable (by a below average rogue))</li></ul>
 <h2><span class="mw-headline" id="Areas">Areas</span></h2>
 <h3><span class="mw-headline" id="Hub:_Upper_Level">Hub: Upper Level</span></h3>
-<div class="thumb tright"><div class="thumbinner" style="width:268px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Aoa%20portal%20level%20sketch.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/Aoa_portal_level_sketch.png" width="266" height="238" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Aoa%20portal%20level%20sketch.png" title="Enlarge"></a></div>A really bad sketch</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:268px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Aoa%20portal%20level%20sketch.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/0f/Aoa_portal_level_sketch.png" width="266" height="238" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Aoa%20portal%20level%20sketch.png" title="Enlarge"></a></div>A really bad sketch</div></div></div>
 <ul><li> aoa_000ar_upper</li>
 <li> A large circular room which either contains various portals <i>or</i> has arches out to the fade where the portals are located (the latter is sketched)</li>
 <li> Competitors (the well-behaved ones at least) depart from and return to here</li>

@@ -1,4 +1,4 @@
-<p>Please view the video that accompanies these pictures here:
+﻿<p>Please view the video that accompanies these pictures here:
 </p>
 <pre><font size="5">
 </pre>
@@ -7,11 +7,11 @@
 <pre></font>
 </pre>
 <h2><span class="mw-headline" id="Toolset_Friendly_vs_Game_Friendly">Toolset Friendly vs Game Friendly</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ToolsetFilesGameFiles.jpg"><img alt="ToolsetFilesGameFiles.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg 2x" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ToolsetFilesGameFiles.jpg"><img alt="ToolsetFilesGameFiles.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/ToolsetFilesGameFiles.jpg 2x" /></a>
 </p>
 <h2><span class="mw-headline" id="Core_folder_vs_Module_folder">Core folder vs Module folder</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CoreAndModuleFolders.jpg"><img alt="CoreAndModuleFolders.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/CoreAndModuleFolders.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/CoreAndModuleFolders.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/CoreAndModuleFolders.jpg 2x" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CoreAndModuleFolders.jpg"><img alt="CoreAndModuleFolders.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/CoreAndModuleFolders.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/CoreAndModuleFolders.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bc/CoreAndModuleFolders.jpg 2x" /></a>
 </p>
 <h2><span class="mw-headline" id="Folder_Paths">Folder Paths</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FolderPaths.jpg"><img alt="FolderPaths.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/FolderPaths.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/FolderPaths.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/FolderPaths.jpg 2x" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FolderPaths.jpg"><img alt="FolderPaths.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/FolderPaths.jpg" width="1000" height="559" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/FolderPaths.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/FolderPaths.jpg 2x" /></a>
 </p>

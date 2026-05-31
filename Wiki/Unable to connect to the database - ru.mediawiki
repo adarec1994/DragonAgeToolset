@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Невозможно подключиться к базе данных</b>
 </td></tr></table> 
@@ -33,7 +33,7 @@
 </div>
 
 <h2><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">Вступление</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Unable%20to%20connect%20to%20database.png"><img alt="Unable to connect to database.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/Unable_to_connect_to_database.png" width="566" height="171" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Unable%20to%20connect%20to%20database.png"><img alt="Unable to connect to database.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/Unable_to_connect_to_database.png" width="566" height="171" /></a></div>
 <p>Если при запуске тулсета появляется сообщение об этой ошибке, это означает, что проблема возникла при попытке подключения к серверу базы данных SQL Server 2005. К сожалению, это довольно распространённая ошибка, но довольно непредсказуемая. 
 Когда тулсет запускается, он пытается подключиться к базе данных. Если база данных не отвечает, то тулсет просто возвращает эту ошибку, не имея средств для диагностики причин её возникновения. 
 </p><p>Проводя аналогию с автомобилем&#160;:) можно сказать, что эта ошибка как лампа "Service(Check) Engine" у вашего автомобиля (если конечно у вас не ВАЗ-классика). Когда эта лампа начинает мигать, это означает, что что-то работает неправильно, но что именно - вы не поймёте. Это весьма общее предупреждение. Причиной этого может быть что угодно, начиная плохими свечами зажигания и заканчивая сломанными датчиками.
@@ -174,7 +174,7 @@
 <h2><span class="mw-headline" id=".D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">Ручная установка</span></h2>
 <p>С помощью ручной установки SQL сервера и базы данных ошибка подключения практически всегда решается положительно. Если же проблема не решится, то вы, по крайней мере, будете знать, почему это произошло, тогда как установка одновременно с тулсетом вам этого не даст. Итак, если ошибка "Unable to connect to the database" уже напрягает вас, вы хотите, чтобы тулсет наконец-таки заработал, и не хотите проблем, то вот вам решение:
 </p>
-<ol><li> <b>Установите тулсет с отключенными опциями установки SQL сервера и базы данных</b>.<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20setup%20screen.png"><img alt="Toolset setup screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png" width="513" height="397" /></a></div>
+<ol><li> <b>Установите тулсет с отключенными опциями установки SQL сервера и базы данных</b>.<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20setup%20screen.png"><img alt="Toolset setup screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f1/Toolset_setup_screen.png" width="513" height="397" /></a></div>
 <dl><dd>Снимите флажки с опций установки образом, указанным на рисунке.  Это позволит вам установить только файлы тулсета без каких-либо действий по установке SQL сервера и базы данных. Конечно в этом случае при запуске тулсета вы получите ошибку "Unable to to connect to the database".</dd></dl></li>
 <li> <b>Вручную установите SQL Server и создайте базу данных</b>
 <dl><dd>Это не так тяжело как может показаться и как описано в этой <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">статье</a>. Если говорить проще, то если вы решитесь на этот шаг, вы берёте процесс установки SQL сервера и базы данных под свой контроль и делаете всё по своему усмотрению. Ручная установка позволит вам отслеживать основные ошибки и своевременно находить пути решения.</dd></dl></li></ol>

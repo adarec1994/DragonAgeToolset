@@ -1,4 +1,4 @@
-<p>Materials are a combination of textures that can be "painted" onto surfaces in the game.
+﻿<p>Materials are a combination of textures that can be "painted" onto surfaces in the game.
 </p><p>Each material can have the following texture layers:
 </p>
 <ul><li>diffuse - defines the color of the light that is reflected off of the surface</li>
@@ -27,13 +27,13 @@
 <h2><span class="mw-headline" id="Root">Root</span></h2>
 <p>At the root of the material project you can insert the following:
 </p>
-<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png"><img alt="IconMaterialObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/IconMaterialObject.png" width="20" height="20" /></a> Model</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New material library</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New tint library</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New palette library</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New Heraldry library</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> New Light</li>
-<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> The Sun</li></ul>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png"><img alt="IconMaterialObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/29/IconMaterialObject.png" width="20" height="20" /></a> Model</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New material library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New tint library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New palette library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New Heraldry library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> New Light</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> The Sun</li></ul>
 <p>Libraries themselves aren't directly editable, though. Once you've created a library, you'll need to right click the library and insert an actual object to be tinkered with. 
 </p><p>For example: right click Root &gt; insert Tint library &gt; right click Tint library &gt; insert new tint object. 
 </p><p>The 'tint object' itself can then be adjusted and manipulated. The same goes for all the above library types.

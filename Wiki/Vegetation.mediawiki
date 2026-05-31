@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Level editor topics
@@ -35,13 +35,13 @@
 
 <h2><span class="mw-headline" id="Vegetation_Placement">Vegetation Placement</span></h2>
 <p>To place trees on a level, you first need to add that tree type's tree controller:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20insert%20tree%20controller.png"><img alt="Level editor insert tree controller.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b4/Level_editor_insert_tree_controller.png" width="669" height="395" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20insert%20tree%20controller.png"><img alt="Level editor insert tree controller.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b4/Level_editor_insert_tree_controller.png" width="669" height="395" /></a>
 </p><p>This combines having to choose a type of vegetation model 
 </p><p>Since the names of these models can often be a bit inscrutable, a list of Vegetation Models with Screenshots mainly for this purpose is available.
 </p>
 <dl><dd><i>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation%20list" title="Vegetation list">Vegetation list</a></i></dd></dl>
 <h3><span class="mw-headline" id="Moving_and_placing_Vegetation">Moving and placing Vegetation</span></h3>
-<p>To start placing, click on the scatter object tool (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>) and choose one of the vegetation controllers that have been added and start placing.
+<p>To start placing, click on the scatter object tool (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/IconScatterObject.png" width="16" height="16" /></a>) and choose one of the vegetation controllers that have been added and start placing.
 </p>
 <h3><span class="mw-headline" id="Selecting_Vegetation">Selecting Vegetation</span></h3>
 <p>Any single object can be selected from the controller, or from the viewport ,and be relocated with the movement tools from the toolbar. When clicking on models in the layout there will often be other foreground objects that are in the way, preventing the immediate selection of the object you wanted. Simply keep clicking on the same spot to cycle through all of the objects that are underneath the mouse pointer.

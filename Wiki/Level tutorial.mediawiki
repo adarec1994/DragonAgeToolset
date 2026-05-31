@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Lighting"><span class="tocnumber">1</span> <span class="toctext">Lighting</span></a>
 <ul>
@@ -66,7 +66,7 @@
 </p>
 <ul><li> Static Light (Light Radius = 600)</li>
 <li> Light Probe</li></ul>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Light-basicsetup.jpg"><img alt="Light-basicsetup.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/15/Light-basicsetup.jpg" width="544" height="558" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Light-basicsetup.jpg"><img alt="Light-basicsetup.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/15/Light-basicsetup.jpg" width="544" height="558" /></a>
 </p><p>Thats it! Now continue on to the "Render Lighting" step.
 </p>
 <h3><span class="mw-headline" id="Render_Lighting">Render Lighting</span></h3>
@@ -86,11 +86,11 @@ Save the Lightmap (back to top)
 <li> Makes things pretty.</li></ul>
 <h2><span class="mw-headline" id="Making_a_Basic_Room">Making a Basic Room</span></h2>
 <h3><span class="mw-headline" id="Create_a_new_level">Create a new level</span></h3>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20resource.png"><img alt="New resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/200px-New_resource.png" width="200" height="314" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/300px-New_resource.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0a/New_resource.png 2x" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20resource.png"><img alt="New resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/0a/New_resource.png/200px-New_resource.png" width="200" height="314" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/0a/New_resource.png/300px-New_resource.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/0a/New_resource.png 2x" /></a>
 </p><p>Select "Room Level" and click next and finish.
 </p>
 <h3><span class="mw-headline" id="Setting_the_Grid">Setting the Grid</span></h3>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20snap%20options.png"><img alt="Level editor snap options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Level_editor_snap_options.png" width="285" height="217" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20snap%20options.png"><img alt="Level editor snap options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1f/Level_editor_snap_options.png" width="285" height="217" /></a>
 </p><p>Set the grid by clicking on the magnet button.
 </p>
 <ul><li> Set the grid size to 4</li>
@@ -98,19 +98,19 @@ Save the Lightmap (back to top)
 <p>NOTE: You should always try to use the highest grid setting possible.
 </p>
 <h3><span class="mw-headline" id="New_Room">New Room</span></h3>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20newroommenu.jpg"><img alt="Level editor newroommenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ca/Level_editor_newroommenu.jpg" width="529" height="394" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20newroommenu.jpg"><img alt="Level editor newroommenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/ca/Level_editor_newroommenu.jpg" width="529" height="394" /></a>
 </p><p>Create a new room by right clicking on "New area" under "Room World". Then left click on the new room to select it.
 </p><p>Each room contains a list of models or objects including some lights, but it also has properties.
 </p>
 <h3><span class="mw-headline" id="Spawning_Objects">Spawning Objects</span></h3>
 <p>Right click on the "New Room" and select "Insert" then "Spawn Model"
 </p><p>You should see a window like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnmodelmenu.jpg"><img alt="Level editor spawnmodelmenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Level_editor_spawnmodelmenu.jpg" width="766" height="463" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnmodelmenu.jpg"><img alt="Level editor spawnmodelmenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/Level_editor_spawnmodelmenu.jpg" width="766" height="463" /></a>
 </p><p>Click on any item in the window to select it then click on the small squareish icon in the top right hand corner of the window. It should look something like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnitemwinprev.jpg"><img alt="Level editor spawnitemwinprev.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Level_editor_spawnitemwinprev.jpg" width="700" height="362" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnitemwinprev.jpg"><img alt="Level editor spawnitemwinprev.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/75/Level_editor_spawnitemwinprev.jpg" width="700" height="362" /></a>
 </p><p>Go to the files labeled "dwi_" and select "dwi_livgroom_strt01". Press "Ok" and you should have this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20firstitem.jpg"><img alt="Level editor firstitem.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Level_editor_firstitem.jpg" width="422" height="337" /></a>
-</p><p>Now press the 3D axis button. It should look like this: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Icon3AxisMovement.png" width="15" height="15" /></a>. Your piece will have a 3D manipulator on it and look like this:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20firstitem.jpg"><img alt="Level editor firstitem.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d3/Level_editor_firstitem.jpg" width="422" height="337" /></a>
+</p><p>Now press the 3D axis button. It should look like this: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/73/Icon3AxisMovement.png" width="15" height="15" /></a>. Your piece will have a 3D manipulator on it and look like this:
 </p><p>NOTE ABOUT TILESETS: All tilesets will fit together differently. Be sure to use the same tileset for a single map.
 </p>
 <h2><span class="mw-headline" id="Interiors">Interiors</span></h2>
@@ -213,19 +213,19 @@ If create something with a right-click insert that model will appear at position
 <h3><span class="mw-headline" id="Creating_an_Exportable_Area">Creating an Exportable Area</span></h3>
 <p>In order to export an exterior, you must first designate what part of your Terrain world it takes up:
 </p>
-<ul><li> Create an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">exportable area</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> button in the toolbar)
+<ul><li> Create an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">exportable area</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> button in the toolbar)
 <ul><li> When you are ready to export a part of your Terrain World, press this button. It will bring up a window allowing you to set many options that will effect the export. For now, you are only concerned with Defining the Area. (TODO: Other options are not covered.)</li>
 <li> After defining an area, close the window and select the Exportable Area you just created from the list. With this selected, you may now access the standard export and preview buttons on the menu.</li></ul></li></ul>
 <h2><span class="mw-headline" id="Texturing">Texturing</span></h2>
 <h3><span class="mw-headline" id="Loading_up_the_Palette">Loading up the Palette</span></h3>
 <p>When you first create an exterior level you will have to add textures to the palette.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20PaletteTab.jpg"><img alt="Level editor PaletteTab.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fb/Level_editor_PaletteTab.jpg" width="242" height="101" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20PaletteTab.jpg"><img alt="Level editor PaletteTab.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/fb/Level_editor_PaletteTab.jpg" width="242" height="101" /></a>
 </p><p>Go to the object window and click on the diffuse section. Click on the little dots to open the window.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20SelectMaterial.jpg"><img alt="Level editor SelectMaterial.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8c/Level_editor_SelectMaterial.jpg" width="493" height="272" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20SelectMaterial.jpg"><img alt="Level editor SelectMaterial.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8c/Level_editor_SelectMaterial.jpg" width="493" height="272" /></a>
 </p><p>All textures for terrain you will need start with the "ter_" prefix. Or you can find your own textures by name. So if you wanted to add a rock texture from DAO look for <b>ter_rock_d</b>
 </p><p><b>Note that all textures, will have 4 suffixes. d, n, h, and s. These stand for diffuse, normal, height, and specular respectively.</b> So when you finish selecting the diffuse you like, go back and choose the corresponding textures for normal, height and specular to complete the texture.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ObjectIns-NewMat1.jpg"><img alt="Level editor ObjectIns-NewMat1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/18/Level_editor_ObjectIns-NewMat1.jpg" width="388" height="604" /></a>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20OpenTexture.jpg"><img alt="Level editor OpenTexture.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b0/Level_editor_OpenTexture.jpg" width="579" height="478" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ObjectIns-NewMat1.jpg"><img alt="Level editor ObjectIns-NewMat1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/18/Level_editor_ObjectIns-NewMat1.jpg" width="388" height="604" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20OpenTexture.jpg"><img alt="Level editor OpenTexture.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b0/Level_editor_OpenTexture.jpg" width="579" height="478" /></a>
 </p><p>Limit of 8 Textures
 </p>
 <h3><span class="mw-headline" id="Texture_Settings">Texture Settings</span></h3>
@@ -246,9 +246,9 @@ Chunk Boundaries
 </p>
 <h4><span class="mw-headline" id="Why_don.27t_my_textures_blend_well.3F">Why don't my textures blend well?</span></h4>
 <p>If you are starting a new map your textures will likely blend together in a very pixelated fashion. If this is the case, you have to play with "Chunk Size".
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkCheckers.jpg"><img alt="Level editor ChunkCheckers.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/600px-Level_editor_ChunkCheckers.jpg" width="600" height="282" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/900px-Level_editor_ChunkCheckers.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/13/Level_editor_ChunkCheckers.jpg 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkCheckers.jpg"><img alt="Level editor ChunkCheckers.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/600px-Level_editor_ChunkCheckers.jpg" width="600" height="282" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/900px-Level_editor_ChunkCheckers.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/13/Level_editor_ChunkCheckers.jpg 2x" /></a>
 </p><p>Look for the checkerboard "View/Hide Terrain Chunk Boundaries" button. Turn it on and your terrain will look like an orange checkerboard. Each of these squares is a "chunk". Now look for the other checkerboard button. (Chunk Management Tool)
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkSelected.jpg"><img alt="Level editor ChunkSelected.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/Level_editor_ChunkSelected.jpg" width="779" height="619" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkSelected.jpg"><img alt="Level editor ChunkSelected.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/Level_editor_ChunkSelected.jpg" width="779" height="619" /></a>
 </p><p>With this open;
 </p>
 <ul><li> Click on the "Select Chunk" button</li>

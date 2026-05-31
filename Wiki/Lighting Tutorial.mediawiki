@@ -1,4 +1,4 @@
-<p>Author: by mikemike37
+﻿<p>Author: by mikemike37
 </p><p>Please also check out the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lighting">Lighting</a> information.
 </p><p>This is only one method of lighting your level - I suggest some experimentation, but given the lengthy lightmapping process, I'm sure you can use these guidelines to help prevent timewasting.
 </p>
@@ -151,21 +151,21 @@
 </p>
 <h3><span class="mw-headline" id="I_have_dark_shapes.2Fsymbols_over_many_different_models_in_different_ways_.28corruption.29">I have dark shapes/symbols over many different models in different ways (corruption)</span></h3>
 <p>This is caused by a model trying to use a portion of your lightmap that it shouldn't be. This can be caused by having lightmaps in your override and lightmapping a second time. To remove your old lightmaps, delete the exported files in your core/override/toolsetexport. If this doesn't fix, try DeletingLightmapFiles. Finally, if you still get the issue, its a problem with the model you are using - it has a bad lightmap UV unwrap.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Staticbunching.jpg"><img alt="Staticbunching.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/Staticbunching.jpg" width="632" height="322" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Staticbunching.jpg"><img alt="Staticbunching.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/44/Staticbunching.jpg" width="632" height="322" class="thumbborder" /></a>
 </p>
 <h3><span class="mw-headline" id="I_have_some_kind_of_corruption_on_my_lightmap_throughout_an_entire_room_or_level">I have some kind of corruption on my lightmap throughout an entire room or level</span></h3>
 <p>Same problem as above, but without the distinctive "shapes". This is much more likely to be because you need to delete the exported lightmaps from your override.
 </p>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 427px"><div style="width: 427px">
-			<div class="thumb" style="width: 422px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Corruptedshadowmap1.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Corruptedshadowmap1.jpg" width="422" height="348" /></a></div></div>
+			<div class="thumb" style="width: 422px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Corruptedshadowmap1.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/65/Corruptedshadowmap1.jpg" width="422" height="348" /></a></div></div>
 			<div class="gallerytext">
 <p>Extremely patchy lighting throughout level
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 427px"><div style="width: 427px">
-			<div class="thumb" style="width: 422px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Corruptedshadowmap2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/Corruptedshadowmap2.jpg" width="422" height="359" /></a></div></div>
+			<div class="thumb" style="width: 422px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Corruptedshadowmap2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/Corruptedshadowmap2.jpg" width="422" height="359" /></a></div></div>
 			<div class="gallerytext">
 <p>Fixed
 </p>
@@ -177,7 +177,7 @@
 </p>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 555px"><div style="width: 555px">
-			<div class="thumb" style="width: 550px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Badmodellightmap.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/31/Badmodellightmap.jpg" width="550" height="452" /></a></div></div>
+			<div class="thumb" style="width: 550px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Badmodellightmap.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/31/Badmodellightmap.jpg" width="550" height="452" /></a></div></div>
 			<div class="gallerytext">
 <p>fca_floor02_0
 </p>
@@ -190,14 +190,14 @@
 </p>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 605px"><div style="width: 605px">
-			<div class="thumb" style="width: 600px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BStatic%20bunching11111.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c4/BStatic_bunching11111.jpg" width="600" height="341" /></a></div></div>
+			<div class="thumb" style="width: 600px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BStatic%20bunching11111.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c4/BStatic_bunching11111.jpg" width="600" height="341" /></a></div></div>
 			<div class="gallerytext">
 <p>Four static lights in scene
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 605px"><div style="width: 605px">
-			<div class="thumb" style="width: 600px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Static%20bunching%20fixed.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Static_bunching_fixed.jpg" width="600" height="348" /></a></div></div>
+			<div class="thumb" style="width: 600px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Static%20bunching%20fixed.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Static_bunching_fixed.jpg" width="600" height="348" /></a></div></div>
 			<div class="gallerytext">
 <p>Two static lights in scene
 </p>
@@ -209,7 +209,7 @@
 </p>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 503px"><div style="width: 503px">
-			<div class="thumb" style="width: 498px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Onebigartifact.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/Onebigartifact.jpg" width="498" height="332" /></a></div></div>
+			<div class="thumb" style="width: 498px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Onebigartifact.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/Onebigartifact.jpg" width="498" height="332" /></a></div></div>
 			<div class="gallerytext">
 <p>Bad shadow passing through prp_dni_torch03_0 (showing the result only - lights and problematic model are not shown)
 </p>
@@ -235,14 +235,14 @@
 <li> If you have photoshop I suggest creating an action, opening all erroneous dds files and automating the action on all opened files.</li></ol>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 261px"><div style="width: 261px">
-			<div class="thumb" style="width: 256px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmapdds.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/Noisylightmapdds.jpg" width="256" height="256" /></a></div></div>
+			<div class="thumb" style="width: 256px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmapdds.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/Noisylightmapdds.jpg" width="256" height="256" /></a></div></div>
 			<div class="gallerytext">
 <p>Lightmap before noise reduction
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 261px"><div style="width: 261px">
-			<div class="thumb" style="width: 256px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmapdds2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Noisylightmapdds2.jpg" width="256" height="256" /></a></div></div>
+			<div class="thumb" style="width: 256px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmapdds2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/ab/Noisylightmapdds2.jpg" width="256" height="256" /></a></div></div>
 			<div class="gallerytext">
 <p>Lightmap after noise reduction
 </p>
@@ -251,14 +251,14 @@
 </ul>
 <ul class="gallery mw-gallery-nolines">
 		<li class="gallerybox" style="width: 705px"><div style="width: 705px">
-			<div class="thumb" style="width: 700px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmap.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ad/Noisylightmap.jpg" width="700" height="385" /></a></div></div>
+			<div class="thumb" style="width: 700px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmap.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/ad/Noisylightmap.jpg" width="700" height="385" /></a></div></div>
 			<div class="gallerytext">
 <p>Before noise reduction
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 705px"><div style="width: 705px">
-			<div class="thumb" style="width: 700px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmap2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/85/Noisylightmap2.jpg" width="700" height="385" /></a></div></div>
+			<div class="thumb" style="width: 700px;"><div style="margin:0px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Noisylightmap2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/85/Noisylightmap2.jpg" width="700" height="385" /></a></div></div>
 			<div class="gallerytext">
 <p>After noise reduction
 </p>

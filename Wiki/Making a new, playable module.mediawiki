@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -27,7 +27,7 @@
 <p>More on these later, but most likely you will get to know the LightMapper very well.
 </p>
 <h2><span class="mw-headline" id="Creating_a_Module">Creating a Module</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Manage%20modules.jpg"><img alt="Manage modules.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c5/Manage_modules.jpg" width="200" height="200" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Manage%20modules.jpg"><img alt="Manage modules.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c5/Manage_modules.jpg" width="200" height="200" /></a></div>
 <p>The first thing you should do is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">create a module</a>. As you can see, you start with "Manage Modules," NOT with File-&gt; New. When you installed the Dragon Age Toolset, you were also asked to install a SQL database, and this is where many Dragon Age resources are stored. This means that if you want to point to actual folders for reference, custom level files and so forth, you should make a folder yourself and put those resources in for you to mangle, er, use. Remember that 1) it's difficult to delete your module, unless you want to trash your SQL database and 2) even though modules are all called "addins," any module can either stand alone or be used to enhance an existing module. They are simply addins of the core of the game, not of any particular campaign.
 </p><p><b>Takeaways</b>
 </p>
@@ -97,7 +97,7 @@ void main()
 <ul><li> Once more, enter Manage Modules and choose Properties.</li>
 <li> Set the Starting Area to the area you just created.</li>
 <li> Set the Starting Waypoint to the Waypoint that you just made.</li></ul>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20ss.jpg"><img alt="Level ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/01/Level_ss.jpg" width="500" height="312" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20ss.jpg"><img alt="Level ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/01/Level_ss.jpg" width="500" height="312" /></a>
 </p><p><b>Takeaways</b>
 </p>
 <ul><li> The Palettes, in the upper right, let you manage resources for a specific aspect of the game - scripts, NPCs, plots, etc.</li>
@@ -112,7 +112,7 @@ void main()
 <li> Choose "Export without Dependent Resources". In general, you want to export as few resources as possible.</li>
 <li> The Log Window at the bottom will show the status of your action, including where the Campaign resource gets exported and if there were errors - hopefully not.</li>
 <li> Now when you go to DA, you'll be able to go to Other Campaigns and select your custom campaign!</li></ul>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Campaign%20ss.jpg"><img alt="Campaign ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Campaign_ss.jpg" width="500" height="281" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Campaign%20ss.jpg"><img alt="Campaign ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/50/Campaign_ss.jpg" width="500" height="281" /></a>
 </p><p><b>Takeaways</b>
 </p>
 <ul><li> Use Tools &gt; Export to make actual files usable by the game for your module.</li>
