@@ -5,8 +5,8 @@
   "repo": "adarec1994/DragonAgeToolset",
   "branch_for_raw_assets": "main",
   "home": "Home.mediawiki",
-  "unresolved_page_count": 1724,
   "note": "Content is exported as .mediawiki files for GitHub wiki. Assets are stored in assets/ and referenced through raw.githubusercontent.com URLs on main.",
   "exact_duplicate_pages_removed": 270,
-  "unresolved_asset_count": 1
+  "generated_redlink_page_count": 1724,
+  "missing_asset_count": 1
 }

@@ -1,6 +1,6 @@
 # Dragon Age Toolset Wiki
 
-This repository contains a GitHub-wiki-compatible export of the Dragon Age Toolset Wiki.
+Backup of BioWare's Dragon Age Toolset resources and a GitHub-wiki-compatible export of the Dragon Age Toolset Wiki.
 
 GitHub stores wiki pages in a separate git repository named `DragonAgeToolset.wiki.git`. This repo is set up as the source package:
 
