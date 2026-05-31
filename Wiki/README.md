@@ -2,6 +2,8 @@
 
 This folder contains the GitHub-wiki-compatible export of the Dragon Age Toolset Wiki.
 
+For the full-width website version, the repository builds this folder into a GitHub Pages static site using `scripts/build_pages_site.py`.
+
 GitHub stores wiki pages in a separate git repository named `DragonAgeToolset.wiki.git`. This repo is set up as the source package:
 
 1. Commit and push this repository to `main` so the image links under `Wiki/assets/` are available through raw GitHub URLs.
