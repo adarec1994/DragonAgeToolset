@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#The_backgrounds_demo_module"><span class="tocnumber">2</span> <span class="toctext">The backgrounds demo module</span></a></li>
@@ -36,43 +36,43 @@
 <li> Traveller</li></ul>
 <h2><span class="mw-headline" id="Creating_the_background_strings">Creating the background strings</span></h2>
 <p>Before we start modifying the 2DA files we are going to create some strings. Open the string editor in the toolset and create the following strings in your ‘Backgrounds demo’ talk table:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20talk%20table.png"><img alt="Back tut talk table.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Back_tut_talk_table.png" width="784" height="280" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20talk%20table.png"><img alt="Back tut talk table.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/Back_tut_talk_table.png" width="784" height="280" /></a>
 </p><p>Your string IDs might be different to these so be sure to reference the right string ID in the instructions that follow. Simply replace these string Ids with your own.
 </p><p><b>IMPORTANT!</b> <i>There is currently a bug in the game that causes it to crash if a background description ID has a value greater than 109 912 680. There is a <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4695/">community fix</a> for this. Alternatively, you can go into your module’s properties and change the start ID for strings to be less than the critical value. After that the string editor will generate IDs in a range that won’t crash. Reset the start ID to its original value after you create the background descriptions (that way you have less to alter once Bioware fix this, and less risk of incompatibility with other mods).</i>
 </p><p>You may have noticed that we have given two different names and descriptions for the traveller background depending on the PC’s race. We will say more about that in the following section.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String editor</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Modifying_the_2DAs">Modifying the 2DAs</span></h2>
 <p>The next thing we need to do is to modify the worksheets in backgrounds.xls. Be sure to make a copy of the spreadsheet first so that you leave the original intact. See LINK for general information about editing 2DA files. The first worksheet is called ‘backgrounds’; modify it to look like the following:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20backgrounds.png"><img alt="Back tut backgrounds.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Back_tut_backgrounds.png" width="830" height="179" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20backgrounds.png"><img alt="Back tut backgrounds.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/Back_tut_backgrounds.png" width="830" height="179" /></a>
 </p><p>Note that since 2DAs combine together to form M2DAs, and we don’t want the existing backgrounds in our game, we have overwritten the last two slots as unused1 and unused2,  even though we won’t be using them. The name and desc  string refs on this tab will be overwritten by the race specific ones on the names tab so we can leave those blank (AFAIK these string refs are not used providing the ones on the names tab are provided - also the tooltip string ref seems not to be used anywhere – if you prefer you can set these to something just to be safe).
 </p><p>The three race columns determine which backgrounds can be selected by which race and the 3 class columns determine which background can be selected by which class. So, as you can see from the picture our Servant background is accessible to elf or human warriors and rogues, the Apprentice background can be selected by elf or human mages and the Traveller background by elf or dwarf warriors and rogues.
 </p><p>The last three tabs indicate a starting ability for each background by race. Note that by default these columns are not hooked up into the character generation script (instead they are hard coded in the script) and are not used, but we will correct that later on when we do the scripting. You have to be careful here because the columns relate to the race IDs, so 1=dwarf, 2=elf and 3=human, which is in a different order to the other race columns in this table. The number in the column is an ability ID as given in ABI_base.xls. For this demo we have just given the same skill for each race for a given background. Servants get combat tactics, Apprentices get persuade and Travellers get survival.
 </p><p>The next tab table to modify is background_names.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20names.png"><img alt="Back tut bg names.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/Back_tut_bg_names.png" width="413" height="180" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20names.png"><img alt="Back tut bg names.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a1/Back_tut_bg_names.png" width="413" height="180" /></a>
 </p><p>Make sure that the IDs here match the IDs in your string table. Note that for Apprentices and Servants we use the same strings regardless of race, but for the Traveller background we use different strings. This is to illustrate how you can divide a single background up into multiple names and descriptions. Internally they are both stored as the same background ID but during character generation a different name, description and icon can be shown to the player. In the single player game this was done with the Noble background by splitting it into human and dwarf Noble variations.
 </p><p>NOTE – you must be careful when splitting a single background into different parts for each race. You must make both the names and descriptions different! If you don’t make the descriptions different then the engine will not recognise them as different even if they have different names.
 </p><p>Now modify the background_desc table as follows
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20desc.png"><img alt="Back tut bg desc.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Back_tut_bg_desc.png" width="397" height="184" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20desc.png"><img alt="Back tut bg desc.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8a/Back_tut_bg_desc.png" width="397" height="184" /></a>
 </p><p>Again note the distinct descriptions for the Traveller background.
 </p><p>Now for the background_icons table. For this demo we will just use some of the existing icons but you may want to create your own icons to add here.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20icons.png"><img alt="Back tut bg icons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/Back_tut_bg_icons.png" width="757" height="178" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20icons.png"><img alt="Back tut bg icons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/Back_tut_bg_icons.png" width="757" height="178" /></a>
 </p><p>The background_defaults table must have an entry for each race, background and class combination that is allowed. The ID column must be calculated as follows:
 </p><p>(1000 * raceID)  + (100 * classID) + backgroundID
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tute%20bg%20defaults.png"><img alt="Back tute bg defaults.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/09/Back_tute_bg_defaults.png" width="891" height="331" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tute%20bg%20defaults.png"><img alt="Back tute bg defaults.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/09/Back_tute_bg_defaults.png" width="891" height="331" /></a>
 </p><p>The label column should give a description of the row (AFAIK this is not used anywhere).
 For this simple demo we will have each background combination spawn in the same place (the module default start location) but if you wanted different origins to spawn in different places then you can use the next two columns to specify this (AFAIK you have to write your own scripts to accomplish this though).
 </p><p>In the template column you can put the name of a creature resource that you want to use as a template for this race/background/class combination. In the picture you can see that we have just used some default templates that shipped with the toolset but you can easily create your own. Note that only the inventory is copied across to the PC so if you want to create your own templates you do not need to alter anything on the creature except for their inventory.
 </p><p>The name columns take string Ids. If you want to add your own names then you’ll have to create new strings in the string editor.
 </p><p>Finally we have the ability column. As with the skill columns in the backgrounds table these IDs correspond to entries in the ABI_base.xls file. It should be noted that race, class and background are all possible sources of starting abilities so before you decide what to put in this column you should familiarise yourself with what skills are already being added in different parts of character generation in order to ensure that you don’t duplicate an ability somewhere.
 </p><p>The final table is the chargen_preload table. The two columns here should exactly match the entries from the ID and Template columns of the previous table.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20chargen%20preload.png"><img alt="Back tut chargen preload.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1d/Back_tut_chargen_preload.png" width="305" height="241" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20chargen%20preload.png"><img alt="Back tut chargen preload.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1d/Back_tut_chargen_preload.png" width="305" height="241" /></a>
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Excel_file_formatting" title="2DA">2DA#Excel file formatting</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background.xls" title="Background.xls">Background.xls</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Compiling_and_fixing_the_GDAs">Compiling and fixing the GDAs</span></h2>
@@ -81,17 +81,17 @@ Never place anything in your <i>AddIns\module_name\core\override</i> directory o
 </p><p>There used to be a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ExcelProcessor%20doesn%27t%20handle%20row%20IDs%20above%208.3%20million%20correctly" title="Bug: ExcelProcessor doesn't handle row IDs above 8.3 million correctly">bug</a> that prevented large string IDs from compiling correctly. This is now fixed. For the record, the old workaround was to edit the GDA files in the toolset to correct the string IDs manually, but you should now see that the string IDs are correct.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">Compiling 2DAs</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Creating_the_backgrounds_plot">Creating the backgrounds plot</span></h2>
 <p>The background plot is used for keeping track of a PC’s background and can be used to affect conversation options.
 </p><p>The single player game uses a plot called gen00pt_backgrounds to keep track of the PC background. You can find it in the <i>\_Global\Generic</i> folder of the plots tab if you want to take a look. We will create a similar plot for our custom backgrounds. Create a new plot and call it <i>bdm_000pt_backgrounds</i> (My naming convention is to use 000 to indicate a resource that isn’t tied to any particular area – feel free to use your own convention but remember to update any references later in the tutorial). Add main plot flags as indicated in the picture below:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20plot.png"><img alt="Back tut bg plot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Back_tut_bg_plot.png" width="728" height="148" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20plot.png"><img alt="Back tut bg plot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a8/Back_tut_bg_plot.png" width="728" height="148" /></a>
 </p><p>You could also add some defined flags if you wanted. Defined flags can be used to return some combination of the main flags such as TRAVELLER or add some extra condition like FEMALE_APPRENTICE or ELVEN_APPRENTICE. Defined flags are beyond the scope of this tutorial however.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Creating_the_scripts">Creating the scripts</span></h2>
@@ -408,7 +408,7 @@ Never place anything in your <i>AddIns\module_name\core\override</i> directory o
 <p>The module script will get the area and waypoint assigned to your character from the GDA, then send it to the <i>bdm_Campaign_ChargenDone</i> function, which in turn will transport your character in the right location.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Testing_that_everything_works">Testing that everything works</span></h2>
@@ -418,7 +418,7 @@ Never place anything in your <i>AddIns\module_name\core\override</i> directory o
 </p><p><b>NOTE</b> <i>There seems to be no way to change the popup message that comes up at the beginning of character generation. Altering the Pre-chargen string ID in the loadhints GDA does not seem to do anything.</i>
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Optional_extras">Optional extras</span></h2>

@@ -1,4 +1,4 @@
-<p>Many of the properties of objects in the toolset make reference to 2DAs (two-dimensional arrays). These are read-only arrays containing various data used by scripting and the game engine. Each 2DA is simply an organized collection of strings and numbers. The specific function of each 2DA depends on how it is used by other systems in the game.
+﻿<p>Many of the properties of objects in the toolset make reference to 2DAs (two-dimensional arrays). These are read-only arrays containing various data used by scripting and the game engine. Each 2DA is simply an organized collection of strings and numbers. The specific function of each 2DA depends on how it is used by other systems in the game.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -234,7 +234,7 @@
 <li> Create your M2DA File that you want to refer to your talk-table strings. Never Mind using the real IDs at this stage.</li>
 <li> Use the "Exelprocessor" to create the GDA file.</li>
 <li> Open the GDA-File with the toolset or elys's GDA-Editor App (<a rel="nofollow" class="external free" href="http://social.bioware.com/project/755/">http://social.bioware.com/project/755/</a>)</li></ul>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Edit-GDA-Values.jpg"><img alt="Edit-GDA-Values.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Edit-GDA-Values.jpg" width="800" height="564" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Edit-GDA-Values.jpg"><img alt="Edit-GDA-Values.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5b/Edit-GDA-Values.jpg" width="800" height="564" /></a>
 </p>
 <ul><li> Change the StringIDs to the StringIDs in your talktable.</li></ul>
 <p><b>Remark:</b> 

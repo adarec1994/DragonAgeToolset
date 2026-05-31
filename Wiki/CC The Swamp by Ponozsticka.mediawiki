@@ -1,4 +1,4 @@
-<p>The first version of <b>The Swamp level</b> was added mainly because I wasn´t sure I could make it till the deadline. Version 0.1 has no lights, though it got light probe (makes water look nice&#160;:) ). It has village finished and all plants in level planted.
+﻿<p>The first version of <b>The Swamp level</b> was added mainly because I wasn´t sure I could make it till the deadline. Version 0.1 has no lights, though it got light probe (makes water look nice&#160;:) ). It has village finished and all plants in level planted.
 </p><p><br />
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
@@ -21,14 +21,14 @@
 <h2><span class="mw-headline" id="Screenshots">Screenshots</span></h2>
 <ul class="gallery mw-gallery-traditional" style="max-width: 972px;_width: 972px;">
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Plot2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Plot2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/51/Plot2.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/51/Plot2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/51/Plot2.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Fences
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
-			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Swamp13.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Swamp13.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/67/Swamp13.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/67/Swamp13.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/67/Swamp13.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>The Fog in the Village
 </p>

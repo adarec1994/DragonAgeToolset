@@ -1,4 +1,4 @@
-<p>建立新職業
+﻿<p>建立新職業
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -71,10 +71,10 @@
 </p>
 <h3><span class="mw-headline" id=".E9.96.8B.E5.95.9Fbackground.xls">開啟background.xls</span></h3>
 <p>在 backgrounds 頁面: 你必須要在Mage和Skill 1間插入一個區塊，如圖
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Background.jpg"><img alt="Background.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Background.jpg" width="910" height="164" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Background.jpg"><img alt="Background.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1f/Background.jpg" width="910" height="164" /></a>
 </p><p><br />
 在background_defaults頁面裡有多個區域要追加，請看圖
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20bgdef.jpg"><img alt="Class tut bgdef.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Class_tut_bgdef.jpg" width="1113" height="408" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20bgdef.jpg"><img alt="Class tut bgdef.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Class_tut_bgdef.jpg" width="1113" height="408" /></a>
 </p><p>ID是如何工作？ 1 = dwarf， 4 = shaman，5 = noble，設定是很簡單的。
 </p><p>在第12,15,17,19列你要照圖追加我推薦你直接複製然後修改。
 </p>
@@ -85,7 +85,7 @@
 <p>關於template string裡的deault_shaman.utc，是稍後要在toolset裡製作的基本模型。 
 至於Ability的int是遊戲裡的職業預設能力，以我為例是直接用沒有被使用過的數字。
 </p><p>在chargen_preload頁面，你必須加入一些區塊如圖：
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20chardef.jpg"><img alt="Class tut chardef.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/14/Class_tut_chardef.jpg" width="281" height="374" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20chardef.jpg"><img alt="Class tut chardef.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/14/Class_tut_chardef.jpg" width="281" height="374" /></a>
 </p><p>注意 ID的數值必須必須和background_defaults頁面的數值一樣，否則會使遊戲崩潰。 
 </p><p>儲存你的檔案
 </p>
@@ -133,7 +133,7 @@ abilitytype - 定義能力類型。 近戰，法術，技能等等---&gt; 是直
 </p>
 <h3><span class="mw-headline" id=".E9.96.8B.E5.95.9F_ALShaman_default.xls">開啟 ALShaman_default.xls</span></h3>
 <p>改成如圖
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20alshaman.jpg"><img alt="Class tut alshaman.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/58/Class_tut_alshaman.jpg" width="750" height="394" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20alshaman.jpg"><img alt="Class tut alshaman.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/58/Class_tut_alshaman.jpg" width="750" height="394" /></a>
 </p>
 <h2><span class="mw-headline" id=".E5.B0.872DA.E6.AA.94.E8.BD.89.E6.88.90GDA">將2DA檔轉成GDA</span></h2>
 <p>在C:下建立一個叫做2DA的資料夾，在裡面建立一個叫做override的資料夾。
@@ -166,9 +166,9 @@ abilitytype - 定義能力類型。 近戰，法術，技能等等---&gt; 是直
 是介於8,000,000 ～ 8,300,000
 如果不在此範圍，STRING就不會工作
 BIOWARE聲明這是SQL的問題 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20module1.jpg"><img alt="Class tut module1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Class_tut_module1.jpg" width="431" height="812" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20module1.jpg"><img alt="Class tut module1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/Class_tut_module1.jpg" width="431" height="812" /></a>
 </p><p>模組建立後，開啟模組選擇heirarchy並檢查single player是否有打勾。
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20hier.jpg"><img alt="Class tut hier.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5e/Class_tut_hier.jpg" width="295" height="365" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20hier.jpg"><img alt="Class tut hier.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5e/Class_tut_hier.jpg" width="295" height="365" /></a>
 </p><p>模組建立完畢，現在要將GDA放在適當override區域。
 </p><p>開啟我的文件/bioware/dragonage/addins/modulename
 </p><p>將GDA檔放在我的文件/bioware/dragonage/addins/modulename/core/override資料夾裡面
@@ -391,11 +391,11 @@ BIOWARE聲明這是SQL的問題
 </p><p>展開_Core_Creatures
 在展開_Do NOT TOUCH
 對default_mage按右鍵選擇duplicate 如圖製作: 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs1.jpg"><img alt="Class tut dfs1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/Class_tut_dfs1.jpg" width="377" height="215" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs1.jpg"><img alt="Class tut dfs1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/Class_tut_dfs1.jpg" width="377" height="215" /></a>
 </p><p>現在要編輯數值並給予基本武器和裝甲如圖：
 </p><p>Class: Shaman (from dropdown)
 Name: Default Male Shaman
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs2.jpg"><img alt="Class tut dfs2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/38/Class_tut_dfs2.jpg" width="750" height="570" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs2.jpg"><img alt="Class tut dfs2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/38/Class_tut_dfs2.jpg" width="750" height="570" /></a>
 </p><p>編輯完畢就在頂端按滑鼠右鍵選SAVE然後點選CHECK IN
 </p><p>然後在頂端點擊"EXPORT WITHOUT DEPENDENT RESOURCES"
 </p>

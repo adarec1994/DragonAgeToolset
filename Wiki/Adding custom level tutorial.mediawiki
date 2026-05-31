@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -48,59 +48,59 @@ creature: c_; npc creatures: cn_; children: kn_;
 <h2><span class="mw-headline" id="Textures">Textures</span></h2>
 <p>Size of the texture have to be&#160;:4 1024 -&gt; 2048 -&gt; 4096 -&gt; 8192. You will need 3 type of them and you probably need to connect textures because DAO engine works only with one material at one model. Put them all in one file and make the same posistion for each part of every type:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
 </p><p><br />
 1) Diffuse map. Has "_d" letter in the name. What your model will looks like. Create Alpha channel and make it white inless you have parts than need to have "holes" in it. Then it will looks like that:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Alpha1ex.png"><img alt="Alpha1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/70/Alpha1ex.png" width="266" height="243" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Alpha1ex.png"><img alt="Alpha1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/70/Alpha1ex.png" width="266" height="243" class="thumbborder" /></a>
 </p><p>2) Normal map. Has "_n" letter in the name. It is grey texture. Just save your Diffuse map with this settings:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/58/Normalsave.png" width="579" height="365" class="thumbborder" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/58/Normalsave.png" width="579" height="365" class="thumbborder" /></a>
 </p><p><br />
 How it has to looks like:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalex.png"><img alt="Normalex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dc/Normalex.png" width="525" height="533" class="thumbborder" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalex.png"><img alt="Normalex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/dc/Normalex.png" width="525" height="533" class="thumbborder" /></a>
 </p><p><br />
 3) Spectacular map. Has "_s" letter in the name and <b>necessary for the lightmapping</b>. Just take duffise texture the modify it image-&gt; adjustments -&gt;brightness brightness:45, contrast: 95 and copy its blue channel to alpa. The texture is ready.
 </p><p>Save you textures. Normal map settings is listed above. Diffuse and Spectacular settings:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Therestsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Therestsave.png" width="588" height="373" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Therestsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/59/Therestsave.png" width="588" height="373" class="thumbborder" /></a>
 </p><p><br />
 </p><p>4) All textures put into <b>Documents\BioWare\Dragon Age\AddIns\your Module_ID\module\override</b> in the same folders as models. Each model has to be organised and be in it's own folder. Make sure each model has all 3 types of textures and each type has it's letter. <b>Example:</b> prp_namemodel_<b>0d</b>, prp_namemodel_<b>0n</b>, prp_namemodel_<b>0s</b>.
 </p>
 <h2><span class="mw-headline" id="Materials">Materials</span></h2>
 <p>Select your model and on the panel above use <b>Rendering-&gt; Material editor-&gt; Compact material editor</b> Then click on <b>Get Material</b> and choose from the list <b>Dragon Age Material</b>.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
 </p><p>In <b>Material Type</b> choose <b>Prop Default</b>, in <b>Render Semantics</b> – <b>Default (Opaque Prop)\ Trasparent if you have any transparency</b>. Select your texture in <b>Texture Maps</b> - diffuse, normal and specular. Select your model and click on <b>Assign Material to Selection</b> (1) and use <b>Show Map in Viewport</b> (2). Now give your material proper name without <b>_0</b> in the end. Example: if your model texture is named is prp_orl_bed_0d name the material prp_orl_bed.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20material.png"><img alt="LOP material.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/LOP_material.png" width="353" height="562" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20material.png"><img alt="LOP material.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/dd/LOP_material.png" width="353" height="562" class="thumbborder" /></a>
 </p>
 <h2><span class="mw-headline" id="More_than_one_texture">More than one texture</span></h2>
 <p>Necessary step if you connect more then one texture for a model. But even if your model has only one texture it is better to make sure evertything is correct.
 </p><p>Select your model and then open <b>Modifiers-&gt; UV Coordinates- &gt; Unwrap UVW</b>
 </p><p>You will see something like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editingmaterials.png"><img alt="Editingmaterials.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Editingmaterials.png" width="525" height="521" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editingmaterials.png"><img alt="Editingmaterials.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/Editingmaterials.png" width="525" height="521" class="thumbborder" /></a>
 </p><p>Geen lines are coordinates of textures on the model. <b>Dragon age: Oginins engine  work with only one material and can "see" everything ONLY inside the bolder square form the picture.</b> WChoose as background texture if your model and now move all green lines so it will cover it like is has to be. You can move materials one by one by choosing them in All ID's. You can change scale of coordinates, rotate them and do all manipulations you see necessary to make your coordinates fit to texture inside the square just like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mated2.png"><img alt="Mated2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Mated2.png" width="1363" height="656" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mated2.png"><img alt="Mated2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/53/Mated2.png" width="1363" height="656" class="thumbborder" /></a>
 </p><p>Save and close Unwrap UVW.
 </p>
 <h2><span class="mw-headline" id="3d_Max">3d Max</span></h2>
 <p>After you finish working with the materials and the textures you can work with the model now. If your model looks rough change it by <b>Right click -&gt; convert to Editable Poly-&gt; Vertex-&gt; Select all (CTRL+ A)-&gt; Weld</b>. Before next step finish all fixes: <b>Unwrap UVW, material and textures.</b> If you move to next step without fixing you have to redo it from the beginning later.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20Convertintomesh.jpg"><img alt="LOP Convertintomesh.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/LOP_Convertintomesh.jpg" width="531" height="450" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20Convertintomesh.jpg"><img alt="LOP Convertintomesh.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d3/LOP_Convertintomesh.jpg" width="531" height="450" class="thumbborder" /></a>
 </p><p>1 - Right click on a model and select <b>"Convert into editable poly"</b>&gt; In <b>modifier list choose and add 2 Unwrap UVW</b> to your model. In the second one you have to change <b>map channel</b> to 2 - this is the channel needed for lighmapping.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20cuteditmaterials.jpg"><img alt="LOP cuteditmaterials.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/60/LOP_cuteditmaterials.jpg" width="182" height="711" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20cuteditmaterials.jpg"><img alt="LOP cuteditmaterials.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/60/LOP_cuteditmaterials.jpg" width="182" height="711" class="thumbborder" /></a>
 </p><p><br />
 2 - For the rest part you need to look for this video becaue I cannot describe how this part supposed to work but you have to follow my instructions while you working with the materials. <a rel="nofollow" class="external text" href="https://youtu.be/m8DFXmIGJZc">Dragon Age Modding: Creating Props using 3ds max</a>
 </p><p><br />
 3 - While you using <b>Runscript-&gt; manage models</b> -&gt; look for your models and make sure they have those settings. Change collision Walkable\ Non walkable if this object lies on the floor.
 Mesh:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20deletealll.jpg"><img alt="LOP deletealll.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/48/LOP_deletealll.jpg" width="550" height="178" class="thumbborder" /></a> 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20deletealll.jpg"><img alt="LOP deletealll.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/48/LOP_deletealll.jpg" width="550" height="178" class="thumbborder" /></a> 
 </p><p><br />
 Collision:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20deletepixel.jpg"><img alt="LOP deletepixel.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/64/LOP_deletepixel.jpg" width="831" height="737" class="thumbborder" /></a> 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20deletepixel.jpg"><img alt="LOP deletepixel.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/64/LOP_deletepixel.jpg" width="831" height="737" class="thumbborder" /></a> 
 </p><p><br />
 4 - Run script-&gt; export and name your files with <b>_0</b> in the end. <b>EXAMPLE:</b> prp_yourmodel_0. Since you use textures for the whole group you folders for each model has to be in one big folder for your group. Like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20materialgroup.jpg"><img alt="LOP materialgroup.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/LOP_materialgroup.jpg" width="121" height="280" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LOP%20materialgroup.jpg"><img alt="LOP materialgroup.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/LOP_materialgroup.jpg" width="121" height="280" class="thumbborder" /></a>
 </p><p>5 - After you port the model open MAO file with the Notepad and <b>JUST</b> after line <b>&lt;DefaultSemantic Name="Blend"&gt;&lt;/DefaultSemantic&gt;</b> add this line <b>&lt;Texture Name="mml_tLightmap" ResName="LM.dds" RequiresID="true"&gt;&lt;/Texture&gt;</b>. Now save the file.
 </p>
 <h2><span class="mw-headline" id="Models_for_scaling">Models for scaling</span></h2>

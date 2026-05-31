@@ -1,0 +1,33 @@
+﻿<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/VFX_Tut_p3.pdf"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/resources/assets/file-type-icons/fileicon-pdf.png" width="120" height="120" /></a></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/VFX_Tut_p3.pdf" title="VFX Tut p3.pdf">VFX_Tut_p3.pdf</a> &#8206;<span class="fileInfo">(file size: 788 KB, MIME type: <span class="mime-type">application/pdf</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>3rd and final part to the basic VFX tutorial
+</p>
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/VFX_Tut_p3.pdf">13:39, 7 September 2009</a></td><td> <span style="white-space: nowrap;">(788 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Jassper" class="new mw-userlink" title="User:Jassper (page does not exist)">Jassper</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Jassper" title="User talk:Jassper">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FJassper" title="Special:Contributions/Jassper">contribs</a>)</span></span></td><td dir="ltr">3rd and final part to the basic VFX tutorial</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 2 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial" title="VFX Tutorial">VFX Tutorial</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial%20-%20ru" title="VFX Tutorial/ru">VFX Tutorial/ru</a></li>
+</ul>
+</div>

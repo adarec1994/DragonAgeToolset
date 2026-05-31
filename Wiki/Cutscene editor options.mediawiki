@@ -1,4 +1,4 @@
-<p>The <strong class="selflink">Cutscene editor options</strong> are accessible from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Options%20menu" title="Options menu (page does not exist)">options</a> menu.
+﻿<p>The <strong class="selflink">Cutscene editor options</strong> are accessible from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Options%20menu" title="Options menu (page does not exist)">options</a> menu.
 </p>
 <table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
 <tr>
@@ -172,7 +172,7 @@
 <tr>
 <td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
 <td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Accurate Headtracking Scrubbing</td>
-<td>Can also be enabled/disabled with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="16" height="16" /></a> button in the cutscene toolbar. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking#Cutscene_editor_performance" title="Headtracking">Headtracking#Cutscene editor performance</a> for more detail.</td>
+<td>Can also be enabled/disabled with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="16" height="16" /></a> button in the cutscene toolbar. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking#Cutscene_editor_performance" title="Headtracking">Headtracking#Cutscene editor performance</a> for more detail.</td>
 </tr>
 <tr>
 <td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>

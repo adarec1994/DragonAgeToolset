@@ -1,4 +1,4 @@
-<p>Screenshots of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> editor and associated controls
+﻿<p>Screenshots of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> editor and associated controls
 </p>
 
 
@@ -10,7 +10,7 @@
 <p>The following 22 files are in this category, out of 22 total.
 </p><ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:62.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20animation.png"><img alt="Conversation animation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Conversation_animation.png" width="120" height="25" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Conversation_animation.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Conversation_animation.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:62.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20animation.png"><img alt="Conversation animation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8b/Conversation_animation.png" width="120" height="25" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8b/Conversation_animation.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8b/Conversation_animation.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20animation.png" title="File:Conversation animation.png">Conversation animation...</a><br />
 9 KB<br />
@@ -18,7 +18,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:59.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20cinematics.png"><img alt="Conversation cinematics.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Conversation_cinematics.png" width="120" height="31" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Conversation_cinematics.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Conversation_cinematics.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:59.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20cinematics.png"><img alt="Conversation cinematics.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Conversation_cinematics.png" width="120" height="31" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Conversation_cinematics.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Conversation_cinematics.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20cinematics.png" title="File:Conversation cinematics.png">Conversation cinematic...</a><br />
 17 KB<br />
@@ -26,7 +26,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20convert%20to%20cutscene.png"><img alt="Conversation convert to cutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png" width="65" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20convert%20to%20cutscene.png"><img alt="Conversation convert to cutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png" width="65" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20convert%20to%20cutscene.png" title="File:Conversation convert to cutscene.png">Conversation convert t...</a><br />
 16 KB<br />
@@ -34,7 +34,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20dialog.png"><img alt="Conversation dialog.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/74/Conversation_dialog.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/74/Conversation_dialog.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/74/Conversation_dialog.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20dialog.png"><img alt="Conversation dialog.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/74/Conversation_dialog.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/74/Conversation_dialog.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/74/Conversation_dialog.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20dialog.png" title="File:Conversation dialog.png">Conversation dialog.png</a><br />
 18 KB<br />
@@ -42,7 +42,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20edit%20FaceFX.png"><img alt="Conversation edit FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20edit%20FaceFX.png"><img alt="Conversation edit FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Conversation_edit_FaceFX.png" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20edit%20FaceFX.png" title="File:Conversation edit FaceFX.png">Conversation edit Face...</a><br />
 15 KB<br />
@@ -50,7 +50,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20FaceFX.png"><img alt="Conversation generate FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20FaceFX.png"><img alt="Conversation generate FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Conversation_generate_FaceFX.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20FaceFX.png" title="File:Conversation generate FaceFX.png">Conversation generate...</a><br />
 20 KB<br />
@@ -58,7 +58,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:30.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20VO.png"><img alt="Conversation generate VO.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png" width="120" height="89" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:30.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20VO.png"><img alt="Conversation generate VO.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3c/Conversation_generate_VO.png" width="120" height="89" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3c/Conversation_generate_VO.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3c/Conversation_generate_VO.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20VO.png" title="File:Conversation generate VO.png">Conversation generate...</a><br />
 20 KB<br />
@@ -66,7 +66,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:66px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="120" height="18" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:66px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="120" height="18" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png" title="File:Conversation plots and scripting action.png">Conversation plots and...</a><br />
 6 KB<br />
@@ -74,7 +74,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:66px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="120" height="18" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:66px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="120" height="18" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png" title="File:Conversation plots and scripting condition.png">Conversation plots and...</a><br />
 7 KB<br />
@@ -82,7 +82,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:69px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="120" height="12" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:69px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="120" height="12" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png" title="File:Conversation plots and scripting line settings.png">Conversation plots and...</a><br />
 4 KB<br />
@@ -90,7 +90,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/Conversation_plots_and_scripting.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/Conversation_plots_and_scripting.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png" title="File:Conversation plots and scripting.png">Conversation plots and...</a><br />
 22 KB<br />
@@ -98,7 +98,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:48px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20global%20settings.png"><img alt="Conversation root global settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Conversation_root_global_settings.png" width="120" height="54" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Conversation_root_global_settings.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Conversation_root_global_settings.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:48px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20global%20settings.png"><img alt="Conversation root global settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/ab/Conversation_root_global_settings.png" width="120" height="54" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/ab/Conversation_root_global_settings.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/ab/Conversation_root_global_settings.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20global%20settings.png" title="File:Conversation root global settings.png">Conversation root glob...</a><br />
 19 KB<br />
@@ -106,7 +106,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:48.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/120px-Conversation_root_plots_and_scripting.png" width="120" height="53" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/180px-Conversation_root_plots_and_scripting.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/240px-Conversation_root_plots_and_scripting.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:48.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/120px-Conversation_root_plots_and_scripting.png" width="120" height="53" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/180px-Conversation_root_plots_and_scripting.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/03/Conversation_root_plots_and_scripting.png/240px-Conversation_root_plots_and_scripting.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png" title="File:Conversation root plots and scripting.png">Conversation root plot...</a><br />
 15 KB<br />
@@ -114,7 +114,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:38.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar%20labeled.png"><img alt="Conversation toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Conversation_toolbar_labeled.png" width="120" height="73" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Conversation_toolbar_labeled.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Conversation_toolbar_labeled.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:38.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar%20labeled.png"><img alt="Conversation toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Conversation_toolbar_labeled.png" width="120" height="73" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Conversation_toolbar_labeled.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Conversation_toolbar_labeled.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar%20labeled.png" title="File:Conversation toolbar labeled.png">Conversation toolbar l...</a><br />
 85 KB<br />
@@ -122,7 +122,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:64.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Conversation_toolbar.png" width="120" height="21" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Conversation_toolbar.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Conversation_toolbar.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:64.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Conversation_toolbar.png" width="120" height="21" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Conversation_toolbar.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Conversation_toolbar.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png" title="File:Conversation toolbar.png">Conversation toolbar.png</a><br />
 17 KB<br />
@@ -130,7 +130,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:53px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%201.png"><img alt="Conversation tutorial 1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Conversation_tutorial_1.png" width="120" height="44" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Conversation_tutorial_1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Conversation_tutorial_1.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:53px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%201.png"><img alt="Conversation tutorial 1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5c/Conversation_tutorial_1.png" width="120" height="44" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5c/Conversation_tutorial_1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5c/Conversation_tutorial_1.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%201.png" title="File:Conversation tutorial 1.png">Conversation tutorial...</a><br />
 5 KB<br />
@@ -138,7 +138,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:56px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%202.png"><img alt="Conversation tutorial 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Conversation_tutorial_2.png" width="120" height="38" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Conversation_tutorial_2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Conversation_tutorial_2.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:56px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%202.png"><img alt="Conversation tutorial 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Conversation_tutorial_2.png" width="120" height="38" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Conversation_tutorial_2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Conversation_tutorial_2.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%202.png" title="File:Conversation tutorial 2.png">Conversation tutorial...</a><br />
 7 KB<br />
@@ -146,7 +146,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:32.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%204.png"><img alt="Conversation tutorial 4.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/120px-Conversation_tutorial_4.png" width="120" height="85" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/180px-Conversation_tutorial_4.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/240px-Conversation_tutorial_4.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:32.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%204.png"><img alt="Conversation tutorial 4.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/120px-Conversation_tutorial_4.png" width="120" height="85" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/180px-Conversation_tutorial_4.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/1/1a/Conversation_tutorial_4.png/240px-Conversation_tutorial_4.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%204.png" title="File:Conversation tutorial 4.png">Conversation tutorial...</a><br />
 28 KB<br />
@@ -154,7 +154,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:53.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%205.png"><img alt="Conversation tutorial 5.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Conversation_tutorial_5.png" width="120" height="43" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Conversation_tutorial_5.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Conversation_tutorial_5.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:53.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%205.png"><img alt="Conversation tutorial 5.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/22/Conversation_tutorial_5.png" width="120" height="43" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/22/Conversation_tutorial_5.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/22/Conversation_tutorial_5.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%205.png" title="File:Conversation tutorial 5.png">Conversation tutorial...</a><br />
 8 KB<br />
@@ -162,7 +162,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:36px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%206.png"><img alt="Conversation tutorial 6.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/Conversation_tutorial_6.png" width="120" height="78" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/Conversation_tutorial_6.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/Conversation_tutorial_6.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:36px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%206.png"><img alt="Conversation tutorial 6.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/Conversation_tutorial_6.png" width="120" height="78" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/Conversation_tutorial_6.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/Conversation_tutorial_6.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%206.png" title="File:Conversation tutorial 6.png">Conversation tutorial...</a><br />
 29 KB<br />
@@ -170,7 +170,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:49.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%207.png"><img alt="Conversation tutorial 7.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Conversation_tutorial_7.png" width="120" height="51" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Conversation_tutorial_7.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Conversation_tutorial_7.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:49.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%207.png"><img alt="Conversation tutorial 7.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/80/Conversation_tutorial_7.png" width="120" height="51" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/80/Conversation_tutorial_7.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/80/Conversation_tutorial_7.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%207.png" title="File:Conversation tutorial 7.png">Conversation tutorial...</a><br />
 23 KB<br />
@@ -178,7 +178,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20conversation.png"><img alt="Merchant conversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20conversation.png"><img alt="Merchant conversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/98/Merchant_conversation.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/98/Merchant_conversation.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/98/Merchant_conversation.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20conversation.png" title="File:Merchant conversation.png">Merchant conversation.png</a><br />
 46 KB<br />

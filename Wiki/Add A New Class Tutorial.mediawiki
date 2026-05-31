@@ -1,4 +1,4 @@
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+﻿<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Create_the_module"><span class="tocnumber">2</span> <span class="toctext">Create the module</span></a></li>
@@ -91,7 +91,7 @@
 <td> Default first name for female character (human)
 </td></tr></table>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String editor</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Editing_2das">Editing 2das</span></h2>
@@ -130,7 +130,7 @@ The important columns to change are:
 <li> <b>StartingAbility1</b>: ID of the ability assigned during chargen. We will keep this the same as Mage for now (4023).</li>
 <li> <b>CharGenLabel</b>: Shaman</li></ul>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="CLA base.xls">CLA base.xls</a></i></td>
 </tr></table>
 <h4><span class="mw-headline" id="Edit_M2DA_base_nc">Edit M2DA_base_nc</span></h4>
@@ -151,7 +151,7 @@ Add the following:
 <h4><span class="mw-headline" id="Edit_backgrounds_nc">Edit backgrounds_nc</span></h4>
 <p>In the New_Class.xls workbook, navigate to the backgrounds_nc worksheet.<br />
 Insert a new column after the Mage column and name it Shaman. Since we want to use this class for the Noble Origins, put a <b>1</b> against the Noble row. Refer the image below.
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Backgrounds.jpg"><img alt="Backgrounds.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/04/Backgrounds.jpg" width="815" height="137" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Backgrounds.jpg"><img alt="Backgrounds.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/04/Backgrounds.jpg" width="815" height="137" /></a>
 <br />The current design of the backgrounds tab makes it difficult to assign different classes to different races for the Mage and Noble origins. Independent modules can override this backgrounds worksheet completely though they would still have to work within the current GUI limitation of 6 backgrounds.
 <br /><br />
 </p>
@@ -169,7 +169,7 @@ and requires the Class ID to be in multiples of 100 to yield unique results.
 <ul><li> Dwarf Noble Shaman = (1000 * 1) + (100 * 4) + 5 = 1405</li>
 <li> Human Noble Shaman = (1000 * 3) + (100 * 4) + 5 = 3405</li></ul>
 <p>Change the DefaultNameMale and DefaultNameFemale stringID references to the strings created earlier. The result should look like the image below. We will create the default_shaman.utc and the Ability referenced by the ID 5000000 later in the tutorial.
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Background%20defaults%20nc.jpg"><img alt="Background defaults nc.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/06/Background_defaults_nc.jpg" width="1003" height="347" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Background%20defaults%20nc.jpg"><img alt="Background defaults nc.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/06/Background_defaults_nc.jpg" width="1003" height="347" /></a>
 <br /><br />
 </p>
 <h4><span class="mw-headline" id="Edit_chargen_preload_nc">Edit chargen_preload_nc</span></h4>
@@ -409,7 +409,7 @@ Execute the following command: <b>excelprocessor.exe New_Class.xls -outdir="&lt;
 </p><p>Now at the top and click "EXPORT WITHOUT DEPENDENT RESOURCES"
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Creating_the_UTC_template_file">Creating the UTC template file</span></h2>
@@ -417,17 +417,17 @@ Execute the following command: <b>excelprocessor.exe New_Class.xls -outdir="&lt;
 </p><p>Click on the "creature tab" (red head icon)
 </p><p>Right click on default_player ==&gt; duplicate
 Do like the following:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs1.jpg"><img alt="Class tut dfs1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/Class_tut_dfs1.jpg" width="377" height="215" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs1.jpg"><img alt="Class tut dfs1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/Class_tut_dfs1.jpg" width="377" height="215" /></a>
 </p><p>Now we need to edit the values and give them some armor and weapons, like so:
 </p><p>Class: Shaman (from dropdown)
 Name: Default Male Shaman
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs2.jpg"><img alt="Class tut dfs2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/38/Class_tut_dfs2.jpg" width="750" height="570" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Class%20tut%20dfs2.jpg"><img alt="Class tut dfs2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/38/Class_tut_dfs2.jpg" width="750" height="570" /></a>
 </p><p>Now, you need to make one for each race and origin that you wish for the class to be available to (this is how Bioware does it, if you look carefully at the various entries in the backgrounds.xls worksheets); name each one with the following abbreviations for race or origin: hm_noble, hm_mage, dw_comm, dw_noble, elf_city, elf_mage, or elf_dalish (gender is handled automatically by the game, based on race). Making different versions of the template allows each version to have different armor and weapons available to them, which helps them blend into the base game (if you are using it in a module that extends Single Player). Be sure to use the proper names in each location in the backgrounds.xls worksheets or the template will not be displayed when you select the background in the game.
 </p><p>Now at the top and click SAVE ==&gt; CHECK IN for each template.
 </p><p>Now at the top and click "EXPORT WITHOUT DEPENDENT RESOURCES" for each template.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources#Creating_new_resources" title="Designer Resources">Designer Resources#Creating new resources</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></td>
 </tr></table>
 <p><br />
@@ -440,7 +440,7 @@ Name: Default Male Shaman
 </p><p>"EXPORT TALK TABLE"
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id="Cleaning_up">Cleaning up</span></h2>

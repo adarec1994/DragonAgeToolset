@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
@@ -68,7 +68,7 @@
 <h2><span class="mw-headline" id="Via_the_engineevents_2DA">Via the engineevents 2DA</span></h2>
 <p>An alternative, and more advanced, way to override an event is to use the  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">engineevents 2da</a>. Overriding an event in this way does it "global" scale, catching and redirecting an event for all resources in the game.
 </p><p>Create an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">engineevents 2da</a> fragment (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">extending the game via m2da files</a> for further details) to override, for example,  the <code>EVENT_TYPE_INVENTORY_ADDED</code> event so that it will be handled by the custom <code>my_event_override</code> script.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.png"><img alt="Events.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Events.png" width="818" height="84" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.png"><img alt="Events.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e8/Events.png" width="818" height="84" /></a>
 </p><p><b>NOTE</b>: this is a substitution fragment (i.e. one that replaces an  original entry) rather than an extension fragment (i.e. one that adds a  new entry) and will cause compatibility issues with any other mod that also attempts to override the same event using this technique. 
 </p><p>The custom script can be constructed to do whatever is required, for example, displaying a message on screen every time the Player picks up (or steals) an item:
 </p>

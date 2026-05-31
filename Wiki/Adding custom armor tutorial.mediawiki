@@ -1,4 +1,4 @@
-<p>This is a tutorial to import meshes into DAO with Eshme’s 3ds max plugin.
+﻿<p>This is a tutorial to import meshes into DAO with Eshme’s 3ds max plugin.
 Some of the things here are not specific to DAO, such as weight painting in 3dsmax. There are many more resources to find than can be put into this tutorial, it is not exhaustive.  
 </p>
 <ul><li>3ds max (or free version - gmax). 3ds max version needs to be 2010-2012 or the import script will not work. GMax needs specific setup- check useful links and fextralife forums.</li>
@@ -113,7 +113,7 @@ Now either move the model into position with blender pose mode(if you exported a
 </p>
 <h2><span class="mw-headline" id="Textures">Textures</span></h2>
 <p>If your UV map had skin and needed combining, export the UV map as a guideline. You can now move things around and create your texture in any program.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
 </p><p>If you did not need to change the UV map the textures still need to be changed to meet the DA:O standard, with shading added, normal map converted and appropriate specular and tint maps created. Check various texture guides for more information.
 </p><p>Save them as .dds in GIMP, Photoshop or any other program that can make .dds files. 
 </p><p>You should have textures with distinct unique names as placeholders at least- a diffuse, a normal, a spec and a tint.
@@ -139,7 +139,7 @@ If you have done this correctly, there should be an option under Poly that conta
 1) Select your model. Right-click on an empty space-&gt;Convert To-&gt; Convert To Editable Mesh 
 2)  Select the mmh’s Skin and Edit Normals modifiers. Right Click, Cut
 3) Switch to polygon editing mode
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Polygon.png"><img alt="Polygon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/Polygon.png" width="172" height="88" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Polygon.png"><img alt="Polygon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/Polygon.png" width="172" height="88" class="thumbborder" /></a>
 </p><p>4) Press CTRL+A The entire original outfit should be in the red selection color. Next, you need to deselect a single polygon (done with the ALT key pressed). It doesn't matter which one it is, the main thing is that it should be visible and easy to get to.
 5)Click the Delete button. This will delete the entire model, except for the one polygon we left behind. 
 6)Now we need to attach the new mesh to this polygon. To do this, select the Attach button on the toolbar on the right and click on the suit with the mouse. A window will appear, select the Match Material to Material IDs option. Click OK. 
@@ -160,13 +160,13 @@ Go to timeline, select all the animation frames, right click Delete Selected Fra
 </p>
 <h2><span class="mw-headline" id="Assign_materials">Assign materials</span></h2>
 <p>On the top toolbar we find the material editor button (four multi-colored balls) Next, click Get Material and select Dragon Age Material from the list (if the plugin is installed correctly, it will be in the list)
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
 </p><p>In Material Type we specify what type of MAO semantic the item will need.
 For example
 1 - Model with skin and transparent bits (fur robe for example) - [Armor w / Skin Tint][Alpha Blending][No Emissive].
 2- Skinless Model in Render Semantics – [No Tint][Alpha Blending][No Emissive].
 </p><p>Expand the list of Texture Maps and assign the appropriate textures. Next, Assign Material to Selection (the item should be selected). If you really want to see the texture in the editor, then click Show Map in Viewport. It remains only to give our material a normal name. In the corresponding field, enter pf_rob_chaz_0. That's all.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
 </p><p>You can also select the LOD type. LOD2/3 don’t have normal maps and their maos are a little different in type. LOD MAOs also do not have transparency.
 </p><p>Expand the list of Texture Maps and assign the appropriate textures. Next, Assign Material to Selection (the item should be selected). If you want to see the texture in the editor, then click Show Map in Viewport. 
 </p><p>You can always do all of this in Notepad later and change the file paths of everything, so it’s fine if you don’t have the right textures yet. 
@@ -175,7 +175,7 @@ You do need to apply a placeholder Dragon Age Material so the mesh will export c
 </p>
 <h2><span class="mw-headline" id="Export">Export</span></h2>
 <p>To do this, run the DAOModelExport script. We will see a window like this:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export.png"><img alt="Export.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/47/Export.png" width="254" height="447" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export.png"><img alt="Export.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/47/Export.png" width="254" height="447" class="thumbborder" /></a>
 </p><p>Between Name and .MMH enter whatever your new item is named. 
 You should call it something that works with the gda you have already set up. 
 Between Name and .MSH, enter the same thing (if this was not done automatically). Check the Create MAO Material File option. That's it, now click Export. 

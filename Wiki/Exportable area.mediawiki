@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Level editor topics
@@ -35,7 +35,7 @@ There is no provision for creating multiple areas inside a room based level file
 </p>
 <h3><span class="mw-headline" id="Creating_an_Exportable_Area_.28Terrain.29">Creating an Exportable Area (Terrain)</span></h3>
 <p>It is possible to have multiple exportable areas in each outdoor level file.  These can be created and their properties edited much like any other object in the editor.  If you have an exportable area already, you can select it via the drop down menu shown below.  
-</p><p>If you want to create or remove an exportable area, use the plus/minus buttons (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png"><img alt="IconRemoveExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/IconRemoveExportableArea.png" width="12" height="4" /></a>).   New areas automatically get an invalid layout name called "&lt;name of exported…"  This needs to be changed to something with seven characters or less.  This is the prefix for all resources created specific to this layout.
+</p><p>If you want to create or remove an exportable area, use the plus/minus buttons (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png"><img alt="IconRemoveExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/95/IconRemoveExportableArea.png" width="12" height="4" /></a>).   New areas automatically get an invalid layout name called "&lt;name of exported…"  This needs to be changed to something with seven characters or less.  This is the prefix for all resources created specific to this layout.
 </p>
 <div style="float:right; background-color:#ee9999; border:2px #ff0000 solid; padding:4px; margin:4px; text-align:center; font-size:x-small;">
 <div style="float:right; background-color:#eeee99; border:2px #ffff00 solid; padding:4px; margin:4px;">

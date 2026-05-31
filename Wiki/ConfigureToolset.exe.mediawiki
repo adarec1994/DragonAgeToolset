@@ -1,4 +1,4 @@
-<p>The external configuration utility is used to configure the toolset's database connection and to tell the toolset where the game's executable is and which server and database to connect to. You shouldn't need to run the configuration utility during routine usage of the toolset, and if the defaults set up by your installer work you may never need to run it at all.
+﻿<p>The external configuration utility is used to configure the toolset's database connection and to tell the toolset where the game's executable is and which server and database to connect to. You shouldn't need to run the configuration utility during routine usage of the toolset, and if the defaults set up by your installer work you may never need to run it at all.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -42,21 +42,21 @@
 </p><p><br />
 </p>
 <h3><span class="mw-headline" id="Win32_Game_Build">Win32 Game Build</span></h3>
-<p>This field points to the directory where Dragon Age is installed.  Either type the path into this field, or click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) next to it to browse to the directory.  Set the value of this field to the location of the installed game, typically, it should be something like: <code>C:\Program Files\Dragon Age</code>
+<p>This field points to the directory where Dragon Age is installed.  Either type the path into this field, or click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) next to it to browse to the directory.  Set the value of this field to the location of the installed game, typically, it should be something like: <code>C:\Program Files\Dragon Age</code>
 </p>
 <h3><span class="mw-headline" id="Alternate_Game_Build">Alternate Game Build</span></h3>
 <p>Community users will not generally have need to do anything with this field. As a general rule, leave it unchecked and blank.
 </p><p>The toolset can keep an alternate location in sync with your current game build override. This location can be another directory on the same machine, a different machine or a network location. To enable this function, check the "Enable alternate game build" checkbox. With that option checked, enter or browse for a location that you wish to use as your alternate game build. Whenever you do an export from the toolset, once the export is finished, it will then synchronize all the export files to the path specified.
 </p>
 <h2><span class="mw-headline" id="Databases">Databases</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Databases%20window.png"><img alt="Databases window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Databases_window.png" width="451" height="360" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Databases%20window.png"><img alt="Databases window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Databases_window.png" width="451" height="360" /></a>
 </p>
 <h3><span class="mw-headline" id="Default_Database_Settings">Default Database Settings</span></h3>
 <p>If you leave the "Use the default database" checkbox checked, the toolset will try to connect to the standard location.  If your toolset is currently able to connect to the database, and you are not trying to connect it to another database, just leave this checkbox checked.
 </p>
 <h3><span class="mw-headline" id="Custom_Database_Settings">Custom Database Settings</span></h3>
-<p>For advanced configuration, uncheck the "Use the default database" checkbox and then click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) to open the data link properties window.  The Data Link Properties window open.  This window can be used to connect to different Servers or instances and to different databases on a selected server.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Data%20Link%20Properties%20Window.png"><img alt="Data Link Properties Window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/Data_Link_Properties_Window.png" width="377" height="471" /></a>
+<p>For advanced configuration, uncheck the "Use the default database" checkbox and then click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) to open the data link properties window.  The Data Link Properties window open.  This window can be used to connect to different Servers or instances and to different databases on a selected server.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Data%20Link%20Properties%20Window.png"><img alt="Data Link Properties Window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/57/Data_Link_Properties_Window.png" width="377" height="471" /></a>
 </p><p>You should only need to make changes on the "Connection" tab, <i>only make changes on the other tabs if you know what you are doing</i>.
 </p><p>1. Select or enter a server name:
 </p>

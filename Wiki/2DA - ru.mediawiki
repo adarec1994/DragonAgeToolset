@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>2DAs</b>
 </td></tr></table> 
@@ -245,7 +245,7 @@
 <li> Create your M2DA File that you want to refer to your talk-table strings. Never Mind using the real IDs at this stage.</li>
 <li> Use the "Exelprocessor" to create the GDA file.</li>
 <li> Open the GDA-File with the toolset or elys's GDA-Editor App (<a rel="nofollow" class="external free" href="http://social.bioware.com/project/755/">http://social.bioware.com/project/755/</a>)</li></ul>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Edit-GDA-Values.jpg"><img alt="Edit-GDA-Values.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Edit-GDA-Values.jpg" width="800" height="564" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Edit-GDA-Values.jpg"><img alt="Edit-GDA-Values.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5b/Edit-GDA-Values.jpg" width="800" height="564" /></a>
 </p>
 <ul><li> Change the StringIDs to the StringIDs in your talktable.</li></ul>
 <p><b>Remark:</b> 

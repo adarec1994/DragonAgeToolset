@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Проблемы с чекаутом, в случае, если имя компьютера содержит не английские буквы</b>
 </td></tr></table> 
@@ -14,7 +14,7 @@
 <table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
 
 <tr>
-<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
 </td>
 <td> This issue has been recorded in BioWare's internal tracking system.<br />
 <p>Reference number: 209942  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>

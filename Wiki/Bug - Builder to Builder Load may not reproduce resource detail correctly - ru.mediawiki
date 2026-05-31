@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Некорректная загрузка ресурсов при загрузке архива разработчика</b>
 </td></tr></table> 
@@ -27,7 +27,7 @@
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:47.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png" width="120" height="55" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:47.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png" width="120" height="55" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Окно загрузчика.
 </p>

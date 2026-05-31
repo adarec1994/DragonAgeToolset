@@ -1,14 +1,14 @@
-<p>!!Note: This is just the initial start of documentation. I don't currently have a system set up to test this.!!
+﻿<p>!!Note: This is just the initial start of documentation. I don't currently have a system set up to test this.!!
 </p><p>One of the major benefits of having designer resources stored in a database is that it allows multiple developers to more easily work on the same resources collaboratively. This is how the main Dragon Age single player campaign was developed internally.
 </p>
 <h2><span class="mw-headline" id="Setting_up_a_shared_database_server">Setting up a shared database server</span></h2>
 <p>You'll need to use one MS SQL Express database as the central repository and configure the contributing builders' toolsets to connect to it remotely over an internet connection. First you'll need to alter the configuration of the toolset's database to allow external connections:
 </p><p>Open the SQL Server Configuration Manager, which should be available from an entry in your Start menu. For the toolset database, you'll need to enable Named Pipes and TCP/IP to allow the database to be accessed from the outside world.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Enable%20named%20pipes%20and%20TCPIP.png"><img alt="Enable named pipes and TCPIP.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/74/Enable_named_pipes_and_TCPIP.png" width="729" height="310" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Enable%20named%20pipes%20and%20TCPIP.png"><img alt="Enable named pipes and TCPIP.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/74/Enable_named_pipes_and_TCPIP.png" width="729" height="310" /></a>
 </p><p>Once you've changed these settings you'll need to restart the database service to cause them to take effect. You could do this by restarting your computer, or you could go to the service manager in the Windows control panel to restart just the toolset's database service:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20restart%20the%20service.png"><img alt="How to restart the service.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/How_to_restart_the_service.png" width="1101" height="409" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20restart%20the%20service.png"><img alt="How to restart the service.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/How_to_restart_the_service.png" width="1101" height="409" /></a>
 </p><p>You'll also need to set up an account name and password for the server to allow others to connect securely:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Setting%20account%20info.png"><img alt="Setting account info.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3a/Setting_account_info.png" width="797" height="628" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Setting%20account%20info.png"><img alt="Setting account info.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3a/Setting_account_info.png" width="797" height="628" /></a>
 </p>
 <h2><span class="mw-headline" id="Connecting_the_toolset_to_a_remote_database">Connecting the toolset to a remote database</span></h2>
 <p>Run the "Configure Toolset" application to set which database the toolset interacts with to access resources. The database server is selected on the second tab.

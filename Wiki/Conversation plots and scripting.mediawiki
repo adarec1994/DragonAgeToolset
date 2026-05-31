@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Conversation topics
@@ -16,7 +16,7 @@
 <li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
 </td></tr></table>
 <p>The plots and scripting tab under the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> editor has many powerful features:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
 </p><p>To make a line dependent on the condition of the world at large, and to allow a line to have an effect on the world at large, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">plots</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">scripts</a> are employed.
 </p><p>Since the effect of a script is seldom obvious at a glance, a "scripting comments" text field is available for keeping notes for your reference.
 </p>
@@ -41,10 +41,10 @@
 </div>
 
 <h2><span class="mw-headline" id="Conditional_display_of_a_line">Conditional display of a line</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
 </p>
 <h3><span class="mw-headline" id="Using_plots">Using plots</span></h3>
-<p>The "condition" section of the plots and scripting tab is used to determine whether this line will be run at all. To make the line depend on the status of a particular plot, select the plot in question from the plot dropdown list (or if it's not already in the dropdown list click on the ellipses button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to select from all available plots). Then pick one of the flags used within that plot, and set whether the condition needs to be true or false for the line to be displayed.
+<p>The "condition" section of the plots and scripting tab is used to determine whether this line will be run at all. To make the line depend on the status of a particular plot, select the plot in question from the plot dropdown list (or if it's not already in the dropdown list click on the ellipses button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to select from all available plots). Then pick one of the flags used within that plot, and set whether the condition needs to be true or false for the line to be displayed.
 </p><p>A common example of this sort of conditional conversation would be a quest giver, who has different responses to give the player before and after the quest in question has been accepted. Another example might be a character whose attitude toward the player changes when the player has performed a particular task, for good or for ill. Or if the player has learned some important new piece of information, he may now be able to ask a question that he wouldn't otherwise have known to ask.
 </p>
 <h3><span class="mw-headline" id="Using_scripts">Using scripts</span></h3>
@@ -102,7 +102,7 @@ int StartingConditional()
 <li> GEN_RAND_LINES_LEFT_02: 33.33%</li>
 <li> GEN_RAND_LINES_LEFT_01: 50.00%</li></ul>
 <h2><span class="mw-headline" id="Actions_triggered_by_a_line">Actions triggered by a line</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
 </p><p>A line can also be set to modify a plot flag when it is reached, or to run a script whose purpose is to modify the state of the world in some way. 
 </p><p>Setting and clearing plot flags is very similar to how plots are handled in the condition section, except instead of the condition "is true/false" for a plot flag you select whether the flag is to be set or cleared when this line is reached.
 </p><p>Scripted actions should work as usual, and trigger as follows:
@@ -133,7 +133,7 @@ int StartingConditional()
 <ul><li>GEN_PC_HAS_HEALING</li>
 <li>GEN_PC_IN_COMBAT - See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Conversation%20plots%20and%20scripting" title="Talk:Conversation plots and scripting">Talk:Conversation_plots_and_scripting</a> for the moment.</li></ul>
 <h2><span class="mw-headline" id="Lines_That_Only_Show_Up_Once">Lines That Only Show Up Once</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
 </p><p>At the bottom of this window is the "line settings" section. Visibility determines whether the line is seen only once in a game or once in a conversation.
 </p><p>Once-in-a-conversation lines are useful when a conversation loops back on itself, for example if the conversation is being used to make a clarification hub that provides information to a player and you don't want the player to keep being presented with the option to ask questions that he's already just asked moments ago.
 </p><p>Once-in-a-game lines are useful for presenting information that it wouldn't make sense for a character to repeat a second time if a new conversation is started again with him later, but for which using plot-based conditionals would be unweildy.
@@ -141,7 +141,7 @@ int StartingConditional()
 </p>
 <h2><span class="mw-headline" id="Root_node_plots_and_scripting">Root node plots and scripting</span></h2>
 <p>A "Plots and Scripting" tab is also available in the root node of the conversation:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
 </p><p>This is somewhat simpler than the plots and scripting tabs for child nodes, but functions in a very similar manner. It has no "condition" section, just a section called "Conversation End" that is analogous to an "action" section above. The difference is that this action section will be triggered whenever the conversation ends, by whatever path. This is helpful for preventing errors and saving time when crafting a conversation that is always supposed to have the same effect on the world when it's over but that has many different conversation end nodes scattered throughout it.
 </p>
 <h2><span class="mw-headline" id="Comments_and_complex_logic">Comments and complex logic</span></h2>

@@ -1,9 +1,9 @@
-<div lang="en" dir="ltr"><div id="mw-category-media">
+﻿<div lang="en" dir="ltr"><div id="mw-category-media">
 <h2>Media in category "Screenshots showing bugs"</h2>
 <p>The following 3 files are in this category, out of 3 total.
 </p><ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:37.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Chantry2.JPG"><img alt="Chantry2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Chantry2.JPG" width="120" height="75" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Chantry2.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Chantry2.JPG 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:37.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Chantry2.JPG"><img alt="Chantry2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Chantry2.JPG" width="120" height="75" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Chantry2.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c9/Chantry2.JPG 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Chantry2.JPG" title="File:Chantry2.JPG">Chantry2.JPG</a><br />
 107 KB<br />
@@ -11,7 +11,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:37.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IngameNoWater.png"><img alt="IngameNoWater.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/IngameNoWater.png" width="120" height="75" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/IngameNoWater.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/IngameNoWater.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:37.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IngameNoWater.png"><img alt="IngameNoWater.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/57/IngameNoWater.png" width="120" height="75" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/57/IngameNoWater.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/57/IngameNoWater.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IngameNoWater.png" title="File:IngameNoWater.png">IngameNoWater.png</a><br />
 447 KB<br />
@@ -19,7 +19,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:46px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LightmapCrack.png"><img alt="LightmapCrack.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/27/LightmapCrack.png" width="120" height="58" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/27/LightmapCrack.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/27/LightmapCrack.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:46px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LightmapCrack.png"><img alt="LightmapCrack.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/27/LightmapCrack.png" width="120" height="58" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/27/LightmapCrack.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/27/LightmapCrack.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20LightmapCrack.png" title="File:LightmapCrack.png">LightmapCrack.png</a><br />
 260 KB<br />

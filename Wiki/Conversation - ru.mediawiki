@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Диалог</b>
 </td></tr></table> 
@@ -20,42 +20,42 @@
 <table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
 
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
 </td>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
 </td></tr></table>
 </th></tr>
 
@@ -75,7 +75,7 @@
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
 </td></tr>
 <tr>
@@ -102,67 +102,67 @@
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
 <td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
 </td></tr>
 <tr>
@@ -250,7 +250,7 @@
 <p>Диалог обычно прикрепляется к <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20-%20ru" title="Creature/ru (page does not exist)">существу</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">(en)</a>, который обозначается в диалоге тэгом "OWNER" (собственник). 
 Иногда диалоги прикрепляются к <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20-%20ru" title="Placeable/ru (page does not exist)">размещаемым объектам</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">(en)</a> или просто используют как контейнер для реплик, используемых при создании разных роликов.
 </p><p>Основным окном редактора диалогов является древообразная структура, содержащая реплики и линии действия.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%202.png"><img alt="Conversation tutorial 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/Conversation_tutorial_2.png" width="636" height="199" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20tutorial%202.png"><img alt="Conversation tutorial 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/Conversation_tutorial_2.png" width="636" height="199" /></a>
 </p>
 <ul><li> красные реплики - реплики НПС, учавствующих в диалоге;</li>
 <li> синие реплики - реплики Игрока;</li>
@@ -271,7 +271,7 @@
 </p><p>На первой вкладке основной панели содержится текстовое поле, в котором для удобства использования можно указать краткое изложение диалога, его цели.
 </p>
 <h2><span class="mw-headline" id=".D0.94.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3">Диалог</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20dialog.png"><img alt="Conversation dialog.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/74/Conversation_dialog.png" width="688" height="268" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20dialog.png"><img alt="Conversation dialog.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/74/Conversation_dialog.png" width="688" height="268" /></a>
 </p><p>Эта вкладка содержит текст, отображаемый в игре когда действует текущая реплика.
 </p><p>В левом нижнем углу указан идентификатор строки (String ID) для этой реплики, который может использоваться для создания озвучки. <b>Не забывайте</b> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor%20-%20ru#Generated_string_IDs.2Fru" title="String editor/ru">чекинить ресурсы диалога и существа</a> перед экспортом таблицы строк вашего модуля, в противном случае история диалогов в журнале Игрока будет вестись с ошибками.
 </p><p>Также В левом нижнем углу приводится количество слов и символов в реплике. В игре действуют ограничения на длину текста:
@@ -373,7 +373,7 @@
 <table class="collapsible collapsed" style="style" width="583" align="" cellpadding="0" cellspacing="0">
 
 <tr>
-<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black"><font style="font-size:80%; color:red; font-weight: normal;">..... нажмите <b>[show]</b> для просмотра → </font> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Conversation_toolbar.png" width="573" height="100" /></a></div>
+<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black"><font style="font-size:80%; color:red; font-weight: normal;">..... нажмите <b>[show]</b> для просмотра → </font> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20toolbar.png"><img alt="Conversation toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/Conversation_toolbar.png" width="573" height="100" /></a></div>
 </th></tr>
 <tr>
 <td><div style="background-color: #F6F6F6; padding:4px 4px 4px 4px; border-top:0; border-bottom:thin solid #AAAAAA; border-left:thin dashed #AAAAAA; border-right:thin dashed #AAAAAA; border-bottom-right-radius:7px; border-bottom-left-radius:7px; clear: both;">Список кнопок панели редактора диалогов:
@@ -417,7 +417,7 @@
 <li> Скрыть/Показать панель деталей диалога, расположенную ниже основного окна.</li></ol>
 <p><br />
 </p>
-Если вы хотите сверить с английским описанием, то откройте в новом окне этот <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Conversation_toolbar_labeled.png" title="Conversation toolbar labeled.png">скриншот</a>.</div>
+Если вы хотите сверить с английским описанием, то откройте в новом окне этот <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/Conversation_toolbar_labeled.png" title="Conversation toolbar labeled.png">скриншот</a>.</div>
 </td></tr></table>
 <h2><span class="mw-headline" id="Looping_conversation_and_re-using_lines_in_multiple_places">Looping conversation and re-using lines in multiple places</span></h2>
 <p>Although the basic structure is tree-shaped, the flow of the conversation can be structured to return back to previous nodes in the conversation. To cause a node in the tree to repeat:

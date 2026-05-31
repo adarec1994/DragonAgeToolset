@@ -1,6 +1,6 @@
 param(
     [string]$WikiRemote = "https://github.com/adarec1994/DragonAgeToolset.wiki.git",
-    [string]$WikiRepoPath = (Join-Path (Split-Path $PSScriptRoot -Parent) "DragonAgeToolset.wiki"),
+    [string]$WikiRepoPath = (Join-Path (Split-Path (Split-Path $PSScriptRoot -Parent) -Parent) "DragonAgeToolset.wiki"),
     [switch]$NoClean
 )
 

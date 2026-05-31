@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Установка стартовой локации и точки входа</b>
 </td></tr></table> 
@@ -34,21 +34,21 @@
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/60px-Module_menu_command.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/90px-Module_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/120px-Module_menu_command.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Module_menu_command.png/60px-Module_menu_command.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Module_menu_command.png/90px-Module_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Module_menu_command.png/120px-Module_menu_command.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Выберите пункт "Manage Modules" в меню "File".
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Module_manage_module_window.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Module_manage_module_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Module_manage_module_window.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>В открывшемся окне управления модулями перейдите к вашему модулю и нажмите "Properties".
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png" width="120" height="111" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/65/Module_properties.png" width="120" height="111" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/65/Module_properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/65/Module_properties.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>В окне свойств модуля установите стартовую локацию (Starting Area) и стартовую точку входа (Starting Waypoint).
 </p>
@@ -60,21 +60,21 @@
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:54.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" width="120" height="41" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:54.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png" width="120" height="41" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>В меню "Tools" выберите "Export -&gt; Export Options".
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:50px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20a%20starting%20area.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png" width="120" height="50" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:50px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20a%20starting%20area.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ec/Selecting_a_starting_area.png" width="120" height="50" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ec/Selecting_a_starting_area.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ec/Selecting_a_starting_area.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Укажите стартовую локацию.
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:48.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20starting%20area%20and%20waypoint.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" width="120" height="53" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:48.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20starting%20area%20and%20waypoint.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" width="120" height="53" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Укажите стартовую точку входа.
 </p>

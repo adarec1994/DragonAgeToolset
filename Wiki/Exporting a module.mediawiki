@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Module topics
@@ -48,10 +48,10 @@ All of the Resources can then be packaged into a <a href="https://github.com/ada
 <table align="right">
 
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20menu%202.png"><img alt="Export menu 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Export_menu_2.png" width="400" height="121" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Export_menu_2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Export_menu_2.png 2x" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20menu%202.png"><img alt="Export menu 2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Export_menu_2.png" width="400" height="121" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Export_menu_2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/bd/Export_menu_2.png 2x" /></a>
 </td></tr>
 <tr>
-<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png"><img alt="Export options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" width="300" height="102" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 2x" /></a>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png"><img alt="Export options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png" width="300" height="102" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Export_options.png 2x" /></a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Testing_an_Area_by_overriding_the_starting_area">Testing an Area by overriding the starting area</span></h3>
 <p>Area Resources can be tested in a very convenient way. If you just want to give it a test run you can override the module's start area on an export-by-export basis.

@@ -1,18 +1,18 @@
-<ul><li><b>Version found:</b> 1.0.1088.0 </li>
+﻿<ul><li><b>Version found:</b> 1.0.1088.0 </li>
 <li><b>Status:</b> Open</li></ul>
 <h2><span class="mw-headline" id="Description">Description</span></h2>
 <p>Using russian localization, we can't use russian letters in naming of areas, NPC, items, in dialogs. In toolset it's OK, but in game It becomes "???????" or "[][][][][][][][][][][]".
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot001.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/120px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/180px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/240px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot001.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/120px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/180px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/240px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Effect of this bug
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot002.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot002.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Effect of this bug
 </p>

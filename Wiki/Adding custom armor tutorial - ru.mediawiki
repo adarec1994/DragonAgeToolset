@@ -1,4 +1,4 @@
-<p>В ходе этого туториала мы импортируем платье Кристины Веспуччи из Assassins Creed: Brotherhood в ДАО. Вернее из XNA Lara, потому что ничего другого я не нашел. Это платье я выбрал не случайно - в ходе его адаптации мы используем все те приемы, которые часто используются в этом процессе ("дырявая ткань" аля кружева, текстуры кложи, зависящие от кожи персонажа, многослойный материал и т.д.).Это будет всего-лишь реплейсер, заменитель. Заменять будем церковную робу - просто потому что ее легче всего достать (в прологе мага, например, или с Лелианы в Лотеринге). Ну чтож, приступим...
+﻿<p>В ходе этого туториала мы импортируем платье Кристины Веспуччи из Assassins Creed: Brotherhood в ДАО. Вернее из XNA Lara, потому что ничего другого я не нашел. Это платье я выбрал не случайно - в ходе его адаптации мы используем все те приемы, которые часто используются в этом процессе ("дырявая ткань" аля кружева, текстуры кложи, зависящие от кожи персонажа, многослойный материал и т.д.).Это будет всего-лишь реплейсер, заменитель. Заменять будем церковную робу - просто потому что ее легче всего достать (в прологе мага, например, или с Лелианы в Лотеринге). Ну чтож, приступим...
 Инструменты, что нам понадобятся:
 </p>
 <ul><li>3ds max (или бесплатная версия - gmax). 3ds max не старше 2011 года- скрипт по импорту не будет работать.</li>
@@ -39,15 +39,15 @@
 Сначала переведем их в формат .DDS с помощью фотошопа. Помните, что размер текстур ВСЕГДА должен быть кратным 4: 1024 -&gt; 2048 -&gt; 4096 -&gt; 8192.
 </p><p>Diffuse map:
 Кожа обязательно должна быть перведена в бледно-серый цвет, чтобы максимально корректно отображать цвет кожи. Должно получиться примерно так:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Skin1ex.png"><img alt="Skin1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Skin1ex.png" width="283" height="304" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Skin1ex.png"><img alt="Skin1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/3c/Skin1ex.png" width="283" height="304" class="thumbborder" /></a>
 </p><p>В альфа канале (если его нету, то создаем его с названием Alpha 1) выделяем черным те области, которые будут "дырками", белое так и останется не прозрачным. Получиться должно нечто вроде этого:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Alpha1ex.png"><img alt="Alpha1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/70/Alpha1ex.png" width="266" height="243" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Alpha1ex.png"><img alt="Alpha1ex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/70/Alpha1ex.png" width="266" height="243" class="thumbborder" /></a>
 </p><p>Normal map: 
 Нужно перенести текстуру в монотонно серый. Помимо этого, нужно еще изменить изображение альфа-канала на идентичный зеленому каналу. Должно получится нечто вроде этого:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalex.png"><img alt="Normalex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dc/Normalex.png" width="525" height="533" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalex.png"><img alt="Normalex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/dc/Normalex.png" width="525" height="533" class="thumbborder" /></a>
 </p><p>Spectacular map:
 Почти ничем не отличается от диффузной, только чуть более темней. Элементы с кожей в обязательном порядке нужно модифицировать. Цвет нужно изменить на темно-красный, почти черный. Саму область нужно подвергнуть обработке: image-&gt; adjustments -&gt;brightness/contrast значение выставлять примерно такие brightness -45, contrast 95. В итоге кожа должна стать примерно такой:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Spectacularex.png"><img alt="Spectacularex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fd/Spectacularex.png" width="516" height="533" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Spectacularex.png"><img alt="Spectacularex.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/fd/Spectacularex.png" width="516" height="533" class="thumbborder" /></a>
 </p>
 <ul><li> Note: В альфа канал спекуляр карты нужно просто скопировать синий канал. <b>Делать это нужно уже после того, как разберетесь с участками кожи.</b>Чем больше белого на текстуре _s тем больше и интенсивней будет блеск.</li></ul>
 <p>Tint map:
@@ -58,14 +58,14 @@
 <h2><span class="mw-headline" id="Connecting_textures">Connecting textures</span></h2>
 <p>Cоединение текстур. Как я уже упомянал, платье Кристины Веспуччи содержит несколько материалов. Движок ДАО может поддерживать только один материал, а значит нам придется все текстуры объединить.
 Самое главное в том, что один раз определившись порядком текстур, нужно придерживаться его постоянно. В общем, нам нужно выстроить примерно такую конструкцию:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Text1.png"><img alt="Text1.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/90/Text1.png" width="533" height="538" class="thumbborder" /></a>
 </p><p><b>*Note: Запомните положение текстур, оно вам понадобится при объединении материалов в 3ds Max.</b>Тоже самое и для остальных карт (нормали, спекуляр и тинт). Альфа каналы выстраиваем так же. Размер текстур должен быть кратным 4.
 </p>
 <h2><span class="mw-headline" id="Save_textures">Save textures</span></h2>
 <p>Текстуры нужно сохранять с такими настройками: 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Therestsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Therestsave.png" width="588" height="373" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Therestsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/59/Therestsave.png" width="588" height="373" class="thumbborder" /></a>
 </p><p>Normal map:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/58/Normalsave.png" width="579" height="365" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Normalsave.png" title="50%"><img alt="50%" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/58/Normalsave.png" width="579" height="365" class="thumbborder" /></a>
 </p><p>Все, на этом в фотошопе закончено. Можно его закрывать. Переименуйте текстуры в hf_rob_chaz_0n.dds (normal-текстура), hf_rob_chaz_0d (diffuse-текстура), hf_rob_chaz_0s (спекуляр) и hf_rob_chaz_0t (тинт карта). Сами текстуры уже можно переместить в папку [имя_локального_диска]:\Documents and Settings\[имя_пользователя]\My Documents\BioWare\Dragon Age\packages\core\override\
 </p>
 <h2><span class="mw-headline" id="Names">Names</span></h2>
@@ -122,20 +122,20 @@ pf_rob_chaa_0d.dds, pf_rob_chaa_0n.dds, pf_rob_chaa_0s.dds, pf_rob_chaa_0t.dds (
 <h2><span class="mw-headline" id="More_than_one_texture">More than one texture</span></h2>
 <p>Важное отступление - если ваша модель полностью покрывается одной текстурой, то ничего из нижеописанного вам проделывать не нужно.
 Сейчас нам нужно объединить несколько материалов в один. Процесс не тривиальный. Итак, когда вы откроете редактор координат, то увидите вот такую картину:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editingmaterials.png"><img alt="Editingmaterials.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Editingmaterials.png" width="525" height="521" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Editingmaterials.png"><img alt="Editingmaterials.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/Editingmaterials.png" width="525" height="521" class="thumbborder" /></a>
 </p><p>Зеленые линии - это координаты модели на текстуре. Многие игровые движки используют все пространство редактора, но не ДАО. Наша игра не видит ничего за границами выделенного квадрата. Наша задача - передвинуть все координаты во внутрь этого квадрата. Во вкладке All ID's можно выбирать отдельные материалы и двигать их. Наложите текстуру, которую вы создали в фотошопе и согласно ее контурам отмасштабируте и перенесите ее на соответствующее место. Тоже самое нужно бьудет проделать и со всеми сетами материалов, чтобы в конце-концов получилось что-то вроде этого:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mated2.png"><img alt="Mated2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Mated2.png" width="1363" height="656" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mated2.png"><img alt="Mated2.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/53/Mated2.png" width="1363" height="656" class="thumbborder" /></a>
 </p><p>После этого можно закрывать редактор координат.
 </p>
 <h2><span class="mw-headline" id="Continue_working_with_materials">Continue working with materials</span></h2>
 <p>На верхней панели инструментов найдем кнопку редактора метериалов (четыре разноцветных шара) 
 Далее нажимаем Get Material и выбираем из списка Dragon Age Material (если плагин установлен правильно, то он в списке будет) 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialeditor.png"><img alt="Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" class="thumbborder" /></a>
 </p><p>В Material Type указываем Character, 
 </p><p>1 - Модель с кожей в Render Semantics – [Armor w / Skin Tint][Alpha Blending][No Emissive]. 
 </p><p>2- Модель без кожи в Render Semantics – [No Tint][Alpha Blending][No Emissive]. 
 </p><p>3- Разворачиваем список Texture Maps и назначаем соответствующие текстуры. Далее Assign Material to Selection (платье должно быть выделенным). Если так хочется увидеть текстуру в редакторе, то жмем Show Map in Viewport. Осталось только дать нашему материалу нормальное имя. В соответствующем поле введем pf_rob_chaz_0. Вот и все.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Materialwork.png"><img alt="Materialwork.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2c/Materialwork.png" width="355" height="199" class="thumbborder" /></a>
 </p>
 <h2><span class="mw-headline" id="Rigging">Rigging</span></h2>
 <ul><li> <a rel="nofollow" class="external text" href="https://youtu.be/1QMcAX1cDyo">Rigging tutorial</a></li></ul>
@@ -143,7 +143,7 @@ pf_rob_chaa_0d.dds, pf_rob_chaa_0n.dds, pf_rob_chaa_0s.dds, pf_rob_chaa_0t.dds (
 Выделим нашу модель, правой кнопкой мыши по пустому месту-&gt;Convert To-&gt; Convert To Editable Mesh.
 Теперь полностью выделяем все объекты, снимаем выделение с самой модели платья Кристины (выделеными должны остаться все объекты КРОМЕ платья Кристины) и удаляем. Должны остаться только церковная роба и платье Кристины. Далее правой кнопкой мыши по пустому месту-&gt;Unfreeze All. Это разморозит оригинальную робу, сделав ее доступной для редактирования. Затем в списке ее модификаторов выделим Skin и Edit Normals (с зажатым CTRL). Правой кнопкой мыши по ним-&gt;Cut. Из списка модификаторов они должны исчезнуть. Далее правой кнопкой мыши по пустому месту рабочего пространства-&gt;Convert To-&gt;Convert To Editable Mesh. Это низведет оригинальную робу в тоже состояние, в котором сейчас пребывает и платье Кристины.
 </p><p>Теперь перейдем в режим редактирования полигонов 
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Polygon.png"><img alt="Polygon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/Polygon.png" width="172" height="88" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Polygon.png"><img alt="Polygon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/Polygon.png" width="172" height="88" class="thumbborder" /></a>
 </p><p>Нажмите CTL+ A Вся оригинальная роба должна окраситься в красный цвет выделения. Далее нужно снять выделение с одного-единственного полигона (делается с зажатой клавишей ALT). Какого именно – неважно, главное чтобы он был на виду и до него было просто добраться. Я выбрал один у самых ног. Все, что теперь нужно сделать – нажать кнопку Delete. Это удалит всю модель, кроме одного оставленного нами полигона. Теперь нам нужно прирастить к этому полигону платье Кристины. Для этого выберем на панели инструментов справа кнопку Attach  и нажмем мышью на скафандр. Появится окно, выбрать опцию Match Material to Material IDs. Жмем ОК. Теперь нужно убрать последний полигон оригинальной робы. Вновь переходим в режим редактирования полигонов (предварительно «отжав» кнопку attach), находим когда-то оставленный нами полигон и удаляем его. Все, теперь уже не осталось ничего, что напоминало-бы нам о церковной робе.
 </p><p>Вы должны закончить со всеми правками модели до того, как добавите модификатор Unwrap UVW. Если ваша модель выглядит грубой, то необходимо  исправить:
 ПКМ -&gt; converto to Editable Poly-&gt; Vertex-&gt; Select all (CTRL+ A)-&gt; Weld -&gt; Convert to editable Mesh
@@ -153,12 +153,12 @@ pf_rob_chaa_0d.dds, pf_rob_chaa_0n.dds, pf_rob_chaa_0s.dds, pf_rob_chaa_0t.dds (
 </p><p>С самой моделью мы наконец закончили.
 </p>
 <h2><span class="mw-headline" id="Dress_with_crinoline">Dress with crinoline</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Crinoline%20dressDAO.jpg"><img alt="Crinoline dressDAO.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/Crinoline_dressDAO.jpg" width="1920" height="1050" class="thumbborder" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Crinoline%20dressDAO.jpg"><img alt="Crinoline dressDAO.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5f/Crinoline_dressDAO.jpg" width="1920" height="1050" class="thumbborder" /></a>
 </p>
 <ul><li><a rel="nofollow" class="external text" href="https://youtu.be/_q4mmFMmIK8">Как сделать платье с кринолином</a></li></ul>
 <h2><span class="mw-headline" id="Export">Export</span></h2>
 <p>Для этого запускаем скрипт DAOModelExport. Нам предстанет вот так вот такое окно:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export.png"><img alt="Export.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/47/Export.png" width="254" height="447" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export.png"><img alt="Export.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/47/Export.png" width="254" height="447" class="thumbborder" /></a>
 </p><p>Между Name и .MMH вписать hf_rob_chaa_0. Между Name и .MSH вписать тоже самое (если этого не сделалось автоматически). Отметить опцию Create MAO Material File. Все, теперь жмем Export. По окончании процесса экспорта в папке [имя_локального_диска]:\Documents and Settings\[имя_пользователя]\My Documents\BioWare\Dragon Age\packages\core\override\ должны появится пять новых файлов
 hf_rob_chaa_0.phy
 hf_rob_chaa_0.msh
@@ -180,7 +180,7 @@ pf_rob_chaz_0.mao
 </p>
 <h2><span class="mw-headline" id="Custom_icons">Custom icons</span></h2>
 <p>Добавьте icon через тулсет. Иконка должна быть с такими настройками:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Yourlvl%20FOLDER.PNG"><img alt="Yourlvl FOLDER.PNG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/31/Yourlvl_FOLDER.PNG" width="579" height="331" class="thumbborder" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Yourlvl%20FOLDER.PNG"><img alt="Yourlvl FOLDER.PNG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/31/Yourlvl_FOLDER.PNG" width="579" height="331" class="thumbborder" /></a>
 </p>
 <h2><span class="mw-headline" id="Useful_links">Useful links</span></h2>
 <ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Customisation%20of%20original%20Dragon%20age%20armor" title="Customisation of original Dragon age armor">Customisation of original Dragon age armor</a></li>

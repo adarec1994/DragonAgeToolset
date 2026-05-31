@@ -1,4 +1,4 @@
-<p>This guide will show you the easiest way to create a custom item and add it to your inventory by using a console command <b>runscript aa_give_item</b>.
+﻿<p>This guide will show you the easiest way to create a custom item and add it to your inventory by using a console command <b>runscript aa_give_item</b>.
 </p><p>There are people who say that using the default 'singleplayer' module is a source for future problems so we'll be using our own module.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
@@ -18,7 +18,7 @@
 <dd>4. Ability to follow instructions.</dd></dl>
 <h2><span class="mw-headline" id="Creating_a_new_module">Creating a new module</span></h2>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module#Creating_a_new_module" title="Module">Module#Creating a new module</a></i></td>
 </tr></table>
 <dl><dd>1. Open the toolset and click on <b>File -&gt; Manage Modules</b>.</dd>
@@ -27,7 +27,7 @@
 <dd>4. Double-click 'my_module' that was added to the list.</dd></dl>
 <h2><span class="mw-headline" id="Creating_an_item">Creating an item</span></h2>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources#Creating_new_resources" title="Designer Resources">Designer Resources#Creating new resources</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module#Exporting_a_module" title="Module">Module#Exporting a module</a></i></td>
 </tr></table>
 <dl><dd>1. On the palette window select items (the sword icon).</dd>
@@ -41,7 +41,7 @@
 <dd>9. Right click on it again and select <b>Export -&gt; Export without dependent resources</b>.</dd></dl>
 <h2><span class="mw-headline" id="Creating_a_script_to_summon_your_item">Creating a script to summon your item</span></h2>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></i></td>
 </tr></table>
 <dl><dd>1. Click on <b>File -&gt; new -&gt; Script</b>.</dd>

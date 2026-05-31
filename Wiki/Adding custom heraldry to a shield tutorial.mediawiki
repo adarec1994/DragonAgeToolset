@@ -1,6 +1,6 @@
-<p>This is a brief summary of how to add custom heraldry to a shield.
+﻿<p>This is a brief summary of how to add custom heraldry to a shield.
 </p><p>You will need Photoshop with the Nvidia DDS plug-in (or similar). See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> for general advice on tools.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Heraldry%20demo1.jpg"><img alt="Heraldry demo1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Heraldry_demo1.jpg" width="602" height="240" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Heraldry%20demo1.jpg"><img alt="Heraldry demo1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/50/Heraldry_demo1.jpg" width="602" height="240" /></a>
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>

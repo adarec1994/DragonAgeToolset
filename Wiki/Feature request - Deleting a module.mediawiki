@@ -1,4 +1,4 @@
-<p>The current toolset does not allow for the deletion of a module that has been created.
+﻿<p>The current toolset does not allow for the deletion of a module that has been created.
 Users typically initially create a bunch of test modules that cannot be removed, and forever after clutter up the list of modules.
 </p><p>There is a hacky workaround of deleting the module name manually from the database, but it just orphans all the modules resources without removing them from the database.
 </p><p><br />
@@ -6,7 +6,7 @@ Users typically initially create a bunch of test modules that cannot be removed,
 <table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
 
 <tr>
-<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
 </td>
 <td> This issue has been recorded in BioWare's internal tracking system.<br />
 <p>Reference number: 210854  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a>

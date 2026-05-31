@@ -1,4 +1,4 @@
-<p>The <b>Gifts And Approval</b> step explains how modify your custom companion's approval through gift giving and scripted events.
+﻿<p>The <b>Gifts And Approval</b> step explains how modify your custom companion's approval through gift giving and scripted events.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -657,5 +657,5 @@ I'll see if I can implement this at some point and update the wiki appropriately
 </p><p><br />
 I'm  sure if we think hard enough we can solve this easily and possibly in a  more efficient way. I'll assume for now I'm done with the wiki and take  a rest.
 </p>
-<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Joining%20The%20Party" title="Joining The Party"><img alt="Joining The Party" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <img alt="Icon wiki arrow right disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/86/Icon_wiki_arrow_right_disabled.png" width="64" height="64" />
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Joining%20The%20Party" title="Joining The Party"><img alt="Joining The Party" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <img alt="Icon wiki arrow right disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/86/Icon_wiki_arrow_right_disabled.png" width="64" height="64" />
 </div>

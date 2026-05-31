@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Инструкция по созданию предыстории</b>
 </td></tr></table> 
@@ -42,19 +42,19 @@
 <li> Путешественник</li></ul>
 <h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_string-.D0.BF.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D1.85_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8">Создание string-переменных для предыстории</span></h2>
 <p>Перед тем, как мы приступим к редактированию файлов <b>2DA</b>, нужно создать несколько переменных типа <b>string</b>. Откройте <b>string</b>-редактор в тулсете и создайте таблицу с названием <b>“Background Demo”</b>. В ней создайте следующие переменные:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20talk%20table.png"><img alt="Back tut talk table.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Back_tut_talk_table.png" width="784" height="280" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20talk%20table.png"><img alt="Back tut talk table.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4e/Back_tut_talk_table.png" width="784" height="280" /></a>
 </p><p><b>ID</b>-номера ваших строчек могут быть другими. Это не страшно, просто в дальнейшем вам придется заменять указанные мною <b>ID</b> на свои.
 </p><p><b>ВАЖНО!</b> <i>В игре присутствует баг, который не позволяет <b>ID</b>-номеру принимать значения выше <b>109 912 680</b>. Чтобы исправить его, вы можете <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4695/">скачать фикс</a> от сообщества. Или же вы можете зайти в свойства модуля и изменить начальное значение <b>ID</b> так, чтобы оно было меньше критического. После этого, <b>string</b>-редактор будет генерировать <b>ID</b>-номера, значения которых не приведут к багу. После создания переменных для предысторий, перезагрузите начальное значение <b>ID</b>-номера (это позволит вам избежать нужды в скачивании фикса от Bioware и уменьшит возможность несовместимости с другими модулями).</i>
 </p><p>Вы, должно быть, заметили, что мы задали разные названия и описания предыстории путешественника в зависимости от расы героя. Об этом мы расскажем вам дальше.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String editor</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_2DA-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2">Редактирование 2DA-файлов</span></h2>
 <p>Следующим шагом будет редактирование рабочих листов документа под названием <b>backgrounds.xls</b>. Скопируйте этот документ: мы будем редактировать копию, а не оригинал. Рекомендую вам прочесть статью с описанием работы с <b>2DA</b>-файлами. 
 Первый лист называется <b>“background”</b>. Отредактируйте его так, чтобы у вас получилось как на скриншоте:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20backgrounds.png"><img alt="Back tut backgrounds.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Back_tut_backgrounds.png" width="830" height="179" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20backgrounds.png"><img alt="Back tut backgrounds.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/Back_tut_backgrounds.png" width="830" height="179" /></a>
 </p><p><b>2DA</b>-файлы соединяются и создают <b>M2DA</b>-файлы, которые заменяют оригиналы с аналогичными названиями. В этом случае нам надо будет заполнить неиспользуемые слоты, чтобы в модуле не было предысторий из оригинала. Поэтому два последних слота мы назвали <b>unused1</b> и <b>unused2</b>. 
 Названия и описания предысторий в зависимости от выбранной расы будут взяты с таблицы string-переменных, так что здесь мы можем оставить соответствующие поля пустыми(если в таблице <b>string</b>-переменных указаны названия и описания предысторий, столбцы  <b>NameStrRef</b> и <b>DesStrRef</b> не используются. Похоже, что <b>ToolTipStrRef</b> также нигде не используется. Если хотите, можете его чем-то заполнить).
 </p><p>Существует три колонки с расами, каждая из которых определяет, какая предыстория какой расе доступна. Также есть три колонки класса, которые определяют, какая предыстория какому классу доступна. На скриншоте видно, что предыстория слуги доступна эльфу и человеку, воину и разбойнику, предыстория ученика доступна магу-эльфу и магу-человеку, предыстория путешественника – эльфу и гному, воину и разбойнику. 
@@ -62,27 +62,27 @@
 </p><p><b>1 – гном, 2 – эльф, 3 – человек. </b>
 </p><p>Номера могут быть размещены в другом порядке по отношению к столбцам расы данной таблицы. Номером в колонке является значение <b>ID</b>-номера навыка, указанное в таблице <b>ABI_base.xls</b>. В этой демке мы просто зададим одинаковые навыки всем расам определенных предысторий. Слуги получат бонус к тактике боя, ученики – бонус к убеждению, а путешественники - к выживанию.
 </p><p>Далее мы отредактируем таблицу под названием <b>background_names</b>.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20names.png"><img alt="Back tut bg names.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/Back_tut_bg_names.png" width="413" height="180" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20names.png"><img alt="Back tut bg names.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a1/Back_tut_bg_names.png" width="413" height="180" /></a>
 </p><p>Убедитесь, что <b>ID</b>-номера этой таблицы совпадают с <b>ID</b>-номерами ваших <b>string</b>-переменных. Обратите внимание, что для учеников и слуг вне зависимости от расы мы используем одинаковые переменные, а для путешественников разные строчки. Это чтобы вы увидели, как одной и той же предыстории можно присваивать разные имена и описания. Все они хранятся в одном и том же <b>ID</b>-номере предыстории, но во время генерации персонажа игрок может увидеть разные названия, описания и иконки для одной и той же предыстории. В оригинальной кампании этот метод применялся в случае  героем знатного происхождения, которое менялось на человеческое или гномье в зависимости от выбранной расы.
 </p><p><b>ПРИМЕЧАНИЕ</b> <i>– во время разделения единой предыстории на части вы должны быть внимательными. Названия и описания должны быть разными! Если описания будут одинаковыми, движок сочтет предыстории идентичными, даже если их названия будут разными.</i>
 </p><p>Теперь отредактируйте <b>background_desc</b> как показано на скрине.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20desc.png"><img alt="Back tut bg desc.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Back_tut_bg_desc.png" width="397" height="184" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20desc.png"><img alt="Back tut bg desc.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8a/Back_tut_bg_desc.png" width="397" height="184" /></a>
 </p><p>Снова обратите внимания на различные описания для предыстории путешественника.
 Теперь отредактируем <b>background_icons</b>. В этой демке мы будем использовать иконки из оригинала, но при желании вы можете использовать собственные.
 <b>“background_icons"</b>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20icons.png"><img alt="Back tut bg icons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/Back_tut_bg_icons.png" width="757" height="178" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20icons.png"><img alt="Back tut bg icons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/Back_tut_bg_icons.png" width="757" height="178" /></a>
 </p><p>Таблица под названием <b>background_defaults</b> должна содержать все возможные комбинации расы, предыстории и класса. Значение <b>ID</b>-номера колонки считается следующим образом:
 <b>(1000 * IDрасы) + (100 * IDкласса) + Idпредыстории</b>
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tute%20bg%20defaults.png"><img alt="Back tute bg defaults.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/09/Back_tute_bg_defaults.png" width="891" height="331" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tute%20bg%20defaults.png"><img alt="Back tute bg defaults.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/09/Back_tute_bg_defaults.png" width="891" height="331" /></a>
 </p><p>В колонке <b>“Label”</b> должна содержаться комбинация (правда, это ни на что не влияет). В нашей демке место появления героя всех комбинации будет одинаковым (локация, выбранная в модуле по умолчанию) но если вы хотите создать индивидуальное начало для каждой предыстории, вы можете использовать для этого две следующие колонки (чтобы это сработало, нужно написать скрипт).
 В колонке <b>“Template”</b> вы можете вписать название файла с существом, которое вы хотите использовать в качестве шаблона для определенной комбинации расы\предыстории\класса. На скриншоте вы можете увидеть, что мы используем стандартные шаблоны, идущие в комплекте с тулсетом, но вы запросто можете пользоваться своими. Заметьте, что от шаблона герой получает только инвентарь, так что для шаблонных персонажей вам не нужно задавать ничего кроме инвентаря.
 </p><p>Имя берется со <b>string</b>-переменных, так что если вы хотите задать герою новое имя, вам придется создать новые переменные в <b>string</b>-редакторе.
 В конце мы видим столбец с возможностями. Как и в случае с навыками в таблице предыстории, <b>ID</b>-номера возможностей соответствуют записям в файле <b>ABI_base.xls</b>. Раса, класс и предыстория являются единственными источниками стартовых возможностей. Поэтому перед тем, как вписывать в столбец <b>ID</b>-номер возможности, вам следует узнать, какие возможности уже добавлены. Это поможет избежать дубликатов.
 Последняя таблица называется <b>chargen_preload</b>. Два столбца этой таблицы должны точно совпадать со значениями <b>ID</b>-номеров и шаблонов из предыдущей.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20chargen%20preload.png"><img alt="Back tut chargen preload.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1d/Back_tut_chargen_preload.png" width="305" height="241" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20chargen%20preload.png"><img alt="Back tut chargen preload.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1d/Back_tut_chargen_preload.png" width="305" height="241" /></a>
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Excel_file_formatting" title="2DA">2DA#Excel file formatting</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background.xls" title="Background.xls">Background.xls</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.9A.D0.BE.D0.BC.D0.BF.D0.B8.D0.BB.D1.8F.D1.86.D0.B8.D1.8F_.D0.B8_.D0.B8.D1.81.D0.BF.D1.80.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F_.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2_GDA">Компиляция и исправления файлов GDA</span></h2>
@@ -91,17 +91,17 @@
 Раньше был баг, из-за которого <b>string</b>-переменный с большими <b>ID</b>-значениями компилировались некорректно. Сейчас он исправлен. Чтобы обойти этот баг, <b>GDA</b>-файлы вручную редактировались в тулсете. Если же вы взглянете на <b>ID</b>-номера сейчас, то увидите, что они правильные.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">Compiling 2DAs</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8">Создание plot-файла для предыстории</span></h2>
 <p><b>Plot</b>-файл предыстории используется для отслеживания выбранной игроком предыстории и позволяет менять диалоги в зависимости от выбора.
 Оригинальная кампания для отслеживания выбранной предыстории использует <b>plot</b>-файл под названием <b>gen00pt_backgrounds</b>. Вы можете найти его в папке <b>\_Global\Generic</b> в разделе <b>“Plots”</b>. Мы создадим похожий файл для наших предысторий. Создайте новый <b>plot</b> и назовите его <b>bdm_000pt_backgrounds</b> (я использую три нуля для обозначения файлов, не привязанных к конкретной локации, вы можете использовать собственное обозначение, только не забудьте о нем в процессе прохождения туториала). Добавьте главные <b>plot</b>-флаги, как это изображено на скриншоте.
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20plot.png"><img alt="Back tut bg plot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Back_tut_bg_plot.png" width="728" height="148" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20plot.png"><img alt="Back tut bg plot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a8/Back_tut_bg_plot.png" width="728" height="148" /></a>
 </p><p>Вы также можете добавить определенные флаги. Они используются для создания комбинации главных флагов(таких как <b>TRAVELLER</b>(путешественник)) или для добавления составных условий, таких как <b>FEMALE_APPRENTICE</b>(женщина-ученица) или <b>ELVEN_APPRENTICE</b>(эльф-ученик). Определенный флаги, тем не менее, не входят в рамки данного туториала.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.9D.D0.B0.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2">Написание скриптов</span></h2>
@@ -358,7 +358,7 @@
 Вторая функция называется <b>bdm_Chargen_SetupPlotFlags()</b>. Что она делает, можно понять из названия. Помните <b>plot</b>-файл, созданный нами ранее? Здесь мы устанавливаем нужный нам флаг в зависимости от выбранной расы и предыстории.
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D0.BA.D0.B0_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BE.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B8">Проверка работоспособности</span></h2>
@@ -368,7 +368,7 @@
 </p><p><b>NOTE</b> <i>Кажется, изменить сообщение, которое выводится в начале генерации персонажа невозможно.</i>
 </p>
 <table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
-<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
 <td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></td>
 </tr></table>
 <h2><span class="mw-headline" id=".D0.9E.D0.BF.D1.86.D0.B8.D0.BE.D0.BD.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D1.80.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D1.8F">Опциональные расширения</span></h2>

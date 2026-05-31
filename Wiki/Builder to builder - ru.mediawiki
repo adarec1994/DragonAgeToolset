@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Создание архива для разработчика</b>
 </td></tr></table> 
@@ -53,21 +53,21 @@
 <h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B0.D1.80.D1.85.D0.B8.D0.B2.D0.B0_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B0.D0.B7.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B0">Создание архива для разработчика</span></h2>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png" width="110" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/B2B_create_menu_command.png" width="110" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/B2B_create_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/B2B_create_menu_command.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Чтобы создать архив для разработчика выберите в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette%20-%20ru" title="Resource palette/ru (page does not exist)">палитре ресурсов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(en)</a> необходимые ресурсы и в контекстном меню выберите пункт "Builder to builder create".
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Builder%20to%20builder%20create%20via%20tools%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Builder%20to%20builder%20create%20via%20tools%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Также вы можете запустить создание архива для разработчика с выбором всех доступных вашему модулю ресурсов. Для этого в меню "Tools" выберите "Builder -&gt; Builder to Builder Create".
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/B2B_create_panel.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/B2B_create_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/B2B_create_panel.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>В результате одной из предыдущих операций появится список ресурсов для экспорта.
 </p>
@@ -84,14 +84,14 @@
 <h2><span class="mw-headline" id=".D0.98.D0.BC.D0.BF.D0.BE.D1.80.D1.82_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Импорт ресурсов базы данных</span></h2>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:39.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png" width="120" height="71" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:39.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/db/B2B_load_menu_command.png" width="120" height="71" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/db/B2B_load_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/db/B2B_load_menu_command.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Импорт ресурсов из архива формата ".dadbdata" запускается выбором пункта "Builder to Builder Load" в меню "Tools -&gt; Builder"
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:47.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png" width="120" height="55" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:47.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png" width="120" height="55" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/37/B2B_load_panel_973.png 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>После выбора архива вам будет представлен список имеющихся в нём ресурсов.
 </p>

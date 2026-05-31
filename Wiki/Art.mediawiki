@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -25,7 +25,7 @@
 </div>
 
 <h2><span class="mw-headline" id="Overview">Overview</span></h2>
-<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png"><img alt="Overview.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png" width="532" height="236" /></a></div>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png"><img alt="Overview.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/59/Overview.png" width="532" height="236" /></a></div>
 <p>Creating content to be usable with the Toolset can probably be separated into 2 fields. That is the actual Resource type, and telling the Toolset about it. 
 </p><p>For example a Model in itself is only a set of files, while 2DA's assign ID's and kind of like a place in the "Shelf" which is what you are seeing in the Toolset. Otherwise it would not be able to tell what a given Model is supposed to be. Furthermore, the Toolset will get to know Properties once it knows which kind of Model it is.
 </p>

@@ -1,4 +1,4 @@
-<p>DAO has an active modding community. Over time, players will accumulate many new campaigns and game mods. So, as a courtesy to players and other builders, it's helpful to try to make our mods mutually compatible. 
+﻿<p>DAO has an active modding community. Over time, players will accumulate many new campaigns and game mods. So, as a courtesy to players and other builders, it's helpful to try to make our mods mutually compatible. 
 </p><p>From time to time, Bioware may well issue new releases, so it's good to reduce the risk of conflict in that respect, too. 
 </p><p>Since we can't be sure that all authors will respect compatibility considerations, the emphasis here is on techniques that reduce the risk of conflict, regardless of what other people do (though not all are foolproof).
 </p><p>Obviously, there are some conflicts with no win-win (hurlocks can't be both green and purple at the same time), but that doesn't stop us trying to avoid unnecessary win-lose or corruption.
@@ -48,8 +48,8 @@
 </p><p>There's absolutely no need for your scripts (especially your module core) to be a core game resource.
 </p><p>This means that whenever you create a mod for origins you should always set the properties of your major handling scripts as "Module: your module", and "Owner Module: your module". NEVER as a core game resource. Otherwise they will interfere with awakening and will break it (make no mistake, they will).
 </p><p>Example:
-</p><p>This is how you set your Origins module: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Originshierarchy.jpg"><img alt="Originshierarchy.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f8/Originshierarchy.jpg" width="615" height="383" /></a>
-</p><p>This is how you set all your script's properties: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Originsproperties.jpg"><img alt="Originsproperties.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/26/Originsproperties.jpg" width="657" height="576" /></a> 
+</p><p>This is how you set your Origins module: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Originshierarchy.jpg"><img alt="Originshierarchy.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f8/Originshierarchy.jpg" width="615" height="383" /></a>
+</p><p>This is how you set all your script's properties: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Originsproperties.jpg"><img alt="Originsproperties.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/26/Originsproperties.jpg" width="657" height="576" /></a> 
 </p><p><br />
 <b>2- Ensure your Awakening mod is for Awakening only!</b>
 </p><p>Things are different for Awakening because you DO have to set all your materials' properties as "Module: Core Game Resources", and "Owner Module: your module". (read the tutorial if you need to know more: <a rel="nofollow" class="external free" href="http://social.bioware.com/53295/blog/10858/">http://social.bioware.com/53295/blog/10858/</a> )

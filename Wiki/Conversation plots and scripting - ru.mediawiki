@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Программирование диалогов</b>
 </td></tr></table> 
@@ -49,16 +49,16 @@
 </div>
 
 <p>Вкладка "Plots and Scripting" на панели вкладок ниже окна реплик содержит несколько параметров, позволяющих использовать <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot-файлы</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">скрипты</a> для создания интерактивных диалогов, то есть диалогов, зависимых от состояния мира игры и, в тоже время, способных оказать на него влияние:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
 </p>
 <ul><li>Так как действие скриптов не очевидно при просмотре редактора диалогов, то на вкладке предусмотрено поле "Scripting comments", позволяющее описать действие скрипта.</li></ul>
 <h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D0.B4.D0.B5.D0.BB_.22.D0.A3.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5_.28Condition.29.22_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.B8">Раздел "Условие (Condition)" для реплики</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
 </p>
 <h3><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2">Использование Plot-файлов</span></h3>
 <p>Раздел "Условие" используется  для определения, будет ли реплика использоваться в диалоге. Для того, чтобы использование реплики зависело от значения определённого флага в Plot-файле:
 </p>
-<ul><li>Выберите Plot-файл в выпадающем списке "Plot", либо, в случае если в редактируемом диалоге данный Plot-файл ещё не использовался, нажмите на кнопку (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) и выберите его из доступных Plot-файлов. </li>
+<ul><li>Выберите Plot-файл в выпадающем списке "Plot", либо, в случае если в редактируемом диалоге данный Plot-файл ещё не использовался, нажмите на кнопку (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) и выберите его из доступных Plot-файлов. </li>
 <li>Затем в выпадающем списке "Flag" выберите из имеющихся в Plot-файле требуемый вам флаг.</li>
 <li>Укажите условие на значение этого флага, при котором реплика будет использоваться в диалоге("is true" - истина, "is false" - ложь).</li></ul>
 <p>Несколько примеров использования:
@@ -128,7 +128,7 @@ int StartingConditional()
 <li> GEN_RAND_LINES_LEFT_02: 33.33%</li>
 <li> GEN_RAND_LINES_LEFT_01: 50.00%</li></ul>
 <h2><span class="mw-headline" id=".D0.94.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.8F.2C_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0.D0.B5.D0.BC.D1.8B.D0.B5_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.BE.D0.B9">Действия, запускаемые репликой</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
 </p><p>Реплика диалога также может использоваться для запуска определённых действий, таких как установка значения флага в Plot-файле или запуск скрипта.
 </p><p>Процедура задания для реплики запускаемого ею действия по установке значения флага подобна процедуре задания условия, с той разницей, что вместо условий в выпадающем списке справа от названия Plot-файла необходимо выбрать действие, которое выполняется при использовании реплики:
 </p>
@@ -163,7 +163,7 @@ int StartingConditional()
 <ul><li>GEN_PC_HAS_HEALING</li>
 <li>GEN_PC_IN_COMBAT - Смотри <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Conversation%20plots%20and%20scripting" title="Talk:Conversation plots and scripting">Talk:Conversation_plots_and_scripting</a>.</li></ul>
 <h2><span class="mw-headline" id=".D0.9E.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.BE.D0.BB.D0.B8.D1.87.D0.B5.D1.81.D1.82.D0.B2.D0.B0_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B9_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA">Ограничение количества использований реплик</span></h2>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
 </p><p>В самом низу вкладки "Plots and Scripting" есть раздел "Line Settings" с параметром "Visibility", использованием которого можно установить, использовать реплику в диалоге постоянно, один раз за диалог или один раз за игру.
 </p>
 <ul><li>"Один раз за диалог" - когда в диалоге используются ссылки, которые могут вернуть диалог на уже отработанную ветку, но некоторые реплики этой ветки должны прозвучать только один раз за игру (например Герой задал вопрос, получил ответ и диалог возвращается к списку вопросов, а вопрос, ответ на который уже получен, отображаться не должен).</li>
@@ -173,7 +173,7 @@ int StartingConditional()
 </p>
 <h2><span class="mw-headline" id=".D0.9A.D0.BE.D1.80.D0.BD.D0.B5.D0.B2.D0.BE.D0.B9_.D1.83.D0.B7.D0.B5.D0.BB_.D0.B4.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3.D0.B0">Корневой узел диалога</span></h2>
 <p>Вкладка "Plots and Scripting" также присутствует и при выбранном корневом узле диалога:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
 </p><p>Данная вкладка содержит только раздел "Действия", параметры которого функционируют также как и на репликах, но запускаются только по окончании диалога. Действия, установленные на этой вкладке запускаются при каждом окончании диалога.
 Это полезно при создании диалога, окончание которого всегда имеет один и тот же эффект независимо от его течения.
 </p><p><br />

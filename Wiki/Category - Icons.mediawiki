@@ -1,4 +1,4 @@
-<p>Tiny pictures used in the toolset as buttons or other indicators. These images are suitable for use inline with text.
+﻿<p>Tiny pictures used in the toolset as buttons or other indicators. These images are suitable for use inline with text.
 </p>
 
 
@@ -10,7 +10,7 @@
 <p>The following 67 files are in this category, out of 67 total.
 </p><ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="113" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1c/Ellipsis.png" width="113" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png" title="File:Ellipsis.png">Ellipsis.png</a><br />
 192 B<br />
@@ -18,7 +18,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon%20process%20cameras.png"><img alt="Icon process cameras.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Icon_process_cameras.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon%20process%20cameras.png"><img alt="Icon process cameras.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/89/Icon_process_cameras.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon%20process%20cameras.png" title="File:Icon process cameras.png">Icon process cameras.png</a><br />
 737 B<br />
@@ -26,7 +26,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Icon3AxisMovement.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/73/Icon3AxisMovement.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png" title="File:Icon3AxisMovement.png">Icon3AxisMovement.png</a><br />
 287 B<br />
@@ -34,7 +34,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:23.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisRotation.png"><img alt="Icon3AxisRotation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Icon3AxisRotation.png" width="120" height="103" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:23.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisRotation.png"><img alt="Icon3AxisRotation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c0/Icon3AxisRotation.png" width="120" height="103" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisRotation.png" title="File:Icon3AxisRotation.png">Icon3AxisRotation.png</a><br />
 294 B<br />
@@ -42,7 +42,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3DSMaxStyle.png"><img alt="Icon3DSMaxStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/Icon3DSMaxStyle.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3DSMaxStyle.png"><img alt="Icon3DSMaxStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a1/Icon3DSMaxStyle.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3DSMaxStyle.png" title="File:Icon3DSMaxStyle.png">Icon3DSMaxStyle.png</a><br />
 533 B<br />
@@ -50,7 +50,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png" title="File:IconAccurateHeadtracking.png">IconAccurateHeadtracki...</a><br />
 315 B<br />
@@ -58,7 +58,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/IconAddExportableArea.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/aa/IconAddExportableArea.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png" title="File:IconAddExportableArea.png">IconAddExportableArea.png</a><br />
 216 B<br />
@@ -66,7 +66,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:33.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAll.png"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="120" height="83" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:33.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAll.png"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a0/IconAll.png" width="120" height="83" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAll.png" title="File:IconAll.png">IconAll.png</a><br />
 249 B<br />
@@ -74,7 +74,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconArea.png"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="120" height="113" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconArea.png"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c2/IconArea.png" width="120" height="113" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconArea.png" title="File:IconArea.png">IconArea.png</a><br />
 372 B<br />
@@ -82,7 +82,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAreaList.png"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAreaList.png"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/IconAreaList.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAreaList.png" title="File:IconAreaList.png">IconAreaList.png</a><br />
 252 B<br />
@@ -90,7 +90,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="120" height="111" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/96/IconCamera.png" width="120" height="111" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png" title="File:IconCamera.png">IconCamera.png</a><br />
 244 B<br />
@@ -98,7 +98,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraStyle.png"><img alt="IconCameraStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/IconCameraStyle.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraStyle.png"><img alt="IconCameraStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/IconCameraStyle.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraStyle.png" title="File:IconCameraStyle.png">IconCameraStyle.png</a><br />
 432 B<br />
@@ -106,7 +106,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraTarget.png"><img alt="IconCameraTarget.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/IconCameraTarget.png" width="120" height="111" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraTarget.png"><img alt="IconCameraTarget.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/ce/IconCameraTarget.png" width="120" height="111" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraTarget.png" title="File:IconCameraTarget.png">IconCameraTarget.png</a><br />
 221 B<br />
@@ -114,7 +114,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCharacter.png"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="111" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCharacter.png"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/45/IconCharacter.png" width="111" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCharacter.png" title="File:IconCharacter.png">IconCharacter.png</a><br />
 267 B<br />
@@ -122,7 +122,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconClientScript.png"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="103" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconClientScript.png"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/IconClientScript.png" width="103" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconClientScript.png" title="File:IconClientScript.png">IconClientScript.png</a><br />
 271 B<br />
@@ -130,7 +130,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconConversation.png"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="120" height="111" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconConversation.png"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/20/IconConversation.png" width="120" height="111" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconConversation.png" title="File:IconConversation.png">IconConversation.png</a><br />
 258 B<br />
@@ -138,7 +138,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCoreResource.png"><img alt="IconCoreResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6f/IconCoreResource.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCoreResource.png"><img alt="IconCoreResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6f/IconCoreResource.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCoreResource.png" title="File:IconCoreResource.png">IconCoreResource.png</a><br />
 264 B<br />
@@ -146,7 +146,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="120" height="111" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/9d/IconCreature.png" width="120" height="111" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png" title="File:IconCreature.png">IconCreature.png</a><br />
 427 B<br />
@@ -154,7 +154,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCurveEditor.png"><img alt="IconCurveEditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/IconCurveEditor.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCurveEditor.png"><img alt="IconCurveEditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/98/IconCurveEditor.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCurveEditor.png" title="File:IconCurveEditor.png">IconCurveEditor.png</a><br />
 241 B<br />
@@ -162,7 +162,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCutscene.png"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCutscene.png"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5a/IconCutscene.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCutscene.png" title="File:IconCutscene.png">IconCutscene.png</a><br />
 585 B<br />
@@ -170,7 +170,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:26px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDefaultCurveMode.png"><img alt="IconDefaultCurveMode.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/IconDefaultCurveMode.png" width="120" height="98" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:26px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDefaultCurveMode.png"><img alt="IconDefaultCurveMode.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7a/IconDefaultCurveMode.png" width="120" height="98" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDefaultCurveMode.png" title="File:IconDefaultCurveMode.png">IconDefaultCurveMode.png</a><br />
 261 B<br />
@@ -178,7 +178,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDisplayPathfinding.png"><img alt="IconDisplayPathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/IconDisplayPathfinding.png" width="105" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDisplayPathfinding.png"><img alt="IconDisplayPathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/IconDisplayPathfinding.png" width="105" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconDisplayPathfinding.png" title="File:IconDisplayPathfinding.png">IconDisplayPathfinding...</a><br />
 690 B<br />
@@ -186,7 +186,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconFlycamStyle.png"><img alt="IconFlycamStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2d/IconFlycamStyle.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconFlycamStyle.png"><img alt="IconFlycamStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2d/IconFlycamStyle.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconFlycamStyle.png" title="File:IconFlycamStyle.png">IconFlycamStyle.png</a><br />
 529 B<br />
@@ -194,7 +194,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGeneratePathfinding.png"><img alt="IconGeneratePathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e7/IconGeneratePathfinding.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGeneratePathfinding.png"><img alt="IconGeneratePathfinding.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e7/IconGeneratePathfinding.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGeneratePathfinding.png" title="File:IconGeneratePathfinding.png">IconGeneratePathfindin...</a><br />
 927 B<br />
@@ -202,7 +202,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGenerateTerrainCollision.png"><img alt="IconGenerateTerrainCollision.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6c/IconGenerateTerrainCollision.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGenerateTerrainCollision.png"><img alt="IconGenerateTerrainCollision.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6c/IconGenerateTerrainCollision.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconGenerateTerrainCollision.png" title="File:IconGenerateTerrainCollision.png">IconGenerateTerrainCol...</a><br />
 722 B<br />
@@ -210,7 +210,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconItem.png"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconItem.png"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d2/IconItem.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconItem.png" title="File:IconItem.png">IconItem.png</a><br />
 316 B<br />
@@ -218,7 +218,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:41px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconKey.png"><img alt="IconKey.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/49/IconKey.png" width="120" height="68" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:41px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconKey.png"><img alt="IconKey.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/49/IconKey.png" width="120" height="68" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconKey.png" title="File:IconKey.png">IconKey.png</a><br />
 298 B<br />
@@ -226,7 +226,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="75" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/ff/IconLight.png" width="75" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png" title="File:IconLight.png">IconLight.png</a><br />
 289 B<br />
@@ -234,7 +234,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLocalCoordinates.png"><img alt="IconLocalCoordinates.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/IconLocalCoordinates.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLocalCoordinates.png"><img alt="IconLocalCoordinates.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a2/IconLocalCoordinates.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLocalCoordinates.png" title="File:IconLocalCoordinates.png">IconLocalCoordinates.png</a><br />
 315 B<br />
@@ -242,7 +242,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLockedResource.png"><img alt="IconLockedResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/IconLockedResource.png" width="112" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLockedResource.png"><img alt="IconLockedResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f1/IconLockedResource.png" width="112" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLockedResource.png" title="File:IconLockedResource.png">IconLockedResource.png</a><br />
 282 B<br />
@@ -250,7 +250,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png"><img alt="IconLoopAnimation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/IconLoopAnimation.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png"><img alt="IconLoopAnimation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5f/IconLoopAnimation.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png" title="File:IconLoopAnimation.png">IconLoopAnimation.png</a><br />
 193 B<br />
@@ -258,7 +258,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMap.png"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMap.png"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b6/IconMap.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMap.png" title="File:IconMap.png">IconMap.png</a><br />
 452 B<br />
@@ -266,7 +266,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/00/IconMASTER.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png" title="File:IconMASTER.png">IconMASTER.png</a><br />
 285 B<br />
@@ -274,7 +274,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/IconMateriaLibrary.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/55/IconMateriaLibrary.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png" title="File:IconMateriaLibrary.png">IconMateriaLibrary.png</a><br />
 814 B<br />
@@ -282,7 +282,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/IconMaterialLight.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/62/IconMaterialLight.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png" title="File:IconMaterialLight.png">IconMaterialLight.png</a><br />
 589 B<br />
@@ -290,7 +290,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png"><img alt="IconMaterialObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/IconMaterialObject.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png"><img alt="IconMaterialObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/29/IconMaterialObject.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png" title="File:IconMaterialObject.png">IconMaterialObject.png</a><br />
 892 B<br />
@@ -298,7 +298,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png" title="File:IconMaterialPaletteLibrary.png">IconMaterialPaletteLib...</a><br />
 610 B<br />
@@ -306,7 +306,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMerchant.png"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="103" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMerchant.png"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/24/IconMerchant.png" width="103" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMerchant.png" title="File:IconMerchant.png">IconMerchant.png</a><br />
 397 B<br />
@@ -314,7 +314,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModel.png"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="100" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModel.png"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e9/IconModel.png" width="100" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModel.png" title="File:IconModel.png">IconModel.png</a><br />
 320 B<br />
@@ -322,7 +322,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModelPlacement.png"><img alt="IconModelPlacement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2f/IconModelPlacement.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModelPlacement.png"><img alt="IconModelPlacement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2f/IconModelPlacement.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconModelPlacement.png" title="File:IconModelPlacement.png">IconModelPlacement.png</a><br />
 231 B<br />
@@ -330,7 +330,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconObjectStyle.png"><img alt="IconObjectStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/IconObjectStyle.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconObjectStyle.png"><img alt="IconObjectStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a8/IconObjectStyle.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconObjectStyle.png" title="File:IconObjectStyle.png">IconObjectStyle.png</a><br />
 444 B<br />
@@ -338,7 +338,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconOtherModuleResource.png"><img alt="IconOtherModuleResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/IconOtherModuleResource.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconOtherModuleResource.png"><img alt="IconOtherModuleResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f1/IconOtherModuleResource.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconOtherModuleResource.png" title="File:IconOtherModuleResource.png">IconOtherModuleResourc...</a><br />
 269 B<br />
@@ -346,7 +346,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/30/IconPlaceable.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png" title="File:IconPlaceable.png">IconPlaceable.png</a><br />
 302 B<br />
@@ -354,7 +354,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlot.png"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlot.png"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/8e/IconPlot.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlot.png" title="File:IconPlot.png">IconPlot.png</a><br />
 268 B<br />
@@ -362,7 +362,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/54/IconProxy.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png" title="File:IconProxy.png">IconProxy.png</a><br />
 303 B<br />
@@ -370,7 +370,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:55px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png"><img alt="IconRemoveExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/IconRemoveExportableArea.png" width="120" height="40" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:55px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png"><img alt="IconRemoveExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/95/IconRemoveExportableArea.png" width="120" height="40" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png" title="File:IconRemoveExportableArea.png">IconRemoveExportableAr...</a><br />
 176 B<br />
@@ -378,7 +378,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRenderLightProbe.png"><img alt="IconRenderLightProbe.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6a/IconRenderLightProbe.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRenderLightProbe.png"><img alt="IconRenderLightProbe.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6a/IconRenderLightProbe.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRenderLightProbe.png" title="File:IconRenderLightProbe.png">IconRenderLightProbe.png</a><br />
 781 B<br />
@@ -386,7 +386,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToSomeoneElse.png"><img alt="IconResourceCheckedOutToSomeoneElse.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/IconResourceCheckedOutToSomeoneElse.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToSomeoneElse.png"><img alt="IconResourceCheckedOutToSomeoneElse.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f7/IconResourceCheckedOutToSomeoneElse.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToSomeoneElse.png" title="File:IconResourceCheckedOutToSomeoneElse.png">IconResourceCheckedOut...</a><br />
 283 B<br />
@@ -394,7 +394,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToYou.png"><img alt="IconResourceCheckedOutToYou.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/IconResourceCheckedOutToYou.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToYou.png"><img alt="IconResourceCheckedOutToYou.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/d/d1/IconResourceCheckedOutToYou.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToYou.png" title="File:IconResourceCheckedOutToYou.png">IconResourceCheckedOut...</a><br />
 303 B<br />
@@ -402,7 +402,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5d/IconScatterObject.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png"><img alt="IconScatterObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/5d/IconScatterObject.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScatterObject.png" title="File:IconScatterObject.png">IconScatterObject.png</a><br />
 316 B<br />
@@ -410,7 +410,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScript.png"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="103" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScript.png"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/1e/IconScript.png" width="103" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconScript.png" title="File:IconScript.png">IconScript.png</a><br />
 249 B<br />
@@ -418,7 +418,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconShowTrajectory.png"><img alt="IconShowTrajectory.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ef/IconShowTrajectory.png" width="120" height="113" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconShowTrajectory.png"><img alt="IconShowTrajectory.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ef/IconShowTrajectory.png" width="120" height="113" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconShowTrajectory.png" title="File:IconShowTrajectory.png">IconShowTrajectory.png</a><br />
 322 B<br />
@@ -426,7 +426,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSnapOptions.png"><img alt="IconSnapOptions.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/IconSnapOptions.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSnapOptions.png"><img alt="IconSnapOptions.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/ea/IconSnapOptions.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSnapOptions.png" title="File:IconSnapOptions.png">IconSnapOptions.png</a><br />
 588 B<br />
@@ -434,7 +434,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="100" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/9/97/IconSound.png" width="100" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png" title="File:IconSound.png">IconSound.png</a><br />
 252 B<br />
@@ -442,7 +442,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStage.png"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStage.png"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/f/f6/IconStage.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStage.png" title="File:IconStage.png">IconStage.png</a><br />
 472 B<br />
@@ -450,7 +450,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStandardSelection.png"><img alt="IconStandardSelection.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2a/IconStandardSelection.png" width="75" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStandardSelection.png"><img alt="IconStandardSelection.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/2a/IconStandardSelection.png" width="75" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStandardSelection.png" title="File:IconStandardSelection.png">IconStandardSelection.png</a><br />
 283 B<br />
@@ -458,7 +458,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainDeform.png"><img alt="IconTerrainDeform.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/IconTerrainDeform.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainDeform.png"><img alt="IconTerrainDeform.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/b/b8/IconTerrainDeform.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainDeform.png" title="File:IconTerrainDeform.png">IconTerrainDeform.png</a><br />
 270 B<br />
@@ -466,7 +466,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainPlateau.png"><img alt="IconTerrainPlateau.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/IconTerrainPlateau.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainPlateau.png"><img alt="IconTerrainPlateau.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/65/IconTerrainPlateau.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainPlateau.png" title="File:IconTerrainPlateau.png">IconTerrainPlateau.png</a><br />
 254 B<br />
@@ -474,7 +474,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainSmooth.png"><img alt="IconTerrainSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/IconTerrainSmooth.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainSmooth.png"><img alt="IconTerrainSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/cc/IconTerrainSmooth.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainSmooth.png" title="File:IconTerrainSmooth.png">IconTerrainSmooth.png</a><br />
 302 B<br />
@@ -482,7 +482,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainTessellate.png"><img alt="IconTerrainTessellate.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/IconTerrainTessellate.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainTessellate.png"><img alt="IconTerrainTessellate.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/IconTerrainTessellate.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTerrainTessellate.png" title="File:IconTerrainTessellate.png">IconTerrainTessellate.png</a><br />
 379 B<br />
@@ -490,7 +490,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTexturePaint.png"><img alt="IconTexturePaint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/IconTexturePaint.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTexturePaint.png"><img alt="IconTexturePaint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/2/23/IconTexturePaint.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTexturePaint.png" title="File:IconTexturePaint.png">IconTexturePaint.png</a><br />
 287 B<br />
@@ -498,7 +498,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureRelax.png"><img alt="IconTextureRelax.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/IconTextureRelax.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureRelax.png"><img alt="IconTextureRelax.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e3/IconTextureRelax.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureRelax.png" title="File:IconTextureRelax.png">IconTextureRelax.png</a><br />
 657 B<br />
@@ -506,7 +506,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureSmooth.png"><img alt="IconTextureSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/IconTextureSmooth.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureSmooth.png"><img alt="IconTextureSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/44/IconTextureSmooth.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTextureSmooth.png" title="File:IconTextureSmooth.png">IconTextureSmooth.png</a><br />
 481 B<br />
@@ -514,7 +514,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTrigger.png"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="120" height="113" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:18.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTrigger.png"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/c/c6/IconTrigger.png" width="120" height="113" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconTrigger.png" title="File:IconTrigger.png">IconTrigger.png</a><br />
 420 B<br />
@@ -522,7 +522,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconUpdateKeys.png"><img alt="IconUpdateKeys.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/IconUpdateKeys.png" width="120" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconUpdateKeys.png"><img alt="IconUpdateKeys.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7b/IconUpdateKeys.png" width="120" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconUpdateKeys.png" title="File:IconUpdateKeys.png">IconUpdateKeys.png</a><br />
 302 B<br />
@@ -530,7 +530,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="90" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/0f/IconVFX.png" width="90" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png" title="File:IconVFX.png">IconVFX.png</a><br />
 373 B<br />
@@ -538,7 +538,7 @@
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconWaypoint.png"><img alt="IconWaypoint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6c/IconWaypoint.png" width="111" height="120" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconWaypoint.png"><img alt="IconWaypoint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/6c/IconWaypoint.png" width="111" height="120" /></a></div></div>
 			<div class="gallerytext">
 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconWaypoint.png" title="File:IconWaypoint.png">IconWaypoint.png</a><br />
 325 B<br />

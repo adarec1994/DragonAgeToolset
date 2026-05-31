@@ -1,4 +1,4 @@
-<p>This tutorial describes how to create a custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a> by recoloring an existing item. It is assumed that the reader is familiar with the Toolset. These instructions are based on a forum post by Dylbot.
+﻿<p>This tutorial describes how to create a custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a> by recoloring an existing item. It is assumed that the reader is familiar with the Toolset. These instructions are based on a forum post by Dylbot.
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -21,36 +21,36 @@
 <p>Open the item you want to recolor. For the purposes of this tutorial, we're going to go for heavy chainmail.
 </p><p>If creating a new item, to select heavy chainmail, in the toolset click File&gt;New&gt;Item and change the "Base Item Type" to "Armor - Heavy" and the "Item Variation" should be set to "Heavy Armor C".
 To modify all heavy chainmail worn by every character, in the toolset, click either "Item" (sword icon) or "All" (icon with the word: All) in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource palette</a> then in the tree of folders below expand "_Global" &gt; "Armour, Chest" &gt; "Heavy", then right click the item "gen_im_arm_cht_hvy_hch.uti (Heavy Chainmail)" and choose "Check Out".
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HeavyChainmail.jpg"><img alt="HeavyChainmail.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/HeavyChainmail.jpg" width="800" height="623" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HeavyChainmail.jpg"><img alt="HeavyChainmail.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/57/HeavyChainmail.jpg" width="800" height="623" /></a>
 </p>
 <h1><span class="mw-headline" id="Create_a_new_material">Create a new material</span></h1>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CreateNewMaterial.jpg"><img alt="CreateNewMaterial.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/18/CreateNewMaterial.jpg" width="417" height="573" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CreateNewMaterial.jpg"><img alt="CreateNewMaterial.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/1/18/CreateNewMaterial.jpg" width="417" height="573" /></a>
 </p><p><br />
 </p>
 <h1><span class="mw-headline" id="Add_a_new_tint_library_to_Root">Add a new tint library to Root</span></h1>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20NewTintLibrary.jpg"><img alt="NewTintLibrary.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/46/NewTintLibrary.jpg" width="539" height="375" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20NewTintLibrary.jpg"><img alt="NewTintLibrary.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/46/NewTintLibrary.jpg" width="539" height="375" /></a>
 </p><p><br />
 </p>
 <h1><span class="mw-headline" id="Add_a_new_tint_object_to_that_library">Add a new tint object to that library</span></h1>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20NewTintObject.jpg"><img alt="NewTintObject.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/NewTintObject.jpg" width="506" height="315" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20NewTintObject.jpg"><img alt="NewTintObject.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/8/83/NewTintObject.jpg" width="506" height="315" /></a>
 </p><p><br />
 </p>
 <h1><span class="mw-headline" id="Enable_the_red.2C_green_and_blue_channels">Enable the red, green and blue channels</span></h1>
-<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EnableRGBChannels.jpg"><img alt="EnableRGBChannels.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/EnableRGBChannels.jpg" width="442" height="444" /></a>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EnableRGBChannels.jpg"><img alt="EnableRGBChannels.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/54/EnableRGBChannels.jpg" width="442" height="444" /></a>
 </p><p><br />
 </p>
 <h1><span class="mw-headline" id="Open_the_tint_file_for_the_object_you_are_recoloring">Open the tint file for the object you are recoloring</span></h1>
 <p>You'll need to know what you're changing when you color the channels. You can do this with WTV (Windows Texture Viewer). WTV is available on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> page, provided for free by Nvidia.
 </p><p>Using the Toolset, open up texturepack.erf in (Dragon Age directory)/packages/core/textures/high/, and scroll down to the texture you need (in this case, it's pm_arm_hvyc_0t.dds, signifying male, armor, heavy, type c, tint map). Right-click and open resource. At this point, you may want to hide the alpha channel in WTV, or all you're going to see is a pink square.
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20RedGreenBlueChannels.jpg"><img alt="RedGreenBlueChannels.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/34/RedGreenBlueChannels.jpg" width="649" height="591" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20RedGreenBlueChannels.jpg"><img alt="RedGreenBlueChannels.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/3/34/RedGreenBlueChannels.jpg" width="649" height="591" /></a>
 </p><p><br />
 What you're seeing is the armor texture, divided into three channels; red, blue, and green. As you may have guessed, each of the channels corresponds to the equivalent colored area on the tint map.
 </p>
 <h1><span class="mw-headline" id="Change_the_colors_as_desired">Change the colors as desired</span></h1>
 <p>If you do this:
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ChangeGreenChannel.jpg"><img alt="ChangeGreenChannel.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/63/ChangeGreenChannel.jpg" width="420" height="172" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ChangeGreenChannel.jpg"><img alt="ChangeGreenChannel.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/63/ChangeGreenChannel.jpg" width="420" height="172" /></a>
 </p><p><br />
 All of the green areas on the tint map (the chainmail and the belts) will become red on the model when you apply the tint. A little tip: the Diffuse color changes the base color, and the Specular color changes the reflection color. Change colors as you please.
 </p><p><br />
@@ -61,16 +61,16 @@ All of the green areas on the tint map (the chainmail and the belts) will become
 <h1><span class="mw-headline" id="Add_the_new_tint_to_your_tint_override_m2da">Add the new tint to your tint_override m2da</span></h1>
 <p>Now, the next bit is a bit more complicated. In the item settings, you may notice an option called Tint Override.
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TintOverride.jpg"><img alt="TintOverride.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/41/TintOverride.jpg" width="426" height="558" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20TintOverride.jpg"><img alt="TintOverride.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/4/41/TintOverride.jpg" width="426" height="558" /></a>
 </p><p><br />
 What we're going to do now is tell the game that our new tint is one of these overrides. This comes with the added bonus that the armor can be set as any material and still have the custom color. You'll need a spreadsheet program, so if you don't have MS Office, go pick up OpenOffice (if you don't have it already, naturally). Done? Right. Navigate to (Dragon Age directory)/tools/Source/2DA, and copy Tints.xls to your documents area, or wherever. Open up the copy, and choose the tint_override sheet. Add your new tint in at the next available blank line (put whatever you want as the label, something like "My Custom Tint 1" or something that makes it obvious what it is, and the file name in the tintfile box, which, in the case of our example, would be t3_arm_xyz. Star out the last column like the other tints). Save the worksheet and close it. Now, you're going to need to export that to the 2DA format. There's a handy tutorial over at the DA Builder wiki - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">Compiling 2DAs</a> - which looks a bit scary at first, but is nothing to be worried about. If you don't know how to create a batch file, all you do is create a new text document, and change the extension from .txt to .bat. Once you've exported, chuck the tint_override.gda file into the game's override folder, as described in the 2da tutorial.
 Now, close the toolset and open it again. Check out your piece of armor, and check the tint overrides. Lo and behold, your new tint is there. Apply that sucker and admire your handiwork.
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20RecoloredItem.jpg"><img alt="RecoloredItem.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/RecoloredItem.jpg" width="800" height="585" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20RecoloredItem.jpg"><img alt="RecoloredItem.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/a/a5/RecoloredItem.jpg" width="800" height="585" /></a>
 </p><p><br />
 Save, check in, and export the armor. If you've got gloves and boots (and you should have, we're going for a matching set here), check them out and apply the tint too. You can even apply it to weapons and shields if you want. Once everything is checked out and exported, load up your game and take a look at your shiny new equipment (if you've set up your loading script, or already have the equipment. If not, check the custom item tutorial, it'll tell you what you need to know).
 </p><p><br />
-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20AlistairInArmor.jpg"><img alt="AlistairInArmor.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/08/AlistairInArmor.jpg" width="460" height="539" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20AlistairInArmor.jpg"><img alt="AlistairInArmor.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/08/AlistairInArmor.jpg" width="460" height="539" /></a>
 </p><p>Alastair wearing the new armor.
 </p>
 <h1><span class="mw-headline" id="Related_Links">Related Links</span></h1>

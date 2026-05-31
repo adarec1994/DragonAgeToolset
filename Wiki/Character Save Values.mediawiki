@@ -1,4 +1,4 @@
-<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+﻿<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
 <p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
 <p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
 </div>
@@ -32,7 +32,7 @@
 SAVEGAME_PARTYLIST-&gt;SAVEGAME_PARTYPOOLMEMBERS-&gt;&lt;number&gt;-&gt;SAVEGAME_CREATURE_STATS-&gt;SAVEGAME_STATLIST
 </p><p>Note: The following values are recorded by the game in a FIFO order, meaning the moment the game needs to generate a specific key, it will do that.
 </p>
-This way you can have index X in position Y in one save, and in the other the same index X will be in position Z. While changing the keys, pay attention to the proper SAVEGAME_STATPROPERTY_INDEX and not the SAVEGAME_STATLIST index.<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png" width="300" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png" title="Enlarge"></a></div>Correct Index</div></div></div>
+This way you can have index X in position Y in one save, and in the other the same index X will be in position Z. While changing the keys, pay attention to the proper SAVEGAME_STATPROPERTY_INDEX and not the SAVEGAME_STATLIST index.<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/STATPROPERTY_INDEX.png" width="300" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/STATPROPERTY_INDEX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/6/61/STATPROPERTY_INDEX.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png" title="Enlarge"></a></div>Correct Index</div></div></div>
 <table border="1">
 
 <tr>

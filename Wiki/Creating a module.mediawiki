@@ -1,4 +1,4 @@
-<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+﻿<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
 
 <tr>
 <th align="center"> Module topics
@@ -34,9 +34,9 @@
 <table align="right">
 
 <tr>
-<td> <div class="thumb tright"><div class="thumbinner" style="width:195px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/Module_menu_command.png" width="193" height="386" class="thumbimage" /></a>  <div class="thumbcaption">Select "Manage Modules"</div></div></div>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:195px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/0/07/Module_menu_command.png" width="193" height="386" class="thumbimage" /></a>  <div class="thumbcaption">Select "Manage Modules"</div></div></div>
 </td>
-<td> <div class="thumb tright"><div class="thumbinner" style="width:301px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="299" height="373" class="thumbimage" /></a>  <div class="thumbcaption">Then click the "New" button to create a new module.</div></div></div>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:301px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/7/7c/Module_manage_module_window.png" width="299" height="373" class="thumbimage" /></a>  <div class="thumbcaption">Then click the "New" button to create a new module.</div></div></div>
 </td></tr></table>
 <ol><li>Open File/Manage Modules</li>
 <li>Click on "New" and the module properties window will open. </li>

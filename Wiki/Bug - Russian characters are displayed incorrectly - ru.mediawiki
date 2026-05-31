@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Проблемы с русским языком, да и вообще с кириллицей, в тулсете и игре</b>
 </td></tr></table> 
@@ -14,14 +14,14 @@
 </p>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot001.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/120px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/180px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/240px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot001.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/120px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/180px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/240px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Проявление бага
 </p>
 			</div>
 		</div></li>
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
-			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot002.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 2x" /></a></div></div>
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot002.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 2x" /></a></div></div>
 			<div class="gallerytext">
 <p>Проявление бага
 </p>

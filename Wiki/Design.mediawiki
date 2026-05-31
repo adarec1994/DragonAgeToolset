@@ -1,4 +1,4 @@
-<p>Game Design is everything from creating this NPC, to being ready to export everything to be used in Game. This is all made via various sections of the Dragon Age Toolset. 
+﻿<p>Game Design is everything from creating this NPC, to being ready to export everything to be used in Game. This is all made via various sections of the Dragon Age Toolset. 
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
@@ -15,7 +15,7 @@
 <table align="right">
 
 <tr>
-<td align="right"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png"><img alt="Overview.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png" width="532" height="236" /></a>
+<td align="right"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png"><img alt="Overview.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/5/59/Overview.png" width="532" height="236" /></a>
 </td></tr></table>
 <p>The Toolset can probably be seen as multiple tools ,with the resources it creates being somewhat independently editable, with the connection being internal references. This is mananged thru a database ,and allows for multiple persons to work in only specific areas of the Toolset, without hindering another. As a whole it is probably too much to learn for one person alone. But the toolset gets it all together.
 </p><p>Anything you design is a single resource for the next step, so one can separate the tools into resource categories, as seen with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource palette</a>. Dragon Age has two main classes of resources. Designer resources that are stored in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database" title="Database">database</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a> that are stored as files in your file system, with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a> being supplemental to what is covered here.

@@ -1,4 +1,4 @@
-<table style="width:100%;">
+﻿<table style="width:100%;">
 <tr>
 <td style="font-size:18pt; font-weight:bold;"><b>Подмена обработки событий</b>
 </td></tr></table> 
@@ -69,7 +69,7 @@
 <h3><span class="mw-headline" id=".D0.A1_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_Events_2DA">С помощью Events 2DA</span></h3>
 <p>C помощью 2DA вы сможете глобализировать этот процесс, перехватывая и переопределяя больше событий в игре. 
 </p><p>Создайте файл M2DA <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events.xls%20-%20ru" title="Events.xls/ru (page does not exist)">Таблица событий</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events.xls" title="Events.xls">(en)</a></i> - более подробную инструкцию смотрите <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru#.D0.A0.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.B3.D1.80.D1.8B_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_M2DA" title="2DA/ru">Расширение игры с помощью M2DA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">(en)</a></i>:
-</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.png"><img alt="Events.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Events.png" width="818" height="84" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.png"><img alt="Events.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/Wiki/assets/mw/images/e/e8/Events.png" width="818" height="84" /></a>
 </p><p>В данном случае я использую событие <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20ADDED%20-%20ru" title="EVENT TYPE INVENTORY ADDED/ru (page does not exist)">EVENT_TYPE_INVENTORY_ADDED</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20ADDED" title="EVENT TYPE INVENTORY ADDED">(en)</a></i> и обрабатываю его в определённом мною скрипте <b>"my_event_override"</b>.
 </p><p>Теперь вы можете обрабатывать события, как вам будет угодно.
 </p><p>Для примера, каждый раз, когда мне в инвентарь что-либо попадает, я хочу увидеть над головой своего перса всплывающее сообщение о том, что же мне туда попало:
