@@ -1,0 +1,9 @@
+<ul><li><b>Toolset Version:</b> 1.01</li>
+<li><b>Game Version:</b> 1.02a</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>First I don't know if that bug affects more creature appearances than golems because I've not tested them all. When you're creating a custom creature with golem base model (stone/steel) their appropriate heads do not display within the dropdown menu. Only (NONE) or SHALE are selectable. None is useless anyway and shale's head won't show up at all, even if you're trying to create a stone golem.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>You can use the core creature golem, duplicate them and change their attributes if needed.
+</p>

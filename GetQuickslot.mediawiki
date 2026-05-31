@@ -1,0 +1,21 @@
+<p>Get the ability ID for the ability in the given quickslot
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetQuickslot(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nSlot<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The creature<dt style="font-weight:normal; font-style:italic;">nSlot<dd>The index of the slot to set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The ID of the ability currently in the slot (or zero if it is empty)
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Gets the ability in the given quickslot
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base.xls">ABI base.xls</a>
+</p>

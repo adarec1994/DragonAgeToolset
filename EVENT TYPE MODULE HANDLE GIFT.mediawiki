@@ -1,0 +1,17 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+<dt>Sent from:
+<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Integer 0: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li><li>Object 0: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li><li>Object 1: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_MODULE_HANDLE_GIFT:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nApprovalChange = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// </span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oFollower = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// </span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItem = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// </span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

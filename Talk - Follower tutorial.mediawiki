@@ -1,0 +1,58 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Handling_followers_more_robustly"><span class="tocnumber">1</span> <span class="toctext">Handling followers more robustly</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#"><span class="tocnumber">2</span> <span class="toctext"></span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Follower.27s_Portrait"><span class="tocnumber">3</span> <span class="toctext">Follower's Portrait</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Dog_equipment_slots"><span class="tocnumber">4</span> <span class="toctext">Dog equipment slots</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Handling_followers_more_robustly">Handling followers more robustly</span></h2>
+<p>Just a few things
+</p>
+<ul><li> I don't think the described behaviour is a bug in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20HireFollower" title="UT HireFollower">UT_HireFollower</a>(). It's documented that "This function will do nothing for plot followers". It was never intended for use with normal followers, and the code even checks the object tag against the single player campaign's companions. It'll fail to check against your own module's custom followers, though, so it'll do something, but that something isn't always what you want either.</li></ul>
+<ul><li> Plot script gen00pt_party.nss and party_h have some plot-companion handling functions. I wouldn't really give it a short treatment at the bottom under "Advanced Follower Creation" if it's a solid approach. See things like Party_GetFollowerByTag in party_h with an interesting function and comment:</li></ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> Party_GetFollowerByTag<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sTag<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// We have to retrieve the follower like this. Trying to do it with</span>
+    <span class="co1">// GetObjectByTag proved to mess up lots of stuff. -- yaron.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> <span class="br0">&#91;</span><span class="br0">&#93;</span> arParty <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPartyPoolList"><span class="kw4">GetPartyPoolList</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> i;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSize <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCurrent;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a><span class="br0">&#40;</span>i <span class="sy0">=</span> <span class="nu0">0</span>; i <span class="sy0">&lt;</span> nSize; i<span class="sy0">++</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        oCurrent <span class="sy0">=</span> arParty<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oCurrent<span class="br0">&#41;</span> <span class="sy0">==</span> sTag<span class="br0">&#41;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> oCurrent;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMainControlled"><span class="kw4">GetMainControlled</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, sTag, TRUE<span class="br0">&#41;</span>;</pre></div></div>
+<ul><li> It's probably worth going through those scripts and adapting them for general tutorial use. That way we can benefit from whatever gotchas have already been solved.</li></ul>
+<p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 17:52, 1 January 2011 (UTC)
+</p>
+<hr />
+<p>As the author of the "alternative approach" section, my own view is that this should effectively replace that whole section with the monstrous hire script, which really belongs in a how-I-did-it page rather than in a tutorial. However, I am currently up to my armpits in work on my own mod and just don't  currently have the bandwidth to undertake the redraft. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 04:10, 8 January 2011 (UTC)
+</p>
+<hr />
+<p>I have some sympathy with that. Indeed, I suspect that most of the additions could be integrated into one "best practice" approach. However, I hesitate to carve this up without some informed debate. I'll volunteer to redraft if a few people are willing to join a group discussion first. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 12:06, 8 January 2011 (UTC)
+</p>
+<hr />
+<p>Would be happy to be part of the discussion. Perhaps FollowTheGourd might join the party as well&#160;:-) --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 08:19, 10 January 2011 (UTC)
+</p>
+<hr />
+<p>Just to say I haven't forgotten about this. Too many distractions recently! Will launch the redraft discussion shortly. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 06:16, 7 February 2011 (UTC)
+</p>
+<hr />
+<p>I'm no longer in a position to redraft this. Perhaps someone else would like to have a go. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 18:08, 21 July 2011 (UTC)
+</p>
+<h2><span class="mw-headline" id=""></span></h2>
+<p>great tutorial. my only problem is: my companion, Erik has different skills and doesn't seem to follow his autolevel template. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Mono0x32440" title="User:Mono0x32440 (page does not exist)">Mono0x32440</a> 17:46, 25 February 2010 (UTC)
+</p>
+<h2><span class="mw-headline" id="Follower.27s_Portrait">Follower's Portrait</span></h2>
+<p>I cannot figure out how to change the default grey backgrounded portrait for the new followers. It would be nice to have pose and background options.
+</p>
+<h2><span class="mw-headline" id="Dog_equipment_slots">Dog equipment slots</span></h2>
+<p>Mention should be made of the fact that a dog follower needs to have the appropriate equipment slot mask. I will make the addition to the text if no-one has any objections/suggestions in a couple of days. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 09:38, 21 October 2010 (UTC)
+</p><p>I don't think that happened, so I've done it now. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 10:12, 2 January 2011 (UTC)
+</p>

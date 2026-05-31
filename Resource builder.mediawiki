@@ -1,0 +1,3 @@
+<p>The resource builder is a utility that converts the "working" form of many game resources (such as level layouts) into their final binary form that is used by the game directly.
+</p><p>If you install the toolset in a non-default location, the toolset may not be made aware of where the Resource Builder has been put. This can be easily fixed by changing the "Resource Build Path" variable found in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Options" title="Options (page does not exist)">Options</a>-&gt;Environment.
+</p>

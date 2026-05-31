@@ -1,0 +1,198 @@
+<p>This tutorial illustrates how to create <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20with%20codex%20entries%20tutorial" title="Items with codex entries tutorial (page does not exist)">items with codex entries</a> for both a new standalone module or an extension to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign" title="Single Player Campaign (page does not exist)">Single Player Campaign</a>. Additionally it will show you how to destroy, or avoid destroying, the item once the codex entry has been created.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Goal"><span class="tocnumber">1</span> <span class="toctext">Goal</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Steps"><span class="tocnumber">2</span> <span class="toctext">Steps</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Scripting"><span class="tocnumber">3</span> <span class="toctext">Scripting</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Standalone_module"><span class="tocnumber">4</span> <span class="toctext">Standalone module</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Single_Player_Campaign"><span class="tocnumber">5</span> <span class="toctext">Single Player Campaign</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Considerations"><span class="tocnumber">5.1</span> <span class="toctext">Considerations</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Solution"><span class="tocnumber">5.2</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Goal">Goal</span></h2>
+<p>The goal of this tutorial is to create two items that with codex entries. The first, a book, will be automatically removed from the Player's inventory and destroyed. The second, a longsword, will remain in the Player's inventory so they can use it.
+</p><p><br />
+This tutorial assumes, you are familiar with creating a standalone module or an extension to the Single Player Campaign and is only focused on the steps and explaining the considerations surrounding creating items with codex entries.
+</p><p>This process shares some similarities with, but is more complex than, creating placeables with codex entries.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Steps">Steps</span></h2>
+<p>The the initial steps are the same regardless of whether you are creating a standalone module or an extension to the Single Player Campaign.
+</p><p><br />
+</p>
+<ul><li> Create the book item and set it's tag to something unique, e.g. xx_codex_itm_book</li>
+<li> Create <b>new</b> a plot resource (because <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Duplicating%20a%20plot%20duplicates%20the%20uneditable%20GUID" title="Bug: Duplicating a plot duplicates the uneditable GUID">duplicating a plot duplicates the uneditable GUID</a>)</li>
+<li> Create the longsword item and set it's tag to something unique, e.g. xx_codex_itm_book</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item#Variables" title="Item">item's variables</a></li></ul>
+<h2><span class="mw-headline" id="Scripting">Scripting</span></h2>
+<h2><span class="mw-headline" id="Standalone_module">Standalone module</span></h2>
+<p>If your module is still using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20core" title="Module core (page does not exist)">module_core</a> as it's module script then open the module's properties and create a new module script:
+</p>
+<ul><li> Select the <b>File &gt; Manage Modules</b> menu option</li>
+<li> In the <b>Manage Modules</b> window, select your module (if not already selected)</li>
+<li> Click the <b>Properties...</b> button</li>
+<li> In the <b>Object Inspector</b> window, select the <b>Script</b> property</li>
+<li> Click the <b>Browse</b> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) button</li>
+<li> In the Resource Open/Save window, click the New button</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Create%20new%20resource.png"><img alt="Create new resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Create_new_resource.png" width="375" height="219" /></a></li>
+<li> Enter the </li></ul>
+<p><br />
+</p>
+<pre>and assign a new script, for example, xx_codex_module. 
+</pre>
+<p>Open the new script in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20editor%20window" title="Script editor window (page does not exist)">Script Editor</a> and double click on the 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// Decompose event.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAcquirer <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// Does the item have a codex flag? We can ignore any items with default value (-1) as</span>
+            <span class="co1">// plot flags have values of 0 and above.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nFlag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oItem, ITEM_CODEX_FLAG<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nFlag <span class="sy0">&gt;</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co1">// Was the item acquired by a party member? We ignore any items acquired by someone</span>
+                <span class="co1">// other than a party member.</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAcquirer<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    <span class="co1">// Is the item one of ours? Other items can satify the first two conditions but</span>
+                    <span class="co1">// will be handled by their author's code therefore we must ensure it is ours.</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItem <span class="sy0">==</span> <span class="st0">&quot;xx_codex_itm_longsword&quot;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        <span class="co1">// Trigger the standard codex tutorial (it only shows once).</span>
+                        <span class="co1">// NOTE: requires #include &quot;plt_tut_codex_item&quot; directive.</span>
+                        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_TUT_CODEX_ITEM, TUT_CODEX_ITEM, TRUE<span class="br0">&#41;</span>;
+&#160;
+                        <span class="co1">// Trigger the codex entry.</span>
+                        <span class="co1">// NOTE: unlike Placeables there is no equivalent of the PLC_CODEX_PLOT</span>
+                        <span class="co1">// variable therefore we name the plot resource using the item's tag.</span>
+                        WR_SetPlotFlag<span class="br0">&#40;</span>sItem, nFlag, TRUE, TRUE<span class="br0">&#41;</span>;
+&#160;
+                        <span class="co1">// Raise the &quot;event handled&quot; flag to prevent the default script running for</span>
+                        <span class="co1">// this item and event.</span>
+                        nEventHandled <span class="sy0">=</span> TRUE;
+                    <span class="br0">&#125;</span>
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<p>Since we are using the standard module script template we don't have to
+</p><p><br />
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span>nEventHandled<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, RESOURCE_SCRIPT_MODULE_CORE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span></pre></div></div>
+<p>- why we can't fall through 
+</p><p>module_core:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+&#160;
+            <span class="co1">// [ignoring some code here]</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCodexItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oItem, ITEM_CODEX_FLAG<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nCodexItem <span class="sy0">&gt;</span> <span class="sy0">-</span><span class="nu0">1</span> <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAcquirer<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+&#160;
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_TUT_CODEX_ITEM, TUT_CODEX_ITEM, TRUE<span class="br0">&#41;</span>;
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_SYSTEMS</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptName"><span class="kw4">GetCurrentScriptName</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;Got a codex item: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+                WR_SetPlotFlag<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>, nCodexItem, TRUE, TRUE<span class="br0">&#41;</span>;
+                WR_DestroyObject<span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="co1">// [ignoring some code here]</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Single_Player_Campaign">Single Player Campaign</span></h2>
+<p>Normally for a module extending the Single Player Campaign we don't need
+</p>
+<h3><span class="mw-headline" id="Considerations">Considerations</span></h3>
+<p>sp_module:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, RESOURCE_SCRIPT_MODULE_ITEM_ACQUIRED<span class="br0">&#41;</span>;
+            bEventHandled <span class="sy0">=</span> TRUE;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<p>sp_module_item_acq:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="sy0">:</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;gen_im_acc_rng_bld&quot;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_COD_ITM_BLOOD_RING, COD_ITM_BLOOD_RING, TRUE, TRUE<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;gen_im_wep_rng_lbw_sun&quot;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_COD_ITM_BOW_GOLDEN_SUN, COD_ITM_BOW_GOLDEN_SUN, TRUE, TRUE<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;gen_im_acc_amu_am6&quot;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_COD_ITM_LIFE_DRINKER, COD_ITM_LIFE_DRINKER, TRUE, TRUE<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="sy0">:</span>
+&#160;
+        <span class="br0">&#125;</span></pre></div></div>
+<p>There's no catch all. There's no fall through. So if we're extending the Single Player Campaign we're on our own!
+</p>
+<h3><span class="mw-headline" id="Solution">Solution</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// Decompose event.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAcquirer <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// Does the item have a codex flag? We can ignore any items with default value (-1) as</span>
+            <span class="co1">// plot flags have values of 0 and above.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nFlag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oItem, ITEM_CODEX_FLAG<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nFlag <span class="sy0">&gt;</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co1">// Was the item acquired by a party member? We ignore any items acquired by someone</span>
+                <span class="co1">// other than a party member.</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAcquirer<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    <span class="co1">// Is the item one of ours? Other items can satify the first two conditions but</span>
+                    <span class="co1">// will be handled by their author's code therefore we must ensure it is ours.</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItem <span class="sy0">==</span> <span class="st0">&quot;xx_codex_itm_book&quot;</span> <span class="sy0">||</span> sItem <span class="sy0">==</span> <span class="st0">&quot;xx_codex_itm_longsword&quot;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        <span class="co1">// Trigger the standard codex tutorial (it only shows once).</span>
+                        <span class="co1">// NOTE: requires #include &quot;plt_tut_codex_item&quot; directive.</span>
+                        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_TUT_CODEX_ITEM, TUT_CODEX_ITEM, TRUE<span class="br0">&#41;</span>;
+&#160;
+                        <span class="co1">// Trigger the codex entry.</span>
+                        <span class="co1">// NOTE: unlike Placeables there is no equivalent of the PLC_CODEX_PLOT</span>
+                        <span class="co1">// variable therefore we name the plot resource using the item's tag.</span>
+                        WR_SetPlotFlag<span class="br0">&#40;</span>sItem, nFlag, TRUE, TRUE<span class="br0">&#41;</span>;
+&#160;
+                        <span class="co1">// Do we want the item to persist? If not then we can delete it here.</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItem <span class="sy0">==</span> <span class="st0">&quot;xx_codex_itm_book&quot;</span><span class="br0">&#41;</span> 
+                        <span class="br0">&#123;</span>
+                            WR_DestroyObject<span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span>
+&#160;
+                    <span class="br0">&#125;</span>
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> TODO</li></ul>

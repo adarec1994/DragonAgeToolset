@@ -1,0 +1,224 @@
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents
+</th></tr>
+<tr>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+<p>The <strong class="selflink">TOC</strong> template creates a replacement <b>Table of Contents</b> for alphabetical lists:
+</p>
+<dl><dd><ul><li> The "Contents" or a custom heading can go on top (default) or the side (side=yes).</li>
+<li> letters can be omitted and/or merged into ranges: A B C-F G H-K L ...</li>
+<li> Other options include: align=center, num=yes, top=yes, seealso=yes, etc.</li></ul></dd></dl>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{TOC
+|name    =
+|side    = yes
+|align   = center
+|nobreak = yes
+|top     = yes
+|num     = yes
+|sym     = yes
+|symnum  =
+|seealso = yes
+|a       =
+:
+|z       =
+}}
+&lt;!-- === &lt;span id="A"&gt;A&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="B"&gt;B&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="C"&gt;C&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="D"&gt;D&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="E"&gt;E&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="F"&gt;F&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="G"&gt;G&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="H"&gt;H&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="I"&gt;I&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="J"&gt;J&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="K"&gt;K&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="L"&gt;L&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="K"&gt;K&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="K"&gt;K&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="M"&gt;M&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="N"&gt;N&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="O"&gt;O&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="P"&gt;P&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="Q"&gt;Q&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="R"&gt;R&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="S"&gt;S&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="T"&gt;T&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="U"&gt;U&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="V"&gt;V&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="W"&gt;W&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="X"&gt;X&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="Y"&gt;Y&lt;/span&gt; ===
+--&gt;
+&lt;!-- === &lt;span id="Z"&gt;Z&lt;/span&gt; ===
+--&gt;</pre>
+<h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="wikitable">
+<tr>
+<th> Parameter </th>
+<th> Description
+</th></tr>
+<tr>
+<td> <code>name</code>
+</td>
+<td> replaces the "Contents" heading with an alternative name, or hide it completely by entering <code>name=no</code>
+</td></tr>
+<tr>
+<td> <code>side</code>
+</td>
+<td> places the "Contents" heading on the left side with a colon, instead of the top without one
+</td></tr>
+<tr>
+<td> <code>align</code>
+</td>
+<td> <code>align=center</code> aligns the TOC horizontal to the middle of the page; <code>align=right</code> aligns the TOC horizontally to the right of the page (may require <code>&lt;br style="clear:right;"/&gt;</code>   after it, depending on page layout)
+</td></tr>
+<tr>
+<td> <code>nobreak</code>
+</td>
+<td> no linebreak between the letters and the "See also" link (note: does not affect the heading; use <code>side</code> for that)
+</td></tr>
+<tr>
+<td> <code>top</code>
+</td>
+<td> enables the "Top" link; this is only useful if this copy of the TOC is a secondary TOC not at the top of the page, e.g. in the  middle of a  long  glossary
+</td></tr>
+<tr>
+<td> <code>sym</code>
+</td>
+<td> enables the "!$@" link for symbolic entries section
+</td></tr>
+<tr>
+<td> <code>num</code>
+</td>
+<td> enables the "0-9" link for numeric entries section (create a heading of <code>==0&amp;ndash;9==</code> for the link to work)
+</td></tr>
+<tr>
+<td> <code>symnum</code>
+</td>
+<td> enables the "!-9" link for combined symbolic and numeric entries section (create a heading of <code>==!&amp;ndash;9==</code> for the link to work)
+</td></tr>
+<tr>
+<td> <code>sep</code>
+</td>
+<td> sets the separator between the word-headers (but not the letters), for example <code>&amp;middot;</code> ("&#183;"), <code>&amp;bull;</code> ("&#8226;") or <code>&amp;#124;</code> ("&#124;"), etc.
+</td></tr>
+<tr>
+<td> <code>seealso</code>
+</td>
+<td> enables link to the "See also" section
+</td></tr>
+<tr>
+<td> <code>a</code> to <code>z</code>
+</td>
+<td> disables individual letters that have no entries or creates range links,  for example, "X-Z".  Use with caution and check regularly to make sure that new entries do not require the removal of these parameters.
+</td></tr></table>
+<p>Any letter can be omitted (i.e. when it has no entries in the list) by using its <i>lower-case</i> parameter unset, for example, <code>q=</code>, or it can be replaced with an unlinked letter by using its <i>lower-case</i> parameter set to its (<b>upper-case</b>) self, for example, <code>q=Q</code>.
+</p><p>It is sometimes better to create an empty place-holder span (e.g. <code>&lt;span id="Q"/&gt;</code>   where the letter's heading would be in the page if it existed, since  in  most cases it is quite possible that it will come to exist in the  future. Using the span-id avoids confusing new users who might not realize the TOC-template has skipped some letters.
+</p><p>The letter-assignment feature can also be used to create range links, for example, <code>x=[[#X-Z|X-Z]]|y=|z=}}</code>.
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p><code>{{TOC}}</code>
+</p>
+<table style="margin-left:2.5em">
+<tr>
+<td>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents
+</th></tr>
+<tr>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+</td></tr></table>
+<p><code>{{TOC|symnum=yes}}</code>
+</p>
+<table style="margin-left:2.5em">
+<tr>
+<td>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents
+</th></tr>
+<tr>
+<td><div style="text-align:left;">   <a href="#.21-9">!-9</a> <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+</td></tr></table>
+<p><code>{{TOC|side=yes|j=|q=}}</code>
+</p>
+<table style="margin-left:2.5em">
+<tr>
+<td>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents&#58;
+</th>
+<td>
+</td>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a>  <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a>  <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+</td></tr></table>
+<p><code>{{TOC|side=yes|j=J|q=Q}}</code>
+</p>
+<table style="margin-left:2.5em">
+<tr>
+<td>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents&#58;
+</th>
+<td>
+</td>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> J <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> Q <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+</td></tr></table>
+<p><code>{{TOC|side=yes|x=[[#X-Z|X-Z]]|y=|z=}}</code>
+</p>
+<table style="margin-left:2.5em">
+<tr>
+<td>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents&#58;
+</th>
+<td>
+</td>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X-Z">X-Z</a>   <br />
+</div>
+</td></tr></table>
+</td></tr></table>

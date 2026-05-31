@@ -1,0 +1,126 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Инструкция по добавлению локации в одиночной кампании</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Adding_a_Location_to_the_Single_Player_Campaign_Tutorial/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>В этой инструкции покажем вам, как в одиночной кампании добавить новую локацию на карту мира. Предполагается, что вы уже знакомы со следующими статьями: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial%20-%20ru" title="Area tutorial/ru">Инструкция по локациям</a>. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F"><span class="tocnumber">1</span> <span class="toctext">Создание модуля</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8"><span class="tocnumber">2</span> <span class="toctext">Создание локации</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BA.D0.B0.D1.80.D1.82.D1.8B"><span class="tocnumber">3</span> <span class="toctext">Создание карты</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.AD.D0.BA.D1.81.D0.BF.D0.BE.D1.80.D1.82_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F"><span class="tocnumber">4</span> <span class="toctext">Экспорт модуля</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D0.B0_.D0.BA.D0.B0.D1.80.D1.82.D1.8B"><span class="tocnumber">5</span> <span class="toctext">Редактирование файла карты</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Создание модуля</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:20px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Map-tut-no-script.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a7/Map-tut-no-script.png" width="120" height="110" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a7/Map-tut-no-script.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a7/Map-tut-no-script.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 1: Установка скрипта модуля в "None".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:20px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Map-tut-extend-single-player.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a3/Map-tut-extend-single-player.png" width="120" height="110" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a3/Map-tut-extend-single-player.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a3/Map-tut-extend-single-player.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 2: Модуль делаем расширением основной кампании (Single Player).
+</p>
+			</div>
+		</div></li>
+</ul>
+<ol><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создайте модуль</a>.</li>
+<li> В свойствах модуля в поле "Script" укажите "None", как на Рис. 1. Это необходимо для того, чтобы отсечь возможные негативные последствия при работе module_core, основного скрипта модуля. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> - много раз использовал свой скрипт в качестве скрипта модуля, проблем не было.</li>
+<li> Не забудьте, ваш модуль должен быть расширением одиночной кампании, для этого установите параметр "Extended Module" как "Single Player, а "Content Module" как "None" (Рис. 2).</li></ol>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Создание локации</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Map-tut-area-wm-enabled.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fd/Map-tut-area-wm-enabled.png" width="120" height="71" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fd/Map-tut-area-wm-enabled.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fd/Map-tut-area-wm-enabled.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 3: Включение быстрых переходов в списке переменных.
+</p>
+			</div>
+		</div></li>
+</ul>
+<ol><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial%20-%20ru" title="Area tutorial/ru">Создайте локацию</a>.</li>
+<li> Укажите для локации понятный тэг, на который будет ссылаться тулсет. Для локации в данной инструкции мы будем использовать тэг "maptutarea". </li>
+<li> Измените переменные локации (Variables). Для этого нажмите на кнопку возле поля "Variables", после чего появится список переменных вашей локации и найдите "AREA_WORLD_MAP_ENABLED". Эта переменная определяет, возможно ли в локации открыть карту мира. Поскольку задачи в данной инструкции у нас простые и будут применяться быстрые переходы, то можно установить для этой переменной значение "1"(Рис. 3)</li>
+<li> Теперь на локации поместите точку выхода (WayPoint), в которой появится игрок при заходе на локацию, и также укажите ей понятный тэг, на который будем ссылаться в дальнейшем. Я присвоил тэг "start". </li></ol>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BA.D0.B0.D1.80.D1.82.D1.8B">Создание карты</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Map-pin.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Map-pin.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Map-pin.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Map-pin.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 4: Пример карты и иконки локации.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Pin-properties.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Pin-properties.png" width="110" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Pin-properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Pin-properties.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 5: Свойства иконки локации.
+</p>
+			</div>
+		</div></li>
+</ul>
+<ol><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial%20-%20ru" title="Map tutorial/ru (page does not exist)">Создайте карту</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial" title="Map tutorial">(en)</a>. Большинство свойств, которые задаются по умолчанию при создании локации нас устраивают и могут быть оставлены без изменения. Необходимо только изменить одно поле, а именно поле "Map". В этом поле из списка возможных вариантов выберите "Wide Open World". Это обеспечит фоновый рисунок для карты. </li>
+<li> Вы можете пропустить предыдущий шаг и просто изменить атрибут "Parent Map", выбрав в нём "wide_open_world" и всё. Этим вы скажете игре, что новые локации, указанные на этой карте, необходимо добавить на главную карту основной (одиночной) кампании.</li>
+<li> Далее, выбрав место, поместите иконку локации на карту. Для того чтобы это сделать, щёлкните правой кнопкой мыши на карте и выберите "Insert pin". Свою иконку я расположил рядом с Коркари (Рис. 4).</li>
+<li> В инспекторе объектов в поле "Name" укажите имя, которое будет отображаться на карте как название локации (См. рис. 5). </li>
+<li> В инспекторе объектов в поле "AreaTag" укажите тэг вашей локации, на которую будет ссылаться иконка (См. рис. 5). </li>
+<li> В инспекторе объектов в поле "Waypoint override" укажите тэг точки выход на вашей локации (См. рис. 5). </li>
+<li> В инспекторе объектов в поле "Initial State" смените начальное состояние иконки, изменив "Invalid" на "Active". Если вы этого не сделаете, то иконка вашей локации будет отображаться серым цветом и вы не сможете войти в неё. Можно сделать это и позже с помощью <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates%20-%20ru#.D0.90.D0.BA.D1.82.D0.B8.D0.B2.D0.B0.D1.86.D0.B8.D1.8F_.D0.B8.D0.BA.D0.BE.D0.BD.D0.BA.D0.B8_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0_.D0.BA.D0.B0.D1.80.D1.82.D0.B5_.D0.BC.D0.B8.D1.80.D0.B0" title="PRCSCR Script Templates/ru">системы PRCSCR</a>.</li>
+<li> Далее надо указать маршрут движения к вашей локации (следы на карте), поместив следы от существующих иконок локаций (не обязательно точно указывать, но чем ближе, тем лучше). Для определения координат иконок, откуда вести маршрут, можно открыть карту основной кампании (wide_open_world.map) или посмотреть <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign%20Map%20Pin%20List%20-%20ru" title="Single Player Campaign Map Pin List/ru (page does not exist)">этот список</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign%20Map%20Pin%20List" title="Single Player Campaign Map Pin List">(en)</a>. Для создания маршрута щёлкните правой кнопкой мыши на карте, нажмите "Insert trail" и левой кнопкой мыши указывайте каждую точку маршрута. После небольшой тренировки у вас всё получится. Для окончания маршрута дважды щёлкните мышкой. </li>
+<li> В инспекторе объектов установите свойства маршрута: имя - на ваш вкус; стартовый тэг - тэг иконки с карты "wide_open_world", от которой начинается маршрут; конечный тэг - тэг вашей иконки.</li></ol>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id=".D0.AD.D0.BA.D1.81.D0.BF.D0.BE.D1.80.D1.82_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Экспорт модуля</span></h2>
+<p>Все созданные ресурсы должны экспортироваться без связанных ресурсов, то есть "export without dependent resources". 
+</p><p>Ресурсы, которые надо экспортировать:
+</p>
+<ul><li> Ваша локация (в данной инструкции - "maptutarea" ).</li>
+<li> Ваша карта (в данной инструкции - "tut_map").</li></ul>
+<p>• Другие ваши объекты, используемые в локации.
+</p><p>После экспорта ресурсов обновите XML модуля и манифеста (Tools-&gt;Export-&gt;Generate Module XML и Tools-&gt;Export-&gt;Generate Manifest XML).
+</p><p><b>Дополнительно:</b>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Более подробно об экспорте модуля</a>
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D0.B0_.D0.BA.D0.B0.D1.80.D1.82.D1.8B">Редактирование файла карты</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:30.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tut-map-location.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Tut-map-location.png" width="120" height="89" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Tut-map-location.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Tut-map-location.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 6: Открытие файла карты.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:55px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Change-to-wide-open-world.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Change-to-wide-open-world.png" width="120" height="40" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Change-to-wide-open-world.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/Change-to-wide-open-world.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Рис. 7: Редактирование файла карты.
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>Финальным шагом в добавлении новой локации на карту мира в основной кампании будет редактирование экспортированного файла карты. Чтобы это сделать откройте файл карты в тулсете: File-&gt;Open File. Файл должен находиться по адресу: "Documents\BioWare\Dragon Age\AddIns\(Имя Вашего Модуля)\module\override\toolsetexport\" (Рис. 6).
+</p><p>Когда файл откроется нужно установить для вашей карты - родительскую. Для этого измените поле "MAP_MAP_PARENT_RESREF" на "wide_open_world". (Рис. 7)
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> - я так понимаю, что если это, установка родительской карты, было сделано при создании вашей карты, то этот шаг можно пропустить, но точно не уверен.
+</p><p>Последние штрихи сделаны, на карте мира в основной кампании появилась иконка вашей локации, прям как в официальных DLC.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20Location%20to%20the%20Single%20Player%20Campaign%20Tutorial" title="Adding a Location to the Single Player Campaign Tutorial">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

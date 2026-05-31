@@ -1,0 +1,21 @@
+<p>Individual "impact" events for each object within an Area of Effect.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetIndividualImpactAOEEvent(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nBaseDelay&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd>The person responsible for the area of effect<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The person who will run the effect<dt style="font-weight:normal; font-style:italic;">nAbility<dd>The ability that should be cast<dt style="font-weight:normal; font-style:italic;">lTarget<dd>The location of the target of the event (used for fireball and other abilities that can be cast at the ground.<dt style="font-weight:normal; font-style:italic;">nBaseDelay<dd>The base delay is 0 milliseconds; however, some cone effects require more than a random 150 millisecond delay to make crusts hit simultaneously with the cone.  Use BaseDelay for this purpose.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Assembles (and delays for 0-149 milliseconds) an individual impact event
+associated with an area of effect to ensure that they don't all happen simultaneously.
+This is called directly by the Area of Effect object itself, thus we don't need to know
+anything about its center location (except in the case of fireball, hence the fourth
+parameter).
+</p>

@@ -1,0 +1,390 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <strong class="selflink">Merchant</strong>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr></table>
+<p>A merchant resource keeps track of an inventory of items that can be bought and sold, along with various properties to determine the details of those deals.
+</p><p>A merchant is placed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> editor, but it cannot be seen or interacted with directly by the player. In theory you could place the merchant object anywhere in an area, but in practice it is best to place the merchant object in close proximity to the location where the player will be interacting with it.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Triggering_in_dialog"><span class="tocnumber">1</span> <span class="toctext">Triggering in dialog</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Variables"><span class="tocnumber">2</span> <span class="toctext">Variables</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Properties"><span class="tocnumber">3</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Inventory"><span class="tocnumber">4</span> <span class="toctext">Inventory</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Scaling"><span class="tocnumber">4.1</span> <span class="toctext">Scaling</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Restricted_items"><span class="tocnumber">5</span> <span class="toctext">Restricted items</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Triggering_in_dialog">Triggering in dialog</span></h2>
+<p>The use of a merchant's store is triggered by a script, specifically by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OpenStore" title="OpenStore">OpenStore</a> function. This function is usually called by a script triggered in a conversation with an NPC merchant.
+</p><p>To simplify matters you could write a generic "store opening" script using a code snippet such as:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Open a store</span>
+<span class="co2">#include &quot;core_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oMerchantOwner <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oStore <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;store_&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oMerchantOwner<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oStore<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        ScaleStoreItems<span class="br0">&#40;</span>oStore<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OpenStore"><span class="kw4">OpenStore</span></a><span class="br0">&#40;</span>oStore<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_SYSTEMS</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptName"><span class="kw4">GetCurrentScriptName</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;INVALID STORE OBJECT&quot;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>You would then be able to reuse this script for all merchants in your game by tagging each merchant object with the same tag as the creature you're conversing with to open the store and adding the "store_" prefix to the merchant's tag. So for example if you have a character in your game whose tag is "fishmonger_alice", you could set the above script to run as an "action" script in her dialog tree and when that node is reached it'll open the store with the tag "store_fishmonger_alice", and if you used the same action script in a dialog attached to "blacksmith_steve" it would open the store with the tag "store_blacksmith_steve".
+</p><p>A script with this generic approach can be triggered by setting the plot flag "GEN_OPEN_STORE" in the "gen00pt_generic_actions" plot. This plot is a wrapper for commonly used generic conversation script code like this.
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20creature.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f3/Merchant_creature.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f3/Merchant_creature.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f3/Merchant_creature.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>This creature is a merchant. There's nothing special about it, but note the creature's tag: den230cr_proprietor
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20conversation.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/98/Merchant_conversation.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The conversation containing the generic plot action to open the merchant.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20example.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Merchant_example.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Merchant_example.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Merchant_example.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The merchant that's opened by the conversation. Note the merchant's tag: store_den230cr_proprietor
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20in%20an%20area.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Merchant_in_an_area.png" width="120" height="72" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Merchant_in_an_area.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Merchant_in_an_area.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The merchant and his merchant object placed in an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a>. The merchant object is not seen by the player.
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Variables">Variables</span></h2>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td>  MERCHANT_COUNTER_1 to 3
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<td>  MERCHANT_HIGH_CHANCE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center">
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<td>  MERCHANT_IS_SCALED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<td>  MERCHANT_LEVEL_MODIFIER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<td>  MERCHANT_LEVEL_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr></table>
+<h2><span class="mw-headline" id="Properties">Properties</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Comments</td>
+<td> General information about this merchant </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td> Name of this merchant as seen within the game. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">NameRequiresReTranslation</td>
+<td> A flag used in game development during <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Localization" title="Localization">localization</a></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Resource Name</td>
+<td> A unique string identifier the toolset and the game both use to refer to this resource. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Script</td>
+<td> Event script assigned to the resource. The default merchant_core script contains only an empty main() function.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> A non-unique string identifier used mostly by scripts and other resources to refer to this resource. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Variable 2da</td>
+<td> Allows selecting a variable table. Only the values in the table can be set and retrieved by scripting. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Variables</td>
+<td> Displays the table selected in the "Variable 2da" field. Allows setting intial values for parameters. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Inventory</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Inventory</td>
+<td> a list of the items the merchant has for sale.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Restricted Items</td>
+<td> A list of types of items that the merchant can be set to refuse to buy, or alternately can be set to buy exclusively. For example, you could set a pacifistic merchant to refuses to deal in weapons or armor, or set a hunter to only buy arrows and other such items that are useful to him. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Pricing</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Buy Mark Down</td>
+<td> a percentage value dictating how much the price of items the merchants buy from the player is scaled down from their default price </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Sell Mark Up</td>
+<td> percentage value of how much the price of items sold by the merchant to the player is scaled up from their default price. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Inventory">Inventory</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20inventory%20item%20palette.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Merchant_inventory_item_palette.png" width="300" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Merchant_inventory_item_palette.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Merchant_inventory_item_palette.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20inventory%20item%20palette.png" title="Enlarge"></a></div>Merchant inventory in "item palette" selection mode, the default</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20inventory%20store%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Merchant_inventory_store_panel.png/300px-Merchant_inventory_store_panel.png" width="300" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Merchant_inventory_store_panel.png/450px-Merchant_inventory_store_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Merchant_inventory_store_panel.png/600px-Merchant_inventory_store_panel.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20inventory%20store%20panel.png" title="Enlarge"></a></div>Merchant inventory in "store panel" selection mode</div></div></div>
+<p>The inventory <img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /> button brings up the merchant inventory selection screen. This screen is similar to the inventory screen used by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">creature</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">placeable</a> editors, with a list of all available items that can be placed in the merchant's inventory to the left and a list of all the items currently in the merchant's inventory to the right. It defaults to the "item palette" selection mode, which shows items in the same subfolder arrangement that they appear in the resource palette. It can also be set to the "store panel" selection mode, which groups all items into the general categories that they would appear in when in the merchant's inventory. This can be useful if you've got (for example) armor items scattered through several different folders of your palette or mixed in with other item types in the same folder, but you want to pick from all available armor items to stock the merchant's inventory.
+</p><p>The merchant's inventory table has the following columns:
+</p>
+<ul><li>Label - shows items' resource name, followed by the name shown to the player in parenthesis</li>
+<li>Subgroup - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li>Stack size - the number of copies of this item that the merchant has.</li>
+<li>Infinite - a checkbox that, when checked, gives this merchant an endless supply of this item to sell.</li></ul>
+<h3><span class="mw-headline" id="Scaling">Scaling</span></h3>
+<p>Merchants are scaled when first opened, but this can easily be reset by setting MERCHANT_IS_SCALED back to 0. Check out <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ScaleStoreItems" title="ScaleStoreItems (page does not exist)">ScaleStoreItems</a> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a>.
+</p>
+<h2><span class="mw-headline" id="Restricted_items">Restricted items</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20restricted%20items.png"><img alt="Merchant restricted items.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Merchant_restricted_items.png" width="300" height="196" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Merchant_restricted_items.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Merchant_restricted_items.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Merchant%20restricted%20items.png" title="Enlarge"></a></div></div></div></div>
+<p>The restricted items <img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /> button brings up this simple popup that sets which <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BASE%20ITEM%20TYPE" title="Base item type (page does not exist)">base item types</a> the merchant will be willing to buy from the player. A list of all base item types is on the left and a list of selected types is on the right. A radio button sets whether the merchant <i>refuses</i> to buy selected item types, or <i>exclusively</i> buys selected item types.
+</p>

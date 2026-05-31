@@ -1,0 +1,14 @@
+<p>Sets an entry in the Tournament Scoreboard GUI
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetTournamentScoreboardEntry(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEntryID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sName,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bDefeated,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bIsPlayer<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nEntryID<dd>ID of the entry to set (0-13 first seven rounds, 14 champion)<dt style="font-weight:normal; font-style:italic;">sName<dd>Name of contestant<dt style="font-weight:normal; font-style:italic;">bDefeated<dd>1 if the contestant has been defeated, 0 otherwise<dt style="font-weight:normal; font-style:italic;">bIsPlayer<dd>1 if this contestant is the player, 0 otherwise
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

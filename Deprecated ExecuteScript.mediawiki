@@ -1,0 +1,21 @@
+<p>Executes a script.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Deprecated_ExecuteScript(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rScript,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">rScript<dd>The name of the script to run (*.ncs)<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The object to run the script on
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Deprecated, do not use -- Georg. 
+</p><p>Runs the script with the name specified by the string sScript on the object oTarget.  Note that this will happen immediately from the execution point in the current script. The current script will continue only after the new script has finished executing. 
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>If the specified script or object does not exist then the call to ExecuteScript() will fail.
+</p>

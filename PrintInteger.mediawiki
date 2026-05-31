@@ -1,0 +1,22 @@
+<p>Prints an integer to the log file.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> PrintInteger(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nInteger,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPrepend&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nInteger<dd>The integer value to print out to the log<dt style="font-weight:normal; font-style:italic;">bPrepend<dd>Specifies if the type of value should be prepended on to the log string
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Prints the integer nInteger to the log file. If bPrepend is TRUE, then 'PRINTINTEGER'
+will be prepended onto the text outputted to the log file.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintFloat" title="PrintFloat">PrintFloat</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintString" title="PrintString">PrintString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintObject" title="PrintObject">PrintObject</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintVector" title="PrintVector">PrintVector</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog" title="PrintToLog">PrintToLog</a>
+</p>

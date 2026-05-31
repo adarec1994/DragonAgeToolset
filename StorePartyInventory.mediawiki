@@ -1,0 +1,22 @@
+<p>Store the party inventory on a placeable
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> StorePartyInventory(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlaceable<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oPlaceable<dd>Target placeable
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Store the party inventory on a placeable
+NOTE: As with all commands that add items to a container, this command will reset the container (placeable)
+to interactive not matter it's previous state.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Equipped items are not affected. To store them, unequip them before using this function.
+</p>

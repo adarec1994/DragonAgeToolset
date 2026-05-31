@@ -1,0 +1,18 @@
+<p>Returns a string from the tlk table.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> GetTlkTableString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStrRef,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGender&#160;= GENDER_MALE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nStrRef<dd>The string reference to get from the tlk table<dt style="font-weight:normal; font-style:italic;">nGender<dd>The gender variation of the string
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the string specified by the string reference. Returns an empty string on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns a string from the tlk table based on the specified strref (String reference) and gender. It should be noted that there may be multiple genders in the tlk table depending on how the specific tlk table is generated.
+</p><p>"Gender" in this case refers to grammatical gender. For most of the lines of dialogue in the game plot flags are used to choose between different lines referring to the player, so this does not actually come up much.
+</p>

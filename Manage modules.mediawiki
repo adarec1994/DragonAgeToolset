@@ -1,0 +1,56 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Module topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">Creating a module</a></li>
+<li> <strong class="selflink">Managing modules</strong></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">Builder to builder</a></li></ul>
+</td></tr></table>
+<p>The "manage modules" command is used to switch between <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">modules</a>, to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">create a module</a>, and to edit an existing module's properties.
+</p>
+<table>
+
+<tr>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:195px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/Module_menu_command.png" width="193" height="386" class="thumbimage" /></a>  <div class="thumbcaption">Select "Manage Modules"</div></div></div>
+</td>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:301px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="299" height="373" class="thumbimage" /></a>  <div class="thumbcaption">Then click the "New" button to create a new module.</div></div></div>
+</td></tr></table>
+<h2><span class="mw-headline" id="Module_Setup">Module Setup</span></h2>
+<table align="right">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties.png"><img alt="Module properties.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png" width="350" height="325" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 2x" /></a>
+</td></tr></table>
+<p>How the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a> is set up, is an important factor how the game reacts to it. The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module's</a> entry point into the game is made concrete with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a> properties. 
+</p><p>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a> typically needs a starting condition, usually what will trigger new resources to appear in game. This can be a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a> tied to the module which puts the player in a starting <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>, or by integrating one like a Sword into existing resources like a Vendor, with which the condition for the existing Vendor is already set.
+</p>
+<h3><span class="mw-headline" id="Standalone_Module">Standalone Module</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click on the "Properties" button </li>
+<li>Script will determine which script to run when the Module runs. This should either be module_core or a custom Script.</li>
+<li>Starting Area and Waypoint will determine where the player start out. This can be any Area you created.</li></ol>
+<p>The Script will be run ,and determine any further actions once running the game. This will require to start a new campaign, and starts at the Area given.
+</p>
+<h3><span class="mw-headline" id="Non_standalone_Module">Non standalone Module</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click on the "Properties" button </li>
+<li>Script should be replaced with a blank script.</li>
+<li>Starting Area and Waypoint should be left blank</li>
+<li>Extended Module should be set to the Module which is being extended.</li></ol>
+<p>No starting condition is set by default, and it is up to the Designer to create something which influences the extended module. Like editting an existing Resource, which overwrites original Content and should be avoided. The most sophisticated method to call a condition is using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR" title="PRCSCR">PRCSCR</a> Scripts, with which no content needs to be overwritten. This Script can then spawn Resources, new waypoints on the Map, and anything a Script is capable of. This is also what Bioware uses in their DLC. 
+</p>
+<ul><li>Note that as of toolset version 1.01 and game version 1.02b, you should NOT use "module_core" as the script (as found in module properties) for an add-in that extends an existing module, otherwise you will encounter issues that may include slow-downs during conversations and attribute allocation. The exact cause of these issues is not yet known, but using a blank script with an empty main function will eliminate these issues. </li></ul>
+<ul><li>For a detailed explanation of all the properties you will see here, See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules%20-%20ru" title="Manage modules/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

@@ -1,0 +1,83 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<div align="center" style="background-color:#FFF7F0; border:2px #F77F00 solid; padding:4px; margin:4px;">
+<p>This page has been marked for review 
+</p>
+</div>
+<p>Art Resources are all Art created and stored in the Dragon Age file system. Creators of world maps will need Art Resources to shape them with Models, while creators of face morphs need Models of Faces. With that ,they are also creating Art Resources.
+This is Part of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art" title="Art">Art</a> Category.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#File_Structure"><span class="tocnumber">1.1</span> <span class="toctext">File Structure</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Modding_and_Creating"><span class="tocnumber">2</span> <span class="toctext">Modding and Creating</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Resource_Types"><span class="tocnumber">3</span> <span class="toctext">Resource Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Models"><span class="tocnumber">3.1</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Materials_.2F_Textures_.2F_Tints"><span class="tocnumber">3.2</span> <span class="toctext">Materials / Textures / Tints</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Animations"><span class="tocnumber">3.3</span> <span class="toctext">Animations</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Morphs"><span class="tocnumber">3.4</span> <span class="toctext">Morphs</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#FaceFX"><span class="tocnumber">3.5</span> <span class="toctext">FaceFX</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Visual_effects"><span class="tocnumber">3.6</span> <span class="toctext">Visual effects</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Audio"><span class="tocnumber">3.7</span> <span class="toctext">Audio</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Level.2FArea_layouts"><span class="tocnumber">3.8</span> <span class="toctext">Level/Area layouts</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Art Resources are the part of the Game which is what you hear and see. However the properties of each of the things is not. What they are instead is a property of a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resource</a>. A sword, which is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resource</a>, for example has attack properties, and another of these properties tell which <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model</a> it uses.
+</p><p>Art Resources are almost solely required by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a>, and as such do not make its way into the Game directly.
+</p><p>Any Resource is stored in the Dragon Age file systems <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> files. They are created by external Tools and the Dragon Age Toolset, by multiple ways. The most common and diverse Resource is that of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Models</a>.
+The file name Scheme for Resources follows a general <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions" title="Naming conventions">naming structure</a>, due to its Amount and easier Management. It is also split into many <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> Files for different kinds of Resources.
+</p>
+<h3><span class="mw-headline" id="File_Structure">File Structure</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> files for Dragon Age are stored in the folder and sub-folders:
+</p>
+<pre>[Dragon Age Install Directory]\packages\core\</pre> 
+<ul><li> Browsing the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> files supplied with the toolset</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">List of file types</a></li></ul>
+<h2><span class="mw-headline" id="Modding_and_Creating">Modding and Creating</span></h2>
+<p>When talking Art Resources, its creation requires mostly knowing only about the resource type in question. Anything about creation, exporting, formats is explained for each on their own. 
+</p><p>A common activity in modding is overriding existing Art Resources. This is the process of recreating a special type and mimicking the file name of the original, so that the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resource</a> ,or anything that previously read that File, will now pick the modded one. Art Resources, along with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA Resources</a>, need to be manually arranged into the file system. This is normally an Override Folder of some sort, and those Resources are initially stored as single Files. 
+</p><p>Generally, the Game and the Toolset reads multiple override Folders <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">after a list of priorities</a>, so it would not matter. However when the Art Resource should be integrated into a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">custom module</a>, it should be placed alongside the override folder of that <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>. The reason is that the Toolset creates <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">DAZIP</a> files (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a> installable packages) where you select which folder to integrate. Thus the Resources needed for the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a> should not be scattered around the file system.
+</p><p>Only the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a> functionality packs those Resources into <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF Files</a> again.
+</p>
+<dl><dd><i>See also: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials" title="Tutorials">Tutorials</a></i></dd></dl>
+<h2><span class="mw-headline" id="Resource_Types">Resource Types</span></h2>
+<h3><span class="mw-headline" id="Models">Models</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model</a></i></dd></dl>
+<h3><span class="mw-headline" id="Materials_.2F_Textures_.2F_Tints">Materials / Textures / Tints</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Material editor</a></i></dd></dl>
+<p>In closer relation to Models see Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model</a>
+</p>
+<h3><span class="mw-headline" id="Animations">Animations</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animation blend tree editor</a></i></dd></dl>
+<h3><span class="mw-headline" id="Morphs">Morphs</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morph</a></i></dd></dl>
+<p>Face morphs, are generated with the face-morphing tool.
+</p><p>You can download the source files for all the morphs in the main campaign from here: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1331/#files">[1]</a>
+</p>
+<h3><span class="mw-headline" id="FaceFX">FaceFX</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></i></dd></dl>
+<p>Handles facial expressions and lip-synching.
+</p>
+<h3><span class="mw-headline" id="Visual_effects">Visual effects</span></h3>
+<dl><dd> <i>See Main Article&#160;: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">VFX editor</a></i></dd></dl>
+<p>You can download the source files for all the visual effects in the main campaign from here: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1331/#files">[2]</a>
+</p>
+<h3><span class="mw-headline" id="Audio">Audio</span></h3>
+<dl><dd> <i>See Main Article&#160;: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a></i></dd></dl>
+<h3><span class="mw-headline" id="Level.2FArea_layouts">Level/Area layouts</span></h3>
+<dl><dd> <i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a></i></dd></dl>
+<p>You can download the source files for all the level layouts in the main campaign from here: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1331/#files">[3]</a>
+</p><p>Note that <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">levels</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20layout" title="Area layout (page does not exist)">area layouts</a> are are distinct from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">areas</a> created in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area editor">Area editor</a>
+</p><p>See also the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20layout%20visual%20index" title="Area layout visual index">Area layout visual index</a> for an image of each area layout included with the Toolset.
+</p>

@@ -1,0 +1,409 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><strong class="selflink">Scripting overview</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p>Scripting is used whenever the designers need control over the game's behaviour. The syntax for DA scripts is very similar to the C programming language. 
+</p><p>Detailed documentation for the scripting language can be found in the "dascript.chm" file, available in your "Dragon Age\packages\core" directory.
+</p><p>The main uses for it are to: 
+</p>
+<ul><li>Trigger plot events </li>
+<li>Script conversation </li>
+<li>Handle creature and party member <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI" title="AI">AI</a></li>
+<li>Script abilities - skills, talents, and spells </li></ul>
+<p>DA also has a client-side scripting language whose primary responsibility is automated testing of the game. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">client scripts</a> for more details.
+</p><p>AI Scripts are event based. Objects will have only one event-handling script assigned to them that will be run whenever they receive a game event. This script will receive the event type as a parameter and will need to determine the appropriate response for itself.
+</p><p>There are several file extensions associated with scripts:
+</p>
+<ul><li> NSS - script source file</li>
+<li> NCS - compiled script</li>
+<li> NDB - debug information file (required for using the script debugger to trace through this file)</li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Script_editor"><span class="tocnumber">1</span> <span class="toctext">Script editor</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Writing_scripts"><span class="tocnumber">2</span> <span class="toctext">Writing scripts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Including_files"><span class="tocnumber">2.1</span> <span class="toctext">Including files</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Operators"><span class="tocnumber">2.2</span> <span class="toctext">Operators</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Arithmetic_Operators"><span class="tocnumber">2.2.1</span> <span class="toctext">Arithmetic Operators</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Comparison_Operators"><span class="tocnumber">2.2.2</span> <span class="toctext">Comparison Operators</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Logical_Operators"><span class="tocnumber">2.2.3</span> <span class="toctext">Logical Operators</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Other_Operators"><span class="tocnumber">2.2.4</span> <span class="toctext">Other Operators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Types_.26_Variable"><span class="tocnumber">2.3</span> <span class="toctext">Types &amp; Variable</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Structures"><span class="tocnumber">2.3.1</span> <span class="toctext">Structures</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Arrays"><span class="tocnumber">2.3.2</span> <span class="toctext">Arrays</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Local_Variables"><span class="tocnumber">2.3.3</span> <span class="toctext">Local Variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Functions"><span class="tocnumber">2.4</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Passing_parameters_to_scripts"><span class="tocnumber">2.5</span> <span class="toctext">Passing parameters to scripts</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Error_messages_and_logging"><span class="tocnumber">2.6</span> <span class="toctext">Error messages and logging</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Timing"><span class="tocnumber">3</span> <span class="toctext">Timing</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Searching_Scripts"><span class="tocnumber">4</span> <span class="toctext">Searching Scripts</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Script_editor">Script editor</span></h2>
+<p>Scripts are created in the Designer Toolset using the Script Editor. Once created, scripts must be assigned to such things as Creatures before they can be used. Once assigned, both the referencing object and the script must be exported in order to be viewed in the game. Exporting happens automatically or can be done manually by the designer during testing. 
+</p><p>The script editor supports the following features: 
+</p>
+<ul><li>Undo and redo </li>
+<li>Find and replace </li>
+<li>Bookmarking: View -&gt; Other Windows -&gt; Bookmarks</li>
+<li>Function, variable, constant, and template browser (visible on the right-hand side of the screen).</li>
+<li>Auto-complete when typing function and variable names </li>
+<li>Syntax highlighting </li>
+<li>Auto-indention </li>
+<li>Brace matching/highlighting </li>
+<li>Ability to test compile a script </li>
+<li>Jump to definition</li></ul>
+<p>To the right of the script editor is a sidebar with a browser that can display all currently-defined functions, variables, or constants, or a set of 'template' scripts that can serve as a starting point when writing a script from scratch. The browser also has a filter field where you can type in a partial string and have the list automatically exclude everything that doesn't include it in the name.
+</p><p>This is the constant browser:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="Scripting constant browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png" width="205" height="256" /></a>
+</p><p>Here it is with "team" typed into the filter field, displaying only constants with names that contain the substring "team" (not case sensitive):
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="Scripting constant browser filtered.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="205" height="157" /></a>
+</p><p>The templates that come with Dragon Age include frameworks for the most common event scripts found in the game. You can add your own templates quite easily, just create a text file with the template code in it and place it in the Dragon Age\Toolset\scripttemplates directory with the others.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20template%20browser.png"><img alt="Scripting template browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/Scripting_template_browser.png" width="240" height="206" /></a>
+</p><p>Dragon Age's toolset supports Doxygen-style comments. If you double-click on a function name a help window will pop open to display its documentation. You can also jump to a function's definition (provided it isn't an engine-defined function in script.ldf) by right-clicking on it and selecting "go to definition".
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20help%20window.png"><img alt="Scripting help window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Scripting_help_window.png" width="1023" height="697" /></a>
+</p>
+<h2><span class="mw-headline" id="Writing_scripts">Writing scripts</span></h2>
+<p>For a script to compile, it needs a body:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>The parameters on this can't be changed or the script won't compile.
+</p><p>Scripts associated with a dialog node take this alternate form:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> StartingConditional<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">1</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h3><span class="mw-headline" id="Including_files">Including files</span></h3>
+<p>Other script files can be included by using the #include directive. 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;rules_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    DoSomethingOrOther<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>The included file is <b>inserted</b> into the main file before the script is compiled. Any number of files can be included.
+<b>Important:</b> this means that whenever you change an "include file" you must export all script that include it before they will use the new version!
+</p>
+<h3><span class="mw-headline" id="Operators">Operators</span></h3>
+<p>The scripting language supports the following operators:
+</p>
+<h4><span class="mw-headline" id="Arithmetic_Operators">Arithmetic Operators</span></h4>
+<table style="width:100%;border:solid 1px black;">
+<tr>
+<th style="width:25%;background-color:#ffffcc;"> Operator Name
+</th>
+<th style="width:75%;background-color:#ffffcc;"> Example
+</th></tr>
+<tr>
+<td> Prefix Increment
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span> <span class="sy0">++</span>a <span class="sy0">&lt;</span> <span class="nu0">10</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Postfix Increment
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a> <span class="br0">&#40;</span>i <span class="sy0">=</span> <span class="nu0">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Assignment by addition
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">a <span class="sy0">+=</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Subtraction (difference)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">x <span class="sy0">=</span> a <span class="sy0">-</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Addition (sum)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">x <span class="sy0">=</span> a <span class="sy0">+</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Prefix decrement
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span><span class="sy0">--</span>a <span class="sy0">&gt;</span> <span class="nu0">10</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Postfix decrement
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span>a<span class="sy0">--</span> <span class="sy0">&gt;</span> <span class="nu0">10</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Assignment by subtraction
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">a <span class="sy0">-=</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Multiplication (product)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">x <span class="sy0">=</span> a <span class="sy0">*</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Division (quotient)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">x <span class="sy0">=</span> a <span class="sy0">/</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Modulo (remainder)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">%</span> b <span class="sy0">==</span> <span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr></table>
+<h4><span class="mw-headline" id="Comparison_Operators">Comparison Operators</span></h4>
+<table style="width:100%;border:solid 1px black;">
+<tr>
+<th style="width:25%;background-color:#ffffcc;"> Operator Name
+</th>
+<th style="width:75%;background-color:#ffffcc;"> Example
+</th></tr>
+<tr>
+<td> Less than
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">&lt;</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Less than or equal to
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">&lt;=</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Greater than
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">&gt;</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Greater than or equal to
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">&gt;=</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Not Equal to
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">!=</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Equal to
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">==</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr></table>
+<h4><span class="mw-headline" id="Logical_Operators">Logical Operators</span></h4>
+<table style="width:100%;border:solid 1px black;">
+<tr>
+<th style="width:25%;background-color:#ffffcc;"> Operator Name
+</th>
+<th style="width:75%;background-color:#ffffcc;"> Example
+</th></tr>
+<tr>
+<td> Logical negation (NOT)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>a<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Logical AND
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">&amp;&amp;</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr>
+<tr>
+<td> Logical OR
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>a <span class="sy0">||</span> b<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span></pre></div></div>
+</td></tr></table>
+<h4><span class="mw-headline" id="Other_Operators">Other Operators</span></h4>
+<table style="width:100%;border:solid 1px black;">
+<tr>
+<th style="width:25%;background-color:#ffffcc;"> Operator Name
+</th>
+<th style="width:75%;background-color:#ffffcc;"> Example
+</th></tr>
+<tr>
+<td> Basic assignment
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">a <span class="sy0">=</span> b;</pre></div></div>
+</td></tr>
+<tr>
+<td> Function call
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">a<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre></div></div>
+</td></tr>
+<tr>
+<td> Array subscript
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">array<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">1</span>;</pre></div></div>
+</td></tr>
+<tr>
+<td> Member (on structures)
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">structure.<span class="me1">member</span> <span class="sy0">=</span> <span class="nu0">0</span>;</pre></div></div>
+</td></tr>
+<tr>
+<td> Ternary conditional
+</td>
+<td> <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> a <span class="sy0">&lt;</span> b <span class="sy0">?</span> c <span class="sy0">:</span> d;</pre></div></div>
+</td></tr></table>
+<h3><span class="mw-headline" id="Types_.26_Variable">Types &amp; Variable</span></h3>
+<p>The scripting language natively supports:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float">float</a> - floating-point numbers. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fFloat <span class="sy0">=</span> <span class="nu0">0.1234f</span>;</pre></div></div></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int">int</a> - integer numbers. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nInteger <span class="sy0">=</span> <span class="nu0">1234</span>;</pre></div></div></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object">object</a> -game object files. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oObject <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;monster_001&quot;</span><span class="br0">&#41;</span>;</pre></div></div></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource">resource</a> - game resource files. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rGameIntroCutscene <span class="sy0">=</span> R<span class="st0">&quot;game_intro_.cut&quot;</span>;</pre></div></div></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String">string</a> - text strings. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sString <span class="sy0">=</span> <span class="st0">&quot;Hello World!&quot;</span>;</pre></div></div></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector" title="Vector">vector</a> - positions or directions. <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vVector <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">0.0</span>, <span class="nu0">1.1</span>, <span class="nu0">2.2</span><span class="br0">&#41;</span>;</pre></div></div></li></ul>
+<p>The server language has been expanded to support these engine defined structures:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event (dascript type)">event</a> - events are signals that are sent to scripts by other scripts or by the world engine.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location" title="Location">location</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword" title="Command">command</a> - a command for a creature or object to do something. Commands are constructed using functions that return them, and then are added to a target's command queue with the AddCommand function.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect" title="Effect">effect</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20keyword" title="Itemproperty">itemproperty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Player" title="Player (page does not exist)">player</a></li></ul>
+<p>All of these types are always passed by value, which means a new copy is made whenever they are passed into a function or copied to another variable.
+</p><p>This means that most functions that are supposed to modify a structure in some way need to return the modified one:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> e1 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="nu0">100</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> e2 <span class="sy0">=</span> SetEffectType<span class="br0">&#40;</span>e1, <span class="nu0">101</span><span class="br0">&#41;</span>; <span class="co1">// e1&#160;!= e2</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h4><span class="mw-headline" id="Structures">Structures</span></h4>
+<p>Users can define their own structures using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct" title="Struct (page does not exist)">struct</a> keyword:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// user-defined type</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> w, x, y, z;
+<span class="br0">&#125;</span>;
+&#160;
+<span class="co1">// constructor</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion Quaternion<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fW, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fX, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fY, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fZ<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion q;
+&#160;
+    q.<span class="me1">w</span> <span class="sy0">=</span> fW;
+    q.<span class="me1">x</span> <span class="sy0">=</span> fX;
+    q.<span class="me1">y</span> <span class="sy0">=</span> fY;
+    q.<span class="me1">z</span> <span class="sy0">=</span> fZ;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> q;
+<span class="br0">&#125;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion q <span class="sy0">=</span> Quaternion<span class="br0">&#40;</span><span class="nu0">0.0</span>, <span class="nu0">0.0</span>, <span class="nu0">0.0</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h4><span class="mw-headline" id="Arrays">Arrays</span></h4>
+<p>Variables can be declared as arrays for any type except user-defined structs. Designers can create their own arrays of any major data type (int, string, object). Many functions will also return arrays (for example, creatures in an area will be returned as an array, and the action queue will be returned as an array).
+</p><p>These are different from C-style arrays in that they can be resized like STL vectors, and their notation is slightly different.
+</p><p>Arrays also behave differently from other objects in the scripting language because they are passed by reference.  If an array is passed into a function and modified:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> i;                 <span class="co1">// new array of integers with a size of zero </span>
+    i<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">5</span>;                <span class="co1">// value of array position 0 is now 5</span>
+    i<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="sy0">-</span><span class="nu0">1</span>;               <span class="co1">// value of array position 1 is now -1</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> j <span class="sy0">=</span> i;             <span class="co1">// i and j point to the same array</span>
+    j<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">12</span>;               <span class="co1">// value of array position 1 for both i and j is now 12!</span>
+&#160;
+    SortArrayDescending<span class="br0">&#40;</span>i<span class="br0">&#41;</span>;  <span class="co1">// i and j are both sorted now, this function has no return value</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize" title="GetArraySize">GetArraySize</a> returns the size of an array.
+</p>
+<h4><span class="mw-headline" id="Local_Variables">Local Variables</span></h4>
+<p>In Neverwinter Nights, variables for various objects could be created and set with functions such as SetLocalInt(). Dragon Age does not have analogous functions. Instead, all of the variables that a given object is able to have values assigned to must be defined ahead of time in a 2DA. This more restrictive approach is intended to improve performance and reduce the opportunity for errors (for example, making a typo in the name of a variable and losing track of it as a result).
+</p>
+<h3><span class="mw-headline" id="Functions">Functions</span></h3>
+<p>There are two ways to discover a function and what it does.
+</p><p>If you type in the name of a function that's been defined and then an opening bracket, a tooltip will pop up showing the function's parameter types and return type.
+</p><p>Alternately, if you have the help window open (View -&gt; Other Windows -&gt; Help Window), then whenever you select a function in the function browser a help page describing the function will be displayed.
+</p>
+<h3><span class="mw-headline" id="Passing_parameters_to_scripts">Passing parameters to scripts</span></h3>
+<p>To pass parameters to scripts they must be called with the 'runscript' command. This can be useful for writing debug scripts or changing actions based on input. To accept parameters simply add this line to your script:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sParams <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="st0">&quot;RUNSCRIPT_VAR&quot;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>You can then type 'runscript scriptname parameter1 parameter2 ... paramaterN' to pass parameters.
+</p><p>Some examples:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Debug script: heals the object with the given tag. If tag is invalid, nothing happens</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sTag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="st0">&quot;RUNSCRIPT_VAR&quot;</span><span class="br0">&#41;</span>;    
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span>sTag<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a>   eHeal <span class="sy0">=</span> EffectHeal<span class="br0">&#40;</span><span class="nu0">25.0f</span><span class="br0">&#41;</span>
+    <span class="co1">//ApplyEffect...</span>
+<span class="br0">&#125;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Debug script: applies the visual effect passed in as parameter to the player</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sEffect <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="st0">&quot;RUNSCRIPT_VAR&quot;</span><span class="br0">&#41;</span>;    
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>    nEffect <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToInt"><span class="kw4">StringToInt</span></a><span class="br0">&#40;</span>sEffect<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> eVfx <span class="sy0">=</span> EffectVisualEffect<span class="br0">&#40;</span>nEffect<span class="br0">&#41;</span>;
+    <span class="co1">//ApplyEffect...</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h3><span class="mw-headline" id="Error_messages_and_logging">Error messages and logging</span></h3>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script error</a> for details of how to correct errors in scripts.
+</p><p>To enable script logging, edit or create &lt;DragonAgeInstallDirectory&gt;\bin_ship\<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ECLog.ini" title="ECLog.ini">ECLog.ini</a> and set Script=1 in the [LogTypes] section.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog" title="PrintToLog">PrintToLog</a> function prints messages to the log file once logging is enabled.
+</p>
+<h2><span class="mw-headline" id="Timing">Timing</span></h2>
+<p>Commands, delayed events and object destruction all take place after the current script is finished running. Plot flags set in script are set in-line but the triggered plot script runs before the flag is actually set (this is clarified a bit in the plot script template).
+</p><p>Given that ExecuteScript is deprecated, HandleEvent should be used when you want the script to run in-line and DelayEvent should be used when you want to delay execution.
+</p><p>To delay execution when dealing with creatures, custom AI and (safe) command complete are nice tools. DelayEvent should be used whenever you know how long you want to wait before the event fires. (It can also be used in quite small time increments to give the illusion of smoothly sliding placeables with SetPosition or interpolate between two different atmosphere/lighting settings, but the overhead of this is noticeable if overused).
+</p>
+<h2><span class="mw-headline" id="Searching_Scripts">Searching Scripts</span></h2>
+<p>To find examples of how Bioware does things, or simply to discover where a function or variable is used, it's useful to be able to search all the scripts in the data base for a string.
+</p><p>You'll need Microsoft SQL Server Management Studio Express - see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording"> Preparing a dialog for recording
+</a>.
+</p><p>Enter the following query:
+</p>
+<pre>  SELECT DISTINCT Module.Name, Resource.Name 
+    FROM   [bw_dragonage_content].[dbo].[t_Module] Module, 
+           [bw_dragonage_content].[dbo].[t_ModuleResRefVersion] Resource, 
+           [bw_dragonage_content].[dbo].[t_Script] Script 
+    WHERE  Module.ID   = Resource.ModuleID
+    AND    Resource.ID = Script.ModuleResRefVersionID
+    AND    Script.Text LIKE '%######%'
+    ORDER BY 1, 2; 
+</pre>
+<p>where ###### is the string you want to find.
+</p><p>This will list the name of every script that contains the string ######.
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

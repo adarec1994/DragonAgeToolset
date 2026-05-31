@@ -1,0 +1,20 @@
+<p>Sets the status of the party picker GUI (button invisible, visible but party picker unusable, etc.)
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetPartyPickerGUIStatus(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStatus<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nStatus<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PP%20GUI%20STATUS" title="PP GUI STATUS *">PP_GUI_STATUS_*</a> constant
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>PP_GUI_STATUS constants:
+</p>
+<ul><li>PP_GUI_STATUS_NO_USE = 0 (not visible on main GUI)</li>
+<li>PP_GUI_STATUS_READ_ONLY = 1 (visible on main GUI, unusable)</li>
+<li>PP_GUI_STATUS_USE = 2 (visible on main GUI, usable)</li></ul>

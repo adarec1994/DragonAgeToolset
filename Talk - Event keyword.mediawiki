@@ -1,0 +1,3 @@
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>Georg commented his change as "Removed section, these scripting functions are not used."  This is ambiguous: does he in fact mean these scripting functions don't work?  If they do work then this section needs to be reinstated. If they don't work then the two function pages need to be updated to reflect that and a bug needs to be raised to remove them from script.ldf. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 21:43, 26 November 2009 (UTC)
+</p>

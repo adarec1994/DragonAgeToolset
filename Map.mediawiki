@@ -1,0 +1,325 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <strong class="selflink">Map</strong>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr></table>
+<p>Maps are images displayed to the player that are intended to represent large-scale geography and geographic relationships, helping orient them in the larger world and allowing you to provide the player with points of interest, marks indicating the progress or location of quests, or indications of changes or significant events in the world.
+</p><p>Maps can be viewed in read-only mode to allow the player to review them, or when the player character is traveling long distances the pins on the map can be clicked to pick a destination. Maps can be triggered when transitioning out of major plot areas.
+</p><p>To insert a pin on the map, right-click and select "insert pin". This changes the pointer to a crosshair that you can position on the map and click to set a pin down.
+</p><p>Whenever a player clicks on an active pin, he will immediately transition to the selected destination.
+</p><p>The only case when a player would not transition to his selected destination is when a random encounter or a plot event occurs.
+</p><p>The game should fire a scripting event to the world map object whenever a travel occurs.  At this point the script should handle the travel itself and any potential plot event or random encounter.
+</p><p>Asset list:
+</p>
+<ul><li>World Maps: 2D drawings. The same maps should be used for the toolset map and the in-game map.</li>
+<li>Location States 2da table: a list of all possible location states</li>
+<li>Location Terrain Types 2da table: a list of all possible location terrain types</li>
+<li>Location Icons: These are basic icons only (Ruins, City etc’) - location states should be dynamic masks. </li>
+<li>World Maps 2da table: A list of maps the game can have. For each map the designer can specify:
+<ul><li>2D drawing: the art map resource associated with the map.</li></ul></li>
+<li>Map Pin Images 2da: The list of icons available to visually represent the locations. 
+<ul><li>2D drawing: the art map resource associated with the pin style.</li></ul></li></ul>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Worldmaps.xls" title="Worldmaps.xls">worldmaps.xls</a> and the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial" title="Map tutorial">map tutorial</a> for details on the map-related 2DAs, including how to create your own maps.
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign%20Map%20Pin%20List" title="Single Player Campaign Map Pin List">Single Player Campaign Map Pin List</a></li></ul>
+<h2><span class="mw-headline" id="Scripting_functionality">Scripting functionality</span></h2>
+<p>Enable/Disable world map GUI button. 
+</p>
+<ul><li>void SetWorldMapGuiStatus(int nStatus)</li></ul>
+<p>Change the status of a specific icon. 
+</p>
+<ul><li>void SetWorldMapLocationStatus(object oLocation, int nStatusID)</li></ul>
+<p>A way to set the current location of the player in the world map. This way the GUI will know where to put the player icon when opening the map.
+</p>
+<ul><li>void SetWorldMapPlayerLocation(object oMapTag, object oLocation)</li></ul>
+<p>Know the terrain type of a specific location, so we can trigger the correct random encounter areas.
+</p>
+<ul><li>int GetWorldMapLocationTerrain(object oLocation)</li></ul>
+<p>Set the primary map and the secondary map. This will be used in-game to know when to trigger specific locations map (eg, a map of a city's districts) and when to turn any map active or inactive. OBJECT_INVALID can be used to disable any of the maps.
+</p>
+<ul><li>Void SetWorldMapPrimary(object oMapID)</li>
+<li>Void SetWorldMapSecondary(object oMapID)</li></ul>
+<p>Display the world map on screen. This function will trigger the world map GUI either in its read-only or useable form.
+</p>
+<ul><li>void OpenWorldMap(object oMap)</li></ul>
+<p>Event script:  The script should handle the following events:
+</p>
+<ul><li>Location clicked: parameters:
+<ul><li>Origin Location Object ID</li>
+<li>Target Location Object ID</li></ul></li>
+<li>World Map Opened &#8212;  parameters:
+<ul><li>World Map Object ID</li></ul></li></ul>
+<p>The designer should be able to set up random encounters by catching the ‘Location Clicked’ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event (dascript type)">event</a>. 
+</p>
+<h2><span class="mw-headline" id="Map_properties">Map properties</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Parent Map</td>
+<td> This is used when adding map pins and trails to an existing map (the parent map). Note that this is different from setting pins active or inactive. A "child" map is intended to be used in an add-on module that extends a module by adding new destinations to the module's world map. Multiple child maps can all contribute their pins to the same parent map.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Resource Name</td>
+<td> A unique string identifier the toolset and the game both use to refer to this resource. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> A non-unique string identifier used mostly by scripts and other resources to refer to this resource. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Map Selection</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Image used</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Map</td>
+<td>  </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Pin_properties">Pin properties</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">AreaTag</td>
+<td> Destination area </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Initial State</td>
+<td>Can be:
+<ul><li> Active (visible and selectable for traveling)</li>
+<li> Not Active (not visible on the map at all)</li>
+<li> Grayed Out (visible but not selectable)</li>
+<li> Unlocked Content (used for content that is available for download but that has not been purchased yet)</li>
+<li> Completed</li>
+<li> Destroyed</li></ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">LocationX</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">LocationY</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td> Name of this pin as seen within the game. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> A non-unique string identifier used mostly by scripts and other resources to refer to this resource. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">TerrainType</td>
+<td> Used by Dragon Age's random encounter system to determine which group of random encounters to select from.
+</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Waypoint Override</td>
+<td> Overrides the waypoint that the player arrives at within that area.</td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Pin Selection</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Image used</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Pin Type</td>
+<td> Pin, Castle, Cave, Farm, Ruins, Tower, Village, Camp </td>
+</tr>
+</table>

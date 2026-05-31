@@ -1,0 +1,31 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>Game begins the map trail animation
+<dt>Sent from:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>
+<dt>Sent to:
+<dd>
+<dt>Parameters:
+<dd>
+None.
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_WORLDMAP_PRETRANSITION:<br />{<br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>When the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20DoAreaTransition" title="UT DoAreaTransition">UT_DoAreaTransition</a> function is called the level will begin loading in the background as the map trail animation plays.
+</p><p>Since this event does not have parameters attached to it the target area and waypoint tags must be obtained from another source. The Single Player campaign manages this via the WM_STORED_AREA and WM_STORED_WP module <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">local variables</a>. 
+</p><p>For example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_WORLDMAP_PRETRANSITION</span><span class="sy0">:</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sArea <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;WM_STORED_AREA&quot;</span><span class="br0">&#41;</span>; <span class="co1">//retrieve the target area tag stored in EVENT_TYPE_BEGIN_TRAVEL</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sWP <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;WM_STORED_WP&quot;</span><span class="br0">&#41;</span>; <span class="co1">//retrieve the target waypoint tag</span>
+    UT_DoAreaTransition<span class="br0">&#40;</span>sArea, sWP<span class="br0">&#41;</span>; <span class="co1">//execute the area transition to that target.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+<span class="br0">&#125;</span></pre></div></div>

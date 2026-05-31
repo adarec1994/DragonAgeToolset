@@ -1,0 +1,14 @@
+<p>Reports whether an object has its <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Immortal" title="Immortal (page does not exist)">immortal</a> flag set.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> IsImmortal(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object to test for immortality
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if it's immortal, FALSE otherwise
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

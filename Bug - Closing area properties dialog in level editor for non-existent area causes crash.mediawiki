@@ -1,0 +1,24 @@
+<ul><li><b>Version found:</b> v1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 213687  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Steps to reproduce:
+</p>
+<ul><li>Create a new exterior level. </li>
+<li>Click the 'Create an Exportable Area' button. </li>
+<li>Click the 'Delete the Exportable Area' button. </li>
+<li>Note that the Area Properties dialog remains open, because the default value for Layout Name contains invalid characters.</li>
+<li>Closing the Area Properties dialog causes the toolset to crash.</li></ul>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Make sure to set a valid Layout Name before deleting the area.
+</p>

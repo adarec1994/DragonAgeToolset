@@ -1,0 +1,15 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>fires at the same time that the load screen is going away, and can be used for things that you want to make sure the player sees.
+<dt>Sent from:
+<dd>Engine
+<dt>Sent to:
+<dd>Areas
+<dt>Parameters:
+<dd>
+None.
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_AREALOAD_POSTLOADEXIT:<br />{<br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

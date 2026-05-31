@@ -1,0 +1,17 @@
+<p>sets the vector orientation component of the specified location.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> SetLocationOrientation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLocation,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vOrientation<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">lLocation<dd>the location to set the orientation on<dt style="font-weight:normal; font-style:italic;">vOrientation<dd>the vector orientation to set on the location
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid location on success or an invalid location on failure
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function sets the vector orientation component of the specified location.
+</p>

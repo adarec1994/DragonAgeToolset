@@ -1,0 +1,95 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>PRCSCR.xls</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/PRCSCR.xls/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>PRCSCR-файл представляет собой таблицу M2DA, позволяющую каждый раз, когда игрок входит в локацию, запускать скрипт, ассоциированный с этой локацией. Система PRCSCR позволяет моддеру добавить свой контент в существующие локации, либо внести другие изменения, которые возможно внести с помощью скриптов.
+</p><p>Обязательным условием для того, чтобы игра нашла ваш PRCSCR-файл, является то, что лист в книге Excel, а также и сам файл после компиляции, должен именоваться начиная с <b>"PRCSCR_"</b>, суффикс же может быть любой на ваш выбор. Главное не используйте кириллицу.
+</p><p>Ссылки:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">Система PRCSCR</a>.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">Информация о 2DA-файлах</a>.</li></ul>
+<h2><span class="mw-headline" id=".D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0">Свойства</span></h2>
+<table style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<caption> <b>Свойства файла PRCSCR_</b>
+</caption>
+<tr>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Имя столбца</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Тип</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey"><b>Описание</b>
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">ID
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><i>int</i>
+</td>
+<td style="border-bottom:thin solid grey">Идентификационный номер строки. Данный номер должен быть уникален.
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">AreaListName
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><i>string</i>
+</td>
+<td style="border-bottom:thin solid grey">Строковое значение, которое идентифицирует значение AreaList локации, или же универсальное значение "ANY".
+</td></tr>
+<tr>
+<td style="border-right:thin solid grey">Script
+</td>
+<td style="border-right:thin solid grey"><i>string</i>
+</td>
+<td>Имя скрипта, запуск которого планируется при загрузке указанной локации.
+</td></tr></table>
+<p>Используйте <b>"any"</b> в столбце <b>AreaListName</b> для запуске скрипта при загрузке любой локации.
+</p><p><b>Обратите внимание</b>: Удостоверьтесь, что диапазон значений ID, который выбран вами, не находится в противоречии с уже находящимися в использовании другими мододелами. Это можно сделать по адресу <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use%20-%20ru" title="2DA ranges in use/ru (page does not exist)">Используемые диапазоны ID в 2DA</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use" title="2DA ranges in use">(en)</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80">Пример</span></h2>
+<table style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<caption> <b>Пример листа таблицы Excel "PRCSCR_mygnomemod"</b>
+</caption>
+<tr>
+<td width="30pt" style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>ID</b>
+</td>
+<td width="30pt" style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>AreaListName</b>
+</td>
+<td width="50pt" style="background-color:#EEF;border-bottom:thin solid grey"><b>Script</b>
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><i>int</i>
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><i>string</i>
+</td>
+<td style="border-bottom:thin solid grey"><i>string</i>
+</td></tr>
+<tr>
+<td style="border-right:thin solid grey">1200300
+</td>
+<td style="border-right:thin solid grey">cam100ar_camp_plains
+</td>
+<td>mygnome_script
+</td></tr></table>
+<p><b>Обратите внимание:</b>
+</p>
+<ol><li>Суффикс в наименовании должен быть уникальным и не пересекаться с использованными в других модах.</li>
+<li>Используйте уникальные ID, к сведению - за Bioware закреплены номера от 0 до 1000000.</li>
+<li>"mygnome_script" - скрипт, который будет запущен при загрузке локации. Расширение "nss" не указывайте!</li>
+<li>PRCSCR-файл располагайте в папке "override" вашего модуля.</li></ol>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a></b>
+</p>
+<ul><li>У меня файл находится в папке <b>core/packages/override</b> и всё работает.</li>
+<li>Обратите внимание, что указывается именно AreaListName, а не AreaName локации. Хотя в данном случае(с лагерем) они совпадают, в других локациях они разные. Обязательно учитывайте этот момент. Значение AreaListName вы найдёте в свойствах локации в тулсете.</li>
+<li>"Cam100ar_camp_plains" - это локация лагеря. Тут нужно помнить, что у лагеря, как и у некоторых других, есть несколько локаций, одна из них, указанная в данной таблице является основной, другие используются при катсценах. Естественно скрипт, назначенный в данной таблице, не запустится при запуске локации, которая используется при катсценах. Применение тэга "any" в колонке AreaListName запустит связанный скрипт при загрузке любой области.</li></ul>
+<hr />
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls" title="PRCSCR.xls">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

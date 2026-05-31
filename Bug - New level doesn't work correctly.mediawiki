@@ -1,0 +1,9 @@
+<ul><li><b>Version found:</b> Final</li>
+<li><b>Status:</b> Solved</li>
+<li><b>Related:</b> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Water%20plane%20missing%20in-game" title="Bug: Water plane missing in-game">Bug: Water plane missing in-game</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Bulder%20to%20Player%20with%20new%20level%20issue" title="Bug: Bulder to Player with new level issue">Bug: Bulder to Player with new level issue</a>.</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>After I did "Do all local posts" to my custom made levels doesn't work correctly in game though there is no water plane or exterior. There are no problems with models and all necessary components for Toolset are installed.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>It doesn't matter what your custom levels are like: interior or exterior. You have to always port your levels not from you module but from Single Player. You can do it from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">manage modules</a>, and then once you've posted it you'll need to manually copy the resulting files from the single player <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Override directory">override directory</a> into your addin's override directory.
+</p>

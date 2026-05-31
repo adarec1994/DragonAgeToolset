@@ -1,0 +1,19 @@
+<p>Makes a team go to the nearest exit (wp_gen_exit).
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_TeamExit(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTeam,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nRun&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTagOverride&#160;= GENERIC_EXIT<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTeam<dd>This is the team ID number (stored in CREATURE_TEAM_ID)<dt style="font-weight:normal; font-style:italic;">nRun<dd>Set to TRUE if you want the team to run there<dt style="font-weight:normal; font-style:italic;">sTagOverride<dd>Instead of "wp_gen_exit" they go to this destination.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>0 is not a valid parameter (because that's the default value of the variable).
+</p><p><br />
+</p><p><br />
+</p>

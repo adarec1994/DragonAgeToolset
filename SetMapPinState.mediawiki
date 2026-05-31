@@ -1,0 +1,21 @@
+<p>Controls the state of a map pin
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetMapPinState(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oMapPin,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEnable<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oMapPin<dd>Object ID of Pin to control<dt style="font-weight:normal; font-style:italic;">nEnable<dd>TRUE or FALSE
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Turns on or off a map pin.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMapPinState" title="GetMapPinState">GetMapPinState</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPlayerMapPin" title="GetPlayerMapPin">GetPlayerMapPin</a>
+</p>

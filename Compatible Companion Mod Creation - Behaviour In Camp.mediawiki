@@ -1,0 +1,158 @@
+<p>The <b>Behaviour In Camp</b> step outlines how to ensure your custom companion will appear in the various party camps and is behaving appropriately once there.
+</p><p>There are four main areas, where upon entering, Valeria has to behave accordingly, without changing the game scripts. These  are: the usual camp(tag=cam100ar_camp_plains, the second time you enter  it, it's the same area thereafter), Eamon's estate  (tag=den211ar_arl_eamon_estate_1), Eamon's castle at redcliffe  (tag=cli300ar_redcliffe_castle), and post coronation  (tag=epi300ar_post_coronation). When you test this to make sure these  changes in your companion's behavior work, you have to go to a save game  just before you first pick them up, otherwise the flags won't be set.  See the joining script for Valeria. It is assumed that the NPC joins the  party after Lothering is completed. Minor edits might be needed (in  area checks) if you want your companion to join before that...
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_we_need"><span class="tocnumber">1</span> <span class="toctext">What we need</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#To_implement"><span class="tocnumber">2</span> <span class="toctext">To implement</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Module_Events_we_need_to_capture"><span class="tocnumber">3</span> <span class="toctext">Module Events we need to capture</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#The_Handle_Valeria_In_Camp_script"><span class="tocnumber">4</span> <span class="toctext">The Handle_Valeria_In_Camp script</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="What_we_need">What we need</span></h2>
+<p>First  add the flag VALERIA_CHECK_RUNIT in the companion plot  VALERIA_NPC_HIRE. This one will allow us to know when to run the script  to remove Valeria from the active party and move her to her right place,  when we enter any of theses areas.
+</p><p>We also need a function in the valeria_event_handler, call it, <b>Handle_Valeria_In_Camp</b>.
+</p>
+<h2><span class="mw-headline" id="To_implement">To implement</span></h2>
+<p>In includes, add: 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">...
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Handle_Valeria_In_Camp<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> curArea<span class="br0">&#41;</span>;
+...</pre></div></div>
+<p>In the body, add:
+</p><p><br />
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">...
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> curArea<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArea"><span class="kw4">GetArea</span></a><span class="br0">&#40;</span>oPC<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oArea <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;cam100ar_camp_plains&quot;</span><span class="br0">&#41;</span>;
+<span class="co1">//valeria in camp</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span>oPC,<span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a>  <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">!=</span><span class="st0">&quot;cam100ar_camp_plains&quot;</span> <span class="sy0">&amp;&amp;</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">!=</span><span class="st0">&quot;den211ar_arl_eamon_estate_1&quot;</span> <span class="sy0">&amp;&amp;</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">!=</span><span class="st0">&quot;cli300ar_redcliffe_castle&quot;</span> <span class="sy0">&amp;&amp;</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">!=</span><span class="st0">&quot;epi300ar_post_coronation&quot;</span> <span class="sy0">&amp;&amp;</span>  WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT,TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> runit<span class="sy0">=</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a>  <span class="br0">&#40;</span>runit <span class="sy0">&amp;&amp;</span> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cam100ar_camp_plains&quot;</span> <span class="sy0">||</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;den211ar_arl_eamon_estate_1&quot;</span> <span class="sy0">||</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cli300ar_redcliffe_castle&quot;</span> <span class="sy0">||</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;epi300ar_post_coronation&quot;</span><span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span>  WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        Handle_Valeria_In_Camp<span class="br0">&#40;</span>curArea<span class="br0">&#41;</span>;
+...</pre></div></div>
+<h2><span class="mw-headline" id="Module_Events_we_need_to_capture">Module Events we need to capture</span></h2>
+<p>The  module events: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20WORLD%20MAP%20CLOSED" title="EVENT TYPE WORLD MAP CLOSED">EVENT_TYPE_WORLD_MAP_CLOSED</a>,  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYMEMBER%20ADDED" title="EVENT TYPE PARTYMEMBER ADDED">EVENT_TYPE_PARTYMEMBER_ADDED</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20GETCHARSTAGE" title="EVENT TYPE MODULE GETCHARSTAGE">EVENT_TYPE_MODULE_GETCHARSTAGE</a>(change the  partypicker), <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYMEMBER%20DROPPED" title="EVENT TYPE PARTYMEMBER DROPPED">EVENT_TYPE_PARTYMEMBER_DROPPED</a>, are important for handling  Valeria's behavior. The checks and ifs you see below essentially capture all the possible actions by the PC and make Valeria act accordingly, e.g., go open the worldmap in camp (the partypicker pops  up), if cancelled the map, put Valeria back in place and out of the  party, and so forth. These things are done automatically by core game  scripts (like camp_functions_h) and mods that modify them. We don't change anything with this approach.
+</p><p>In Event Handling add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">...
+<span class="co1">//world  map was closed and valeria was either chosen or not from the  partypicker, she has to be taken care of since we're still in camp or we  moved to another area.</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_WORLD_MAP_CLOSED</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCloseType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span>oPC,<span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>;
+            WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT,TRUE<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a>  <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oArea<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span>  WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span>  WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>nCloseType<span class="br0">&#41;</span><span class="co1">//0 canceled, 1 means selected a pin</span>
+                <span class="br0">&#123;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oVal, <span class="kw3">FOLLOWER_STATE_AVAILABLE</span><span class="br0">&#41;</span>;
+                    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+                    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT,TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                <span class="br0">&#123;</span>
+<span class="co1">//don't run the camp script for valeria now, set runit=0;</span>
+&#160;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oVal, CREATURE_REWARD_FLAGS, <span class="nu0">0</span><span class="br0">&#41;</span>;  <span class="co1">//Allows the follower to gain XP</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oVal, AMBIENT_SYSTEM_STATE, <span class="nu0">0</span><span class="br0">&#41;</span>;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oVal, <span class="kw3">FOLLOWER_STATE_ACTIVE</span><span class="br0">&#41;</span>;  <span class="co1">//Adds follower to the active party</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCommand"><span class="kw4">AddCommand</span></a><span class="br0">&#40;</span>oVal, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandJumpToLocation"><span class="kw4">CommandJumpToLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;   <span class="co1">//Ensures follower appears at PC's location.</span>
+                    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT,FALSE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+<span class="co1">//valeria was chosen from the partypicker</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_PARTYMEMBER_ADDED</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                SetImmortal<span class="br0">&#40;</span>oFollower,<span class="nu0">0</span><span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oFollower, CREATURE_REWARD_FLAGS, <span class="nu0">0</span><span class="br0">&#41;</span>;  <span class="co1">//Allows the follower to gain XP</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oFollower, AMBIENT_SYSTEM_STATE, <span class="nu0">0</span><span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oFollower, <span class="kw3">FOLLOWER_STATE_ACTIVE</span><span class="br0">&#41;</span>;  <span class="co1">//Adds follower to the active party</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetObjectActive"><span class="kw4">SetObjectActive</span></a><span class="br0">&#40;</span>oFollower,<span class="nu0">1</span><span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCommand"><span class="kw4">AddCommand</span></a><span class="br0">&#40;</span>oFollower, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandJumpToLocation"><span class="kw4">CommandJumpToLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;   <span class="co1">//Ensures follower appears at PC's location.</span>
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+<span class="co1">//here we have dropped valeria from the party, using the partypicker</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_PARTYMEMBER_DROPPED</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>
+              <span class="br0">&#123;</span>
+                SetImmortal<span class="br0">&#40;</span>oFollower,<span class="nu0">1</span><span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oFollower, <span class="kw3">FOLLOWER_STATE_AVAILABLE</span><span class="br0">&#41;</span>;  <span class="co1">//Adds follower to the active party</span>
+&#160;
+                WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+              <span class="br0">&#125;</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+&#160;
+        <span class="br0">&#125;</span>
+&#160;
+<span class="co1">//here we change the partypicker to valeria_char_stage</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_MODULE_GETCHARSTAGE</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPartyPickerStage"><span class="kw4">SetPartyPickerStage</span></a><span class="br0">&#40;</span><span class="st0">&quot;valeria_char_stage&quot;</span>, <span class="st0">&quot;partypicker&quot;</span><span class="br0">&#41;</span>;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="The_Handle_Valeria_In_Camp_script">The Handle_Valeria_In_Camp script</span></h2>
+<p>Here's the function to take care of Valeria's behavior appropriately. Use different locations for your companions of course.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Handle_Valeria_In_Camp<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> curArea<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oPC<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+&#160;
+<span class="co1">//spawn valeria in camp if she's joined</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span>oPC,<span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> ValeriaLoc;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cam100ar_camp_plains&quot;</span><span class="br0">&#41;</span>
+        ValeriaLoc<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>curArea, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">135.85</span>, <span class="nu0">123.18</span>, <span class="sy0">-</span><span class="nu0">0.08</span><span class="br0">&#41;</span>, <span class="sy0">-</span><span class="nu0">71.33</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;den211ar_arl_eamon_estate_1&quot;</span><span class="br0">&#41;</span>
+        ValeriaLoc<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>curArea, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">28.1</span>, <span class="nu0">4.75</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>, <span class="nu0">176.33</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cli300ar_redcliffe_castle&quot;</span><span class="br0">&#41;</span>
+        ValeriaLoc<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>curArea, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">2.56</span>,<span class="sy0">-</span><span class="nu0">14.84</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>, <span class="sy0">-</span><span class="nu0">130.38</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;epi300ar_post_coronation&quot;</span><span class="br0">&#41;</span>
+        ValeriaLoc<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>curArea, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">15.73</span>,<span class="nu0">4.3</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>, <span class="nu0">13.16</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oVal<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        oVal<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_CREATURE</span>, R<span class="st0">&quot;valeria_npc.utc&quot;</span>, ValeriaLoc<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetObjectActive"><span class="kw4">SetObjectActive</span></a><span class="br0">&#40;</span>oVal,<span class="nu0">1</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCommand"><span class="kw4">AddCommand</span></a><span class="br0">&#40;</span>oVal, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandJumpToLocation"><span class="kw4">CommandJumpToLocation</span></a><span class="br0">&#40;</span>ValeriaLoc<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oVal, <span class="kw3">FOLLOWER_STATE_AVAILABLE</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cam100ar_camp_plains&quot;</span><span class="br0">&#41;</span>
+        Ambient_Start<span class="br0">&#40;</span>oVal, AMBIENT_SYSTEM_ENABLED, AMBIENT_MOVE_NONE, AMBIENT_MOVE_PREFIX_NONE, <span class="nu0">70</span>, AMBIENT_ANIM_FREQ_ORDERED<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;den211ar_arl_eamon_estate_1&quot;</span>  <span class="sy0">||</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;cli300ar_redcliffe_castle&quot;</span> <span class="sy0">||</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>curArea<span class="br0">&#41;</span><span class="sy0">==</span><span class="st0">&quot;epi300ar_post_coronation&quot;</span><span class="br0">&#41;</span>
+        Ambient_Start<span class="br0">&#40;</span>oVal, AMBIENT_SYSTEM_ENABLED, AMBIENT_MOVE_NONE, AMBIENT_MOVE_PREFIX_NONE, <span class="nu0">56</span>, AMBIENT_ANIM_FREQ_ORDERED<span class="br0">&#41;</span>;
+&#160;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY,FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, VALERIA_CHECK_RUNIT,FALSE<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Fort%20Drakon" title="Fort Drakon"><img alt="Fort Drakon" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Active%20Party" title="Active Party"><img alt="Active Party" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

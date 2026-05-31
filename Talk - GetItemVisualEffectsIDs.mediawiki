@@ -1,0 +1,5 @@
+<p>This page has no descriptions at all, just a prototype.
+</p><p>-- Axe Murderer 18:13 PST, 24 Oct 2009
+</p>
+<dl><dd>You'll find a lot of pages like that unfortunately. The script pages were auto-created from doxygen comments in BioWare sources, and a lot of those sources didn't have comments so only the prototype could be gleaned from it. I expect most of the contents of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Generated%20with%20errors" title="Category:Generated with errors">Category:Generated with errors</a> are like that.</dd>
+<dd>Which is one major reason why this is a wiki and not a static help page. The blanks can be filled in as needed.&#160;:) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 16:11, 26 October 2009 (UTC)</dd></dl>

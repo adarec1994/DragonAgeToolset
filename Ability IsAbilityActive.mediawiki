@@ -1,0 +1,19 @@
+<p>Checks if a specific ability is active on an object
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_IsAbilityActive(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object we are checking for the ability<dt style="font-weight:normal; font-style:italic;">nAbilityID<dd>the ability we check if is active
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the ability is active, FALSE otherwise
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The check includes modal abilities and any other abilities with a duration (all buffs and de-buffs)
+</p><p><br />
+</p><p><br />
+</p>

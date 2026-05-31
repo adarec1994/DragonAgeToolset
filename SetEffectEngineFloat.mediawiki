@@ -1,0 +1,24 @@
+<p>Sets the specified float on the effect Engine Data structure.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> SetEffectEngineFloat(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> efEffect,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fValue<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">efEffect<dd>The effect to set the value on<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The index of the value to set<dt style="font-weight:normal; font-style:italic;">fValue<dd>The value to be set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the modified effect or an invalid effect on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the specified float on the effect.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The effect Engine Data structure is used to communicate with the game engine and can only be written to and not read from scripting. It is distinct from general purpose Effect Data structure which was previously used to exchange information.
+</p><p>This function should not be confused with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectFloat" title="SetEffectFloat">SetEffectFloat</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20FLOAT" title="EFFECT FLOAT *">EFFECT_FLOAT_*</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">effect_constants_h</a></li></ul>

@@ -1,0 +1,4 @@
+<h3><span class="mw-headline" id="Structure_Note.3F">Structure Note?</span></h3>
+<p>As I have noted <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/259992">In the forums</a>, it seems you cannot put a resource in a struct. Should this be included in the wiki? --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gralamin" title="User:Gralamin (page does not exist)">Gralamin</a> 06:22, 21 November 2009 (UTC)
+</p>
+<dl><dd>I was planning to cover all the valid types in the struct article I'm currently working on.  That will keep all that information in a single logical place. I'll also cover the types that can be used but have restrictions (such as vectors). --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 08:32, 21 November 2009 (UTC)</dd></dl>

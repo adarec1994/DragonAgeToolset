@@ -1,0 +1,289 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <strong class="selflink">Sound</strong>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr></table>
+<p>Sounds are created and packaged using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a> tool. This is a third-party tool that is included with the Dragon Age toolset. See the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a> page for documentation on how to use it to create sound resources for use in the designer toolkit.
+</p><p>The designer toolset is our way to get sounds into the game. In this application we can define the sound design for any particular area in the game. We have the ability to draw audio volumes to define certain areas, assign sounds to them and even modify and mix within the volume itself, in real time. We can drop emitters for our 3D sounds and modify them as well.
+</p><p>Voice over is handled separately by the toolset; see the relevant section of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> for more details.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sounds_in_the_area_editor"><span class="tocnumber">1</span> <span class="toctext">Sounds in the area editor</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Where_are_they_and_how_to_get_them"><span class="tocnumber">1.1</span> <span class="toctext">Where are they and how to get them</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#The_object_inspector"><span class="tocnumber">2</span> <span class="toctext">The object inspector</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Use_and_utility"><span class="tocnumber">2.1</span> <span class="toctext">Use and utility</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#The_object_inspector_and_audio_volumes"><span class="tocnumber">2.1.1</span> <span class="toctext">The object inspector and audio volumes</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#The_object_inspector_and_emitters"><span class="tocnumber">2.1.2</span> <span class="toctext">The object inspector and emitters</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Volumes_and_emitters"><span class="tocnumber">3</span> <span class="toctext">Volumes and emitters</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Audio_volumes"><span class="tocnumber">3.1</span> <span class="toctext">Audio volumes</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Reverb_volumes"><span class="tocnumber">3.2</span> <span class="toctext">Reverb volumes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Emitter_properties_and_utility."><span class="tocnumber">3.3</span> <span class="toctext">Emitter properties and utility.</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Sounds_in_the_area_editor">Sounds in the area editor</span></h2>
+<p>Any sound that you create events for and build to the <b>.fev</b>/<b>.fsb</b> files is available for use in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> editor. The area editor will see these sounds and make them available when the editor is opened or when the <b>Refresh F5</b> option is selected from the menu. This way you can keep the editor open, go back to FMOD, edit, rebuild and then see your changes in the area editor.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Refresh%20resources%20menu.png" title="The refresh command in View"><img alt="The refresh command in View" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Refresh_resources_menu.png" width="200" height="193" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Refresh_resources_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Refresh_resources_menu.png 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="Where_are_they_and_how_to_get_them">Where are they and how to get them</span></h3>
+<p>Sounds in the area editor are available in two places:
+</p><p>Sounds available to be used as 3D placeable emitters and 3D area effects can be accessed from the palette window under <b>Sounds</b>, located by the double eighth note icon.
+</p><p><img alt="&#39;Sounds in the palette window." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/84/Sound_palette_entry.png" title="&#39;Sounds in the palette window." width="165" height="59" />
+</p><p>Although all sounds in the FMOD project will be available here, we will only select the sounds used as emitters from this window. Sounds that we will assign to volumes will be accessed in another way.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sounds%20used%20as%20emitter.png" title="Sounds used as emitters."><img alt="Sounds used as emitters." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Sounds_used_as_emitter.png" width="200" height="65" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Sounds_used_as_emitter.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Sounds_used_as_emitter.png 2x" /></a>
+</p><p>All of these sounds will be visible as they are in the event groups we have created in FMOD.
+</p><p>Sounds that we will assign to audio volumes are available in the object inspector window. When you click on an audio volume, the object inspector for that audio volume will come up allowing you to select sounds and assign them to the volume.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Audio%20volume%20selected%20in%20the%20area%20editor.png" title="The audio volume selected in the area editor."><img alt="The audio volume selected in the area editor." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/77/Audio_volume_selected_in_the_area_editor.png" width="200" height="52" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/77/Audio_volume_selected_in_the_area_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/77/Audio_volume_selected_in_the_area_editor.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Audio%20volume%20object%20inspector.png" title="The object inspector for the audio volume."><img alt="The object inspector for the audio volume." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Audio_volume_object_inspector.png" width="200" height="77" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Audio_volume_object_inspector.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Audio_volume_object_inspector.png 2x" /></a>
+</p><p>In the object inspector we can name the audio volume, select a reverb for the volume and assign sounds to the volume. For example
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Naming%20an%20audio%20volume.png" title="Name the volume."><img alt="Name the volume." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Naming_an_audio_volume.png" width="200" height="14" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Naming_an_audio_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Naming_an_audio_volume.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Setting%20the%20reverb%20preset%20for%20an%20audio%20volume.png" title="Set the reverb preset."><img alt="Set the reverb preset." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/Setting_the_reverb_preset_for_an_audio_volume.png" width="200" height="12" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/Setting_the_reverb_preset_for_an_audio_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/Setting_the_reverb_preset_for_an_audio_volume.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Assigning%20a%20sound%20to%20an%20audio%20volume.png" title="Assign sounds to the volume."><img alt="Assign sounds to the volume." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/76/Assigning_a_sound_to_an_audio_volume.png" width="200" height="14" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/76/Assigning_a_sound_to_an_audio_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/76/Assigning_a_sound_to_an_audio_volume.png 2x" /></a>
+</p><p>To assign sounds to the volume, click on the <img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /> button on the far right of the <b>Sounds</b> field. You will see a window called <b>Sound Instances</b> pop-up that will allow you to access sounds and assign them to the volume.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20sound%20instances%20for%20audio%20volumes.png"><img alt="Selecting sound instances for audio volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Selecting_sound_instances_for_audio_volumes.png" width="200" height="66" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Selecting_sound_instances_for_audio_volumes.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Selecting_sound_instances_for_audio_volumes.png 2x" /></a>
+</p><p>Selecting the sound(s) you want to assign to the volume and clicking the <b>Add -&gt;</b> button will transfer the sounds over to the next window.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20selection%20for%20audio%20volume.png"><img alt="Sound selection for audio volume.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/Sound_selection_for_audio_volume.png" width="200" height="75" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/Sound_selection_for_audio_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/Sound_selection_for_audio_volume.png 2x" /></a>
+</p><p>Likewise, the <b>Remove</b> or <b>Remove all</b> buttons will do just that, remove selected sounds or clear all sounds from the window.
+</p><p>When the sounds are in the window, you can audition them singly or all together and even edit their mix and other properties.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sounds%20in%20an%20audio%20volume.png" title="Sounds selected for audition or edit."><img alt="Sounds selected for audition or edit." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/Sounds_in_an_audio_volume.png/200px-Sounds_in_an_audio_volume.png" width="200" height="198" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/Sounds_in_an_audio_volume.png/300px-Sounds_in_an_audio_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/06/Sounds_in_an_audio_volume.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Object%20inspector%20for%20the%20sounds%20assigned%20to%20a%20volume.png" title="The object inspector for the sounds assigned to a volume."><img alt="The object inspector for the sounds assigned to a volume." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Object_inspector_for_the_sounds_assigned_to_a_volume.png" width="200" height="141" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Object_inspector_for_the_sounds_assigned_to_a_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/90/Object_inspector_for_the_sounds_assigned_to_a_volume.png 2x" /></a>
+</p><p>Once selected and assigned to a volume, these sounds will now play in game in the area defined by the volume, based on their individual playback parameters.
+</p>
+<h2><span class="mw-headline" id="The_object_inspector">The object inspector</span></h2>
+<p>The object inspector is a facility offered by the DA designer toolset with which to perform several processes to the sounds we have applied to any given level. We have the ability to modify the audio events that we have created as well as modify other parameters such as the active/inactive status of an emitter, adjust the position of an object, change the 3D cone of an emitter, as well as adjust the max range of the radius of an emitter. These modifiers are also supported by the ability to adjust the occludability, pitch, priority and volume of any given object. These functions will be explained in two ways: 1. how the object inspector allows modification to an audio volume and: 2. how the object inspector allows modification to an emitter.
+</p>
+<h3><span class="mw-headline" id="Use_and_utility">Use and utility</span></h3>
+<h4><span class="mw-headline" id="The_object_inspector_and_audio_volumes">The object inspector and audio volumes</span></h4>
+<p>When you select an audio volume in the area editor, the object inspector shows several fields that will allow us to perform several actions directly related to that audio volume. These fields are:
+</p><p>1. <b>Name</b> - here we can name the volume, usually calling it what it is on the map or some name that describes its function is a good way to name these objects. For example: 'Hallway 1, or Tower Courtyard Lower 1'. Note that there are numbers at the end of the name, you may have volumes that are the same name but are used multiple times, e.g. Alcove 1, 2, 3, 4… and so on, etc. Using a number after each volume, even if it is the only one on the map is an easy way to keep track of what and where things are.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20volume%20name.png"><img alt="Sound volume name.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Sound_volume_name.png" width="200" height="17" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Sound_volume_name.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Sound_volume_name.png 2x" /></a>
+</p><p>2. <b>Reverb Preset</b> - in this field we can assign a reverb to the volume. Any reverb preset that is in the master_reverb FMOD project is available to use in your volumes.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Reverb%20presets%20for%20sound%20volumes.png"><img alt="Reverb presets for sound volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Reverb_presets_for_sound_volumes.png" width="200" height="54" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Reverb_presets_for_sound_volumes.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/53/Reverb_presets_for_sound_volumes.png 2x" /></a>
+</p><p>3. <b>Sounds</b> - sounds can be assigned to audio volumes in this field. When you click to the right of the sounds field a menu called <b>Sound Instances</b> will open and you will be able to select sound events from the FMOD project for the level you are working on and assign them to the volume.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Assigning%20sounds%20to%20audio%20volumes.png"><img alt="Assigning sounds to audio volumes.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Assigning_sounds_to_audio_volumes.png" width="200" height="16" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Assigning_sounds_to_audio_volumes.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/Assigning_sounds_to_audio_volumes.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sounds%20assigned%20to%20a%20volume.png" title="Sounds assigned to a volume."><img alt="Sounds assigned to a volume." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c7/Sounds_assigned_to_a_volume.png" width="200" height="112" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c7/Sounds_assigned_to_a_volume.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c7/Sounds_assigned_to_a_volume.png 2x" /></a>
+</p><p>4. <b>Position</b> - this field describes the position of the volume on the map, with values representing points in 3D space including height, which is the last value.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Height%20of%20the%20audio%20volume%20in%20meters.png" title="The height of the volume, in meters."><img alt="The height of the volume, in meters." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Height_of_the_audio_volume_in_meters.png" width="200" height="15" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Height_of_the_audio_volume_in_meters.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Height_of_the_audio_volume_in_meters.png 2x" /></a>
+</p><p>All of the numerical values relating to position are copy/pasteable from one object inspector to the other, which is useful when copying a volume from one map to another, for reuse.
+</p><p>5. <b>Sound Instances</b> - this window allows us to select and assign sound events to audio volumes, in addition, we can also perform some editing functions per sound event. When selecting a sound in the <b>Sound Instances</b> window the editing functions open up, as below:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20instance%20object%20inspector.png" title="Sound instance object inspector."><img alt="Sound instance object inspector." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6a/Sound_instance_object_inspector.png" width="200" height="197" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6a/Sound_instance_object_inspector.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/6a/Sound_instance_object_inspector.png 2x" /></a>
+</p><p>These functions enable greater control over each sound event assigned to the volume and we can effectively mix these sounds within each volume, as well as script instances within a volume.
+</p>
+<h4><span class="mw-headline" id="The_object_inspector_and_emitters">The object inspector and emitters</span></h4>
+<p>When you select an emitter in the area editor, the object inspector shows several fields that will allow us to perform several actions directly related to that emitter. These fields are identical to the <b>Sound Instances</b> object inspector functions discussed in the previous entry.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20emitter%20object%20inspector.png" title="The emitter object inspector."><img alt="The emitter object inspector." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Sound_emitter_object_inspector.png" width="200" height="181" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Sound_emitter_object_inspector.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Sound_emitter_object_inspector.png 2x" /></a>
+</p><p>Within this window we have the ability to modify other parameters such as the active/inactive status of an emitter, adjust the position of the emitter, change the 3D cone of the emitter, as well as adjust the max range of the radius of an emitter, volume, pitch and priority. All of these values can be copied and pasted as well as manipulated instance to instance.
+</p>
+<h2><span class="mw-headline" id="Volumes_and_emitters">Volumes and emitters</span></h2>
+<p>We can use volumes for two purposes when designing the sound for an area in DA. The first is to use an audio volume to define an area in which you want to play certain sounds as 4.0 ambiences. For example: the borders of a town, or the path of a river, a room in a castle or an outdoor area. All of these instances can use volumes to define the ambient audio we will here when we are in that space in the game. Audio volumes are used in conjunction with emitters to fulfil the 4.0 and 3D directional aspects of all sounds used as ambiences in the game.
+</p>
+<h3><span class="mw-headline" id="Audio_volumes">Audio volumes</span></h3>
+<p>Audio volumes are used to define an area for 4.0 ambiences to be assigned to. In the area editor, simply right clicking anywhere in the map will allow you to begin to draw an audio volume, as shown below..
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20right-click%20menu.png" title="Right click on the map."><img alt="Right click on the map." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/Area_editor_right-click_menu.png" width="200" height="137" class="thumbborder" /></a>
+</p><p>You will then see a crosshairs with which you can point and click to draw virtually any complex shape necessary to define the area you need. You draw these shapes by dropping vertices which then can be moved as a group or independently, in 3 dimensions.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20volume%20object.png" title="Draw the shape desired."><img alt="Draw the shape desired." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/43/Area_editor_volume_object.png" width="200" height="164" class="thumbborder" /></a>
+</p><p>As stated we use these volumes and the shapes we draw to define the 4.0 audio for any given area. These volumes show up in the menu on the right hand side of the area editor. It is here that you can select them to edit their properties and parameters in the object inspector.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Audio%20volumes%20in%20the%20area%20menu.png" title="Placed audio volumes in the menu."><img alt="Placed audio volumes in the menu." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Audio_volumes_in_the_area_menu.png" width="200" height="57" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Audio_volumes_in_the_area_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Audio_volumes_in_the_area_menu.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Example%20of%20a%20map%20with%20volumes%20defined.png" title="Portion of map defined by volumes."><img alt="Portion of map defined by volumes." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/91/Example_of_a_map_with_volumes_defined.png" width="200" height="160" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/91/Example_of_a_map_with_volumes_defined.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/91/Example_of_a_map_with_volumes_defined.png 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="Reverb_volumes">Reverb volumes</span></h3>
+<p>Reverb volumes share many of the same properties as audio volumes except they are designed to define an area for a certain reverb. Since we can assign reverbs to audio volumes, the reverb volumes are usually used to draw small volumes to place emitters in order for them to be in a separate reverb from the rest of the area. We can currently have 3 reverbs per area.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Reverb%20volume%20with%20emitters%20placed%20inside.png" title="Reverb volume with emitters placed inside."><img alt="Reverb volume with emitters placed inside." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Reverb_volume_with_emitters_placed_inside.png" width="200" height="107" class="thumbborder" /></a>
+</p><p>These volumes show up in the menu on the right hand side of the area editor. It is here that you can select them to edit their properties and parameters in the object inspector.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Reverb%20volumes%20in%20the%20area%20menu.png" title="Placed reverb volumes in the menu."><img alt="Placed reverb volumes in the menu." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/Reverb_volumes_in_the_area_menu.png" width="200" height="46" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/Reverb_volumes_in_the_area_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/Reverb_volumes_in_the_area_menu.png 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="Emitter_properties_and_utility.">Emitter properties and utility.</span></h3>
+<p>Emitters are used in the area editor to perform several functions, they can be placed to provide the sound for a 3D placeable object, like a fire, flag or waterfall:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20emitter.png" title="Emitter placed as a 3D placeable object."><img alt="Emitter placed as a 3D placeable object." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0f/Sound_emitter.png/200px-Sound_emitter.png" width="200" height="140" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/Sound_emitter.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/Sound_emitter.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20event%20editor.png" title="The FMOD event for this instance."><img alt="The FMOD event for this instance." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/FMOD_event_editor.png" width="200" height="59" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/FMOD_event_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/FMOD_event_editor.png 2x" /></a>
+</p><p>They can be used to define a 3D area effect over an entire area of the map:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20emitter%20providing%20a%203D%20area%20effect.png" title="Emitter providing a 3D area effect."><img alt="Emitter providing a 3D area effect." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/32/Sound_emitter_providing_a_3D_area_effect.png" width="200" height="147" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/32/Sound_emitter_providing_a_3D_area_effect.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/32/Sound_emitter_providing_a_3D_area_effect.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20An%20FMOD%20event.png" title="The FMOD event for this instance."><img alt="The FMOD event for this instance." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b9/An_FMOD_event.png" width="200" height="45" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b9/An_FMOD_event.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b9/An_FMOD_event.png 2x" /></a>
+</p><p>And finally, they can be used as point source 3D ambience over a selected area of the map.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20emitter%20used%20as%20point%20source%20ambience.png" title="Emitter used as point source ambience."><img alt="Emitter used as point source ambience." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b1/Sound_emitter_used_as_point_source_ambience.png" width="200" height="148" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b1/Sound_emitter_used_as_point_source_ambience.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b1/Sound_emitter_used_as_point_source_ambience.png 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20An%20FMOD%20event%202.png" title="The FMOD event for this instance."><img alt="The FMOD event for this instance." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f4/An_FMOD_event_2.png" width="200" height="59" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f4/An_FMOD_event_2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f4/An_FMOD_event_2.png 2x" /></a>
+</p><p>To place an emitter, the sounds can be accessed in the <b>Sounds</b> palette window to the right of the area editor.
+</p><p><img alt="&#39;Sounds&#39; selected in the palette window." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/84/Sound_palette_entry.png" title="&#39;Sounds&#39; selected in the palette window." width="165" height="59" />
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sounds%20in%20the%20pallette.png" title="Selecting a sound."><img alt="Selecting a sound." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Sounds_in_the_pallette.png" width="200" height="58" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Sounds_in_the_pallette.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Sounds_in_the_pallette.png 2x" /></a>
+</p><p>Upon selection of a sound, you will be given a crosshair and you can drop the sound anywhere on the map. You can then adjust its position in 3 dimensions as you see fit.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Sound%20objects%20in%20the%20area%20menu.png" title="Placed sounds in the menu."><img alt="Placed sounds in the menu." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/Sound_objects_in_the_area_menu.png" width="200" height="43" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/Sound_objects_in_the_area_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/Sound_objects_in_the_area_menu.png 2x" /></a>
+</p><p>Sounds used as emitters show up in the menu on the right hand side of the area editor. It is here that you can select them to edit their properties and parameters in the object inspector.
+</p>

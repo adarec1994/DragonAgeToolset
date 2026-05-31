@@ -1,0 +1,160 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">Cinematics and animations</a></li>
+<li><strong class="selflink">Plots and scripting</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<p>The plots and scripting tab under the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> editor has many powerful features:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
+</p><p>To make a line dependent on the condition of the world at large, and to allow a line to have an effect on the world at large, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">plots</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">scripts</a> are employed.
+</p><p>Since the effect of a script is seldom obvious at a glance, a "scripting comments" text field is available for keeping notes for your reference.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Conditional_display_of_a_line"><span class="tocnumber">1</span> <span class="toctext">Conditional display of a line</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Using_plots"><span class="tocnumber">1.1</span> <span class="toctext">Using plots</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Using_scripts"><span class="tocnumber">1.2</span> <span class="toctext">Using scripts</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Generic_conditions"><span class="tocnumber">1.3</span> <span class="toctext">Generic conditions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Actions_triggered_by_a_line"><span class="tocnumber">2</span> <span class="toctext">Actions triggered by a line</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Generic_actions"><span class="tocnumber">2.1</span> <span class="toctext">Generic actions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Lines_That_Only_Show_Up_Once"><span class="tocnumber">3</span> <span class="toctext">Lines That Only Show Up Once</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Root_node_plots_and_scripting"><span class="tocnumber">4</span> <span class="toctext">Root node plots and scripting</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Comments_and_complex_logic"><span class="tocnumber">5</span> <span class="toctext">Comments and complex logic</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Conditional_display_of_a_line">Conditional display of a line</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
+</p>
+<h3><span class="mw-headline" id="Using_plots">Using plots</span></h3>
+<p>The "condition" section of the plots and scripting tab is used to determine whether this line will be run at all. To make the line depend on the status of a particular plot, select the plot in question from the plot dropdown list (or if it's not already in the dropdown list click on the ellipses button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to select from all available plots). Then pick one of the flags used within that plot, and set whether the condition needs to be true or false for the line to be displayed.
+</p><p>A common example of this sort of conditional conversation would be a quest giver, who has different responses to give the player before and after the quest in question has been accepted. Another example might be a character whose attitude toward the player changes when the player has performed a particular task, for good or for ill. Or if the player has learned some important new piece of information, he may now be able to ask a question that he wouldn't otherwise have known to ask.
+</p>
+<h3><span class="mw-headline" id="Using_scripts">Using scripts</span></h3>
+<p>To make a line in a conversation depend on a more complex condition, or on some condition that is not easily kept track of using plot resources, you can use a script instead. Using scripts and using plots are mutually exclusive here, so if you want to use information derived from both you'll need to write your script to account for plot flags.
+</p><p>Some examples of scripted conditions that conversations might use are: differing NPC responses depending on the player's race or gender, differing options depending on what skills the player has, or lines that change depending on the time of day.
+</p><p>To use a script, select it from the script dropdown menu (or from the list of all scripts opened by the ellipsis button if it's not already there).
+</p><p>Scripts associated with conversations take the form
+</p>
+<pre>
+int StartingConditional()
+{
+    return 1;
+}
+</pre>
+<p>If the script returns true the line will display, otherwise it will not.
+</p><p>The last line in a block of multiple NPC lines should always be non-scripted (and without a comment). This ensures that the dialogue always drops to a default line if the scripts break. For example:
+</p><p>A writer creates two PC lines, one for a male and one for a female. Only the first of the 2 lines needs an "if PC is male/female" script. The other line is assigned the correct result by default without a script.
+</p><p>A script called by a line of the conversation can be passed an integer as a parameter, which is retrieved by the function <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetConversationEntryParameter" title="GetConversationEntryParameter">GetConversationEntryParameter</a>. Note that as of November 18 this function is not currently functional. A patch will be needed for the game executable to repair this.
+</p>
+<h3><span class="mw-headline" id="Generic_conditions">Generic conditions</span></h3>
+<p>Since there are several extremely common conditions that are checked for when writing dialog, a number of "generic" plot flags are available for use. An event script is connected with the generic plots described below that does the work of determining what the state of any given plot flag is.
+</p><p>To check a player's class, race, or gender, use the generic plot "gen00pt_class_race_gend" in the plot conditionon section. The following flags are available:
+</p>
+<ul><li>GEN_RACE_ELF - true if the player's character is an elf, false otherwise.</li>
+<li>GEN_RACE_HUMAN - true if the player's character is a human, false otherwise.</li>
+<li>GEN_RACE_DWARF - true if the player's character is a dwarf, false otherwise.</li>
+<li>GEN_GENDER_MALE - true if the player's character is male, false otherwise.</li>
+<li>GEN_GENDER_FEMALE - true if the player's character is female, false otherwise.</li>
+<li>GEN_CLASS_* - one flag for each base class, is "true" if the character has this class and "false" otherwise</li></ul>
+<p>To select a random chance of picking a line, you can use the "gen00pt_random" plot's flags. This is commonly used for ambient banter, or for providing the player with random tidbits of interesting information that are not strictly necessary to complete the adventure. Important note: ensure that the last line in a group of random selections has no condition.
+</p><p>There are two sets of flags in the gen00pt_random plot. The first and most basic set are:
+</p>
+<ul><li>GEN_R5 - 5% chance of evaluating "true"</li>
+<li>GEN_R10 - 10% chance of evaluating "true"</li>
+<li>GEN_R25 - 25% chance of evaluating "true"</li>
+<li>GEN_R30 - 30% chance of evaluating "true"</li>
+<li>GEN_R33 - 33% chance of evaluating "true"</li>
+<li>GEN_R50 - 50% chance of evaluating "true"</li></ul>
+<p>In addition to these, there are a series of "lines left" flags that make it easier to set up a series of random lines to be spoken with equal probability.
+</p><p>The format of the LINES_LEFT flags is GEN_RAND_RXX Where XX is the total number of random elements left in the series of randoms after the current line. Naturally, GEN_RAND_LINES_LEFT_01 has a 50% chance of being chosen. The very last dialogue line does not need a condition. For the statistically-minded, the probabilities are:
+</p>
+<ul><li> GEN_RAND_LINES_LEFT_15: 6.25%</li>
+<li> GEN_RAND_LINES_LEFT_14: 6.67%</li>
+<li> GEN_RAND_LINES_LEFT_13: 7.14%</li>
+<li> GEN_RAND_LINES_LEFT_12: 7.69%</li>
+<li> GEN_RAND_LINES_LEFT_11: 8.33%</li>
+<li> GEN_RAND_LINES_LEFT_10: 9.09%</li>
+<li> GEN_RAND_LINES_LEFT_09: 10.00%</li>
+<li> GEN_RAND_LINES_LEFT_08: 11.11%</li>
+<li> GEN_RAND_LINES_LEFT_07: 12.50%</li>
+<li> GEN_RAND_LINES_LEFT_06: 14.29%</li>
+<li> GEN_RAND_LINES_LEFT_05: 16.67%</li>
+<li> GEN_RAND_LINES_LEFT_04: 20.00%</li>
+<li> GEN_RAND_LINES_LEFT_03: 25.00%</li>
+<li> GEN_RAND_LINES_LEFT_02: 33.33%</li>
+<li> GEN_RAND_LINES_LEFT_01: 50.00%</li></ul>
+<h2><span class="mw-headline" id="Actions_triggered_by_a_line">Actions triggered by a line</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
+</p><p>A line can also be set to modify a plot flag when it is reached, or to run a script whose purpose is to modify the state of the world in some way. 
+</p><p>Setting and clearing plot flags is very similar to how plots are handled in the condition section, except instead of the condition "is true/false" for a plot flag you select whether the flag is to be set or cleared when this line is reached.
+</p><p>Scripted actions should work as usual, and trigger as follows:
+</p>
+<ul><li>For PC lines: the moment the player clicks on the line.</li>
+<li>For NPC lines: the moment the NPC starts playing his line.</li></ul>
+<p>This type of scripting will be used mostly for rewarding the player, taking/giving items and setting plot flags.
+</p><p>When taking or giving items, the script should not play an animation —  it should just switch the items. The cinematic layer should take care of the visuals.
+</p>
+<h3><span class="mw-headline" id="Generic_actions">Generic actions</span></h3>
+<p>For ease of use, several actions that are commonly called in dialog have had generic scripts written to perform them with the script being triggered by setting plot flags on a dummy plot named "gen00pt_generic_actions". To use them, simply set this plot in the "plot" field of the action section and pick the appropriate plot flag to trigger the associated code. The generic actions available are:
+</p>
+<ul><li>GEN_AUTOSAVE - triggers an autosave</li>
+<li>GEN_CURE_PC_INJURIES - removes all injuries from party members</li>
+<li>GEN_DIALOG_FADE_IN -&#160;!!script doesn't appear to have code associated with this flag!!</li>
+<li>GEN_DIALOG_FADE_OUT -&#160;!!script doesn't appear to have code associated with this flag!!</li>
+<li>GEN_EXIT_DESTROY - conversation owner walks to an object tagged with "wp_exit_generic" (generally a waypoint) and is destroyed.</li>
+<li>GEN_OPEN_ENCHANTING - opens the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20upgrade" title="Item upgrade (page does not exist)">item upgrade</a> GUI.</li>
+<li>GEN_OPEN_STORE - opens a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">merchant</a> whose tag is "store_" + the tag of the conversation's owner (eg, if blacksmith_steve owns the conversation, it opens the merchant tagged store_blacksmith_steve).</li>
+<li>GEN_OWNER_DIES - conversation owner drops dead.</li>
+<li>GEN_OWNER_DISAPPEARS - conversation owner immediately vanishes (is destroyed).</li>
+<li>GEN_OWNER_MOVES_HOME - conversation owner walks back to its "home" point in the area (by default, where it was initially placed).</li>
+<li>GEN_OWNER_TURNS_HOSTILE - conversation owner turns hostile and attacks the player.</li>
+<li>GEN_TEAM_TURNS_HOSTILE - all members of the conversation owner's team turn hostile.</li>
+<li>GEN_TEAM_WALKS_TO_EXIT - as with GEN_EXIT_DESTROY, but for all members of the conversation owner's team.</li></ul>
+<p>!!These two flags are defined for the generic action plot but appear to be conditionals instead, look into what they're for!!
+</p>
+<ul><li>GEN_PC_HAS_HEALING</li>
+<li>GEN_PC_IN_COMBAT - See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Conversation%20plots%20and%20scripting" title="Talk:Conversation plots and scripting">Talk:Conversation_plots_and_scripting</a> for the moment.</li></ul>
+<h2><span class="mw-headline" id="Lines_That_Only_Show_Up_Once">Lines That Only Show Up Once</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
+</p><p>At the bottom of this window is the "line settings" section. Visibility determines whether the line is seen only once in a game or once in a conversation.
+</p><p>Once-in-a-conversation lines are useful when a conversation loops back on itself, for example if the conversation is being used to make a clarification hub that provides information to a player and you don't want the player to keep being presented with the option to ask questions that he's already just asked moments ago.
+</p><p>Once-in-a-game lines are useful for presenting information that it wouldn't make sense for a character to repeat a second time if a new conversation is started again with him later, but for which using plot-based conditionals would be unweildy.
+</p><p>This section also has the "ambient" flag. The ambient flag prevents the default conversation cinematics from operating, leaving the camera view where it was and instead putting the text of the spoken line hovering over the head of the object that spoke it. This is intended for use when generating background conversations for the player to "overhear", or that is a quick one-line response to player interaction that doesn't require a full-blown conversation to play out.
+</p>
+<h2><span class="mw-headline" id="Root_node_plots_and_scripting">Root node plots and scripting</span></h2>
+<p>A "Plots and Scripting" tab is also available in the root node of the conversation:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
+</p><p>This is somewhat simpler than the plots and scripting tabs for child nodes, but functions in a very similar manner. It has no "condition" section, just a section called "Conversation End" that is analogous to an "action" section above. The difference is that this action section will be triggered whenever the conversation ends, by whatever path. This is helpful for preventing errors and saving time when crafting a conversation that is always supposed to have the same effect on the world when it's over but that has many different conversation end nodes scattered throughout it.
+</p>
+<h2><span class="mw-headline" id="Comments_and_complex_logic">Comments and complex logic</span></h2>
+<p>Conversations can be documented using comment lines (for example, at the start of each major branch).
+</p><p>Comment lines are coded by entering a scripting comment with no dialogue.
+</p><p>The comment appears in green text when viewing the conversation in the toolset.
+</p><p>Comments aren't spoken in game, but they can be conditional.  
+</p><p>This fact can be exploited to implement complex logic such as "if (condition 1) (if (condition 2) say X else say Y)". Condition 1 is placed on a comment line, which is followed by dialogue lines X (condition 2) and Y (unconditional).
+</p><p>See the OC party banter conversation for a good example.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting%20-%20ru" title="Conversation plots and scripting/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

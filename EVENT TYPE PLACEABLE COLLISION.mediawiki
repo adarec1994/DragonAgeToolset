@@ -1,0 +1,21 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>player collides with object (if EnableCollisionEvent column in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeables.xls" title="Placeables.xls">placeables.xls</a> is non-zero).
+<dt>Sent from:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine" title="Engine (page does not exist)">engine</a>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">placeables</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li><li>Object 0: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_PLACEABLE_COLLISION:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlaceable = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// </span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// </span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

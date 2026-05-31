@@ -1,0 +1,500 @@
+<p>Materials are a combination of textures that can be "painted" onto surfaces in the game.
+</p><p>Each material can have the following texture layers:
+</p>
+<ul><li>diffuse - defines the color of the light that is reflected off of the surface</li>
+<li>emissive - defines the color of the light that is emitted from the surface (ie, the color that the surface glows)</li>
+<li>normal - the "slope" of the surface. This simulates roughness by varying how light reflects off of the surface, creating shadows and hightlights on an otherwise flat plane.</li>
+<li>specular - the "shininess" of the surface</li>
+<li>tint - A uniform color that can be applied to modify the shade of a material. This allows materials to be given variant appearances with very little additional work.</li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Root"><span class="tocnumber">1</span> <span class="toctext">Root</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Material_Properties"><span class="tocnumber">2</span> <span class="toctext">Material Properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Diffuse"><span class="tocnumber">2.1</span> <span class="toctext">Diffuse</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Normal"><span class="tocnumber">2.2</span> <span class="toctext">Normal</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Specular"><span class="tocnumber">2.3</span> <span class="toctext">Specular</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Tint"><span class="tocnumber">2.4</span> <span class="toctext">Tint</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Tint_properties"><span class="tocnumber">3</span> <span class="toctext">Tint properties</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Models"><span class="tocnumber">4</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Palette_objects"><span class="tocnumber">5</span> <span class="toctext">Palette objects</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Heraldry"><span class="tocnumber">6</span> <span class="toctext">Heraldry</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Root">Root</span></h2>
+<p>At the root of the material project you can insert the following:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialObject.png"><img alt="IconMaterialObject.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/IconMaterialObject.png" width="20" height="20" /></a> Model</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New material library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMateriaLibrary.png"><img alt="IconMateriaLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/IconMateriaLibrary.png" width="20" height="20" /></a> New tint library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New palette library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialPaletteLibrary.png"><img alt="IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a> New Heraldry library</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> New Light</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMaterialLight.png"><img alt="IconMaterialLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/IconMaterialLight.png" width="16" height="16" /></a> The Sun</li></ul>
+<p>Libraries themselves aren't directly editable, though. Once you've created a library, you'll need to right click the library and insert an actual object to be tinkered with. 
+</p><p>For example: right click Root &gt; insert Tint library &gt; right click Tint library &gt; insert new tint object. 
+</p><p>The 'tint object' itself can then be adjusted and manipulated. The same goes for all the above library types.
+</p><p>Libraries can have groups added, which are similar to subdirectories for organizational purposes.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Buffer Effect 1</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Buffer Effect 2</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Buffer Effect 3</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Layout Setting</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Layout</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Layout Visible</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Location</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position X</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position Y</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position Z</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation Pitch (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation Roll (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation Yaw (degrees)</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Material_Properties">Material Properties</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Material Name</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Material Type</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Material Semantic</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Sound Material Type</td>
+<td>Materials of type "Prop Default" don't have a sound material type.</td>
+</tr>
+</table>
+<p>Material type can be:
+</p>
+<ul><li> Black</li>
+<li> Canopy</li>
+<li> Character</li>
+<li> Cloth</li>
+<li> Clouds</li>
+<li> Diffuse Distortion</li>
+<li> Distortion</li>
+<li> Eye</li>
+<li> Eyelash</li>
+<li> Face</li>
+<li> General GUI</li>
+<li> Hair</li>
+<li> Instancing</li>
+<li> Lava</li>
+<li> Prop Default</li>
+<li> Sky</li>
+<li> Static</li>
+<li> VFX</li>
+<li> Water</li>
+<li> Weapon</li>
+<li> Weapon Trail</li></ul>
+<p>Material Semantic can be:
+</p>
+<ul><li> Atlas</li>
+<li> Default</li>
+<li> Hero</li>
+<li> HeroAlpha</li>
+<li> HeroPunch</li>
+<li> LOD1Blend</li>
+<li> LOD1BlendFlat</li>
+<li> LOD1Punch</li>
+<li> LOD1Relief</li>
+<li> LOD3(Static3)</li>
+<li> LOD3Punch</li></ul>
+<p>Sound Material Type can be:
+</p>
+<ul><li>Unknown</li>
+<li> Wood</li>
+<li> Sand</li>
+<li> Leaves</li>
+<li> Grass</li>
+<li> Stone</li>
+<li> Dirt</li>
+<li> Puddle</li>
+<li> Water</li>
+<li> Mud</li>
+<li> Ice</li>
+<li> Snow</li>
+<li> Hollow wood</li>
+<li> Metal</li>
+<li> Gravel</li>
+<li> Carpet</li></ul>
+<h3><span class="mw-headline" id="Diffuse">Diffuse</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Diffuse Map</td>
+<td>True/false</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse Map</td>
+<td>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TGA" title="TGA (page does not exist)">TGA</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> file</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse (Preview Texture)</td>
+<td>Pops up a window displaying a larger view of the diffuse map</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse (Refresh Texture)</td>
+<td>Reloads the diffuse map from disk and rebuilds the texture</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Export</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">ResRef</td>
+<td></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Normal">Normal</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Normal Map</td>
+<td>True/false</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Normal Map</td>
+<td>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TGA" title="TGA (page does not exist)">TGA</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> file</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Normal (Preview Texture)</td>
+<td>Pops up a window displaying a larger view of the normal map</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Normal (Refresh Texture)</td>
+<td>Reloads the normal map from disk and rebuilds the texture</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Export</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">ResRef</td>
+<td></td>
+</tr>
+</table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Specular">Specular</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Specular Map</td>
+<td>True/false</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Map</td>
+<td>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TGA" title="TGA (page does not exist)">TGA</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> file</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular (Preview Texture)</td>
+<td>Pops up a window displaying a larger view of the specular map</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular (Refresh Texture)</td>
+<td>Reloads the specular map from disk and rebuilds the texture</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Export</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">ResRef</td>
+<td></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Tint">Tint</span></h3>
+<p>Only materials of type "Prop Default" can have a tint.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint Map</td>
+<td>True/false</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tint Map</td>
+<td>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TGA" title="TGA (page does not exist)">TGA</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> file</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tint (Preview Texture)</td>
+<td>Pops up a window displaying a larger view of the diffuse map</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tint (Refresh Texture)</td>
+<td>Reloads the diffuse map from disk and rebuilds the texture</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Export</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">ResRef</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Tint Files</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tinting File</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Tint_properties">Tint properties</span></h2>
+<p>Tints are stored in a separate tint library within the material project.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">For Export</td>
+<td> true/false</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Import TNT file</td>
+<td> Import a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TNT" title="TNT">TNT</a> file for this tint</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name Descriptor</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tint Type</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Red Channel</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint R</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Green Channel</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint G</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Blue Channel</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint B</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Alpha Channel</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint A</td>
+<td></td>
+</tr>
+</table>
+<p>Tint type can be:
+</p>
+<ul><li> 3 Channel Tint</li>
+<li> Makeup Lip Tint</li>
+<li> Makeup Eye Tint</li>
+<li> Makeup Blush Tint</li>
+<li> Skin Tint</li>
+<li> Tattoo Tint</li></ul>
+<p>For the R, G, and B channels, enabling each will enable the following properties:
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Channel</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Tint Channel</td>
+<td>True/False</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse Intensity</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse Opacity</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Intensity</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Opacity</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Models">Models</span></h2>
+<p>Models can be placed in the material project's display area to allow textures to be tested and compared as work progresses.
+</p>
+<h2><span class="mw-headline" id="Palette_objects">Palette objects</span></h2>
+<p>Palette objects are similar to materials, but much simpler.
+</p>
+<h2><span class="mw-headline" id="Heraldry">Heraldry</span></h2>
+<p>A heraldry object is a diffuse texture that's intended to overlay an existing material like a decal.
+</p>

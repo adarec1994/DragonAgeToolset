@@ -1,0 +1,140 @@
+<p>Models are ordinary, textured, static or animatable 3D Meshes. They make up a big part of every visible entity in the game. The builder consolidates models, along with other files, into a complete visible package which is then seen in the game world.
+</p><p>A Model is an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resource</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Basic_Integration"><span class="tocnumber">1.1</span> <span class="toctext">Basic Integration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#File_Formats"><span class="tocnumber">2</span> <span class="toctext">File Formats</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Textures"><span class="tocnumber">2.1</span> <span class="toctext">Textures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Modding_.2F_Creation"><span class="tocnumber">3</span> <span class="toctext">Modding / Creation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Meshes"><span class="tocnumber">3.1</span> <span class="toctext">Meshes</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Materials"><span class="tocnumber">3.2</span> <span class="toctext">Materials</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Related_Tutorials"><span class="tocnumber">4</span> <span class="toctext">Related Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>A Model is made up of a collection of files which define its shape, material, and other important information. These are created using external modelling applications such as 3DSMax or Blender which then export information into a game-readable Format. Models can be static, or animated.
+</p><p>The only editor that makes direct use of them is the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">level editor</a>, but things like creatures and placeables will make use of them indirectly via <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> definitions.
+</p><p>One model may be used in many different places and contexts. Changing a single model can cause multiple changes in a game world.
+</p><p><b>Note:</b> A Model is an intermediate resource, which are used as part to design entities you see in game. To create or change the design of existing entities, based on existing Models, go straight to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design">Design</a>.
+</p>
+<h3><span class="mw-headline" id="Basic_Integration">Basic Integration</span></h3>
+<table border="3" cellpadding="5" cellspacing="0">
+
+<tr style="background-color:white;">
+<td colspan="5" rowspan="2" style="border-right:3px solid black;background-color:#D3CFA0" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="MSH">MSH File (Mesh Data)</a>
+</td>
+<td align="center" style="border-right:2px solid black; background-color:#FFAD6B"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Textureformats">Diffuse</a>
+</td>
+<td align="center" style="border-right:2px solid black; background-color:#FFAD6B"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Textureformats">Specular</a>
+</td>
+<td align="center" style="border-right:2px solid black; background-color:#FFAD6B"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Textureformats">Normal</a>
+</td>
+<td align="center" style="background-color:#FFAD6B"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Textureformats">Tint</a>
+</td></tr>
+<tr>
+<td colspan="4" align="center" style="background-color:#FFAD6B"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO Material File</a>
+</td></tr>
+<tr style="background-color:#E0E0E0;font-weight:bold;text-align:center;">
+<td colspan="9" width="700pt" height="50pt" align="center">
+<p>&#8593;&#8595;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH/PHY Model File</a>
+&#8593;&#8595;
+</p>
+</td></tr>
+<tr style="background-color:white;">
+<td colspan="3" align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.XLS</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">(2DA)</a>
+</td>
+<td colspan="2" align="center" style="border-right:3px solid black; background-color:#E0C0C0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR_base.XLS</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">(2DA)</a>
+</td>
+<td colspan="2" align="center" style="border-right:3px solid black; background-color:#BD9970"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeables.xls" title="Placeables.xls">Placeables.XLS</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">(2DA)</a>
+</td>
+<td colspan="2" align="center" style="background-color:#C0C0E0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(ResourcePalette)</a>
+</td></tr>
+<tr>
+<td align="center" style="background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">Cloth_var.,</a>
+</td>
+<td align="center" style="background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">Longbows_var.,</a>
+</td>
+<td align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">etc.</a>
+</td>
+<td colspan="2" rowspan="3" align="center" style="border-right:3px solid black; background-color:#E0C0C0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature: Appearance</a>
+</td>
+<td colspan="2" rowspan="3" align="center" style="border-right:3px solid black; background-color:#BD9970"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable: Appearance</a>
+</td>
+<td colspan="2" rowspan="6" align="center" style="border-bottom:2px solid black; background-color:#C0C0E0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level Editor</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">(M)2DA_base.XLS worksheet ref</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM_base.XLS worksheet ref by ID</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item: Base Item Type</a>
+</td>
+<td colspan="2" rowspan="3" align="center" style="border-right:3px solid black; border-bottom:2px solid black; background-color:#E0C0C0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature "*.utc"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(ResourcePalette)</a>
+</td>
+<td colspan="2" rowspan="3" align="center" style="border-right:3px solid black; border-bottom:2px solid black; background-color:#BD9970"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable "*.utp"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(ResourcePalette)</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item: Itemvariation</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black; border-bottom:2px solid black; background-color:#FFFFE0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item "*.uti"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(ResourcePalette)</a>
+</td></tr>
+<tr>
+<td colspan="3" align="center" style="border-right:3px solid black"><b>Game (as Armour/Cloth/etc)</b>
+</td>
+<td colspan="2" align="center" style="border-right:3px solid black"><b>Game (as Creatures/NPC's/etc)</b>
+</td>
+<td colspan="2" align="center" style="border-right:3px solid black"><b>Game (as interactive Level Layout)</b>
+</td>
+<td colspan="2" align="center"><b>Game (as static Level Layouts)</b>
+</td></tr></table>
+<p><br />
+These are the basic dependencies a model got with the Game, in its forms, where each entry links directly to the next. The Level Editor gets direct access to any Model, where the others are listed in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a>. Where the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a> are the place to begin listing any new Items. 
+</p>
+<h2><span class="mw-headline" id="File_Formats">File Formats</span></h2>
+<p>Models are principally defined using the following two file formats: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="MSH">MSH</a>
+</p><p>A Model's Material is defined in a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> file which includes a list of Textures, in DDS format, used in the material. 
+</p><p>Bioware made models are stored in the Dragon Age file system's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> files. They all share a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions" title="Naming conventions">Naming Convention</a>.
+</p>
+<h3><span class="mw-headline" id="Textures">Textures</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Textureformats">Textureformats</a> in DAO</li></ul>
+<h2><span class="mw-headline" id="Modding_.2F_Creation">Modding / Creation</span></h2>
+<p>Creating or Modding a Model can be done in multiple ways. A common activity in modding is retexturing an existing model. However, entirely new Models can also be created. Custom model import is possible by placing the MMH and all custom files referenced by the MMH into your module's override folder. These files would include any custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> files with their associated DDS files and the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="MSH">MSH</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PHY" title="PHY (page does not exist)">PHY</a> files.
+</p><p>See the table above, to work out which dependency is needed to gain the desired endresult. When the goal is to create a Sword, the dependency for a Model has to made with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a> in a 2 way connection. In this case, the Itemvariation inquires the Filename and you give the Model the Filename. Bear in mind that such example isnt easily applied to anything, but each 2 items have to have the connection somewhere. 
+</p><p>Many hardcoded conventions apply, which is best found out individually. On other pages, or by learning.
+</p><p>In any case, once the new Model is available to be applied in the Toolset and for the Designer, you should get carried on over to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design">Design</a> Portal. This also accounts for any Resource already in use by the Single Player campaign.
+</p>
+<h3><span class="mw-headline" id="Meshes">Meshes</span></h3>
+<ul><li>Model Import/Export for gmax/3dsmax: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/2336/">http://social.bioware.com/project/2336/</a> (Fully featured Model Import Export)</li>
+<li>Model Import: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/218/">http://social.bioware.com/project/218/</a> (Converts game resource files into a readable format by external Modelling Applications. Tutorial needed)</li>
+<li>Model Export for 3dsmax: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/563/">http://social.bioware.com/project/563/</a> (Works for static and animated Models, soon to work for Animations. Tutorial needed)</li>
+<li>Model Export for Blender: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/899/">http://social.bioware.com/project/899/</a> (Able to mod Meshes, Tutorial needed)</li></ul>
+<h3><span class="mw-headline" id="Materials">Materials</span></h3>
+<ul><li>Model Import/Export for gmax/3dsmax: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/2336/">http://social.bioware.com/project/2336/</a> -custom material type accessible within max material editor</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Material editor</a> - Part of the Toolset, and will create <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> files.</li>
+<li>Model Export for 3dsmax: see <a rel="nofollow" class="external free" href="http://social.bioware.com/project/563/">http://social.bioware.com/project/563/</a> - which also may generate Material <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> by demand.</li></ul>
+<p>See Related Tutorials for workflows.
+</p>
+<h2><span class="mw-headline" id="Related_Tutorials">Related Tutorials</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20custom%20model%20to%20the%20toolset%20tutorial" title="Adding a custom model to the toolset tutorial">Adding a custom model to the toolset tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20custom%20placeable%20from%20a%20model%20tutorial" title="Creating a custom placeable from a model tutorial">Creating a custom placeable from a model tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial" title="Reskinning an item tutorial">Reskinning an item tutorial</a></li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art" title="Art">Art</a> --Dragon Age Game Art</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">Model list</a> --For a list of Models placable in the Level Editor. Static Models.</li></ul>

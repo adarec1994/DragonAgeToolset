@@ -1,0 +1,13 @@
+<p>This is a start on a level editor tutorial.  We need to get it linked from somewhere.  I suggest that we create a "10 minute tutorials" category and or section, where people can post this sort of thing for people to reference.
+</p>
+<h2><span class="mw-headline" id="Building_your_room_.28Interior_Level.29">Building your room (Interior Level)</span></h2>
+<p>I made a few quick changes for things that worked for me. As stated by the previous author, it really needs some TLC from someone who has more time! <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 13:07, 24 March 2010 (UTC)
+</p>
+<h2><span class="mw-headline" id="Building_your_terrain_.28Exterior_Level.29">Building your terrain (Exterior Level)</span></h2>
+<p>Need to make sure people understand there are two control schemes: 3dsMax and WASD.  Perhaps split control into it's own section? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 22:02, 13 November 2009 (UTC)
+</p><p>are we able to ask questions about these tutorials? eg: I followed the instructions, but cant make the light work, (E: 15:30:06 - Could not find an area to export.
+) also I still cant make the water work. Im a newbi so I really need to use tutorials. 
+</p><p>Just clicking on the blue box in the palette window brought up a list of folders with three letter names, but I could not for the life of me find any models&#160;:( 
+Thanks
+</p><p>You must define an area before rendering lights. It's done with the purple + sign. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Swedish%20elk" title="User:Swedish elk (page does not exist)">Swedish elk</a> 16:48, 10 December 2009 (UTC)
+</p>

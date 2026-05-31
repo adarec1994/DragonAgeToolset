@@ -1,0 +1,20 @@
+<p>Equips an item on a creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> EquipItem(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItem,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEquipSlot&#160;= INVENTORY_SLOT_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nWeaponSet&#160;= INVALID_WEAPON_SET<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object to have its weapon set switched<dt style="font-weight:normal; font-style:italic;">oItem<dd>The item to be equipped.<dt style="font-weight:normal; font-style:italic;">nEquipSlot<dd>The optinal equip slot number. Use the INVENTORY_SLOT constants to specify a particular slot<dt style="font-weight:normal; font-style:italic;">nWeaponSet<dd>The optinal weapon set number, it can be 0 or 1
+</dl>
+</dl><dl><dt>Returns:
+<p><dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Equips an item from the inventory into the equiped slots. If no equipment slot is given, the item will be equipped where it best fits. If the equip slot is in the weapon set it will be equipped in the weapon set number that is given. If no weapon set number is given the active weapon set will be used. If an incorrect slot is given or an invalid object is given the function will return 0.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>There is a bug if the item is ITEM_TYPE_AMMO (missing constant, value returned by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemType" title="GetItemType (page does not exist)">GetItemType</a> is 7) and no equipment slot is specified. The ammo fails to equip. If the script also equips a shield, the shield only appears on the inventory screen paper doll, not in game, until weapon sets are swapped in and out. The workaround is to specify INVENTORY_SLOT_RANGEDAMMO and a weapon set when equipping ammo.
+</p>

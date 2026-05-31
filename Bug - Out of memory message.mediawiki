@@ -1,0 +1,11 @@
+<ul><li><b>Version found:</b> Final</li>
+<li><b>Status:</b> Solved</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p><b>Out of memory message</b> can occur when you do <b>Builder to Player</b> package and you file is more than 2GB of RAM even if you have enough RAM for this file. Usually it happens when you have custom levels in your module - they are big ones.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Don't worry - everything is correct with your computer it is just toolset don't see the memory. Just use this file for Toolset exe so the toolset will see it. <a rel="nofollow" class="external text" href="http://www.ntcore.com/4gb_patch.php">I found the Patch for TOOLSET-EXE there.</a>
+</p>
+<h2><span class="mw-headline" id="Possible_causes">Possible causes</span></h2>
+<p>Toolset don't see the memory.
+</p>

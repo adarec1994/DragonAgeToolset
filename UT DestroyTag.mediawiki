@@ -1,0 +1,19 @@
+<p>Destroys all objects with tag sTag
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_DestroyTag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTag<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sTag<dd>The tag of the objects that will be destroyed
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function destroys all objects with tag sTag that are in the same area as the player.
+</p><p><br />
+</p><p><br />
+</p>

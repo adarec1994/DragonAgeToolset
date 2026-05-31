@@ -1,0 +1,7 @@
+<p>Weather can be simulated with a combination of lightweight level-wide <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX">VFX</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Frame%20buffer%20effect" title="Frame buffer effect (page does not exist)">frame buffer effects</a>.
+</p><p>VFX can be placed in the level editor. Additionally you can enable buffer effects in the level editor and then change them via script at run-time to achieve lightning effects (preferably combined with additional VFX). Rain or snow VFX can also be placed by script.
+</p><p>The buffer effects are for lightning, though there are also scripting commands to control cloudiness, fog, lighting and such.
+</p><p>Light-weight VFX, the equivalent to sprinkles or light snow showers aren't particularly taxing even when spread across the entire area.
+</p><p>If you need a thunder storm you will have to be careful about how you apply the effects.
+</p><p>Effects can be applied at any given location which applies the effect to the area. There are scripting commands for finding and managing the effects based on either type or location.
+</p>

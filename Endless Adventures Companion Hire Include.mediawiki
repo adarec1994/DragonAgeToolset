@@ -1,0 +1,170 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20EAC%20Tutorials" title="Endless Adventures EAC Tutorials">Endless Adventures EAC Tutorials</a>
+</p><p>This page holds the code for the common "ea_companion_h" script used for EAC modules. This script is included in the base module, so modders don't need to include it in their addins. Note that making any changes to the script and including it in an addin could break other addin modules.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;sys_chargen_h&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;utility_h&quot;</span>
+<span class="co2">#include &quot;sys_rewards_h&quot;</span>
+<span class="co2">#include &quot;approval_h&quot;</span>
+<span class="co2">#include &quot;sys_autolevelup_h&quot;</span>
+&#160;
+<span class="coMULTI">/*  Jye Nicolson 5-Jan-2010
+This function set duplicates the full functionality chain of UT_HireFollower, with the following exceptions:
+&#160;
+-  Followers can gain XP
+-  Autolevel status can be set (default off)
+-  Followers can be set to any starting state (default Available) and will still be properly initalised and added to the party pool
+-  Autolevel tables for non-core followers can be explicitly set.
+-  Class and Specialisation can be chosen via script
+-  Followers without specialisations are granted a spec point by default.
+&#160;
+It should only ever be called once each for characters you intend to be full followers.
+Much of the protective code handling summoned creatures etc. in player_core is not present here.
+&#160;
+*/</span>
+&#160;
+<span class="co1">// This just cleans up the main function a little</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> GetCustomFollowerTargetLevel<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oHero, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPackage, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMinLevel <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPlayerLevel <span class="sy0">=</span> GetLevel<span class="br0">&#40;</span>oHero<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nTargetLevel <span class="sy0">=</span> <span class="nu0">0</span>;
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="br0">&#40;</span>nPlayerLevel <span class="sy0">&gt;=</span> <span class="nu0">13</span><span class="br0">&#41;</span> <span class="sy0">||</span> <span class="br0">&#40;</span>nPlayerLevel <span class="sy0">==</span> <span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy0">||</span> <span class="br0">&#40;</span><span class="sy0">!</span>_UT_GetIsPlotFollower<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+               nTargetLevel <span class="sy0">=</span> nPlayerLevel;
+            <span class="br0">&#125;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <span class="br0">&#123;</span>
+               nTargetLevel <span class="sy0">=</span> nPlayerLevel <span class="sy0">+</span> <span class="nu0">1</span>;
+            <span class="br0">&#125;</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nMinLevel <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>  <span class="co1">//If nMinLevel is not specified, checks package 2DA for a value</span>
+              nMinLevel <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PACKAGES, <span class="st0">&quot;MinLevel&quot;</span>, nPackage<span class="br0">&#41;</span>;
+             <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nMinLevel <span class="sy0">&gt;</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> nMinLevel <span class="sy0">&gt;</span> nTargetLevel<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+               nTargetLevel <span class="sy0">=</span> nMinLevel;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nTargetLevel;
+<span class="br0">&#125;</span>
+&#160;
+<span class="coMULTI">/* InitCustomFollowerSpec:
+This function tries to set the forced Specialisation.  If there is none, it checks the package for one.
+If there isn't either of those, it grants a free spec point if bFreeSpecPoint is true.
+*/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> InitCustomFollowerSpec<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPackage, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nForceSpec, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bFreeSpecPoint<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="co1">// Find specialization, and optionally add a spec point if none is found.</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nForceSpec <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSpecAbility <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PACKAGES, <span class="st0">&quot;switch1_class&quot;</span>, nPackage<span class="br0">&#41;</span>; <span class="co1">// followers can have only 1 advanced class</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nSpecAbility <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+         <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddAbility"><span class="kw4">AddAbility</span></a><span class="br0">&#40;</span>oFollower, nSpecAbility<span class="br0">&#41;</span>;
+         <span class="br0">&#125;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <span class="br0">&#123;</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bFreeSpecPoint<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oFollower, <span class="nu0">38</span>, <span class="nu0">1.00</span><span class="br0">&#41;</span>;
+             <span class="br0">&#125;</span>
+         <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <span class="br0">&#123;</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddAbility"><span class="kw4">AddAbility</span></a><span class="br0">&#40;</span>oFollower, nForceSpec<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="coMULTI">/* hireCustomFollower()  (See doco at top of page)
+&#160;
+I strongly suggest you reorder the parameters if you're adding many followers with advanced options.
+&#160;
+Feel free to leave them alone if you only want to set class, plot, spec or don't mind long declarations.
+&#160;
+Note nForceClass is currently compulsory due to flakiness with GetCreatureCoreClass()
+*/</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> EA_HireFollower<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nForceClass, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nForceSpec <span class="sy0">=</span> <span class="nu0">0</span>,
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nALTable <span class="sy0">=</span> <span class="nu0">0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAutolevel <span class="sy0">=</span> <span class="nu0">0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bFreeSpecPoint <span class="sy0">=</span> TRUE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nTargetLevel <span class="sy0">=</span> <span class="nu0">0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMinLevel <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oHero <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nInitialState <span class="sy0">=</span> <span class="kw3">FOLLOWER_STATE_AVAILABLE</span>;
+&#160;
+        <span class="coMULTI">/* #################  BEGIN BASIC FOLLOWER JOIN BLOCK   ###################
+        This loosely replicates WR_SetFollowerState.
+        */</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nForceClass <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            nForceClass <span class="sy0">=</span> GetCreatureCoreClass<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;           <span class="co1">//This is not working.  Hence nForceClass mandatory.</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGroupId"><span class="kw4">SetGroupId</span></a><span class="br0">&#40;</span>oFollower, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGroupId"><span class="kw4">GetGroupId</span></a><span class="br0">&#40;</span>oHero<span class="br0">&#41;</span><span class="br0">&#41;</span>;      <span class="co1">//Puts the follower in the pc's Group.</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventScript"><span class="kw4">SetEventScript</span></a><span class="br0">&#40;</span>oFollower, RESOURCE_SCRIPT_PLAYER_CORE<span class="br0">&#41;</span>;  <span class="co1">//This makes them act like a player.</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>oFollower, nInitialState<span class="br0">&#41;</span>;  <span class="co1">//This sets whether they are available, in the active party etc.</span>
+&#160;
+        <span class="coMULTI">/* #################  END BASIC FOLLOWER JOIN BLOCK ##################### */</span>
+&#160;
+        <span class="coMULTI">/* #################  BEGIN PLAYER_CORE EVENT_TYPE_PARTY_MEMBER_HIRED EMULATION #################
+         This replicates the EVENT_TYPE_PARTY_MEMBER_HIRED handler from player_core, stripped down for simplicity and allowing our custom options.
+        */</span>
+        Chargen_EnableTacticsPresets<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;    <span class="co1">//I assume this is important.</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oFollower, FOLLOWER_SCALED, <span class="nu0">1</span><span class="br0">&#41;</span>;  <span class="co1">//This should prevent the follower being rescaled by player_core or what have you</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPackage <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPackage"><span class="kw4">GetPackage</span></a><span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;  <span class="co1">//Gets the package, which will be used to find a number of 2DA IDs.</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPackageClass <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PACKAGES, <span class="st0">&quot;StartingClass&quot;</span>, nPackage<span class="br0">&#41;</span>;  <span class="co1">//I don't think this is used, even by player_core</span>
+&#160;
+        <span class="co1">// set behavior according to package</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nBehavior <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PACKAGES, <span class="st0">&quot;FollowerBehavior&quot;</span>, nPackage<span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nBehavior <span class="sy0">&gt;=</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            SetAIBehavior<span class="br0">&#40;</span>oFollower, nBehavior<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+&#160;
+        Chargen_InitializeCharacter<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;      <span class="co1">//We initialise the follower and choose race/class.</span>
+        Chargen_SelectRace<span class="br0">&#40;</span>oFollower,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType"><span class="kw4">GetCreatureRacialType</span></a><span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+        Chargen_SelectCoreClass<span class="br0">&#40;</span>oFollower,nForceClass<span class="br0">&#41;</span>;
+&#160;
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nTargetLevel <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>   <span class="co1">//This block picks a target level if not specified</span>
+&#160;
+              nTargetLevel <span class="sy0">=</span> GetCustomFollowerTargetLevel<span class="br0">&#40;</span>oFollower, oHero, nPackage, nMinLevel<span class="br0">&#41;</span>;
+         <span class="br0">&#125;</span>
+&#160;
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nXp <span class="sy0">=</span> RW_GetXPNeededForLevel<span class="br0">&#40;</span>Max<span class="br0">&#40;</span>nTargetLevel, <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;      <span class="co1">//Here is where the XP is calculated and rewarded</span>
+         RewardXP<span class="br0">&#40;</span>oFollower, nXp, FALSE, FALSE<span class="br0">&#41;</span>;
+&#160;
+         <span class="co1">// -------------------------------------------------------------</span>
+         <span class="co1">// add hidden approval talents - (JN: I don't know how to set these yet, but when I figure it out this should make it work)</span>
+         <span class="co1">// -------------------------------------------------------------</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nIndex <span class="sy0">=</span> Approval_GetFollowerIndex<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;
+         Approval_AddFollowerBonusAbility<span class="br0">&#40;</span>nIndex, <span class="nu0">0</span><span class="br0">&#41;</span>;
+&#160;
+          <span class="co1">//Handle Specialisation</span>
+          InitCustomFollowerSpec<span class="br0">&#40;</span>oFollower, nPackage, nForceSpec, bFreeSpecPoint<span class="br0">&#41;</span>;
+&#160;
+         <span class="co1">// -------------------------------------------------------------</span>
+         <span class="co1">// This spends all available attribute and stat points on the</span>
+         <span class="co1">// creature according to the levelup table.  (JN:  this replicates AL_DoAutoLevelUp but with our choice of table)</span>
+         <span class="co1">// -------------------------------------------------------------</span>
+&#160;
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nALTable <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            nALTable <span class="sy0">=</span> <span class="nu0">1002</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nForceClass <span class="sy0">=</span> CLASS_WIZARD<span class="br0">&#41;</span>
+            nALTable <span class="sy0">=</span> <span class="nu0">1003</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nForceClass <span class="sy0">=</span> CLASS_ROGUE<span class="br0">&#41;</span>
+            nALTable <span class="sy0">=</span> <span class="nu0">1004</span>;
+         <span class="br0">&#125;</span>
+&#160;
+         AL_SpendAttributePoints<span class="br0">&#40;</span>oFollower, nALTable, FALSE<span class="br0">&#41;</span>;
+         AL_SpendSkillPoints<span class="br0">&#40;</span>oFollower, nALTable, TRUE<span class="br0">&#41;</span>;
+         AL_SpendSpecializationPoints<span class="br0">&#40;</span>oFollower, nALTable<span class="br0">&#41;</span>;
+         AL_SpendTalentSpellPoints<span class="br0">&#40;</span>oFollower, nALTable, TRUE<span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// -------------------------------------------------------------------------</span>
+        <span class="co1">// Update various UIs</span>
+        <span class="co1">// -------------------------------------------------------------------------</span>
+        Chargen_SetNumTactics<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCanLevelUp"><span class="kw4">SetCanLevelUp</span></a><span class="br0">&#40;</span>oFollower,Chargen_HasPointsToSpend<span class="br0">&#40;</span>oFollower<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+         <span class="coMULTI">/* #################  END PLAYER_CORE EVENT_TYPE_PARTY_MEMBER_HIRED EMULATION ################# */</span>
+&#160;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAutoLevelUp"><span class="kw4">SetAutoLevelUp</span></a><span class="br0">&#40;</span>oFollower, nAutolevel<span class="br0">&#41;</span>;         <span class="co1">//This is the autolevel flag on the character sheet.</span>
+&#160;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oFollower, PROPERTY_ATTRIBUTE_REGENERATION_HEALTH_COMBAT,  <span class="nu0">10.0f</span><span class="br0">&#41;</span>;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oFollower, PROPERTY_ATTRIBUTE_REGENERATION_STAMINA_COMBAT, <span class="nu0">10.0f</span><span class="br0">&#41;</span>;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oFollower, <span class="kw3">PROPERTY_ATTRIBUTE_REGENERATION_HEALTH</span>,<span class="nu0">30.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oFollower, PROPERTY_ATTRIBUTE_REGENERATION_STAMINA, <span class="nu0">30.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+        <span class="co1">// Invoke picker if requested.</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPartyPickerGUIStatus"><span class="kw4">SetPartyPickerGUIStatus</span></a><span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span>;
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ShowPartyPickerGUI"><span class="kw4">ShowPartyPickerGUI</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+&#160;
+<span class="br0">&#125;</span></pre></div></div>

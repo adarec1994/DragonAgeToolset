@@ -1,0 +1,31 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Creature functions"</h2>
+<p>The following 26 pages are in this category, out of 26 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CanUseItem" title="CanUseItem">CanUseItem</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20HasDisease" title="Disease HasDisease">Disease HasDisease</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveAllDiseases" title="Disease RemoveAllDiseases">Disease RemoveAllDiseases</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveDisease" title="Disease RemoveDisease">Disease RemoveDisease</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetClassRank" title="GetClassRank">GetClassRank</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureBodyBag" title="GetCreatureBodyBag">GetCreatureBodyBag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureCoreClass" title="GetCreatureCoreClass">GetCreatureCoreClass</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty" title="GetCreatureProperty">GetCreatureProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureTreasureCategory" title="GetCreatureTreasureCategory">GetCreatureTreasureCategory</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectInteractive" title="GetObjectInteractive">GetObjectInteractive</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetRoamLocation" title="GetRoamLocation">GetRoamLocation</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20AddInjury" title="Injury AddInjury">Injury AddInjury</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20DetermineInjury" title="Injury DetermineInjury">Injury DetermineInjury</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20GetInjuriesNum" title="Injury GetInjuriesNum">Injury GetInjuriesNum</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20RemoveAllInjuries" title="Injury RemoveAllInjuries">Injury RemoveAllInjuries</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20RemoveInjury" title="Injury RemoveInjury">Injury RemoveInjury</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsHumanoid" title="IsHumanoid">IsHumanoid</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsMoving" title="IsMoving">IsMoving</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCanUseItem" title="SetCanUseItem">SetCanUseItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetClassRank" title="SetClassRank">SetClassRank</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureIsGhost" title="SetCreatureIsGhost">SetCreatureIsGhost</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureIsStatue" title="SetCreatureIsStatue">SetCreatureIsStatue</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty" title="SetCreatureProperty">SetCreatureProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetRoamLocation" title="SetRoamLocation">SetRoamLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetRoamRadius" title="SetRoamRadius">SetRoamRadius</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UpdateCreatureProperty" title="UpdateCreatureProperty">UpdateCreatureProperty</a></li></ul></div></div></div>
+</div></div>

@@ -1,0 +1,120 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> DAMAGE_TYPE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_PHYSICAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_FIRE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_COLD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_ELECTRICITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_NATURE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_PLOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td> According to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsDamageAllowed" title="IsDamageAllowed (page does not exist)">IsDamageAllowed</a> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20damage%20h" title="Effect damage h (page does not exist)">effect_damage_h</a> this is the only damage type allowed in a cutscene or dialogue
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_TBD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td> Debug
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_SPIRIT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> DAMAGE_TYPE_DOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td> DoT damage is 'pre resisted'
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>

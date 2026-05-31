@@ -1,0 +1,5 @@
+<p>The <strong class="selflink">events.xls</strong> file contains the 2da data that define the available <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event" title="Event">events</a>. The 2da files are used by the Toolset, in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20editor" title="Event editor">Event editor</a>, and by the game engine.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">engineevents 2da</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%202da" title="Events 2da">events 2da</a></li></ul>

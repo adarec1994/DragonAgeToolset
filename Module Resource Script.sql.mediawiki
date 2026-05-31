@@ -1,0 +1,80 @@
+<p>This script selects all of the resources for a module based on its UID. Change the UID in quotes (in the second line) to your module's UID.
+</p>
+<pre>
+declare @modID int
+set @modID = (select ID from dbo.t_Module as t where t.UID = 'my_module_UID')
+
+-- tables using ModuleResRefVersionID (ModuleResRefVersionID = t_ModuleResRefVersion.ID)
+select * from dbo.t_AreaWaypoint as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaSound as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaReverbVolumeGeometry as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaReverbVolume as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaObjectVariable as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaObjectGeometry as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaObject as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaMusicVolumeGeometry as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaMusicVolume as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaList as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaInstanceAssociations as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaAudioVolume as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaAudioVolumeGeometry as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AreaAudioVolumeSound as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Area as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_AssociatedResource as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Character as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ConversationTransition as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ConversationTagMap as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ConversationLine as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ConversationCinematics as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ConversationAnimations as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Conversation as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CreatureAbility as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Creature as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CutsceneTrack as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CutsceneObject as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CutsceneActionTransition as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CutsceneActionFBEParameter as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_CutsceneAction as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Cutscene as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Inventory as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_ItemProperty as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Item as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_MapTrailPoint as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_MapTrail as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_MapPin as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Map as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_MerchantRestrictedItem as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Merchant as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Placeable as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_PlotStatus as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_PlotAssist as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Plot as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Role as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Script_Reference as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Script as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_StageObjectReference as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_StageObject as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_StageFBEParameter as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Stage as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_StringText as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_StringVersion as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Trigger as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+select * from dbo.t_Variable as t, dbo.t_ModuleResRefVersion as m where t.ModuleResRefVersionID = m.ID and (m.ModuleID = @modID or m.OwnerModuleID = @modID)
+
+-- resource refs
+select * from dbo.t_ResRef as t, dbo.t_ModuleResRef as m where t.ID = m.ResRefId and m.ModuleID = @modID
+
+-- tables using ModuleID (ModuleID = t_Module.ID)
+select * from dbo.t_ModuleVariable as t where t.ModuleID = @modID
+select * from dbo.t_ModuleResRef as t where t.ModuleID = @modID
+select * from dbo.t_ModuleResRefVersion as t where t.ModuleID = @modID or t.OwnerModuleID = @modID
+
+-- module tables
+select * from dbo.t_ModuleAssociation as t where t.ChildModuleID = @modID or t.ParentModuleID = @modID
+select * from dbo.t_String as t, dbo.t_Module as m where t.StringTableID = m.StringTableID and m.ID = @modID
+select * from dbo.t_StringTable as t, dbo.t_Module as m where t.ID = m.StringTableID and m.ID = @modID
+select * from dbo.t_Module as t where t.ID = @modID
+</pre>
+<p>You could also use this script to delete a module completely from the DB by changing all of the "select * from dbo.t_table" statements to "delete dbo.t_table from dbo.t_table". Use this is at your own risk, however, as it is not fully tested. It's probably a good idea to back up your DB before trying that. Also, you'll need to add a line near the beginning to null out some of the module scripts to avoid foreign key issues:
+</p>
+<pre>update dbo.t_Module set StartAreaResRefID = NULL, ScriptResRefID = NULL, ClientScriptResRefID = NULL where ID = @modID</pre>

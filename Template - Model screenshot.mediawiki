@@ -1,0 +1,7 @@
+<p>This screenshot shows one of the models available for use in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">level editor</a>.
+</p><p><br />
+</p><p>Use the "category" property to subcategorize. ie:
+</p>
+<pre>
+{{model screenshot|category=}}
+</pre>

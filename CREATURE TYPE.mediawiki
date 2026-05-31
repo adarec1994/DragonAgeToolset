@@ -1,0 +1,168 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> CREATURE_TYPE_COMBATANT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td>0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_NON_COMBATANT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td>1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> CREATURE_TYPE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 0
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_OTHER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 1
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_HUMANOID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 2
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_DARKSPAWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 3
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_ANIMAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 4
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_BEAST
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 5
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_DEMON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 6
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_DRAGON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 7
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_AMBIENT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 8
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_GOLEM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 9
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> CREATURE_TYPE_UNDEAD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td>10
+</td>
+<td> Deprecated
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <strong class="selflink">CREATURE_TYPE_*</strong> constants from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a> appear to have been deprecated. Use the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE" title="RACE *">RACE_*</a> constants instead.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatantType" title="GetCombatantType">GetCombatantType</a></li></ul>

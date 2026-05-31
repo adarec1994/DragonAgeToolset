@@ -1,0 +1,21 @@
+<p>Update the value of the specified property value on a creature.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UpdateCreatureProperty(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nProperty,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fNewValue,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nValueType<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature whose property will be modified<dt style="font-weight:normal; font-style:italic;">nProperty<dd>the property whose value will be modified<dt style="font-weight:normal; font-style:italic;">fNewValue<dd>the value to be added<dt style="font-weight:normal; font-style:italic;">nValueType<dd>the type of value of the property to modify (CURRENT, MODIFIER)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Updates (adds the given value to the current value) the specified value of the  selected property of a creature.
+</p><p>Only works for MODFIER and CURRENT values. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty" title="GetCreatureProperty">GetCreatureProperty</a> for more details.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty" title="SetCreatureProperty">SetCreatureProperty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20VALUE" title="PROPERTY VALUE *">PROPERTY_VALUE_*</a></li></ul>

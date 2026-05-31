@@ -1,0 +1,445 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#SyncCreatureAnimations_worksheet"><span class="tocnumber">1</span> <span class="toctext">SyncCreatureAnimations worksheet</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#SyncPlaceableAnimations_worksheet"><span class="tocnumber">2</span> <span class="toctext">SyncPlaceableAnimations worksheet</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#SyncAbilityAnimations_worksheet"><span class="tocnumber">3</span> <span class="toctext">SyncAbilityAnimations worksheet</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#UnsyncDeathAnimations_worksheet"><span class="tocnumber">4</span> <span class="toctext">UnsyncDeathAnimations worksheet</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#SyncDeathAnimations_worksheet"><span class="tocnumber">5</span> <span class="toctext">SyncDeathAnimations worksheet</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#SyncLargeCreatures_worksheets"><span class="tocnumber">6</span> <span class="toctext">SyncLargeCreatures worksheets</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="SyncCreatureAnimations_worksheet">SyncCreatureAnimations worksheet</span></h2>
+<p>ID is referenced to ABI_Base
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   base
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   enter
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   exit
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   entersync
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   exitsync
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   pose1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  This can be either a looping animation or a twitch animation (one that goes back to the base loop)
+</td></tr>
+<tr>
+<th>   posesync1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   pose2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   posesync2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  This can be either a looping animation or a twitch animation (one that goes back to the base loop)
+</td></tr>
+<tr>
+<th>   pose3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   posesync3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   percentage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  0.0 to 1.0
+</td></tr>
+<tr>
+<th>   distance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleAtk
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleTarg
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="SyncPlaceableAnimations_worksheet">SyncPlaceableAnimations worksheet</span></h2>
+<p>ID is a reference to ABI_Base
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>   label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   statestart
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   enter
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   exit
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   pose1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  This can be either a looping animation or a twitch animation (one that goes back to the base loop)
+</td></tr>
+<tr>
+<th>   pose2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   pose3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   percentage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  0.0 to 1.0
+</td></tr>
+<tr>
+<th>   distance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleAtk
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleTarg
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="SyncAbilityAnimations_worksheet">SyncAbilityAnimations worksheet</span></h2>
+<p>ID is a reference to ABI_Base
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   percentage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>  0.0 to 1.0
+</td></tr>
+<tr>
+<th>   distance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleAtk
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>   angleTarg
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="UnsyncDeathAnimations_worksheet">UnsyncDeathAnimations worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  react
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="SyncDeathAnimations_worksheet">SyncDeathAnimations worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  weaponwield
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0 No Weaponstyle, 1 Single weapon, 2 dual wielded, 3 two handed
+</td></tr>
+<tr>
+<th>  partsbased
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0 - no req, 0x1 - parts based
+</td></tr>
+<tr>
+<th>  position
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0. non-positional, 1. Position 1, 2. Position 2, 3. Position 3, 4. Position 4, 5. Position 5
+</td></tr>
+<tr>
+<th>  appearance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0- humanoid, 1- beasts
+</td></tr>
+<tr>
+<th>  piercingtype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0x0 can be blunt, 0x1 requires blade
+</td></tr>
+<tr>
+<th>  castanim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  react
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="SyncLargeCreatures_worksheets">SyncLargeCreatures worksheets</span></h2>
+<p>There are five of these worksheets, named SyncLargeCreatures1 through SyncLargeCreatures5.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  percentage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  0.0 to 0.1
+</td></tr>
+<tr>
+<th>  distance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  angleAtk
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  angleTarg
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  DwarfOffset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  This is a scaling value for attachment animations for the dwarf rig
+</td></tr></table>

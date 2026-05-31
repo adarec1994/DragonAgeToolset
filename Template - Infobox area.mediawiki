@@ -1,0 +1,14 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Area topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area Editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial" title="Area tutorial">Area tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area lists</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">Waypoints</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Volume object">Volume objects</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">triggers</a>, audio, reverb, music)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">Area editor options</a></li></ul>
+</td></tr></table>

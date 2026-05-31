@@ -1,0 +1,48 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+* @brief Check if a deathblow should occur.
+*
+* Examine a number of parameters to see whether or not we can play a deathblow
+* without interrupting the flow of combat.
+*
+* @author Georg Zoeller
+**/</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CheckForDeathblow<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRank <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRank"><span class="kw4">GetCreatureRank</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nLevel <span class="sy0">=</span> GetLevel<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fChance <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAFloat"><span class="kw4">GetM2DAFloat</span></a><span class="br0">&#40;</span>TABLE_CREATURERANKS,<span class="st0">&quot;fDeathblow&quot;</span>, nRank<span class="br0">&#41;</span>;
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Any rank flagged 1.0 or higher triggers a deathblow.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fChance <span class="sy0">&gt;=</span> <span class="nu0">1.0f</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// If we perceive more than 1 creature, then half the chance of triggering</span>
+    <span class="co1">// a deathblow with each perceived hostile.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCount <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPerceivedCreatureList"><span class="kw4">GetPerceivedCreatureList</span></a><span class="br0">&#40;</span>oAttacker, TRUE<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nCount <span class="sy0">&gt;</span> <span class="nu0">1</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        fChance <span class="sy0">*=</span> <span class="br0">&#40;</span><span class="nu0">2.0</span><span class="sy0">/</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToFloat"><span class="kw4">IntToFloat</span></a><span class="br0">&#40;</span>nCount<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <span class="co1">//Increase chance of death blow in origin stories (level 1 and 2)</span>
+    <span class="co1">//1.5 times the chance</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nLevel <span class="sy0">&lt;</span> <span class="nu0">3</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        fChance <span class="sy0">*=</span> <span class="nu0">1.5</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RandomFloat"><span class="kw4">RandomFloat</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">&lt;</span>fChance<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>

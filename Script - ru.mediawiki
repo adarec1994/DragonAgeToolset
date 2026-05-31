@@ -1,0 +1,269 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Основная информация о скриптах</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Script/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Скрипты
+</th></tr>
+<tr>
+<td>
+<ul><li><strong class="selflink">Начало</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">Обзор</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial%20-%20ru" title="Scripting tutorial/ru">Инструкция</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">События DA</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">Подмена обработки</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts%20-%20ru" title="Useful Scripts/ru">Примеры</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error%20-%20ru" title="Script error/ru">Ошибки</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20-%20ru" title="Rules/ru (page does not exist)">Правила</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">(en)</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties%20-%20ru" title="Creature Properties/ru">Свойства существ</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute%20-%20ru" title="Attribute/ru">Атрибуты</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes%20-%20ru" title="Classes/ru">Классы</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules%20-%20ru" title="Combat Rules/ru">Система боя</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20-%20ru" title="Ability/ru">Способности</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts%20-%20ru" title="Category:Scripts/ru (page does not exist)">Категория "Скрипты"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">(en)</a></li></ul>
+<dl><dd><small>все статьи категории</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions%20-%20ru" title="Category:Script functions/ru (page does not exist)">Категория "Функции"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions" title="Category:Script functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>описание функций</small></dd></dl>
+</td></tr></table>
+</td></tr></table>
+<p>Скрипты в Dragon Age контролируют практически все игровые события. Вся игровая механика, которая обычно управляется движком игры, в Dragon Age управляется скриптами, что позволяет производить глубокую настройку игры. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.AF.D0.B7.D1.8B.D0.BA_DAScript"><span class="tocnumber">1</span> <span class="toctext">Язык DAScript</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><span class="tocnumber">2</span> <span class="toctext">События</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B_.D0.B8_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B8"><span class="tocnumber">3</span> <span class="toctext">Эффекты и способности</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#2DA_-_.D0.A5.D1.80.D0.B0.D0.BD.D0.B8.D0.BB.D0.B8.D1.89.D0.B5_.D0.B8.D0.B3.D1.80.D0.BE.D0.B2.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">4</span> <span class="toctext">2DA - Хранилище игровых данных</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A1.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D0.B0_.D0.B2.D1.8B.D0.B4.D0.B0.D1.87.D0.B8_.D0.BF.D0.BB.D1.8E.D1.88.D0.B5.D0.BA_.28Treasure_System.29"><span class="tocnumber">5</span> <span class="toctext">Система выдачи плюшек (Treasure System)</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.9B.D0.BE.D0.BA.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D0.BF.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B5_-_.D1.85.D1.80.D0.B0.D0.BD.D0.B8.D0.BB.D0.B8.D1.89.D0.B5_.D0.B8.D0.BD.D0.B4.D0.B8.D0.B2.D0.B8.D0.B4.D1.83.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">6</span> <span class="toctext">Локальные переменные - хранилище индивидуальных данных</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.AF.D0.B7.D1.8B.D0.BA_DAScript">Язык DAScript</span></h2>
+<p>Синтаксис языка DAScript очень похож на синтаксис языка программирования <b>С</b>, с поддержкой подключения файлов, содержащих библиотеки функций и констант(например <b>wrappers_h</b>).
+</p><p>Смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">Обзор языка DAScript</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">(en)</a></i>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">События</span></h2>
+<p>В Dragon Age используется событийно-ориентированная модель, в которой каждое событие посылается в скрипт, назначенный для его обработки, с параметрами, содержащими необходимую информацию Основная часть работы со скриптами в DA связана именно с обработкой событий.  Типичные примеры возникновения событий:
+</p>
+<ul><li> Событие посылается в скрипт, ассоциированный с Plot-файлом, когда его флаг считывается или устанавливается.</li>
+<li> Событие посылается в скрипт, ассоциированный с локацией, когда в локации умирает команда существ, когда в локацию входит игрок.</li>
+<li> Событие посылается в скрипт, ассоциированный с модулем, во время генерации персонажа.</li>
+<li> Событие посылается существу, когда с ним что-то происходит (например - бьют).</li></ul>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI%20-%20ru" title="Custom AI/ru (page does not exist)">Изменение AI</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI" title="Custom AI">(en)</a></i> для существ осуществляется созданием пользовательских обработчиков событий AI.
+</p><p>Для получения большей информации о событиях смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">События</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">(en)</a></i>.
+</p>
+<h2><span class="mw-headline" id=".D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B_.D0.B8_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B8">Эффекты и способности</span></h2>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword%20-%20ru" title="Effect keyword/ru">Эффекты</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">(en)</a></i> - применяются на определённый объект. 
+Каждый эффект содержит пакет модификаторов, которая определяет, как он влияет на объект. Эти модификаторы могут изменять обычные базовые свойства, так и более сложные игровые, а также накладывать визуальные эффекты. 
+Также события содержат ряд параметров, зависящих от их типа, и определяющих их поведение. Когда эффект убирается (обычно по истечении определённого времени) модификаторы снимаются с объекта.
+</p><p>В DA применяется следующая шкала продолжительности эффектов, которая определяет, как они накладываются и снимаются:
+</p>
+<ol><li> Временные: накладываются на короткое время (определяется в секундах)</li>
+<li> Постоянные: применяются пока не будут убраны скриптом</li>
+<li> Разовые: применяются мгновенно и не хранятся на объекте (для примера - смерть существа)</li>
+<li> Экипировочные: ассоциированы с вещами, которыми экипировано существо. Действие эффекта прекращается после снятия вещи.</li></ol>
+<p>Обычно эффекты накладываются способностями, которыми владеют существа и персонаж игрока.
+</p><p>Для получения большей информации о эффектах и способностях смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword%20-%20ru" title="Effect keyword/ru">Эффекты</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">(en)</a></i>, <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20-%20ru" title="Ability/ru">Способности</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">(en)</a></i>.
+</p>
+<h2><span class="mw-headline" id="2DA_-_.D0.A5.D1.80.D0.B0.D0.BD.D0.B8.D0.BB.D0.B8.D1.89.D0.B5_.D0.B8.D0.B3.D1.80.D0.BE.D0.B2.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">2DA - Хранилище игровых данных</span></h2>
+<p>2DA (двухмерные массивы) содержат большую часть данных, используемых в игре, и создаются на основе таблиц формата .XLS. Если вы хотите создать новые типы существ, вещей, способностей и т.д., вам необходимо будет создать новые 2DA. 
+</p><p>Для получения большей информации о 2DA смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">Работа с 2DA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">(en)</a></i>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D0.B0_.D0.B2.D1.8B.D0.B4.D0.B0.D1.87.D0.B8_.D0.BF.D0.BB.D1.8E.D1.88.D0.B5.D0.BA_.28Treasure_System.29">Система выдачи плюшек (Treasure System)</span></h2>
+<p>Система выдачи плюшек (Treasure System) позволяет выдавать различные плюшки в большинство существ и контейнеров в игре. Плюшки выдаются посредством случайной генерации при возникновении определённых событий (например - смерть существа или размещение сундука в локации). Вид и количество плюшек выбираются в соответствии с категорией и рангом объекта (у дикого животного не должны часто обнаруживаться доспехи, а порождения тьмы навряд ли будут таскать с собой фарфоровые вазы). Управление системой выдачи плюшек может осуществляться посредством <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable%20-%20ru" title="Local variable/ru (page does not exist)">локальных переменных</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">(en)</a></i> и <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">событий</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">(en)</a></i>.
+</p><p>Для существа, которое уже размещено в конкретной <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20-%20ru" title="Area/ru">локации</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">(en)</a></i>, инвентарь не может быть определён напрямую.
+</p><p>Для получения большей информации о СВП смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%20system%20-%20ru" title="Treasure system/ru">Система выдачи плюшек (Treasure System)</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%20system" title="Treasure system">(en)</a></i>.
+</p>
+<h2><span class="mw-headline" id=".D0.9B.D0.BE.D0.BA.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D0.BF.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B5_-_.D1.85.D1.80.D0.B0.D0.BD.D0.B8.D0.BB.D0.B8.D1.89.D0.B5_.D0.B8.D0.BD.D0.B4.D0.B8.D0.B2.D0.B8.D0.B4.D1.83.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Локальные переменные - хранилище индивидуальных данных</span></h2>
+<p>Локальные переменные - связанные с игровыми объектами переменные, хранящиеся длительное время и доступные из любого скрипта (в отличие от временных, которые существуют только пока работает создавший их скрипт).
+</p><p>Устанавливаются локальные переменные функцией <b>SetLocal*</b> и считываются функцией <b>GetLocal*</b>. 
+</p><p>DA не поддерживает динамическое выделение локальных переменных в игре, поэтому для использование в игре локальные переменные должны быть определены в '<i>variable 2DA</i>. 
+</p><p>Как альтернатива - по ссылке <b><a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1787/">[1]</a></b> вы найдёте проект "Неограниченное хранилище переменных". Используя его вы сможете посредством одного подключаемого файла получить неограниченное хранилище переменных и массивов без обязательного декларирования их в 2DA.
+</p><p>Для получения большей информации о локальных переменных смотрите - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable%20-%20ru" title="Local variable/ru (page does not exist)">Локальные переменные</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">(en)</a></i>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

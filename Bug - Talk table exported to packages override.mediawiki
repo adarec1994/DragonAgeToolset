@@ -1,0 +1,23 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.03 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>When the Talk Table is exported, three different files are created. For a module called MyModule,
+</p>
+<pre>* core_en-us.tlk in packages &gt; core &gt; override &gt; toolsetexport
+* MyModule_c_en-us.tlk in MyModule &gt; core &gt; override &gt; toolsetexport 
+* MyModule_en-us.tlk in MyModule &gt; module &gt; override &gt; toolsetexport
+</pre>
+<p>This is undesirable, because the file in packages override will impact other campaigns.
+</p><p>Since the file doesn't have a unique name, there can be conflict if a player tries to install more than one module.
+</p><p>However, the file is essential if core strings have been changed. Without it, when a saved game is loaded, those strings revert to the default.
+</p><p>The file doesn't work if it's moved to the add-in folder.
+</p><p>For example, if the module has changed string 370904 to "Dog Collar", this works until a saved game is loaded, after which it reads "Marabi Collar" in game.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>UPDATE&#160;: this bug can be avoided completely if no changes are made to core strings. This is achieved by changing the string references in the appropriate 2DA files to new strings which belong to the module. 
+</p><p>Admittedly, this is a somewhat tedious process when making a global change (e.g. "Marabi" to "Dog"). However, it greatly simplifies the installation instructions for the player, and improves compatibility between modules. The talk table in packages override always has the same name, so no two modules which use it can co-exist simultaneously.
+</p><p>In our example, we can use the String Editor to discover all instances of the word "Marabi" in the core strings. The string description usually identifies the 2DA which contains the string reference. Make new strings (copy and edit the core string text) and change the 2DA files.
+</p><p>With this approach, the talk table in packages override can safely be deleted (or omitted from the player package).
+</p><p>A known exception is the gender description. These core strings have to be changed, because they are not in a 2DA file. However, the bug never occurs in this case, because gender description is only used in character generation, so save-load doesn't affect it.
+</p>

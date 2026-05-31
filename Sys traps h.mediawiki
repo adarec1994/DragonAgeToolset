@@ -1,0 +1,29 @@
+<p>The Traps System include file, <strong class="selflink">sys_traps_h</strong>, contains trap functions.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abi%20templates" title="Abi templates (page does not exist)">abi_templates</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Achievement%20core%20h" title="Achievement core h (page does not exist)">achievement_core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20difficulty%20h" title="Core difficulty h (page does not exist)">core_difficulty_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20autoscale%20h" title="Sys autoscale h (page does not exist)">sys_autoscale_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20rewards%20h" title="Sys rewards h (page does not exist)">sys_rewards_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP" title="TRAP *">TRAP *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP%20AOE%20LOCATION" title="TRAP AOE LOCATION *">TRAP AOE LOCATION *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP%20EFFECT" title="TRAP EFFECT *">TRAP EFFECT *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP%20VFX%20APPLY%20TO" title="TRAP VFX APPLY TO *">TRAP VFX APPLY TO *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TrapEffectStruct" title="TrapEffectStruct">TrapEffectStruct</a></li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trap%20HandleImpact" title="Trap HandleImpact">Trap HandleImpact</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Comments state that core_difficulty_h has been included for its damage-scaling functions and sys_autoscale_h for its auto-scaling functions which are used by the summoning traps.
+</p>
+<h3><span class="mw-headline" id="No_right_bracket_on_expression_error">No right bracket on expression error</span></h3>
+<p>The current version of  sys_traps_h uses the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandObject" title="GetCommandObject">GetCommandObject</a> function which was added to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> by the Dragon Age: Origins v1.02 patch. Trying to compile any script which includes  sys_traps_h with an older version of Dragon Age: Origins installed (i.e. v1.00 or v1.01) will generate a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/No%20right%20bracket%20on%20expression" title="No right bracket on expression (page does not exist)">No right bracket on expression</a> error.  Updating Dragon Age: Origins to v1.02 or later resolves this issue.
+</p>

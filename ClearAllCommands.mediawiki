@@ -1,0 +1,20 @@
+<p>This function clears the command list for a given object
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> ClearAllCommands(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nHardClear&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object on which to clear the command list<dt style="font-weight:normal; font-style:italic;">nHardClear<dd>specifies if the object can finish the action in progress or not (Hard = don't wait)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE on success, FALSE on failure
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function clears the command list for a given object. Note that this also clears the currently executed command which is outside of the queue.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Designers should NOT use this function, but use the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20ClearAllCommands" title="WR ClearAllCommands">WR_ClearAllCommands</a> wrapper function instead, defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">wrappers_h</a>
+</p>

@@ -1,0 +1,13 @@
+<p>For the Maker's sake, can someone tell this text to word-wrap, please!
+</p><p><br />
+</p>
+<pre>    If you are here because your Toolset popped up with a huge error that told you DON'T TOUCH NOTHIN' until you look up this serious error on the wiki... well, there was nothing here on the wiki about it.  This is what happened to me, and how I avoided the destruction of the universe as we know it.
+</pre>
+<pre>    It seems to occur if you try to edit keyframes on an animation that has GAD turned on.  My animation was stopping, blinking into the default pose, then going into the background base pose.  I wanted to eliminate the default pose blink, so I put two keyframes near the end of the animation, and dragged the endmost one down to zero.  It didn't like that.
+</pre>
+<pre>    I saved the cutscene using "Save As" and another name.  Then I closed the Toolset.  This new cutscene seemed to play all right (in the Toolset; haven't gone to game yet).  I also copied my new camera keyframes from it to my original cutscene, just in case the new on was FUBAR.
+</pre>
+<pre>    Trying to do the same keyframe edit on that animation with GAD reproduced the error.  So, my advice... Don't do that.
+</pre>
+<pre>    If it's something else, please feel free to add/edit this page.
+</pre>

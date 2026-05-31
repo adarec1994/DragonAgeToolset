@@ -1,0 +1,21 @@
+<p>Instructions on how to request a new toolset feature. Stay tuned for more information
+</p><p>If you wish to report a bug, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reporting%20a%20bug" title="Reporting a bug">Reporting a bug</a>
+</p><p>Use this if you want to let BioWare and other community members know about some feature that you wish the toolset had.  By doing so, you are helping to create a wish list.  Wishes may be granted by Bioware or by clever community members.  Some may not be granted at all. We can't guarantee anything.
+</p><p>You can view a current list of requested features <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Feature%20requests" title="Category:Feature requests">here</a>.
+</p>
+<h2><span class="mw-headline" id="Category">Category</span></h2>
+<p>Feature request pages will be in the category <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Feature%20requests" title="Category:Feature requests">Category:Feature requests</a>. Include the following text in your feature request page to put it in this category:
+</p>
+<pre>[[Category:Feature requests]]</pre>
+<h2><span class="mw-headline" id="Creating_a_new_feature_request_page">Creating a new feature request page</span></h2>
+<p>A feature request page should have a title that serves as a brief description of the feature being requested.
+</p><p>The body of the page should contain as detailed a description of the feature as you think is appropriate. Some of the points it would be valuable to cover are:
+</p>
+<ul><li> What exactly you would like this feature to do</li>
+<li> Why it cannot be done (or can't easily be done) with existing capabilities</li>
+<li> Specific examples of situations where the feature would be useful</li></ul>
+<h2><span class="mw-headline" id="Editing_an_existing_feature_request_page">Editing an existing feature request page</span></h2>
+<p>Feature requests are by their nature often a lot more nebulous than a bug report. There is likely to be disagreement or uncertainty about what a feature request actually entails - both in scope and value. If you find a feature request that's very similar to something you'd like, you should feel free to add to the page rather than creating a possibly redundant feature request. Likewise, if a feature request turns out to have several independent parts to it, they may be split into separate pages or at least implemented as separate features.
+</p><p>Some feature requests may be simply impossible. In these cases a BioWare admin will likely add a note explaining that they are unfulfillable and move the feature request into some other category. For example, a request for an XBox 360 version of the toolset simply cannot be fulfilled for reasons outside BioWare's control. Again, we can't promise anything.
+</p><p>Some feature requests are good ideas that we here at BioWare don't have the resources to fulfil, but that we're confident could be handled by other community members in some way or another. We'll move these to the category <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Community%20feature%20suggestions" title="Category:Community feature suggestions">Category:Community feature suggestions</a>. See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20support%20ideas" title="Community support ideas">Community support ideas</a>.
+</p>

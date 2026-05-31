@@ -1,0 +1,7 @@
+<p>The <strong class="selflink">effects.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files used to define the different engine and scripted effects.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> _readme</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20regeneration%202da" title="Effect regeneration 2da">effect_regeneration</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20immunities%202da" title="Effect immunities 2da">effect_immunities</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%202da" title="Effects 2da">effects</a></li></ul>

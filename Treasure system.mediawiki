@@ -1,0 +1,139 @@
+<p>The Treasure System only works on creatures and placeable containers (not bags). Creatures will fire the Treasure System when they die, and placeables will fire it when they spawn.
+</p><p>There are 2 specific pieces of information that the Treasure System uses to determine what treasure an object drops. The first piece of information is the combat Rank of the object. Placeables are never involved in combat, but will have to have something entered in the field for the system to work. A Lieutenant-ranked chest will drop treasure equivalent to a Lieutenant-ranked creature. Rank determines the quantity and quality of the treasure dropped. The second piece of information is the Treasure Category of the object. This determines what set of treasure tables the system will look at for this object.
+</p><p>If either the Rank or Treasure Category is set to Invalid (value 0), the Treasure System will not drop anything. Items placed manually on the object will appear normally.
+</p><p>If there doesn't seem to be a treasure table that applies to a specific object, contact the designer in charge of the system to get a new table added.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overrides"><span class="tocnumber">1</span> <span class="toctext">Overrides</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Stealing"><span class="tocnumber">2</span> <span class="toctext">Stealing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Specific_Items"><span class="tocnumber">2.1</span> <span class="toctext">Specific Items</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#TS_System.xls_and_related_2das"><span class="tocnumber">3</span> <span class="toctext">TS_System.xls and related 2das</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overrides">Overrides</span></h2>
+<p>There are a number of override variables on objects that will change the way the Treasure System functions. For each of these variables, a value less than 0 turns off that part of the system, a value of 0 ignores the override, and a value greater than 0 uses that value instead of the one on the creature. Each variable has a short explanation of what overriding does.
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> TS_OVERRIDE_CATEGORY
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here directly relates to ID values in the TS_Category 2DA.
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_EQUIPMENT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here determines the chance of any particular piece of equipped items dropping. Set this to a negative number to prevent the treasure system from using the default value from the auto scaling table.
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_HIGH
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  high chance
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_ITEM
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  item chance
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_MONEY
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here overrides the TS_MoneyValue value in the autoscale 2DA.
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_RANK
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here directly relates to ID values in the autoscale 2DA.
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_REACTIVE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="center"> 0
+</td>
+<td> Reactive chance, only present in the creature variable table<sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_SCALING
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here has no additional effect. This is currently only useful to turn off scaling.
+</td></tr>
+<tr>
+<td> TS_OVERRIDE_STEALING
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value here directly relates to ID values in the TS_Stealing 2DA.
+</td></tr>
+<tr>
+<td> TS_TREASURE_GENERATED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A value of -1 here ensures that there is never any treasure, period.
+</td></tr></table>
+<h2><span class="mw-headline" id="Stealing">Stealing</span></h2>
+<p>Stealing from a creature functions the same as a normal treasure drop, except the loot is only ever a single Minor Item. No Money or Major Items will be dropped.
+</p><p>The TS_OVERRIDE_STEALING variable allows special functionality to be added when a creature is stolen from. A value placed in the override is actually an ID lookup in the TS_Stealing 2DA. When that creature is stolen from (and a creature can normally only be successfully stolen from once), it gets the item resource referenced by that ID and adds it to the treasure gained from stealing.
+</p><p>Stealing from creatures is mostly handled by systems, so there are only a couple places a designer can interact with it. First it will be useful to describe exactly what happens when the Stealing skill is used.
+</p><p>When a character tries to use Stealing on another creature, it checks a variety of factors on the character and the target to determine success. If the target has already been stolen from, the character neither succeeds nor fails. If the character fails, the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20FAILURE" title="EVENT TYPE STEALING FAILURE">EVENT_TYPE_STEALING_FAILURE</a> event is fired on the current area. If the character succeeds, the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20SUCCESS" title="EVENT TYPE STEALING SUCCESS">EVENT_TYPE_STEALING_SUCCESS</a> event is fired on the current area and the FLAG_STOLEN_FROM variable on the target is set to TRUE. Additionally, a successful use of the Stealing skill causes the Treasure System to generate a single Minor Item on the character using the skill. This requires the target to be properly set up for the Treasure System.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20FAILURE" title="EVENT TYPE STEALING FAILURE">EVENT_TYPE_STEALING_FAILURE</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20SUCCESS" title="EVENT TYPE STEALING SUCCESS">EVENT_TYPE_STEALING_SUCCESS</a> events are intended for use in the Infamy system and will be used in the Stealing Reactivity pass.
+</p><p>The FLAG_STOLEN_FROM variable can be set on a creature manually to allow them to be immune to stealing attempts. This can be used to shield plot characters from the skill, though Stealing won't actually remove any items from their inventory. Additionally, you can set the flag to FALSE through scripting to allow the player to steal from a target more than once. Creatures with this flag set will not fire <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20FAILURE" title="EVENT TYPE STEALING FAILURE">EVENT_TYPE_STEALING_FAILURE</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20STEALING%20SUCCESS" title="EVENT TYPE STEALING SUCCESS">EVENT_TYPE_STEALING_SUCCESS</a> events, so they won't interact with the Infamy system.
+</p>
+<h3><span class="mw-headline" id="Specific_Items">Specific Items</span></h3>
+<p>The Treasure System has functionality added to allow you to get specific items when stealing from a character. The TS_OVERRIDE_STEALING variable on creatures allows you to set associate a creature with a specific ID value in the TS_Stealing 2DA. Each ID value references a specific item resource name. When a character with this variable set is stolen from, that specific item resource will be added to the treasure the player receives.
+</p><p>The target does not have to have a valid Rank or Treasure Category for this item to drop. This is so you can drop only the specific item and nothing else.
+</p>
+<h2><span class="mw-headline" id="TS_System.xls_and_related_2das">TS_System.xls and related 2das</span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20System.xls" title="TS System.xls">TS_System.xls</a>
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%20system%20-%20ru" title="Treasure system/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

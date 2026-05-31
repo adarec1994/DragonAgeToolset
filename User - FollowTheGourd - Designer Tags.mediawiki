@@ -1,0 +1,46 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Codex"><span class="tocnumber">1</span> <span class="toctext">Codex</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.3Csummary.3E"><span class="tocnumber">1.1</span> <span class="toctext">&lt;summary&gt;</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.3Cattrib.3E"><span class="tocnumber">1.2</span> <span class="toctext">&lt;attrib&gt;</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.3Cemp.3E"><span class="tocnumber">1.3</span> <span class="toctext">&lt;emp&gt;</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Conversations"><span class="tocnumber">2</span> <span class="toctext">Conversations</span></a></li>
+</ul>
+</div>
+
+<p>Scratch page. Will format better once I have more useful information on the page (like not using dascript tags for a box). There'll be some overlap in their use between the codex and conversations, so maybe it's better if I just wrote this for the codex instead since the conversations article already has its own write-up on this.
+</p>
+<h2><span class="mw-headline" id="Codex">Codex</span></h2>
+<h3><span class="mw-headline" id=".3Csummary.3E">&lt;summary&gt;</span></h3>
+<p>Text between this tag seems to define a comment as it doesn't appear in the codex entry, and so shouldn't have an empty line below it.
+</p><p>It's commonly found at the top of the codex plot entry.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="sy0">&lt;</span>summary<span class="sy0">&gt;</span>On the archdemon.<span class="sy0">&lt;/</span>summary<span class="sy0">&gt;</span>
+A pretty scary fellow.</pre></div></div>
+<h3><span class="mw-headline" id=".3Cattrib.3E">&lt;attrib&gt;</span></h3>
+<p>Italicizes text. Used for attribution of the codex entry's source and usually has an empty line above and below it as necessary to separate it from other text.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">And mightily he did ask <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a> more water to go with his bread.
+&#160;
+<span class="sy0">&lt;</span>attrib<span class="sy0">&gt;--</span>Transcribed from a wet dinner napkin, <span class="nu0">5</span><span class="sy0">:</span><span class="nu0">46</span> Exalted.<span class="sy0">&lt;/</span>attrib<span class="sy0">&gt;</span></pre></div></div>
+<h3><span class="mw-headline" id=".3Cemp.3E">&lt;emp&gt;</span></h3>
+<p>The text is bolded for emphasis. Often used as a header in creature codex plots with multiple flags.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">Plot cod_crt_dragon_example.<span class="me1">plo</span><span class="sy0">:</span>
+&#160;
+Plot flag<span class="sy0">:</span> COD_CRT_DRAGON_UNLOCKED
+<span class="sy0">&lt;</span>emp<span class="sy0">&gt;</span>Dragons<span class="sy0">&lt;/</span>emp<span class="sy0">&gt;</span>
+They breath fire.
+&#160;
+<span class="me1">Plot</span> flag<span class="sy0">:</span> COD_CRT_DRAKE_UNLOCKED
+<span class="sy0">&lt;</span>emp<span class="sy0">&gt;</span>Drakes<span class="sy0">&lt;/</span>emp<span class="sy0">&gt;</span>
+They make <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a> good armor.</pre></div></div>
+<h2><span class="mw-headline" id="Conversations">Conversations</span></h2>
+<p>Refer to here for now <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation#Formatting_tags" title="Conversation">Conversation#Formatting_tags</a>
+</p>

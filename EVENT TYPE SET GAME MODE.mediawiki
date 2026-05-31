@@ -1,0 +1,17 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd>the game mode is set
+<dt>Sent from:
+<dd>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Integer 0: the game mode being set</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_SET_GAME_MODE:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGameMode = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// the game mode being set</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

@@ -1,0 +1,24 @@
+<p>Overrides the reaction of the specified object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetReactionOverride(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bHostile<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object to override the reaction of<dt style="font-weight:normal; font-style:italic;">bHostile<dd>Specifies whether to override the reaction of the object to hostile or non-hostile
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function overrides the reaction of the specified object. That means that the object will be hostile or non-hostile (depending
+on what is specified) regardless of what their group hostility is. If an object is overriden to non-hostile, it will no longer be possible
+for it to engage or anyone to engage with it in hostile actions in any way, shape or form.
+Changing a creature to a different group will cause a perception event to be refired.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ResetReaction" title="ResetReaction">ResetReaction</a>
+</p>

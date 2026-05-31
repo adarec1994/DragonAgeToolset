@@ -1,0 +1,14 @@
+<p>Put the game into target request mode. If the user selects a target (or if a valid target is already available) the specified event will be fired back to scripting.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> RequestTarget(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTargetType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fAOEParamater1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fAOEParamater2,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> eventID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> scriptname&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTargetType<dd>The type of target to request  (Target types are defined inside targettype.xls). Hostile: 4, AoE: 16<dt style="font-weight:normal; font-style:italic;">fAOEParamater1<dd>This is used to specify the radius of a circular AoE. It should be zero if you only wish to target single objects<dt style="font-weight:normal; font-style:italic;">fAOEParamater2<dd>(This parameter is NOT CURRENTLY USED and should be 0.0)<dt style="font-weight:normal; font-style:italic;">eventID<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object to signal the event to<dt style="font-weight:normal; font-style:italic;">scriptname<dd>If specified overides the default script
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

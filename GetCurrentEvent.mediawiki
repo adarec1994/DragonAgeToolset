@@ -1,0 +1,23 @@
+<p>Gets the current event for the event script.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> GetCurrentEvent(<br />);</div>
+<dl>
+<dt>Parameters:
+<dd>None
+</dl><dl><dt>Returns:
+<p><dd>Returns the current event.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Gets the current event for the event script that was just fired.
+This function should only be used in the event script.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Using this function outside of the event script might result in odd behaviour as the event returned might be invalid.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent" title="HandleEvent">HandleEvent</a>
+</p>

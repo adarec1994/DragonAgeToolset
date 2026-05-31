@@ -1,0 +1,100 @@
+<p><br />
+</p>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Module topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">Creating a module</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">Managing modules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a></li>
+<li><strong class="selflink">Builder to builder</strong></li></ul>
+</td></tr></table>
+<p>"Builder to builder" is a general term for the process of exchanging game resource information between builders, for example between several people who are collaborating on building a module. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">builder to player</a> for the process of packaging up finished works to distribute to players.
+</p><p>There are three basic sorts of game resources that might need to be exchanged in this manner:
+</p>
+<ul><li>Art resources</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a></li>
+<li>Database resources</li></ul>
+<p>Art resources are self-contained files stored in the computer's file system in the standard way, and so are straightforward to share between builders. 2DAs are generated from Excel files that are also straightforward to share, especially when the capabilities of M2DAs are taken advantage of (see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> page for more detail).
+</p><p>Database resources are trickier. Almost every computer user is familiar with how to manipulate files in their filesystem but fewer are familiar with databases, and there are many interdependencies within Dragon Age's database resources that need to be taken into account when making any edit. To simplify this process the toolset has the ability to save and load selected database resources and their dependencies into XML files, which are then bundled up into a single archive file for convenience.
+</p><p><b>Note:</b> This is a different sort of export procedure than what's needed to make resources available for use in the game itself, either for testing by yourself or for distribution to players. For information on that see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">resource palette</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_resource_files_for_transfer"><span class="tocnumber">1</span> <span class="toctext">Creating resource files for transfer</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Importing_database_resources"><span class="tocnumber">2</span> <span class="toctext">Importing database resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Resource_name_conflicts"><span class="tocnumber">2.1</span> <span class="toctext">Resource name conflicts</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Copying_a_Module"><span class="tocnumber">3</span> <span class="toctext">Copying a Module</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Sharing_a_live_database"><span class="tocnumber">4</span> <span class="toctext">Sharing a live database</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_resource_files_for_transfer">Creating resource files for transfer</span></h2>
+<p>To create a resource file archive, select the resources in the resource palette and then in the right-click menu select the "builder to builder create" command:
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20menu%20command.png"><img alt="B2B create menu command.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png" width="300" height="327" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20menu%20command.png" title="Enlarge"></a></div></div></div></div></div>
+<p>You'll be presented with a list of the resources to be exported:
+</p>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20panel.png"><img alt="B2B create panel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png" width="893" height="351" /></a></div></div>
+<p>Normally, you'll restrict the selection to your own module (unless you have a specific reason for exporting core resources).
+</p><p>Once you're done reviewing your selection, click "Ok" to export. You'll be prompted for a filename to put the resources into.
+</p><p>You can select multiple resources before doing builder to builder creation and they'll all be included in the B2B package.
+</p><p>Also, you can open a builder to builder creation window with all of your available resources in it by going to the Tools menu and selecting Builder -&gt; Builder to Builder Create.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Builder%20to%20builder%20create%20via%20tools%20menu.png"><img alt="Builder to builder create via tools menu.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png" width="300" height="219" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Builder%20to%20builder%20create%20via%20tools%20menu.png" title="Enlarge"></a></div></div></div></div></div>
+<p>As noted above, this only exports design resources from the database, so in addition to sharing the .dadbdata file created in this process, builders also need to exchange any simple files containing 2DAs and art resources.
+</p>
+<h2><span class="mw-headline" id="Importing_database_resources">Importing database resources</span></h2>
+<p>See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder#Copying_a_Module" title="Builder to builder"> Copying a Module</a>. 
+</p><p>Importing resources is done via the "Builder to Builder Load" command under the "Tools" menu (there's also a B2B create command here, the same that can be reached via the palette right-click menu):
+</p>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20menu%20command.png"><img alt="B2B load menu command.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png" width="485" height="286" /></a></div></div>
+<p>Again, note that this is a different set of commands than the main "export" commands.
+</p><p>You'll be prompted to select a database resource file generated by a previous export. When you do, you'll be presented with an options pane listing all of the resources present in the file:
+</p>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="B2B load panel 973.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png" width="888" height="405" /></a></div></div>
+<p>You can choose to import or not to import specific resources from this panel with the leftmost checkbox. Note that if you only import some of the files you may break dependencies. However, many of the dependencies in any significant export are likely to be core resources that you already have in your database and it's wise to avoid re-importing such resources unless you have a specific reason to.
+</p><p>You have the option to assign new string ids, or retain the original string ids, which allows you to maintain integrity of reference to the talk table. There seems to be a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Builder%20to%20Builder%20Load%20may%20not%20reproduce%20resource%20detail%20correctly" title="Bug: Builder to Builder Load may not reproduce resource detail correctly"> bug</a> with "Use Theirs". See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="String ID">String ID</a> for a discussion of sharing issues.   
+</p><p>ResRefID is the identifier that the resource had in the database it was exported from. ResRefIDs must be unique within any given database, so these numbers will be reassigned automatically during the import process.
+</p>
+<h3><span class="mw-headline" id="Resource_name_conflicts">Resource name conflicts</span></h3>
+<p>The "Exists/New" column indicates whether a resource with the same name already exists within the destination database. This is a good way to identify common core resources that were included as dependencies on export but that you don't want to re-import.
+</p><p>In the event that you import a resource with the same name as an existing resource within your database, the default behavior is for the old resource within your database to be overwritten by the new resource coming in from the import. The last column, "create new", allows this behavior to be overridden. If you enable "create new" for such a resource, the imported resource will be renamed with "_1" (or a higher number as needed) and the old resource will be untouched. Any other new imported resources in the file that depend on the renamed resource will have their dependencies updated to refer to the new copy of the resource.
+</p><p>Note that if use "create new" when importing a resource's dependencies and then you later re-import the same resource the importer won't know that its dependencies have been renamed in this manner. It's best to avoid this situation as hard-to-debug problems can potentially result.
+</p><p>Resources with the same name that already exist in the destination database and that are checked out by other users aren't editable, so the "checked out" column will warn you of any resources that the import process will be unable to update. This is unlikely to be a concern when only a single user (yourself) has access to your database but may become significant in a more sophisticated multi-user collaborative environment.
+</p>
+<h2><span class="mw-headline" id="Copying_a_Module">Copying a Module</span></h2>
+<p>You might want to copy a module to a new machine, a new data base, or another builder's data base.
+</p><p>Builder-to-Builder Create is a good way to backup your resources for transfer or recovery.
+</p><p>When you want to make a copy, create a new module in the target data base, entering the resource name and Name property manually.
+</p><p>If you have VO, you'll want to ensure string ids don't change during load (otherwise you'll have to rename all the VO files).
+</p><p>If you know what string range was defined for the original module, change the new module to the same range.
+</p><p>If you've lost the original module and have no independent record of the string range, you need to ensure that all the strings in the .dadbdata file are in range. Temporarily, you can set the start of the range to 1, and the end of the range to a very high value.
+</p><p>Now do the Builder-to-Builder Load, with the Use Theirs option for string ids.
+</p><p>If you have a temporary string id range, examine the new module in the String Editor to discover the lowest and highest string id values. Set the range start to the lowest, range next to one higher than the highest, and range end as high as you like.
+</p><p>Finally, change the other module properties, such as the start area / waypoint and the module script. That has to happen last, because you select from the resources you just loaded.
+</p>
+<h2><span class="mw-headline" id="Sharing_a_live_database">Sharing a live database</span></h2>
+<p>If passing bundles of files around between builders proves to be a cumbersome means of collaborating, a more advanced alternative exists: sharing a single database repository.
+</p><p>With a default installation of the toolset on a user's computer, a database is installed on that local computer for that toolset's use. Using the toolset's configuration tool, however, it is possible to tell the toolset to use some other database instead - possibly on another machine entirely, provided it's accessible over a network. This is the collaboration mechanism that was used internally at BioWare during the development of the Dragon Age single-player campaign, along with a more traditional file repository for the art resources and 2DAs, and is the principal reason why the toolset supports the concept of "checking out" database resources for editing.
+</p><p>General considerations you'll need to take into account:
+</p>
+<ul><li>Firewall and router issues - The computers of all the various collaborators will need to be able to contact the central database. This may require port forwarding and other potentially tricky configuration settings.</li>
+<li>Availability - If all work is being done on a single database, nobody will be able to do anything when that database is unavailable. It may be a good idea to set up a machine dedicated solely to running the database.</li>
+<li>Security - You'll be exposing your database to potential intrusion attempts from the outside world, so make sure you understand the risks and the steps that can be taken to ameliorate them.</li></ul>
+<p>Though this is fully possible in principle with the existing toolset, the specifics for how to accomplish this outside the BioWare intranet haven't been tested yet so we don't have documentation for it yet.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder%20-%20ru" title="Builder to builder/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

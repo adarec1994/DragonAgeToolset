@@ -1,0 +1,57 @@
+<p>This tutorial describes how to create a custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a> based on a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model</a> that is already active in your toolset. This process should work with any model, whether custom or packaged with the game. It is assumed that the reader is familiar with the Toolset.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Set_up_your_2DA_file"><span class="tocnumber">1</span> <span class="toctext">Set up your 2DA file</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Extract_model_files"><span class="tocnumber">2</span> <span class="toctext">Extract model files</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Change_the_names_of_your_MAO.2C_MMH.2C_and_PHY_files"><span class="tocnumber">3</span> <span class="toctext">Change the names of your MAO, MMH, and PHY files</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Edit_your_MAO_file"><span class="tocnumber">4</span> <span class="toctext">Edit your MAO file</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Edit_your_MMH_and_PHY_files"><span class="tocnumber">5</span> <span class="toctext">Edit your MMH and PHY files</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Put_files_in_override_folder"><span class="tocnumber">6</span> <span class="toctext">Put files in override folder</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Create_your_custom_placeable"><span class="tocnumber">7</span> <span class="toctext">Create your custom placeable</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Set_up_your_2DA_file">Set up your 2DA file</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeables.xls" title="Placeables.xls">Placeables.xls</a> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20types%202da" title="Placeable types 2da">placeable_types 2da</a> that you will need to extend. The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> article describes the process of creating the m2da fragment file that you will need.
+</p><p>The columns you need to edit (or at least check) in the spreadsheet are <b>ID</b>, <b>Label</b> (something meaningful to you - does not have to be unique), <b>ModelName</b> (the name of your MMH file), <b>OcclusionFactor</b> (optional), <b>StateController</b>, and <b>baseType</b> (values are listed on the first tab in the excel file).
+</p><p>Check the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use" title="2DA ranges in use">2DA ranges in use</a> page to make sure you are not using row IDs in your 2da file that will conflict with the core game or other popular modules.
+</p><p>The <b>StateController</b> field is very important because it determines the type of action that can be used with your placeable in game. For example, "Informational" objects can be examined, but cannot be used to start a conversation when clicked on. Instead "Puzzle" objects are used to start a conversation when clicked on. Think about what you want your placeable to do and choose the <b>StateController</b> to match it.
+</p><p>Create your <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a> file using <b>Excel Processor</b> and put it in Dragon Age/packages/core/override. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">compiling 2DAs</a> for details on how.
+</p><p>Tip: Excel Processor will generate a GDA file for every worksheet within a workbook. You do not need all of these. Only keep the one that you edited (in this case it would be placeable_types) and place that one in the override folder.
+</p>
+<h2><span class="mw-headline" id="Extract_model_files">Extract model files</span></h2>
+<p>Use <a rel="nofollow" class="external text" href="http://social.bioware.com/project/41/">DATool</a> by Adinos to extract the DDS, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a>, PHY, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a>, and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="MSH">MSH</a> files for the model you want to make into a placeable. To do this with the DATool click <b>File &gt; Save all</b>. Put them some place easy to access so you can work on them.
+</p>
+<h2><span class="mw-headline" id="Change_the_names_of_your_MAO.2C_MMH.2C_and_PHY_files">Change the names of your MAO, MMH, and PHY files</span></h2>
+<p>Change the names of your MAO, MMH, and PHY files so that they start with plc_ instead of prp_. The new name must have the same number of characters as the old name.
+</p>
+<h2><span class="mw-headline" id="Edit_your_MAO_file">Edit your MAO file</span></h2>
+<p>Open the MAO file using a text editor like Notepad.
+</p>
+<ul><li>In &lt;MaterialObject Name="filename"&gt; change filename to the new name of the MAO file.</li>
+<li>In &lt;Material Name="static.mat"&gt; replace static.mat with Prop.mat.</li>
+<li>Delete the line that starts with &lt;Texture Name="mml_tLightmap </li>
+<li>Delete the line that starts with &lt;SoundType Name= </li>
+<li>Add a line that says &lt;Texture Name="mml_tTintMask" ResName="Default_White.dds"&gt;&lt;/Texture&gt;</li>
+<li>Save and close the MAO file.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Edit_your_MMH_and_PHY_files">Edit your MMH and PHY files</span></h2>
+<p>Launch the Toolset.
+</p><p>Open the new MMH file. Change MMH_NAME to match your new MMH file name. Towards the end of the MMF is a field for material object, which needs to be changed to the name of your new MAO file. Save and close the MMH file.
+</p><p>Open your new PHY file.
+</p>
+<ul><li>Change MMH_NAME to the name of your new MMH file.</li>
+<li>Change MMH_NODE_COLLISION_OBJ_TYPE from 2 to 1.</li>
+<li>Change MMH_SHAPE_COLLISION_MASK_PLACEABLES from 0 to 1. (This is the field that tells the toolset and the game to use your object as a placeable, making it clickable.)</li>
+<li>Change MMH_SHAPE_COLLISION_MASK_STATIC_GEOMETRY from 1 to 0. (This field tells the toolset and the game that your object is a prop and is not clickable.)</li>
+<li>Save and close the PHY file.</li></ul>
+<p>Close your toolset.
+</p>
+<h2><span class="mw-headline" id="Put_files_in_override_folder">Put files in override folder</span></h2>
+<p>Put your new MAO, MMH, and PHY files in Dragon Age/Packages/Core/Override.
+</p>
+<h2><span class="mw-headline" id="Create_your_custom_placeable">Create your custom placeable</span></h2>
+<p>You can now create a new placeable in the toolset using your model. The process of creating a new placeable is described in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20tutorial" title="Placeable tutorial">Placeable tutorial</a> page.
+</p>

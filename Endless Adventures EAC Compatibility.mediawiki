@@ -1,0 +1,76 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p>
+<h2><span class="mw-headline" id="Basic_Module_Information">Basic Module Information</span></h2>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> EAC Name
+</td>
+<td> EAC UID
+</td>
+<td> EAC PRCSCR ID(s)
+</td></tr>
+<tr>
+<td> EAC Duncan
+</td>
+<td> eac_duncan_jckl
+</td>
+<td> 1500501
+</td></tr></table>
+<h2><span class="mw-headline" id="Basic_Character_Information">Basic Character Information</span></h2>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b>EAC Name</b>
+</td>
+<td> <b>Character Name</b>
+</td>
+<td> <b>Tag</b>
+</td>
+<td> <b>ResRef</b>
+</td>
+<td> <b>Partypicker Coordinates</b>
+</td>
+<td> <b>PRCSCR Spawn Area</b>
+</td>
+<td> <b>PRCSCR Spawn Coordinates</b>
+</td></tr>
+<tr>
+<td> EAC Duncan
+</td>
+<td> Duncan
+</td>
+<td> eac_duncan
+</td>
+<td> eac_duncan.utc
+</td>
+<td> -3.19647,-4.41257,0.900991
+</td>
+<td> ea_hub_main
+</td>
+<td> 63.7525,48.4943,-0.000779401
+</td></tr></table>
+<h2><span class="mw-headline" id="Advanced_Character_Information">Advanced Character Information</span></h2>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b>EAC Name</b>
+</td>
+<td> <b>Character Name</b>
+</td>
+<td> <b>Partypicker GDA ID (!)</b>
+</td>
+<td> <b>Portrait GDA ID (!)</b>
+</td></tr>
+<tr>
+<td> EAC Duncan
+</td>
+<td> Duncan
+</td>
+<td> n/a
+</td>
+<td> n/a
+</td></tr></table>
+<p><br />
+</p>
+<ul><li> (!) These features are not currently available.</li></ul>

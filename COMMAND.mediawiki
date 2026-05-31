@@ -1,0 +1,142 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> COMMAND_FAILED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_COMMAND_CLEARED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-2
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_DISABLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-8
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_INVALID_DATA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-3
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_INVALID_PATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-4
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_NO_LINE_OF_SIGHT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-6
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_NO_SPACE_IN_MELEE_RING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-5
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_PATH_ACTION_REQUIRED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-9
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_TARGET_DESTROYED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-7
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_FAILED_TIMEOUT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">-10
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_LOOPING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_SUCCESSFUL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>

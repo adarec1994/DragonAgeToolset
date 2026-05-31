@@ -1,0 +1,176 @@
+<h2><span class="mw-headline" id="Shapechange_worksheet">Shapechange worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Appearance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The appearance used by the form, as defined in APR_base.
+</td></tr>
+<tr>
+<th> UpgradeApr
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The alternate appearance used when the ability Master Shapeshifter is present.
+</td></tr>
+<tr>
+<th> IsPlotShape
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> PassiveTalent
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The hidden "Properties" ability granted while this form is active, defined in ABI_base.
+</td></tr>
+<tr>
+<th> Abi1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The first ability granted while this form is active, defined in ABI_base.
+</td></tr>
+<tr>
+<th> Abi2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The second ability granted while this form is active, defined in ABI_base.
+</td></tr>
+<tr>
+<th> Abi3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The third ability granted while this form is active, defined in ABI_base (may only appear when Master Shapeshifter ability is present).
+</td></tr>
+<tr>
+<th> PassiveTalent2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Crust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> TacticsTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> StrengthBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  The base value Strength is set to while in this form.
+</td></tr>
+<tr>
+<th> StrengthPerLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DexterityBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  The base value Dexterity is set to while in this form.
+</td></tr>
+<tr>
+<th> DexterityPerLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> ConstitutionBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  The base value Constitution is set to while in this form.
+</td></tr>
+<tr>
+<th> ConstitutionPerLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> ArmorBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> ArmorPerLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DamageBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DamagePerLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> APBase
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> APLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr></table>

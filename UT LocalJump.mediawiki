@@ -1,0 +1,17 @@
+<p>Makes someone jump to a specified waypoint within the same area
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_LocalJump(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarg,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWP&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nJumpImmediately&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bNewHome&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bStaticCommand&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bJumpParty&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oTarg<dd>The object that is going to jump someplace.<dt style="font-weight:normal; font-style:italic;">sWP<dd>If the string is a # then oTarg will go to "jp_&lt;OBJTAG&gt;_#". If sWP is blank it defaults to 0. If something other than a # is here, then that is the string of the destination waypoint. NOTE: If the waypoint string starts with a number, it will be treated as a number not a string.<dt style="font-weight:normal; font-style:italic;">nJumpImmediately<dd>If TRUE, forces the jump to the front of the action queue.<dt style="font-weight:normal; font-style:italic;">bNewHome<dd>By default a creature's new "Home" is updated when you tell them to move someplace. Set this to FALSE if you want to keep their home point as is.<dt style="font-weight:normal; font-style:italic;">bStaticCommand<dd>the command will not be cleared by a standard <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20ClearAllCommands" title="WR ClearAllCommands">WR_ClearAllCommands</a><dt style="font-weight:normal; font-style:italic;">bJumpParty<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This should be used only for area/stage setup - arranging creatures for a certain encounter beforehand. This should NOT be used for any instances in which the user can witness the jump. Note that this function should be used only for jumps within the same area.
+</p>

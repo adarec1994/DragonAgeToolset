@@ -1,0 +1,49 @@
+<p>This guide will show you how to make resources from the Dragon Age: Origins expansion and some DLC available in the toolset so you can use them in your own mods.
+</p>
+<h2><span class="mw-headline" id="Before_you_start">Before you start</span></h2>
+<p>In order to complete this tutorial you will need:
+</p>
+<ol><li> Dragon Age: Origins game</li>
+<li> Dragon Age: Origins Toolset</li>
+<li> Dragon Age: Origins The Stone Prisoner DLC; Warden's Keep DLC; and/or Awakening expansion</li></ol>
+<h2><span class="mw-headline" id="DLC_resources">DLC resources</span></h2>
+<ol><li> Close the toolset</li>
+<li> Open <code>[My Documents]\BioWare\Dragon Age\AddIns\</code></li>
+<li> Open either:
+<ol><li> <code>dao_prc_cp_2</code> i.e. The Stone Prisoner</li>
+<li> <code>dao_prc_nrx_1</code> i.e. Warden's Keep</li></ol></li>
+<li> Within your chosen folder, navigate to the <code>\core\env\</code> sub-folder</li>
+<li> Copy everything in the env sub-folder to <code>[Program Files]\Dragon Age\packages\core\env\</code></li>
+<li> Open the toolset</li>
+<li> Open or create an area and click on its Area Layout property: the area layouts from the DLC, for example gwb110d/shl100d, are listed</li></ol>
+<p>You can now include use these area layouts to create areas in your own mods.
+</p>
+<h2><span class="mw-headline" id="Awakening_resources">Awakening resources</span></h2>
+<ol><li> Close the toolset</li>
+<li> Open <code>[My Documents]\BioWare\Dragon Age\packages\core\override\</code></li>
+<li> Create a sub-folder and name it <code>_awakening</code> (or similar)</li>
+<li> Open <code>[Program Files]\Dragon Age\packages\core_ep1\data\</code></li>
+<li> Select and copy the following ERF archives:
+<ol><li> anims.erf</li>
+<li> designerplaceables.erf</li>
+<li> designerscripts.erf</li>
+<li> face.erf - optional, but it allows you to recreate characters from Awakening</li>
+<li> materialobjects.erf</li>
+<li> modelhierarchies.erf</li>
+<li> modelmeshdata.erf</li>
+<li> tints.erf</li>
+<li> resmetrics.erf</li>
+<li> textures.erf - preferably the high quality bundle (199MB) but either will do</li></ol></li>
+<li> Paste the copied archives into your <code>_awakening</code> sub-folder</li>
+<li> Rename ALL of them with the a "_gxa" (or similar) suffix:
+<ol><li> anims_gxa.erf</li>
+<li> designerplaceables_gxa.erf</li>
+<li> designerscripts_gxa.erf</li>
+<li> etc.</li></ol></li></ol>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Using%20DLC%20areas%20in%20your%20mods%20tutorial%20-%20ru" title="Using DLC areas in your mods tutorial/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

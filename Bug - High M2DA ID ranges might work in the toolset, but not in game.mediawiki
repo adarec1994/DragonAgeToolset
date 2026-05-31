@@ -1,0 +1,264 @@
+<ul><li><b>Version found:</b> 1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 213544  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Synopsis"><span class="tocnumber">1.1</span> <span class="toctext">Synopsis</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Details"><span class="tocnumber">1.2</span> <span class="toctext">Details</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Example:"><span class="tocnumber">1.3</span> <span class="toctext">Example:</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Table_Listing"><span class="tocnumber">1.4</span> <span class="toctext">Table Listing</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Forum_Posts"><span class="tocnumber">1.5</span> <span class="toctext">Forum Posts</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Reproduction"><span class="tocnumber">2</span> <span class="toctext">Reproduction</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Workarounds"><span class="tocnumber">3</span> <span class="toctext">Workarounds</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#UPDATE"><span class="tocnumber">4</span> <span class="toctext">UPDATE</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<h3><span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<p>High values for the ID field in various M2DA tables will appear to work correctly while testing in the toolset, but will cause various issues in the game, like missing meshes. The limit for when an ID is "low enough" to work changes depending on the M2DA being used.
+</p>
+<h3><span class="mw-headline" id="Details">Details</span></h3>
+<p>Dragon Age allows to extend the built-in data tables through the M2DA process. A new .gda file is created with the same name as the original, plus an extra suffix, and it contains the data for the additional table rows. To facilitate merging this data with the native 2DA files, a unique ID must be chosen for the additional rows. If two M2DAs with identical IDs get merged, they will overwrite each other.
+</p><p>The valid range for this ID is at least 1 - 2 billion (2^31), with 0 - 1000000 reserved for Bioware's own use. Therefore, picking a random high number should ensure that no two addons ever have ID collisions.
+</p><p>The bug now appears to be, that depending on the tables that get M2DA'd, only very low ID values work correctly in game. They appear to be working as expected in the toolset, but as soon as the mod is tested, issues surface. After further trying, it seems that the affected tables only allow IDs in the 0-255 range.
+</p>
+<h3><span class="mw-headline" id="Example:">Example:</span></h3>
+<p>Extending materialrules.gda, materialtypes.gda and ts_material.gda seems to work fine in the toolset and in game as well, values at least as high as 80000000 work perfectly well. Extending armor_massive_variation.gda does NOT work as expected. picking 1500 as ID, for example, will work in the toolset, but as soon as an armor using this variation is equipped in game, the body mesh will disappear, leaving only floating hands, feet and a head.
+</p><p>Using a file named "armor_massive_variation_ar.gda" with the contents:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th>  ID
+</th>
+<th>  Label
+</th>
+<th>  MODELTYPE
+</th>
+<th>  MODELSUBTYPE
+</th>
+<th>  MODELVARIATION
+</th>
+<th>  ICONNAME
+</th>
+<th>  DefaultMaterial
+</th>
+<th>  SoundMatType
+</th></tr>
+<tr>
+<td>  141
+</td>
+<td>  Knight Champion Armor
+</td>
+<td>  rob
+</td>
+<td>  arc
+</td>
+<td>  h
+</td>
+<td>
+</td>
+<td>  2
+</td>
+<td>  13
+</td></tr></table>
+<p>will work, while:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th>  ID
+</th>
+<th>  Label
+</th>
+<th>  MODELTYPE
+</th>
+<th>  MODELSUBTYPE
+</th>
+<th>  MODELVARIATION
+</th>
+<th>  ICONNAME
+</th>
+<th>  DefaultMaterial
+</th>
+<th>  SoundMatType
+</th></tr>
+<tr>
+<td>  1412
+</td>
+<td>  Knight Champion Armor
+</td>
+<td>  rob
+</td>
+<td>  arc
+</td>
+<td>  h
+</td>
+<td>
+</td>
+<td>  2
+</td>
+<td>  13
+</td></tr></table>
+<p>will not work and produce the behaviour described above.
+</p>
+<h3><span class="mw-headline" id="Table_Listing">Table Listing</span></h3>
+<p>This is a list of all .gda files that can be M2DA'd and whether they show this problem, and at which ranges:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th>  Name
+</th>
+<th>  Appears to work? (y/n)
+</th>
+<th>  Highest tested working ID
+</th></tr>
+<tr>
+<td>  areadata.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr>
+<tr>
+<td>  armor_massive_variation.gda
+</td>
+<td>  N
+</td>
+<td>  141
+</td></tr>
+<tr>
+<td>  item_sets.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr>
+<tr>
+<td>  Heraldry.gda
+</td>
+<td>  Y
+</td>
+<td>  203
+</td></tr>
+<tr>
+<td>  materialrules.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr>
+<tr>
+<td>  materialtypes.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr>
+<tr>
+<td>  screenshake.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr>
+<tr>
+<td>  ts_material.gda
+</td>
+<td>  Y
+</td>
+<td>  80141200
+</td></tr></table>
+<h3><span class="mw-headline" id="Forum_Posts">Forum Posts</span></h3>
+<p>Some of the forum posts about this behaviour:
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/72/index/508080/1">SOLVED Assigning VFX to a creature</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/74/index/498205/1">Did toolset update break m2da process? (was placeables showing up in area editor but not game)</a>
+</p>
+<h2><span class="mw-headline" id="Reproduction">Reproduction</span></h2>
+<p>Steps to reproduce this behaviour:
+</p>
+<ul><li> Create a test module
+<ul><li> Name -&gt; M2DATest</li>
+<li> UID -&gt; m2datest</li>
+<li> Extend -&gt; Single Player</li>
+<li> Module Hierarchy -&gt; Check Single Player</li></ul></li>
+<li> Either copy, create or generate an armor_massive_variation M2DA in AddIns\m2datest\core\data, containing the following data:</li></ul>
+<table class="wikitable" border="1">
+
+<tr>
+<th> ID
+</th>
+<th> Label
+</th>
+<th> MODELTYPE
+</th>
+<th> MODELSUBTYPE
+</th>
+<th> MODELVARIATION
+</th>
+<th> ICONNAME
+</th>
+<th> DefaultMaterial
+</th>
+<th> SoundMaterial
+</th></tr>
+<tr>
+<td> 20
+</td>
+<td> Massive Armor X
+</td>
+<td> arm
+</td>
+<td> max
+</td>
+<td> a
+</td>
+<td>
+</td>
+<td> 2
+</td>
+<td> 13
+</td></tr></table>
+<p>(I used GDApp for this, <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/755/">[1]</a> )
+</p>
+<ul><li> Restart the toolset</li>
+<li> Create a new massive armor, by duplicating an existing one (gen_im_arm_cht_mas_hpl for example), naming it m2daarm.uti</li>
+<li> Change the Item Variation to the new Massive Armor X</li>
+<li> Create a script to give the armor to you, containing something like "CreateItemOnObject(R"m2daarm.uti", GetHero());"</li>
+<li> Save, export</li></ul>
+<p>At this point you should be able to spawn the armor in game and equip it, and it should work as expected.
+</p><p>Now:
+</p>
+<ul><li> Edit the armor_massive_variation_x.gda, changing the ID field to 2000000 (two million)</li>
+<li> Restart the toolset</li>
+<li> Edit m2daarm.uti again, setting the Item Variation back to Massive Armor X</li>
+<li> Save, export</li></ul>
+<p>At this point when you spawn and equip the armor, the game will either crash or the body of the character will vanish.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Only known workaround right now is to use a very very low ID, most likely in the range reserved for Bioware. This is NOT A LONG TERM OPTION, as addon collisions WILL happen.
+</p>
+<h2><span class="mw-headline" id="UPDATE">UPDATE</span></h2>
+<p>Seems like Eshme found the reason, at least for items affected by this <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/72/index/722622/1">[2]</a>:
+</p><p>The variation field in .uti files seems to be only 1 byte instead of 4 bytes, only allowing IDs 0-255 to be stored correctly.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20APR%20base%20maximum%20M2DA%20row%20ID%20is%2065535%20in%20the%20toolset" title="Bug: APR base maximum M2DA row ID is 65535 in the toolset">Bug: APR base maximum M2DA row ID is 65535 in the toolset</a></li></ul>

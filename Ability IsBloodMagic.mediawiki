@@ -1,0 +1,17 @@
+<p>Returns TRUE if the specified ability is a blood magic ability.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_IsBloodMagic(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd>The creature using the ability
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE or FALSE
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Used by the spell cost functions to determine whether or not to cast from health or mana/stamina.
+</p>

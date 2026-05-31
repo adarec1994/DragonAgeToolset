@@ -1,0 +1,14 @@
+<p>There are no unused StringIDs available in your module's range.
+</p>
+<h3><span class="mw-headline" id="What_to_do.3F">What to do?</span></h3>
+<p>You don't need to lose your work - you can change the module ID ranges from the File-&gt;Manage Modules-&gt;Properties dialog and then retry saving your file.
+</p>
+<table>
+
+<tr>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:195px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/Module_menu_command.png" width="193" height="386" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png" title="Enlarge"></a></div>Select "Manage Modules"</div></div></div>
+</td>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="200" height="249" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png" title="Enlarge"></a></div>Then click the "Properties" button to open module properties.</div></div></div>
+</td></tr></table>
+<p>Then, increase the "StringID End" property to a larger number.
+</p>

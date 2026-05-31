@@ -1,0 +1,18 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<p>Returns the ID number of the targeted party member for those tactic targets which are generated on a per-follower basis.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> GetTacticTargetObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The creature to query<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The tactic index
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The ID number of the party member.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

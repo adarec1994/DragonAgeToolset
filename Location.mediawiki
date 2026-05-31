@@ -1,0 +1,18 @@
+<dl><dd><i>For the article about the data type, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location (dascript type)">Location (dascript type)</a></i></dd></dl>
+<p>Location object constructor.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> Location(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oArea,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vPosition,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fAngle<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oArea<dd>The area of the location<dt style="font-weight:normal; font-style:italic;">vPosition<dd>The vector position of the location<dt style="font-weight:normal; font-style:italic;">fAngle<dd>The angle degree orientation of the location
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>constructed location
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function creates a Location object based on the specified parameters.
+</p>

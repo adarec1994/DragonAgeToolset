@@ -1,0 +1,20 @@
+<h2><span class="mw-headline" id="Dragon_Age_Toolset:_Noob_to_Pro">Dragon Age Toolset: Noob to Pro</span></h2>
+<h3><span class="mw-headline" id="How_I_learned_to_stop_worrying_and_love_the_Dragon_Age_Toolset">How I learned to stop worrying and love the Dragon Age Toolset</span></h3>
+<p>The goal of this tutorial is to take a new user of the Dragon Age toolset who is completely unfamiliar with the resources in the tool, and enable him or her to make a new, standalone campaign from scratch. Because of the modular design of the toolset, it can be tough to navigate the different aspects that go into making a module: scripting, building levels, even getting a basic module up and running. In addition, it's difficult to find a centralized location to simply find out what to do and where to do it. If you have no idea what you're doing, this is for you.
+</p><p>Here's an overview of what we'll be going through together on this wiki:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Making%20a%20new%2C%20playable%20module" title="Making a new, playable module">Making a new, playable module</a> - What to do when you first open your toolset</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Building%20levels" title="Building levels">Building levels</a> - Maybe I do not want to be in Orzammar</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20generation" title="Character Generation (page does not exist)">Character Generation</a> - Different ways to make a usable character who may or may not be named Jaden</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Maps%20and%20Areas" title="Maps and Areas (page does not exist)">Maps and Areas</a> - How to go from level to level</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creatures" title="Creatures (page does not exist)">Creatures</a> - Making your module a little less lonely</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscenes" title="Cutscenes (page does not exist)">Cutscenes</a> - How to create cinematic events</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversations" title="Conversations (page does not exist)">Conversations</a> - Interacting with NPCs</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat" title="Combat (page does not exist)">Combat</a> - Getting into fights</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Packaging" title="Packaging (page does not exist)">Packaging</a> - How to share your module with your <i>actual</i> friends (if they have Dragon Age on PC)</li></ul>
+<hr />
+<p>There are a lot of resources on the Toolset, but unfortunately they're scattered around a bit. However, here are some tools that may or may not be helpful to both noobz and proz:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial" title="Backgrounds tutorial">More than just a background tutorial, an introduction to character generation</a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">A list of models, for building levels</a>
+</p><p><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/%7C">DA Nexus, a site dedicated to Dragon Age mods</a>
+</p>

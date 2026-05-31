@@ -1,0 +1,21 @@
+<p>Sets an object to use shouts in his dialog file.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_SetShoutsFlag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bEnable<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object whose shouts flag is being changed<dt style="font-weight:normal; font-style:italic;">bEnable<dd>TRUE - enable shouts, FALSE - disable
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function sets an object to use shouts whenever dialog is triggered. The function sets a variable on the object, that is read and cleared by Generic conversation flags. The flags can then be used to flag a shouts tree in the conversation.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetShoutsFlag" title="UT GetShoutsFlag">UT_GetShoutsFlag</a>
+</p>

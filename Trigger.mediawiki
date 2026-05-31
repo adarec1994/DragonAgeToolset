@@ -1,0 +1,556 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <strong class="selflink">Trigger</strong>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Area topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area Editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial" title="Area tutorial">Area tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area lists</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">Waypoints</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Volume object">Volume objects</a> (<strong class="selflink">triggers</strong>, audio, reverb, music)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">Area editor options</a></li></ul>
+</td></tr></table>
+</td></tr></table>
+<p>Triggers are polygonal shapes painted onto areas that receive an event when a creature enters or exits it, which generally is then processed by a script to perform some action.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:154px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Area%20editor%20volume%20object.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/43/Area_editor_volume_object.png" width="152" height="125" class="thumbimage" /></a>  <div class="thumbcaption">A trigger's volume object in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> editor</div></div></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_triggers_in_the_toolset"><span class="tocnumber">1</span> <span class="toctext">Creating triggers in the toolset</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Area_Transitions"><span class="tocnumber">2</span> <span class="toctext">Area Transitions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Trigger_Scripts"><span class="tocnumber">3</span> <span class="toctext">Trigger Scripts</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Traps"><span class="tocnumber">4</span> <span class="toctext">Traps</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Talk_triggers"><span class="tocnumber">5</span> <span class="toctext">Talk triggers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Variables"><span class="tocnumber">6</span> <span class="toctext">Variables</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Properties"><span class="tocnumber">7</span> <span class="toctext">Properties</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_triggers_in_the_toolset">Creating triggers in the toolset</span></h2>
+<p>Area triggers can be painted using the trigger icon (green diamond) in the designer toolset, onto an area that has a layout.
+</p><p>To create a new trigger, either select File -&gt; New -&gt; Trigger from the top menu or right click on any icon in the palette and choose New -&gt; Trigger.
+</p><p>After selecting a trigger from the palette, paint it by clicking on the terrain one point at a time. Each point will become a corner of a mostly flat surface. Double clicking will connect that point to the first point placed, and finish it. See the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a> page for more detail on how to paint area triggers in an area.
+</p><p>Note that while the displayed plane of the trigger area may dip below the surface of the floor it's placed on, the perimeter extends upward invisibly and will still detect when something passes over one of its edges. A creature can't slip inside a trigger area by stepping "over" it.
+</p>
+<h2><span class="mw-headline" id="Area_Transitions">Area Transitions</span></h2>
+<p>To make a trigger into an area transition, right click on trigger in the module tree view and choose Open Resource. You will need to check it out to modify it, if you haven't already. Select the Variable field in the Attributes section and click on the elipses (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) icon on the right side.
+</p><p>The variables we need are:
+</p>
+<ul><li>TRIGGER_AT_DEST_TAG - the tag for the waypoint that the trigger teleports the player to</li>
+<li>TRIGGER_AT_DEST_AREA_TAG - the tag for the area the waypoint is in, if it isn't the current area.</li>
+<li>TRIGGER_AT_DEST_AREALIST_TAG - the tag for the arealist the area is in if it is not in the current arealist.&#160;!!not seeing this one in the toolset, is it still used?!!</li></ul>
+<h2><span class="mw-headline" id="Trigger_Scripts">Trigger Scripts</span></h2>
+<p>Any other functionality for a trigger must be put in a script manually. The trigger_core.nss script (which may change) in the <b>_Core Scripts</b> directory is a good template for such a script.
+</p><p>Without any modifications this script performs the area transition. The code to do so is in a switch statement that looks for the event matching the predefined constant <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ENTER" title="EVENT TYPE ENTER">EVENT_TYPE_ENTER</a>.
+</p><p>Note that there is an if statement in here that checks to see if it was the player who set off the trigger, (it also checks to see if there was an area transition tag set). If you want to have the trigger do something only when the player enters it you should do a similar check, otherwise it will activate whenever any creature enters.
+</p><p>Example: Have a cutscene play, but only the first time the player enters the trigger.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>IsPartyMember<span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span><span class="br0">&#41;</span> 
+    <span class="br0">&#123;</span> 
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rCutscene <span class="sy0">=</span> R<span class="st0">&quot;mycutscene.cut&quot;</span>;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/LoadCutscene"><span class="kw4">LoadCutscene</span></a><span class="br0">&#40;</span>rCutscene<span class="br0">&#41;</span>;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlayCutscene"><span class="kw4">PlayCutscene</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span>;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject"><span class="kw4">DestroyObject</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <span class="nu0">0</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span></pre></div></div>
+<p>If you do create a custom trigger script you should call the following after the switch statement:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, RESOURCE_SCRIPT_TRIGGER_CORE<span class="br0">&#41;</span>;</pre></div></div>
+<p>This ensures that anything your custom script doesn't process still gets processed correctly by the default script.
+</p><p>Once you have created your script, click on the "script" field of the attributes of the trigger, and then choose your script from the ellipsis (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) browser.
+</p><p>Note that triggers do not behave as expected when you use <code>SetObjectActive(OBJECT_SELF, FALSE);</code>.  This function sets the trigger to inactive, but the trigger will still fire when inactive.  Therefore any trigger script that needs to account for whether the trigger is active should be surrounded by an <code>if(GetObjectActive(OBJECT_SELF))</code> statement to explicitly test whether it should fire. Alternately, if the trigger is never intended to fire again, use <code>DestroyObject(OBJECT_SELF, 0);</code> instead of setting it inactive.
+</p>
+<h2><span class="mw-headline" id="Traps">Traps</span></h2>
+<p>Triggers are similar to how traps were defined in Neverwinter Nights, but in Dragon Age it is preferred to construct traps using placeable floor plates as triggers instead. This makes traps easier for the player to interact with in a realistic manner.
+</p><p>See the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trap%20system" title="Trap system">Trap system</a> for details on how to handle traps.
+</p>
+<h2><span class="mw-headline" id="Talk_triggers">Talk triggers</span></h2>
+<p>A talk trigger is a trigger that initiates a conversation. This occurs so frequently in Dragon Age's game design that a generic script, gen00tr_talk.nss, is available for this purpose. To use it with a trigger, set the trigger's "Script" property to "gen00tr_talk" and set the "Variable 2da" property to "var_trigger_talk".
+</p><p>The following set of variables are available in the var_trigger_talk variable 2da:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> TRIG_TALK_ACTIVE_FOR_FLAG
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  triggers only if a specific plot/flag is active - works with TRIG_TALK_ACTIVE_FOR_PLOT
+</td></tr>
+<tr>
+<td> TRIG_TALK_ACTIVE_FOR_PLOT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  triggers only if a specific plot/flag is active - works with TRIG_TALK_ACTIVE_FOR_FLAG
+</td></tr>
+<tr>
+<td> TRIG_TALK_DIALOG_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword"> resource </a>
+</td>
+<td align="center">
+</td>
+<td>  a dialog file to override the default one for the NPC. Type it in the format of "gen000_example.dlg" (without the quotes)
+</td></tr>
+<tr>
+<td> TRIG_TALK_INACTIVE_FOR_FLAG and FLAG2
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  triggers only if a specific plot/flag is inactive - works with TRIG_TALK_ACTIVE_FOR_PLOT
+</td></tr>
+<tr>
+<td> TRIG_TALK_INACTIVE_FOR_PLOT and PLOT2
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  triggers only if a specific plot/flag is inactive - works with TRIG_TALK_ACTIVE_FOR_FLAG
+</td></tr>
+<tr>
+<td> TRIG_TALK_LISTENER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  a string for an NPC listener. Should be used for ambient conversations
+</td></tr>
+<tr>
+<td> TRIG_TALK_REPEAT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  1 so the trigger can re-fire, 0 - the trigger fires only once
+</td></tr>
+<tr>
+<td> TRIG_TALK_SET_FLAG and FLAG2
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  sets the plot and flag when triggered, works with TRIG_TALK_SET_PLOT
+</td></tr>
+<tr>
+<td> TRIG_TALK_SET_PLOT and PLOT2
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  sets the plot and flag when triggered, works with TRIG_TALK_SET_FLAG
+</td></tr>
+<tr>
+<td> TRIG_TALK_SPEAKER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  NPC initiating the dialog - this is the only mandatory field
+</td></tr></table>
+<h2><span class="mw-headline" id="Variables">Variables</span></h2>
+<p>The following set of variables are available if you're using the basic var_trigger 2da:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> TRIGGER_ACTIVATE_TEAM_HELP
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  Activates team-help system on a team of creatures using            SetLocalVarOnTeam(oCreature, TRIGGER_ACTIVATE_TEAM_HELP, AI_HELP_TEAM_STATUS, 1);
+</td></tr>
+<tr>
+<td> TRIGGER_ACTIVATE_TEAM_STATIONARY_HARD
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  Activates a team to be stationary (AI system) using SetLocalVarOnTeam(oCreature, TRIGGER_ACTIVATE_TEAM_STATIONARY_HARD, AI_FLAG_STATIONARY, 2);
+</td></tr>
+<tr>
+<td> TRIGGER_ACTIVATE_TEAM_STATIONARY_SOFT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  Activates a team to be stationary (AI system) using SetLocalVarOnTeam(oCreature, TRIGGER_ACTIVATE_TEAM_STATIONARY_SOFT, AI_FLAG_STATIONARY, 1);
+</td></tr>
+<tr>
+<td> TRIGGER_AT_DEST_AREA_TAG
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  The tag of the area that this trigger sends the player to (area transition)
+</td></tr>
+<tr>
+<td> TRIGGER_AT_DEST_TAG
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  The tag of the waypoint within the destination area this trigger sends the player to (area transition)
+</td></tr>
+<tr>
+<td> TRIGGER_COUNTER_1 to 3
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr>
+<tr>
+<td> TRIGGER_DO_ONCE_A and B
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr>
+<tr>
+<td> TRIGGER_ENCOUNTER_TEAM
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr>
+<tr>
+<td> TRIGGER_PARTY_TRIGGER_LOCATION
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr>
+<tr>
+<td> TRIGGER_ROOM_TEXT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr></table>
+<p>These are in the var_trigger_ambient 2da, for use with the gentr_ambient.nss script:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> AMBIENT_ANIM_FREQ_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center">
+</td>
+<td>  If non-zero, takes precedence over AMBIENT_ANIM_FREQ value set on the creature's template. Format is a float (x.y) to play a random number of animations between x and y. Specify -1.0 to play all animations (in order) listed in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20ai.xls" title="Ambient ai.xls">ambient_ai.xls</a>.
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_OVERRIDE_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_PATTERN_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  Index into ambient_ai.xls. If non-zero, this value takes precedence over the AMBIENT_ANIM_PATTERN value set on the creature's template.
+</td></tr>
+<tr>
+<td> AMBIENT_TARGET_FILTER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  The creature entering or in the trigger will have its ambient behaviour overridden if its tag appears somewhere in this comma-separated list.
+</td></tr>
+<tr>
+<td> AMBIENT_TRIGGER_FILTER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  The ambient behaviour of the target creature will be overridden when a creature with a tag somewhere in this coma-separated list enters the trigger. Use &lt;hero&gt; to specify the player. Will default to AMBIENT_TARGET_FILTER if blank.
+</td></tr></table>
+<h2><span class="mw-headline" id="Properties">Properties</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Comments</td>
+<td> </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Group</td>
+<td> The group to which this trigger belongs. Used when the trigger is used as a trap trigger. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Resource Name</td>
+<td> A unique string identifier the toolset and the game both use to refer to this resource. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> A non-unique string identifier used mostly by scripts and other resources to refer to this resource. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Attributes</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Script</td>
+<td> Event script assigned to the resource </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Target Waypoint</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Variable 2da</td>
+<td> Allows selection of a variable table. Only the values in the table can be set and retrieved by scripting. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Variables</td>
+<td> Displays the table selected in the variable 2da field. Allows initial values to be defined.  </td>
+</tr>
+</table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger%20-%20ru" title="Trigger/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

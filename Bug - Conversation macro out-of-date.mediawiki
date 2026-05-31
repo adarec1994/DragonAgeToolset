@@ -1,0 +1,9 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.03 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If SetName is used to change the player character name, the FirstName macro continues to return the old name in conversation until a saved game is loaded. 
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>When testing, just live with it. For live gameplay, use SetName or the conversation macro, but not both.
+</p>

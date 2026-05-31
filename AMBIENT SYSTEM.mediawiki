@@ -1,0 +1,87 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> AMBIENT_SYSTEM_DISABLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00
+</td>
+<td>
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_ENABLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x01
+</td>
+<td> Indicates creature uses ambient behaviour.
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_SPAWNSTART
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x02
+</td>
+<td> Indicates ambient behaviour starts when creature spawns.
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_NOPLAYNEXT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x04
+</td>
+<td> Forces the PlayNext parameter to CommandPlayAnimation to be FALSE.
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_NOBLEND
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x08
+</td>
+<td> Forces the BlendIn parameter to CommandPlayAnimation to be FALSE.
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_ALWAYSON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x10
+</td>
+<td> Sets ambient behaviour to never stop (even during combat or when player remains out of sight).
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_SYSTEM_RUNNING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x40
+</td>
+<td> (Internal use) Indicates ambient movement/animation is in progress.
+</td>
+<td align="center"> sys_ambient_h
+</td></tr></table>

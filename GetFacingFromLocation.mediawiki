@@ -1,0 +1,17 @@
+<p>returns the orientation component of the location as an absolute degree value.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> GetFacingFromLocation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLocation<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">lLocation<dd>the location to retrieve the facing from
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>An absolute degree angle representing the orientation of the location
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function returns the orientation component of the location as an absolute degree value.
+</p>

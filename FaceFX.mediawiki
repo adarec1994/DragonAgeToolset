@@ -1,0 +1,124 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">Cinematics and animations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">Plots and scripting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li><strong class="selflink">FaceFX</strong></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<p>The FaceFX tool generates facial animation for characters, including lip-synching.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Automatically_generating_a_basic_facial_performance"><span class="tocnumber">2</span> <span class="toctext">Automatically generating a basic facial performance</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#RoboBrad"><span class="tocnumber">3</span> <span class="toctext">RoboBrad</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Fine-tuning_facial_performance"><span class="tocnumber">4</span> <span class="toctext">Fine-tuning facial performance</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Preview_tab"><span class="tocnumber">4.1</span> <span class="toctext">Preview tab</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Animation_tab"><span class="tocnumber">4.2</span> <span class="toctext">Animation tab</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Generating_facial_performance_from_scratch"><span class="tocnumber">5</span> <span class="toctext">Generating facial performance from scratch</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>A facial performance is an additive combination of a large number of much simpler component animations with each component animation having a graph that defines how strongly weighted it is at any given point of time.
+</p><p>For example, one component animation might be a raised right eyebrow. Over the course of a line of dialog the weight of the raised eyebrow animation might spend most of its time at zero, but whenever the actor is to raise his eyebrow the animation's weighting briefly increases to impose it on the finished product. Other component animations, for example a furrowed brow or a tilted head, could also have their weighting increased at that point to various degrees to add them to the facial expression.
+</p><p>Here's an example graph showing two animation weight curves in FaceFX, in this case the animations "Eyebrow Raise" and "Emphasis Head Pitch". You can see that there are two distinct gestures encoded here, first one in which the eyebrow is raised and the head is pitched modestly in one direction, and second one in which the eyebrow is raised and the head is pitched more strongly in the other direction. Along the bottom you'll see the audio of the line, as well as the phonems FaceFX has broken it down into and the text it was based on. The "SIL" block indicates a pause (silence).
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20two%20animation%20curves.png"><img alt="FaceFX two animation curves.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/FaceFX_two_animation_curves.png" width="200" height="76" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/FaceFX_two_animation_curves.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/FaceFX_two_animation_curves.png 2x" /></a>
+</p><p>Much of the complexity of a FaceFX animation will involve the movement of the mouth to match the phonems being spoken by the voice-over line. Fortunately, this is for the most part done completely automatically by FaceFX. 
+</p><p>FaceFX commonly uses two file types. FXA files are "FaceFX Actor" files (eg. "Humanmale.fxa") containing bone definitions. They are created using a Max plug-in, and come with the game; you won't need to edit these, just select them from the existing collection. FXE files are facial animation files (eg. "46634_m.fxe"). These are the files that contain the facial performance for the actor to follow.
+</p>
+<h2><span class="mw-headline" id="Automatically_generating_a_basic_facial_performance">Automatically generating a basic facial performance</span></h2>
+<p>From the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a> Editor you can automatically generate a basic facial performance. Open the dialog whose lines you wish to work with.
+</p><p>FaceFX generation requires corresponding VO. It must either be recorded already, or you can choose "Generate VO Local" (found in the Tools menu) which will create synthesized VO for the conversation:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20VO.png"><img alt="Conversation generate VO.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png" width="200" height="148" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3c/Conversation_generate_VO.png 2x" /></a>
+</p><p>This will generate a basic synthesized voice that's suitable as a placeholder while you're tweaking the conversation, to avoid having to record a lot of voice acting that may not be used in the end.
+</p><p>Once the voice over is generated, simply click the "generate FaceFX" option in the same Tools menu:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20generate%20FaceFX.png"><img alt="Conversation generate FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png" width="200" height="147" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Conversation_generate_FaceFX.png 2x" /></a>
+</p><p>to automatically generate a facial performance. This can be done on a per-line basis by selecting a single line of dialog before clicking this option, or it can be done for the entire conversation tree by selecting the root before clicking this option.
+</p><p>The automatic facial performance can be customized with an emotion filter. The emotion can be set using the "emotion" dropdown menu on the cinematics tab for each individual line of NPC dialog:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ConversationEditorFaceFXSettings.png"><img alt="ConversationEditorFaceFXSettings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/ConversationEditorFaceFXSettings.png/200px-ConversationEditorFaceFXSettings.png" width="200" height="39" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/ConversationEditorFaceFXSettings.png/300px-ConversationEditorFaceFXSettings.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/ConversationEditorFaceFXSettings.png/400px-ConversationEditorFaceFXSettings.png 2x" /></a>
+</p><p>Once the facial performance has been generated (and assuming the other cinematic choices you've made for this line allow you to see the actor's face) you can preview how the performance will look. Select "Preview line without generating VO/FaceFX" (since those steps have already been done at this point and we don't want to re-do them every time) and you'll see how it will look:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20preview%20line.png"><img alt="Conversation preview line.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/25/Conversation_preview_line.png" width="200" height="199" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/25/Conversation_preview_line.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/25/Conversation_preview_line.png 2x" /></a>
+</p><p>The mouth movements are determined by the voiceover audio, but the various facial expressions and head gestures are generated based on emotion filter and a random number seed. If you don't like what you see, you can generate a new facial performance by selecting "Preview with new RoboBrad". Do this as many times as you like until you see a facial performance that is close enough to satisfy you, bearing in mind that if it's still not quite right you'll be able to manually tweak every detail later on.
+</p><p>Once you're satisfied with a line's facial performance, click "Lock RoboBrad" to prevent FaceFX from being regenerated. Alternatively, click "Override" to prevent the random seed from changing. If the random seed and the emotion filter don't change then FaceFX can be safely regenerated because it will give exactly the same results.
+</p>
+<h2><span class="mw-headline" id="RoboBrad">RoboBrad</span></h2>
+<p>RoboBrad is a modification to the FaceFX Studio source code that adds additional animation tracks to the face to convey a particular emotion such as "happy", "angry", or "flirting".
+</p><p>In a game with many thousands of line of dialogue we need to be able to generate a bronze level performance without human intervention.  This bronze level performance is intended to be 'good enough' and also to serve as a base performance which can be worked on to bring the quality up to silver or gold standard. 
+</p><p>RoboBrad is a system built on top of the lipsync analysis that comes with FaceFX.  It relies upon sets of ini files that define what faceFX curves to choose from when analysing a line of a certain length with certain emotion and sub emotion tags. 
+</p><p>It has two modes of operation - as a commandlet in the lipsync pipeline and as an extension to the FaceFX studio. The commandlet is a batch processing tool to allow the robobrading of multiple dialogue files at once. The Robobrad button in the FaceFX studio allows users to re-run robobrad on specific performances until they get one more to their liking. 
+</p><p>Robobrad uses three main things to do its job.   
+</p>
+<ul><li> The analysis text.  This is the text that matches the audio file.  It also contains a set of xml tags to guide Robobrad as to how to process the line.</li>
+<li> The ini file containing the configuration for the performance.  This details the FaceFX curve values that will produce each expression. </li>
+<li> The lex file.  This contains language specific text substitutions to help with the lip sync processing.  This is for substituting numerals with proper words so '1' become 'one' or abbreviations so 'Mr' become 'mister'.</li></ul>
+<p>RoboBrad requires the Face Graph to have nodes with RoboBrad-specific names (eg. "E_Neutral_Perplexed", "E_Sad_Squint"). It also requires Emotion Config Files to use as input. These are included with Dragon Age's resources.
+</p><p>RoboBrad parses the text file accompanying the line and considers line length and punctuation. It categorizes sentences as AFFIRMATION, QUESTION, or EXCLAMATION depending on whether they end with . (period),&#160;? or&#160;!. 
+</p><p>NOTE: It only considers the text file, not the sound.
+</p><p>It then adds curves and drives them using animation clips picked from a config file. There is one config file per emotion. To change the emotion generated, a new config file must be loaded. 
+</p><p>Each config file contains pools of pre-generated animation clips categorized by line length and sentence type. Once the line length and sentence type have been determined, RoboBrad picks entries randomly from that specific pool. The curves driven by RoboBrad are the same as the curves used by FaceFX itself, so no modification to the output file format is needed. A FaceFX FXE file is generated containing both regular lip-syncing animation and the additions made by RoboBrad.
+</p>
+<h2><span class="mw-headline" id="Fine-tuning_facial_performance">Fine-tuning facial performance</span></h2>
+<p>Once RoboBrad has had his way with the facial performance of your virtual actor, you'll have a solid foundation on which you can go in and tweak some of the details if you wish. For this you'll want to open the FaceFX file in FaceFX itself.
+</p><p>You can open facial performances directly from within FaceFX via File menu -&gt; Open Actor... -&gt; Choose FXA file, and then Actor menu -&gt; Mount Animation Set... -&gt; Choose pre-generated Bronze FXE file. This requires you to know the filenames of the necessary FXA and FXE, however, which can be cryptic.
+</p><p>Much more conveniently, you can open a line's associated FXA from directly within the conversation editor. Select the line whose performance you want to edit and chose "Edit FaceFX" from the tools menu:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20edit%20FaceFX.png"><img alt="Conversation edit FaceFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png" width="200" height="200" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Conversation_edit_FaceFX.png 2x" /></a>
+</p><p>The tabs that will be of primary use to you are the "Preview" tab (self-explanatory, this lets you see a preview of the facial performance you're working on) and the "Animation" tab (this is where you'll see the curves that set the strength over time of all the various animations that blend into a complete facial expression).
+</p>
+<h3><span class="mw-headline" id="Preview_tab">Preview tab</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20preview%20tab%20small.png"><img alt="FaceFX preview tab small.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/34/FaceFX_preview_tab_small.png" width="200" height="153" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/34/FaceFX_preview_tab_small.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/34/FaceFX_preview_tab_small.png 2x" /></a>
+</p><p>The main preview window shows a view of the actor's face in the main window. The actor used will be the default appearance for the race and gender of the character, not the customized head morph you may be using in the game itself. The facial performance will still use your customized head morph in the game, however.
+</p><p>To play the animation, click the play button in the toolbar in the lower left corner of the screen:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20play%20toolbar.png"><img alt="FaceFX play toolbar.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a6/FaceFX_play_toolbar.png" width="76" height="22" /></a>
+</p><p>Also in this toolbar is a button to jump back to the beginning of the animation and a button to play the animation in an endless loop.
+</p><p>You can generate and test new RoboBrad performances in this tab by clicking the <img alt="RoboBrad.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1a/RoboBrad.png" width="16" height="16" /> button. Each time you click that button the RoboBrad curves are set to a new randomly-generated performance, which you can then view by clicking play. 
+</p><p>To change RoboBrad's emotion filter, select Tools menu -&gt; Load RoboBrad Config... -&gt; Choose emotion ini file (should be in <i>FaceFXInstallDir</i>/Configs/RoboBrad).
+</p>
+<h3><span class="mw-headline" id="Animation_tab">Animation tab</span></h3>
+<p>The animation tab is where work to adjust the facial performance can be done. It shows the weighting graphs of the various facial animations, as well as the spectrum of the sound file and the text and phonetic analysis of the line being spoken.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20animation%20single%20curve.png"><img alt="FaceFX animation single curve.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2f/FaceFX_animation_single_curve.png" width="200" height="153" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2f/FaceFX_animation_single_curve.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2f/FaceFX_animation_single_curve.png 2x" /></a>
+</p><p>You can edit each individual RoboBrad animation's weight curve in this tab. All of the animations that can be used in this performance are listed to the left of the main window, including both lip-synch animations and RoboBrad's expression animations.
+</p><p>First you will need to take ownership of the RoboBrad curves away from FaceFX's automated analysis system, allowing you to edit them and preventing FaceFX from re-RoboBrading them. Initially all animations are owned by the analysis system and are marked with the <img alt="FaceFX analysis curve icon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d5/FaceFX_analysis_curve_icon.png" width="18" height="16" /> icon. To take ownership of RoboBrad curves, click on <img alt="FaceFXown.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/FaceFXown.png" width="16" height="16" />. RoboBrad's curves will now be marked with the <img alt="FaceFX non-analysis curve icon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/FaceFX_non-analysis_curve_icon.png" width="18" height="18" /> icon.
+</p><p>When you select one of these animations the curve will now be displayed with editable control points. You can drag these points around with the mouse pointer and adjust their slopes. To add a new control point, press the "insert" button and the mouse pointer will become a crosshair that adds a point where clicked. The selected point can be deleted with the delete key.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20editing%20a%20RoboBrad%20curve.png"><img alt="FaceFX editing a RoboBrad curve.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/FaceFX_editing_a_RoboBrad_curve.png" width="200" height="149" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/FaceFX_editing_a_RoboBrad_curve.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/FaceFX_editing_a_RoboBrad_curve.png 2x" /></a>
+</p><p>If the automated RoboBrad pass didn't add an animation that you wanted to work with, or if you don't want to use an animation that it added, you can edit the list of available animations by opening the curve manager (either by right-clicking on the animation's curve list or by clicking the <img alt="FaceFX curve manager icon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/85/FaceFX_curve_manager_icon.png" width="18" height="18" /> button). This brings up the curve manager:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20curve%20manager.png"><img alt="FaceFX curve manager.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9c/FaceFX_curve_manager.png" width="200" height="156" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9c/FaceFX_curve_manager.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9c/FaceFX_curve_manager.png 2x" /></a>
+</p><p>The animation toolbar has the following buttons:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FaceFX%20animation%20toolbar%20labeled.png"><img alt="FaceFX animation toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/31/FaceFX_animation_toolbar_labeled.png" width="200" height="98" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/31/FaceFX_animation_toolbar_labeled.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/31/FaceFX_animation_toolbar_labeled.png 2x" /></a>
+</p><p>When you're done and are satisfied with the facial performance, click "Post to Local" to export.
+</p>
+<h2><span class="mw-headline" id="Generating_facial_performance_from_scratch">Generating facial performance from scratch</span></h2>
+<p>Generally speaking, it should never be necessary to start creating a facial performance from scratch. But in case a situation arises where it's needed, you can start from scratch in FaceFX Studio:
+</p>
+<ul><li> File menu -&gt; Open Actor... -&gt; Choose FXA file</li>
+<li> Tools menu -&gt; Load RoboBrad Config... -&gt; Choose emotion ini file (should be in <i>FaceFXInstallDir</i>/Configs/RoboBrad)</li>
+<li> Actor menu -&gt; Animation Manager...
+<ul><li> Click "New Group", name it after the StringID of the line (eg. "46634_m").
+<ul><li> <b>NOTE:</b> This name may become the name of conversation (eg. "zz_char_creation") depending on how we package conversations in the future.</li></ul></li>
+<li> Click "Create Animation..."
+<ul><li> Leave Analysis Type as "Automatically generate..."</li>
+<li> Next &gt; Browse for audio file of dialog line.</li>
+<li> Next &gt; If there is a TXT file (containing the line text) with the same name as the WAV in the same directory, the Analysis Text will be filled in for you. Otherwise, type the text of the line here.</li>
+<li> Next &gt; Leave language as USEnglish and Generate Speech Gestures on</li>
+<li> Next &gt; Name the animation the same as the StringID of the line (eg. "46634_m")</li></ul></li>
+<li> Click "OK" to close the Animation Manager</li></ul></li>
+<li> Click "Play"
+<ul><li> (Preview plays with new RoboBrad results)</li>
+<li> Click <img alt="RoboBrad.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1a/RoboBrad.png" width="16" height="16" /> (Re-RoboBrad)</li>
+<li> Repeat to taste...</li></ul></li>
+<li> Hand tweak results</li>
+<li> Click <img alt="FaceFXown.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/FaceFXown.png" width="16" height="16" /> (Own non-analysis curves) to lock the RoboBrad curves so they won't be regenerated.</li>
+<li> Click "Post to Local"</li></ul>

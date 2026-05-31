@@ -1,0 +1,21 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd>Sent by script to change active state. Needed since CommandDoFunction was removed and we're using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandDoEvent" title="CommandDoEvent (page does not exist)">CommandDoEvent</a>
+<dt>Sent from:
+<dd>
+<dt>Sent to:
+<dd>placeables
+<dt>Parameters:
+<dd>
+<ul>
+<li>Integer 0: State to set the object to</li><li>Integer 1: Set to 1 to make this work on party members.</li><li>Integer 2: The animation to play</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_SET_OBJECT_ACTIVE:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bActive = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// State to set the object to</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPartyMember = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// Set to 1 to make this work on party members.</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAnim = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">2</span>); <span style="color: #007F00; font-style: italic;">// The animation to play</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

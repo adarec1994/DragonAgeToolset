@@ -1,0 +1,32 @@
+<p>GUI stands for General User Interface.
+It contains aspects like the character generation screen, the inventory screen or the crafting interface. Also part of the GUI are the "tutorial boxes", the quickbar and the character icons.
+</p>
+<h2><span class="mw-headline" id="GUI_editing">GUI editing</span></h2>
+<p>GUIs are generated with a slightly edited form of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript" title="Category:ActionScript"> ActionScript</a>.
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 2 subcategories, out of 2 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript" title="Category:ActionScript">ActionScript</a></li><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript%20-%20Classes" title="Category:ActionScript:Classes">ActionScript:Classes</a></li></ul></div>
+</div><div id="mw-pages">
+<h2>Pages in category "GUI"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ColorDefines" title="ActionScript:ColorDefines">ActionScript:ColorDefines</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ActionScript:ExternalCommands</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands.GetValue" title="ActionScript:ExternalCommands.GetValue">ActionScript:ExternalCommands.GetValue</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20Inventory" title="ActionScript:Inventory">ActionScript:Inventory</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ItemExamine" title="ActionScript:ItemExamine">ActionScript:ItemExamine</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20Journal" title="ActionScript:Journal">ActionScript:Journal</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20Tactics" title="ActionScript:Tactics">ActionScript:Tactics</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20Tooltips" title="ActionScript:Tooltips">ActionScript:Tooltips</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">User:FollowTheGourd</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">Popups 2da</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups.xls" title="Popups.xls">Popups.xls</a></li></ul></div></div></div>
+</div></div>

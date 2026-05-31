@@ -1,0 +1,58 @@
+<p><strong class="selflink">TNT</strong> files are the definition files for the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20Tint%20System" title="Material Tint System">Material Tint System</a>. They contain the colour information that is applied to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Diffuse_Map" title="Texture Formats">diffuse map</a> and specular highlights of a given model, as denoted by the associated <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint map</a>. They are <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF V4.0</a> files.
+</p>
+<h2><span class="mw-headline" id="File_Structure">File Structure</span></h2>
+<p>A TNT file has 10 fields, as follows:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Field </th>
+<th> Definition
+</th></tr>
+<tr>
+<td> TINT_MASK_DIFFUSE_R </td>
+<td> Colour overlain on diffuse map area defined by tint map's red channel
+</td></tr>
+<tr>
+<td> TINT_MASK_DIFFUSE_G </td>
+<td> Colour overlain on diffuse map area defined by tint map's green channel
+</td></tr>
+<tr>
+<td> TINT_MASK_DIFFUSE_B </td>
+<td> Colour overlain on diffuse map area defined by tint map's blue channel
+</td></tr>
+<tr>
+<td> TINT_MASK_SPECULAR_R </td>
+<td> Specular colour for diffuse map area defined by tint map's red channel
+</td></tr>
+<tr>
+<td> TINT_MASK_SPECULAR_G </td>
+<td> Specular colour for diffuse map area defined by tint map's green channel
+</td></tr>
+<tr>
+<td> TINT_MASK_SPECULAR_B </td>
+<td> Specular colour for diffuse map area defined by tint map's blue channel
+</td></tr>
+<tr>
+<td> TINT_MASK_DIFFUSE_A </td>
+<td> Colour overlain on diffuse map area defined by tint map's alpha channel
+</td></tr>
+<tr>
+<td> TINT_MASK_SPECULAR_A </td>
+<td> Specular colour for diffuse map area defined by tint map's alpha channel
+</td></tr>
+<tr>
+<td> TINT_MASK_DIFFUSE_OPACITY </td>
+<td> Opacity of tints overlain on diffuse map
+</td></tr>
+<tr>
+<td> TINT_MASK_SPECULAR_OPACITY </td>
+<td> Opacity of tints applied to specular highlights
+</td></tr></table>
+<h2><span class="mw-headline" id="Data_Values">Data Values</span></h2>
+<p>The value for each field is entered as a Vector4 (V4) array. The range of possible values and their significance varies depending on the particular field.
+</p><p><b>TINT_MASK_DIFFUSE</b> and <b>TINT_MASK_SPECULAR</b> values are colour information. The first 3 numbers in the array are RGB values. Rather than the usual 0-255 value used for 24-bit RGB, the V4 RGB is on a scale of 0 to 1 (i.e. a percentage). So, for instance, a V4 RGB value of 1,1,1 is the same as the 24-bit RGB 255,255,255 (white). The 4th number in a V4 array is presumably an alpha value and appears to be unused and always be set to 1. 
+</p><p>As well as defining the colour itself, the <i>intensity</i> of the colour is also included in these arrays. This is done by multiplying each of the RGB values by the intensity, which is on a scale of 0.1 to 10. The default intensity is 1, in which case the field value is just the RGB value by itself. For example, the Red channel specular V4 is 3.06,3.78,5.22,1. This is actually a colour of 0.59,0.72,1,1 at intensity 5.22. In general, only specular colours have an intensity above or below 1. Diffuse intensity is invariably left at 1.
+</p><p><b>TINT_MASK_DIFFUSE_A</b> and <b>TINT_MASK_SPECULAR_A</b> values are in the same format as the RGB diffuse and specular V4 and the same comments apply. They are separated in the file layout because the alpha layer of tint masks is generally unused by most models. The alpha channel appears to be reserved specifically for skin tints, so only tints for models that have exposed skin use these fields. When unused the value is set to 1,1,1,1.
+</p><p><b>TINT_MASK_DIFFUSE_OPACITY</b> and <b>TINT_MASK_SPECULAR_OPACITY</b> set the opacity of the tints. The array specifies an opacity for each channel of the tint map, in the format R,G,B,A. Values range from 0 to 2, with 0 being 100% transparent. When not in use, the alpha channel of the tint map is disabled by setting its opacity to zero (e.g. 1,1,1,0).
+</p>

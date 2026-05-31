@@ -1,0 +1,8 @@
+<p>Will this really work? "'bw_da_content_euts_Data'"   I will integrate the batch file example into here, for users whose Database didnt get created in the first place. You need to use "bw_dragonage_content" btw. Not like i can look behind it anyways <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 16:11, 3 February 2010 (UTC)
+</p><p><br />
+I have added a method i found works real good for me. And i included it here, because the links are all pointed here anyways. Perhaps someone can confirm it works in other cases. =) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 16:43, 3 February 2010 (UTC)
+</p>
+<dl><dd>And for 64bit Version too, not sure if it works.. well its manual. I cant see other errors anymore.. anyone&#160;? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 17:44, 3 February 2010 (UTC)</dd></dl>
+<dl><dd><dl><dd>I have added this to the top btw, because this is likely more important than backing up. Make the toolset run first! lol <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 17:45, 3 February 2010 (UTC)</dd></dl></dd></dl>
+<p>Yea the "Restore" term causes confusion, with people wanting to avoid "unable to connect to database". The restore.bat file that came with the toolset is no solution as it will only repeat what went wrong during installation.. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 23:05, 3 February 2010 (UTC)
+</p>

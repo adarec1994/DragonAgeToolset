@@ -1,0 +1,93 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Установка стартовой локации и точки входа</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/Exporting_and_running_a_module/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Модули
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules%20-%20ru" title="Manage modules/ru">Управление модулями</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module%20-%20ru" title="Feature request: Deleting a module/ru">Удаление модуля</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Экспорт модуля</a>
+<ul><li><strong class="selflink">Cтартовая локация</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Архив для игрока</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder%20-%20ru" title="Builder to builder/ru">Архив для разработчика</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Новый модуль и DLC</a></li></ul>
+<dl><dd><small>Обеспечение совместимости между новым модулем и официальными DLC</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events%20-%20ru" title="Category:Module events/ru (page does not exist)">События модуля</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events" title="Category:Module events">(en)</a></li></ul>
+<dl><dd><small>Категория, содержащая описания и параметры событий модуля</small></dd></dl>
+</td></tr></table>
+<p>В этой статье описана последовательность действий, которая позволит вам экспортировать в игру вашу отдельную кампанию. 
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D1.81.D1.82.D0.B0.D1.80.D1.82.D0.BE.D0.B2.D0.BE.D0.B9_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Установка стартовой локации модуля</span></h2>
+<p>Стартовые <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20-%20ru" title="Area/ru">локация</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint%20-%20ru" title="Waypoint/ru (page does not exist)">точка входа</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">(en)</a> на неё устанавливаются в свойствах модуля. Для установки этих параметров сделайте следующее:
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/60px-Module_menu_command.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/90px-Module_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/120px-Module_menu_command.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Выберите пункт "Manage Modules" в меню "File".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>В открывшемся окне управления модулями перейдите к вашему модулю и нажмите "Properties".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:19.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png" width="120" height="111" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Module_properties.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>В окне свойств модуля установите стартовую локацию (Starting Area) и стартовую точку входа (Starting Waypoint).
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D0.BC.D0.B5.D0.BD.D0.B0_.D1.81.D1.82.D0.B0.D1.80.D1.82.D0.BE.D0.B2.D0.BE.D0.B9_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BE.D1.81.D0.BD.D0.BE.D0.B2.D0.BD.D0.BE.D0.B9_.D0.BA.D0.B0.D0.BC.D0.BF.D0.B0.D0.BD.D0.B8.D0.B8">Подмена стартовой локации основной кампании</span></h2>
+<p>Если ваш моудль является расширенияем для основной кампании, то существует простой способ подменить её стартовую локацию, для этого:
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:54.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" width="120" height="41" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>В меню "Tools" выберите "Export -&gt; Export Options".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:50px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20a%20starting%20area.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png" width="120" height="50" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ec/Selecting_a_starting_area.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Укажите стартовую локацию.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:48.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20starting%20area%20and%20waypoint.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" width="120" height="53" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Укажите стартовую точку входа.
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id=".D0.AD.D0.BA.D1.81.D0.BF.D0.BE.D1.80.D1.82">Экспорт</span></h2>
+<p>По завершению работ экспортируйте ресурсы. Когда экспорт завершится можно сразу начинать новую игру, если вы заменили стартовую локацию основной кампании, в противном случае не забудьте выбрать вашу кампанию в меню "Другие кампании". Игра должна начаться в вашей локации на месте, которое вы выбрали стартовым. 
+</p><p>Более подробно про экспорт модуля читайте статью <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">"Экспорт модуля"</a>.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module" title="Exporting and running a module">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

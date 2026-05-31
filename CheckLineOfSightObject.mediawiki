@@ -1,0 +1,24 @@
+<p>Determines if there is a line of sight between two objects.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> CheckLineOfSightObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oSource,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oSource<dd>The first object<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The second object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if there is a clear line of sight between the two objects. Returns FALSE if there is not.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns TRUE if there is a clear line of sight between object oSource and object oTarget, otherwise returns FALSE. If the line is occluded by geometry then the function will return FALSE. If the two objects are not in the same area or if either object is invalid this function will return FALSE.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It should be noted that the function is somewhat expensive and should not be called in an inner loop of your script.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckLineOfSightVector" title="CheckLineOfSightVector">CheckLineOfSightVector</a>
+</p>

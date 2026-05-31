@@ -1,0 +1,71 @@
+<p>This is a brief summary of how to add custom heraldry to a shield.
+</p><p>You will need Photoshop with the Nvidia DDS plug-in (or similar). See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> for general advice on tools.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Heraldry%20demo1.jpg"><img alt="Heraldry demo1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Heraldry_demo1.jpg" width="602" height="240" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Image"><span class="tocnumber">1</span> <span class="toctext">Image</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Texture"><span class="tocnumber">2</span> <span class="toctext">Texture</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Choosing_a_template"><span class="tocnumber">2.1</span> <span class="toctext">Choosing a template</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Resizing_the_mask_.28optional.29"><span class="tocnumber">2.2</span> <span class="toctext">Resizing the mask (optional)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Adding_custom_heraldry"><span class="tocnumber">2.3</span> <span class="toctext">Adding custom heraldry</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Validation"><span class="tocnumber">2.4</span> <span class="toctext">Validation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#M2DA"><span class="tocnumber">3</span> <span class="toctext">M2DA</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Shield"><span class="tocnumber">4</span> <span class="toctext">Shield</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Image">Image</span></h2>
+<p>You'll need a custom image for the new heraldry. 
+</p><p>If your artistic skills are limited, <a rel="nofollow" class="external text" href="http://www.heraldicclipart.com/catalog/index1.html">Free Heraldry Clipart</a> is an open source of images. They're mostly line drawings, which you can colour in Photoshop, using the Paint Bucket tool. If you're looking for a particular emblem (a lion, for example), try the Google search
+</p>
+<pre>site:www.heraldicclipart.com/catalog lion</pre>
+<h2><span class="mw-headline" id="Texture">Texture</span></h2>
+<p>Now you need to make the DDS file.
+</p>
+<h3><span class="mw-headline" id="Choosing_a_template">Choosing a template</span></h3>
+<p>Unless you have a tool which can manipulate the alpha channel, it's best to start from an existing example.
+</p><p>Open the following file in the toolset:
+</p>
+<pre>C:\Program Files\Dragon Age\packages\core\data\textures.erf</pre>
+<p>Export some of the heraldry textures (prefixed h_) so that you can examine them using a tool which allows you to see the alpha channel.
+</p><p>Note that the alpha channel contains a mask which determines which part of the original shield texture is over-written by heraldry.
+</p><p>Each heraldry comes in three sizes, of which the largest texture has the _0 suffix. We'll work with the largest size here.  
+</p><p>Choose one that is roughly the right shape - for example, h_primalora_0.dds is a good shape for a kite shield.
+</p><p>Open it in Photoshop (or something similar).
+</p>
+<h3><span class="mw-headline" id="Resizing_the_mask_.28optional.29">Resizing the mask (optional)</span></h3>
+<p>If you like, you can resize the mask (in Photoshop, Image &gt; Resize &gt; Image Size). 
+</p><p>If you do that, you must crop the image (or resize the background) so that it remains exactly 512 x 512 pixels. 
+</p><p>The illustration at the top of the page illustrates that the heraldry can almost fill a kite shield if the mask is enlarged. If you look carefully, you'll see that the standard mask shape doesn't quite match the contours of the shield. If you don't like this "crudely painted" look, use a smaller mask, stick with the standard mask, or obtain a tool which lets you edit the mask.
+</p><p>There seems to be a bug if the visible portion of the mask is too close to the lower edge. This results in an unwanted stripe of colour at the base of the shield. A mask which should theoretically fill the shield 100% also results in a stripe at the base.
+</p>
+<h3><span class="mw-headline" id="Adding_custom_heraldry">Adding custom heraldry</span></h3>
+<p>Over-write the image with your custom heraldry. In Photoshop, use Paste Into (not Paste, which destroys the alpha channel mask!).
+</p><p>It doesn't matter if your custom image is slightly bigger than the original, but bear in mind that only the masked portion will be visible in DAO. 
+</p><p>Save the file with a new name (e.g. h_new.dds) in DDS format in your module override folder with the following options&#160;: DXT5, mipmap 1/10, generate mip maps.
+</p>
+<h3><span class="mw-headline" id="Validation">Validation</span></h3>
+<p>Check that your new DDS file is the same size as the original, with the correct alpha mask. 
+</p><p>Check the mip maps. In Photoshop, this is done by opening the DDS file with the "load mipmaps" option - you should see 7 progressively smaller versions of the same image.
+</p>
+<h2><span class="mw-headline" id="M2DA">M2DA</span></h2>
+<p>Make an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA"> M2DA</a> based on Heraldry.xls.
+</p><p>Unless you want to over-ride an existing Bioware heraldry, give your entry a new, unique ID number.
+</p><p>All that this table contains is a name for your heraldry (for use in the toolset), and the name of your DDS file. 
+</p><p>Owing to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game" title="Bug: High M2DA ID ranges might work in the toolset, but not in game"> bug</a>, your new ID numbers probably need to be in the range 0-255 - otherwise, your heraldry will work in the toolset, but not in game.
+</p>
+<h2><span class="mw-headline" id="Shield">Shield</span></h2>
+<p>Make a new shield item in the toolset, then set the heraldry property from the drop-down box. Simple!
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>If you can't see your heraldry in the drop-down box, you may need to close and reopen the toolset, so that it loads your M2DA.
+</p><p>If you can't see your new logo on the 3D preview of the item, double-check that the DDS file is in exactly the right format (especially the alpha channel). Games are very picky about this!
+</p><p>If you can see your heraldry on the item in the toolset, but not when equipped on creatures (in the toolset, or in game), ensure that your M2DA ID is in the range 0-255.
+</p><p>If an unwanted stripe of colour appears at the base of the shield, try changing the mask so that there is significant clear space below the visible portion. It may not be possible to fill 100% of the shield's surface with heraldry, owing to this bug.
+</p><p>If your heraldry disappears at long distance in game, consider making three textures for each heraldry, similar to the official campaign. This might be more important if you're trying to overwrite an existing heraldry, rather than make a new one. The Heraldry 2DA appears to reference only the largest size - it's yet to be established whether the engine uses the smaller sizes under some conditions.
+</p>

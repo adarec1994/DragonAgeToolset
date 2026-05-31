@@ -1,0 +1,35 @@
+<p>Making levels can be daunting, but there are a number of things that <i>must</i> be done in levels and not just in areas. Let's go over a few distinguishing features of levels vs. areas.
+</p>
+<ul><li> Levels provide a general terrain to explore. Think of it as the difference between the floor plan for your house and the furniture in it.</li>
+<li> Lighting is done in levels and not in areas. There are advanced exceptions to this rule, but for the most part shadows and lights are created in level editor and not in areas.</li>
+<li> Objects in levels are non-interactive. A tent placed in the level editor is <b>not</b> interactive, it is part of the floor plan.</li>
+<li> Levels are not stored in the database like other resources. Making a level generates an actual file that you must store somewhere on your hard drive.</li>
+<li> Levels are reusable through multiple areas.</li></ul>
+<p>With these things in mind, let's go to the Level Editor by selecting File &gt; New &gt; Level.
+</p>
+<ul><li> Editors that have palette icons also have a corresponding palette on the right of your toolset window. Editors that don't generate files instead.</li></ul>
+<p>Now the Level Creation Wizard pops up asking which type of level you wish to create.
+</p>
+<ul><li> <b>Terrains</b> are designed for outdoor areas. These areas allow you to use <i>terrain deforming</i> tools - tools that allow you to shape the ground you walk on, making hills, valleys, and so forth. They also allow <i>terrain painting</i> - tools that let you paint grass, dirt, and paths.</li>
+<li> <b>Room levels</b> are designed for indoor areas. They allow you to make <i>rooms</i> - sub-sections that your characters can run between seamlessly (without the load screen coming up). They also allow you to make <i>area lists</i> which let the game load multiple areas at once - then areas transition with the word "loading" on the lower right instead of the symbol in the center of the screen.</li></ul>
+<p>For now, let's pick <b>terrain</b>. We'll just go through the defaults of the rest of the Level Creation Wizard for now, but here are some basics:
+</p>
+<ul><li> the <b>Create a default water plane</b> option makes a water surface. Note that if using this water plane, your level <i>must</i> be exported from Single Player campaign for it to show up in your area.</li>
+<li> <b>Chunks</b> determine how the game engine renders your area. This is especially noticeable in terms of lighting, where lights may show strange behavior when lighting different chunks.</li></ul>
+<p>Once you've clicked through the Level Creation Wizard, you'll see the most basic of levels - there's just a ground plane on black. Let's start by learning to move around.
+</p>
+<ul><li> hold-click middle mouse button and drag to look around</li>
+<li> option + hold-click middle mouse button and drag to pan</li>
+<li> use the scroll wheel for basic zooming</li>
+<li> shift + hold-click middle mouse button and drag up or down for faster, finer zooming</li></ul>
+<p>Take a moment to get accustomed to moving around in your level, and then when you're ready, let's start by changing the sky.
+</p>
+<ul><li> click on the purple plus sign to add area properties</li>
+<li> now the screen won't let you leave unless you enter a layout name. This name will be used by areas that want to use your layout. It can't be longer than 7 characters.</li>
+<li> there are a number of other properties, but the one we're concerned with is Skydome Model. Change this to sb_day, and voila, you have sky!</li></ul>
+<p>You can play around with other settings, and when you're done click close. You can always get this menu back by clicking on Exportable Area Properties, the icon next to the purple plus.
+</p><p>We have sky, now let's add a light. Make sure Terrain World is selected, and then right click in the preview window (the big window in the middle).
+</p>
+<ul><li> Right-click &gt; Insert &gt; New Light</li></ul>
+<p>You'll also learn about lighting later, but for now let's set it to a <i>static point</i> light.
+</p>

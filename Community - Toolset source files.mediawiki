@@ -1,0 +1,51 @@
+<p>Several key <strong class="selflink">toolset source files</strong> can be downloaded from the BioWare Social Network (BSN) or from BioWare's Content Delivery Network (CDN).
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Dragon_Age_Toolset"><span class="tocnumber">1</span> <span class="toctext">Dragon Age Toolset</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Toolset"><span class="tocnumber">1.1</span> <span class="toctext">Toolset</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Lightmapper"><span class="tocnumber">1.2</span> <span class="toctext">Lightmapper</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Single_Player_Source_Files"><span class="tocnumber">2</span> <span class="toctext">Single Player Source Files</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Art_Resources"><span class="tocnumber">2.1</span> <span class="toctext">Art Resources</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Levels"><span class="tocnumber">2.1.1</span> <span class="toctext">Levels</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Other"><span class="tocnumber">2.1.2</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Design_Resources"><span class="tocnumber">2.2</span> <span class="toctext">Design Resources</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Dragon_Age_Toolset">Dragon Age Toolset</span></h2>
+<h3><span class="mw-headline" id="Toolset">Toolset</span></h3>
+<ul><li> Dragon Age Toolset v1.01: <a rel="nofollow" class="external text" href="http://files.bioware.com/dragonage/toolset/DragonAgeToolset1.01Setup.exe">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/DragonAgeToolset1.01Setup.exe">CDN</a></li></ul>
+<h3><span class="mw-headline" id="Lightmapper">Lightmapper</span></h3>
+<ul><li> EclipseRay Lightmapper v1.2: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1447">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/eclipseray/EclipseRay1.2.zip">CDN</a></li>
+<li> EclipseRay Lightmapper v1.1: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1043">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/eclipseray/eclipseray1.1.zip">CDN</a></li>
+<li> EclipseRay Lightmapper v1.0: <a rel="nofollow" class="external text" href="http://files.bioware.com/dragonage/toolset/eclipseray/EclipseRay10.zip">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/eclipseray/EclipseRay10.zip">CDN</a></li></ul>
+<h2><span class="mw-headline" id="Single_Player_Source_Files">Single Player Source Files</span></h2>
+<h3><span class="mw-headline" id="Art_Resources">Art Resources</span></h3>
+<h4><span class="mw-headline" id="Levels">Levels</span></h4>
+<ul><li> Brecilian: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1758">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Brecilian%20level%20layouts.rar">CDN</a></li>
+<li> Denerim: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1759">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Denerim%20level%20layouts.rar">CDN</a></li>
+<li> Lake Calenhad: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1760">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/LakeCalenhad%20level%20layouts.rar">CDN</a></li>
+<li> Light Content: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1761">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Light_Content%20level%20layouts.rar">CDN</a></li>
+<li> Lothering: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1762">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Lothering%20level%20layouts.rar">CDN</a></li>
+<li> Orzammar: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1763">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Orzammar%20level%20layouts.rar">CDN</a></li>
+<li> Ostagar: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1764">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Ostagar%20level%20layouts.rar">CDN</a></li>
+<li> Other: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=2514">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Other%20level%20layouts.rar">CDN</a></li></ul>
+<h4><span class="mw-headline" id="Other">Other</span></h4>
+<ul><li> Animations&#160;: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=2373">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/AnimationComposer.rar">CDN</a></li>
+<li> Head Morphs: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1755">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/Core%20and%20single%20player%20head%20morphs.zip">CDN</a></li>
+<li> Materials: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=2375">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/matproj%20files.rar">CDN</a></li>
+<li> Visual Effects: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=2374">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/vfxproj%20files.rar">CDN</a></li>
+<li> VO &amp; Sounds (Core): <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=5021">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/core%20fdp%20files.zip">CDN</a></li>
+<li> VO &amp; Sounds (SP): <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=5031">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/fdp%20files.zip">CDN</a></li></ul>
+<h3><span class="mw-headline" id="Design_Resources">Design Resources</span></h3>
+<ul><li> Core &amp; SP B2B: <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=1753">BSN</a> &#8226; <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/CoreResource/core%20and%20single%20player%201.01.dadbdata">CDN</a></li></ul>

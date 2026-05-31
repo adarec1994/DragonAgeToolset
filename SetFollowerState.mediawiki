@@ -1,0 +1,28 @@
+<p>Set the state of the follower.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetFollowerState(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nState<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>Party follower<dt style="font-weight:normal; font-style:italic;">nState<dd>the state
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Follower State can be:
+</p>
+<ul><li>FOLLOWER_STATE_ACTIVE - Add follower to party pool + active party</li>
+<li>FOLLOWER_STATE_AVAILABLE - Add follower to party pool and remove from active party</li>
+<li>FOLLOWER_STATE_INVALID - Remove follower from party pool and active party</li>
+<li>FOLLOWER_STATE_UNAVAILABLE - Remove follower from active party and do not allow adding it to active party again</li>
+<li>FOLLOWER_STATE_SUSPENDED - Remove follower from active party and store it for putting it back later into the party</li>
+<li>FOLLOWER_STATE_LOCKED_ACTIVE - Add follower to active party and lock him active in the party picker.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FOLLOWER%20STATE" title="FOLLOWER STATE *">FOLLOWER STATE_*</a> for more details on the constants you can use.
+</p>

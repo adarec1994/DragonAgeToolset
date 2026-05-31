@@ -1,0 +1,15 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Removing_unwanted_codex_plots"><span class="tocnumber">1</span> <span class="toctext">Removing unwanted codex plots</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Removing_unwanted_codex_plots">Removing unwanted codex plots</span></h2>
+<p>Actually, you <i>can</i> get rid of codex entries you don't want to use and have a blank spot for... although it's not exactly pretty. Putting this in talk since I'm not sure if this will have issues, but it seems to work fine.
+</p><p>Extract the *.plo files from designerplots.erf and open the relevant codex plots in the toolset's GFF editor (just drag them in). Then expand the tree and edit PLOT_ENTRYTYPE and set its value to something like -1. Using these plot files with the same name and GUID seems to override the core plots just fine so they don't show up.
+</p><p>Of course, you'd have to do this for any and all core plot files that BioWare provides beyond the core game in the future, but at least it should cut down on a lot of the blank spots.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 01:32, 19 February 2010 (UTC)
+</p><p>Cool! Maybe some kind soul could publish this as a prefab? 
+</p><p>Or maybe we give this as an assignment to the first player to complain about it? [grin] 
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 16:51, 22 February 2010 (UTC)
+</p>

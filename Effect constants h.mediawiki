@@ -1,0 +1,14 @@
+<p>The Effects Constants include file, <strong class="selflink">effect_constants_h</strong>, contains the constants used in the Effects include file, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%20h" title="Effects h (page does not exist)">effects_h</a>.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vfx%20constants%20h" title="Vfx constants h (page does not exist)">vfx_constants_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20FLOAT" title="EFFECT FLOAT *">EFFECT FLOAT *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20INTERGER" title="EFFECT INTERGER *">EFFECT INTERGER *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20VECTOR" title="EFFECT VECTOR *">EFFECT VECTOR *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul><li> None</li></ul>

@@ -1,0 +1,18 @@
+<p>Get the specified attribute from oCreature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetCreatureAttribute(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAttribute,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nValueType&#160;= PROPERTY_VALUE_TOTAL<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature whose stat is being requested<dt style="font-weight:normal; font-style:italic;">nAttribute<dd>the property (stat) we want to know about<dt style="font-weight:normal; font-style:italic;">nValueType<dd>the type of value of the property we want to know about (TOTAL, BASE, CURRENT, MODIFIER - see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20VALUE" title="PROPERTY VALUE *">PROPERTY_VALUE_*</a>)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns oCreature's Attribute Value
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Get oCreature's Attribute/Property value in an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> form.
+See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty" title="GetCreatureProperty">GetCreatureProperty</a> for more details.
+</p>

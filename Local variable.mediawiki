@@ -1,0 +1,91 @@
+<p>Local variables are persistent variables that are associated with in-game objects. They are not the same as the temporary variables you can create in a script; local variables retain their values even when no scripts are using them, and are shared across any scripts that choose to access them.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Functions_that_work"><span class="tocnumber">1</span> <span class="toctext">Functions that work</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Functions_that_don.27t_work"><span class="tocnumber">2</span> <span class="toctext">Functions that don't work</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Variable_2DAs"><span class="tocnumber">3</span> <span class="toctext">Variable 2DAs</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Scope_of_local_variables"><span class="tocnumber">4</span> <span class="toctext">Scope of local variables</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Alternatives"><span class="tocnumber">5</span> <span class="toctext">Alternatives</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Functions_that_work">Functions that work</span></h2>
+<p>Local variables are set using the SetLocal* functions and read using the GetLocal* functions. There are a number of SetLocal* functions in the game engine.  The five that are of use to you (that Programming fully supports) are:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt" title="SetLocalInt">SetLocalInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat" title="SetLocalFloat">SetLocalFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalObject" title="SetLocalObject">SetLocalObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalString" title="SetLocalString">SetLocalString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalResource" title="SetLocalResource">SetLocalResource</a></li></ul>
+<p>These functions work and have been through the fire of QA for many months.  They are solid and work well.
+</p>
+<h2><span class="mw-headline" id="Functions_that_don.27t_work">Functions that don't work</span></h2>
+<p>There are a number of other functions that happen to exist such as:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalPlayer" title="SetLocalPlayer">SetLocalPlayer</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalEffect" title="SetLocalEffect">SetLocalEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalEvent" title="SetLocalEvent">SetLocalEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalCommand" title="SetLocalCommand">SetLocalCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalItemProperty" title="SetLocalItemProperty">SetLocalItemProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalLocation" title="SetLocalLocation">SetLocalLocation</a></li></ul>
+<p>These functions do *NOT* work the way that the first five do.  The major issue with this second set of functions is that they are not saved/loaded via the save system.  So, if a community member or designer wants to save information like this for use later, and someone saves/loads the game, that information is lost forever.  Thus, using them outside of situations where you can guarantee no save/load occurs (i.e. during combat) is pretty much guaranteed to fail for some enduser.  Furthermore, if you use these variable types in the var_ 2DAs, it will fail gloriously.
+</p><p>Don’t use these functions.  They will in all likelihood be removed in a future patch.
+</p>
+<h2><span class="mw-headline" id="Variable_2DAs">Variable 2DAs</span></h2>
+<p>Local variables must be pre-defined in a variable 2DA before they can be read or set using these functions. The structure of a variable 2DA is as follows:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> The name of the variable.
+</td></tr>
+<tr>
+<th> Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> The type of the variable.
+</td></tr>
+<tr>
+<th> Default
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> The default value of the variable. Resources can have the string "NONE" to indicate an empty default.
+</td></tr>
+<tr>
+<th> IsPlot
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Set this to 1 to indicate that a string variable is meant to contain the name of a plot resource. 0 otherwise.
+</td></tr></table>
+<p>Each different type of resource has a standard default variable 2DA, whose entries are described in the variable tables associated with their respective articles. You can create your own variable tables or extend existing ones with M2DAs if you need additional local variables for specific objects.
+</p><p>Dragon Age doesn't support the dynamic in-game allocation of new local variables.
+</p>
+<h2><span class="mw-headline" id="Scope_of_local_variables">Scope of local variables</span></h2>
+<p>If a resource isn't currently loaded, you can't reference its local variables.
+</p><p>Module variables are always available. So are <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">plot</a> flags.
+</p><p>Variables for an area, and objects within it, are only available for the current area list.
+</p><p>So, those variables should only be used for information that will never be needed in other areas.
+</p>
+<h2><span class="mw-headline" id="Alternatives">Alternatives</span></h2>
+<p>An alternative to local variables can be found in the unlimited variable storage project<a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1787/">[1]</a>. With a single include file and a simple function call in your module script, you can have unlimited variable and array storage with no need to declare anything in a 2da.
+</p>

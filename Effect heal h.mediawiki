@@ -1,0 +1,18 @@
+<p>The Effect Heal include file, <strong class="selflink">effect_heal_h</strong>.
+</p><p>When applied to an object, Effect Heal restores the given amount of health to the object. The object's health will not be raised above its maximum health.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">effect_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20soundset%20h" title="Sys soundset h (page does not exist)">sys_soundset_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ui%20h" title="Ui h (page does not exist)">ui_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectHeal" title="EffectHeal">EffectHeal</a></li></ul>

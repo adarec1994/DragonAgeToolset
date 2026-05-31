@@ -1,0 +1,96 @@
+<p><b>NOTE: version 1.00 had a problem with installing to directories with paths longer than 58 characters, which is the default for Steam installations. 1.01 overcomes this problem, and fixes several other important bugs, but if for some reason you wish to install 1.00 see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation with Steam">Installation with Steam</a> for details and a workaround.</b>
+</p><p>Refer to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Known%20issues" title="Known issues">Known issues</a> for the current list of issues that are being worked on, and their status.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset" title="Installing the toolset">Installing the toolset</a> for general information and guidance about installing the Dragon Age toolset. If something goes wrong during that process this page may have useful information and advice.
+</p><p>If you experience a crash, logs can be found in <code>My Documents\BioWare\Dragon Age\Toolset\logs</code>. The log filenames will include the date on which the log file was created. Sending in a log will help greatly with bug fixing.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_errors"><span class="tocnumber">1</span> <span class="toctext">General errors</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Empty_Palette_Window"><span class="tocnumber">2</span> <span class="toctext">Empty Palette Window</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.22Unable_to_connect_to_the_database.22"><span class="tocnumber">3</span> <span class="toctext">"Unable to connect to the database"</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Installer_hangs_at_the_stage_of_.22Execute:regsvr32.exe_.2Fs_.22C:.5CDragon_Age.5Ctools.5CEngine.dll.22"><span class="tocnumber">4</span> <span class="toctext">Installer hangs at the stage of "Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Other_database_issues_and_solutions"><span class="tocnumber">5</span> <span class="toctext">Other database issues and solutions</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Windows_XP_SP_2_and_endless_reboot_cycles_after_install"><span class="tocnumber">6</span> <span class="toctext">Windows XP SP 2 and endless reboot cycles after install</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Externals_links_for_troubleshooting"><span class="tocnumber">7</span> <span class="toctext">Externals links for troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_errors">General errors</span></h2>
+<p>If the Dragon Age toolset downloads to near-completion, but you then get the error "[browser] cannot download, etc.  Connection with the server was reset", this may be due to a downloading management issue.  One solution is to first download an internet download manager (IDM) freeware program (e.g. www.internetdownloadmanager.com/).  Then, once the IDM is installed and in control of your downloads, retry downloading the DA toolset through your default browser.  
+</p><p>If you get the "Dragon Age: Origins game install not found" error when you run the toolset installer:
+</p>
+<ul><li> You must have the game installed before you can install the toolset. Please install the game first.</li>
+<li> If you have installed the game, but not yet run the configure program, you will get this message: "Please launch the Dragon Age: Origins Configure Utility". This happens automatically the first time you attempt to run the game. After you have successfully configured and launched the game at least once, you should no longer get this error.</li></ul>
+<p>If the toolset cannot find DLLs you may need to run the configuration tool after installation to tell the toolset where to find the Dragon Age build. This can happen if you uninstall the toolset and then reinstall it again in a different location.
+</p><p>If you install the toolset in a non-default location, the toolset may not be made aware of where the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20builder" title="Resource Builder">Resource Builder</a> has been put. This can be easily fixed by changing the "Resource Build Path" variable found in Options-&gt;Environment.
+</p><p>On Vista and Windows 7 systems you may get a message reading "Windows has blocked some of the features of this program." It will indicate that the offending program is "Microsoft Register Server", located at C:\windows\system32\regsvr32.exe. The installer makes use of this program to register the game engine's DLL for use by the toolset. You can choose to block or allow this, the installer will work either way. It is somewhat safer to leave it blocked.
+</p><p>On Windows 7 64 bit you may experience this error durring the installation of the toolset.
+Error opening File or Writing:
+</p><p>C:\Program Files\Common Files\BioWare\Uninstall Dragon Age Toolset.exe
+</p><p>Click Abort to stop the installation,
+Retry to try again, or
+Ignore to skip the file.
+</p><p>The work around for this is to either create the folder "BioWare" in the directory of C:\Program Files\Common Files\ prior to the installation or at the point where the error is experienced. This is due to the installation program not creating the folder "BioWare" in the C:\Program Files (x86)\Common Files. Once this "BioWare" folder is created the installation will complete by clicking on "retry".
+</p><p>MSSQL Express 2005's installer has a limitation that prevents it from installing to a directory path that's longer than 58 characters.<sup><a rel="nofollow" class="external autonumber" href="http://support.microsoft.com/kb/935371">[1]</a></sup> Version 1.01 of the toolset installer has addressed this issue by installing the database to a predefined location independant of the location of the game executable.
+</p>
+<h2><span class="mw-headline" id="Empty_Palette_Window">Empty Palette Window</span></h2>
+<p>If after succesful launching of toolset, your window palette is empty, probably the problem is the default language not set to "English" in your DataBase properties:
+</p>
+<ul><li> to change it launch Microsoft SQLServer Management Studio Express 2005 (this is covered in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation" title="Manual database installation">Manual database installation</a>)</li>
+<li> in the Database tree, choose "Security" (translate it in your language)</li>
+<li> then choose something like, "accounts" or "logins", then you should see a list of users, including your windows user</li>
+<li> right click on your username and choose "properties"</li>
+<li> at bottom right of the window that pop up locate "Default Language"  and change it in "English"</li>
+<li> click "ok" button </li></ul>
+<p>Now the empty palette window should show the resources. <i>Thanks to Vreltek for this solution!</i>
+</p>
+<h2><span class="mw-headline" id=".22Unable_to_connect_to_the_database.22">"<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">Unable to connect to the database</a>"</span></h2>
+<p>If you receive the "unable to connect to the database" error message there are many reasons why this happens, and various ways to correct it.
+</p><p>A new troubleshooting page for this error has been created.  Rather than random suggestions of things to try, it has a troubleshooting flowchart to help you diagnose and fix your problem.  Please visit <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">Unable to connect to the database</a> for the latest help with this problem.
+</p>
+<h2><span class="mw-headline" id="Installer_hangs_at_the_stage_of_.22Execute:regsvr32.exe_.2Fs_.22C:.5CDragon_Age.5Ctools.5CEngine.dll.22">Installer hangs at the stage of "Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</span></h2>
+<p>In some instances Regsvr32.exe is failing for some unknown reason and refusing to terminate. Version 1.01 of the toolset installer has addressed this problem by no longer waiting for a return value from regsvr32, so the installer should no longer hang at this stage.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Installer%20hangs%20at%20the%20stage%20of%20Execute%20-%20regsvr32.exe%20-%20s%20-%20C%20-%20Dragon%20Age%20-%20tools%20-%20Engine.dll" title="Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;">Bug: Installer hangs at the stage of Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</a> for details should you encounter something like this again, or need to register engine.dll manually.
+</p>
+<h2><span class="mw-headline" id="Other_database_issues_and_solutions">Other database issues and solutions</span></h2>
+<p>If you have never installed MSSQLServer Express, check for updates available for it through Windows Update after installing the toolset.
+</p><p>If the SQL install fails with a crash it is possible that it is conflicting with MSXML6. If you have MSXML6 installed, uninstall it and try reinstalling the toolset. See <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/968749">Microsoft's support page on this issue</a>. If you have trouble uninstalling MSXML6, try the <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/290301">Microsoft Windows Installer Cleanup Utility</a>.
+</p><p>During the SQL Server Express installation when the installation script attempts to start the database, a message box with the "The SQL Server service failed to start..." error message and options to Retry or Cancel may pop up.
+</p>
+<ul><li> Do <b>not</b> click Cancel. Clicking Cancel rolls back the installation, preventing the creation of the BWDATOOLSET database. You will need to reinstall from scratch if this happens.</li>
+<li> Instead, navigate to and right click on the Protect folder and  open the Properties window. On the Security tab add NETWORK SERVICE to  the list of Groups and User names and grant it Full Permissions. The path to the Protect folder will be:
+<ul><li> Windows XP: <code>C:\Documents and Settings\NetworkService\Application Data\Microsoft\Protect </code></li>
+<li> Windows 7: <code>C:\Users\&lt;username&gt;\AppData\Roaming\Microsoft\Protect</code></li></ul></li>
+<li> If you don't have a Security tab then close the Properties window and select Tools | Folder Options from Explorer's menu bar. In the Folder Options window click on the View tab, scroll to the last option and uncheck Use simple file sharing (Recommended) option. Now you should be able to do complete the previous step.</li>
+<li> Finally return to the "The SQL Server service failed to start..." error message and click on the Retry option.</li></ul>
+<p>The version of MSSQL Server 2005 included with the toolset may have trouble installing on 64-bit operating systems. This can be indicated by SQL Server Error 70047 in the installer's logs. To resolve this problem, install <a rel="nofollow" class="external text" href="http://go.microsoft.com/fwlink/?LinkId=55734">Microsoft .NET Framework Version 2.0</a> for 64-bit architectures before installing the toolset. 
+</p><p>You may also encounter issues running migration scripts on 64 bit OSes. An alternate migration script can be found here: <a rel="nofollow" class="external free" href="http://social.bioware.com/project/46/">http://social.bioware.com/project/46/</a>
+</p><p>You may get issues with access permissions. This can be avoided by giving your username admin rights to the database. To do this:
+</p>
+<ol><li> Run "SQL Server Surface Area Configuration" (should be on your start menu under Microsoft SQL Server 2005)</li>
+<li> Select the "Add new administrator" option.</li>
+<li> Add yourself as administrator.</li></ol>
+<p>If you get a syntax error during installation, it could be caused by the path being too long.  Rather than moving your whole install, try this: <a rel="nofollow" class="external free" href="http://support.microsoft.com/kb/935371">http://support.microsoft.com/kb/935371</a>
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation" title="Manual database installation">Manual database installation</a> for instructions on how to manually set up the database for use with your toolset.
+</p>
+<h2><span class="mw-headline" id="Windows_XP_SP_2_and_endless_reboot_cycles_after_install">Windows XP SP 2 and endless reboot cycles after install</span></h2>
+<ul><li>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Endless%20reboot%20cycles%20after%20install%20under%20Windows%20XP%20SP%202" title="Bug: Endless reboot cycles after install under Windows XP SP 2">Bug: Endless reboot cycles after install under Windows XP SP 2</a></li></ul>
+<p>The MSSQL Server Express installer bundled with the toolset has a potential issue when installed on Windows XP Service Pack 2 that can cause an endless cycle of reboots. The toolset installer will warn you not to proceed if it detects SP2 on your system. Dragon Age: Origins has Service Pack 3 as part of its minimum installation requirements, so you should try upgrading to Service Pack 3 and reinstall.
+</p><p>If you're stuck in an endless reboot cycle:
+</p>
+<ul><li>Press ctrl+alt+del and open the task manager as soon as possible. Failing that, try booting in safe mode by holding down F8 during the boot process.</li>
+<li>Then go to the start menu and in execute type in "msconfig"</li>
+<li>In MSConfig go to services and deactivate all the SQL services.</li>
+<li>Now you can go to control panel...software and uninstall the SQL server from the last piece upward.</li></ul>
+<p>Alternately, instead of booting into safe mode after holding down F8 during boot, you can choose the option "Last known good configuration (your most recent settings that worked)". This may restore your system to a functional state and allow SQL Server to function correctly.
+</p><p>Once you've uninstalled SQL Server this should prevent further reboot cycles. You can now install Windows XP Service Pack 3.
+</p>
+<h2><span class="mw-headline" id="Externals_links_for_troubleshooting">Externals links for troubleshooting</span></h2>
+<p><a rel="nofollow" class="external text" href="http://forum.canardpc.com/showthread.php?p=2675920">Canard PC forum</a> French only&#160;:Forum résumant la marche a faire en cas de problèmes. 
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20troubleshooting%20-%20ru" title="Installation troubleshooting/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

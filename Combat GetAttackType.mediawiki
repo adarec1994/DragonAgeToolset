@@ -1,0 +1,23 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// -----------------------------------------------------------------------------</span>
+<span class="co1">// Return the type of the current attack based on the weapon in the main hand</span>
+<span class="co1">// used only in command_pending...</span>
+<span class="co1">// -----------------------------------------------------------------------------</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetAttackType<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetAttackType<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsUsingRangedWeapon<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> ATTACK_TYPE_RANGED;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> ATTACK_TYPE_MELEE;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>

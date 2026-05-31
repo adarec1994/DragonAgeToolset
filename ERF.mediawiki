@@ -1,0 +1,574 @@
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ERF%20editor.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3d/ERF_editor.png" width="300" height="218" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3d/ERF_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3d/ERF_editor.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ERF%20editor.png" title="Enlarge"></a></div>ERF editor</div></div></div>
+<p><b>ERF</b> ("Encapsulated Resource File") files are container files for game resources. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#List_of_common_ERF_Files"><span class="tocnumber">1</span> <span class="toctext">List of common ERF Files</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Extracting_Resources"><span class="tocnumber">2</span> <span class="toctext">Extracting Resources</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Packing_Resources"><span class="tocnumber">3</span> <span class="toctext">Packing Resources</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Overriding_Resources"><span class="tocnumber">4</span> <span class="toctext">Overriding Resources</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#File_Format"><span class="tocnumber">5</span> <span class="toctext">File Format</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Version_2.0"><span class="tocnumber">5.1</span> <span class="toctext">Version 2.0</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Header"><span class="tocnumber">5.1.1</span> <span class="toctext">Header</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Table_of_Contents"><span class="tocnumber">5.1.2</span> <span class="toctext">Table of Contents</span></a>
+<ul>
+<li class="toclevel-4 tocsection-9"><a href="#Entry"><span class="tocnumber">5.1.2.1</span> <span class="toctext">Entry</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Version_2.2"><span class="tocnumber">5.2</span> <span class="toctext">Version 2.2</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Header_2"><span class="tocnumber">5.2.1</span> <span class="toctext">Header</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Table_of_Contents_2"><span class="tocnumber">5.2.2</span> <span class="toctext">Table of Contents</span></a>
+<ul>
+<li class="toclevel-4 tocsection-13"><a href="#Entry_2"><span class="tocnumber">5.2.2.1</span> <span class="toctext">Entry</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Version_3.0"><span class="tocnumber">5.3</span> <span class="toctext">Version 3.0</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Header_3"><span class="tocnumber">5.3.1</span> <span class="toctext">Header</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Table_of_Contents_3"><span class="tocnumber">5.3.2</span> <span class="toctext">Table of Contents</span></a>
+<ul>
+<li class="toclevel-4 tocsection-17"><a href="#Entry_3"><span class="tocnumber">5.3.2.1</span> <span class="toctext">Entry</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-18"><a href="#File_Data"><span class="tocnumber">5.4</span> <span class="toctext">File Data</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#Encryption"><span class="tocnumber">5.4.1</span> <span class="toctext">Encryption</span></a>
+<ul>
+<li class="toclevel-4 tocsection-20"><a href="#Blowfish"><span class="tocnumber">5.4.1.1</span> <span class="toctext">Blowfish</span></a></li>
+<li class="toclevel-4 tocsection-21"><a href="#XOR"><span class="tocnumber">5.4.1.2</span> <span class="toctext">XOR</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-22"><a href="#Compression"><span class="tocnumber">5.4.2</span> <span class="toctext">Compression</span></a>
+<ul>
+<li class="toclevel-4 tocsection-23"><a href="#Bioware_Zlib"><span class="tocnumber">5.4.2.1</span> <span class="toctext">Bioware Zlib</span></a></li>
+<li class="toclevel-4 tocsection-24"><a href="#Headerless_Zlib"><span class="tocnumber">5.4.2.2</span> <span class="toctext">Headerless Zlib</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="List_of_common_ERF_Files">List of common ERF Files</span></h1>
+<p>ERF Files for Dragon Age Game Resources are stored in the (Dragon Age Install Dir)\packages\core\ Folder and Subdirectories. ERF's for Addons or Mods are usually in their respective Addon or Mod Folder.
+</p><p>Common ERF's of certain interests are,
+</p>
+<ul><li>Game Resources
+<ul><li>packages\core\data\2da.erf</li>
+<li>packages\core\data\anims.erf</li>
+<li>packages\core\data\consolescripts.erf</li>
+<li>packages\core\data\designerareas.erf</li>
+<li>packages\core\data\designercreatures.erf</li>
+<li>packages\core\data\designercutscenes.erf</li>
+<li>packages\core\data\designerdialogs.erf</li>
+<li>packages\core\data\designeritems.erf</li>
+<li>packages\core\data\designerplaceables.erf</li>
+<li>packages\core\data\designerplots.erf</li>
+<li>packages\core\data\designertriggers.erf</li>
+<li>packages\core\data\face.erf</li>
+<li>packages\core\data\gui.erf</li>
+<li>packages\core\data\guiexport.erf</li>
+<li>packages\core\data\iterationtests.erf</li>
+<li>packages\core\data\lightprobedata.erf</li>
+<li>packages\core\data\materialobjects.erf</li>
+<li>packages\core\data\materials.erf</li>
+<li>packages\core\data\misc.erf</li>
+<li>packages\core\data\modelhierarchies.erf</li>
+<li>packages\core\data\modelmeshdata.erf</li>
+<li>packages\core\data\pathfindingpatches.erf</li>
+<li>packages\core\data\postprocesseffects.erf</li>
+<li>packages\core\data\resmetrics.erf</li>
+<li>packages\core\data\scripts.erf</li>
+<li>packages\core\data\shaders.erf</li>
+<li>packages\core\data\states.erf</li>
+<li>packages\core\data\subqueuefiles.erf</li>
+<li>packages\core\data\textures.erf</li>
+<li>packages\core\data\tints.erf</li>
+<li>packages\core\textures\high\texturepack.erf</li>
+<li>packages\core\textures\medium\texturepack.erf</li></ul></li></ul>
+<ul><li>Patch Resources
+<ul><li>packages\core\patch\... --- Contains Resources added by Game Patches</li></ul></li></ul>
+<ul><li>Toolset specific Resources
+<ul><li>packages\core\data_tools\... ---Contains Resources for the Toolset</li></ul></li></ul>
+<h1><span class="mw-headline" id="Extracting_Resources">Extracting Resources</span></h1>
+<p>The Toolset is capable of extracting ERF Files Contents.
+</p><p>If you are modding Resources, the first step would be extracting Resources. You may start of by extracting all Resources of certain interest to you, or just a single File. To Maintain a simple and clean resource place, it is best to use a similar Folder Names to extract in.
+</p><p>One may create a Folder on the HD named for example "gameresources". Then added with subfolders that suit the Purpose, for example "Materials" in which one extracts only Materials. Preferably the Folderscheme is similar to that of the ERF's, to make browsing simple and easy to remember. 
+</p>
+<h1><span class="mw-headline" id="Packing_Resources">Packing Resources</span></h1>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">builder to player</a> process packages up resources into ERF files for you, storing the generated ERFs inside <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">DAZIPs</a>.
+</p><p>Additionally, you can edit any ERF by opening it directly in the Toolset, and add or remove files by drag&amp; dropping them into the Toolset with the ERF open manually. In cases the above process fails or whenever.
+</p>
+<h1><span class="mw-headline" id="Overriding_Resources">Overriding Resources</span></h1>
+<p>ERF's are named by their general purpose. But not all material files need to necessarily be put into Materials.ERF as an example. Patches do add every Patched Resource into one single ERF for example. The Original Game Resource ERF Files however are best left alone, as it has a high risk of breaking the game.
+</p><p>Files do not need to be present in ERF Files at all. When Overriding Gameresources as when modding, this is a pretty easy method. Overriding Files are of equal name to their original Gameresource counterpart, and are to be placed into packages\core\override\. The Game will then choose this File over the original.
+</p>
+<h1><span class="mw-headline" id="File_Format">File Format</span></h1>
+<h2><span class="mw-headline" id="Version_2.0">Version 2.0</span></h2>
+<p>All values are <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Endianness#Little-endian">little-endian</a>.
+</p>
+<h3><span class="mw-headline" id="Header">Header</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> magic
+</td>
+<td> utf16[8]
+</td>
+<td> "ERF V2.0", a total of 16 bytes.
+</td></tr>
+<tr>
+<td> fileCount
+</td>
+<td> uint32
+</td>
+<td> Number of files encapsulated in this ERF.
+</td></tr>
+<tr>
+<td> year
+</td>
+<td> uint32
+</td>
+<td> Year since 1900.
+</td></tr>
+<tr>
+<td> day
+</td>
+<td> uint32
+</td>
+<td> Day since January 1st.
+</td></tr>
+<tr>
+<td> unknown
+</td>
+<td> uint32
+</td>
+<td> Always 0xFFFFFFFF?
+</td></tr></table>
+<h3><span class="mw-headline" id="Table_of_Contents">Table of Contents</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> toc
+</td>
+<td> <a href="#Entry">entry</a>[fileCount]
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Entry">Entry</span></h4>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> name
+</td>
+<td> utf16[32]
+</td>
+<td>
+</td></tr>
+<tr>
+<td> offset
+</td>
+<td> uint32
+</td>
+<td> Offset to entry file data, from start of ERF file.
+</td></tr>
+<tr>
+<td> size
+</td>
+<td> uint32
+</td>
+<td> Length of file data.
+</td></tr></table>
+<h2><span class="mw-headline" id="Version_2.2">Version 2.2</span></h2>
+<p>This version introduces support for encrypted and compressed file data.
+</p><p>All values are <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Endianness#Little-endian">little-endian</a>.
+</p>
+<h3><span class="mw-headline" id="Header_2">Header</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> magic
+</td>
+<td> utf16[8]
+</td>
+<td> "ERF V2.2", a total of 16 bytes.
+</td></tr>
+<tr>
+<td> fileCount
+</td>
+<td> uint32
+</td>
+<td> Number of files encapsulated in this ERF.
+</td></tr>
+<tr>
+<td> year
+</td>
+<td> uint32
+</td>
+<td> Year since 1900.
+</td></tr>
+<tr>
+<td> day
+</td>
+<td> uint32
+</td>
+<td> Day since January 1st.
+</td></tr>
+<tr>
+<td> unknown
+</td>
+<td> uint32
+</td>
+<td> Always 0xFFFFFFFF?
+</td></tr>
+<tr>
+<td> flags
+</td>
+<td> uint32 <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Bit_field">Bit flags</a>
+</td>
+<td>
+<p>Flags:
+</p>
+<ul><li> 0x00000001 (bit 0)&#160;: Unknown</li>
+<li> 0x000000F0 (bits 4 - 7)&#160;: <a href="#Encryption">Encryption</a> scheme</li>
+<li> 0xE0000000 (bits 29 - 31)&#160;: <a href="#Compression">Compression</a> scheme</li></ul>
+<p><a href="#Encryption">Encryption</a> scheme:
+<i>(flags &gt;&gt; 4) &amp; 0xF</i>
+</p>
+<ul><li> 0&#160;: None</li>
+<li> 1&#160;: XOR</li>
+<li> 2&#160;: Blowfish</li>
+<li> 3&#160;: Blowfish <i>(Dragon Age 2 only)</i></li>
+<li> Any other value is invalid.</li></ul>
+<p><a href="#Compression">Compression</a> scheme:
+<i>(flags &gt;&gt; 29) &amp; 0x7</i>
+</p>
+<ul><li> 0&#160;: None</li>
+<li> 1&#160;: Bioware Zlib <i>(Dragon Age 2 only)</i></li>
+<li> 2&#160;: Unknown <i>(Dragon Age 2 only)</i></li>
+<li> 3&#160;: Unknown <i>(Dragon Age 2 only)</i></li>
+<li> 7&#160;: Headerless Zlib <i>(Dragon Age 2 only)</i></li>
+<li> Any other value is invalid.</li></ul>
+</td></tr>
+<tr>
+<td> moduleId
+</td>
+<td> uint32
+</td>
+<td> This id is used to look up the password for the ERF when encryption is present, for example, DLC.
+</td></tr>
+<tr>
+<td> passwordDigest
+</td>
+<td> byte[16]
+</td>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/MD5">MD5</a> sum of password (as a string).
+</td></tr></table>
+<h3><span class="mw-headline" id="Table_of_Contents_2">Table of Contents</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> toc
+</td>
+<td> <a href="#Entry_2">entry</a>[fileCount]
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Entry_2">Entry</span></h4>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> name
+</td>
+<td> utf16[32]
+</td>
+<td>
+</td></tr>
+<tr>
+<td> offset
+</td>
+<td> uint32
+</td>
+<td> Offset to entry file data, from start of ERF file.
+</td></tr>
+<tr>
+<td> packedSize
+</td>
+<td> uint32
+</td>
+<td> Packed length of file data.
+</td></tr>
+<tr>
+<td> unpackedSize
+</td>
+<td> uint32
+</td>
+<td> Unpacked length of file data.
+</td></tr></table>
+<h2><span class="mw-headline" id="Version_3.0">Version 3.0</span></h2>
+<p>Found in Dragon Age 2.
+</p><p>This version introduces hashed file names (and extensions) for faster file lookup.
+</p><p>All values are <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Endianness#Little-endian">little-endian</a>.
+</p>
+<h3><span class="mw-headline" id="Header_3">Header</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> magic
+</td>
+<td> utf16[8]
+</td>
+<td> "ERF V3.0", a total of 16 bytes.
+</td></tr>
+<tr>
+<td> stringTableSize
+</td>
+<td> uint32
+</td>
+<td> Size of the file name string table.
+</td></tr>
+<tr>
+<td> fileCount
+</td>
+<td> uint32
+</td>
+<td> Number of files encapsulated in this ERF.
+</td></tr>
+<tr>
+<td> flags
+</td>
+<td> uint32 <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Bit_field">Bit flags</a>
+</td>
+<td>
+<p>Flags:
+</p>
+<ul><li> 0x00000001 (bit 0)&#160;: Unknown</li>
+<li> 0x000000F0 (bits 4 - 7)&#160;: <a href="#Encryption">Encryption</a> scheme</li>
+<li> 0xE0000000 (bits 29 - 31)&#160;: <a href="#Compression">Compression</a> scheme</li></ul>
+<p><a href="#Encryption">Encryption</a> scheme:
+<i>(flags &gt;&gt; 4) &amp; 0xF</i>
+</p>
+<ul><li> 0&#160;: None</li>
+<li> 1&#160;: XOR</li>
+<li> 2&#160;: Blowfish</li>
+<li> 3&#160;: Blowfish <i>(Dragon Age 2 only)</i></li>
+<li> Any other value is invalid.</li></ul>
+<p><a href="#Compression">Compression</a> scheme:
+<i>(flags &gt;&gt; 29) &amp; 0x7</i>
+</p>
+<ul><li> 0&#160;: None</li>
+<li> 1&#160;: Bioware Zlib <i>(Dragon Age 2 only)</i></li>
+<li> 2&#160;: Unknown <i>(Dragon Age 2 only)</i></li>
+<li> 3&#160;: Unknown <i>(Dragon Age 2 only)</i></li>
+<li> 7&#160;: Headerless Zlib <i>(Dragon Age 2 only)</i></li>
+<li> Any other value is invalid.</li></ul>
+</td></tr>
+<tr>
+<td> moduleId
+</td>
+<td> uint32
+</td>
+<td> This id is used to look up the password for the ERF when encryption is present, for example, DLC.
+</td></tr>
+<tr>
+<td> passwordDigest
+</td>
+<td> byte[16]
+</td>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/MD5">MD5</a> sum of password (as a string).
+</td></tr>
+<tr>
+<td> stringTable
+</td>
+<td> char[stringTableSize]
+</td>
+<td> Zero-padded strings referenced by nameOffset in <a href="#Entry_3">TOC entries</a>. Strings are stored as ASCII. Note that not all TOC entries have to reference an entry in the string table.
+</td></tr></table>
+<h3><span class="mw-headline" id="Table_of_Contents_3">Table of Contents</span></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> toc
+</td>
+<td> <a href="#Entry_3">entry</a>[fileCount]
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Entry_3">Entry</span></h4>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+
+<tr>
+<th width="20%"> Name
+</th>
+<th width="20%"> Type / Size
+</th>
+<th width="60%"> Info
+</th></tr>
+<tr>
+<td> nameOffset
+</td>
+<td> int32
+</td>
+<td> Offset in stringTable of the file name for this entry. -1 if none.
+</td></tr>
+<tr>
+<td> nameHash
+</td>
+<td> uint64
+</td>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function">FNV64 hash</a> of lowercased file name, including path and extension.
+</td></tr>
+<tr>
+<td> typeHash
+</td>
+<td> uint32
+</td>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function">FNV32 hash</a> of lowercased file extension.
+</td></tr>
+<tr>
+<td> offset
+</td>
+<td> uint32
+</td>
+<td> Offset to entry file data, from start of ERF file.
+</td></tr>
+<tr>
+<td> packedSize
+</td>
+<td> uint32
+</td>
+<td> Packed length of file data.
+</td></tr>
+<tr>
+<td> unpackedSize
+</td>
+<td> uint32
+</td>
+<td> Unpacked length of file data.
+</td></tr></table>
+<h2><span class="mw-headline" id="File_Data">File Data</span></h2>
+<h3><span class="mw-headline" id="Encryption">Encryption</span></h3>
+<p>When the appropriate flags are set in the header, a digest of the password will be present. File data will be encrypted depending on what scheme is specified.
+</p><p>You may not extract such third party ERF files unless you have permission to do so. This is provided only for purposes when you want to encrypt your own ERF files.
+</p>
+<h4><span class="mw-headline" id="Blowfish">Blowfish</span></h4>
+<p>File data will be encrypted using <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Blowfish_(cipher)">Blowfish</a> in ECB.
+</p><p>These instructions only apply to encryption scheme #2.
+</p><p><b>To encrypt:</b>
+</p>
+<ul><li> Generate random number (represented as string, base 10), such as "12345678".</li>
+<li> Generate digest of the string (without null-terminating character) using MD5 and store it in the header.</li>
+<li> Convert those digits to 64-bit integer (0x0000000000BC614E).</li>
+<li> Store it in byte array in little-endian encoding (0x4E, 0x61, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00).</li>
+<li> Use that array as key to initialize Blowfish.</li>
+<li> Pad your content to multiple of 8 with zeroes.</li>
+<li> Encrypt the data.</li></ul>
+<p><b>To decrypt:</b>
+</p>
+<ul><li> You already know your password ("12345678").</li>
+<li> Generate its MD5 digest and compare it with the digest in the header.</li>
+<li> If they don't match file is either damaged or you forgot your password. If you forgot, brute-force attack should take no more than 1 minute. You <b>may not</b> perform brute-force attack on ERF files that are not yours unless you have permission from its owner to do so.</li>
+<li> Convert those digits to 64-bit integer (0x0000000000BC614E).</li>
+<li> Store it in byte array in little-endian encoding (0x4E, 0x61, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00).</li>
+<li> Use that array as key to initialize Blowfish.</li>
+<li> Decrypt the data.</li></ul>
+<h4><span class="mw-headline" id="XOR">XOR</span></h4>
+<p>Much of the process for protecting data with <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Exclusive_or">XOR</a> is the same as for Blowfish.
+</p><p><b>To encrypt:</b>
+</p>
+<ul><li> Generate random number (represented as string, base 10), such as "12345678".</li>
+<li> Generate digest of the string (without null-terminating character) using MD5 and store it in the header.</li>
+<li> Convert those digits to 72-bit integer (0x000000000000BC614E).</li>
+<li> Store it in byte array in little-endian encoding (0x4E, 0x61, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00).</li>
+<li> XOR each block of 9 bytes with the array.</li>
+<li> If the final block is not 9 bytes, XOR the block with the first N bytes of the array, where N is the length of the block.</li></ul>
+<p><b>To decrypt:</b>
+</p>
+<ul><li> You already know your password ("12345678").</li>
+<li> Generate its MD5 digest and compare it with the digest in the header.</li>
+<li> If they don't match file is either damaged or you forgot your password. If you forgot, brute-force attack should take no more than 1 minute. You <b>may not</b> perform brute-force attack on ERF files that are not yours unless you have permission from its owner to do so.</li>
+<li> Convert those digits to 72-bit integer (0x000000000000BC614E).</li>
+<li> Store it in byte array in little-endian encoding (0x4E, 0x61, 0xBC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00).</li>
+<li> XOR each block of 9 bytes with the array.</li>
+<li> If the final block is not 9 bytes, XOR the block with the first N bytes of the array, where N is the length of the block.</li></ul>
+<h3><span class="mw-headline" id="Compression">Compression</span></h3>
+<p><i><b>Compression is not supported by Dragon Age: Origins.</b></i>
+</p><p>Compression is supported by Dragon Age 2.
+</p><p>Note that if encryption is enabled:
+</p>
+<ul><li> When decompressing, file data must first be decrypted.</li>
+<li> When compressing, file data must be encrypted after compression.</li></ul>
+<h4><span class="mw-headline" id="Bioware_Zlib">Bioware Zlib</span></h4>
+<p>File data is compressed with <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Zlib">zlib</a>, with a custom 1-byte (commonly observed as 0xF9) header (vs the normal 2-byte zlib header).
+</p><p>The upper 4 bits of the header byte represent the window bits. The lower 4 bits are currently unknown.
+</p>
+<h4><span class="mw-headline" id="Headerless_Zlib">Headerless Zlib</span></h4>
+<p>File data is compressed with <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Zlib">zlib</a>, the normal 2-byte zlib header is omitted.
+</p>

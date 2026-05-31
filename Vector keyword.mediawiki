@@ -1,0 +1,71 @@
+<p>The <b>vector</b> type represents a position or direction in three dimensions. It consists of three <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float">float</a> values representing x, y and z which are accessed using the "<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dot%20operator" title="Dot operator (page does not exist)">dot operator</a>". The default value is (0.0, 0.0, 0.0).
+</p>
+<h2><span class="mw-headline" id="Constructor">Constructor</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#constructor" title="Scripting terminology">constructor</a> for a vector is the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector" title="Vector">Vector</a> function.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>A vector <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> consists of one to three float values separated by commas and enclosed in square brackets.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// valid vector literals</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vLiteral1 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span><span class="br0">&#93;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vLiteral2 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span>, <span class="nu0">2.0</span><span class="br0">&#93;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vLiteral3 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span>, <span class="nu0">2.0</span>, <span class="nu0">3.0</span><span class="br0">&#93;</span>;
+&#160;
+    <span class="co1">// invalid vector literals</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vInvalid1 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span>, , <span class="nu0">3.0</span><span class="br0">&#93;</span>;    <span class="co1">// causes &quot;Parsing constant vector&quot; error</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vInvalid2 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span>, <span class="nu0">2</span>, <span class="nu0">3.0</span><span class="br0">&#93;</span>;   <span class="co1">// causes &quot;Parsing constant vector&quot; error</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vInvalid3 <span class="sy0">=</span> <span class="nu0">1.0</span>, <span class="nu0">2.0</span>, <span class="nu0">3.0</span>;   <span class="co1">// causes &quot;Parsing variable list&quot; error</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vInvalid4 <span class="sy0">=</span> <span class="br0">&#40;</span><span class="nu0">1.0</span>, <span class="nu0">2.0</span>, <span class="nu0">3.0</span><span class="br0">&#41;</span>; <span class="co1">// causes &quot;Unknown state in compiler&quot; error</span></pre></div></div>
+<p>Note although there is a literal, a vector cannot be declared as a constant using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword" title="Const keyword (page does not exist)">const</a> keyword.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<h3><span class="mw-headline" id="Explicit">Explicit</span></h3>
+<p>The following functions can be used to convert another data type to a vector:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToVector" title="StringToVector">StringToVector</a></li></ul>
+<p>The following functions can be used to convert a vector to another data type:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString" title="VectorToString">VectorToString</a></li></ul>
+<h3><span class="mw-headline" id="Implicit">Implicit</span></h3>
+<p>There is no implicit conversion to a vector.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>There are no native functions providing persistence for a vector, however derived functions can be created using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalFloat" title="GetLocalFloat">GetLocalFloat</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat" title="SetLocalFloat">SetLocalFloat</a> to store and retrieve the individual components. 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Gets three floating point variables from the specified object and returns them as a vector.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> GetLocalVector<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oObject, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sVarName<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fX <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalFloat"><span class="kw4">GetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;x&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fY <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalFloat"><span class="kw4">GetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;y&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fZ <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalFloat"><span class="kw4">GetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;z&quot;</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span>fX, fY, fZ<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span> 
+&#160;
+<span class="co1">// Sets three floating point variables, representing a vector, on the specified object.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> SetLocalVector<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oObject, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sVarName, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vValue<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat"><span class="kw4">SetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;x&quot;</span>, vValue.<span class="me1">x</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat"><span class="kw4">SetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;y&quot;</span>, vValue.<span class="me1">y</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat"><span class="kw4">SetLocalFloat</span></a><span class="br0">&#40;</span>oObject, sVarName <span class="sy0">+</span> <span class="st0">&quot;z&quot;</span>, vValue.<span class="me1">z</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>As with all Get|SetLocal* functions the name of the variable must be predefined in the object's variables 2da file. In this instance all three variables (with the appropriate suffix) must be predefined.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised: value = (0.0, 0.0, 0.0)</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vDefault;
+&#160;
+    <span class="co1">// initialised using a literal: value = (1.0, 2.0, 3.0)</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vSpecific <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">1.0</span>, <span class="nu0">2.0</span>, <span class="nu0">3.0</span><span class="br0">&#93;</span>;
+&#160;
+    <span class="co1">// initialised using the constructor: value = (1.0, 2.0, 3.0)</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vConstructed <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">1.0</span>, <span class="nu0">2.0</span>, <span class="nu0">3.0</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// initialised using a function: value = (-1.0, 0.0, 0.0)</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vConverted <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AngleToVector"><span class="kw4">AngleToVector</span></a><span class="br0">&#40;</span><span class="nu0">90.0</span><span class="br0">&#41;</span>;    
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Vector%20functions" title="Category:Vector functions (page does not exist)">Vector functions</a>
+</p>

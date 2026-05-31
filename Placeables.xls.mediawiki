@@ -1,0 +1,27 @@
+<p>The <b>placeables.xls</b> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> data that define every placeables' appearance, properties and interactions. These 2da files are used by the Toolset, in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20editor" title="Placeable editor (page does not exist)">Placeable editor</a>, and by the game engine.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20basetypes%202da" title="Placeable basetypes 2da">placeable_basetypes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20interactions%202da" title="Placeable interactions 2da">placeable_interactions</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20types%202da" title="Placeable types 2da">placeable_types</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_AOE</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_AreaTransition</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_BBase</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Bodybag</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Bridge</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Cage</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Container</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Container_Static</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Door</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Door_Secret</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_FlipCover</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Furniture</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Informational</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_NonSelectable_Trap</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Puzzle</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Selectable_Trap</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Static</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_TopBallista</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Trap_Trigger</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StateCnt%20-%202da" title="StateCnt * 2da">StateCnt_Trigger</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20plc%20column%20names%202da" title="Sound plc column names 2da">sound_plc_column_names</a></li></ul>

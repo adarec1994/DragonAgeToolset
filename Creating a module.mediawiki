@@ -1,0 +1,95 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Module topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+<ul><li> <strong class="selflink">Creating a module</strong></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">Managing modules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">Builder to builder</a></li></ul>
+</td></tr></table>
+<p>To create and modify <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">modules</a>, select "Manage Modules" from the File menu. This will bring up a list of existing modules, with a "New" button for creating new modules and a "Properties" button for editing the properties of existing modules. You can only edit the properties of the module that's currently open.
+</p><p><b>NOTE:</b> when you create new items, it's best to stick to unique naming, specially if items belongs to your module. For example: your module UID is "asar" so item, createre, area or any other file should begin with asar_ (asar_mysword).
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_a_new_Module"><span class="tocnumber">1</span> <span class="toctext">Creating a new Module</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Opening_the_Module"><span class="tocnumber">1.1</span> <span class="toctext">Opening the Module</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#To_create_a_standalone_module:"><span class="tocnumber">1.2</span> <span class="toctext">To create a standalone module:</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Extending_the_game_with_addins_.28common.29"><span class="tocnumber">1.3</span> <span class="toctext">Extending the game with addins (common)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Advanced_Properties"><span class="tocnumber">1.4</span> <span class="toctext">Advanced Properties</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Core_resources:"><span class="tocnumber">2</span> <span class="toctext">Core resources:</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_a_new_Module">Creating a new Module</span></h2>
+<table align="right">
+
+<tr>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:195px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/Module_menu_command.png" width="193" height="386" class="thumbimage" /></a>  <div class="thumbcaption">Select "Manage Modules"</div></div></div>
+</td>
+<td> <div class="thumb tright"><div class="thumbinner" style="width:301px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="299" height="373" class="thumbimage" /></a>  <div class="thumbcaption">Then click the "New" button to create a new module.</div></div></div>
+</td></tr></table>
+<ol><li>Open File/Manage Modules</li>
+<li>Click on "New" and the module properties window will open. </li>
+<li>Edit the "Name" field give the module a name (This is the name that will also be visible in Game as a Addin)</li>
+<li>Add a unique identifier string to the UID field. The File and Folder will appear in that name.</li>
+<li>Make an independent note of the StringID Begin value. This is vital information if you ever have to export the module to a new data base.</li>
+<li>Then click "OK"; the other properties can be changed later on once you have some content to set them to.</li></ol>
+<h3><span class="mw-headline" id="Opening_the_Module">Opening the Module</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click the "Open" button. </li></ol>
+<ul><li>The Open Module is displayed in the Title Bar. Only resources that are available to the open module will be visible.</li></ul>
+<h3><span class="mw-headline" id="To_create_a_standalone_module:">To create a standalone module:</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click on the "Hierarchy" button</li>
+<li>Unmark any parent module (all are unmarked by default)</li></ol>
+<ul><li>The Extended Module property should be left as the default (None).</li>
+<li>You should use the default script "module_core" or your own custom script.</li></ul>
+<h3><span class="mw-headline" id="Extending_the_game_with_addins_.28common.29">Extending the game with addins (common)</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click on the "Hierarchy" button</li>
+<li>Mark the parent module "Single Player"</li>
+<li>Hit OK</li></ol>
+<ul><li>The Extended Module property should be set to "Single Player".</li>
+<li>Note that as of toolset version 1.01 and game version 1.02b, you should NOT use "module_core" as the script (as found in module properties) for an add-in that extends an existing module, otherwise you will encounter issues that may include slow-downs during conversations and attribute allocation.  The exact cause of these issues is not yet known, but using a blank script with an empty main function will eliminate these issues.</li>
+<li>Resources of "Single Player" will now become available to this module.</li></ul>
+<h3><span class="mw-headline" id="Advanced_Properties">Advanced Properties</span></h3>
+<ol><li>Select the module in the Manage Modules list </li>
+<li>Click on the "Properties" button</li></ol>
+<p>The Settings can be changed at any later time. To set up your Module prior Exporting see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">Manage modules</a>
+</p>
+<ul><li>For a detailed explanation of the properties you will see here, See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>.</li></ul>
+<p><br />
+</p>
+<hr />
+<p>The only module type that's supported by the toolset is "Addin". You can use addins in two basic ways; either to extend an existing campaign (such as the main campaign) or as a stand-alone campaign in its own right. Addins can be enabled and disabled by the user in the "Downloadable content" menu from the game. You can also create addins that add to or modify core resources, which are available to all modules of the game.
+</p><p>A module with no event script will start the player without going through character generation, which will leave the player with an almost unusable character to play with. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20generation" title="Character generation">character generation</a> for some simple character generation code you can use. 
+</p><p><b>NOTE:</b> Currently there is no way to delete a module within the toolset once it's been created.
+</p>
+<h2><span class="mw-headline" id="Core_resources:">Core resources:</span></h2>
+<p>One way of using the same object template in more than one module is to create a core resource. 
+</p><p>When importing a character from one module to another, custom items in the player's inventory will be lost unless the resource template is available to both modules. A core resource is one way of doing this.
+</p><p>Note that core resources are visible to every campaign, so, for compatibility purposes, it's better to use alternate methods where available. For example, an add-in inherits resources from the parent module, so there's no need to use core resources in that case. 
+</p><p>To create a core resource:
+</p>
+<ol><li> Right click on properties for the resource in the Palette Window</li>
+<li> Change Module to: Core Game Resources</li>
+<li> Change Owner Module to: New Module Name</li></ol>
+<p>Be aware of dependencies between core and non-core resources; especially around scripts. If a core resource uses a non-core script, the script won't exist if you use the core resource in a different module.
+</p><p>There will be a separate <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="Talk table">talk table</a> created for the Addin in its directories. When the game loads it will combine all the talk tables across all the addins that it knows about.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

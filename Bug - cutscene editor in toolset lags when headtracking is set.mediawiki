@@ -1,0 +1,9 @@
+<ul><li><b>Version found: 1.0.1008.0</b> </li>
+<li><b>Status:</b> Already fixed via the "accurate headtracking" option</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The cutscene editor can begin to lag very badly when you have headtracking set. The lag can be on the order of 3-4 second delays when doing anything.
+</p><p>This is due to the complexity of the headtracking operation, and the fact that to be fully accurate the cutscene editor has to re-simulate all of the frames prior to the current one to find out where the heads would really be pointing.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Headtracking can be set to use a simpler simulation system during cutscene work via the "accurate headtracking" button in the toolbar or the option of the same name in the cutscene editor options panel. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking#Cutscene_editor_performance" title="Headtracking">Headtracking#Cutscene editor performance</a> for more details.
+</p>

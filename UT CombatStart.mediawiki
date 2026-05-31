@@ -1,0 +1,21 @@
+<p>Gets two creature to start combat.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_CombatStart(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oAttacker,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bTargetSelectionOverride&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nOverridePermanent&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oAttacker<dd>The attacking creature or the creature who initiates combat. This will not matter most of the time unless we are using the bTargetSelectionOverride parameter.<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The target creature or the creature who is being attacked. This will not matter most of the time unless we are using the bTargetSelectionOverride parameter.<dt style="font-weight:normal; font-style:italic;">bTargetSelectionOverride<dd>if TRUE this will override the default target selection for the attacker for the first few rounds<dt style="font-weight:normal; font-style:italic;">nOverridePermanent<dd>if TRUE the attacker will not leave the specified target until it is dead and will force the attacker to target the specified target. Otherwise they will just turn hostile and the AI system will decide who attacks who.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function starts combat by turning 2 creatures hostile towards each other. It is assumed that the perception system will trigger combat once both sides are hostile. This function will switch the creature's group to be the 'hostile' group if it's current group is 'non-hostile' No other groups will be switched – for these cases the function will just set the 2 groups hostile.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20CombatStop" title="UT CombatStop">UT_CombatStop</a>
+</p>

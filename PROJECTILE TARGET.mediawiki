@@ -1,0 +1,186 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PROJECTILE_TARGET_CLAVICLE_L
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">14
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_CLAVICLE_R
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_HEAD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_LOWERARM_L
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">16
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_LOWERARM_R
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">12
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_LOWERLEG_L
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_LOWERLEG_R
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">19
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_LOWERTORSO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_MIDTORSO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_NECK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_UPPERARM_L
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">15
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_UPPERARM_R
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">11
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_UPPERLEG_L
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">21
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_UPPERLEG_R
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">18
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROJECTILE_TARGET_UPPERTORSO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>

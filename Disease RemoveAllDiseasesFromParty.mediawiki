@@ -1,0 +1,17 @@
+<p>Removes ALL diseases from ALL party members
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Disease_RemoveAllDiseasesFromParty(<br />);</div>
+<dl>
+<dt>Parameters:
+<dd>None
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20disease" title="Sys disease">sys_disease</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Removes ALL diseases from ALL party members.
+Disease effects are defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Diseases%202da" title="Diseases 2da (page does not exist)">diseases 2da</a> file.
+</p>

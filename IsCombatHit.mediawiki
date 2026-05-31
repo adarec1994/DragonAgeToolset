@@ -1,0 +1,17 @@
+<p>Called by:
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> IsCombatHit<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackResult<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_MISS</span> <span class="sy0">||</span> nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BLOCKED</span> <span class="sy0">||</span> nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_INVALID</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+    <span class="br0">&#125;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>

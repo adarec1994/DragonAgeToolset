@@ -1,0 +1,27 @@
+<p>The <b>asfunction</b> template is for documenting ActionScript functions used in the GUI.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{asfunction
+|name = GetValue
+|brief = Returns the value with the specified attribute name from the engine
+|param1name = a_sAttributeName
+|param1desc = The hierarchical attribute name, the meaning of which is defined by the game engine.
+.
+.
+.
+|returndesc = The specified value from the game engine, dependent on the specified attribute name.
+}}
+</pre>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>ActionScript functions are similar to JavaScript ones. 
+</p><p>A standard asfunction page will have a number of other headers below this template where more detailed and free-form information will be added by editors.
+</p><p>Suggested standard headers include:
+</p>
+<pre>__NOTOC__
+== Description ==
+== Known issues ==
+== Examples ==
+== See also ==</pre>
+<p>With others added when and where needed.
+</p>

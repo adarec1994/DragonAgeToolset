@@ -1,0 +1,136 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Создание архива для разработчика</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/Builder_to_builder/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Модули
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules%20-%20ru" title="Manage modules/ru">Управление модулями</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module%20-%20ru" title="Feature request: Deleting a module/ru">Удаление модуля</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Экспорт модуля</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Cтартовая локация</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Архив для игрока</a></li>
+<li><strong class="selflink">Архив для разработчика</strong></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Новый модуль и DLC</a></li></ul>
+<dl><dd><small>Обеспечение совместимости между новым модулем и официальными DLC</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events%20-%20ru" title="Category:Module events/ru (page does not exist)">События модуля</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events" title="Category:Module events">(en)</a></li></ul>
+<dl><dd><small>Категория, содержащая описания и параметры событий модуля</small></dd></dl>
+</td></tr></table>
+<p>"Builder to builder", также известный как "B2B", это общий термин для определения процесса обмена игровыми ресурсами между разработчиками модулей, для примера между членами команды модмейкеров, работающих над одним модулем. О предоставлении готового модуля игрокам смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Создание архива для игрока</a>.
+</p><p>Существует три основных типа ресурсов, необходимость обмена которых может возникнуть, в случае разработки модуля несколькими модмейкерами:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Ресурсы базы данных</a>.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources%20-%20ru" title="Art Resources/ru (page does not exist)">Художка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">(en)</a>.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-файлы</a>.</li></ul>
+<p>2DA-файлы и художка(графика, музыка) - это обычные файлы, хранящиеся на компьютере, и никаких проблем в обмене ими не возникает. 
+</p><p>Другое дело - ресурсы базы данных. Если практически каждый пользователь знает как работать с файлами (а модмейкер просто обязан это знать), то опыт работы с базами данных есть далеко не у всех. К тому же ресурсы в базе данных тулсета пронизаны взаимосвязями, которые необходимо учитывать при редактировании ресурсов. Для упрощения обмена такими файлами тулсет имеет специальную процедуру для сохранения и загрузки выбранных ресурсов базы данных и их связей в файлы XML, и последующего их объединения в один архив, имеющий тип <b>.dadbdata</b>.
+</p><p><b>Внимание:</b> Процедуры <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">экспорта ресурсов для проверки в игре</a>, либо для <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">распространения среди игроков</a>, являются отдельными процедурами.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B0.D1.80.D1.85.D0.B8.D0.B2.D0.B0_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B0.D0.B7.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Создание архива для разработчика</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.98.D0.BC.D0.BF.D0.BE.D1.80.D1.82_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">2</span> <span class="toctext">Импорт ресурсов базы данных</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.9A.D0.BE.D0.BD.D1.84.D0.BB.D0.B8.D0.BA.D1.82_.D0.B8.D0.BC.D1.91.D0.BD"><span class="tocnumber">2.1</span> <span class="toctext">Конфликт имён</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9A.D0.BE.D0.BF.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F"><span class="tocnumber">3</span> <span class="toctext">Копирование модуля</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A1.D0.BE.D0.B2.D0.BC.D0.B5.D1.81.D1.82.D0.BD.D1.8B.D0.B9_.D0.B4.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">4</span> <span class="toctext">Совместный доступ к базе данных</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B0.D1.80.D1.85.D0.B8.D0.B2.D0.B0_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B0.D0.B7.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B0">Создание архива для разработчика</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png" width="110" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/B2B_create_menu_command.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Чтобы создать архив для разработчика выберите в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette%20-%20ru" title="Resource palette/ru (page does not exist)">палитре ресурсов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">(en)</a> необходимые ресурсы и в контекстном меню выберите пункт "Builder to builder create".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:31px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Builder%20to%20builder%20create%20via%20tools%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png" width="120" height="88" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/Builder_to_builder_create_via_tools_menu.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Также вы можете запустить создание архива для разработчика с выбором всех доступных вашему модулю ресурсов. Для этого в меню "Tools" выберите "Builder -&gt; Builder to Builder Create".
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20create%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png" width="120" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/B2B_create_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>В результате одной из предыдущих операций появится список ресурсов для экспорта.
+</p>
+			</div>
+		</div></li>
+</ul>
+<p><b>Обратите внимание:</b>
+</p>
+<ul><li>Как правило, экспортируются только ресурсы вашего модуля, если у вас нет особых причин для экспорта основных ресурсов игры.</li>
+<li>Вы можете выбрать несколько ресурсов прежде чем запустить создание архива.</li>
+<li>Как отмечалось выше, в архив для разработчика включаются только ресурсы из базы данных, так что обмен 2DA-файлами и художкой должен производиться в обычном порядке.</li></ul>
+<p>Когда вы убедитесь в правильности своего выбора, нажмите "Ok" и вам будет предложено выбрать путь для сохранения архива.
+</p>
+<h2><span class="mw-headline" id=".D0.98.D0.BC.D0.BF.D0.BE.D1.80.D1.82_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Импорт ресурсов базы данных</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:39.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png" width="120" height="71" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/B2B_load_menu_command.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Импорт ресурсов из архива формата ".dadbdata" запускается выбором пункта "Builder to Builder Load" в меню "Tools -&gt; Builder"
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:47.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20B2B%20load%20panel%20973.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png" width="120" height="55" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/37/B2B_load_panel_973.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>После выбора архива вам будет представлен список имеющихся в нём ресурсов.
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>Отметьте ресурсы, которые необходимо импортировать, с помощью самого левого чекбокса (колонка "Import"). Обратите внимание, что если вы импортируете не все ресурсы, то, возможно, будут нарушены связи между ресурсами. Однако, если в архиве присутствуют основные ресурсы игры, то скорее всего импорт их не обязателен, так как в вашей базе данных они уже есть, если, конечно, у вас нет веских причин для замены ваших основных ресурсов игры.
+</p><p>В правой части окна есть опция, позволяющая вам импортировать ресурсы, использовав оригинальные идентификаторы строк, либо создав новые. Использование оригинальных строк позволит сохранить целостность ссылок на ТЛК-таблицу. Однако использование оригинальных идентификаторов строк может вызвать <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Builder%20to%20Builder%20Load%20may%20not%20reproduce%20resource%20detail%20correctly%20-%20ru" title="Bug: Builder to Builder Load may not reproduce resource detail correctly/ru">некорректную загрузку ресурсов</a>. Для поиска возможных ошибок с этой опцией и путей их решения смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID%20-%20ru" title="String ID/ru">Идентификаторы строк</a>.   
+</p><p>ResRefID это идентификатор ресурса, который использовался в базе, из которой он импортирован. ResRefIDs должен быть уникальным для каждой базы данных, поэтому во время процесса импорта он присваивается автоматически.
+</p>
+<h3><span class="mw-headline" id=".D0.9A.D0.BE.D0.BD.D1.84.D0.BB.D0.B8.D0.BA.D1.82_.D0.B8.D0.BC.D1.91.D0.BD">Конфликт имён</span></h3>
+<p>Колонка "Exists/New" (имеется/новый) показывает, существует ли ресурс с таким же именем в вашей базе данных. Это хорошая возможность отследить основные ресурсы игры, которые хоть и связаны с новыми ресурсами, но не требуют импорта вашу базу данных.
+</p><p>В случае, если вы всё же импортируете ресурс с повторяющимся именем, то по умолчанию во время импорта старый ресурс затирается новым. Чтобы изменить такое поведение, вы можете использовать колонку "Create New". Если вы отметите чекбокс "Create New", то импортируемый ресурс будет переименован с добавлением суффикса "_1" (в случае необходимости цифра будет увеличена), а старый ресурс останется нетронутым. Связи всех новых импортированных ресурсов, которые были связаны с переименованным ресурсом, обновятся для связи с его новой копией.
+</p><p>Заметим, что если вы используете опцию "Create New" во время импорта ресурса вместе со связанными с ним ресурсами, то в последующем, если вам понадобится заново импортировать только его одного, импортер не сможет прочитать его связей, так как они были изменены. Так что лучше избегать такой ситуации, чем впоследствии пытаться решить её.
+</p><p>В случае совпадения имён ресурсов также обратите внимание на колонку "Checked Out", которая сигнализирует о том, что другой пользователь, имеющий доступ к вашей базе данных, сделал процедуру "Check Out" этого ресурса, и он не может редактироваться вами, в том числе и обновляться при импорте. Эта проблема актуальна только при совместном доступе к базе данных, если же доступ к базе данных имеете только один пользователь, эта проблема не возникнет.
+</p>
+<h2><span class="mw-headline" id=".D0.9A.D0.BE.D0.BF.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Копирование модуля</span></h2>
+<p>Вы можете скопировать модуль на новую машину, в новую базу данных или базу данных другого моддера.
+</p><p>Создание архива B2B является хорошим способом для создания резервной копии вашего модуля, его передачи или восстановления.
+</p><p>Если у вас есть голосовая озвучка, то необходимо обеспечить сохранение идентификаторов строк (в противном случае вам придется переименовать все файлы голосовой озвучки).
+</p><p>Если вы знаете диапазон строк в исходном модуле, то вы можете установить такой же диапазон в целевом модуле. 
+</p><p>Если вы не знаете диапазона идентификаторов строк в оригинальном модуле, то:
+</p>
+<ul><li>В новом модуле укажите диапазон с 1 до оооочень большого значения, чтобы быть уверенным, что строки в архиве не выйдут за диапазон. </li>
+<li>Загрузите архив в базу с использованием старых идентификаторов.</li>
+<li>В редакторе строк (String Editor) посмотрите диапазон строк новых ресурсов и установите для модуля диапазон на порядок шире.</li></ul>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B2.D0.BC.D0.B5.D1.81.D1.82.D0.BD.D1.8B.D0.B9_.D0.B4.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Совместный доступ к базе данных</span></h2>
+<p>Если же вышеуказанный способ представляется слишком трудоёмким, либо объём обмениваемых ресурсов слишком большой, то существует более продвинутый альтернативный путь: организация совместного доступа к хранилищу базы данных.
+</p><p>В случае обычной установки тулсета на пользовательский компьютер, база данных устанавливается на локальный компьютер, откуда её и использует тулсет. Однако, используя утилиту "ConfigureToolset", поставляемую вместе с тулсетом , возможно настроить тулсет для доступа к базе данных, находящейся на другом компьютере,  при условии наличия сетевого соединения. Этот механизм использовался BioWare во время разработки основной кампании Dragon Age наряду с традиционным использованием медиаресурсов и 2DA-файлов. Именно возможностью использования базы данных в совместном доступе обусловлено наличие концепции "Check In/Check Out", позволяющей организовать работу нескольких пользователей над одним ресурсом.
+</p><p>Общие вопросы, которые необходимо учитывать при организации совместного доступа:
+</p>
+<ul><li>Файрволл и маршрутизатор - Компьютеры разработчиков должны иметь сетевой доступ к базе данных. Это может потребовать переадресации портов и других потенциально сложных настроек.</li>
+<li>Постоянный доступ - Так как все разработчики будут работать с одной базой данных, то необходимо обеспечить постоянную её доступность. Это может потребовать выделение отдельного компьютера, используя его только для этой цели.</li>
+<li>Безопасность - База данных станет доступна для внешнего доступа, который может быть и злонамеренным, так что вы должны понимать риски и принимать необходимые меры.</li></ul>
+<p>Хотя эта возможность и существует, хочется отметить, что пока этот метод применялся только во внутренней сети BioWare, что обусловливает отсутствие какой-либо информации о возможных проблемах.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

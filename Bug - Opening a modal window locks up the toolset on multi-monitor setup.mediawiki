@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> build 925 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>When working on a multiple-monitor system, it is possible that rearranging the monitors will cause the previously-recorded default location of popup windows such as "manage modules" to be off the edge of the display area where it can't be seen or manipulated. This can lock up the toolset, since the toolset won't respond until the popup is dismissed.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>To reset the position of the popup windows, delete the file "My Documents\BioWare\Dragon Age\Toolset\Layouts3.xml". It will be recreated the next time the toolset is run using default values.
+</p>

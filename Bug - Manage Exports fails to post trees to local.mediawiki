@@ -1,0 +1,34 @@
+<ul><li><b>Version found:</b> 1.0.1088.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 216817  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>When I run Post Trees To Local via Manage Exports it is reporting errors and failing  however when I run Post Trees To Local via the toolbar button it does not. For example, the following is the output from running  Post Trees To Local via Manage Exports:
+</p>
+<pre>
+S: 12:22:37 - Export Summary, 1 Requested, 0 Success, 0 Skipped, 1 Failed.  Please see below for more details.
+E: 12:22:37 - mbtf01.lvl - Exporter FAILED for resource: mbtf01.lvl
+E: 12:22:37 - Failed to export trees for layout [mbtf01d]
+E: 12:22:37 - Failed to create composite Speed Tree resources
+E: 12:22:37 - Speed Tree Resource Creation Failed: Could not validate texture C:\Users\LAUREN~1\AppData\Local\Temp\SpeedTreePackage\Output\tre_f_confsapa_Diffuse_0.tga
+E: 12:22:37 - SpeedTreeCAD output texture C:\Users\LAUREN~1\AppData\Local\Temp\SpeedTreePackage\Output\tre_f_confsapa_Diffuse_0.tga had an invalid size of 161, 256
+S: 12:22:25 - Starting export: "Post Trees to Local"
+</pre>
+<p>Whereas the following is from running Post Trees To Local via the toolbar button:
+</p>
+<pre>
+S: 12:40:09 - Export Summary, 1 Requested, 1 Success, 0 Skipped, 0 Failed.  Please see below for more details.
+S: 12:22:37 - Starting export: "Post Selection to Local"
+</pre>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Use the Post Trees To Local toolbar button.
+</p>

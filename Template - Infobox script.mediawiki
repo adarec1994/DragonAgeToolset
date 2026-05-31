@@ -1,0 +1,29 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Infobox%20script%20-%20ru" title="Template:Infobox script/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

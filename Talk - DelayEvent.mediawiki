@@ -1,0 +1,17 @@
+<p>A possible example suggested by georage:
+</p>
+<pre>To create a quasi-heartbeat, create a script called 'my_heartbeat' and include this in it
+
+DelayEvent(6.0, GetHero(), Event(EVENT_TYPE_HEARTBEAT), "my_heartbeat");
+
+Detailed example: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/71/index/310150/1#402992">[1]</a>
+</pre>
+<p>However the quality of scripting and document must be improved before it would be an appropriate reference. Additionally reference pages must not reference external resources which cannot be maintained by the editors.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 18:15, 8 December 2009 (UTC)
+</p><p><br />
+</p>
+<dl><dd>Feel free to 'improve the quality' of the scripting, but it works, and people would like to know how to get a heartbeat working. -- georage</dd></dl>
+<dl><dd><dl><dd> Not everyone's definition of "works" is the same so, for example, while your example claims to be an area heartbeat it sends the delayed event to the player whereupon it would become a player heartbeat.  Bryan's hastily cleaned up version is unfortunately no better in this regard.  Ironically moving the example to the "talk" page was intended to protect readers and provide sufficient time test the script, confirm and resolve the issues and produce a revised version which would be suitable to act as a reference. </dd>
+<dd> --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 19:42, 8 December 2009 (UTC)</dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd> My testing has revealed that the <code>scriptname</code> parameter does not function as described for an area object. It does however function as described for a trigger object. Is this intentional or a bug?</dd>
+<dd> --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 21:41, 8 December 2009 (UTC)</dd></dl></dd></dl></dd></dl>

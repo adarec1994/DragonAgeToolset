@@ -1,0 +1,17 @@
+<p>Makes a team go hostile
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_TeamGoesHostile(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTeamID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bHostile&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTeamID<dd>This is the team ID number (stored in CREATURE_TEAM_ID)<dt style="font-weight:normal; font-style:italic;">bHostile<dd>Default behavior is to turn the team to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="GROUP HOSTILE">GROUP_HOSTILE</a>. If this is set to FALSE, then instead the team will turn to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="GROUP NEUTRAL">GROUP_NEUTRAL</a>.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The specified team joins the hostile faction. 0 is not a valid parameter (because that's the default value of the variable).
+</p>

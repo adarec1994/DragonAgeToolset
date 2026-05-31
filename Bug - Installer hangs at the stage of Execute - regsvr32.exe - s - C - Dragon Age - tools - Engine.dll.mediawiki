@@ -1,0 +1,20 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> Fixed. Version 1.01 of the toolset installer has addressed this problem by no longer waiting for a return value from regsvr32, so the installer should no longer hang at this stage.</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>In some instances Regsvr32.exe is failing for some unknown reason and refusing to terminate. 
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>If you encounter this problem on installing version 1.00, open the task manager and kill regsvr32.exe. The installer should continue on installing after that's done. This could mean that engine.dll won't be registered, however, so you may need to do that manually.
+</p><p>To manually register the dll, go to "run" in your start menu and type in the following command:
+</p>
+<pre>regsvr32 "C:\Program Files\Dragon Age\tools\Engine.dll"
+</pre>
+<p>(or substitute the actual path to Engine.dll if it it's different from that). Make sure to run this as an administrator. It should pop up a "success!" message. If it fails, it should hopefully pop up an error message that will tell us how to fix it once and for all. It should be safe to re-try this command over and over, registering the dll more than once is harmless. Some users have found that the only way to successfully register Engine.dll is to boot up in safe mode and log in as administrator before registering it. After it is registered, you can then boot normally.
+</p><p>NOTE: If you purchased the game through Steam, your Engine.dll will be located in a different folder. Assuming that you installed the toolset in the default folder, the path will be:
+</p>
+<pre>C:\Program Files\Steam\steamapps\common\dragon age origins\tools
+</pre>
+<p>So the command in the Run window will be:
+</p>
+<pre>regsvr32 "C:\Program Files\Steam\steamapps\common\dragon age origins\tools\Engine.dll"
+</pre>

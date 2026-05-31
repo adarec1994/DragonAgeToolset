@@ -1,0 +1,12 @@
+<p>this event seem to have the Object 0 parameter aswell. ie you get the character that is going through the character creator.
+</p><p>Example code:
+</p><p><br />
+</p>
+<pre>       case EVENT_TYPE_CHARGEN_SELECT_GENDER:
+       {         
+           int nGender = GetEventInteger(ev, 0);
+           object oCreature = GetEventObject(ev,0);
+           SetCreatureGender(oCreature,nGender);
+           break;
+       }
+</pre>

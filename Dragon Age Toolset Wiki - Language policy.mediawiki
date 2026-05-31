@@ -1,0 +1,260 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Languages_Bar"><span class="tocnumber">1</span> <span class="toctext">Languages Bar</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Usage"><span class="tocnumber">1.1</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Example"><span class="tocnumber">1.2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Supported_languages"><span class="tocnumber">1.3</span> <span class="toctext">Supported languages</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Languages_Bar">Languages Bar</span></h2>
+<p>A <b>languages bar</b> has been provided using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Languages" title="Template:Languages">Languages</a> navigation template to make it easier for readers to see which translations are available for the current page and to navigate to those translated pages. The template also makes it easier for editors to link to translated pages from the original English page (and vice versa).
+</p><p>As you can see the languages bar can be added anywhere on a page however it is recommended that it is placed at the bottom of each page for consistency.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><strong class="selflink">Language:</strong></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy%20-%20ru" title="Dragon Age Toolset Wiki:Language policy/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<p>In order for the languages bar to function correctly each translated page must be created as a subpage of the original English page and the name of the subpage must be the language code, for example, "fr" for French. 
+</p><p>Creating a subpage is done by adding a forward slash and the name of the subpage to the name of the parent page.
+</p>
+<pre>Parent_page/subpage
+</pre>
+<p>The languages bar can then be added to both the original English page and each of the translated pages. On the original English page the <b>PageName</b> parameter can be omitted so the following format is used:
+</p>
+<pre>{{Languages}}
+</pre>
+<p>On the translated page (regardless of language) the <b>PageName</b> parameter must be used to identify the original English page so the following format is used:
+</p>
+<pre>{{Languages|name-of-the-English-page}}
+</pre>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<p>The location for the Russian translation of this page is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy%20-%20ru" title="Dragon Age Toolset Wiki:Language policy/ru">Project:Language_policy/ru</a>. To display the language bar to this page we use <code>{{Languages}}</code> and to display the language bar (correctly) on the Russian version of this page we would use <code>{{Languages|Project:Language_policy}}</code>.
+</p><p>We do <i>not</i> use <code>{{Languages|Project:Language_policy/ru}}</code> as the links to the original English page and any other translated pages would not be generated.
+</p>
+<h3><span class="mw-headline" id="Supported_languages">Supported languages</span></h3>
+<p>The table below lists the languages and language codes currently supported by the language bar. The language codes are show as a subpage of the Main Page.
+</p>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+<th> Page Name </th>
+<th> Language
+</th></tr>
+<tr>
+<td> Main Page </td>
+<td> English
+</td></tr>
+<tr>
+<td> Main Page<b>/af</b> </td>
+<td> Afrikaans
+</td></tr>
+<tr>
+<td> Main Page<b>/ar</b> </td>
+<td> Arabic
+</td></tr>
+<tr>
+<td> Main Page<b>/az</b> </td>
+<td> Azerbaijani
+</td></tr>
+<tr>
+<td> Main Page<b>/bcc</b> </td>
+<td> Southern Balochi
+</td></tr>
+<tr>
+<td> Main Page<b>/bg</b> </td>
+<td> Bulgarian
+</td></tr>
+<tr>
+<td> Main Page<b>/br</b> </td>
+<td> Breton
+</td></tr>
+<tr>
+<td> Main Page<b>/ca</b> </td>
+<td> Catalan
+</td></tr>
+<tr>
+<td> Main Page<b>/cs</b> </td>
+<td> Czech
+</td></tr>
+<tr>
+<td> Main Page<b>/da</b> </td>
+<td> Danish
+</td></tr>
+<tr>
+<td> Main Page<b>/de</b> </td>
+<td> German
+</td></tr>
+<tr>
+<td> Main Page<b>/el</b> </td>
+<td> Greek
+</td></tr>
+<tr>
+<td> Main Page<b>/es</b> </td>
+<td> Spanish
+</td></tr>
+<tr>
+<td> Main Page<b>/fa</b> </td>
+<td> Persian
+</td></tr>
+<tr>
+<td> Main Page<b>/fi</b> </td>
+<td> Finnish
+</td></tr>
+<tr>
+<td> Main Page<b>/fr</b> </td>
+<td> French
+</td></tr>
+<tr>
+<td> Main Page<b>/gl</b> </td>
+<td> Galician
+</td></tr>
+<tr>
+<td> Main Page<b>/gu</b> </td>
+<td> Gujarati
+</td></tr>
+<tr>
+<td> Main Page<b>/he</b> </td>
+<td> Hebrew
+</td></tr>
+<tr>
+<td> Main Page<b>/hu</b> </td>
+<td> Hungarian
+</td></tr>
+<tr>
+<td> Main Page<b>/id</b> </td>
+<td> Indonesian
+</td></tr>
+<tr>
+<td> Main Page<b>/it</b> </td>
+<td> Italian
+</td></tr>
+<tr>
+<td> Main Page<b>/ja</b> </td>
+<td> Japanese
+</td></tr>
+<tr>
+<td> Main Page<b>/ka</b> </td>
+<td> Georgian
+</td></tr>
+<tr>
+<td> Main Page<b>/ko</b> </td>
+<td> Korean
+</td></tr>
+<tr>
+<td> Main Page<b>/ksh</b> </td>
+<td> Kölsch
+</td></tr>
+<tr>
+<td> Main Page<b>/mk</b> </td>
+<td> Macedonian
+</td></tr>
+<tr>
+<td> Main Page<b>/ml</b> </td>
+<td> Malayalam
+</td></tr>
+<tr>
+<td> Main Page<b>/mr</b> </td>
+<td> Marathi
+</td></tr>
+<tr>
+<td> Main Page<b>/ms</b> </td>
+<td> Malay
+</td></tr>
+<tr>
+<td> Main Page<b>/nl</b> </td>
+<td> Nederlands
+</td></tr>
+<tr>
+<td> Main Page<b>/no</b> </td>
+<td> Norwegian
+</td></tr>
+<tr>
+<td> Main Page<b>/oc</b> </td>
+<td> Occitan
+</td></tr>
+<tr>
+<td> Main Page<b>/pl</b> </td>
+<td> Polish
+</td></tr>
+<tr>
+<td> Main Page<b>/pt</b> </td>
+<td> Portuguese
+</td></tr>
+<tr>
+<td> Main Page<b>/pt-br</b> </td>
+<td> Brazilian Portuguese
+</td></tr>
+<tr>
+<td> Main Page<b>/ro</b> </td>
+<td> Romanian
+</td></tr>
+<tr>
+<td> Main Page<b>/ru</b> </td>
+<td> Russian
+</td></tr>
+<tr>
+<td> Main Page<b>/si</b> </td>
+<td> Sinhalese
+</td></tr>
+<tr>
+<td> Main Page<b>/sk</b> </td>
+<td> Slovak
+</td></tr>
+<tr>
+<td> Main Page<b>/sq</b> </td>
+<td> Albanian
+</td></tr>
+<tr>
+<td> Main Page<b>/sr</b> </td>
+<td> Serbian
+</td></tr>
+<tr>
+<td> Main Page<b>/sv</b> </td>
+<td> Swedish
+</td></tr>
+<tr>
+<td> Main Page<b>/ta</b> </td>
+<td> Tamil
+</td></tr>
+<tr>
+<td> Main Page<b>/th</b> </td>
+<td> Thai
+</td></tr>
+<tr>
+<td> Main Page<b>/tr</b> </td>
+<td> Turkish
+</td></tr>
+<tr>
+<td> Main Page<b>/uk</b> </td>
+<td> Ukrainian
+</td></tr>
+<tr>
+<td> Main Page<b>/vi</b> </td>
+<td> Vietnamese
+</td></tr>
+<tr>
+<td> Main Page<b>/yue</b> </td>
+<td> Cantonese
+</td></tr>
+<tr>
+<td> Main Page<b>/zh</b> </td>
+<td> Chinese
+</td></tr>
+<tr>
+<td> Main Page<b>/zh-hans</b> </td>
+<td> Chinese (Simplified)
+</td></tr>
+<tr>
+<td> Main Page<b>/zh-hant</b> </td>
+<td> Chinese (Traditional)
+</td></tr>
+<tr>
+<td> Main Page<b>/zh-tw</b> </td>
+<td> Chinese (Taiwan)
+</td></tr></table>

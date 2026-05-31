@@ -1,0 +1,290 @@
+<p>Water effects can be created in levels via a number of different methods.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Water_planes"><span class="tocnumber">1</span> <span class="toctext">Water planes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Properties"><span class="tocnumber">1.1</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Surface_color"><span class="tocnumber">1.2</span> <span class="toctext">Surface color</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Wave_settings"><span class="tocnumber">1.3</span> <span class="toctext">Wave settings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Water_models"><span class="tocnumber">2</span> <span class="toctext">Water models</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Water_VFX"><span class="tocnumber">3</span> <span class="toctext">Water VFX</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Water_planes">Water planes</span></h2>
+<ul><li><b>Note:</b> there is currently a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Water%20plane%20missing%20in-game" title="Bug: Water plane missing in-game">bug in the toolset</a> that prevents it from correctly posting levels to modules other than "Single player". The most obvious symptom of this bug is that water planes won't appear in-game. To post a level layout with water, first ensure that you've switched to the single player module via <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">manage modules</a>, and then once you've posted it you'll need to manually copy the resulting files from the single player <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Override directory">override directory</a> into your addin's directory.</li></ul>
+<p>The first thing to do in order to get water in the exterior level is to right click on the Terrain World, and insert a new water mesh.
+</p><p>After creating a water mesh you should see it in the area, it shows up as a flat mesh 256m x 256m by default.  You can move it around just like you move around any other model.  Move it up and down by holding down shift and then clicking on the water.  If you select the water mesh in the hierarchy you can change the properties of the mesh.
+</p><p>It is a good idea to put a probe light directly over a small pond or lake.  That way the reflections in the water will match up roughly with the shore.  Don’t forget to render light maps before you render the probe lights, and you’ll need to turn on the Visualization on/off button to see the nice water color and reflections.
+</p><p>Textures:  The textures (height and normal) make a huge difference, so playing around with these will make some really nice water.
+</p><p>Frequencies:  It looks very nice if the frequencies are powers of 2 of each other, for instance if one is 2, then the other two can be 4 and 8 for instance.
+</p><p>Reflections:  To get nice clear reflections the amplitude should be around 0.05 to 0.1.
+</p><p>Directions:  For calm lakes it looks nice if the directions are opposite, but play around with these for some good results.
+</p><p>Depth:  Play around with the Shallow Depth to move the waves closer to shore or farther away.
+</p><p>Water Seams:  Play with the Max Tessellation level and the subdivide depth tolerance to create more mesh resolution and reduce the seams that you see.  Once the mesh is in place and you are happy with it, you can also play with the terrain height around it to hide any that are left.
+</p><p>Water Mesh Size:  Try to keep the water mesh only slightly bigger than the actual size of the lake or pond as it will get a much better resolution if it is smaller.
+</p><p>Play Button:  Toggle the play button on so you can see the water continually animating.
+</p><p>During export, the water collision mesh is automatically generated based on the intersection of the water plane and the terrain. 
+</p>
+<h3><span class="mw-headline" id="Properties">Properties</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Selection Lock</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Visible</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Water Mesh ID</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Location</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position X</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position Y</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position Z</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation X (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation Y (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rotation Z (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Location Relative</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Position X</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Position Y</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Position Z</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Rotation X (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Rotation Y (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relative Rotation Z (degrees)</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Physics</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Collision Wall Height</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Walkable Depth</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Water Mesh</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Maximum Tessellation</td>
+<td>This is the splitting up the water mesh into finer level, much like terrain tessellation.  In this case the choices are 1-6, anything higher does nothing extra.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Show Grid</td>
+<td>Set this to true to show the water mesh in red, false to hide it.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Size X</td>
+<td>This is the X,Y size of the water mesh in meters.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Size Y</td>
+<td>This is the X,Y size of the water mesh in meters.</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Surface_color">Surface color</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Specular settings</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Specular On Water</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular falloff</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular multiplier</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Sunlight specular power</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Use debug reflection</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Transparency settings</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Opacity falloff</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Show transparency as color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Water clarity</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Water surface</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Deep Color</td>
+<td>This is the color for the deep water.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Shallow Color</td>
+<td>This is the color for the shallow water.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Waves Normal Map</td>
+<td>is the normal map to use for the waves.</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Wave_settings">Wave settings</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Wave 1, 2 and 3</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Wave Direction</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Wave Height</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Wave Speed (m/s)</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Wave Tiling</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Water_models">Water models</span></h2>
+<p>Water planes can be tilted, but they are constrained to remain flat and rectangular. This can prevent certain types of water usage, for example a water plane can't simulate a fast-flowing forest brook very well.
+</p><p>For these purposes a custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">model</a> may be needed. Existing examples include:
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hro%20hrt000a%200.jpg"><img alt="Hro hrt000a 0.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Hro_hrt000a_0.jpg" width="108" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Hro_hrt000a_0.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Hro_hrt000a_0.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hro%20hrt000b%200.jpg"><img alt="Hro hrt000b 0.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Hro_hrt000b_0.jpg" width="103" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Hro_hrt000b_0.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Hro_hrt000b_0.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hro%20hrt000c%200.jpg"><img alt="Hro hrt000c 0.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Hro_hrt000c_0.jpg" width="92" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Hro_hrt000c_0.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Hro_hrt000c_0.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hro%20lak100water%200.jpg"><img alt="Hro lak100water 0.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/Hro_lak100water_0.jpg" width="79" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/Hro_lak100water_0.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/Hro_lak100water_0.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Water_VFX">Water VFX</span></h2>
+<p>Very fast-flowing water can produce a foamy surface and sprays of droplets that are best simulated using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX">VFX</a>. Fountains and waterfalls are the most obvious of these sorts, but you can also use a stream of VFX particles flowing through a streambed to simulate frothy rapids. This sort of usage works well in conjunction with a custom water model underneath the VFX.
+</p>

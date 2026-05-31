@@ -1,0 +1,12 @@
+<h2><span class="mw-headline" id="Copy_Local_Variable_Names">Copy Local Variable Names</span></h2>
+<p>Make it possible to copy a variable's name from the variables pop up window.
+</p><p>Currently we have to hand code the variable's name at least once (i.e. when we assign it to a constant in our script) thereby increasing the likelihood of a typo and therefore of scripts failing.  There are unfortunately no half measures when it comes to variables.   
+</p><p>An alternative would be to release libraries with these names defined as constants (I'm assuming since I haven't seen them they don't currently exist) however that only solves the problem for the current BioWare systems. It doesn't address our own or third party systems and it burdens BioWare with having to maintain some additional scripts.
+</p><p>If we wanted to avoid typing (and therefore reduce the risk of typos)  we have to locate and open the original Excel sheet and copy it from there into our scripts. Of course this assumes we have it and it isn't a custom 2da from a third party.
+</p>
+<h2><span class="mw-headline" id="Local_Variable_M2DAs_vs._2DAs">Local Variable M2DAs vs. 2DAs</span></h2>
+<p>The local variables should be populated by M2DAs rather than 2DAs.  
+</p><p>This would ensure continuing compatibility with BioWare's systems and easy integration of third party systems.
+</p><p>For example if I currently create a custom creature variable 2DA it completely replaces BioWare's core creature variable 2DA.   If I want to use the core systems in addition to my custom systems then I have to copy all of BioWare's variables into my 2DA. Then if  BioWare subsequently changes the core creature variable 2DA I have to replicate the changes to each of my custom creature variable 2DAs or risk the core functionality failing. This situation is the same if I am trying to integrate one or more 3rd party systems into my module. The more systems I use the more time I have to spend creating and maintaining merged variable 2DAs.
+</p><p>Using M2DAs presumably avoids all these issues.
+</p>

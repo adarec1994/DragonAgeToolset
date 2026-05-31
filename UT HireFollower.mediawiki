@@ -1,0 +1,23 @@
+<p>Hire non-plot follower into the active party for oPC
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_HireFollower(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oFollower,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPreventLevelup&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oFollower<dd>The creature joining the party<dt style="font-weight:normal; font-style:italic;">bPreventLevelup<dd>whether or not to prevent the follower from levelling up
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Hire follower into the active party for oPC. This function will do nothing for plot followers.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Plot followers are the creatures with tags defined by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GEN%20FL" title="GEN FL *">GEN_FL_*</a> constants.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20FireFollower" title="UT FireFollower">UT_FireFollower</a>
+</p>

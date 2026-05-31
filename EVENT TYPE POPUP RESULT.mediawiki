@@ -1,0 +1,20 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>player responds to popup message box
+<dt>Sent from:
+<dd>engine
+<dt>Sent to:
+<dd>module
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: the player</li><li>Integer 0: popup ID (references a row in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">popups 2da</a>)</li><li>Integer 1: button result (1 - 4)</li><li>String 0: string entered into optional text field</li><li>Object 0: owner of popup</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_POPUP_RESULT:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlayer = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// the player</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPopupID = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// popup ID (references a row in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">popups 2da</a>)</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nButton = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// button result (1 - 4)</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sInput = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// string entered into optional text field</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oOwner = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// owner of popup</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Calling the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ShowPopup" title="ShowPopup">ShowPopup</a> script function causes a popup message box to be displayed to the user. The message box can have up four buttons (defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">popups 2da</a>) and a text input field. This event is generated when the Player clicks on one of the buttons and is sent to the module script with the popup's result.
+</p>

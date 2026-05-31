@@ -1,0 +1,19 @@
+<p>Creates an item at a specific location
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> CreateItemOnObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rItemFileName,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStackSize&#160;= 1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTag&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSuppressNotification&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bDroppable&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">rItemFileName<dd>The file name of the object to create (*.uti)<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The item will be created inside the invetory of this object<dt style="font-weight:normal; font-style:italic;">nStackSize<dd>Stack size of the item to be created<dt style="font-weight:normal; font-style:italic;">sTag<dd>(optional) tag for the new item<dt style="font-weight:normal; font-style:italic;">bSuppressNotification<dd>if true, the "Item Acquired" notification will not be displayed<dt style="font-weight:normal; font-style:italic;">bDroppable<dd>if true, the item can be looted when the target creature dies
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid new object or OBJECT_INVALID on error
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Creates an item using the specified file name at lLocation. If the object is a creature then it will also attempt to use an appear animation if the flag is set. If an invalid object type is specified, the file name does not exist or the location is bad an invalid object will be returned.
+</p><p>NOTE: As with all commands that add items to a container, this command will reset the container (if a placeable)
+to interactive no matter its previous state.
+</p>

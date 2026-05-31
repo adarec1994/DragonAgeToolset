@@ -1,0 +1,42 @@
+<p>The <strong class="selflink">toolset_henchmen 2da</strong> lists the tags of NPC speakers, typically henchmen (followers), that can be assigned lines in a staged conversation without having to be assigned a specific stage position. 
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Tag
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> The tag of the henchman (follower)
+</td></tr>
+<tr>
+<th> SpecialStaging
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td> <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>When a conversation has been assigned a stage and contains lines which have been assigned to specific speakers but these speakers have not been assigned to one of the stage's positions the conversation will fail to export due to a "Speaker &lt;tag&gt; is not mapped to a stage place" error as can be seen in this example:
+</p>
+<pre>
+E: 13:53:41 - b22_s011_quallo.dlg - Exporter FAILED for resource: b22_s011_quallo.dlg
+E: 13:53:41 - b22_s011_quallo.dlg - Export failed due to errors in the conversation
+E: 13:53:39 - b22_s011_quallo.dlg - Line 19: Error creating cutscene from cinematics: Speaker "b22_char_edwin" is not mapped to a stage place.
+E: 13:53:39 - b22_s011_quallo.dlg - Line 15: Error creating cutscene from cinematics: Speaker "b22_char_korgan" is not mapped to a stage place.
+</pre>
+<p>Adding the appropriate tags to the toolset_henchmen 2da, placing the exported GDA in your module's override and restarting the toolset will allow the conversation to be exported successfully.
+</p>

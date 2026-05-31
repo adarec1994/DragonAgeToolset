@@ -1,0 +1,259 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Creature topics:
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="Creature group">Creature groups</a> - who is hostile to whom.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a></li>
+<li><strong class="selflink">AI</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a></li></ul>
+</td></tr></table>
+<p>See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI" title="Custom AI">Custom AI</a> for a means of overriding creature AI directly on a lower level.
+</p><p>The core AI scripts that control what a creature does makes use of a large set of variables in the default <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Var creature.xls">var_creature.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">local variable</a> table. The variables and their affects are: <br clear="all" />
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td>  AI_BALLISTA_SHOOTER_STATUS
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  When set to AI_BALLISTA_SHOOTER_STATUS_AVAILABLE, will try to move to nearby available ballistae and fire them. Set to AI_BALLISTA_SHOOTER_STATUS_INACTIVE to disable. This variable is modified by the ai_ballista_h script to keep track of ballista-related activities while active.
+</td></tr>
+<tr>
+<td>  AI_CUSTOM_AI_ACTIVE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Set via  the CAI_SetCustomAI function (include cai_h in your script for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI" title="Custom AI">custom AI</a> support.)
+</td></tr>
+<tr>
+<td>  AI_CUSTOM_AI_VAR_FLOAT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  A float value that can be used by custom AI scripts for any purpose.
+</td></tr>
+<tr>
+<td>  AI_CUSTOM_AI_VAR_INT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  An int value that can be used by custom AI scripts for any purpose.
+</td></tr>
+<tr>
+<td>  AI_CUSTOM_AI_VAR_OBJECT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword"> object </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  An object value that can be used by custom AI scripts for any purpose
+</td></tr>
+<tr>
+<td>  AI_CUSTOM_AI_VAR_STRING
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center"> none
+</td>
+<td>  A string value that can be used by custom AI scripts for any purpose
+</td></tr>
+<tr>
+<td>  AI_DISABLE_PATH_BLOCKED_ACTION
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_FLAG_PREFERS_RANGED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  If the creature prefers to use ranged combat. Should be set on-spawn for enemies and when switching weapons for followers outside of combat only
+</td></tr>
+<tr>
+<td>  AI_FLAG_STATIONARY
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  if set to 1 the creature will try not to move to attack. For follower this flag is used to tell if a follower can start attacking yet
+</td></tr>
+<tr>
+<td>  AI_HELP_TEAM_STATUS
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  0, not active, 1 active, 2 currently helping, 3 called for help
+</td></tr>
+<tr>
+<td>  AI_LAST_TACTIC
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_LIGHT_ACTIVE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_MOVE_TIMER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_PLACEABLE_BEING_USED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword"> object</a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_REGISTERED_WP
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword"> object </a>
+</td>
+<td align="center">  0
+</td>
+<td>  An AI waypoint registered by the current creature. A creature registers a waypoint by changing its tag and storing the object ID on itself. A creature un-registers a waypoint by retrieving the waypoint stored on itself and re-setting its tag
+</td></tr>
+<tr>
+<td>  AI_TARGET_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword"> object </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_TARGET_OVERRIDE_DUR_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td> For how many rounds the target have been overriden, so we can limit it.
+</td></tr>
+<tr>
+<td>  AI_THREAT_GENERATE_EXTRA_THREAT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Used in custom fights to have some creatures generate this extra specified amount of threat when perceived.
+</td></tr>
+<tr>
+<td>  AI_THREAT_HATED_CLASS
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Used by target selection AI (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ai%20threat%20h" title="Ai threat h (page does not exist)">ai_threat_h</a>) to weight target selection in favor of a particular class
+</td></tr>
+<tr>
+<td>  AI_THREAT_HATED_GENDER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Used by target selection AI (ai_threat_h) to weight target selection in favor of a particular gender
+</td></tr>
+<tr>
+<td>  AI_THREAT_HATED_RACE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Used by target selection AI (ai_threat_h) to weight target selection in favor of a particular race
+</td></tr>
+<tr>
+<td>  AI_THREAT_SWITCH_TIMER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_THREAT_SWITCH_TIMER_MIN
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_THREAT_TARGET
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword"> object</a>
+</td>
+<td align="center">  0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_THREAT_TARGET_SWITCH_COUNTER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int</a>
+</td>
+<td align="center">  0
+</td>
+<td>
+</td></tr>
+<tr>
+<td>  AI_WAIT_TIMER
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr></table>

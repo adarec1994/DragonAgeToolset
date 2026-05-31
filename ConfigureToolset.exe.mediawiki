@@ -1,0 +1,80 @@
+<p>The external configuration utility is used to configure the toolset's database connection and to tell the toolset where the game's executable is and which server and database to connect to. You shouldn't need to run the configuration utility during routine usage of the toolset, and if the defaults set up by your installer work you may never need to run it at all.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Occasions_you_need_to_use_Configure_Toolset"><span class="tocnumber">1</span> <span class="toctext">Occasions you need to use Configure Toolset</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Location"><span class="tocnumber">2</span> <span class="toctext">Location</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Game_Builds"><span class="tocnumber">3</span> <span class="toctext">Game Builds</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Win32_Game_Build"><span class="tocnumber">3.1</span> <span class="toctext">Win32 Game Build</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Alternate_Game_Build"><span class="tocnumber">3.2</span> <span class="toctext">Alternate Game Build</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Databases"><span class="tocnumber">4</span> <span class="toctext">Databases</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Default_Database_Settings"><span class="tocnumber">4.1</span> <span class="toctext">Default Database Settings</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Custom_Database_Settings"><span class="tocnumber">4.2</span> <span class="toctext">Custom Database Settings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Property_Page"><span class="tocnumber">5</span> <span class="toctext">Property Page</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Occasions_you_need_to_use_Configure_Toolset">Occasions you need to use Configure Toolset</span></h2>
+<ol><li>If you get an error when attempting to start the toolset stating <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20of%20game%20build" title="Location of game build">Location of game build</a> build either not specified or the update program was never run to copy the build onto your computer, you need to run Configure toolset to rectify the problem.</li>
+<li>You are troubleshooting the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">unable to connect to the database</a> issue, and have determined that you have a working instance of SQL Server installed and that the database is restored correctly.  Here you can make sure that the toolset is pointed in the right direction</li>
+<li>Switch between databases. If you have set up multiple instances of SQL Server or have multiple databases set up in an instance of SQL Server, you can use this utility to switch between them.</li></ol>
+<h2><span class="mw-headline" id="Location">Location</span></h2>
+<p>To run Configure Toolset, navigate to the directory where you have installed the toolset. Typically the location would be something like:
+</p>
+<pre>C:\Program Files\Dragon Age\Tools\
+</pre>
+<p>In the Tools directory, double click on ConfigureToolset.exe to launch the utility.
+</p><p>There are two screens available on the Utility:
+</p>
+<ol><li>Game Builds</li>
+<li>Databases</li>
+<li>Property Page</li></ol>
+<p>The functions of each are explained in the sections below.
+</p>
+<h2><span class="mw-headline" id="Game_Builds">Game Builds</span></h2>
+<p>When the toolset starts up, it looks for the existence of the game.  This screen is where you specify the location for the toolset to look for the game. 
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Win32_Game_Build">Win32 Game Build</span></h3>
+<p>This field points to the directory where Dragon Age is installed.  Either type the path into this field, or click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) next to it to browse to the directory.  Set the value of this field to the location of the installed game, typically, it should be something like: <code>C:\Program Files\Dragon Age</code>
+</p>
+<h3><span class="mw-headline" id="Alternate_Game_Build">Alternate Game Build</span></h3>
+<p>Community users will not generally have need to do anything with this field. As a general rule, leave it unchecked and blank.
+</p><p>The toolset can keep an alternate location in sync with your current game build override. This location can be another directory on the same machine, a different machine or a network location. To enable this function, check the "Enable alternate game build" checkbox. With that option checked, enter or browse for a location that you wish to use as your alternate game build. Whenever you do an export from the toolset, once the export is finished, it will then synchronize all the export files to the path specified.
+</p>
+<h2><span class="mw-headline" id="Databases">Databases</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Databases%20window.png"><img alt="Databases window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Databases_window.png" width="451" height="360" /></a>
+</p>
+<h3><span class="mw-headline" id="Default_Database_Settings">Default Database Settings</span></h3>
+<p>If you leave the "Use the default database" checkbox checked, the toolset will try to connect to the standard location.  If your toolset is currently able to connect to the database, and you are not trying to connect it to another database, just leave this checkbox checked.
+</p>
+<h3><span class="mw-headline" id="Custom_Database_Settings">Custom Database Settings</span></h3>
+<p>For advanced configuration, uncheck the "Use the default database" checkbox and then click on the ellipsis button (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) to open the data link properties window.  The Data Link Properties window open.  This window can be used to connect to different Servers or instances and to different databases on a selected server.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Data%20Link%20Properties%20Window.png"><img alt="Data Link Properties Window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/Data_Link_Properties_Window.png" width="377" height="471" /></a>
+</p><p>You should only need to make changes on the "Connection" tab, <i>only make changes on the other tabs if you know what you are doing</i>.
+</p><p>1. Select or enter a server name:
+</p>
+<dl><dd><dl><dd>This field shows which database you are connecting to.  In a default installation, this should display .\BWDATOOLSET</dd>
+<dd>If you have done a manual installation of SQL Server, this value will likely need to be changed to .\SQLEXPRESS as that is the default on a manual installation.  The dropdown list does not always populate properly, so you may just need to type in the correct entry here.</dd></dl></dd></dl>
+<p>2. Enter information to log on to the server:
+</p>
+<dl><dd><dl><dd>Unless you changed this option while installing SQL Server manually, this field should be left as is with the "Use Windows NT Integrated Security" selected.  This is the default setting when SQL is installed by the toolset, and also if you accept the defaults on a manual installation.</dd></dl></dd></dl>
+<p>3. Select the database on the server
+</p>
+<dl><dd><dl><dd>Make sure  "Select the database on the server" is checked.  Select "bw_dragonage_content" from this list.</dd></dl></dd></dl>
+<dl><dd><dl><dd><i>note:</i> If you have created a different database, or restored your database to a different name, select or type it in this box.  If you have multiple databases set up on the server, this is how you switch which one the toolset is using.</dd></dl></dd></dl>
+<p>When you have finished changes on this window, press the "Test Connection" button.  If you get the message "Test connection succeeded" then you should be good to carry on.  Hit the OK button.
+</p><p>Note that you may need to set a registry key manually when changing database settings. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ConfigureToolset%20application%20fails%20to%20set%20a%20registry%20key" title="Bug: ConfigureToolset application fails to set a registry key">Bug: ConfigureToolset application fails to set a registry key</a>.
+</p>
+<h2><span class="mw-headline" id="Property_Page">Property Page</span></h2>
+<p>This is just the wrap up page. Push the appropriate button.
+</p>
+<ul><li><b>Back</b> sends you back into the utility</li>
+<li><b>Finish</b> saves your changes and closes the utility</li>
+<li><b>Cancel</b> aborts your changes without saving them and closes the utility</li></ul>

@@ -1,0 +1,47 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>This tutorial describes how to add a custom model to your Toolset. It is assumed that the reader is familiar with the Toolset.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Needed_Files"><span class="tocnumber">1</span> <span class="toctext">Needed Files</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Convert_your_model_to_DA:O_compatible_files"><span class="tocnumber">2</span> <span class="toctext">Convert your model to DA:O compatible files</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Create_.2A.mmh"><span class="tocnumber">3</span> <span class="toctext">Create *.mmh</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Create_.2A.msh"><span class="tocnumber">4</span> <span class="toctext">Create *.msh</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Adding_it_to_your_Toolset"><span class="tocnumber">5</span> <span class="toctext">Adding it to your Toolset</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Using_it_in_the_Toolkit"><span class="tocnumber">6</span> <span class="toctext">Using it in the Toolkit</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Needed_Files">Needed Files</span></h2>
+<p>Download tazpn's Command Line Tools <a rel="nofollow" class="external autonumber" href="https://www.nexusmods.com/dragonage/mods/10">[1]</a>
+</p><p>or alternatively use
+</p><p>Allstar's GUI interface for Tazpn's Command Line Tools <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1060/">[2]</a> 
+</p>
+<h2><span class="mw-headline" id="Convert_your_model_to_DA:O_compatible_files">Convert your model to DA:O compatible files</span></h2>
+<p>It is assumed that the model is finished and textured.
+</p><p>Export your model as a *.fbx file.
+</p><p>Use tapzn`s Tool to convert the *.fbx file to a *.mmh.xml file (fbxcmd convert name.fbx name.mmh.xml).
+You will get 3 files out of this: 
+</p><p>• *.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="Mmh">mmh</a>.xml
+</p><p>• *.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="Msh">msh</a>.xml
+</p><p>• *.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="Mao">mao</a>
+</p><p>Since the *.mao file is not well named in some cases, you have to manually rename it. If you do this, don't forget to change the reference in the *.mmh.xml file!
+</p>
+<h2><span class="mw-headline" id="Create_.2A.mmh">Create *.mmh</span></h2>
+<p>Just drag and drop your *.mmh.xml on the "\Dragon Age\tools\ResourceBuild\Processors\MMH\GraphicsProcessorMMH.exe"
+</p>
+<h2><span class="mw-headline" id="Create_.2A.msh">Create *.msh</span></h2>
+<p>Copy the *.msh.xml file to "\Dragon Age\tools\ResourceBuild\Processors\MSH"
+Then do "GraphicsProcessorMSH -platform pc mmdtogff (filename).msh.xml" using your Shell / cmd
+</p>
+<h2><span class="mw-headline" id="Adding_it_to_your_Toolset">Adding it to your Toolset</span></h2>
+<p>Copy all the files (*.msh, *.mmh, *.phy, *.dds, *.mao) to "\Dragon Age\packages\core\override\".
+Optionally you can pack it into an *.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="Erf">erf</a> file. The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">builder to player</a> packaging process can package up these files into an erf for you in the process of creating a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="Dazip">dazip</a> installable file.
+</p>
+<h2><span class="mw-headline" id="Using_it_in_the_Toolkit">Using it in the Toolkit</span></h2>
+<p>To use it in the toolkit you have to specify which item variation your item is. Edit the fitting *.gda in the 2da.erf to do so. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a>.
+</p><p>If you did nothing wrong up till now, you should be able to use it in the Toolset by now.
+</p>

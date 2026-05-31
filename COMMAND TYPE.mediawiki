@@ -1,0 +1,230 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> COMMAND_TYPE_ATTACK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_DEATHBLOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">38
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_DO_FUNCTION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_DRIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">33
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_EQUIP_ITEM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">29
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_FLY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">42
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_INTERACT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">37
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_JUMP_TO_LOCATION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_JUMP_TO_OBJECT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_MOVE_TO_LOCATION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">20
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_MOVE_TO_OBJECT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">21
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_PLAY_ANIMATION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">14
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_RECOVER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_START_CONVERSATION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">18
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_SWITCH_WEAPON_SETS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">40
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_UNEQUIP_ITEM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">30
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_USE_ABILITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">25
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_USE_OBJECT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">31
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> COMMAND_TYPE_WAIT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">13
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>

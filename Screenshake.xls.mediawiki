@@ -1,0 +1,84 @@
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> frequency_x
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> frequency_y
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> amplitude_x
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> amplitude_y
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> rumble_duration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> rumble_intensity
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> rumble_baseintensity
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> rumble_type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> rumble_iterations
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr></table>

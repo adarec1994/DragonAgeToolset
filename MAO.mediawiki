@@ -1,0 +1,103 @@
+<p>Each <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">model</a> uses an mao to define what its surface will look like. If you want to change an object's texture, this is the file to edit. Within are references to texture files which are used when drawing the model, as well as a reference to the material to use to render.
+</p>
+<h2><span class="mw-headline" id="MAO_Example">MAO Example</span></h2>
+<p>This is an example of a basic MAO file (plc_scarecrow01.mao).
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;!-- Exported by Material Editor --&gt;&lt;!-- dc:source=file:///A:/DragonAge/SourceControl/ArtContent/Art/Levels/Materials/OutsourcedProps04.matproj --&gt;
+&lt;MaterialObject Name="Plc_Scarecrow01"&gt;
+  &lt;Material Name="Prop.mat"&gt;&lt;/Material&gt;
+  &lt;DefaultSemantic Name="Blend"&gt;&lt;/DefaultSemantic&gt;
+  &lt;Texture Name="mml_tDiffuse" ResName="p_scarecrow_01d.dds"&gt;&lt;/Texture&gt;
+  &lt;Texture Name="mml_tNormalMap" ResName="p_scarecrow_01n.dds"&gt;&lt;/Texture&gt;
+  &lt;Texture Name="mml_tSpecularMask" ResName="p_scarecrow_01s.dds"&gt;&lt;/Texture&gt;
+&lt;/MaterialObject&gt;
+</pre>
+<p>&lt;MaterialObject Name="Plc_Scarecrow01"&gt; - This line assigns a name to the mao. This should be a unique identifier as this is the name required to reference this mao.
+</p><p>&lt;Material Name="Prop.mat"&gt;&lt;/Material&gt; - This is the line which tells the mao which material it should use to render its textures with. 
+</p><p>&lt;DefaultSemantic Name="Blend"&gt;&lt;/DefaultSemantic&gt; - This line tells the material referenced above which semantic it should use when rendering. 
+</p><p>&lt;Texture Name="mml_tDiffuse" ResName="p_scarecrow_01d.dds"&gt;&lt;/Texture&gt; - This line tells the material which texture to use as the diffuse texture. To be more general, it tells the material to use the texture file referenced by ResName, in this case p_scarecrow_01d.dds, where ever it uses the parameter mml_tDiffuse. This is the same for the rest of the lines in the mao file.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAT" title="MAT">MAT</a> for more information on materials.
+</p><p>To view more mao files, extract them from materialobjects.erf and open them in a text editor. They are only simple xml files and require nothing more to read or edit.
+</p><p>Many of the possible textures are covered in <a rel="nofollow" class="external text" href="http://bg2redux.student.utwente.nl/trac/wiki/TutorialTexturesAdvanced?version=8">mikemike37's texture tutorial</a>
+</p>
+<h2><span class="mw-headline" id="MAO_XML_Schema">MAO XML Schema</span></h2>
+<p>See <a rel="nofollow" class="external autonumber" href="http://www.oasis-open.org/committees/relax-ng/spec.html">[1]</a> for information on the RELAX NG 1.0 XML schema format. For a free converter/verifier, see <a rel="nofollow" class="external autonumber" href="http://code.google.com/p/jing-trang/">[2]</a>.
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"&gt;
+  &lt;start&gt;
+    &lt;element name="MaterialObject"&gt;
+      &lt;attribute name="Name"&gt;
+        &lt;data type="NMTOKEN"/&gt;
+      &lt;/attribute&gt;
+      &lt;oneOrMore&gt;
+        &lt;choice&gt;
+          &lt;text/&gt;
+          &lt;element name="DefaultSemantic"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;element name="Float"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;attribute name="value"&gt;
+              &lt;data type="decimal"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;element name="Material"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;element name="SoundType"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;attribute name="value"&gt;
+              &lt;data type="integer"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;element name="Texture"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;optional&gt;
+              &lt;attribute name="RequiresID"&gt;
+                &lt;data type="boolean"/&gt;
+              &lt;/attribute&gt;
+            &lt;/optional&gt;
+            &lt;attribute name="ResName"&gt;
+              &lt;data type="NMTOKEN"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;element name="Vector4f"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;attribute name="value"/&gt;
+          &lt;/element&gt;
+          &lt;element name="Vector4fArray"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;attribute name="value"/&gt;
+          &lt;/element&gt;
+          &lt;element name="texture"&gt;
+            &lt;attribute name="Name"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+            &lt;attribute name="ResName"&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+        &lt;/choice&gt;
+      &lt;/oneOrMore&gt;
+    &lt;/element&gt;
+  &lt;/start&gt;
+&lt;/grammar&gt;
+</pre>

@@ -1,0 +1,290 @@
+<p>TS_System contains three worksheets:
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#TS_Category"><span class="tocnumber">1</span> <span class="toctext">TS_Category</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#TS_Material"><span class="tocnumber">2</span> <span class="toctext">TS_Material</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#TS_Stealing"><span class="tocnumber">3</span> <span class="toctext">TS_Stealing</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#TS_Category_Excel_files"><span class="tocnumber">4</span> <span class="toctext">TS_Category Excel files</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="TS_Category">TS_Category</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Prefix
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  this string determines which of the treasure tables this treasure type refers to. Treasure tables are defined in 2DAs with the prefix string at the front of their names.
+</td></tr></table>
+<h2><span class="mw-headline" id="TS_Material">TS_Material</span></h2>
+<p>The <b>TS_Material</b> worksheet defines the material progress used by the scaling system.  
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> A human-friendly identifier for this progression, displayed in the toolset
+</td></tr>
+<tr>
+<th> Material1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material4
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material5
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material6
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material7
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material8
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material9
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material10
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material11
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material12
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material13
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material14
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr>
+<tr>
+<th> Material15
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The ID of a material from <b>materialtypes</b> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="TS_Stealing">TS_Stealing</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="TS_Category_Excel_files">TS_Category Excel files</span></h2>
+<p>Each entry in TS_Category has an associated xls file with worksheets for each rank of monster or placeable in that category. For example, for the prefix TS_Darkspawn there are worksheets named:
+</p>
+<ul><li>TS_DarkspawnCreCritter</li>
+<li>TS_DarkspawnCreNormal</li>
+<li>TS_DarkspawnCreLieutenant</li>
+<li>TS_DarkspawnCreBoss</li>
+<li>TS_DarkspawnCreEliteBoss</li>
+<li>TS_DarkspawnPlcCritter</li>
+<li>TS_DarkspawnPlcNormal</li>
+<li>TS_DarkspawnPlcLieutenant</li>
+<li>TS_DarkspawnPlcBoss</li>
+<li>TS_DarkspawnPlcEliteBoss</li></ul>
+<p>Each worksheet has the folowing columns:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td> a human-readable comment field describing what this entry is
+</td></tr>
+<tr>
+<th> Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>
+</td>
+<td>  the item resource for this treasure
+</td></tr>
+<tr>
+<th> Stacksize
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  how many of the item you'll find.
+</td></tr>
+<tr>
+<th> Instances
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Chance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> TotalEntries
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Set
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SetTotal
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SetLabel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr></table>

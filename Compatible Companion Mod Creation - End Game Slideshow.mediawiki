@@ -1,0 +1,32 @@
+<p>The <b>End Game Slideshow</b> step describes to display slides for your custom companion during the epilogue.
+</p>
+<h2><span class="mw-headline" id="What_we_need">What we need</span></h2>
+<p>The core plot file epipt_main, contains the variable EPI_JUMP_TO_SLIDE_SHOW, which is set once you talk to the guard post-coronation at the doors and the end slideshow begins.
+</p><p>Add  the variable VALERIA_EPI_JUMP_TO_SLIDE_SHOW in the companion  VALERIA_NPC_HIRE plot, so we only do this once. We also need the dlg  file with the slide dialog and pretty pictures. I use my main dialog  file for this, you don't have to: valeria_npc.dlg
+</p>
+<h2><span class="mw-headline" id="To_implement">To implement</span></h2>
+<p>In includes, add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;plt_epipt_main&quot;</span></pre></div></div>
+<p>In the function check_plot_changed() add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">...
+    <span class="co1">//valeria in the epilogue</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a>  <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_EPIPT_MAIN,EPI_JUMP_TO_SLIDE_SHOW<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span>  <span class="sy0">!</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_EPI_JUMP_TO_SLIDE_SHOW<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_EPI_JUMP_TO_SLIDE_SHOW,TRUE<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BeginSlideshow"><span class="kw4">BeginSlideshow</span></a><span class="br0">&#40;</span>R<span class="st0">&quot;valeria_npc.dlg&quot;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="co1">//it has to go above this check, otherwise if you don't pick her up</span>
+<span class="co1">//the script won't fire and the appropriate slides won't be shown</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+...</pre></div></div>
+<h2><span class="mw-headline" id="Structure_of_the_file_valeria_npc.dlg">Structure of the file valeria_npc.dlg</span></h2>
+<p>Note the check to see if the end game slides have run. I'm assuming the game  ends after, so this runs only once and it's done. If another mod has  the same setup (with different names for plots, flags etc) that mod script should run and continue the slideshow until the BioWare credits run.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow1.JPG"><img alt="Slideshow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Slideshow1.JPG" width="200" height="127" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Slideshow1.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Slideshow1.JPG 2x" /></a>
+</p><p>Now display the appropriate  text and picture (it is set on the slideshow tab) depending on which  flags from the companion mod are true (depending on whether the PC  helped the companion and so forth)
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Slideshow2.JPG"><img alt="Slideshow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Slideshow2.JPG" width="200" height="130" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Slideshow2.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Slideshow2.JPG 2x" /></a>
+</p>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Random%20Banter" title="Random Banter"><img alt="Random Banter" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20At%20The%20Gates" title="At The Gates"><img alt="At The Gates" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

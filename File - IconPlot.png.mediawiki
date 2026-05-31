@@ -1,0 +1,66 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png"><img alt="File:IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" title="IconPlot.png">IconPlot.png</a> &#8206;<span class="fileInfo">(12 × 12 pixels, file size: 268 B, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr">
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png">03:06, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png"><img alt="Thumbnail for version as of 03:06, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="120" height="120" /></a></td><td>12 × 12 <span style="white-space: nowrap;">(268 B)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 36 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20-%20ru" title="Area/ru">Area/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list%20-%20ru" title="Area list/ru">Area list/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20-%20ru" title="Conversation/ru">Conversation/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20-%20ru" title="Cutscene/ru">Cutscene/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Designer Resources/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Introductory%20tutorial" title="Introductory tutorial">Introductory tutorial</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">List of file types</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20list" title="Resource list">Resource list</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource palette</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Script/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage%20-%20ru" title="Stage/ru">Stage/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger%20-%20ru" title="Trigger/ru">Trigger/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">VFX editor</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen%20-%20Sandbox" title="User:BryanDerksen/Sandbox">User:BryanDerksen/Sandbox</a></li>
+<li class="mw-imagepage-linkstoimage-ns10"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Resource%20palette" title="Template:Resource palette">Template:Resource palette</a></li>
+</ul>
+</div>

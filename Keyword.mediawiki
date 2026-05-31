@@ -1,0 +1,32 @@
+<p>A <strong class="selflink">keyword</strong>  is a reserved word which has a predefined and special meaning to the compiler. Keywords cannot be used as a function or variable's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Identifier" title="Identifier (page does not exist)">identifier</a>.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dascript" title="Dascript (page does not exist)">dascript</a> compiler recognizes the following keywords:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Continue%20keyword" title="Continue keyword (page does not exist)">continue</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Default%20keyword" title="Default keyword (page does not exist)">default</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Do%20keyword" title="Do keyword (page does not exist)">do</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword" title="Else keyword (page does not exist)">else</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword" title="For keyword (page does not exist)">for</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword" title="If keyword (page does not exist)">if</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20keyword" title="Itemproperty keyword">itemproperty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword" title="OBJECT SELF keyword (page does not exist)">OBJECT_SELF</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Player%20keyword" title="Player keyword">player</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword" title="Return keyword (page does not exist)">return</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword" title="Struct keyword (page does not exist)">struct</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword" title="Switch keyword (page does not exist)">switch</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword" title="While keyword (page does not exist)">while</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20editor" title="Script editor (page does not exist)">Script editor</a>'s syntax highlighter treats the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constant">boolean constants</a> (TRUE and FALSE) as keywords.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Keywords" title="Category:Keywords">Keywords</a></li></ul>

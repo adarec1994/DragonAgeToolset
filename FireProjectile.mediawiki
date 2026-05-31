@@ -1,0 +1,20 @@
+<p>Fire a projectile from a specified source point to a target position
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> FireProjectile(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vSourcePosition,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vTargetPosition,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCrustEffectId&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bWideAngle&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oEventTarget&#160;= OBJECT_INVALID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nType<dd>the projectile type (see the PRJ 2da)<dt style="font-weight:normal; font-style:italic;">vSourcePosition<dd>start position for the projectile<dt style="font-weight:normal; font-style:italic;">vTargetPosition<dd>end position to hit<dt style="font-weight:normal; font-style:italic;">nCrustEffectId<dd>crust vfx to apply to the projectile<dt style="font-weight:normal; font-style:italic;">bWideAngle<dd>enable this to make the projectile follow a longer trajectory<dt style="font-weight:normal; font-style:italic;">oEventTarget<dd>object to send the impact event to
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>projectile id
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FireHomingProjectile" title="FireHomingProjectile">FireHomingProjectile</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent" title="SetProjectileImpactEvent">SetProjectileImpactEvent</a>
+</p>

@@ -1,0 +1,46 @@
+<p>The <b>resource</b> type represents a game resource file.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>A resource <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> must adhere to the pattern <b>R"&lt;ResourceName&gt;"</b>. The &lt;ResourceName&gt; element must adhere to the pattern <b>&lt;ResRef&gt;.&lt;ResType&gt;</b> and can be no more than 32 characters including the ".". The &lt;ResRef&gt; and &lt;ResType&gt; elements must only contain lower case letters, numbers, and/or underscores.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// valid resource literals</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rLiteral1 <span class="sy0">=</span> R<span class="st0">&quot;abomination.utc&quot;</span>;                        <span class="co1">// a creature resource literal</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rLiteral2 <span class="sy0">=</span> R<span class="st0">&quot;it_some_ale.uti&quot;</span>;                        <span class="co1">// an item resource literal</span>
+&#160;
+    <span class="co1">// invalid resource literals</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rInvalid1 <span class="sy0">=</span> <span class="st0">&quot;no_prefix_literal.uti&quot;</span>;                   <span class="co1">// causes &quot;Mismatch types&quot; error</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rInvalid2 <span class="sy0">=</span> R<span class="st0">&quot;no_extension_literal&quot;</span>;                   <span class="co1">// causes &quot;Unknown error&quot; error</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rInvalid3 <span class="sy0">=</span> R<span class="st0">&quot;too__many__characters__literal.uti&quot;</span>;     <span class="co1">// causes &quot;Unknown error&quot; error</span></pre></div></div>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<h3><span class="mw-headline" id="Explicit">Explicit</span></h3>
+<p>There are no native functions that can be used to convert another data type to a resource.
+</p><p>The following functions can be used to convert a resource to another data type:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ResourceToString" title="ResourceToString">ResourceToString</a></li></ul>
+<h3><span class="mw-headline" id="Implicit">Implicit</span></h3>
+<p>There is no implicit conversion to a resource.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow a resource to exist outside of the scope of the current script by storing it on an object or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalResource" title="SetLocalResource">SetLocalResource</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventResource" title="SetEventResource">SetEventResource</a></li></ul>
+<p>The following functions allow a resource which exist outside of the scope of the current script to be used in the current script by retrieving it from an object or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalResource" title="GetLocalResource">GetLocalResource</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventResource" title="GetEventResource">GetEventResource</a></li></ul>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rDefault;
+&#160;
+    <span class="co1">// initialised using a literal: value = R&quot;resource_test.nsc&quot; </span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rLiteral <span class="sy0">=</span> R<span class="st0">&quot;resource_test.nsc&quot;</span>;
+&#160;
+    <span class="co1">// initialised using a function: value = R&quot;resource_test.nsc&quot;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rFunction <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptResource"><span class="kw4">GetCurrentScriptResource</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Resource%20functions" title="Category:Resource functions (page does not exist)">Resource functions</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Resource%20constants" title="Category:Resource constants (page does not exist)">Resource constants</a>
+</p>

@@ -1,0 +1,69 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// -----------------------------------------------------------------------------</span>
+<span class="co1">// Check if backstab conditions are true</span>
+<span class="co1">// -----------------------------------------------------------------------------</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_CheckBackstab<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fFlankingBonus<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// If we we are a rogue</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_HIDDEN_ROGUE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsHumanoid"><span class="kw4">IsHumanoid</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// And target is not immune</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oTarget, ABILITY_TRAIT_CRITICAL_HIT_IMMUNITY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// And attacker does not use double strike mode</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsModalAbilityActive"><span class="kw4">IsModalAbilityActive</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_DUAL_WEAPON_DOUBLE_STRIKE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+     <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// We can only backstab if we are flanking.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fFlankingBonus<span class="sy0">&gt;</span><span class="nu0">0.0</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+         <span class="coMULTI">/* Coup de grace*/</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_BACKSTAB<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oTarget, EFFECT_TYPE_STUN<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oTarget, EFFECT_TYPE_PARALYZE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+<span class="br0">&#125;</span></pre></div></div>

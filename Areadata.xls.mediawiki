@@ -1,0 +1,6 @@
+<p>The <strong class="selflink">areadata.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files used to define additional area properties.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> _control</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Areadata%202da" title="Areadata 2da">areadata</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Areascalegroup%202da" title="Areascalegroup 2da">areascalegroup</a></li></ul>

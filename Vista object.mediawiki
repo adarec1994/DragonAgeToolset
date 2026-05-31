@@ -1,0 +1,72 @@
+<p><b>Vista objects</b> are large, low-detail props that are placed far outside the player-accessible area of a level layout to create a sense of scale that's much larger than the level would otherwise allow. For example, one can place mountains on the horizon.
+</p><p>For scale, the green terrain mesh visible in each shot is a default 64m x 64m size
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:36.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vis%20mtn%2001%200.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Vis_mtn_01_0.jpg/120px-Vis_mtn_01_0.jpg" width="120" height="77" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Vis_mtn_01_0.jpg/180px-Vis_mtn_01_0.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Vis_mtn_01_0.jpg/240px-Vis_mtn_01_0.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vis mtn 01 0
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vst%20cliff%2001%201.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Vst_cliff_01_1.jpg" width="116" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Vst_cliff_01_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Vst_cliff_01_1.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vst cliff 01 1
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:21px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vst%20cliff%2002%201.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/14/Vst_cliff_02_1.jpg/120px-Vst_cliff_02_1.jpg" width="120" height="108" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/14/Vst_cliff_02_1.jpg/180px-Vst_cliff_02_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/14/Vst_cliff_02_1.jpg/240px-Vst_cliff_02_1.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vst cliff 02 1
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vst%20frostbacks%2001%201.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Vst_frostbacks_01_1.jpg" width="92" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Vst_frostbacks_01_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Vst_frostbacks_01_1.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vst frostbacks 01 1
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:17px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vst%20frostbacks%2002%201.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Vst_frostbacks_02_1.jpg" width="120" height="116" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Vst_frostbacks_02_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Vst_frostbacks_02_1.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vst frostbacks 02 1
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vst%20frostbacks%2003%201.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/Vst_frostbacks_03_1.jpg" width="106" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/Vst_frostbacks_03_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/Vst_frostbacks_03_1.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Vst frostbacks 03 1
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>The use of vista objects to create the sense of being in a large city is illustrated with these screenshots of the Denerim marketplace:
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Denerim%20market%20far.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Denerim_market_far.jpg" width="112" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Denerim_market_far.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Denerim_market_far.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Distant overview showing all of the vista objects at their lowest LOD
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Denerim%20market%20mid.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Denerim_market_mid.jpg" width="112" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Denerim_market_mid.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/Denerim_market_mid.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Closer in, you can see that some of the vista objects have low-detail fake buildings on them.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Denerim%20street%20level.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/Denerim_street_level.jpg" width="112" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/Denerim_street_level.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/Denerim_street_level.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Near street level, the horizon is obscured by nearby buildings and the vista objects can be seen in the distance over their rooftops. When the player moves about parallax shows how far away they are.
+</p>
+			</div>
+		</div></li>
+</ul>

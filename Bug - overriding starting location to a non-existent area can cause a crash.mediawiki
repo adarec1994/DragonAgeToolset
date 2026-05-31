@@ -1,0 +1,18 @@
+<ul><li><b>Version found:</b> 1.0.1008.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 205368  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If you override the starting area and waypoint for a module (under <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Export%20options" title="Export options (page does not exist)">export options</a>) to a non-existent area, the game will crash without an informative error message when it tries to load up the nonexistent area.
+</p><p>This can only occur under unusual circumstances. To force the toolset to override starting position to a nonexistent area you need to first set the toolset to that area, then shut down the toolset and restore a copy of the database that lacks that area.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>

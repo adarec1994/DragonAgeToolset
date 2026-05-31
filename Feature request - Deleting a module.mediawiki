@@ -1,0 +1,45 @@
+<p>The current toolset does not allow for the deletion of a module that has been created.
+Users typically initially create a bunch of test modules that cannot be removed, and forever after clutter up the list of modules.
+</p><p>There is a hacky workaround of deleting the module name manually from the database, but it just orphans all the modules resources without removing them from the database.
+</p><p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 210854  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a>
+</p>
+</td></tr></table>
+<p>Beware, this is by no means a clean and easy solution.
+</p>
+<h2><span class="mw-headline" id="Deleting_a_Module_from_the_Toolset_Workarounds">Deleting a Module from the Toolset Workarounds</span></h2>
+<h3><span class="mw-headline" id="Quick_and_Dirty_Approach_.28Creates_Orphans.29">Quick and Dirty Approach (Creates Orphans)</span></h3>
+<p>Scenario: I created a module called Meep with a unique id of rcfMeep, added in one area with a waypoint, configured the starting area/waypoint info, and exported it with dependencies.  And now I want to strip it out.
+</p><p>Step 1: Removing it from the game
+</p>
+<ul><li> Navigate to My Documents\Bioware\AddIns</li>
+<li> Delete the folder called rcfMeep</li>
+<li> Done</li></ul>
+<p>Removing from the game is fairly easy.  The toolset?  Not so much.  The reason for this is that the information is stored in the SQL Database.  Now if you just want to remove the module from the Manage Modules list, that is easy.
+</p>
+<ul><li> Open Sql Server Management Studio Express.  I'm not sure if the default installation installs this or not.  If not, it can be downloaded from Microsoft.</li>
+<li> Connect to the BWDATOOLSET server, assuming that you kept the default options.</li>
+<li> Expand Databases</li>
+<li> Expand bw_dragonage_content</li>
+<li> Expand Tables</li>
+<li> Right click and select open table on the dbo.Module table</li>
+<li> This will bring up an excell-like window.  Find your module, right-click on the row, and select delete.  Say ok to the confirmation.</li>
+<li> Module is now PERMANENTLY removed.  Absolutely no way of recovering it.</li></ul>
+<p>Now depending on the size of the Module, you just orphaned a bunch of resources.  Areas, placables, conversations, they all get placed into the database.  And once you remove the module ID, you just lost your ability to remove these resources.  Now do keep in mind that 95% of this junk is just text, so it hardly takes up any room.  It's not really a major issue.  However if you delete out the resources within the toolset before you remove the module reference you should avoid this.
+</p>
+<h3><span class="mw-headline" id="Thorough_Approach_.28Advanced.2C_Avoid_Orphans.29">Thorough Approach (Advanced, Avoid Orphans)</span></h3>
+<p>Instead of removing only the entry from the dbo.t_Module table as described above, you can modify the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Resource%20Script.sql" title="Module Resource Script.sql">module resource SQL script</a> to delete instead of select. This should clean up all of your module resources cleanly, but is a higher risk approach since you could accidentally delete more than you intended.
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module%20-%20ru" title="Feature request: Deleting a module/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

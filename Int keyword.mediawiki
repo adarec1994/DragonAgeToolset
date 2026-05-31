@@ -1,0 +1,59 @@
+<p>The <b>int</b> type represents a signed 32-bit integer between -2,147,483,648 and 2,147,483,647.  The default value is 0.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>An int <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> can be a decimal (base 10) or hexadecimal (base 16) number. A decimal integer literal consists of a string of decimal digits (0-9). A hexadecimal literal consists of "0x" or "0X" followed by a string of hexadecimal digits (0-9, a-f, A-F).
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<h3><span class="mw-headline" id="Explicit">Explicit</span></h3>
+<p>The following functions can be used to convert another data type to an int:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharToInt" title="CharToInt">CharToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToInt" title="FloatToInt">FloatToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HexStringToInt" title="HexStringToInt">HexStringToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToInt" title="StringToInt">StringToInt</a></li></ul>
+<p>The following functions can be used to convert an int to another data type:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToChar" title="IntToChar">IntToChar</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToFloat" title="IntToFloat">IntToFloat</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToHexString" title="IntToHexString">IntToHexString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString" title="IntToString">IntToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString" title="ToString">ToString</a></li></ul>
+<h3><span class="mw-headline" id="Implicit">Implicit</span></h3>
+<p>There is no implicit conversion to an int.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow an int to exists outside of the scope of the current script by storing it on an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt" title="SetLocalInt">SetLocalInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectInteger" title="SetEffectInteger">SetEffectInteger</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger" title="SetEventInteger">SetEventInteger</a></li></ul>
+<p>The following functions allow an int which exist outside of the scope of the current script to be used in the current script by retrieving it from an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt" title="GetLocalInt">GetLocalInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger" title="GetEffectInteger">GetEffectInteger</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a></li></ul>
+<h2><span class="mw-headline" id="Special">Special</span></h2>
+<p>In <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dascript" title="Dascript (page does not exist)">dascript</a> there is no Boolean type.  Instead integer values are used to represent Boolean values: 0 represents the <b>false</b> state and anything else represents the <b>true</b> state.  For convenience two <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constants">boolean constants</a> have been defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> to represent the true and false states:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> FALSE <span class="sy0">=</span> <span class="nu0">0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> TRUE <span class="sy0">=</span> <span class="nu0">1</span>;</pre></div></div>
+<p>Care should be taken when evaluating comparisons with TRUE as, for example, the number 2 will evaluate to <b>true</b> but 2 == TRUE would evaluate to <b>false</b> because the literal value of TRUE is not 2.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised: value = 0</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nDefault;
+&#160;
+    <span class="co1">// initialised: value = 42</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSpecific <span class="sy0">=</span> <span class="nu0">42</span>;
+&#160;
+    <span class="co1">// initialised with hexadecimal literal: value = 42</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nHexadecimal <span class="sy0">=</span> <span class="nu0">0x002A</span>;
+&#160;
+    <span class="co1">// initialised with boolean constant: value = 1</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bBoolean <span class="sy0">=</span> TRUE;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintInteger" title="PrintInteger">PrintInteger</a>
+</p>

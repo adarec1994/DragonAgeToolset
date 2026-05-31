@@ -1,0 +1,17 @@
+<p>Returns the position of a substring within a string.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> UT_FindSubString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sSubString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nInstance&#160;= 1<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sString<dd>the string to search<dt style="font-weight:normal; font-style:italic;">sSubString<dd>the substring to search for<dt style="font-weight:normal; font-style:italic;">nInstance<dd>The instance of the substring to return (default is the first instance).
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the starting index of the specified instance of the substring. -1 on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the starting index of the specified instance of the substring sSubstring within the string sString. Returns -1 if the specified instance of the substring does not occur in the string.  The search is 0 indexed, so if the substring occurs at the very beginning of the string this function will return 0.  'UT_FindSubString("monkey_laser_fun", "_", 2);' would return 12.
+</p>

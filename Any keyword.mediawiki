@@ -1,0 +1,2 @@
+<p>The <b>any</b> keyword can be used in place of a data type for a function's parameter. It is not itself a data type, but instead indicates that a variable of any data type can be passed in that parameter.
+</p>

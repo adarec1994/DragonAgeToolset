@@ -1,0 +1,18 @@
+<p>There is a poorly worded fragmented sentence in the Creating A Placeable section. 2nd to last paragraph, last sentence in the paragraph (the one about checking stuff in and out). I think I know what it is trying to say but am not confident about it. It's that "with you working on an instance" bit tacked onto the end there that's throwing me.
+</p><p>I think it means to say that you must be working on an instance in order to make any changes, but in order to create an instance you can work on, you must check it out of the database first. The process of checking a resource out of the database creates this instance for you.
+</p><p>Needs a better writer than me to fix it.
+</p><p>There is also a surprise at the end of the following paragraph. You can freely change the name delete etc except (surprise) in this one case when you have dependent resources (which are&#160;????).
+</p><p>Maybe just one more sentence there to flesh out that special case a tad more. 
+</p><p>dependent resources ...such as when you have blah blah causing blah blah dependency.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Axe%20Murderer" title="User:Axe Murderer (page does not exist)">Axe Murderer</a> 23:30, 28 October 2009 (UTC)
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Explanation_on_Checking_material_in_and_out">Explanation on Checking material in and out</span></h2>
+<p>The section on how to check resources in and out should really just link to an article explaining this concept.
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Morikahn" title="User:Morikahn (page does not exist)">Morikahn</a> 09:35, 18 November 2009 (UTC)
+</p>
+<h2><span class="mw-headline" id="Does_it_mean_.22Three_Axis_Movement.22_button.3F">Does it mean "Three Axis Movement" button?</span></h2>
+<p>The article says:
+"To adjust the x,y,z position either activate the Local Coordinates button or use the keyboard shortcut 'q'. With this activated, you can mouse over any axis (notice the change to the yellow highlight) and the object will move only in the selected dimension."
+</p><p>I think it means the 3 axis movement button.
+</p>

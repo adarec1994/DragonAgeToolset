@@ -1,0 +1,19 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd>the player clicks on a destination in the world map
+<dt>Sent from:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine" title="Engine (page does not exist)">engine</a>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Integer 0: terrain type traveling from</li><li>Integer 1: terrain type traveling to</li><li>String 0: the area tag the player is travelling from</li><li>String 1: the area tag the player is travelling to</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_WORLD_MAP_USED:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nSourceTerrain = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// terrain type traveling from</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTargetTerrain = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// terrain type traveling to</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sSource = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// the area tag the player is travelling from</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTarget = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// the area tag the player is travelling to</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>
+<p><b>Note:</b> This event may be obsolete, I think <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20BEGIN%20TRAVEL" title="EVENT TYPE BEGIN TRAVEL">EVENT_TYPE_BEGIN_TRAVEL</a> is the one that actually fires now.
+</p>

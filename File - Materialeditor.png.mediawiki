@@ -1,0 +1,45 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li>
+<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png"><img alt="File:Materialeditor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" width="731" height="350" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" title="Materialeditor.png">Materialeditor.png</a> &#8206;<span class="fileInfo">(731 × 350 pixels, file size: 65 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr">
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png">08:12, 8 March 2014</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png"><img alt="Thumbnail for version as of 08:12, 8 March 2014" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Materialeditor.png" width="120" height="57" /></a></td><td>731 × 350 <span style="white-space: nowrap;">(65 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ladyofpayne" class="new mw-userlink" title="User:Ladyofpayne (page does not exist)">Ladyofpayne</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Ladyofpayne" title="User talk:Ladyofpayne (page does not exist)">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FLadyofpayne" title="Special:Contributions/Ladyofpayne">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 3 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20armor%20tutorial" title="Adding custom armor tutorial">Adding custom armor tutorial</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20armor%20tutorial%20-%20ru" title="Adding custom armor tutorial/ru">Adding custom armor tutorial/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20level%20tutorial" title="Adding custom level tutorial">Adding custom level tutorial</a></li>
+</ul>
+</div>
+<h2 id="metadata">Metadata</h2>
+<div class="mw-imagepage-section-metadata">This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
+If the file has been modified from its original state, some details may not fully reflect the modified file.<table id="mw_metadata" class="mw_metadata">
+<tr class="exif-xresolution collapsable">
+<th>Horizontal resolution</th>
+<td>37.79 dpc</td>
+</tr><tr class="exif-yresolution collapsable">
+<th>Vertical resolution</th>
+<td>37.79 dpc</td>
+</tr></table>
+</div>

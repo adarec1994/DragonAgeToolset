@@ -1,0 +1,346 @@
+<h2><span class="mw-headline" id="as_data">as_data</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  s1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  str
+</td></tr>
+<tr>
+<th>  s2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  dex
+</td></tr>
+<tr>
+<th>  s3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  wil
+</td></tr>
+<tr>
+<th>  s4
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  mag
+</td></tr>
+<tr>
+<th>  s5
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  int
+</td></tr>
+<tr>
+<th>  s6
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  con
+</td></tr>
+<tr>
+<th>  PointCalc
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>  This has to be 3 to be "fair" to the player
+</td></tr>
+<tr>
+<th>  Prio
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="autoscale">autoscale</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fScale
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fHealthScale
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  nBonusPoints
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  nLevelScale
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fDamageScale
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fPointVal
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fResistanceModifier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fResistanceMaximum
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_LowTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_HighTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_Money
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_ItemNum
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_HighChance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TS_EquipmentChance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fStealingModifier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  nStealthRank
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Stealth rank required to combat stealth
+</td></tr>
+<tr>
+<th>  nCombatTrain
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  NPCS: Chance for a single point of damage to interrupt a spell.
+</td></tr>
+<tr>
+<th>  nReactiveTier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fEffectDurCasual
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fEffectDurNormal
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fEffectDurHard
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fEffectDurNmar
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  BaseSR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  BaseDR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="creatureranks">creatureranks</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Portraitframe
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Stref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  fDeathblow
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  color
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  The text color of the name floaty for the creature of this rank.   Format:  0xRRGGBB.
+</td></tr>
+<tr>
+<th>  tempxp
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  IsSpecial
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Special ranks are unaffected by a number of things, including the 'slay darkspawn' weapon property.
+</td></tr>
+<tr>
+<th>  IsBoss
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Boss ranks are unaffected by a number of things, like Crushing Prison and shattering.
+</td></tr>
+<tr>
+<th>  RankRating
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr></table>

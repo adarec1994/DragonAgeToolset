@@ -1,0 +1,42 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li>
+<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png"><img alt="File:Tmp female proportion encb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png" width="600" height="600" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png 2x" /></a><div class="mw-filepage-resolutioninfo">Size of this preview: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png" class="mw-thumbnail-link">600 × 600 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolution: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png" class="mw-thumbnail-link">240 × 240 pixels</a>.</span></div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png" title="Tmp female proportion encb.png">Original file</a> &#8206;<span class="fileInfo">(2,048 × 2,048 pixels, file size: 1.3 MB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>example UV MAP
+</p>
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png">12:31, 26 June 2022</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png"><img alt="Thumbnail for version as of 12:31, 26 June 2022" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Tmp_female_proportion_encb.png" width="120" height="120" /></a></td><td>2,048 × 2,048 <span style="white-space: nowrap;">(1.3 MB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Commanderstrawberry" class="new mw-userlink" title="User:Commanderstrawberry (page does not exist)">Commanderstrawberry</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Commanderstrawberry" title="User talk:Commanderstrawberry (page does not exist)">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FCommanderstrawberry" title="Special:Contributions/Commanderstrawberry">contribs</a>)</span></span></td><td dir="ltr">example UV MAP</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id="mw-imagepage-nolinkstoimage">
+<p>There are no pages that link to this file.
+</p>
+</div>
+<h2 id="metadata">Metadata</h2>
+<div class="mw-imagepage-section-metadata">This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
+If the file has been modified from its original state, some details may not fully reflect the modified file.<table id="mw_metadata" class="mw_metadata">
+<tr class="exif-xresolution collapsable">
+<th>Horizontal resolution</th>
+<td>28.35 dpc</td>
+</tr><tr class="exif-yresolution collapsable">
+<th>Vertical resolution</th>
+<td>28.35 dpc</td>
+</tr></table>
+</div>

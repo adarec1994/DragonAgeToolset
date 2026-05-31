@@ -1,0 +1,24 @@
+<p>Returns whether two groups are hostile to each other.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetGroupHostility(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGroupA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGroupB<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nGroupA<dd>The source group to use to check the hostility tables<dt style="font-weight:normal; font-style:italic;">nGroupB<dd>The target group to use to check the hostility tables
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if the two groups are hostile. FALSE otherwise. Returns FALSE on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function accesses the hostility tables for the two specified groups and returns whether they are hostile to each other or not. If either of the two group ID's are not valid, the function will return FALSE. Changing group hostility will result in a perception event being refired to all creatures that can perceive a member of the group.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>If invalid group ID's are specified, the function will return FALSE
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGroupHostility" title="SetGroupHostility">SetGroupHostility</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGroupId" title="GetGroupId">GetGroupId</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGroupId" title="SetGroupId">SetGroupId</a>
+</p>

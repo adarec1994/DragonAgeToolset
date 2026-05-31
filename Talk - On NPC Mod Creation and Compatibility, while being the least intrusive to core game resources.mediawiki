@@ -1,0 +1,5 @@
+<p>Let us discuss issues involved with these approaches here.
+In particular, we need to see if Patch 1.04 changed the name of some flags of the plots involved in the wiki illustrations.
+</p><p>To give you an example: in one of my puzzle areas, in order for a rogue to enter he must be stealthed. The trigger near the door, checks for rogue class and the function IsStealthy() is used as well. Unfortunately, I'm getting reports from several people that this script doesn't capture those two characteristics anymore. It could be a mod that either changed the stealth ABI_BASE id or scripts involved, or patch 1.04. That one always breaks my game. If anyone has any idea why it happens, it will help me fix problems with the wiki and make it compatible with patch 1.04.
+</p><p>E.g., clean game install, install patch 1.04, no mods installed, go level and see attributes swap their place with skills(on the left instead of the right of the gui), to name one bug, or scripts not firing the right way to name another. Very frustrating...
+</p>

@@ -1,0 +1,17 @@
+<p>Sets the active plot action set, or zero to hide the control.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetPlotActionSet(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPlotActionSet<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nPlotActionSet<dd>the set defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plotactions.xls" title="Plotactionsets">plotactionsets</a> 2DA to be set active. 0 hides the plot action GUI
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function shows the "army picker" GUI in the upper right of the screen with a set of up to four actions that the player can pick from it. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plotactions.xls" title="Plotactions.xls">plotactions.xls</a> for how to set up a set of plot actions to be displayed here.
+</p>

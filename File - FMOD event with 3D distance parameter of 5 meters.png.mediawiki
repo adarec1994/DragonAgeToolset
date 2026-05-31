@@ -1,0 +1,55 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png"><img alt="File:FMOD event with 3D distance parameter of 5 meters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png" width="799" height="164" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png 2x" /></a><div class="mw-filepage-resolutioninfo">Size of this preview: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png" class="mw-thumbnail-link">799 × 164 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolution: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png" class="mw-thumbnail-link">320 × 66 pixels</a>.</span></div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png" title="FMOD event with 3D distance parameter of 5 meters.png">Original file</a> &#8206;<span class="fileInfo">(1,246 × 256 pixels, file size: 22 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td> FMOD
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td>
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png">02:35, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png"><img alt="Thumbnail for version as of 02:35, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/FMOD_event_with_3D_distance_parameter_of_5_meters.png" width="120" height="25" /></a></td><td>1,246 × 256 <span style="white-space: nowrap;">(22 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 2 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20FMOD%20event%20with%203D%20distance%20parameter%20of%205%20meters.png" title="File:DA Audio Design Documentation Ambience Content html 5c20101.png">File:DA Audio Design Documentation Ambience Content html 5c20101.png</a> (file redirect) <ul class="mw-imagepage-redirectstofile"><li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a></li>
+</ul>
+</li>
+</ul>
+</div>

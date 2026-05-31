@@ -1,0 +1,34 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/%D0%93%D0%BB%D0%BE%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B9">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.9E.D0.B1_.D1.8D.D1.82.D0.BE.D0.B9_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D0.B5">Об этой странице</span></h2>
+<p>Здесь вы найдете список утвержденных и обсуждаемых вариантов перевода различных названий, терминов и выражений, встречающихся на страницах DA Wiki. Также вы сами можете поучаствовать в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20%D0%93%D0%BB%D0%BE%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B9" title="Talk:Translation:Glossary/ru">обсуждении</a>, предложить собственные варианты перевода и добавить в глоссарий недостающие слова.
+</p>
+<h2><span class="mw-headline" id=".D0.93.D0.BB.D0.BE.D1.81.D1.81.D0.B0.D1.80.D0.B8.D0.B9">Глоссарий</span></h2>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center"><b>Навигация</b><br />  <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
+</td></tr></table> 
+<h3><span class="mw-headline" id="A">A</span></h3>
+<ul><li><b>Area</b> - локация</li>
+<li><b>Art resiurces</b> - художественные ресурсы, художка</li></ul>
+<h3><span class="mw-headline" id="C">C</span></h3>
+<ul><li><b>Cutscene</b> - сюжетный ролик, клип, катсцена.</li></ul>
+<h3><span class="mw-headline" id="D">D</span></h3>
+<ul><li><b>Designer resources</b> - проектные ресурсы</li></ul>
+<h3><span class="mw-headline" id="M">M</span></h3>
+<ul><li><b>Morph</b> - морф</li></ul>
+<h3><span class="mw-headline" id="P">P</span></h3>
+<ul><li><b>Placeable</b> - размещаемый объект (РО), размещёнка</li>
+<li><b>Plot</b> - </li></ul>
+<h3><span class="mw-headline" id="R">R</span></h3>
+<ul><li><b>Resource Palette</b> - палитра ресурсов</li></ul>
+<h3><span class="mw-headline" id="S">S</span></h3>
+<ul><li><b>Script</b> - скрипт</li>
+<li><b>Stage</b> - сцена</li></ul>
+<h3><span class="mw-headline" id="T">T</span></h3>
+<ul><li><b>Toolset</b> - тулсет</li>
+<li><b>Trigger</b> - триггер</li></ul>

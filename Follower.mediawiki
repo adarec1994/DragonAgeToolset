@@ -1,0 +1,108 @@
+<p>A <strong class="selflink">follower</strong> is a friendly <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">non-player character</a> who will accompany the player on his/her journey until the follower decides to leave, is dismissed or dies. 
+</p><p>A follower may be a party member (also referred to as a <b>companion</b>) or be a non-party member. Party members can be controlled directly by the player and typically will be more developed than non-party members: they may have their own quest lines; they may have banter with each other; they may approve or disapprove of the player's actions; they may be romanceable; etc. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#List_of_companions"><span class="tocnumber">1</span> <span class="toctext">List of companions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Origins"><span class="tocnumber">1.1</span> <span class="toctext">Origins</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Awakening"><span class="tocnumber">1.2</span> <span class="toctext">Awakening</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="List_of_companions">List of companions</span></h2>
+<h3><span class="mw-headline" id="Origins">Origins</span></h3>
+<table class="wikitable">
+<tr>
+<th> Companion </th>
+<th> Resource Name </th>
+<th> Notes
+</th></tr>
+<tr>
+<td> Alistair </td>
+<td> gen00fl_alistair  </td>
+<td>
+</td></tr>
+<tr>
+<td> Dog </td>
+<td> gen00fl_dog  </td>
+<td>
+</td></tr>
+<tr>
+<td> Leilana </td>
+<td>  gen00fl_leilana </td>
+<td>
+</td></tr>
+<tr>
+<td> Loghain </td>
+<td>  gen00fl_loghain </td>
+<td>
+</td></tr>
+<tr>
+<td> Morrigan </td>
+<td>  gen00fl_morrigan </td>
+<td>
+</td></tr>
+<tr>
+<td> Orghen </td>
+<td>  gen00fl_orghren </td>
+<td>
+</td></tr>
+<tr>
+<td> Shale </td>
+<td>  gen00fl_shale </td>
+<td> The Stone Prisoner (DAO_PRC_CP_2)
+</td></tr>
+<tr>
+<td> Wynne </td>
+<td>  gen00fl_wynne </td>
+<td>
+</td></tr>
+<tr>
+<td> Zevran </td>
+<td>  gen00fl_zevran </td>
+<td>
+</td></tr></table>
+<h3><span class="mw-headline" id="Awakening">Awakening</span></h3>
+<table class="wikitable">
+<tr>
+<th> Companion </th>
+<th> Resource Name </th>
+<th> Notes
+</th></tr>
+<tr>
+<td> Anders </td>
+<td> gxa000fl_anders </td>
+<td>
+</td></tr>
+<tr>
+<td> Justice </td>
+<td> gxa000fl_justice </td>
+<td>
+</td></tr>
+<tr>
+<td> Nathaniel </td>
+<td> gxa000fl_nathaniel </td>
+<td>
+</td></tr>
+<tr>
+<td> Oghren </td>
+<td> gxa000fl_oghren </td>
+<td>
+</td></tr>
+<tr>
+<td> Sigrun </td>
+<td> gxa000fl_sigrun </td>
+<td>
+</td></tr>
+<tr>
+<td> Velanna </td>
+<td> gxa000fl_velanna </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Follower%20tutorials" title="Category:Follower tutorials">Follower tutorials</a> on creating custom companions</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Party%20and%20group%20control" title="Category:Party and group control">Party and group control</a> functions</li></ul>

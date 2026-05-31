@@ -1,0 +1,9 @@
+<ul><li><b>Version found:</b> N/A </li>
+<li><b>Status:</b> Closed</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The head morph for Leliana, available at <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1331/">[1]</a>, has her eyes tucked down inside her mouth. This is caused by the "unique shape" slider for Leliana.
+</p><p>The uem_chf_05a_0.mmh file had duplicated node data for the mshh entry.  While all of the other MMH files for the unique shapes have only six nodes, the Leliana one has seven.  The sixth and seventh nodes are duplicates.  For whatever reason, all of the other unique shapes had their mesh labeled EyesM1, but only the Leliana one had EyesM2.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>This bug was with the game data rather than the toolset itself, and has been patched in patch003.erf located in <code>packages\core\patch</code>.
+</p>

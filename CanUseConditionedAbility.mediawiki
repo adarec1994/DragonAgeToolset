@@ -1,0 +1,20 @@
+<p>Get a list of abilities that need to be turned off due to a condition change
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> CanUseConditionedAbility(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nConditions&#160;= 4294967295<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>owner of the abilities<dt style="font-weight:normal; font-style:italic;">nAbility<dd>The ability in question<dt style="font-weight:normal; font-style:italic;">nConditions<dd>A mask to tell the engine which conditions are being checked for (default is 0xFFFFFF, all conditions)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the ability can be used
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The conditions parameter is to optimize the process a little bit. If a specific condition mask is passed,
+the engine will only check for that condition. If the default value is used, the engine will check all 
+conditions that the abilities on the creature has to have. The conditions for an ability are specified in a column of the 
+same name in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base">ABI_base</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a>.
+</p>

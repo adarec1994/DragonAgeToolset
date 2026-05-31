@@ -1,0 +1,67 @@
+<p>The <strong class="selflink">JobBoardPlots 2da</strong> controls all of the jobs (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">plots</a>) that can be displayed on a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Job%20board" title="Job board">job board</a>.
+</p><p>This <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> file is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> and has an <b>ID</b> of <b>116</b> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and can be extended by m2da fragments which have names starting with <b>JobBoardPlots</b>. 
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  PlotRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)"> resource</a>
+</td>
+<td>  The plot resource that this particular entry belongs to.
+</td></tr>
+<tr>
+<th>  BoardId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  The job board's ID number corresponds to row ID of its entry in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/JobBoards%202da" title="JobBoards 2da">JobBoards 2da</a>.
+</td></tr>
+<tr>
+<th>  VisibleFlag
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A plot flag number from the plot resource  referenced in the PlotRef column. When this plot flag is <i>set</i> the job will be displayed on the Job Board. The job's title will be the plot resource's <b>Name</b> property. When the player clicks on the job's title this plot flag's <b>Journal Text</b> is displayed.
+</td></tr>
+<tr>
+<th>  AcceptedFlag
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A plot flag number from the plot resource referenced in the PlotRef column. When the job is accepted by the player, this flag is set and the job is removed from the Job Board.
+</td></tr>
+<tr>
+<th>  OfferID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  OfferID for PRC Offers (i.e. ID of the offer for the new PRC content, not the ID of the PRC package itself).
+</td></tr>
+<tr>
+<th>  Comments
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr></table>

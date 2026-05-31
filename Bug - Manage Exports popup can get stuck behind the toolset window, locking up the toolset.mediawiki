@@ -1,0 +1,19 @@
+<ul><li><b>Version found:</b> 1.0.1088.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 216819  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If for any reason you minimise the Toolset while Manage Exports is running through tasks it gets stuck behind the main toolset form and you cannot close it without killing the toolset (because you cannot bring it back to the front). This can be a tad annoying even if you haven't got any unsaved changes: big levels can take a long time to load.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Take care when using the Manage Exports never to minimize the toolset.
+</p>

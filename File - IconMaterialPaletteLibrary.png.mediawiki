@@ -1,0 +1,31 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png"><img alt="File:IconMaterialPaletteLibrary.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="20" height="20" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" title="IconMaterialPaletteLibrary.png">IconMaterialPaletteLibrary.png</a> &#8206;<span class="fileInfo">(20 × 20 pixels, file size: 610 B, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr">
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png">03:05, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png"><img alt="Thumbnail for version as of 03:05, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconMaterialPaletteLibrary.png" width="120" height="120" /></a></td><td>20 × 20 <span style="white-space: nowrap;">(610 B)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following page links to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Material editor</a></li>
+</ul>
+</div>

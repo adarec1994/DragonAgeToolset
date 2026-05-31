@@ -1,0 +1,53 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png"><img alt="File:DA Audio Design Documentation Ambience Content html 3b54791e.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png" width="348" height="83" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png" title="DA Audio Design Documentation Ambience Content html 3b54791e.png">DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png</a> &#8206;<span class="fileInfo">(348 × 83 pixels, file size: 5 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td> FMOD
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td>
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png">02:34, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png"><img alt="Thumbnail for version as of 02:34, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b7/DA_Audio_Design_Documentation_Ambience_Content_html_3b54791e.png" width="120" height="29" /></a></td><td>348 × 83 <span style="white-space: nowrap;">(5 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following page links to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a></li>
+</ul>
+</div>

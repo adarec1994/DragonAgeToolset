@@ -1,0 +1,25 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.02a </li>
+<li><b>Status:</b> Open</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 213544  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Quick note: I don't think this is the same issue as <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game" title="Bug: High M2DA ID ranges might work in the toolset, but not in game">Bug: High M2DA ID ranges might work in the toolset, but not in game</a>, since this fails to work in the toolset - but who knows, maybe it's all part of the same big problem.
+</p><p><b>Steps to Reproduce:</b>
+Make a copy of APR_base.xls and rename its worksheet APR_test. Delete all rows except one (say 12 ID - Arcane Horror). Move it to the top row, change the row ID to 65536, change the label to something unique, and then compile the 2DA and copy the resulting GDA to My Documents\BioWare\Dragon Age\addins\[UID]\core\override\toolsetexport or wherever else as appropriate.
+</p><p>Launch the toolset and open a local copy of the Arcane Horror creature. Change its appearance to the new one we made.
+</p><p><b>Result:</b> The model disappears. If you try to place it in the area editor, you get a green waypoint instead, which promptly disappears after placing the creature.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>The row ID can be no greater than 65535 - however, this is prone to conflicts, not to mention already being in the BioWare reserved range.
+</p><p>I doubt this is the only 2DA with issues inside the toolset.
+</p>

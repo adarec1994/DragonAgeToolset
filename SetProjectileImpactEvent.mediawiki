@@ -1,0 +1,20 @@
+<p>Replace the default event with a custom event to be reported on projectile impact
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetProjectileImpactEvent(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oProjectile,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> eCustom<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oProjectile<dd>the projectile in which to replace the impact event<dt style="font-weight:normal; font-style:italic;">eCustom<dd>the event to report on impact
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FireProjectile" title="FireProjectile">FireProjectile</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FireHomingProjectile" title="FireHomingProjectile">FireHomingProjectile</a>
+</p>

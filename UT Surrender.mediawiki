@@ -1,0 +1,20 @@
+<p>Forces a creature to stop combat and surrender to the player
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_Surrender(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the surrendering creature
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets a creature to surrender. This includes stopping combat, changing group hostility and to fire a one liner conversation (set <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GEN%20SURRENDER%20DURING" title="GEN SURRENDER DURING (page does not exist)">GEN_SURRENDER_DURING</a>). This function also sets the creature to trigger special post-surrender dialog after the surrendering if the variables <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="SURR PLOT NAME">SURR_PLOT_NAME</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="SURR PLOT FLAG">SURR_PLOT_FLAG</a> are set appropriately on the creature.
+</p><p>No one liner conversation fired; straight to surrender dialog.
+</p><p><br />
+</p><p><br />
+</p>

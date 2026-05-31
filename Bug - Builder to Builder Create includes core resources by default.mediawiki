@@ -1,0 +1,20 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.04 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Builder to Builder Create includes dependent core resources by default.
+</p><p>This is a major inconvenience when taking daily backups of a large module.
+</p><p>It makes the extract much bigger and slower than it needs to be.
+</p><p>It also makes the load process more confusing.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Unselect all.
+</p><p>Sort to module order.
+</p><p>Page down from the top to the end of the module. 
+</p><p>Select all resources for the module.
+</p><p>Remember how many pages you have to scroll down, to speed things up next time.
+</p>
+<h2><span class="mw-headline" id="Comment">Comment</span></h2>
+<p>An earlier comment in the wiki suggested that dependent core resources should be included to prevent integrity issues on Load.
+</p><p>In practice, there is almost never a problem, because everyone has the same core resources. If there is, Load just doesn't load the resources in question, which is easily fixed. So, in the light of experience, this is considered to be a bug.
+</p>

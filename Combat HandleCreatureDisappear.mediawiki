@@ -1,0 +1,57 @@
+<p>Called by:
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Handles any combat related logic for when a creature disappears from combat. This function should be run</span>
+<span class="co1">// at 2 cases both for a player object and a creature object:</span>
+<span class="co1">// 1. Disappear event</span>
+<span class="co1">// 2. Appear event when the hostile creature turned non-hostile</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Combat_HandleCreatureDisappear<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oDisappearer<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co2">#ifdef DEBUG</span>
+    Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;Combat_HandleCreatureDisappeart&quot;</span>,<span class="st0">&quot;creature: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;, disappearer: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oDisappearer<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <span class="co2">#endif</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        AI_Threat_UpdateEnemyDisappeared<span class="br0">&#40;</span>oCreature, oDisappearer<span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <span class="co1">// If the party does no longer perceive any hostiles....</span>
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsPartyPerceivingHostiles"><span class="kw4">IsPartyPerceivingHostiles</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>IsPartyDead<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co2">#ifdef DEBUG</span>
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>, <span class="st0">&quot;Combat_HandleCreatureDisappear&quot;</span>, <span class="st0">&quot;STOPPING COMBAT FOR PARTY!&quot;</span><span class="br0">&#41;</span>;
+                <span class="co2">#endif</span>
+&#160;
+                SSPlaySituationalSound<span class="br0">&#40;</span>GetRandomPartyMember<span class="br0">&#40;</span><span class="br0">&#41;</span>,SOUND_SITUATION_END_OF_COMBAT<span class="br0">&#41;</span>;
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent"><span class="kw4">DelayEvent</span></a><span class="br0">&#40;</span><span class="nu0">3.0f</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span>EVENT_TYPE_DELAYED_GM_CHANGE<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <span class="co1">// non party members</span>
+    <span class="br0">&#123;</span>
+        AI_Threat_UpdateEnemyDisappeared<span class="br0">&#40;</span>oCreature, oDisappearer<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsPerceivingHostiles"><span class="kw4">IsPerceivingHostiles</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatState"><span class="kw4">GetCombatState</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <span class="co2">#ifdef DEBUG</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>, <span class="st0">&quot;Combat_HandleCreatureDisappear&quot;</span>, <span class="st0">&quot;STOPPING COMBAT FOR NORMAL CREATURE!&quot;</span><span class="br0">&#41;</span>;
+            <span class="co2">#endif</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCombatState"><span class="kw4">SetCombatState</span></a><span class="br0">&#40;</span>oCreature,FALSE<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// Added to make a COMBAT_END event</span>
+            <span class="co1">// FAB 9/4</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evCombatEnds <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span>EVENT_TYPE_COMBAT_END<span class="br0">&#41;</span>;
+            <span class="co1">//evCombatEnds = SetEventInteger(evCombatEnds, 0, bcombatstate);</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SignalEvent"><span class="kw4">SignalEvent</span></a><span class="br0">&#40;</span>oCreature, evCombatEnds<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>

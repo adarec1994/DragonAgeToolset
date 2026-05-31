@@ -1,0 +1,43 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> AMBIENT_ANIM_FREQ_NONE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">0.0
+</td>
+<td>
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_FREQ_ORDERED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">-1.0
+</td>
+<td>
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_FREQ_RANDOM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">3.5
+</td>
+<td>
+</td>
+<td align="center"> sys_ambient_h
+</td></tr></table>

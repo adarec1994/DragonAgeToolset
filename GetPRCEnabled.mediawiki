@@ -1,0 +1,19 @@
+<p>Determine whether or not a piece of Post Release Content (PRC) is installed, enabled and authorized.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetPRCEnabled(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sPRCName&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sPRCName<dd>Must correspond to the PRC's AddInItem UID from the AddIns.xml file
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns true if the PRC specified is installed, currently enabled and authorized.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This function does not appear to work. On entry to a test trigger, the function returns FALSE for both Bioware and custom AddInItem UIDs that are in fact enabled on the in-game DLC screen. Perhaps it is designed to be called from a specific event?
+</p>

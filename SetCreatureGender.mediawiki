@@ -1,0 +1,20 @@
+<p>Set the gender of a creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetCreatureGender(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGender<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature whose gender is to be set<dt style="font-weight:normal; font-style:italic;">nGender<dd>a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GENDER" title="GENDER *">GENDER_*</a> constant
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the gender of a creature to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GENDER" title="GENDER *">GENDER_*</a> constant. To be used only in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20generation" title="Character creation">character creation</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureGender" title="GetCreatureGender">GetCreatureGender</a>
+</p>

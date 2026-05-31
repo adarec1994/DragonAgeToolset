@@ -1,0 +1,18 @@
+<div align="center" style="background-color:#FFF7F7; border:2px #F70000 solid; padding:4px; margin:4px;">
+<p>This page has been marked for deletion because this function is not located in an include file.
+</p>
+</div>
+<p>Equip default creature item based on appearance (only if none equipped).
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> EquipDefaultItem(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAppType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTargetSlot,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> s2daColumnName<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nAppType<dd>The Appearance Type, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType" title="GetAppearanceType">GetAppearanceType</a>.<dt style="font-weight:normal; font-style:italic;">nTargetSlot<dd>an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/INVENTORY%20SLOT" title="INVENTORY SLOT *">INVENTORY_SLOT_*</a> constant<dt style="font-weight:normal; font-style:italic;">s2daColumnName<dd>It determines which equipment is to be equipped with the creature (e.g. "DefaultWeapon").
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20core" title="Creature core (page does not exist)">creature_core</a>
+</p>
+</dl>

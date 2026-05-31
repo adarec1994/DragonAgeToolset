@@ -1,0 +1,17 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd>items with the ITEM_ACQUIRED_EVENT_ID variable set are picked up.
+<dt>Sent from:
+<dd>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: item acquierer</li><li>Object 0: the item that's been acquired</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oAcquirer = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// item acquierer</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItemAcquired = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// the item that's been acquired</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

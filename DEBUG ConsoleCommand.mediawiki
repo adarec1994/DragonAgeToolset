@@ -1,0 +1,21 @@
+<p>Execute console command.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> DEBUG_ConsoleCommand(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sArg<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sArg<dd>The console command to execute, including arguments
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the string that the console command returns.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Execute a given console command.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This is debug only as it executes <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Console%20command" title="Console command (page does not exist)">console command</a> directly instead of sending a message to the client
+</p><p>In the release version of the game the only console command that is still enabled is "runscript", rendering this function largely pointless.
+</p>

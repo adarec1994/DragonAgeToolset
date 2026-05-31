@@ -1,0 +1,18 @@
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 213707  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Synopsis">Synopsis</span></h2>
+<p>The suggestion is to keep the ambient occlusion maps separate from the other lightmapping maps, and only merge them together once a Post is being done. Since ambient occlusion only depends on level geometry, but not on the lighting, that would greatly speed up relighting a level.
+</p>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Currently, the lightmapper creates one "layer" of light maps, with everything baked into it. If you move one light and want to update the lighting info, you have to recalculate lightmapping + shadow maps + ambient occlusion.
+</p><p>Ambient occlusion doesn't depent on the lights in the level, however, only the geometry influences the result, so recalculating AO is superfluous if only lighting changes.
+</p><p>A lot of time could be saved, if ambient occlusion maps were only regenerated when models are moved around, but not if only lights get changed (either position or settings). The lightmapper could cache the separate ambient occlusion maps and only merge them with the other lightmapping results when a Post is being done.
+</p><p>Generation of the AO maps / light maps could either be tracked automagically (with dirty flags on geometry and lights), or manually, by adding "Render AO", "Render Lightmaps" and "Render AO + Lightmaps" buttons.
+</p>

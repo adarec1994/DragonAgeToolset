@@ -1,0 +1,20 @@
+<p>Returns the nearest creature from a specific group
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> UT_GetNearestCreatureByTag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGroup,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bIncludeSelf&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object that we try to find a nearest creature from<dt style="font-weight:normal; font-style:italic;">nGroup<dd>the group of the creature we are looking for<dt style="font-weight:normal; font-style:italic;">bIncludeSelf<dd>Whether to include oObject in the candidate objects to return
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the nearest creature to oObject with the specified group
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestCreature" title="UT GetNearestCreature">UT_GetNearestCreature</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag" title="UT GetNearestObjectByTag">UT_GetNearestObjectByTag</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestHostileCreature" title="UT GetNearestHostileCreature">UT_GetNearestHostileCreature</a>
+</p>

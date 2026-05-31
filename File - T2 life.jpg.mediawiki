@@ -1,0 +1,56 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg"><img alt="File:T2 life.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg" width="800" height="245" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg 2x" /></a><div class="mw-filepage-resolutioninfo">Size of this preview: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg" class="mw-thumbnail-link">800 × 245 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolution: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg" class="mw-thumbnail-link">320 × 98 pixels</a>.</span></div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg" title="T2 life.jpg">Original file</a> &#8206;<span class="fileInfo">(1,120 × 343 pixels, file size: 54 KB, MIME type: <span class="mime-type">image/jpeg</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>Image for VFX tutorial Part 2
+</p>
+<table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td> 888
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td> VFX
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td>
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg">16:08, 2 August 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg"><img alt="Thumbnail for version as of 16:08, 2 August 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/36/T2_life.jpg" width="120" height="37" /></a></td><td>1,120 × 343 <span style="white-space: nowrap;">(54 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Jassper" class="new mw-userlink" title="User:Jassper (page does not exist)">Jassper</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Jassper" title="User talk:Jassper">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FJassper" title="Special:Contributions/Jassper">contribs</a>)</span></span></td><td dir="ltr">Image for VFX tutorial Part 2</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 2 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial" title="VFX Tutorial">VFX Tutorial</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial%20-%20ru" title="VFX Tutorial/ru">VFX Tutorial/ru</a></li>
+</ul>
+</div>

@@ -1,0 +1,43 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PP_GUI_STATUS_NO_USE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td> not visible on main GUI
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PP_GUI_STATUS_READ_ONLY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td> visible on main GUI, unusable
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PP_GUI_STATUS_USE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td> visible on main GUI, usable
+</td>
+<td align="center"> script.ldf
+</td></tr></table>

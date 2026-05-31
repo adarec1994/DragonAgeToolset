@@ -1,0 +1,30 @@
+<p>The <strong class="selflink">Effects</strong> lists articles relating to scripted effects.
+</p><p>NOTE: scripted effects are different from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">cutscene effects</a>.
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 3 subcategories, out of 3 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Effect%20constants" title="Category:Effect constants">Effect constants</a></li><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Effect%20events" title="Category:Effect events">Effect events</a></li><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Effect%20functions" title="Category:Effect functions">Effect functions</a></li></ul></div>
+</div><div id="mw-pages">
+<h2>Pages in category "Effects"</h2>
+<p>The following 12 pages are in this category, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AOE.xls" title="AOE.xls">AOE.xls</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%202da" title="Core 2da">Core 2da</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20immunities%202da" title="Effect immunities 2da">Effect immunities 2da</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">Effect keyword</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword%20-%20ru" title="Effect keyword/ru">Effect keyword/ru</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20regeneration%202da" title="Effect regeneration 2da">Effect regeneration 2da</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20Type%20-%20itemprps" title="Effect Type - itemprps">Effect Type - itemprps</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%202da" title="Effects 2da">Effects 2da</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects.xls" title="Effects.xls">Effects.xls</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Persistent%202da" title="Persistent 2da">Persistent 2da</a></li></ul></div><div class="mw-category-group"><h3>V</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%202da" title="VFX 2da">VFX 2da</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20base.xls" title="VFX base.xls">VFX base.xls</a></li></ul></div></div></div>
+</div></div>

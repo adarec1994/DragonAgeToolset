@@ -1,0 +1,21 @@
+<p>Sets the default script for handling events.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetEventScript(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rScriptName<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object to set the event script on<dt style="font-weight:normal; font-style:italic;">rScriptName<dd>The name of the script to use for default event handling (*.ncs)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the default script for handling events. This is the script that will be fire for all event types, specifically for engine level events. It should be noted that this can also be called on Player Characters - though to get players firing events properly, the specified events must first be enabled using EnablevEvent().
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EnablevEvent" title="EnablevEvent">EnablevEvent</a>
+</p>

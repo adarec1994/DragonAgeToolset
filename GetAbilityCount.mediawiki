@@ -1,0 +1,14 @@
+<p>Gives the number of abilities a creature has of a specified type and GUI type
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetAbilityCount(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nType&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGUIType&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature<dt style="font-weight:normal; font-style:italic;">nType<dd>The type of ability to count (if type is 0, all abilities are counted)<dt style="font-weight:normal; font-style:italic;">nGUIType<dd>The GUI type to filter the count (if GUI type is 0, there is no GUI type filtering)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if oCreature meets the prerequisites for nAbility
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

@@ -1,0 +1,22 @@
+<p>Converts a floating point number to a string.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> FloatToString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fFloat,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nWidth&#160;= 18,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDecimals&#160;= 9<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fFloat<dd>The float value to convert<dt style="font-weight:normal; font-style:italic;">nWidth<dd>The size of the value before the decimal, must be a value between 0 and 18 inclusive<dt style="font-weight:normal; font-style:italic;">nDecimals<dd>The number of decimal places, must be a value between 0 and 9 inclusive
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns a string representation of the specified floating point number.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the float fFloat in string format. The string Will include nWidth number of digits before the decimal
+place and nDecimals number of digits after the decimal place.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat" title="StringToFloat">StringToFloat</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToInt" title="FloatToInt">FloatToInt</a>
+</p>

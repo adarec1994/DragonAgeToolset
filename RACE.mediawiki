@@ -1,0 +1,145 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> RACE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 0
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_DWARF
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 1
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_ELF
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 2
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_HUMAN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 3
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_QUNARI
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 4
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_ANIMAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 5
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_BEAST
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 6
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_DARKSPAWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 7
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_DRAGON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 8
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_GOLEM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td> 9
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_SPIRIT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td>10
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> RACE_UNDEAD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td>11
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>These constants refer to rows in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE%20base%202da" title="RACE base 2da">RACE_base 2da</a>.
+</p>

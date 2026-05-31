@@ -1,0 +1,21 @@
+<p>Returns the arccosine of an angle.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> acos(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fValue<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fValue<dd>The angle in radians
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The arccosine of the angle in radians.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the arccosine of the float fValue. fValue is an angle in radians.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cos" title="Cos">cos</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sin" title="Sin">sin</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tan" title="Tan">tan</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Asin" title="Asin">asin</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Atan" title="Atan">atan</a>
+</p>

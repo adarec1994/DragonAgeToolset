@@ -1,0 +1,7 @@
+<p>|- 
+|style="border-top:thin solid silver"|}}|
+</p>
+<table style="background:white; text-align:left" width="100%" cellpadding="7" cellspacing="0">
+<tr>
+<td><font style="font-size:100%; font-weight:normal;">Текст окна.</font>
+</td></tr></table>

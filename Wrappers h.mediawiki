@@ -1,0 +1,32 @@
+<p>The Wrappers include file, <strong class="selflink">wrappers_h</strong>, contains wrappers functions to important engine functions. It was BioWare's intention that designers should use these instead of the engine functions wrapped inside.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Autoss%20constants%20h" title="Autoss constants h (page does not exist)">autoss_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Config%20h" title="Config h (page does not exist)">config_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Global%20objects%20h" title="Global objects h (page does not exist)">global_objects_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plt%20tut%20control%20followers" title="Plt tut control followers (page does not exist)">plt_tut_control_followers</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20AddCommand" title="WR AddCommand">WR AddCommand</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20ClearAllCommands" title="WR ClearAllCommands">WR ClearAllCommands</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20DestroyObject" title="WR DestroyObject">WR DestroyObject</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20GetPlotFlag" title="WR GetPlotFlag">WR GetPlotFlag</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20RemoveCommand" title="WR RemoveCommand">WR RemoveCommand</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetFollowerState" title="WR SetFollowerState">WR SetFollowerState</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetFollowerSubState" title="WR SetFollowerSubState">WR SetFollowerSubState</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetObjectActive" title="WR SetObjectActive">WR SetObjectActive</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetPlotFlag" title="WR SetPlotFlag">WR SetPlotFlag</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetWorldMapGuiStatus" title="WR SetWorldMapGuiStatus">WR SetWorldMapGuiStatus</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetWorldMapLocationStatus" title="WR SetWorldMapLocationStatus">WR SetWorldMapLocationStatus</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetWorldMapPlayerLocation" title="WR SetWorldMapPlayerLocation">WR SetWorldMapPlayerLocation</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetWorldMapPrimary" title="WR SetWorldMapPrimary">WR SetWorldMapPrimary</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetWorldMapSecondary" title="WR SetWorldMapSecondary">WR SetWorldMapSecondary</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20TakeAutoScreenshot" title="WR TakeAutoScreenshot">WR TakeAutoScreenshot</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20TogglePlotIcon" title="WR TogglePlotIcon">WR TogglePlotIcon</a></li></ul>

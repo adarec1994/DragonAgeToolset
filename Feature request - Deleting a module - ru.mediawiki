@@ -1,0 +1,75 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Удаление модуля</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Feature_request:_Deleting_a_module/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Модули
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules%20-%20ru" title="Manage modules/ru">Управление модулями</a></li>
+<li><strong class="selflink">Удаление модуля</strong></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Экспорт модуля</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Cтартовая локация</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Архив для игрока</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder%20-%20ru" title="Builder to builder/ru">Архив для разработчика</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Новый модуль и DLC</a></li></ul>
+<dl><dd><small>Обеспечение совместимости между новым модулем и официальными DLC</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events%20-%20ru" title="Category:Module events/ru (page does not exist)">События модуля</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events" title="Category:Module events">(en)</a></li></ul>
+<dl><dd><small>Категория, содержащая описания и параметры событий модуля</small></dd></dl>
+</td></tr></table>
+<p>Текущая версия тулсета не предоставляет средств для удаления созданных модулей. Из-за этого пользователи, особенно в начале своей деятельности в роли модмейкера, создают кучу тестовых модулей, чем навсегда загромождают список модулей.
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 210854  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a>
+</p>
+</td></tr></table>
+<p>Ниже представляю способ удаления имени модуля из базы данных, но все ресурсы модуля остаются в базе данных и засоряют её. 
+Осторожно, это далеко не самый чистый и лёгкий способ. Используйте его только если вы уверены в своих силах.
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D0.B4.D0.B0.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F_.D0.B8.D0.B7_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0">Удаление модуля из тулсета</span></h2>
+<p><b>Вводная:</b>
+Я создал модуль, называемый "Meep", имеющий уникальный ID "rcfMeep", добавил одну локацию, настроил стартовые локацию и точку входа, и экспортировал его с зависимыми ресурсами. А теперь я хочу удалить его.
+</p><p><b>Шаг 1:</b> Удаление из игры
+</p>
+<ul><li>Перейти в папку "Мои документы\Bioware\AddIns".</li>
+<li>Удалить папку, называемую "rcfMeep".</li></ul>
+<p>Удалить модуль из игры просто, но как удалить из тулсета? Здесь возникают некоторые сложности, а именно то, что вся информация хранится в базе данных SQL. Сейчас я расскажу, как же всё-таки удалить модуль из базы данных.
+</p><p><b>Шаг 2:</b> Удаление из базы данных
+</p>
+<ul><li>Откройте Sql Server Management Studio Express. Если эта программа у вс ещё не установлена, то прочитать о том, где её найти и как установить вы сможете прочитать по ссылке <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_SQL_Server_Management_Studio_Express" title="Manual database installation/ru">Установка SQL Server Management Studio Express</a>.</li>
+<li>Подключитесь к серверу "BWDATOOLSET", не меняя используемые по умолчанию параметры.</li>
+<li>Откройте ветку "Databases".</li>
+<li>Откройте ветку "bw_dragonage_content".</li>
+<li>Откройте ветку "Tables".</li>
+<li>На таблице "dbo.Module" вызовите контекстное меню и выберите "Open table".</li>
+<li>Откроется таблица. Найдите ваш модуль, правой кнопкой на строке модуля вызовите контекстное меню и выберите "Delete". Далее жмём "Ok".</li>
+<li>Всё модуль удалён и нет способов восстановить его.</li></ul>
+<p>Однако в зависимости от размера модуля в базе данных остаются бесхозные ресурсы, то есть ресурсы, которые не принадлежат никакому модулю. Локации, размещёнки, диалоги и прочие ресурсы вашего модуля остаются в базе данных и как только вы удалили ID модуля, вы потеряли и возможность удалить их. 
+</p><p>Обратите внимание, что 95 пять процентов этих ресурсов хранятся в виде текста, так что не занимают много места. Для того, чтобы избежать и этого можно удалить все ресурсы из модуля используя тулсет и только затем удалять модуль из базы данных.
+</p>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99%;"><div style="text-align:center;"><b>Альтернативный способ избежать появления мусора в базе данных с помощью SQL-скрипта:</b></div>
+<p>Вместо того, чтобы удалить только запись о модуле из таблицы "dbo.t_Module", как описано выше, вы можете изменить <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Resource%20Script.sql%20-%20ru" title="Module Resource Script.sql/ru (page does not exist)">этот SQL-скрипт</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Resource%20Script.sql" title="Module Resource Script.sql">(en)</a>, настроив его не на выбор ресурсов модуля, а на удаление их. Это должно позволить более полно очистить базу данных от ненужного модуля, но существует высокая степень риска, поскольку вы можете случайно удалить не относящиеся к этому модулю ресурсы.
+</p>
+</div>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module" title="Feature request: Deleting a module">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

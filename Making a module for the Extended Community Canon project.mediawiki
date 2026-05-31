@@ -1,0 +1,12 @@
+<p>This will be a guide to making modules that work with the Extended Community Canon Project.
+</p>
+<h2><span class="mw-headline" id="Making_modules_for_the_Extended_Community_Canon_Project">Making modules for the Extended Community Canon Project</span></h2>
+<p>If you're reading this, I assume the title has piqued your curiosity; it was meant to. I also assume that you are interested in making modules for Dragon Age and wonder what exactly the Extended Community Canon Project is. To quote Daywalker03's Wikipedia article on it, it is a initiative by community developers to extend and expand the lore of Thedas.
+</p>
+<h2><span class="mw-headline" id="What_makes_them_different_from_regular_mods_set_in_Thedas.3F">What makes them different from regular mods set in Thedas?</span></h2>
+<p>A good question. There are several things that set them apart from normal mods. One, if they are integrated into the Origins campaign, they are written in such a way as to fit in as seamlessly as possible into the campaign. Alley of Murders by AmstradHero, Ser Gilmore NPC by DLAN_Immortality, and Dark Times: The Confederacy of Malkuth, to name a few of the existing integrated mods, all take place during the course of the Origins campaign. Two, they not only integrate into the main campaign, but they also interconnect; for example, if you have Ser Gilmore and Alley of Murders installed, there will be references to Ser Gilmore when you are doing the actual quests that are a part of AmstradHero's mod. This also will happen with Dark Times Act 1; when the 1.08 patch is released, ser Gilmore will have spoken dialog in Malkuth in much the same way as he does in the rest of Origins.
+</p>
+<h2><span class="mw-headline" id="How_do_I_do_it_with_my_mod.3F">How do I do it with my mod?</span></h2>
+<p>I thought you'd never ask.&#160;;)
+</p><p>A good start would be joining the Extended Community Canon Project Group on the Bioware Social Network; we can help you with the little touches needed to tie our mods together.
+</p>

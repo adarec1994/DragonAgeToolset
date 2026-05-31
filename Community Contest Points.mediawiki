@@ -1,0 +1,350 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Points_Summary"><span class="tocnumber">1</span> <span class="toctext">Points Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Points_Transaction_Log"><span class="tocnumber">2</span> <span class="toctext">Points Transaction Log</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Contest_1_.28Settlement_Design.29"><span class="tocnumber">2.1</span> <span class="toctext">Contest 1 (Settlement Design)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Contest_2_.28Prop_Model.29"><span class="tocnumber">2.2</span> <span class="toctext">Contest 2 (Prop Model)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Contest_3_.28Character.29"><span class="tocnumber">2.3</span> <span class="toctext">Contest 3 (Character)</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Contest_4_.28Scripting.29"><span class="tocnumber">2.4</span> <span class="toctext">Contest 4 (Scripting)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Contest_5_.28Room_SEL_groups.29"><span class="tocnumber">2.5</span> <span class="toctext">Contest 5 (Room SEL groups)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Contest_6_.28Equipment_Contest.29"><span class="tocnumber">2.6</span> <span class="toctext">Contest 6 (Equipment Contest)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Contest_7_.28Module_Contest.29"><span class="tocnumber">2.7</span> <span class="toctext">Contest 7 (Module Contest)</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Points_spent"><span class="tocnumber">2.8</span> <span class="toctext">Points spent</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Points_Summary">Points Summary</span></h2>
+<p>The table is provided as a summary, please check the transaction log below. If something doesn't "add up", please notify an organiser, its probably a typo or math fail. 
+</p><p>If you would like to redeem your points, please PM mikemike37 on Bioware Social Network.
+</p>
+<table class="wikitable sortable" cellpadding="8">
+
+<tr>
+<th align="left"> BSN Username </th>
+<th align="left">  Points Accumulated </th>
+<th align="left">  Points Spent </th>
+<th align="left"> Points Remaining
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/335659/">Adonnay</a>
+</td>
+<td> 15
+</td>
+<td> 0
+</td>
+<td> 15
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/13134/">AmstradHero</a>
+</td>
+<td> 16
+</td>
+<td> 15
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/729556/">BlackPhi</a>
+</td>
+<td> 42
+</td>
+<td> 0
+</td>
+<td> 42
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/33567/">Bloodsong Vengeance</a>
+</td>
+<td> 5
+</td>
+<td> 5
+</td>
+<td> 0
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/9796/">Calydon</a>
+</td>
+<td> 10
+</td>
+<td> 0
+</td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1770295/">DahliaLynn</a>
+</td>
+<td> 7
+</td>
+<td> 0
+</td>
+<td> 7
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/876690/">Fenod</a>
+</td>
+<td> 5
+</td>
+<td> 0
+</td>
+<td> 5
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1936393/">Gisle Aune</a>
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/23590/">Helekanalaith</a>
+</td>
+<td> 3
+</td>
+<td> 0
+</td>
+<td> 3
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/38130/">Jackkel Dragon</a>
+</td>
+<td> 11
+</td>
+<td> 0
+</td>
+<td> 11
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/239433/">_L_o_B_o_</a>
+</td>
+<td> 5
+</td>
+<td> 0
+</td>
+<td> 5
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1924215/">Lord of Fangs</a>
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/163031/">Mengtzu</a>
+</td>
+<td> 35
+</td>
+<td> 15
+</td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1689133/">MidnightGuardian</a>
+</td>
+<td> 5
+</td>
+<td> 5
+</td>
+<td> 0
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/145661/">Mikemike37</a>
+</td>
+<td> 18
+</td>
+<td> 10
+</td>
+<td> 8
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/52483/">Nattfodd</a>
+</td>
+<td> 26
+</td>
+<td> 20
+</td>
+<td> 6
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/464808/">Nimee</a> (Andreaa)
+</td>
+<td> 5
+</td>
+<td> 3
+</td>
+<td> 2
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/4618/">Ponozsticka</a>
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/733629/">PrinceCorg</a>
+</td>
+<td> 10
+</td>
+<td> 0
+</td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/11675/">Semper</a>
+</td>
+<td> 10
+</td>
+<td> 0
+</td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1726819/">Shadow5973</a>
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/32737/">Talisander</a>
+</td>
+<td> 10
+</td>
+<td> 0
+</td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/53997/">TimelordDC</a>
+</td>
+<td> 12
+</td>
+<td> 2
+</td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/919038/">TurtleCrunch</a>
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/25401/">uberdowzen</a>
+</td>
+<td> 7
+</td>
+<td> 5
+</td>
+<td> 2
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/1688012/">Vaylise</a>
+</td>
+<td> 18
+</td>
+<td> 10
+</td>
+<td> 8
+</td></tr></table>
+<h2><span class="mw-headline" id="Points_Transaction_Log">Points Transaction Log</span></h2>
+<h4><span class="mw-headline" id="Contest_1_.28Settlement_Design.29">Contest 1 (Settlement Design)</span></h4>
+<ol><li> <b>AmstradHero +15</b></li>
+<li> <b>Talisander +10</b></li>
+<li> <b>PrinceCorg +5</b></li></ol>
+<dl><dd><ul><li> Jackell Dragon +1</li>
+<li> Lord of Fangs +1</li>
+<li> Nattfodd +1</li>
+<li> Ponozsticka +1</li>
+<li> TimelordDC +1</li>
+<li> TurtleCrunch +1</li></ul></dd></dl>
+<h4><span class="mw-headline" id="Contest_2_.28Prop_Model.29">Contest 2 (Prop Model)</span></h4>
+<ol><li> <b>Mikemike37 +15</b></li>
+<li> <b>Calydon +10</b></li>
+<li> <b>PrinceCorg +5</b></li></ol>
+<h4><span class="mw-headline" id="Contest_3_.28Character.29">Contest 3 (Character)</span></h4>
+<ul><li> Character Design</li></ul>
+<ol><li> <b>Jackkel Dragon +8</b></li>
+<li> <b>DahliaLynn +7</b></li>
+<li> <b>Vaylise +10</b></li>
+<li> <b>uberdowzen +5</b></li></ol>
+<ul><li> Head Morph (mini contest)</li></ul>
+<ol><li> <b>MidnightGuardian +5</b></li>
+<li> <b>Vaylise +3</b></li>
+<li> <b>uberdowzen +2</b></li></ol>
+<dl><dd><ul><li> Bloodsong Vengeance +1</li>
+<li> Jackkel Dragon +1</li>
+<li> Princecorg +1</li>
+<li> mikemike37 +1</li>
+<li> AmstradHero +1</li>
+<li> TimelordDC +1</li></ul></dd></dl>
+<h4><span class="mw-headline" id="Contest_4_.28Scripting.29">Contest 4 (Scripting)</span></h4>
+<ol><li> <b>Mengtzu +15</b></li>
+<li> <b>TimelordDC +10</b></li>
+<li> <b>L_o_B_o +5</b></li></ol>
+<dl><dd><ul><li> Bloodsong Vengeance +3</li>
+<li> mikemike37 +1</li></ul></dd></dl>
+<h4><span class="mw-headline" id="Contest_5_.28Room_SEL_groups.29">Contest 5 (Room SEL groups)</span></h4>
+<ol><li> <b>Nattfodd +15</b></li>
+<li> <b>Semper +10</b></li>
+<li> <b>Andreeaa (Nimee) +5</b></li></ol>
+<dl><dd><ul><li> BlackPhi  +1</li>
+<li> Bloodsong Vengeance +1</li>
+<li> Jackkel Dragon +1</li>
+<li> Shadow5973  +1</li></ul></dd></dl>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Contest_6_.28Equipment_Contest.29">Contest 6 (Equipment Contest)</span></h4>
+<p><i>Weapon Model</i>
+</p>
+<ol><li> <b>Adonnay +15</b></li>
+<li> <b>Nattfodd +10</b></li>
+<li> <b>Fenod (Nimee) +5</b></li></ol>
+<dl><dd><ul><li> Helekanalaith +3 (best newcomer)</li>
+<li> BlackPhi  +1</li>
+<li> Gisle Aune +1</li>
+<li> mikemike37 +1</li></ul></dd></dl>
+<p><i>Armour Retexture</i>
+</p>
+<ol><li> <b>BlackPhi +10</b></li>
+<li> <b>Vaylise +5</b></li></ol>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Contest_7_.28Module_Contest.29">Contest 7 (Module Contest)</span></h4>
+<ol><li> <b>BlackPhi +30</b></li>
+<li> <b>Mengtzu + 20</b></li></ol>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Points_spent">Points spent</span></h4>
+<ul><li> AmstradHero: Darkspawn Chronicles -5</li>
+<li> AmstradHero: Leliana's Song -5</li>
+<li> AmstradHero: The Golems of Amgarrak -5</li></ul>
+<ul><li> Bloodsong Vengeance: Witch Hunt -5</li></ul>
+<ul><li> MidnightGuardian: Witch Hunt -5</li></ul>
+<ul><li> Mengtzu: Witch Hunt -5</li>
+<li> Mengtzu: Darkspawn Chronicles -5</li>
+<li> Mengtzu: The Golems of Amgarrak -5</li></ul>
+<ul><li> mikemike37: scripting help from TimelordDC (thanks!) -10</li></ul>
+<ul><li> Nattfodd: $50 amazon voucher -20</li></ul>
+<ul><li> Nimee (AndreaA): Feastday Bundle -3</li></ul>
+<ul><li> TimelordDC: modeling help from mikemike37 -2</li></ul>
+<ul><li> uberdowzen: Warden's Keep -5</li></ul>
+<ul><li> Vaylise: Witch Hunt -5</li>
+<li> Vaylise: Leliana's Song -5</li></ul>

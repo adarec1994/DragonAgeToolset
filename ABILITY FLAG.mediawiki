@@ -1,0 +1,54 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> ABILITY_FLAG_RANGED_WEAPON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td> 0x01
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLAG_END_ON_OUT_OF_MANA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">64
+</td>
+<td> 0x40
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLAG_DISPELLABLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">128
+</td>
+<td> 0x80
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLAG_CURABLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">256
+</td>
+<td> 0x100
+</td>
+<td align="center"> ability_h
+</td></tr></table>

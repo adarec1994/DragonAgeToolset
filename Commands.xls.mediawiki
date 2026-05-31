@@ -1,0 +1,148 @@
+<h2><span class="mw-headline" id="Commands">Commands</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  StrRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Queue
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Visible
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  AddBehavior
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td> This behavior is used when the command being added is different from the one executing.
+<ul><li>0 - Don't clear commands</li>
+<li>1 - Clear all commands (Soft)</li>
+<li>2 - Clear all commands (Hard)</li>
+<li>3 - New Target (Hard/Soft)</li></ul>
+<p>'Soft' means that it will respect the current command if it's executing the core section. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND%20ADDBEHAVIOR" title="COMMAND ADDBEHAVIOR *">COMMAND_ADDBEHAVIOR_*</a>
+</p>
+</td></tr>
+<tr>
+<th>  AddBehaviorSelf
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  This behavior is used when the command being added is the same type as the one executing.
+<ul><li>0 - Don't clear commands</li>
+<li>1 - Clear all commands (Soft)</li>
+<li>2 - Clear all commands (Hard)</li>
+<li>3 - New Target (Hard/Soft)</li></ul>
+<p>'Soft' means that it will respect the current command if it's executing the core section.
+</p>
+</td></tr>
+<tr>
+<th>  DisplayInGUI
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>  This flag specifies whether this command, when currently active/pending on a party member, should be displayed in the GUI indicating a party members current actions.
+</td></tr>
+<tr>
+<th>  icon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  RespectHoldPosition
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>  This should be set to true if the creature respects the "Hold Position" option the users can set on party members. (If this is true for an action, that action can be discarded by the game because movement on that creature is disabled).
+</td></tr>
+<tr>
+<th>  SoundsetProbability
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="CommandDataTypes">CommandDataTypes</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Constant
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  constant used in code.
+</td></tr></table>
+<h2><span class="mw-headline" id="CommandTargetTypes">CommandTargetTypes</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  This 2da is only for reference.  All these are defined in code.  Changing these won't do anything, if changes are required find a programmer
+</td></tr></table>

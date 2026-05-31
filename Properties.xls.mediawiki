@@ -1,0 +1,15 @@
+<p>The <strong class="selflink">Properties.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the core properties and trackable statistics for the game.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties%202da" title="Properties 2da">Properties</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HeroicStats%202da" title="HeroicStats 2da">HeroicStats</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HeroicPartyStats%202da" title="HeroicPartyStats 2da">HeroicPartyStats</a></li>
+<li> _readme</li>
+<li> _Constants</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

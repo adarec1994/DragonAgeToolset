@@ -1,0 +1,24 @@
+<p>Sets the orientation of the target object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetOrientation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vOrientation<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oTarget<dd>Object to set the orientation for<dt style="font-weight:normal; font-style:italic;">vOrientation<dd>Vector orientation to set for the object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the orientation of the target object.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>If the target object is invalid or does not have an orientation then the function will fail.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetOrientation" title="GetOrientation">GetOrientation</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFacing" title="SetFacing">SetFacing</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetFacing" title="GetFacing">GetFacing</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFacingPosition" title="SetFacingPosition">SetFacingPosition</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFacingObject" title="SetFacingObject">SetFacingObject</a>
+</p>

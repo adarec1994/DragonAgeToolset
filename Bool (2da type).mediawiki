@@ -1,0 +1,25 @@
+<p>The <b>bool</b> (boolean) data type is supported by 2DAs. In the Excel source file a bool value may be represented by one of:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> True</th>
+<th> False
+</th></tr>
+<tr>
+<td> any non-zero number </td>
+<td> zero
+</td></tr>
+<tr>
+<td> Yes (case insensitive) </td>
+<td> No (case insensitive)
+</td></tr>
+<tr>
+<td> any words beginning with T (such as True!)  </td>
+<td> any words beginning with  F (such as False!)
+</td></tr></table>
+<p>NOTE: You cannot use TRUE and FALSE because Excel converts those to a special keyword the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">ExcelProcessor</a> cannot parse properly at this time. 
+</p><p>NOTE: The scripting language doesn't have a function for retrieving boolean values from a 2DA, and the behavior of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Get2DAInt" title="Get2DAInt (page does not exist)">Get2DAInt</a> when retrieving a boolean is untested. It is probably safer to use an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">integer</a> for scripting purposes.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constant">Boolean constant</a> for a discussion of how booleans are handled in the scripting language</li></ul>

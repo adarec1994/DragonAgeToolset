@@ -1,0 +1,3 @@
+<p>The DADBDATA file type is actually just an ordinary ZIP file with a changed extension. If you wish, you can open it in a zip file editor to extract or manipulate its contents.
+</p><p>DADBDATA files are produced by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">builder to builder</a> process. They contain a number of XML files, one file for each <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20resource" title="Database resource (page does not exist)">database resource</a>.
+</p>

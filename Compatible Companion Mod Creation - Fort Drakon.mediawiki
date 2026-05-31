@@ -1,0 +1,24 @@
+<p>The <b>Fort Drakon</b> step describes what to do with your custom companion if/when the hero is imprisoned in Fort Drakon.
+</p><p>While saving Anora, the PC is faced with fighting Sir Cauthrien. If the PC surrenders or is defeated, they get captured and sent to prison. Valeria must be removed from the party otherwise she'll still be following the PC around. She cannot be chosen to go save the PC without changing the game resources, unless you capture it after the initial selection is done. I haven't done it but I'm guessing it could be done if you find the  right flag.
+</p>
+<h2><span class="mw-headline" id="What_we_need">What we need</span></h2>
+<p>The  plot DENPT_CAPTURED contains the important flag for this:  DEN_CAPTURED_PC_CAPTURED. So, create in the VALERIA_NPC_HIRE plot the  flag VALERIA_DEN_CAPTURED_PC_CAPTURED, so we do this only once. 
+</p>
+<h2><span class="mw-headline" id="To_implement">To implement</span></h2>
+<p>In includes, add: 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;plt_denpt_captured&quot;</span></pre></div></div>
+<p>In the function check_plot_changed() add: 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// pc captured by cauthrien</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_DENPT_CAPTURED,DEN_CAPTURED_PC_CAPTURED<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <span class="sy0">!</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_DEN_CAPTURED_PC_CAPTURED<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,VALERIA_DEN_CAPTURED_PC_CAPTURED,TRUE<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            WR_SetFollowerState<span class="br0">&#40;</span>oVal, <span class="kw3">FOLLOWER_STATE_AVAILABLE</span><span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span></pre></div></div>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Companion%20Initiated%20Conversation" title="Companion Initiated Conversation"><img alt="Companion Initiated Conversation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Behaviour%20In%20Camp" title="Behaviour In Camp"><img alt="Behaviour In Camp" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

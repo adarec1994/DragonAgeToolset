@@ -1,0 +1,98 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_DYING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000002
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_DOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000004
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_AI_OFF
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000008
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_AI_NO_ABILITIES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000010
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_NO_COOLDOWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000020
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_NO_RESISTANCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000040
+</td>
+<td>
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_FORCE_COMBAT_0
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000080
+</td>
+<td> bit0 of combat result force
+</td>
+<td align="center"> core_h
+</td></tr>
+<tr>
+<td> CREATURE_RULES_FLAG_FORCE_COMBAT_1
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000100
+</td>
+<td> bit1 of combat result force
+</td>
+<td align="center"> core_h
+</td></tr></table>

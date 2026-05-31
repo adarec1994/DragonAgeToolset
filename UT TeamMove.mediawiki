@@ -1,0 +1,19 @@
+<p>Makes a team move to an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_TeamJump(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTeamID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTagDestination&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bRun&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fRange&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bNewHome&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTeamID<dd>This is the team ID number<dt style="font-weight:normal; font-style:italic;">sTagDestination<dd>The tag of the object the team is going to move to.<dt style="font-weight:normal; font-style:italic;">bRun<dd>Set to TRUE if you want the team to run there<dt style="font-weight:normal; font-style:italic;">fRange<dd>the distance from the target the team will stop at<dt style="font-weight:normal; font-style:italic;">bNewHome<dd>Set to TRUE if you want the team to set their home location to the destination.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>0 is not a valid parameter (because that's the default value of the variable).
+</p><p><br />
+</p><p><br />
+</p>

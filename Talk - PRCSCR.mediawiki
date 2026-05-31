@@ -1,0 +1,4 @@
+<h2><span class="mw-headline" id="Added_Warning">Added Warning</span></h2>
+<p>I have added a warning, that altering existing Resources is dangerous to do in the toolset. I have myself deleted one custom item few days ago, which in my noobishness have altered Bodahn for. Which now caused the Camp Area to bug out the Toolset. Of course i didnt remember i edited Bodahn with items i deleted previously. So the search was troublesome. And then i had the task to know which item name ,which model filenames , which texturefiles i had exactly given Bodahn and have to immitate for Bodahn to load, to edit and revert. This is not good.
+</p><p>I have already had the focus when writing, but this should be emphasized way way more. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 14:01, 31 January 2010 (UTC)
+</p>

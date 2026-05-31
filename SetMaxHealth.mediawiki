@@ -1,0 +1,21 @@
+<p>Set object's maximum health
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetMaxHealth(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nHealth<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object that we are modifying<dt style="font-weight:normal; font-style:italic;">nHealth<dd>the new maximum health value for the object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Set object's maximum health.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This function doesn't seem to work for creatures.
+</p><p>It appears that Chargen_ModifyCreaturePropertyBase with PROPERTY_DEPLETABLE_HEALTH will increase or decrease maximum health by the specified amount. This workaround has not yet been tested exhaustively, but it is based on the Bioware code in sys_autoscale_h.
+</p>

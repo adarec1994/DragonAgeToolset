@@ -1,0 +1,37 @@
+<h2><span class="mw-headline" id="Build_773">Build 773</span></h2>
+<p>Bugs fixed:  
+</p>
+<ul><li> Client Script Editor - Error when attempting to Compile.</li>
+<li> Animation Composer Tool Testing - RPU failing in local post</li>
+<li> Map Editor - Trail is not appearing on the map as expected</li>
+<li> Female Head Morphs - Feature Selection - Head Shapes Affecting Female Heads Incorrectly</li>
+<li> Script Editor - Please allow the right margin indicator's position to be user-definable (BR)</li>
+<li> Builder To Builder - New resaources should maintain the folder structure</li>
+<li> Default camera postion in Face FX Studio needs to be fixed</li>
+<li> Builder to Builder: Error when importing some scripts  </li>
+<li> Quanari Female Head morph removed</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Build_648">Build 648</span></h2>
+<h3><span class="mw-headline" id="Resolved_issues">Resolved issues</span></h3>
+<p>Internally discovered:
+</p>
+<ul><li>Corrected the tab numbering on the head morph object inspector window. </li>
+<li>In FaceFX Studio, changing emotion ini files in FaceFX (via Tools &gt; Load Robobrad config) caused a file copy failure error </li>
+<li>Attempt to invoke RPU failed when creating placeholder voiceover. </li>
+<li>Added ability to keep \modules and \packages\core\override to the uninstaller. </li>
+<li>Added the ability to remember the user's password. </li>
+<li>Core resources in any add-ins folder should be treated as part of core and should be available in the Designer Toolset. e.g. layout files for the area editor. </li>
+<li>Installer edits the FaceFX config file correctly </li>
+<li>FaceFX post to local error fixed </li></ul>
+<p>User Reported: 
+</p>
+<ul><li>Web Reports removed from the menu. </li>
+<li>In the cutscene editor Speak Line track, "edit FaceFX" attempted to load a file from Perforce. </li>
+<li>During full export, multiple "Could not load the ItemProps 2DA" errors. </li>
+<li>FaceFX does not start from conversation editor. </li>
+<li>Including "configure toolset" in the installed build for the end user toolset. </li>
+<li>Convert line to Cutscene not working </li>
+<li>The ERF and GFF editors are now fully delivered </li></ul>
+<p>Database version increased from 168 to 170.
+</p>

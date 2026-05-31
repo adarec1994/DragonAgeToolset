@@ -1,0 +1,39 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p><p>This page lists all currently available Endless Adventures Packages.
+</p><p>Note: Modders should make sure to fill out as many parts of the template as they can, to make sure players aren't confused by the entry.
+</p>
+<h2><span class="mw-headline" id="The_Darkest_Larder">The Darkest Larder</span></h2>
+<p>Created by Jackkel Dragon
+</p><p><i>The darkspawn don't get out much. Five times they tried to leave the Deep Roads to get some real food and sunlight, but the Blight they brought killed all the food and blocked out the sun. Worse, a bunch of creeps drink their blood and hold it over them until they go back underground. So when a few cheese-loving darkspawn sneak topside in search of food, something bad was bound to happen.</i>
+</p><p>A very short demo module used to test the basic concepts of the Endless Adventures Package system. It also grants some free health potions from the defeated enemies to bolster new characters without costing too much money.
+</p><p>This module includes:
+</p>
+<ul><li> Two (or three) darkspawn to fight.</li>
+<li> An unexplained backstory.</li>
+<li> Free healing items.</li>
+<li> A lame final reward.</li></ul>
+<p>Available at:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4771/">BSN Project Page</a></li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg" title="Enlarge"></a></div>Poor Conversation</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg" title="Enlarge"></a></div>Defenders of the Cheese</div></div></div>
+<h2><span class="mw-headline" id="Template_Entry">Template Entry</span></h2>
+<p>Created by Module Author Name Here and 2nd Module Author Name Here
+</p><p><i>Module description in-game. Try to keep this under five lines.</i>
+</p><p>Module Description. Try to keep this under five lines.
+</p><p>Features ("This module includes..."):
+</p>
+<ul><li> Feature 1</li>
+<li> Feature 2</li>
+<li> Try to stay under 9 features.</li></ul>
+<p>Download links ("Available at..."):
+</p>
+<ul><li> Site 1 Link</li>
+<li> Site 2 Link</li>
+<li> Please make sure there's no dangerous links here.</li>
+<li> DANexus and BSN are good hosting sites for DAO modules.</li>
+<li> You should only need 4-5 sites at maximum.</li></ul>
+<p>(Optional: Two screenshots of your module.)
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg" title="Enlarge"></a></div>Sample Screenshot 1</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg" title="Enlarge"></a></div>Sample Screenshot 2</div></div></div>

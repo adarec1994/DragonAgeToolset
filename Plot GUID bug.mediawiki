@@ -1,0 +1,65 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>Verison 1.0 of the Dragon Age toolset has a subtle but potentially devastating bug. Put simply, the core plot resources that were included with the toolset had different internal identification numbers (GUIDs) than the versions that were used when the retail version of the game was created. The result is that whenever a core plot file is exported it overrides the plot in the preinstalled main campaign, and then none of the other resources in the game are able to reference it any more. The game's scripts and conversations are unable to determine the state of the affected plots, and are unable to update the state of the plot.
+</p><p><b>Version 1.01 of the toolset corrects this bug. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20migration" title="Database migration">database migration</a> for information on how to bring your content forward into the new corrected database.</b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Symptoms"><span class="tocnumber">1</span> <span class="toctext">Symptoms</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#How_to_repair_your_game"><span class="tocnumber">2</span> <span class="toctext">How to repair your game</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#How_to_repair_the_toolset.27s_database"><span class="tocnumber">3</span> <span class="toctext">How to repair the toolset's database</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#How_did_this_happen.3F"><span class="tocnumber">4</span> <span class="toctext">How did this happen?</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Forum_thread"><span class="tocnumber">5</span> <span class="toctext">Forum thread</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Symptoms">Symptoms</span></h2>
+<p>The resulting symptoms are many and varied, depending on where you are in the game and which core plot files have been exported. The most common symptoms include: Party Camp being empty (a result of the plot that tracks which party members have joined you being inaccessible), character generation failing (many options you choose during character generation are recorded in plots that are commonly referenced throughout the game), and party member approval ceasing to update properly.
+</p>
+<h2><span class="mw-headline" id="How_to_repair_your_game">How to repair your game</span></h2>
+<p>The first thing you'll need to do is to remove the faulty exported plot files from your core override directory. You will find them here:
+</p>
+<dl><dd> My Documents\Bioware\Dragon Age\packages\core\override</dd></dl>
+<p>Delete the contents of this directory. Once they're gone the game will revert back to using the resources that were originally included with the retail version.
+</p><p>If you have saved your game between exporting those core resources and now, the savegame will have faulty plot ID numbers recorded in it and remain broken. The savegame can be repaired manually but it will take a bit more work; if you've only lost a few hours of gameplay it may be simplest to just go back to a previous save and work from there.
+</p><p>Manual repair involves opening the savegame's .das file in the toolset; it is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a>-formatted file and will be opened in the GFF editor. You'll need to find the plots' values and correct them.
+</p>
+<h2><span class="mw-headline" id="How_to_repair_the_toolset.27s_database">How to repair the toolset's database</span></h2>
+<p>You can fix some of the plot files by running the following SQL command on your toolset's database.
+</p>
+<pre>
+UPDATE t_Plot SET GUID = '1c5a23c1-30e5-488a-bc18-a4163ebab35b' WHERE GUID = '1d9f7c93-cd25-4d2b-ad40-570702940982'
+UPDATE t_Plot SET GUID = 'c9736a91-f424-4075-8e57-0d9ecd796597' WHERE GUID = '4f2c2ef2-3f00-4c4a-a0d1-d89f60f17e76'
+UPDATE t_Plot SET GUID = '64f06db1-ed4b-49f1-8df3-26a0b1c2d06c' WHERE GUID = '244aa66e-e965-4340-9a92-247e46aaa0de'
+UPDATE t_Plot SET GUID = '25bc6f5e-8da8-4793-8245-071233433332' WHERE GUID = '2aa159b2-a22e-4efa-aa25-590fa07e7a02'
+UPDATE t_Plot SET GUID = '840c666e-a1fe-48cb-a260-ab1fe42fcfa7' WHERE GUID = 'caab223e-bb42-4b97-b984-0e619079470c'
+UPDATE t_Plot SET GUID = 'be2ab95b-dd97-4d14-8907-4134675ebbbd' WHERE GUID = '0d7bc736-4f62-40bb-9559-ceab38410f67'
+UPDATE t_Plot SET GUID = 'e8cebfa6-eb23-45eb-b704-df06d794c803' WHERE GUID = '10b213fb-92a5-4b52-bd1c-5f630a3499d5'
+UPDATE t_Plot SET GUID = '1fd3a44c-147d-4af3-b5ee-7f62707359ff' WHERE GUID = '6195c7c8-385f-415a-beec-3a642a8900ab'
+UPDATE t_Plot SET GUID = 'e8e833ac-06c0-4bf2-a326-1a7937542d75' WHERE GUID = 'b02a8c69-1126-43c9-af5f-0274b28ae773'
+UPDATE t_Plot SET GUID = '02f47300-3c81-44d0-83b7-69186b7d6813' WHERE GUID = 'bf9a4701-e284-4a4b-bc14-32b4ce46753d'
+UPDATE t_Plot SET GUID = 'b0b1de08-0c77-4706-bb5e-c49fa70756b5' WHERE GUID = '7783c5ca-49bf-4fa0-9dde-c696a6e1cde3'
+UPDATE t_Plot SET GUID = '52901f57-0994-4f2f-86fd-b61793ba6b14' WHERE GUID = 'e41b7996-49bb-4a69-9f89-ea48049d4015'
+UPDATE t_Plot SET GUID = 'ee97cff0-12d3-4c49-a774-13140d991475' WHERE GUID = 'c6fd6f4e-f99f-488f-b5e6-9bc2e92b2634'
+UPDATE t_Plot SET GUID = '68f1b23e-b3ea-42f5-b363-abe7feb86a50' WHERE GUID = '83147f27-9833-42c1-b59f-95c232575c91'
+UPDATE t_Plot SET GUID = '69fa27e2-5b81-420a-b040-f7885531a408' WHERE GUID = 'a16ccbd9-4842-4eae-be75-166a26e8c1c2'
+UPDATE t_Plot SET GUID = 'f2ebb79c-8ef1-42ad-91dc-9e2d1bea74e2' WHERE GUID = '621e860f-c6c7-4659-b5ad-790071651593'
+UPDATE t_Plot SET GUID = '296ed10d-de48-4602-b19f-9c6c3fc30611' WHERE GUID = '3201f04f-842a-4dba-b04c-6eda959db514'
+UPDATE t_Plot SET GUID = '1820f284-3fc3-4b59-97a8-8f0113161f6c' WHERE GUID = 'ebb20b7c-9274-4cb1-af76-5a8abbf06b68'
+UPDATE t_Plot SET GUID = 'f1722d10-291a-4474-bbd2-613033c343fd' WHERE GUID = '3f3ad0ce-6808-4cf9-9b6c-4c185eb93099'
+UPDATE t_Plot SET GUID = '1c8fb9a0-415d-477b-b7ec-ae455efcd403' WHERE GUID = '0df43f85-e145-417c-9eba-f6d27399aed7'
+UPDATE t_Plot SET GUID = '7d6c7fa8-d644-4111-a4c5-ce642e01e7f0' WHERE GUID = '29a292ca-f492-40cf-9e88-e09acb6f66f5' 
+</pre>
+<p>Note that we haven't verified that this will catch all of the resources that were affected, so you should still take care to empty your core override directory when playing the main campaign if you want to be sure nothing else will break.
+</p><p>A new version of the toolset is being worked on that will include a repaired core database, so you may prefer instead to just wait a few days for it to come out.
+</p><p>For a preview of the corrected core database, apply to join the group <a rel="nofollow" class="external free" href="http://social.bioware.com/group/721/">http://social.bioware.com/group/721/</a> and you'll be able to download a backup of it.
+</p>
+<h2><span class="mw-headline" id="How_did_this_happen.3F">How did this happen?</span></h2>
+<p>The root cause of the problem was a subtle flaw in how the toolset handled the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">builder to builder</a> process for plot files. The builder to builder output files included the plot's GUID in them, but when the builder to builder file is loaded the toolset ignores the recorded GUID and generates a new random GUID for the plot file as if it had been newly created from scratch.
+</p><p>When the toolset's database was prepared for inclusion in the toolset installer, it was first created as a blank database and then the game's core resources were imported into it using the builder to builder process. This is where the GUIDs went out of synch. The problem wasn't caught in subsequent QA since the focus of testing was on whether the toolset was capable of exporting a playable version of the demo module, as the main campaign's resources weren't included. The toolset is capable of doing that just fine since there's no preexisting demo module resources for the exported plot files to have incompatibilities with.
+</p>
+<h2><span class="mw-headline" id="Forum_thread">Forum thread</span></h2>
+<p>The problem was worked out in this thread on the toolset forum: <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/114380">http://social.bioware.com/forum/1/topic/8/index/114380</a>
+</p>

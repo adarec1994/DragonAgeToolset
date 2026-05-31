@@ -1,0 +1,103 @@
+<p>A basic comparison of some of the features between the Dragon Age toolset and other toolsets, to help experienced builders get oriented quickly:
+</p>
+<table border="1" cellspacing="0" cellpadding="2">
+
+<tr>
+<th> Feature </th>
+<th> Dragon Age </th>
+<th> Neverwinter Nights
+</th></tr>
+<tr>
+<th> NPC customization
+</th>
+<td> Advanced face morphing tool </td>
+<td> Limited face creation
+</td></tr>
+<tr>
+<th> Resource management
+</th>
+<td> Database functionality with checking resources in and out and a complete record of past revisions for each resource. Toolset crashes cannot corrupt data.</td>
+<td>
+</td></tr>
+<tr>
+<th> Conversations
+</th>
+<td> Tree-based editor with the ability to attach plot flags and scripts to each line, staging for determining where the participants and camera are positioned during each line, cinematics and animations for each line, and cutscene integration</td>
+<td> Tree-based editor with script, voice and animation control
+</td></tr>
+<tr>
+<th> Cutscenes
+</th>
+<td> Powerful native cutscene creator </td>
+<td> Script-based cutscenes
+</td></tr>
+<tr>
+<th> Data tables
+</th>
+<td>  2das in Excel spreadsheet format </td>
+<td> 2das in custom format
+</td></tr>
+<tr>
+<th> User interface
+</th>
+<td> Palette windows for placing creatures, placeables etc. in a level. Separate art tools for level design, face morphs, models, sound design, cutscenes and VFX.</td>
+<td> Palette windows for placing creatures, placeables etc.
+</td></tr></table>
+<p>Other popular toolsets:
+</p>
+<table border="1" cellspacing="0" cellpadding="2">
+
+<tr>
+<th> Feature </th>
+<th> Dragon Age </th>
+<th> GECK/TES Editor (Morrowind/Oblivion/Fallout 3)
+</th></tr>
+<tr>
+<th> NPC customization
+</th>
+<td> Advanced face morphing tool </td>
+<td> Built-in advanced face editing tool.
+</td></tr>
+<tr>
+<th> Resource management
+</th>
+<td> Database functionality with checking resources in and out and a complete record of past revisions for each resource. Toolset crashes cannot corrupt data.</td>
+<td> No database functionality, though backups are made at intervals.
+</td></tr>
+<tr>
+<th> Conversations
+</th>
+<td> Tree-based editor with the ability to attach plot flags and scripts to each line, staging for determining where the participants and camera are positioned during each line, cinematics and animations for each line, and cutscene integration</td>
+<td> Topic-based editor with topic, script, voice and animation control
+</td></tr>
+<tr>
+<th> Scripting
+</th>
+<td> C++ Based scripting language</td>
+<td> Proprietary scripting format.
+</td></tr>
+<tr>
+<th> Cutscenes
+</th>
+<td> Powerful native cutscene creator </td>
+<td> Script-based cutscenes in a proprietary format.
+</td></tr>
+<tr>
+<th> Data tables
+</th>
+<td>  2das in Excel spreadsheet format </td>
+<td> Proprietary format.
+</td></tr>
+<tr>
+<th> User interface
+</th>
+<td> Palette windows for placing creatures, placeables etc. in a level. Separate art tools for level design, face morphs, models, sound design, cutscenes and VFX.</td>
+<td> Palette windows for placing creatures, placeables etc.
+</td></tr></table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comparisons%20with%20other%20toolkits%20-%20ru" title="Comparisons with other toolkits/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

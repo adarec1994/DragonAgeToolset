@@ -1,0 +1,314 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+* @brief Determine whether or not an attack hits a target.
+*
+* Note that this function only calculates to hit and crits, death blows are
+* determined in Combat_PerformAttack
+*
+* @param oAttacker  The attacker
+* @param oTarget    The target that is being attacked
+* @param nAbility   If&#160;!= 0, it won't trigger backstabs and deathblows.
+*
+* @returns  COMBAT_RESULT_HIT, COMBAT_RESULT_CRITICALHIT or COMBAT_RESULT_MISS
+*
+* @author Georg Zoeller
+*
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetAttackResult<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fBonus <span class="sy0">=</span> <span class="nu0">0.0f</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetAttackResult<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fBonus <span class="sy0">=</span> <span class="nu0">0.0f</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Debug</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nForcedCombatResult <span class="sy0">=</span> GetForcedCombatResult<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nForcedCombatResult <span class="sy0">!=</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; Skipped rules, FORCED RESULT IS:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nForcedCombatResult<span class="br0">&#41;</span>, oTarget<span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nForcedCombatResult;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Placeables are always hit</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectType"><span class="kw4">GetObjectType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">OBJECT_TYPE_PLACEABLE</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; Placeable, automatic result&#160;: COMBAT_RESULT_HIT&quot;</span>, oTarget<span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_HIT</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Displacement</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDisplace <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty"><span class="kw4">GetCreatureProperty</span></a><span class="br0">&#40;</span>oTarget, <span class="kw3">PROPERTY_ATTRIBUTE_DISPLACEMENT</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fRand <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RandomFloat"><span class="kw4">RandomFloat</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">*</span><span class="nu0">100.0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> fRand <span class="sy0">&lt;</span> fDisplace<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; Displacement effect kciked in, automatic result&#160;: COMBAT_RESULT_MISS&quot;</span>, oTarget<span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// if the target has the evasion talent, attribute this miss to the talent</span>
+        <span class="co1">// (random 50% because the anim is interrupting)</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oTarget, ABILITY_TALENT_EVASION<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> fRand <span class="sy0">&lt;</span> <span class="br0">&#40;</span><span class="nu0">20.0f</span> <span class="sy0">-</span> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RandomFloat"><span class="kw4">RandomFloat</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">*</span><span class="nu0">10.0f</span><span class="br0">&#41;</span>  <span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword"><span class="kw2">command</span></a> currentCmd <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentCommand"><span class="kw4">GetCurrentCommand</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCmdType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandType"><span class="kw4">GetCommandType</span></a><span class="br0">&#40;</span>currentCmd<span class="br0">&#41;</span>;
+                <span class="co1">// Evasion only plays during attack and wait commands.</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nCmdType <span class="sy0">==</span> <span class="kw3">COMMAND_TYPE_WAIT</span> <span class="sy0">||</span> nCmdType <span class="sy0">==</span> <span class="kw3">COMMAND_TYPE_ATTACK</span> <span class="sy0">||</span> nCmdType <span class="sy0">==</span> <span class="kw3">COMMAND_TYPE_INVALID</span> <span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    ApplyEffectOnObject<span class="br0">&#40;</span><span class="kw3">EFFECT_DURATION_TYPE_INSTANT</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="nu0">1055</span><span class="br0">&#41;</span>, oTarget, <span class="nu0">0.0f</span>, oTarget, ABILITY_TALENT_EVASION<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_MISS</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>  nAttackType <span class="sy0">=</span> Combat_GetAttackType<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRet;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Get the attackers attack rating (includes effects and equipment stats)</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a>   fAttackRating;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetBaseItemType"><span class="kw4">GetBaseItemType</span></a><span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span> <span class="sy0">==</span> BASE_ITEM_TYPE_STAFF<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Staves always hit</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_HIT</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+    fAttackRating <span class="sy0">=</span>  GetCreatureAttackRating <span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Add item stat (usually 0) along with scripted boni and attack bias.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+&#160;
+    fAttackRating <span class="sy0">+=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemStat"><span class="kw4">GetItemStat</span></a><span class="br0">&#40;</span>oWeapon,   ITEM_STAT_ATTACK<span class="br0">&#41;</span> <span class="sy0">+</span> fBonus <span class="sy0">+</span> ATTACK_HIT_BIAS;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Easier difficulties grant the player a bonus.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    fAttackRating <span class="sy0">+=</span> Diff_GetRulesAttackBonus<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// This section deals with figuring out which critical hit modifier (melee, ranged, etc)</span>
+    <span class="co1">// to use for this attack.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a>   fCriticalHitModifier;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>     nCriticalHitModifier  <span class="sy0">=</span> <span class="br0">&#40;</span>nAttackType <span class="sy0">==</span> ATTACK_TYPE_RANGED<span class="br0">&#41;</span> <span class="sy0">?</span>  CRITICAL_MODIFIER_RANGED <span class="sy0">:</span> CRITICAL_MODIFIER_MELEE;
+&#160;
+&#160;
+&#160;
+    fCriticalHitModifier <span class="sy0">=</span> GetCreatureCriticalHitModifier<span class="br0">&#40;</span>oAttacker, nCriticalHitModifier<span class="br0">&#41;</span>;
+    fCriticalHitModifier <span class="sy0">+=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemStat"><span class="kw4">GetItemStat</span></a><span class="br0">&#40;</span>oWeapon, ITEM_STAT_CRIT_CHANCE_MODIFIER<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">//  Bravery grants +3.5 critical hit per enemy past the first 2</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_BRAVERY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEnemies <span class="sy0">=</span> Max<span class="br0">&#40;</span><span class="nu0">0</span>,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreaturesInMeleeRing"><span class="kw4">GetCreaturesInMeleeRing</span></a><span class="br0">&#40;</span>oAttacker,<span class="nu0">0.0</span>, <span class="nu0">359.99f</span>,TRUE,<span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">-</span><span class="nu0">2</span><span class="br0">&#41;</span>;
+        fCriticalHitModifier <span class="sy0">+=</span>  nEnemies <span class="sy0">*</span> <span class="nu0">3.5f</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Calculate Flanking Bonus</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fFlanking <span class="sy0">=</span> Combat_GetFlankingBonus<span class="br0">&#40;</span>oAttacker, oTarget<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fFlanking <span class="sy0">&gt;</span> <span class="nu0">0.0</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Also increase chance for critical hits by 1/5th of the flanking bonus</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        fCriticalHitModifier <span class="sy0">*=</span>  <span class="br0">&#40;</span><span class="nu0">1.0</span> <span class="sy0">+</span> <span class="br0">&#40;</span>fFlanking<span class="sy0">/</span><span class="nu0">5.0</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Range plays a role too.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDistance <span class="sy0">=</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetDistanceBetween"><span class="kw4">GetDistanceBetween</span></a><span class="br0">&#40;</span>oAttacker, oTarget<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fNoPenaltyDistance <span class="sy0">=</span> MaxF<span class="br0">&#40;</span>POINT_BLANK_RANGE,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemStat"><span class="kw4">GetItemStat</span></a><span class="br0">&#40;</span>oWeapon, ITEM_STAT_OPTIMUM_RANGE<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    fDistance <span class="sy0">=</span> MaxF<span class="br0">&#40;</span>fDistance<span class="sy0">-</span>fNoPenaltyDistance,<span class="nu0">0.0f</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fAttackRoll <span class="sy0">=</span> <span class="nu0">50.0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fPenalties <span class="sy0">=</span> fDistance; <span class="co1">// every meter distance past the free range is -1!</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fAttack <span class="sy0">=</span> fAttackRating  <span class="sy0">+</span> fAttackRoll <span class="sy0">+</span> fFlanking <span class="sy0">-</span> fPenalties;
+&#160;
+    <span class="co1">// &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+    <span class="co1">// BEGIN SECTION CRITICAL HITS</span>
+    <span class="co1">// &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bThreatenCritical <span class="sy0">=</span> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RandomFloat"><span class="kw4">RandomFloat</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">*</span><span class="nu0">100.0f</span>   <span class="sy0">&lt;</span> fCriticalHitModifier  <span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>bThreatenCritical<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// ---------------------------------------------------------------------</span>
+            <span class="co1">// Attacking out of stealth always threatens crit.</span>
+            <span class="co1">// ---------------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsModalAbilityActive"><span class="kw4">IsModalAbilityActive</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_SKILL_STEALTH_1<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                bThreatenCritical <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Death hex effect ... all hits are auto crit</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oTarget, EFFECT_TYPE_DEATH_HEX<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                bThreatenCritical <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Autocrit effect</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oAttacker, EFFECT_TYPE_AUTOCRIT<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                bThreatenCritical <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+        <span class="br0">&#123;</span>
+            <span class="co1">// ---------------------------------------------------------------------</span>
+            <span class="co1">// Double strike does not allow crits</span>
+            <span class="co1">// ---------------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsModalAbilityActive"><span class="kw4">IsModalAbilityActive</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_DUAL_WEAPON_DOUBLE_STRIKE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                bThreatenCritical <span class="sy0">=</span> FALSE;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="co1">// rapid shot doesn't allow critical strikes</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsModalAbilityActive"><span class="kw4">IsModalAbilityActive</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_RAPIDSHOT<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                bThreatenCritical <span class="sy0">=</span> FALSE;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Targets that have critical hit immunity can not be crit...</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bThreatenCritical<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; Critical hit averted, target has critical hit immunity&quot;</span>, oTarget<span class="br0">&#41;</span>;
+            bThreatenCritical <span class="sy0">=</span> <span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oTarget, ABILITY_TRAIT_CRITICAL_HIT_IMMUNITY<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+    <span class="co1">// &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+    <span class="co1">// END SECTION CRITICAL HITS</span>
+    <span class="co1">// &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+&#160;
+&#160;
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// This section deals with calculating the defense values of the attack target</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDefenseRating <span class="sy0">=</span>  GetCreatureDefense<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>nAttackType <span class="sy0">==</span> ATTACK_TYPE_RANGED<span class="br0">&#41;</span> <span class="sy0">?</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty"><span class="kw4">GetCreatureProperty</span></a><span class="br0">&#40;</span>oTarget,PROPERTY_ATTRIBUTE_MISSILE_SHIELD<span class="br0">&#41;</span><span class="sy0">:</span><span class="nu0">0.0f</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Easier difficulties grant the player a bonus.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    fDefenseRating <span class="sy0">+=</span> Diff_GetRulesDefenseBonus<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// A hit is successful if the attack rating exceeds the defense rating</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RandomFloat"><span class="kw4">RandomFloat</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">*</span><span class="nu0">100.0f</span> <span class="sy0">&lt;</span>  fAttack <span class="sy0">-</span> fDefenseRating<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// If we threatened a critical, we crit here, otherwise just report normal hit</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        nRet <span class="sy0">=</span>  <span class="br0">&#40;</span> <span class="br0">&#40;</span>bThreatenCritical<span class="br0">&#41;</span> <span class="sy0">?</span> <span class="kw3">COMBAT_RESULT_CRITICALHIT</span> <span class="sy0">:</span> <span class="kw3">COMBAT_RESULT_HIT</span>  <span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAttackType <span class="sy0">==</span> ATTACK_TYPE_MELEE<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// If we are backstabbing, we change the result here if it</span>
+            <span class="co1">// was a crit. Abilities never bs (anim priority)</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAbility <span class="sy0">==</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> Combat_CheckBackstab<span class="br0">&#40;</span>oAttacker, oTarget, oWeapon,fFlanking<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                    nRet <span class="sy0">=</span>  <span class="kw3">COMBAT_RESULT_BACKSTAB</span>;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+    <span class="br0">&#125;</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Miss...</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        nRet <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_MISS</span>;
+&#160;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Misdirection Hex</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oAttacker, EFFECT_TYPE_MISDIRECTION_HEX<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; Attacker under misdirection hex: Hits are misses, crits are hits.&quot;</span>, oTarget<span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nRet <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_HIT</span> <span class="sy0">||</span> nRet <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BACKSTAB</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            nRet <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_MISS</span>;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nRet <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_CRITICALHIT</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            nRet <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_HIT</span>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+  <span class="co1">//  return COMBAT_RESULT_BACKSTAB;</span>
+&#160;
+    <span class="co2">#ifdef DEBUG</span>
+    Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; ToHit Calculation: &quot;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; fAttack:&quot;</span>  <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fAttack<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; = (fAttackRating: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fAttackRating<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; fAttackRoll:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fAttackRoll<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; (range penalty:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fPenalties<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;)&quot;</span><span class="sy0">+</span>
+                     <span class="st0">&quot; fFlanking: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fFlanking<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; fBonus(script): &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fBonus<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot;)&quot;</span> , oAttacker, oTarget, <span class="kw3">LOG_CHANNEL_COMBAT_TOHIT</span> <span class="br0">&#41;</span>;
+&#160;
+    Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.GetAttackResult&quot;</span>,<span class="st0">&quot; ToHit Calculation (2):  &quot;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; fDefenseRating: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fDefenseRating<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; fCriticalHitModifier: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>fCriticalHitModifier<span class="br0">&#41;</span> <span class="sy0">+</span>
+                     <span class="st0">&quot; bThreatenCritical: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>bThreatenCritical<span class="br0">&#41;</span>, oAttacker, oTarget, <span class="kw3">LOG_CHANNEL_COMBAT_TOHIT</span> <span class="br0">&#41;</span>;
+&#160;
+    <span class="co2">#endif</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nRet;
+&#160;
+<span class="br0">&#125;</span></pre></div></div>

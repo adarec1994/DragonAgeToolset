@@ -1,0 +1,168 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Классы</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Classes/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Скрипты
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Начало</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">Обзор</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial%20-%20ru" title="Scripting tutorial/ru">Инструкция</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">События DA</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">Подмена обработки</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts%20-%20ru" title="Useful Scripts/ru">Примеры</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error%20-%20ru" title="Script error/ru">Ошибки</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20-%20ru" title="Rules/ru (page does not exist)">Правила</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">(en)</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties%20-%20ru" title="Creature Properties/ru">Свойства существ</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute%20-%20ru" title="Attribute/ru">Атрибуты</a></li></ul></li>
+<li><strong class="selflink">Классы</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules%20-%20ru" title="Combat Rules/ru">Система боя</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20-%20ru" title="Ability/ru">Способности</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts%20-%20ru" title="Category:Scripts/ru (page does not exist)">Категория "Скрипты"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">(en)</a></li></ul>
+<dl><dd><small>все статьи категории</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions%20-%20ru" title="Category:Script functions/ru (page does not exist)">Категория "Функции"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions" title="Category:Script functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>описание функций</small></dd></dl>
+</td></tr></table>
+<p><i>В процессе доработки</i>
+</p><p>Dragon Age: Origins является классической ролевой игрой, которая позволяет пользователю играть героем одного из трех классов, каждый из которых обладает уникальными способностями.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5">Описание</span></h2>
+<p>Данная страница описывает техническую составляющую различий между классами и создана с целью помочь пользователям, желающим создать модификации, используя возможности скриптовых правил(ruleset). 
+</p><p>Игровые классы описаны в документе под названием <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="CLA base.xls">CLA_base.xls</a></b>.  
+Таблица, помещенная ниже является выдержкой из этого документа. В ней вы можете видеть различия между классами.
+</p>
+<table border="1" width="100%" style="font-size:xx-small">
+
+<tr>
+<td><b>ID</b></td>
+<td><b>Label</b></td>
+<td><b>BaseHealth</b></td>
+<td><b>BaseManaStamina</b></td>
+<td><b>DepletableProgression</b></td>
+<td><b>StrAdjust</b></td>
+<td><b>ConAdjust</b></td>
+<td><b>WillAdjust</b></td>
+<td><b>MagAdjust</b></td>
+<td><b>CunAdjust</b></td>
+<td><b>DexAdjust</b></td>
+<td><b>BaseAttack</b></td>
+<td><b>BaseDefense</b></td>
+<td><b>DefensePerLevel</b></td>
+<td><b>HealthPerLevel</b></td>
+<td><b>LevelsPerAbility</b></td>
+<td><b>LevelsPerSkill</b></td>
+<td><b>DamagePerLevel</b>
+</td></tr>
+<tr>
+<td>0</td>
+<td>INVALID</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>****</td>
+<td>
+</td></tr>
+<tr>
+<td>1</td>
+<td>Warrior</td>
+<td>100</td>
+<td>100</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>60</td>
+<td>45</td>
+<td>1</td>
+<td>6</td>
+<td>1</td>
+<td>3</td>
+<td>0.4
+</td></tr>
+<tr>
+<td>2</td>
+<td>Wizard</td>
+<td>85</td>
+<td>115</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>50</td>
+<td>40</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>0.1
+</td></tr>
+<tr>
+<td>3</td>
+<td>Rogue</td>
+<td>90</td>
+<td>90</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>55</td>
+<td>50</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0.2
+</td></tr>
+</table>
+<p>Более подробное описание данных из таблицы вы можете найти здесь <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="CLA base.xls">CLA_base.xls</a></b>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2.D1.8B.D0.B9_.D1.8D.D1.82.D0.B0.D0.BF_.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BF.D0.B5.D1.80.D1.81.D0.BE.D0.BD.D0.B0.D0.B6.D0.B0">Скриптовый этап создания персонажа</span></h2>
+<p>В начале создания, все персонажы игры являются такими себе 'болванками', у которых все параметры <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a> установлены по умолчанию.
+</p><p>Скрипты, создающие персонажа вместе с UI-файлами, основываюясь на выборах, сделанных игроком, создают данные в документе <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="CLA base.xls">CLA_base.xls</a>. Эти же файлы ответственны за изменение параметров игрока после получения нового уровня.
+</p><p>Для работы со спутниками героя используются те же файлы и скрипты. Для враждебных созданий используется более ускоренный и оптимизированный алгоритм, определяющий их параметры исходя из ранга, AI(искуственного интеллекта), поведения и уровня.
+</p>
+<h3><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B">Скрипты</span></h3>
+<p>Вот перечень скриптов, который принимают участие в создании персонажа и изменении его параметров в результате получения нового уровня:
+</p>
+<ul><li> sys_chargen - Точка входа для всех персонажей, создание которых основано на событиях (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event (dascript type)">Event</a>), запущенных из модуль-скрипта(module_core.nss).</li>
+<li> sys_chargen_h - Библиотека, которая содержит большинство логических правил, используемых при изменении параметров существа (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>). Основанная на игровых правилах(game rules).</li>
+<li> sys_chargen_engine - Инклуд-скрипт, содержащий несколько константных переменных и часть кода, связанную с игровым движком.</li>
+<li> sys_autolevelup_h - Файл, определяющий логику поднятия уровня спутников героя после их принятия. В дальнейшем используется стандартный алгоритм подьема уровня.</li>
+<li> sys_autoscale_h - Файл, определяющий логику автоподнятия уровня.</li>
+<li> sys_rewards_h - Файл, содержащий количество опыта, получаемого в качестве награды за определенное действие, точки сохранения игры и проверку персонажа на повышение уровня.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

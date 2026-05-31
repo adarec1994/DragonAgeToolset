@@ -1,0 +1,207 @@
+<p>An <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Operator" title="Operator (page does not exist)">operator</a> is symbol that performs a prescribed operation on one or more operands.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dascript" title="Dascript (page does not exist)">dascript</a> compiler recognizes the following operators:
+</p>
+<table class="wikitable">
+<tr>
+<th> Operator </th>
+<th> Symbol
+</th></tr>
+<tr>
+<td colspan="2"> String operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Concatenation%20operator" title="Concatenation operator (page does not exist)">Concatenation</a> </td>
+<td> +
+</td></tr>
+<tr>
+<td colspan="2"> Arithmetic operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Arithmetic%20negation%20operator" title="Arithmetic negation operator (page does not exist)">Arithmetic negation</a> </td>
+<td> -
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Increment%20operator" title="Increment operator (page does not exist)">Increment</a> </td>
+<td> ++
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Decrement%20operator" title="Decrement operator (page does not exist)">Decrement </a> </td>
+<td> --
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Addition%20operator" title="Addition operator (page does not exist)">Addition</a> </td>
+<td> +
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Subtraction%20operator" title="Subtraction operator (page does not exist)">Subtraction</a> </td>
+<td> -
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Multiplication%20operator" title="Multiplication operator (page does not exist)">Multiplication</a> </td>
+<td> *
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Division%20operator" title="Division operator (page does not exist)">Division</a> </td>
+<td> /
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Modulo%20operator" title="Modulo operator (page does not exist)">Modulo</a> </td>
+<td>&#160;%
+</td></tr>
+<tr>
+<td colspan="2"> Bitwise operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20complement%20operator" title="Bitwise complement operator (page does not exist)">Bitwise complement</a> </td>
+<td> ~
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20AND%20operator" title="Bitwise AND operator (page does not exist)">Bitwise AND</a> </td>
+<td> &amp;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20OR%20operator" title="Bitwise OR operator (page does not exist)">Bitwise OR</a> </td>
+<td> |
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20XOR%20operator" title="Bitwise XOR operator (page does not exist)">Bitwise XOR</a> </td>
+<td> ^
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20left%20shift%20operator" title="Bitwise left shift operator (page does not exist)">Bitwise left shift</a> </td>
+<td> &lt;&lt;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20arithmetic%20right%20shift%20operator" title="Bitwise arithmetic right shift operator (page does not exist)">Bitwise arithmetic right shift</a> </td>
+<td> &gt;&gt;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20logical%20right%20shift%20operator" title="Bitwise logical right shift operator (page does not exist)">Bitwise logical right shift</a> </td>
+<td> &gt;&gt;&gt;
+</td></tr>
+<tr>
+<td colspan="2"> Logical operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Logical%20negation%20operator" title="Logical negation operator (page does not exist)">Logical negation</a> </td>
+<td>&#160;!
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conditional%20AND%20operator" title="Conditional AND operator (page does not exist)">Conditional AND</a> </td>
+<td> &amp;&amp;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conditional%20OR%20operator" title="Conditional OR operator (page does not exist)">Conditional OR</a> </td>
+<td> ||
+</td></tr>
+<tr>
+<td colspan="2"> Relational operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Equality%20operator" title="Equality operator (page does not exist)">Equality</a> </td>
+<td> ==
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Inequality%20operator" title="Inequality operator (page does not exist)">Inequality</a> </td>
+<td>&#160;!=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Less%20than%20operator" title="Less than operator (page does not exist)">Less than</a> </td>
+<td> &lt;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Greater%20than%20operator" title="Greater than operator (page does not exist)">Greater than</a> </td>
+<td> &gt;
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Less%20than%20or%20equal%20to%20operator" title="Less than or equal to operator (page does not exist)">Less than or equal to</a> </td>
+<td> &lt;=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Greater%20than%20or%20equal%20to%20operator" title="Greater than or equal to operator (page does not exist)">Greater than or equal to</a> </td>
+<td> &gt;=
+</td></tr>
+<tr>
+<td colspan="2"> Assignment operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Assignment%20operator" title="Assignment operator (page does not exist)">Assignment</a> </td>
+<td> =
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Addition%20assignment%20operator" title="Addition assignment operator (page does not exist)">Addition assignment</a> </td>
+<td> +=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Subtraction%20assignment%20operator" title="Subtraction assignment operator (page does not exist)">Subtraction assignment</a> </td>
+<td> -=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Multiplication%20assignment%20operator" title="Multiplication assignment operator (page does not exist)">Multiplication assignment</a> </td>
+<td> *=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Division%20assignment%20operator" title="Division assignment operator (page does not exist)">Division assignment</a> </td>
+<td> \=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Modulo%20assignment%20operator" title="Modulo assignment operator (page does not exist)">Modulo assignment</a> </td>
+<td>&#160;%=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20AND%20assignment%20operator" title="Bitwise AND assignment operator (page does not exist)">Bitwise AND assignment</a> </td>
+<td> &amp;=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20OR%20assignment%20operator" title="Bitwise OR assignment operator (page does not exist)">Bitwise OR assignment</a> </td>
+<td> |=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20XOR%20assignment%20operator" title="Bitwise XOR assignment operator (page does not exist)">Bitwise XOR assignment</a> </td>
+<td> ^=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Concatenation%20assignment%20operator" title="Concatenation assignment operator (page does not exist)">Concatenation assignment</a> </td>
+<td> +=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20left%20shift%20assignment%20operator" title="Bitwise left shift assignment operator (page does not exist)">Bitwise left shift assignment</a> </td>
+<td> &lt;&lt;=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20arithmetic%20right%20shift%20assignment%20operator" title="Bitwise arithmetic right shift assignment operator (page does not exist)">Bitwise arithmetic right shift assignment</a> </td>
+<td> &gt;&gt;=
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20logical%20right%20shift%20assignment%20operator" title="Bitwise logical right shift assignment operator (page does not exist)">Bitwise logical right shift assignment</a> </td>
+<td> &gt;&gt;&gt;=
+</td></tr>
+<tr>
+<td colspan="2"> Member access operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dot%20operator" title="Dot operator (page does not exist)">Dot</a> </td>
+<td> .
+</td></tr>
+<tr>
+<td colspan="2"> Conditional operators
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conditional%20operator" title="Conditional operator (page does not exist)">Conditional</a> </td>
+<td>&#160;?:
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Operators may be categorised based on the number of operands:
+</p>
+<ul><li> Unary - one operand</li>
+<li> Binary  - two operands</li>
+<li> Ternary - three operands</li></ul>
+<p>Operator precedence:
+</p>
+<ul><li> TODO</li></ul>
+<p>Operator associativity:
+</p>
+<ul><li> Left-associative operators are evaluated in order from left to right. Except for the assignment operators all binary operators are left-associative. For example, a + b - c is evaluated as (a + b) - c.</li>
+<li> Right-associative operators are evaluated in order from right to left. The assignment operators, and the conditional operator are right-associative. For example, x = y = z is evaluated as x = (y = z).</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Operators" title="Category:Operators (page does not exist)">Operators</a></li></ul>

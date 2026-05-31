@@ -1,0 +1,140 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Template:Rublock">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>Данный шаблон предназначен для организации блоков на русской заглавной странице DA Builder Wiki
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9F.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80.D1.8B"><span class="tocnumber">1</span> <span class="toctext">Параметры</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A7.D0.B8.D1.81.D1.82.D1.8B.D0.B9_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD"><span class="tocnumber">2</span> <span class="toctext">Чистый шаблон</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80.D1.8B"><span class="tocnumber">3</span> <span class="toctext">Примеры</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.9F.D1.83.D1.81.D1.82.D0.BE.D0.B5_.D0.BE.D0.BA.D0.BD.D0.BE"><span class="tocnumber">3.1</span> <span class="toctext">Пустое окно</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.9F.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B5_.D0.BE.D0.BA.D0.BD.D0.BE"><span class="tocnumber">3.2</span> <span class="toctext">Простое окно</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.9E.D0.BA.D0.BD.D0.BE.2C_.D0.BF.D0.BB.D0.B0.D0.B2.D0.B0.D1.8E.D1.89.D0.B5.D0.B5_.D1.81.D0.BF.D1.80.D0.B0.D0.B2.D0.B0"><span class="tocnumber">3.3</span> <span class="toctext">Окно, плавающее справа</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9F.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80.D1.8B">Параметры</span></h2>
+<table class="wikitable" width="100%">
+
+<tr>
+<th><b>Параметр</b></th>
+<th><b>Описание</b></th>
+<th><b>Примечание</b>
+</th></tr>
+<tr>
+<td align="center" width="100pt">title</td>
+<td>Текст заголовка.</td>
+<td>
+</td></tr>
+<tr>
+<td align="center" width="100pt">titlealign</td>
+<td>Выравнивание заголовка. По умолчанию - слева.</td>
+<td> Возможные значения - left, right, center.
+</td></tr>
+<tr>
+<td align="center" width="100pt">headcolor</td>
+<td>Цвет заголовка. По умолчанию - <span style="background:#B6D1ED">#B6D1ED</span>.</td>
+<td>Цвет указывается в виде кода предустановленного цвета, также может указываться в виде HEX-кода или HTML-имени. Предустановлённые: 1 - <span style="background:#F1EBB5">#F1EBB5</span>, 2 - <span style="background:#D7FFC7">#D7FFC7</span>, 3 - <span style="background:#E0E0E0">#E0E0E0</span>.
+</td></tr>
+<tr>
+<td align="center" width="100pt">bodycolor</td>
+<td>Цвет тела окна. По умолчанию - <span style="background:#F6F6F6">#F6F6F6</span>.</td>
+<td>Цвет указывается в виде кода предустановленного цвета, также может указываться в виде HEX-кода или HTML-имени. Предустановлённые: 1 - <span style="background:#FFF8DC">#FFF8DC</span>.
+</td></tr>
+<tr>
+<td align="center" width="100pt">width</td>
+<td>Ширина окна. По умолчанию - 100%.</td>
+<td>Допустимо указание как в процентах, так и в конкретном значении.
+</td></tr>
+<tr>
+<td align="center" width="100pt">height</td>
+<td>Высота окна. По умолчанию - по высоте текста.</td>
+<td>Допустимо указание как в процентах, так и в конкретном значении.
+</td></tr>
+<tr>
+<td align="center" width="100pt">float</td>
+<td>Плавающее окно. По умолчанию - none.</td>
+<td>Возможные значения - left, right, none. В случае, если указать left или right, окно будет выравнено по указанной стороне с обтеканием текстом.
+</td></tr>
+<tr>
+<td align="center" width="100pt">clear</td>
+<td>Расположение других элементов вокруг окна.</td>
+<td>Возможные значения - left, right, both, none.
+</td></tr>
+<tr>
+<td align="center" width="100pt">content</td>
+<td>Содержание окна.</td>
+<td>
+</td></tr>
+<tr>
+<td align="center" width="100pt">bottommenu</td>
+<td>Нижнее меню.</td>
+<td>Расположено в правой стороне окна. Передаётся строка со ссылками. Для разделения ссылок используйте шаблон {{mnemonic|1}}.
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.A7.D0.B8.D1.81.D1.82.D1.8B.D0.B9_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD">Чистый шаблон</span></h2>
+<pre>
+{{rublock
+|title      = 
+|titlealign = 
+|headcolor  = 
+|bodycolor  =
+|width      =
+|height     =
+|float      =
+|clear      =
+|content    =
+|bottommenu =
+}}
+</pre>
+<p>Скопируйте этот код и вставьте на вашу страницу.
+</p><p><b>Обратите внимание:</b> Пустые параметры передавать нельзя, то есть передача в шаблон параметра в виде "headcolor=" обнулит значение цвета заголовка, в результате чего его цвет станет прозрачным, и т.п., поэтому удалите неиспользуемые параметры.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80.D1.8B">Примеры</span></h2>
+<h3><span class="mw-headline" id=".D0.9F.D1.83.D1.81.D1.82.D0.BE.D0.B5_.D0.BE.D0.BA.D0.BD.D0.BE">Пустое окно</span></h3>
+<pre>{{rublock}}</pre>
+<div style="clear:; float:; width:; height:; background-color: #F6F6F6; border:1px solid #A7D7F9; padding-top:0px; padding-bottom:2px; padding-left:3px; padding-right:3px; margin-bottom:10px; -webkit-border-bottom-right-radius:7px; -webkit-border-bottom-left-radius:7px; -moz-border-radius-bottomright:7px; -moz-border-radius-bottomleft:7px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">
+<div style="background-color: #B6D1ED; text-align:left; border:1px solid #A7D7F9; border-top:0; padding:6px 6px 6px 6px; font-size:18px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">Заглавие</div>
+<div style="padding:4px 4px 4px 4px;">Содержание окна</div>
+</div>
+<h3><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B5_.D0.BE.D0.BA.D0.BD.D0.BE">Простое окно</span></h3>
+<pre>
+{{rublock
+|title      = Название окна
+|headcolor  = 2
+|content    = Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. 
+|bottommenu = [[Main Page]] {{mnemonic|1}} {{ulink|Main Page|Главная страница|ru}} {{mnemonic|1}} [[Панели инструментов]]
+}}
+</pre>
+<div style="clear:; float:; width:; height:; background-color: #F6F6F6; border:1px solid #A7D7F9; padding-top:0px; padding-bottom:2px; padding-left:3px; padding-right:3px; margin-bottom:10px; -webkit-border-bottom-right-radius:7px; -webkit-border-bottom-left-radius:7px; -moz-border-radius-bottomright:7px; -moz-border-radius-bottomleft:7px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">
+<div style="background-color: #D7FFC7; text-align:left; border:1px solid #A7D7F9; border-top:0; padding:6px 6px 6px 6px; font-size:18px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">Название окна</div>
+<div style="padding:4px 4px 4px 4px;">Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы.</div>
+<div style="font-size:80%; text-align:right; padding-right: 4px; padding-left:4px; clear:both"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">Main Page</a> &#9474; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Главная страница</a> &#9474; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" title="Панели инструментов">Панели инструментов</a></div>
+</div>
+<h3><span class="mw-headline" id=".D0.9E.D0.BA.D0.BD.D0.BE.2C_.D0.BF.D0.BB.D0.B0.D0.B2.D0.B0.D1.8E.D1.89.D0.B5.D0.B5_.D1.81.D0.BF.D1.80.D0.B0.D0.B2.D0.B0">Окно, плавающее справа</span></h3>
+<pre>
+{{rublock
+|title      = Название окна
+|titlealign = center
+|headcolor  = #F0E68C
+|bodycolor  = 1
+|width      = 40%
+|float      = right
+|content    = Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. 
+|bottommenu = [[Main Page]]
+}}
+</pre>
+<div style="clear:; float:right; width:40%; height:; background-color: #FFF8DC; border:1px solid #A7D7F9; padding-top:0px; padding-bottom:2px; padding-left:3px; padding-right:3px; margin-bottom:10px; -webkit-border-bottom-right-radius:7px; -webkit-border-bottom-left-radius:7px; -moz-border-radius-bottomright:7px; -moz-border-radius-bottomleft:7px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">
+<div style="background-color: #F0E68C; text-align:center; border:1px solid #A7D7F9; border-top:0; padding:6px 6px 6px 6px; font-size:18px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">Название окна</div>
+<div style="padding:4px 4px 4px 4px;">Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы.
+<ol><li> Содержание страницы. </li>
+<li> Содержание страницы. </li>
+<li> Содержание страницы. </li></ol>
+Содержание страницы. Содержание страницы. Содержание страницы. Содержание страницы.</div>
+<div style="font-size:80%; text-align:right; padding-right: 4px; padding-left:4px; clear:both"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">Main Page</a></div>
+</div>
+<p>Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера. Текст для примера обтекания спойлера.
+</p>

@@ -1,0 +1,5 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 18:27, 6 February 2010 (UTC) There was some duplication with the Naming Conventions page. I replaced this with a link because I wanted to improve it.
+</p>
+<h2><span class="mw-headline" id="Post_to_Local">Post to Local</span></h2>
+<p>The entire section about using the level files needs clarification, firstly, there is no "Post to Local" under the Tools menu. There is a "Post Selection to Local" under the submenu "Export". Next, the section instructs the user to place the files in an <i>appropriate directory where the game and toolset will be able to find it</i>, but fails to mention which these would be. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Lynamy" title="User:Lynamy (page does not exist)">Lynamy</a> 21:59, 2 August 2013 (UTC)
+</p>

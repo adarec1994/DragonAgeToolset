@@ -1,0 +1,151 @@
+<p>Projectiles are a specialized visual effects that fly from one object to another object or point in the game.  Projectiles are sometimes fired by the Ability system, and are used for ranged combat.
+</p><p>Projectile information will be linked into the main Ability 2da.
+</p><p>Some of the information necessary to define a projectile is:
+</p>
+<ul><li> Speed in m/s</li>
+<li> A script to call when the projectile hits (to determine damage and effects)</li>
+<li> Projectile behaviors for the 3 Stages (described in next section)</li>
+<li> Other important details like sounds and VFX.</li></ul>
+<h2><span class="mw-headline" id="Detailed_Design">Detailed Design</span></h2>
+<p>The 3 Stages of a projectile are Launch, Flight and Impact. Each one of these plays an important part in how the projectile behaves:
+</p>
+<ul><li> Launch Stage: This is when the projectile is still attached to the owner in some form or another. For example, when using a bow, the projectile will be attached to the bow string during this stage and follow it through the firing animation.</li>
+<li> Flight Stage: This stage is composed of a flight pattern that the projectile follows to reach its target. An example of a flight pattern is a Homing behavior in which the projectile will follow the target even if it moves and guarantee that it will hit.</li>
+<li> Impact Stage: When the projectile makes contact with the target it will perform the action specified in the Impact Behavior. An arrow may stick to a shield if it was blocked whereas a fireball needs to explode and spawn a few VFX.</li></ul>
+<h2><span class="mw-headline" id="How_to_Use">How to Use</span></h2>
+<p>The projectile system will be used through ranged combat and abilities. Ranged combatants, when equipped with the proper weapon and ammo will register projectiles in the Projectile Manager. These projectiles will report back to scripting when the projectile hits the target so that damage and effects can be applied. Abilities will work on a similar way, although the projectile type to use will be defined in the ABI_base 2DA as opposed to being a property of the weapon. 
+</p>
+<h2><span class="mw-headline" id="PRJ_base_worksheet">PRJ_base worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  ModelName
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Simulation
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Simulate physics on this projectile. The projectile will ignore the rules system in the game, meaning that it will hit objects only if they are on its path.
+</td></tr>
+<tr>
+<th>  Mass
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  This value multiplied by the gravity of Ferelden will make your projectile have weight. Only useful for projectiles using simulation.
+</td></tr>
+<tr>
+<th>  Acceleration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Acceleration value to reach the top speed in meters per second square.
+</td></tr>
+<tr>
+<th>  InitialSpeed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Starting speed for the projectile. Value is in meters per second. Default value is 0 m/s.
+</td></tr>
+<tr>
+<th>  MinSpeed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Min speed at which the projectile will travel. Value is in meters per second. Useful to prevent projectiles that decelerate from coming to a stop.
+</td></tr>
+<tr>
+<th>  TopSpeed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Max speed at which the projectile will travel. Value is in meters per second. Useful to cap projectiles that accelerate.
+</td></tr>
+<tr>
+<th>  StaticCollisions
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Enable collision detection with static objects such as placeables, trees and level geometry.
+</td></tr>
+<tr>
+<th>  DynamicCollisions
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Report collisions with dynamic objects such as creatures along the projectile path. These collisions will not stop the projectile. The projectile is assumed to be stronger than the dynamic objects it hits.
+</td></tr>
+<tr>
+<th>  HideLaunch
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td> Hide the projectile during the launch phase
+</td></tr>
+<tr>
+<th>  ImpactTimeout
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Time that it takes for the projectile to disappear after hitting its target. Value is in seconds. By default, projectiles will disappear immediately on impact.
+</td></tr>
+<tr>
+<th>  AlphaFade
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Activate alpha blending for fading out the projectile.
+</td></tr>
+<tr>
+<th>  SoundFlying
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  SoundMatType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DamageType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The base damage type of this projectile, used for Staff Projectiles.
+</td></tr>
+<tr>
+<th> DamageBonus
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> A bonus to projectile damage, used by Staff Projectiles.
+</td></tr></table>

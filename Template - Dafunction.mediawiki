@@ -1,0 +1,44 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{dafunction
+|version       =
+|name          = _AI_Condition_GetCreatureWithAIStatus
+|brief         = Returns a creature with a specifc AI Status
+|param1type    = int
+|param2arra    = 
+|param1name    = nAIStatus
+|param1desc    = the status being checked for if active on a creature
+|param1default =
+|param2type    = int
+|param2arra    = 
+|param2name    = nTargetType
+|param2desc    = the target type of creature we are looking for that might have the specified status
+|param2default =
+.
+.
+.
+|returntype    = object
+|returnarra    = 
+|returndesc    = A creature of a specific type (self, ally, hostile) that has the status applied, OBJECT_INVALID otherwise
+|sourcefile    = ai_conditions_h
+|sourcemodule  = Core Game Resources
+}}
+&lt;!-- == Description == --&gt;
+&lt;!-- This section contains the full description from the functions comments. Do not change unless you are confident these are incomplete or incorrect. --&gt;
+&lt;!-- == Remarks == --&gt;
+&lt;!-- This section contains additional comments, observations and known issues. --&gt;
+&lt;!-- == Examples == --&gt;
+&lt;!-- This section contains examples transcluded from the snippet library. --&gt;
+&lt;!-- == See also == --&gt;
+&lt;!-- This section contains links to articles, functions or constant groups. --&gt;
+
+</pre>
+<p>The return and parameter fields also have corresponding "arra" fields,  for example <b>param1arra</b>. When any value, normally "true", is placed in these fields the  corresponding return type or parameter type will be made into an array.  This is required because the [] notation of arrays conflicts with the  wiki's link notation.
+</p><p>A standard function page will have a number of other headers below this template where more detailed and free-form information will be added by editors. The recommended headers and their purpose are:
+</p>
+<ul><li> <b>Description</b>: a more verbose description of the function</li>
+<li> <b>Remarks</b>: hints and tips on usage; caveats or known issues; workarounds or unusal uses; etc.</li>
+<li> <b>Examples</b>: dascript snippets demonstrating how to use the functions</li>
+<li> <b>See also</b>: links to related articles or categories</li></ul>
+<p>Others sections can be added when and where needed.
+</p>

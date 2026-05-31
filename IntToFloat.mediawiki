@@ -1,0 +1,21 @@
+<p>Converts an integer to a floating point number.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> IntToFloat(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nInteger<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nInteger<dd>The integer to convert
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>A floating point representation of the integer nInteger.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the integer nInteger in floating point format.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToInt" title="FloatToInt">FloatToInt</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString" title="IntToString">IntToString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString" title="IntToString">IntToString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToHexString" title="IntToHexString">IntToHexString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToChar" title="IntToChar">IntToChar</a>
+</p>

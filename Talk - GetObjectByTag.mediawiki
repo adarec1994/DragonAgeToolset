@@ -1,0 +1,9 @@
+<p>Stealing from Craig Graff's forum post <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/1255820">here</a>:
+</p><p>"GetObjectByTag only gets objects that are currently loaded into memory, meaning any objects in the current area list (active or inactive), as well as objects like world maps and map locations (also anything in the char_stage area)."
+</p><p>Mostly stands to reason, but never a bad thing to be explicit. Just putting it in "talk" for the moment since it's copy and pasted verbatim.
+</p>
+<dl><dd>Looks like a reasonable thing to put straight into the main page. I'll do that. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 16:50, 17 February 2010 (UTC)</dd></dl>
+<p><br />
+Another potential update... apparently you can get the object area boundries if they're in the list, yet not alter it.
+[<a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/71/index/1806071">[1]</a>] <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 01:48, 21 April 2010 (UTC)
+</p>

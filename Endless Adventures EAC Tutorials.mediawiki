@@ -1,0 +1,84 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Before_You_Begin_Your_Addin..."><span class="tocnumber">1</span> <span class="toctext">Before You Begin Your Addin...</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Finding_Coordinates_for_the_PRCSCR"><span class="tocnumber">1.1</span> <span class="toctext">Finding Coordinates for the PRCSCR</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Script_Templates"><span class="tocnumber">2</span> <span class="toctext">Script Templates</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#PRCSCR"><span class="tocnumber">2.1</span> <span class="toctext">PRCSCR</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Endless_Adventures_Hire_Script"><span class="tocnumber">2.2</span> <span class="toctext">Endless Adventures Hire Script</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Tutorials"><span class="tocnumber">3</span> <span class="toctext">Tutorials</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Before_You_Begin_Your_Addin...">Before You Begin Your Addin...</span></h2>
+<p>If you've already completed this step (either for an EAP or EAC), you don't need to worry about this tutorial.
+</p><p>Before you can begin creating an Endless Adventures Addin, you have to have a "fake" module to attach your addin to so that your module extends the base campaign. This tutorial walks through the basic steps required for this process.
+</p>
+<ul><li> Open up the toolset and select File-&gt;Manage Modules.</li>
+<li> Create a new module. In the UID row, enter "endlessadv_da1" (minus the quotes.)</li>
+<li> Create your module. Aside from making sure your module is compatible, the only value you need to make sure to set is the "Extended Module" value, which should be set to the Endless Adventures base module (created in step 2.)</li>
+<li> Open your module from the module manager and begin creating your addin.</li></ul>
+<p>If you don't set your module to extend the base module, it won't properly attach to the campaign.
+</p>
+<h3><span class="mw-headline" id="Finding_Coordinates_for_the_PRCSCR">Finding Coordinates for the PRCSCR</span></h3>
+<p>In order to make sure you place your hook character in the correct place in the hub, you'll need to have a testing area (that isn't exported or packaged in the player file) to find the coordinates. 
+</p>
+<ul><li> Copy the "cas_100" folder from the "endlessadv_da1" base campaign (in the addins/endlessadv_da1/core/env/ folder) into your addin's core/env folder. </li>
+<li> If the toolset is open, close it and restart the toolset. When you create the test area, cas_100" should be available as an area layout. </li></ul>
+<p>You want to find an unoccupied place (check all of the compatability guides to figure out which places are taken) and place your character or a waypoint on the spot you want to use. Once you are pleased with the coordinates and orientation, copy them down for use in the PRCSCR script.
+</p>
+<h2><span class="mw-headline" id="Script_Templates">Script Templates</span></h2>
+<h3><span class="mw-headline" id="PRCSCR">PRCSCR</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates#Adding_a_NPC_into_an_existing_Area" title="PRCSCR Script Templates"> PRCSCR: Adding a NPC to an existing area.</a>
+</p><p>The linked tutorial has the basic PRCSCR used for adding new characters to the hub area.
+</p>
+<ul><li> The hub area's tag/resref is "ea_hub_main".</li></ul>
+<h3><span class="mw-headline" id="Endless_Adventures_Hire_Script">Endless Adventures Hire Script</span></h3>
+<p>(Based on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20tutorial" title="Follower tutorial">Follower_tutorial</a>.)
+</p><p>To create the hiring script, you'll actually need <i>two</i> scripts. One is an include file to hold the basic functions that make the hire script work, and another script to actually run the hiring.
+</p><p>You'll want to first create a script called "ea_companion_h", and make sure it has the following code. (This is mostly the same as the linked tutorial, but some changes were made "under the hood" to add or remove certain features.)
+</p>
+<ul><li>Note: If this script doesn't have the same code as the base Endless Adventures module, you may override the functionality of the script and cause companions from other modders to work incorrectly when your mod is installed. Make sure to make any changes to companion scripting in your personal scripts rather than this one.</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Companion%20Hire%20Include" title="Endless Adventures Companion Hire Include">Link to "ea_companion_h" code</a>. (Moved due to size.)
+</p><p>After you have copied and saved this script (it won't compile properly because it's an include script), you want to create your hire script (whether you will call it as-is or part of a plot flag script.) The standalone script should look like this:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;ea_companion_h&quot;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;eac_duncan&quot;</span><span class="br0">&#41;</span>;   <span class="co1">//Pass your follower object, mandatory</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nClass <span class="sy0">=</span> CLASS_ROGUE;    <span class="co1">//Pass a Class constant here, usually CLASS_ROGUE, CLASS_WARRIOR, CLASS_WIZARD.  Mandatory due to a bug.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nForceSpec <span class="sy0">=</span> <span class="nu0">0</span>;  <span class="co1">//This is the ID of the Specialisation you want.  Note they are NOT classes, but abilities.  The full list is:</span>
+                             <span class="co1">//ABILITY_SPELL_HIDDEN_ARCANE_WARRIOR, ABILITY_SPELL_HIDDEN_BLOODMAGE, ABILITY_SPELL_HIDDEN_SHAPESHIFTER, ABILITY_SPELL_HIDDEN_SPIRIT_HEALER</span>
+                             <span class="co1">//ABILITY_SPELL_HIDDEN_BARD, ABILITY_TALENT_HIDDEN_ASSASSIN, ABILITY_TALENT_HIDDEN_DUELIST, ABILITY_TALENT_HIDDEN_RANGER</span>
+                             <span class="co1">//ABILITY_TALENT_HIDDEN_BERSERKER, ABILITY_TALENT_HIDDEN_CHAMPION, ABILITY_TALENT_HIDDEN_REAVER, ABILITY_TALENT_HIDDEN_TEMPLAR</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nALTable <span class="sy0">=</span> <span class="nu0">0</span>;    <span class="co1">//This is the ID of an ALTable from 2DA_base.GDA or your module's m2DA_base_*.GDA  I recommended the latter, but you can edit that into GetCustomFollowerALTable below rather than passing it.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAutolevel <span class="sy0">=</span> <span class="nu0">0</span>;     <span class="co1">//Sets the Autolevel flag on the character sheet.  0 is off, 1 is on, 2 forces it on and removes it so the player can't turn it off.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bFreeSpecPoint <span class="sy0">=</span> TRUE;  <span class="co1">//This grants a specialisation point to the follower if they do not have a specialisation.</span>
+                                <span class="co1">//It's important to set this false for classes that do not have specs, such as CLASS_DOG.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nTargetLevel <span class="sy0">=</span> <span class="nu0">0</span>;   <span class="co1">//If you want a specific level, set this.  Generally not worthwhile unless you set it higher than the player, since they'll just get XP from the party picker anyway.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMinLevel <span class="sy0">=</span> <span class="nu0">0</span>;       <span class="co1">//Set this if there's a specific level you don't want the follower to go below.  Probably only useful if the PC might be very low level but not necessarily so.</span>
+&#160;
+<span class="co1">// Run the hire script.</span>
+EA_HireFollower<span class="br0">&#40;</span>oFollower, nClass, nForceSpec, nALTable, nAutolevel, bFreeSpecPoint, nTargetLevel, nMinLevel<span class="br0">&#41;</span>;
+<span class="co1">// Set a plot flag (optional)</span>
+<span class="co1">// The first field is the tag of the plot file.</span>
+<span class="co1">// The second field is the flag ID.</span>
+<span class="co1">// The third field is TRUE (1) or FALSE (0).</span>
+WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;eac_duncan_plot&quot;</span>, <span class="nu0">0</span>, <span class="nu0">1</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="Tutorials">Tutorials</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR" title="PRCSCR"> PRCSCR Basics</a></li></ul>

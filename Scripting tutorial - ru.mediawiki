@@ -1,0 +1,179 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Инструкция по скриптам</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/Scripting_tutorial/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Скрипты
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Начало</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">Обзор</a></li>
+<li><strong class="selflink">Инструкция</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">События DA</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">Подмена обработки</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts%20-%20ru" title="Useful Scripts/ru">Примеры</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error%20-%20ru" title="Script error/ru">Ошибки</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20-%20ru" title="Rules/ru (page does not exist)">Правила</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">(en)</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties%20-%20ru" title="Creature Properties/ru">Свойства существ</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute%20-%20ru" title="Attribute/ru">Атрибуты</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes%20-%20ru" title="Classes/ru">Классы</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules%20-%20ru" title="Combat Rules/ru">Система боя</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20-%20ru" title="Ability/ru">Способности</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts%20-%20ru" title="Category:Scripts/ru (page does not exist)">Категория "Скрипты"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">(en)</a></li></ul>
+<dl><dd><small>все статьи категории</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions%20-%20ru" title="Category:Script functions/ru (page does not exist)">Категория "Функции"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions" title="Category:Script functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>описание функций</small></dd></dl>
+</td></tr></table>
+<p>Последним фрагментом нашей маленькой обучающей игре будет установка флага <b>MONSTERS_SLAIN</b> в нашем Plot-файле так, чтобы когда игрок выполнит задание, НПС, давший это задание, узнал об этом. Делается это с помощью скрипта.
+</p><p>Синтаксис написания скриптов  в DA похож на синтаксис языка С. Этот учебник содержит несколько приёмов программирования, и мы надеемся, что даже с небольшими познаниями в написании скриптов, вы сумеете извлечь из него кое-что полезное.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9.D0.BD.D0.BE-.D0.BE.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D0.B0.D1.8F_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D1.8C_Dragon_Age"><span class="tocnumber">1</span> <span class="toctext">Событийно-ориентированная модель Dragon Age</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0.2C_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.B0.D1.82.D1.8B.D0.B2.D0.B0.D1.8E.D1.89.D0.B5.D0.B3.D0.BE_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><span class="tocnumber">2</span> <span class="toctext">Создание простого скрипта, обрабатывающего события</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.9A.D0.BE.D0.BD.D1.81.D1.82.D0.B0.D0.BD.D1.82.D1.8B_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9"><span class="tocnumber">2.1</span> <span class="toctext">Константы событий</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.98.D0.B7.D0.B2.D0.BB.D0.B5.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.BD.D1.84.D0.BE.D1.80.D0.BC.D0.B0.D1.86.D0.B8.D0.B8_.D0.BE_.D1.82.D0.B5.D0.BA.D1.83.D1.89.D0.B5.D0.BC_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B8"><span class="tocnumber">2.2</span> <span class="toctext">Извлечение информации о текущем событии</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.92.D0.B7.D0.B0.D0.B8.D0.BC.D0.BE.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D0.B5_.D1.81_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0.D0.BC.D0.B8"><span class="tocnumber">3</span> <span class="toctext">Взаимодействие с Plot-файлами</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.90.D1.81.D1.81.D0.BE.D1.86.D0.B8.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9_.D1.81_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.BE.D0.BC"><span class="tocnumber">4</span> <span class="toctext">Ассоциирование скрипта событий с объектом</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.B4.D0.B0.D1.87.D0.B0_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B4.D1.80.D1.83.D0.B3.D0.B8.D0.BC_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B0.D0.BC"><span class="tocnumber">4.1</span> <span class="toctext">Передача события другим обработчикам</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9.D0.BD.D0.BE-.D0.BE.D1.80.D0.B8.D0.B5.D0.BD.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D0.B0.D1.8F_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D1.8C_Dragon_Age">Событийно-ориентированная модель Dragon Age</span></h2>
+<p>Скрипты DA являются событийно-ориентированными. Событие (Event) – это пакет информации в специальном формате, которое передаётся игре, чтобы вызвать какую-либо реакцию на него. События генерируются скриптами движка игры и посылаются скрипту объекта, обрабатывающему события. 
+</p><p>События различаются по типу, объекту назначения, задержке времени и пакету параметров (произвольное количество численных, объектных, плавающих и строковых переменных).
+</p><p>Для примера, cобытие  <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT%20-%20ru" title="EVENT TYPE ATTACK IMPACT/ru (page does not exist)">EVENT_TYPE_ATTACK_IMPACT</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT" title="EVENT TYPE ATTACK IMPACT">(en)</a></i> генерируется движком игры каждый раз, когда атака поражает цель. Оно содержит идентификаторы атакующего и цели, было ли попадание критическим, и количество ущерба, принесённого попаданием. Оно посылается в скрипт событий атакующего, который обрабатывает информацию, содержащуюся в событии, необходимым образом (обычно снимает с цели очки здоровья).
+</p><p>В нашем случае нам нет необходимости генерировать собственные события. Мы указали, что все монстры в хижине являются членами команды № 1, а игра генерирует событие, когда все члены какой-либо команды убиты. Наш новый скрипт отреагирует на это событие и установит значение флага в Plot-файле, указывая, что все монстры уничтожены и задание выполнено.
+</p><p>События, имеющиеся в игре практически на любой случай, перечислены по ссылке <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event (dascript type)/ru">События в DA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event (dascript type)">(en)</a></i>. Событие, о котором мы недавно упомянули и которое посылается при уничтожении какой-либо команды, называется <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TEAM%20DESTROYED%20-%20ru" title="EVENT TYPE TEAM DESTROYED/ru (page does not exist)">EVENT_TYPE_TEAM_DESTROYED</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TEAM%20DESTROYED" title="EVENT TYPE TEAM DESTROYED">(en)</a></i> и содержит номер команды.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0.2C_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.B0.D1.82.D1.8B.D0.B2.D0.B0.D1.8E.D1.89.D0.B5.D0.B3.D0.BE_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Создание простого скрипта, обрабатывающего события</span></h2>
+<p>Создайте новый скрипт и назовите его <b>hut_monsters_slain</b>.
+</p><p>В большинстве случаев скрипт запускается с функции, которая называется <b>main</b>. Таким образом, большинство скриптов начинается  со следующих строк:
+</p>
+<pre>
+void main()
+{
+
+}
+</pre>
+<p>Код, который будет выполнять нашу задачу, должен содержаться между фигурными скобками. Функция <b>main</b> не возвращает какой-либо результат, таким образом, тип функции должен быть <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20-%20ru" title="Void/ru (page does not exist)">void</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void">(en)</a></i>, и не содержит параметров ().
+</p>
+<h3><span class="mw-headline" id=".D0.9A.D0.BE.D0.BD.D1.81.D1.82.D0.B0.D0.BD.D1.82.D1.8B_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9">Константы событий</span></h3>
+<p>Далее мы должны убедиться, что скрипт поймёт, что от него требуется, когда мы будем делать ссылки на события. Каждое событие имеет своё численное обозначение, но программисту было бы практически нереально ориентироваться только на это, вместо этого можно использовать более удобочитаемые константы.
+</p><p>Эти константы определены в скрипте <b>events_h</b>.   Суффикс "<b>_h</b>"  указывает на то, что скрипт не является самостоятельным и содержит основные константы и функции игры, которые могут использоваться только из других скриптов. 
+</p><p>Для подключения такого скрипта необходимо в самом начале нашего скрипта вписать следующую строку:
+</p>
+<pre>#include "events_h"</pre>
+<p>Все команды <b>#include</b> должны располагаться в самом начале скрипта, перед любыми другими конструкциями. Если же их несколько, то порядок их расположения относительно друг друга не имеет значения.
+</p><p>Чтобы проверить, знает ли наш скрипт такое событие, как <b>EVENT_TYPE_TEAM_DESTROYED</b>, можно посмотреть на окно, расположенное в окне редактора скриптов справа. Изначально это окно показывает список доступных функций (<b>кнопка "f()"</b>), чтобы отобразить константы, нажмите на кнопку "<b>C</b>".
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser.png"><img alt="Scripting constant browser.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b3/Scripting_constant_browser.png" width="205" height="256" /></a>
+</p><p>Даже без подключения каких-либо скриптов этот список будет весьма длинным, в противном же случае, можно и запутаться в них. Чтобы найти какую-либо константу введите в поле справа от кнопок любую часть имени константы.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Scripting%20constant%20browser%20filtered.png"><img alt="Scripting constant browser filtered.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Scripting_constant_browser_filtered.png" width="205" height="157" /></a>
+</p><p>Для того, чтобы добавить в скрипт константу, просто дважды щёлкните по её имени в списке. Константа добавится в то место, где в скрипте установлен курсор. Такой способ поможет избежать каких-либо опечаток в названии. Также вы можете напечатать начало названия константы или функции и нажать Ctrl-Space вследствие чего появится список доступных значений.
+</p>
+<h3><span class="mw-headline" id=".D0.98.D0.B7.D0.B2.D0.BB.D0.B5.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.BD.D1.84.D0.BE.D1.80.D0.BC.D0.B0.D1.86.D0.B8.D0.B8_.D0.BE_.D1.82.D0.B5.D0.BA.D1.83.D1.89.D0.B5.D0.BC_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B8">Извлечение информации о текущем событии</span></h3>
+<p>Когда событие посылается в скрипт, его функция <b>main</b> начинает выполняться, но пока вы не сделаете определённые действия скрипт ничего не будет знать о принятом событии.
+</p><p>Первое, что мы должны сделать, это установить что за событие происходит. Мы определим переменную типа <b>event</b>, которую назовём <b>ev</b>. Для этого мы используем функцию <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent%20-%20ru" title="GetCurrentEvent/ru (page does not exist)">GetCurrentEvent</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent" title="GetCurrentEvent">(en)</a></i>. Итак, первой строкой в нашем скрипте будет:
+</p>
+<pre>event ev = GetCurrentEvent();</pre>
+<p>Каждое событие принадлежит определённому типу и, как описано выше, имеет своё численное обозначение. Мы создадим численную переменную, которую назовём <b>nEventType</b> и которая будет хранить численное обозначение нашего события. Для её определения мы используем функцию <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType%20-%20ru" title="GetEventType/ru (page does not exist)">GetEventType</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType" title="GetEventType">(en)</a></i>, которая извлечёт нужную нам информацию из переменной <b>ev</b>. Следующей строкой нашего скрипта будет:
+</p>
+<pre>int nEventType = GetEventType(ev);</pre>
+<p>Остальная информация, которая передаётся с событием, зависит от того, что это за событие. Таким образом, остальная часть скрипта будет обрабатывать специфична для нашего события. Чтобы скрипт обрабатывал именно наше событие, мы используем конструкцию <b>switch</b>. Конечно в случае если скрипт обрабатывает немного событий, можно использовать конструкцию <b>if</b>, но использование конструкции <b>switch</b> будет предпочтительнее при дальнейшем расширении скрипта.
+</p>
+<pre>
+switch(nEventType)
+    {
+         case EVENT_TYPE_TEAM_DESTROYED:
+         {
+             //Здесь должен быть код, обрабатывающий событие
+             break;
+         }
+    }
+</pre>
+<p>Из документации мы знаем, что событие <b>EVENT_TYPE_TEAM_DESTROYED</b> содержит только одну информацию, а именно номер команды. Это целочисленное значение, а значит мы можем извлечь его с помощью функции <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger%20-%20ru" title="GetEventInteger/ru (page does not exist)">GetEventInteger</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">(en)</a></i>. Эта функция требует наличия двух параметров, само событие как объект (мы его сохранили в переменную <b>ev</b>) и индекс запрашиваемого нами значения, в нашем случае это <b>0</b> (как указано в документации).
+</p><p>Мы также помним, что монстры в хижине у нас принадлежат команде № 1, таким образом нам надо обновить Plot-файл тогда, когда команда № 1 будет полностью уничтожена. Сделать это можно с помощью конструкции <b>if</b>:
+</p>
+<pre>
+if (GetEventInteger(ev,0) == 1)
+{
+    //Здесь должен быть код, обновляющий Plot-файл
+}
+</pre>
+<h2><span class="mw-headline" id=".D0.92.D0.B7.D0.B0.D0.B8.D0.BC.D0.BE.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D0.B5_.D1.81_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0.D0.BC.D0.B8">Взаимодействие с Plot-файлами</span></h2>
+<p>Для взаимодействия с Plot-файлами нам необходимо чтобы скрипт знал, где какие флаги находятся. Это делается тем же способом что и со скриптами, содержащими константы, а именно подключением к скрипту. 
+</p><p>Plot-файлы не являются скриптами, поэтому для того, чтобы игра поняла, что речь идёт о Plot-файле, необходимо использовать префикс <b>plt_</b>. Plot-файл, взаимодействие с которым нам нужно обеспечить называется <b>clear_the_hut</b>, таким образом в начале скрипта, там где мы перечисляем подключаемые файлы, нужно ввести следующую строку:
+</p>
+<pre>#include "plt_clear_the_hut"</pre>
+<p>Теперь у нашего скрипта есть доступ к флагам Plot-файла и он может считывать их значения и изменять их. Также изменился и список констант, в который добавились <b>PLT_CLEAR_THE_HUT</b> - сам Plot-файл, и целочисленные: <b>MONSTERS_SLAIN</b>, <b>QUEST_ACCEPTED</b> и <b>REWARD_RECEIVED</b>, которые идентифицируют флаги во вновь подключенном Plot-файле.
+</p><p>Изменение состояния флагов осуществляется при помощи функции <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetPlotFlag%20-%20ru" title="WR SetPlotFlag/ru (page does not exist)">WR_SetPlotFlag</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetPlotFlag" title="WR SetPlotFlag">(en)</a></i>, которая определена в подключаемом скрипте <b>wrappers_h</b>. Скрипт <b>wrappers_h</b> содержит функции, которые используются для операций, требующих низкоуровневый доступ к ресурсам игры.  Для подключения этого скрипта добавьте в начало вашего скрипта следующую строку:
+</p>
+<pre>#include "wrappers_h"</pre>
+<p>В нашем случае мы хотим установить флаг <b>MONSTERS_SLAIN</b>.  Функция <b>WR_SetPlotFlag</b> требует три параметра: идентификатор Plot-файла, идентификатор флага, и значение, которое мы хотим установить:
+</p>
+<pre>
+WR_SetPlotFlag(PLT_CLEAR_THE_HUT, MONSTERS_SLAIN, TRUE);
+</pre>
+<h2><span class="mw-headline" id=".D0.90.D1.81.D1.81.D0.BE.D1.86.D0.B8.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9_.D1.81_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.BE.D0.BC">Ассоциирование скрипта событий с объектом</span></h2>
+<p>Наш скрипт практически готов, но пока мы не привяжем его к нужному объекту, который может получать события, он не сможет быть запущенным.
+</p><p>У большинства объектов в DA в свойствах имеется поле, называемое <b>Script</b>. Согласно документации события <b>EVENT_TYPE_TEAM_DESTROYED</b> оно посылается локации (<b>Area</b>), в котором находится уничтоженная команда, таким образом нам надо открыть локацию <b>hut_interior</b> и найти в его свойствах поле <b>Script</b>. Для локации по умолчанию выбирается скрипт событий <b>area_core</b>, который обрабатывает события локации согласно обычным установкам.
+</p><p>Нам же надо указать в этом поле наш скрипт <b>hut_monsters_slain</b>, для этого нажмите на кнопку выбора (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) и выберите его. Теперь, когда эта локация будет получать какие-либо события, обрабатывать их будет наш скрипт. 
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B4.D0.B0.D1.87.D0.B0_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F_.D0.B4.D1.80.D1.83.D0.B3.D0.B8.D0.BC_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B0.D0.BC">Передача события другим обработчикам</span></h3>
+<p>Теперь нам осталось решить только одну проблему. Как упомянуто выше, множество событий, которые принимает объект, обрабатываются основным его скриптом, в случае с локацией это <b>area_core</b>. 
+Наш же скрипт, которым мы заменили основной, обрабатывает только одно событие, остальные же события, которые получает локация, обрабатываться не будут. 
+</p><p>Глупо было бы переносить функции, обрабатывающие остальные события, в наш скрипт, для чего есть несколько причин: очень большая работа, возможность допустить ошибки, затруднённое последующее обновление скрипта. К счастью есть способ, который позволит нам после выполнения нашего обработчика передать полученное событие на обработку основному скрипту объекта, а именно функция <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent%20-%20ru" title="HandleEvent/ru (page does not exist)">HandleEvent</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent" title="HandleEvent">(en)</a></i>. Она требует два параметра, идентификатор события, которое следует обработать и идентификатор скрипта, в который передаётся событие.
+</p><p>Константы, определяющие основные скрипты, находятся в скрипте <b>global_objects_h</b>, но мы не будем подключать этот скрипт к нашему, так как он уже подключён к скрипту <b>wrappers_h</b>. Таким образом, всё что мы должны сделать, это вставить следующую строку после конструкции <b>switch</b> нашего скрипта:
+</p>
+<pre>
+HandleEvent(ev, RESOURCE_SCRIPT_AREA_CORE);
+</pre>
+<p>Константа <b>RESOURCE_SCRIPT_AREA_CORE</b> определена в <b>global_objects_h</b>, который мы не стали подключать к нашему скрипту, так как это уже сделано в скрипте <b>wrappers_h</b>.
+</p><p>После этого, каждое событие, получаемое нашей локацией <b>hut_interior area</b>, первоначально будет обрабатываться нашим скриптом, с последующей передачей управления основному её скрипту <b>area_core</b> для обработки обычных событий.
+</p><p>Окончательный текст нашего скрипта будет выглядеть следующим образом:
+</p>
+<pre>
+#include "events_h"
+#include "plt_clear_The_hut"
+#include "wrappers_h"
+
+void main()
+{   
+    event ev = GetCurrentEvent();
+    int nEventType = GetEventType(ev);
+    
+    switch(nEventType)
+    {
+         case EVENT_TYPE_TEAM_DESTROYED:
+         {
+              if(GetEventInteger(ev,0) == 1)
+              {
+                   WR_SetPlotFlag(PLT_CLEAR_THE_HUT, MONSTERS_SLAIN, TRUE);
+              }
+              break;
+         }
+    }
+    HandleEvent(ev, RESOURCE_SCRIPT_AREA_CORE);
+}
+</pre>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

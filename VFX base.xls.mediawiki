@@ -1,0 +1,17 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Visual effect topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial" title="VFX tutorial">VFX tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">VFX editor</a></li>
+<li><strong class="selflink">VFX base.xls</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li></ul>
+</td></tr></table>
+<p>The <strong class="selflink">VFX_base.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> file that defines all visual effects.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> _readme</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%202da" title="VFX Base 2da">VFX_Base</a></li></ul>

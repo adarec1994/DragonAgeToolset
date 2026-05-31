@@ -1,0 +1,182 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Захват видео</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Cutscene_capture/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99%;"><div style="text-align:center;"><b>Просьба!</b></div><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> - если кто использует данную статью, то прошу отписаться мне о том, как у вас всё пройдёт, какие проблемы будут. Например, вызывает подозрения файл "preview_cin.vcf". Отписаться можно на e-mail либо в личку на <b>da-world.ru</b>. Спасибо!</div>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">Cutscene actions</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">Play animation</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">Cutscene capture</a></li></ul>
+</td></tr></table>
+<p>Набор команд для командной строки, позволяющих захватить видео и скриншоты из игры без каких-либо нежелательных элементов пользовательского интерфейса.
+</p><p><b>Примечание</b>: Данная информация была скопирована из внутренней документации. Работоспособность для окончательной версии игры не гарантируется.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D1.80.D0.BE.D0.BB.D0.B8.D0.BA.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Запуск ролика</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.86.D0.B5.D0.BD.D1.8B"><span class="tocnumber">2</span> <span class="toctext">Определение сцены</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.97.D0.B0.D0.BF.D0.B8.D1.81.D1.8C_.D1.81_.D0.B2.D1.8B.D1.81.D0.BE.D0.BA.D0.B8.D0.BC_.D1.80.D0.B0.D0.B7.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D0.B5.D0.BC"><span class="tocnumber">3</span> <span class="toctext">Запись с высоким разрешением</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9F.D0.BE.D0.B4.D0.BC.D0.B5.D0.BD.D0.B0_FPS"><span class="tocnumber">4</span> <span class="toctext">Подмена FPS</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.9E.D1.82.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0"><span class="tocnumber">5</span> <span class="toctext">Отключение графического интерфейса</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.9F.D0.BE.D0.B4.D0.BC.D0.B5.D0.BD.D0.B0_.D1.80.D0.B0.D0.B7.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_.D1.8D.D0.BA.D1.80.D0.B0.D0.BD.D0.B0"><span class="tocnumber">6</span> <span class="toctext">Подмена разрешения экрана</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.97.D0.B0.D1.85.D0.B2.D0.B0.D1.82_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE"><span class="tocnumber">7</span> <span class="toctext">Захват видео</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BC.D0.B0.D0.BA.D1.81.D0.B8.D0.BC.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE.D0.B3.D0.BE_FPS"><span class="tocnumber">8</span> <span class="toctext">Определение максимального FPS</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.9E.D1.82.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D1.81.D0.BF.D0.BB.D1.8B.D0.B2.D0.B0.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D0.BE.D0.BE.D0.B1.D1.89.D0.B5.D0.BD.D0.B8.D0.B9"><span class="tocnumber">9</span> <span class="toctext">Отключение всплывающих сообщений</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.90.D0.B2.D1.82.D0.BE.D0.B2.D1.85.D0.BE.D0.B4"><span class="tocnumber">10</span> <span class="toctext">Автовход</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.9F.D0.BE.D0.BB.D0.BD.D1.8B.D0.B9_.D1.8D.D0.BA.D1.80.D0.B0.D0.BD"><span class="tocnumber">11</span> <span class="toctext">Полный экран</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80"><span class="tocnumber">12</span> <span class="toctext">Пример</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.D0.9F.D0.B0.D0.BA.D0.B5.D1.82.D0.BD.D1.8B.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D1.8B_.D0.B4.D0.BB.D1.8F_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81.D0.B8_.D0.B8_.D0.BA.D0.BE.D0.BD.D0.B2.D0.B5.D1.80.D1.82.D0.B0.D1.86.D0.B8.D0.B8_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE"><span class="tocnumber">13</span> <span class="toctext">Пакетные файлы для записи и конвертации видео</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#.D0.9A.D0.BE.D0.BD.D0.B2.D0.B5.D1.80.D1.82.D0.B0.D1.86.D0.B8.D1.8F_.D0.B2_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_VirtualDub"><span class="tocnumber">13.1</span> <span class="toctext">Конвертация в видео с помощью VirtualDub</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D1.80.D0.BE.D0.BB.D0.B8.D0.BA.D0.B0">Запуск ролика</span></h2>
+<ul><li>Формат: -runcutscene=[string CutsceneName]</li>
+<li>Пример: -runcutscene=dog_intro.cut</li></ul>
+<p>Используется в сочетании с параметром <a href="#.D0.90.D0.B2.D1.82.D0.BE.D0.B2.D1.85.D0.BE.D0.B4">autologin</a>, определяющим загружаемый для запуска ролика модуль.
+</p><p>Строковый параметр <b>имя ролика</b> (string CutsceneName) должно включать расширение ".cut". Файл ролика должен находиться там, где его может найти игра (например папка "override").
+</p><p>Данный формат сработает при условии, что ролик создавался на локации. Те ролики, которые не имеют определённой локации, а только сцену, не будут работать с этой функцией. Это ограничение движка игры, которое, по всей видимости, невозможно исправить.
+</p><p>Когда ролик завершится (или просмотр будет отменён) игра автоматически не выключится.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.86.D0.B5.D0.BD.D1.8B">Определение сцены</span></h2>
+<ul><li>Формат: -cutscenestage=[string StageName]</li>
+<li>Пример: -cutscenestage=cli400st_the_speech</li></ul>
+<p>Позволяет определить сцену для записываемого ролика.
+</p>
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D0.B8.D1.81.D1.8C_.D1.81_.D0.B2.D1.8B.D1.81.D0.BE.D0.BA.D0.B8.D0.BC_.D1.80.D0.B0.D0.B7.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D0.B5.D0.BC">Запись с высоким разрешением</span></h2>
+<ul><li>Формат: -forcehighres</li></ul>
+<p>Завершает работу динамической и статическйй LOD-систем и прорисовывает все модели с их максимально возможным разрешением.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D0.BC.D0.B5.D0.BD.D0.B0_FPS">Подмена FPS</span></h2>
+<ul><li>Формат: -fpsoverride=[float FPS]</li>
+<li>Пример: -fpsoverride=29.95</li></ul>
+<p>Данный параметр позволяет определить точное количество кадров в секунду (FPS - frame per second), что позволяет захватывать видео с постоянным FPS независимо от того, насколько медленно ролик воспроизводится на экране. 
+</p><p><b>Примечание</b>: параметр "float FPS" является числом с плавающей точкой, поэтому возможно применение таких значений, как <b>29,95</b>.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D1.82.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0">Отключение графического интерфейса</span></h2>
+<ul><li>Формат: -disablegui</li></ul>
+<p>Отключает все элементы графического интерфейса, таким образом вы можете захватить видео без дополнительных битов по краям.
+Весьма полезна при записи ролика из модуля "Single Player", так как позволяет избавиться от обязательного показа интерфейса чаргена, который блокирует экран.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D0.BC.D0.B5.D0.BD.D0.B0_.D1.80.D0.B0.D0.B7.D1.80.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D1.8F_.D1.8D.D0.BA.D1.80.D0.B0.D0.BD.D0.B0">Подмена разрешения экрана</span></h2>
+<ul><li>Формат: -height=[int HeightOverride]</li>
+<li>Формат: -width=[int WidthOverride]</li>
+<li>Пример: -height=1080 –width=1920</li></ul>
+<p>Переопределяет INI файл и настройки по умолчанию, благодаря чему заставляет игру запуститься с выбранным вами разрешением.
+</p><p><b>Примечание</b>: Обратите внимание, что вы не сможете использовать разрешение больше, чем позволяет ваш монитор. Если вы хотите записывать ролики в большем разрешении, задумайтесь о покупке нового монитора.
+</p>
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D1.85.D0.B2.D0.B0.D1.82_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE">Захват видео</span></h2>
+<ul><li>Формат: -capturemovie=[string CaptureName]</li>
+<li>Пример: -capturemovie=movie_test</li></ul>
+<p>Начинает захват каждого кадра, как только начинается игра. Полезно, когда используется автоматический запуск ролика.
+</p><p>Все кадры записывается как TGA-файлы в каталоге, который вы укажете в параметре <b>CaptureName</b>, внутри каталога "Logs", например: "My Documents\BioWare\Dragon Age\Logs\&lt;CaptureName&gt;".
+</p><p>Кадры начинают отсчитываться с 00000, впоследствии вы сможете убрать ненужные кадры просто удалив их.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BC.D0.B0.D0.BA.D1.81.D0.B8.D0.BC.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE.D0.B3.D0.BE_FPS">Определение максимального FPS</span></h2>
+<ul><li>Формат: -maxfps=[int FPS]</li></ul>
+<p>Заставляет игру замедлиться до указанного FPS, данный параметр не меняет временной промежуток между кадрами, а просто состанавливает игру после нанесения кадров, пока указанное FPS не будет достигнуто. Полезно в случае, если вы планируете использовать FRAPS для захвата видео и вы хотите убедиться, что каждый кадр захвачен.
+</p><p>Не используется при захвате видео, лучше использовать [#Захват видео|CaptureMovie], так как это гораздо более надежный способ захватить каждый кадр.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D1.82.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D1.81.D0.BF.D0.BB.D1.8B.D0.B2.D0.B0.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D0.BE.D0.BE.D0.B1.D1.89.D0.B5.D0.BD.D0.B8.D0.B9">Отключение всплывающих сообщений</span></h2>
+<ul><li>Формат: -nowarningpopup</li></ul>
+<p>Отключает всплывающие сообщения, которые появляются в случае каких-либо ошибок. Напрямую это не связано с захватом видео, но при захвате видео эти сообщения часто появляются, поэтому лучше отключить их.
+</p>
+<h2><span class="mw-headline" id=".D0.90.D0.B2.D1.82.D0.BE.D0.B2.D1.85.D0.BE.D0.B4">Автовход</span></h2>
+<ul><li>Формат: -autologin=[string CampaignName]</li>
+<li>Пример: -autologin=single player</li>
+<li>-autologin=YourModuleName</li></ul>
+<p>Используется для автоматической загрузки указанной кампании при запуске игры. Также при использовании данного параметра отключаются стартовые ролики, поэтому вы не сможете их захватить.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.BB.D0.BD.D1.8B.D0.B9_.D1.8D.D0.BA.D1.80.D0.B0.D0.BD">Полный экран</span></h2>
+<ul><li>Формат: -fullscreen</li></ul>
+<p>Данный параметр для захвата видео является не специальным, но может быть полезен, если разрешение, в котором вы делаете захват не соответствует текущему разрешению вашего экрана. Это позволит игре выполняться немного быстрее, так что и захват может производиться немного быстрее.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80">Пример</span></h2>
+<pre>"C:\game\Dragon Age\bin_ship\daorigins.exe"Пробел -autologin=single player -runcutscene=Your_Cutscene.cut
+</pre>
+<p>Обязательны кавычки и пробелы после них
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.B0.D0.BA.D0.B5.D1.82.D0.BD.D1.8B.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D1.8B_.D0.B4.D0.BB.D1.8F_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81.D0.B8_.D0.B8_.D0.BA.D0.BE.D0.BD.D0.B2.D0.B5.D1.80.D1.82.D0.B0.D1.86.D0.B8.D0.B8_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE">Пакетные файлы для записи и конвертации видео</span></h2>
+<p><a rel="nofollow" class="external text" href="http://ru.wikipedia.org/wiki/Пакетный_файл/">Что такое пакетный (Batch) файл?</a>
+</p><p>Данный пакетник с именем <b>da_cins.txt</b> с одним роликом на строку захватывает кадры для каждого из них. Если ваша игра установлена ​​по иному пути, чем "C:\Program Files" не забудьте отредактировать соответствующую строку, указав правильное расположение папки "bin_ship". Также измените параметр <b>autologin</b> на идентификатор модуля, содержащего ваши ролики.
+</p>
+<pre>@ECHO OFF
+
+cd C:\Program Files\Dragon Age\bin_ship\
+
+SET INPUT=da_cins.txt
+
+for /f "tokens=1 delims="&#160;%%a in (%INPUT%) do (
+dragonage.exe -runcutscene=%%a -forcehighres -fpsoverride=30 -capturemovie=%%a -nowarningpopup -autologin=single player 
+)
+
+echo COMPLETE
+
+pause
+</pre>
+<h3><span class="mw-headline" id=".D0.9A.D0.BE.D0.BD.D0.B2.D0.B5.D1.80.D1.82.D0.B0.D1.86.D0.B8.D1.8F_.D0.B2_.D0.B2.D0.B8.D0.B4.D0.B5.D0.BE_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_VirtualDub">Конвертация в видео с помощью VirtualDub</span></h3>
+<p>Затем вы можете использовать следующий пакетник со свободно распространяемым видео-редактором <a rel="nofollow" class="external text" href="http://www.virtualdub.org/">VirtualDub</a> для слияния получных кадров в ролик.
+</p>
+<pre>@ECHO OFF
+
+SET INPUT=da_cins.txt
+
+for /f "tokens=1 delims="&#160;%%a in (%INPUT%) do (
+virtualdub /s preview_cin.vcf /p ..\%%a\00000.tga  ..\preview\%%a.avi /r /x  
+)
+
+echo COMPLETE
+
+pause
+</pre>
+<p>Вам также необходимо создать текстовый файл в том же каталоге, что и пакетные файлы, с именем "preview_cin.vcf", который содержит сведения о конфигурации для VirtualDub:
+</p>
+<pre>VirtualDub.audio.SetSource(1);
+VirtualDub.audio.SetMode(0);
+VirtualDub.audio.SetInterleave(1,500,1,0,0);
+VirtualDub.audio.SetClipMode(1,1);
+VirtualDub.audio.SetConversion(0,0,0,0,0);
+VirtualDub.audio.SetVolume();
+VirtualDub.audio.SetCompression();
+VirtualDub.audio.EnableFilterGraph(0);
+VirtualDub.video.SetInputFormat(0);
+VirtualDub.video.SetOutputFormat(7);
+VirtualDub.video.SetMode(3);
+VirtualDub.video.SetSmartRendering(0);
+VirtualDub.video.SetPreserveEmptyFrames(0);
+VirtualDub.video.SetFrameRate2(30,1,1);
+VirtualDub.video.SetIVTC(0,0,-1,0);
+VirtualDub.video.SetCompression(0x64697678,0,8000,0);
+VirtualDub.video.SetCompData(3532,"AAAAALwCAACQsggAXHZpZGVvLnBhc3MALgBwAGEAcwBzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAEAACh1bnJlc3RyaWN0ZWQpAABpAGMAdABlAGQAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAAEdlbmVyYWwgcHVycG9zZQBwAHUAcgBwAG8AcwBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIERITFRcZGxESExUXGRscFBUWFxgaHB4VFhcYGhweIBYXGBocHiAjFxgaHB4gIyYZGhweICMmKRscHiAjJiktEBESExQVFhcREhMUFRYXGBITFBUWFxgZExQVFhcYGhsUFRYXGRobHBUWFxgaGxweFhcYGhscHh8XGBkbHB4fIQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAACWAAAAZAAAAAEAAAAAAAAABAAAAAMAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAZAAAAPQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABkAAAAZAAAAAEAAAAKAAAAAQAAABQAAAAAAAAAAAAAAAUAAAAFAAAABQAAAAAoCgAAAAAAAQAAAAEAAAAeAAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAAEAAAAAAAAALAEAAAAAAAABAAAAHwAAAAEAAAAfAAAAAQAAAB8AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAzwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==");
+VirtualDub.video.filters.Clear();
+VirtualDub.audio.filters.Clear();
+</pre>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

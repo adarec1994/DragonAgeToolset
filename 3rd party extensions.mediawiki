@@ -1,0 +1,21 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>List 3rd party extensions and applications here!
+</p>
+<h2><span class="mw-headline" id="Third_party_applications">Third party applications</span></h2>
+<h3><span class="mw-headline" id="Models">Models</span></h3>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/218/">Tazpn's command line tools</a> - This packages includes an command line application for converting Dragon Age models from the native format to something that can be manipulated or used a reference for non-derivative works.</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1060/">GUI for tazpn's Command Line Tools</a> - This is an easy-to-use program to convert Dragon Age Models utilizing tazpn's Command Line Tools &amp; the Dragon Age Toolset Command Line Tools.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/41/">DATool: DA model manipulator</a> - This is a tool for viewing, retexturing and resizing DA models. DATool allows you to easily browse the available DA models and make certain modifications to them.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/563/">DA:O Toolset Model Exporter</a> - 3DS max and GMax. Can export static and animatable models. Also Collision,Materials,Animation. Current Version: 1.5.0</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/899/">Blender Import-Export Script</a> - A set of tools to import-export meshes and extract resources from erf or rim files, all working into Blender.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/2246/">LightWave import-export plugin</a> - a plugin for <a rel="nofollow" class="external text" href="http://www.newtek.com/lightwave/">NewTek LightWave 3D</a>. Currently allows to import .msh files into LightWave and export 3d data from Modeler module to .msh.xml format.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/1511/">Lightmap Post Processor</a> - Remove black artifacts from lightmaps.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/2336/">GMax/3DSMax DA:O Model and Animation Import Export</a> - Importing and Exporting of Models and Animation. Model Creation Tools. Supports the free GMax as well as 3dsmax4 to 2011. Latest Version5.30 (08/23/2010)</li></ul>
+<h3><span class="mw-headline" id="Animation">Animation</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/563/">DA:O Toolset Model Exporter</a> - 3DS max and GMax. Exports Animation. Also Models/Materials/Collision.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/2336/">GMax/3DSMax DA:O Model and Animation Import Export</a> - Importing and Exporting of Models and Animation. Makes Animations for use in Cutscenes or in Animation Blend Tree for use on Characters. Supports the free tool GMax as well as 3dsmax4 to 2010.</li></ul>
+<h3><span class="mw-headline" id="Game_data">Game data</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/755/">GDApp</a> - GDApp is a simple editor that natively creates or modifies Dragon Age: Origins GD2A spreadsheet files (*.gda), without the need of Excel files.</li></ul>

@@ -1,0 +1,68 @@
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Animation%20event%20editor.png"><img alt="Animation event editor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Animation_event_editor.png" width="300" height="233" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Animation_event_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Animation_event_editor.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Animation%20event%20editor.png" title="Enlarge"></a></div></div></div></div>
+<p>The <strong class="selflink">event editor</strong> is used to add events to animations. It can be opened by selecting the <b>Tools &gt; Animation Events</b> menu option.
+</p><p>Animation events include the following:
+</p>
+<ul><li> Triggering of sounds such as footfalls or weapon impacts</li>
+<li> Firing of projectiles</li>
+<li> Triggering VFX</li>
+<li> Drawing or sheathing a weapon</li></ul>
+<p>This allows the game to synchronize the effects of a creature's actions with the animation that the creature is playing.
+</p><p>The  main window of the event editor consists of a large nested list of all  of the animations in the game's resources. They are grouped based on a prefix.name system. For example, the animations bow.aim, bow.enter, bow.fire and bow.withdraw are all grouped under "bow" and c_chicken.p,  c_chicken.wkf, and c_chicken.com_v1 are grouped under "c_chicken".
+</p><p>Below the main window is a timeline, somewhat similar to the cutscene editor.  The scale is in frames per second and covers the duration of the  animation. since the animation itself cannot be modified in the event  editor the length of the timeline is fixed, though it can be scaled for easier viewing. Events are added by placing the scrubber at the frame you want to add the event on and right-clicking on it, or alternately by selecting the <b>Add Event</b> command from the <b>Edit</b> menu. See below for the list of animation event types.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Animation%20add%20event.png"><img alt="Animation add event.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7d/Animation_add_event.png" width="337" height="198" /></a>
+</p><p>To the right of the main window is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">creature</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">placeable</a> view port where you can preview animations while placing their events.
+</p>
+<h2><span class="mw-headline" id="Animation_event_types">Animation event types</span></h2>
+<p>The type of event is determined by its <b>ID</b> property, which is initially set to <b>Invalid</b> for all new events. All events can have a <b>String</b> property, and certain types of events can have additional properties set on them. The available event types and their additional properties are:
+</p>
+<ul><li> Invalid - does nothing.</li>
+<li> Attack Impact
+<ul><li> HandOrFoot - Right or Left</li></ul></li>
+<li> Attack Impact Reaction
+<ul><li> HandOrFoot - Right or Left</li></ul></li>
+<li> Equip Right</li>
+<li> Equip Left</li>
+<li> Unequip Right</li>
+<li> Unequip Left</li>
+<li> Ability Cast Impact
+<ul><li> HandOrFoot - Right or Left</li>
+<li> PlayHitSound  -  True or False</li></ul></li>
+<li> VFX Start</li>
+<li> Projectile Load</li>
+<li> Projectile Fire</li>
+<li> Blend Start</li>
+<li> Blend End</li>
+<li> Animation Done</li>
+<li> Foot Down
+<ul><li> HandOrFoot - Right or Left</li></ul></li>
+<li> Detonate Emitter</li>
+<li> Movement sound
+<ul><li> Movement scale - Unknown, Small, or Medium</li></ul></li>
+<li> Bodyfall</li>
+<li> Weapon swish
+<ul><li> HandOrFoot - Right or Left</li></ul></li>
+<li> Play Custom Sound
+<ul><li> Sound - an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FSE" title="FSE (page does not exist)">FSE</a> file</li></ul></li>
+<li> Weapon Blocked
+<ul><li> HandOrFoot - Right or Left</li></ul></li>
+<li> Lock Movement</li>
+<li> Unlock Movement</li>
+<li> Set Next Transition</li>
+<li> Set Animation Offset</li>
+<li> Play placeable sound
+<ul><li> Animation ID - ClosedToOpened, Destroyed, Hit, Locked, OpenToClosed, or Used (as defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20plc%20column%20names%202da" title="Sound plc column names 2da">sound_plc_column_names 2da</a>)</li></ul></li>
+<li> Deathblow Decapitation
+<ul><li> Sound - an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FSE" title="FSE (page does not exist)">FSE</a> file</li></ul></li>
+<li> Deathblow Decapitation VFX</li>
+<li> Deathblow Damage Impact</li>
+<li> Deathblow Attack Merge</li>
+<li> Deathblow Death Merge</li>
+<li> Game Speed</li>
+<li> Attach Point</li>
+<li> Fly Start</li>
+<li> Fly End</li>
+<li> Attach Point (with Rotation)</li>
+<li> VFX Instant</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animation blend tree editor</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%202da" title="Events 2da">events 2da</a></li></ul>

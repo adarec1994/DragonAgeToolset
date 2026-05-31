@@ -1,0 +1,3 @@
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Currently it is impossible to set items to infinite via scripting. Currently modders must rely on complicated coding methods to fake an infinite amount of items.
+</p>

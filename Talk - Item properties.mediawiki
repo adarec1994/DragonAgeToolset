@@ -1,0 +1,6 @@
+<p>I broke this out of the main <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a> page because it probably deserves to have a little bit more elaboration. 
+</p><p>I've gone ahead and enumerated the contents of the itemprps 2da with a little clarification from Craig Graff, but hopefully either Mr. Graff or someone else with more knowledge than I will come along and verify everything.
+</p><p>Also, I think an explanation of how itemprps.xls, effects.xls and properties.xls link together is warranted here.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20JJM152" title="User:JJM152">JJM152</a> 03:04, 14 December 2009 (UTC)
+</p>
+<dl><dd> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemprps.xls" title="Itemprps.xls (page does not exist)">Itemprps.xls</a> should exist an article in its own right in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%202DAs" title="Category:2DAs">2DA's category</a> with all the other Excel files  --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 17:44, 14 December 2009 (UTC)</dd></dl>

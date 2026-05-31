@@ -1,0 +1,20 @@
+<p>Get the remaining time for an ability to be used
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> GetRemainingCooldown(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityId,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sSourceItemTag&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>owner of the ability<dt style="font-weight:normal; font-style:italic;">nAbilityId<dd>ability to check the cooldown<dt style="font-weight:normal; font-style:italic;">sSourceItemTag<dd>if an item ability, specify the specific item providing the ability.  If an empty string, the engine will grab the first item with this ability, this may not be the desired intention if the player has several items with the same ability
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>0.0f if the ability is ready to be used again
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCooldown" title="SetCooldown">SetCooldown</a>
+</p>

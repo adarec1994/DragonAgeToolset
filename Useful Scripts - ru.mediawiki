@@ -1,0 +1,261 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Примеры скриптов</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Useful_Scripts/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Скрипты
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Начало</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview%20-%20ru" title="Scripting overview/ru">Обзор</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial%20-%20ru" title="Scripting tutorial/ru">Инструкция</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword%20-%20ru" title="Event keyword/ru">События DA</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">Подмена обработки</a></li></ul></li>
+<li><strong class="selflink">Примеры</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error%20-%20ru" title="Script error/ru">Ошибки</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20-%20ru" title="Rules/ru (page does not exist)">Правила</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">(en)</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties%20-%20ru" title="Creature Properties/ru">Свойства существ</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute%20-%20ru" title="Attribute/ru">Атрибуты</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes%20-%20ru" title="Classes/ru">Классы</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules%20-%20ru" title="Combat Rules/ru">Система боя</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20-%20ru" title="Ability/ru">Способности</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts%20-%20ru" title="Category:Scripts/ru (page does not exist)">Категория "Скрипты"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">(en)</a></li></ul>
+<dl><dd><small>все статьи категории</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions%20-%20ru" title="Category:Script functions/ru (page does not exist)">Категория "Функции"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Script%20functions" title="Category:Script functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>описание функций</small></dd></dl>
+</td></tr></table>
+<p>На этой странице будут приведены примеры скриптов, которые часто используются.
+</p><p>Пожалуйста, если у вас есть скрипты, которыми вы можете поделиться, то не стесняйтесь, добавляйте. При большом количестве примеров можно будет разбить страницу на конкретные темы.
+</p><p>Смотрите также: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates%20-%20ru" title="PRCSCR Script Templates/ru">Шаблоны скриптов PRCSCR</a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD.D1.8B_.D0.BF.D0.BE.D1.81.D1.80.D0.B5.D0.B4.D1.81.D1.82.D0.B2.D0.BE.D0.BC_.D1.82.D1.80.D0.B8.D0.B3.D0.B3.D0.B5.D1.80.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Запуск катсцены посредством триггера</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D0.BF.D1.83.D1.82.D0.BD.D0.B8.D0.BA.D0.B0_.D0.B2_.D0.BF.D0.B0.D1.80.D1.82.D0.B8.D1.8E"><span class="tocnumber">2</span> <span class="toctext">Добавление спутника в партию</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.92.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D1.91.D1.80.D1.82.D0.B2.D1.8B.D1.85"><span class="tocnumber">3</span> <span class="toctext">Восстание мёртвых</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.BD.D1.82.D0.B0_.D0.B2_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D1.83.D1.8E_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E"><span class="tocnumber">4</span> <span class="toctext">Добавление контента в существующую локацию</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D0.BE.D0.B2_.D0.BC.D0.B5.D0.B6.D0.B4.D1.83_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0.D0.BC.D0.B8"><span class="tocnumber">5</span> <span class="toctext">Перемещение предметов между объектами</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.80.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B0.D0.B5.D0.BC.D0.BE.D0.B3.D0.BE_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0.28.D0.A0.D0.9E.29"><span class="tocnumber">6</span> <span class="toctext">Использование размещаемого объекта(РО)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0_.D0.B2_.D0.BD.D0.BE.D0.B2.D1.83.D1.8E_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D0.BE.D0.BA.D0.BE.D0.BD.D1.87.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD.D1.8B"><span class="tocnumber">7</span> <span class="toctext">Перемещение игрока в новую локацию после окончания катсцены</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9"><span class="tocnumber">8</span> <span class="toctext">Переопределение обработки событий</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD.D1.8B_.D0.BF.D0.BE.D1.81.D1.80.D0.B5.D0.B4.D1.81.D1.82.D0.B2.D0.BE.D0.BC_.D1.82.D1.80.D0.B8.D0.B3.D0.B3.D0.B5.D1.80.D0.B0">Запуск катсцены посредством триггера</span></h2>
+<p>Создайте скрипт:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;events_h&quot;</span>
+<span class="co2">#include &quot;global_objects_h&quot;</span>
+<span class="co2">#include &quot;utility_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main <span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bEventHandled <span class="sy0">=</span> FALSE;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a> <span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_ENTER</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectActive"><span class="kw4">GetObjectActive</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a><span class="br0">&#41;</span>
+               <span class="sy0">&amp;&amp;</span> IsPartyMember<span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span><span class="br0">&#41;</span> 
+            <span class="br0">&#123;</span> 
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rCutscene <span class="sy0">=</span> R<span class="st0">&quot;my_cutscene.cut&quot;</span>;
+                CS_LoadCutscene<span class="br0">&#40;</span>rCutscene<span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetObjectActive"><span class="kw4">SetObjectActive</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, FALSE<span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>         
+         <span class="br0">&#125;</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>bEventHandled<span class="br0">&#41;</span> <span class="co1">//Если событие не обработано, то перенаправляем исходному скрипту</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, RESOURCE_SCRIPT_TRIGGER_CORE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>И задайте его скриптом, обрабатывающим события для триггера, который должен запускать катсцену.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D0.BF.D1.83.D1.82.D0.BD.D0.B8.D0.BA.D0.B0_.D0.B2_.D0.BF.D0.B0.D1.80.D1.82.D0.B8.D1.8E">Добавление спутника в партию</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>IsPartyMember<span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFollower <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;myfollower&quot;</span><span class="br0">&#41;</span>;
+  UT_HireFollower<span class="br0">&#40;</span>oCreature, oFollower<span class="br0">&#41;</span>;
+ <span class="br0">&#125;</span></pre></div></div>
+<p>Комментарий: Изначально использовалась функция IsPlayer, которая, по всей видимости не существует.
+</p><p>Отметим, что при использовании тулсета версии 1.0.982.0, вызов функции UT_HireFollower() не позволяет присоединённому спутнику получать экспу. Это происходит вследствие вызова
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">  WR_SetFollowerState<span class="br0">&#40;</span>oFollower, <span class="kw3">FOLLOWER_STATE_ACTIVE</span>, TRUE, <span class="nu0">0</span>, '''TRUE'''<span class="br0">&#41;</span>;</pre></div></div>
+<p>для функции
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> WR_SetFollowerState<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nState, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSendEvent <span class="sy0">=</span> TRUE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMinLevel <span class="sy0">=</span> <span class="nu0">0</span>, '''<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bPreventLevelup''' <span class="sy0">=</span> FALSE<span class="br0">&#41;</span></pre></div></div>
+<p>Для того, чтобы вновь присоединённый спутник мог получать экспу, необходимо сбросить флаг CREATURE_REWARD_FLAGS после окончания процедуры присоединения(которая его и устанавливает). Можно использовать следующий способ: создать подключаемый скрипт с изменённой функцией UT_HireFollower, переименовав её как UT_HireFollower_Fixed, со следующими изменениями:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    WR_SetFollowerState<span class="br0">&#40;</span>oFollower, <span class="kw3">FOLLOWER_STATE_ACTIVE</span>, TRUE, <span class="nu0">0</span>, TRUE<span class="br0">&#41;</span>;</pre></div></div>
+<p>изменить на
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    WR_SetFollowerState<span class="br0">&#40;</span>oFollower, <span class="kw3">FOLLOWER_STATE_ACTIVE</span>, TRUE, <span class="nu0">0</span>, bPreventLevelup<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id=".D0.92.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BC.D1.91.D1.80.D1.82.D0.B2.D1.8B.D1.85">Восстание мёртвых</span></h2>
+<p>Установите у существа переменную CREATURE_SPAWN_DEAD как <b>2</b>.
+</p><p>Когда придёт время существу подняться и атаковать выполните следующий код:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;wrappers_h&quot;</span>
+...
+<span class="me1">WR_SetObjectActive</span><span class="br0">&#40;</span>oCreature, TRUE<span class="br0">&#41;</span>;
+SetCommandable<span class="br0">&#40;</span>oCreature, TRUE<span class="br0">&#41;</span>;
+<span class="co1">// Убедитесь, что переменная, установленная ранее, сброшена в ноль, для избежания проблем с сохранёнками.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, CREATURE_SPAWN_DEAD, <span class="nu0">0</span><span class="br0">&#41;</span>;
+UT_CombatStart<span class="br0">&#40;</span>oCreature, oPC<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.BD.D1.82.D0.B0_.D0.B2_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D1.83.D1.8E_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E">Добавление контента в существующую локацию</span></h2>
+<p>Если вы хотите добавить новый контент в существующую локацию(для примера, добавить нового персонажа или новую дверь перехода в локацию основной компании) вы можете выбрать один из двух методов.
+</p><p>Один из них, это замещение существующей локации новой локацией с уже внесёнными вами изменениями. Это прямой, но, вследствие отсутствия совместимости с модами других товарищей, глупый путь.
+</p><p>Более правильный и удобный путь - использование <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">системы PRCSCR</a>. 
+</p><p>Нижеприведённый пример добавляет новое существо в существующую локацию основной компании:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;plt_joblos_quest&quot; </span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">//Check whether we've added Joblo already.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_JOBLOS_QUEST, JOBLO_ADDED_TO_TOWN<span class="br0">&#41;</span> <span class="sy0">==</span> FALSE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTown <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;lot100ar_lothering&quot;</span><span class="br0">&#41;</span>; <span class="co1">//Тэг локации, в тулсете указан как имя ресурса</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vJobloLocation <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">126.745f</span>, <span class="nu0">120.724f</span>, <span class="nu0">0.460568f</span><span class="br0">&#41;</span>; <span class="co1">// О том, как получить координаты, смотрите ниже</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span>
+            <span class="kw3">OBJECT_TYPE_CREATURE</span>,
+            R<span class="st0">&quot;joblo.utc&quot;</span>,
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>oTown, vJobloLocation, <span class="nu0">180.0f</span><span class="br0">&#41;</span>; <span class="co1">//О том, как определить ориентацию, смотрите ниже</span>
+        <span class="br0">&#41;</span>
+&#160;
+        WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;joblos_quest&quot;</span>, JOBLO_ADDED_TO_TOWN, TRUE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Так как нельзя добавить в существующую локацию <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint%20-%20ru" title="Waypoint/ru (page does not exist)">точку назначения</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">(en)</a>, вам необходимо знать позицию и ориентацию точки, куда вы будете добавлять существо. Чтобы узнать их, я открываю в тулсете необходимую локацию, ставлю точку назначения и списываю её координаты.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D0.BE.D0.B2_.D0.BC.D0.B5.D0.B6.D0.B4.D1.83_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0.D0.BC.D0.B8">Перемещение предметов между объектами</span></h2>
+<p>Возможности:
+</p>
+<ul><li> Перемещение шмоток игрока(в том числе снаряжения и денег) в сундук, когда игрок попадает в тюрьму (с возможностью оставления его голым).</li>
+<li> Замещение снаряжения НПС новым набором, используя спрятанный в потаённом месте размещаемый объект(РО).</li>
+<li> Удаление всех предметов НПС, за исключением его снаряжения.</li></ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+* @brief Перемещение предметов между объектами
+* Параметры:
+* @param oSource         - объект-источник
+* @param oTarget         - объект-цель
+* @param bUnequipSource  - TRUE если снаряжение перемещается
+* @param bEquipTarget    - TRUE если полученные объектом-целью предметы будут снаряжены на него (по возможности)
+* @param bRemoveClothing - TRUE если одежда должна переместиться (при включенном параметре bUnequipSource
+* @param bMoveMoney      - TRUE если деньги должны быть перемещены
+*
+* Объект-цель получает предметы, даже если её инвентарь уже заполнен под завязку.
+* Если перемещаются несколько предметов, которые могут быть снаряжены в какой-либо из слотов объекта-цели, снаряжение произойдёт в случайном порядке.
+* Если деньги перемещаются от существа к размещаемому объекту, то создаётся предмет &quot;деньги&quot;.
+*
+* @returns void
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> zzzMoveInventory<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oSource, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bUnequipSource<span class="sy0">=</span>FALSE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bEquipTarget<span class="sy0">=</span>FALSE,
+                      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bRemoveClothing<span class="sy0">=</span>FALSE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bMoveMoney<span class="sy0">=</span>FALSE<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> zzzMoveInventory<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oSource, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bUnequipSource<span class="sy0">=</span>FALSE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bEquipTarget<span class="sy0">=</span>FALSE,
+                      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bRemoveClothing<span class="sy0">=</span>FALSE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bMoveMoney<span class="sy0">=</span>FALSE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> <span class="br0">&#91;</span><span class="br0">&#93;</span> oItemTable;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oClothing       <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword"><span class="kw1">OBJECT_INVALID</span></a>;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oItem;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nItemCount;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nGetItemsOption <span class="sy0">=</span> <span class="kw3">GET_ITEMS_OPTION_BACKPACK</span>;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nMoney;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nStack;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oMoney;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       i               <span class="sy0">=</span> <span class="sy0">-</span><span class="nu0">1</span>;
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bUnequipSource<span class="br0">&#41;</span> nGetItemsOption <span class="sy0">=</span> <span class="kw3">GET_ITEMS_OPTION_ALL</span>;
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectType"><span class="kw4">GetObjectType</span></a><span class="br0">&#40;</span>oSource<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">OBJECT_TYPE_CREATURE</span><span class="br0">&#41;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>bRemoveClothing<span class="br0">&#41;</span>
+      oClothing <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_CHEST</span>, oSource<span class="br0">&#41;</span>;
+&#160;
+  oItemTable <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory"><span class="kw4">GetItemsInInventory</span></a><span class="br0">&#40;</span>oSource, nGetItemsOption<span class="br0">&#41;</span>;
+  nItemCount <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>oItemTable<span class="br0">&#41;</span>;
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span><span class="sy0">++</span>i <span class="sy0">&lt;</span> nItemCount<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+      oItem <span class="sy0">=</span> oItemTable<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+&#160;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>oItem <span class="sy0">!=</span> oClothing<span class="br0">&#41;</span>
+      <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MoveItem"><span class="kw4">MoveItem</span></a><span class="br0">&#40;</span>oSource, oTarget, oItem<span class="br0">&#41;</span>;
+&#160;
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bEquipTarget <span class="sy0">&amp;&amp;</span> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectType"><span class="kw4">GetObjectType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">OBJECT_TYPE_CREATURE</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+           <span class="br0">&#123;</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>GetItemType<span class="br0">&#40;</span>oItemTable<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> ITEM_TYPE_WEAPON_RANGED<span class="br0">&#41;</span>
+               <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EquipItem"><span class="kw4">EquipItem</span></a><span class="br0">&#40;</span>oTarget, oItem, <span class="kw3">INVENTORY_SLOT_MAIN</span>, <span class="nu0">1</span><span class="br0">&#41;</span>;
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+               <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EquipItem"><span class="kw4">EquipItem</span></a><span class="br0">&#40;</span>oTarget, oItem<span class="br0">&#41;</span>;
+           <span class="br0">&#125;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bMoveMoney<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+      nMoney <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMoney"><span class="kw4">GetCreatureMoney</span></a><span class="br0">&#40;</span>oSource<span class="br0">&#41;</span>;
+&#160;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectType"><span class="kw4">GetObjectType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">OBJECT_TYPE_CREATURE</span><span class="br0">&#41;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCreatureMoney"><span class="kw4">AddCreatureMoney</span></a><span class="br0">&#40;</span>nMoney, oTarget<span class="br0">&#41;</span>;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span>nMoney<span class="br0">&#41;</span>
+          <span class="br0">&#123;</span>
+            oMoney <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateItemOnObject"><span class="kw4">CreateItemOnObject</span></a><span class="br0">&#40;</span>R<span class="st0">&quot;gen_im_copper.uti&quot;</span>, oTarget, <span class="nu0">1</span>, <span class="st0">&quot;&quot;</span>, TRUE<span class="br0">&#41;</span>;
+            nStack <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMaxItemStackSize"><span class="kw4">GetMaxItemStackSize</span></a><span class="br0">&#40;</span>oMoney<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nStack <span class="sy0">&gt;</span> nMoney<span class="br0">&#41;</span> nStack <span class="sy0">=</span> nMoney;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemStackSize"><span class="kw4">SetItemStackSize</span></a><span class="br0">&#40;</span>oMoney, nStack<span class="br0">&#41;</span>;
+            nMoney <span class="sy0">-=</span> nStack;
+          <span class="br0">&#125;</span>
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureMoney"><span class="kw4">SetCreatureMoney</span></a><span class="br0">&#40;</span><span class="nu0">0</span>, oSource<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.80.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B0.D0.B5.D0.BC.D0.BE.D0.B3.D0.BE_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0.28.D0.A0.D0.9E.29">Использование размещаемого объекта(РО)</span></h2>
+<p>Для размещаемых объектов, используемых игроком, примените следующую обработку события, что позволить передать игроку содержимое РО и уничтожить его.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;wrappers_h&quot;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a> <span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_USE</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">//MoveAllItems(OBJECT_SELF, GetHero());</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCreatureMoney"><span class="kw4">AddCreatureMoney</span></a> <span class="br0">&#40;</span><span class="nu0">1000000</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, TRUE<span class="br0">&#41;</span>;
+            Safe_Destroy_Object<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Можно достичь того же эффекта (без уничтожения РО) просто добавив суффикс "_autoloot" в тэг размещаемого объекта.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0_.D0.B2_.D0.BD.D0.BE.D0.B2.D1.83.D1.8E_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D0.BE.D0.BA.D0.BE.D0.BD.D1.87.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD.D1.8B">Перемещение игрока в новую локацию после окончания катсцены</span></h2>
+<p>В свойствах катсцены присутствует параметр "end script", который устанавливает, какой скрипт запускается после окончания катсцены. Используйте что-то наподобие:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DoAreaTransition"><span class="kw4">DoAreaTransition</span></a><span class="br0">&#40;</span><span class="st0">&quot;тэг_локации_назначения&quot;</span>, <span class="st0">&quot;тэг_точки_назначения&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9">Переопределение обработки событий</span></h2>
+<p>Смотрите здесь: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">Переопределение обработки событий</a>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

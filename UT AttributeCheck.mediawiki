@@ -1,0 +1,19 @@
+<p>Checks the attribute level of oObject
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> UT_AttributeCheck(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAttribute,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nLevel,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature&#160;= OBJECT_SELF<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nAttribute<dd>The attribute being checked<dt style="font-weight:normal; font-style:italic;">nLevel<dd>The level of the attribute being checked (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20ATTR%20HIGH" title="UT ATTR HIGH (page does not exist)">UT_ATTR_HIGH</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20ATTR%20MED" title="UT ATTR MED (page does not exist)">UT_ATTR_MED</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20ATTR%20LOW" title="UT ATTR LOW (page does not exist)">UT_ATTR_LOW</a>)<dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature doing the attribute check
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the attribute matches the specified level range, FALSE otherwise.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function checks the attribute level of oObject. nAttribute should be a constant represneting one of the attributes. Notice that an attribute level is dynamic and depends on the player’s level – the player will need to keep increasing his attribute in order to keep it in the ‘high’ level.
+</p><p><br />
+</p><p><br />
+</p>

@@ -1,0 +1,4 @@
+<p>A "bodybag" is a model that is substituted for a creature or placeable with an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Inventory" title="Inventory">inventory</a> after it has been killed. This ensures that the object's inventory is not inadvertently lost.
+</p><p>Bodybags are set for creatures in their appearance <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR_base.xls</a>, under the header "CorpseModel".
+</p><p>A dead creature decays into this model after some time. Most creatures included with the game will decay into a bone pile model. Note that model  "plc_bagcoin03_0" will disappear completely after the user loots its content.  So, spells that normally require dead bodies (e.g. to get life or mana) will not work then.  For this reason this model should be used with care.
+</p>

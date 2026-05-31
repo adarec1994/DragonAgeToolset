@@ -1,0 +1,92 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Setting_Information"><span class="tocnumber">2</span> <span class="toctext">Setting Information</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Character_Generation"><span class="tocnumber">3</span> <span class="toctext">Character Generation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Endless_Adventures_Packages"><span class="tocnumber">4</span> <span class="toctext">Endless Adventures Packages</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Endless_Adventures_Companion"><span class="tocnumber">5</span> <span class="toctext">Endless Adventures Companion</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Special_Notes"><span class="tocnumber">6</span> <span class="toctext">Special Notes</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>Endless Adventures is a modular campaign that uses the Dragon Age: Origins (DAO) engine to create a base for both new and experienced modders to try their hand at the Dragon Age toolset. Besides the "hub" module that every player (and modder) must download to experience the campaign, each modder will be able to use a set of template scripts to add either new quests and dungeons or player companions to the experience. Because of the modularity of the design, players won't have to download a dungeon or character they don't want to enjoy the rest of the campaign.
+</p>
+<h2><span class="mw-headline" id="Setting_Information">Setting Information</span></h2>
+<p>Endless Adventures takes place is an alternate vision of Thedas that sacrifices connection to the Dragon Age canon for more freedom in character creation and story design. In Endless Adventures, the major changes in the setting include:
+</p>
+<ul><li> Dwarves can dream normally and become mages. In addition, there are more surface dwarves in many walks of life.</li>
+<li> The Chantry exists, but never gained the same power and authority as it did in Dragon Age.</li>
+<li> The Templars still hunt mages, but only dangerous outlaws. Their connection to the Chantry prevents them from imprisoning mages that abide by local laws.</li>
+<li> The Qunari are still at war with the Imperium, but have a stronger foothold in northern Rivain.</li>
+<li> The elves are still recovering from oppression by the Imperium, but the weak Chantry wasn't able to convince Orlais to go to war with the Dales, and thus the Dalish elves have their own nation.</li></ul>
+<p>The "hub" module of Endless Adventures is a small city-state in the Free Marches.
+</p><p>Note: Although there is "official" Endless Adventures backstory, there is no strict "canon" that defines how this backstory interacts with individual works.
+</p>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Official%20Lore" title="Endless Adventures Official Lore">"Official" Endless Adventures Lore</a></b>
+</td>
+<td> Background information for the Endless Adventures version of Thedas.
+</td></tr>
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Unofficial%20Lore" title="Endless Adventures Unofficial Lore">"Unofficial" Endless Adventures Lore</a></b>
+</td>
+<td> Background information for characters and organizations created by Endless Adventures modders.
+</td></tr></table>
+<h2><span class="mw-headline" id="Character_Generation">Character Generation</span></h2>
+<p>Although the Endless Adventures campaign is not connected to the DAO campaign or strictly part of its universe, players who wish to import a character from DAO may do so. (Be warned, however, that any equipment or abilities that aren't part of the base DAO campaign will not import.)
+</p><p>Characters that start anew in Endless Adventures will have extra options available in character generation. Endless Adventures allows dwarves to become mages, and has a new set of character backgrounds. (These new backgrounds don't have any quest to complete or any effect on the story of the campaign unless a modder refers to them in their quest or dungeon. Old characters from the DAO campaign will import properly, but those backgrounds can't be selected by new characters.)
+</p>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Chargen%20Info" title="Endless Adventures Chargen Info">Character Generation Information</a></b>
+</td>
+<td> Detailed information on new character creation options.
+</td></tr></table>
+<h2><span class="mw-headline" id="Endless_Adventures_Packages">Endless Adventures Packages</span></h2>
+<p>An Endless Adventures Package (or EAP) is a quest or dungeon. A modder designs their dungeon or quest area, uses a script template to provide a hook character in the "hub" area, and uses a predefined script to send the player back to the "hub" area once the quest or dungeon is complete.
+</p>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Packages" title="Endless Adventures Packages">Released EAP Addins</a></b>
+</td>
+<td> A list of EAP modules available for download.
+</td></tr>
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20EAP%20Compatibility" title="Endless Adventures EAP Compatibility">EAP Compatibility Guidelines</a></b>
+</td>
+<td> Guidelines and information used to make sure EAP modules are compatible.
+</td></tr>
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20EAP%20Tutorials" title="Endless Adventures EAP Tutorials">EAP Tutorials</a></b>
+</td>
+<td> Tutorials and script templates for begginer modders.
+</td></tr></table>
+<h2><span class="mw-headline" id="Endless_Adventures_Companion">Endless Adventures Companion</span></h2>
+<p>An Endless Adventures Companion (or EAC) is a companion character. A modder designs a character to be used as a companion and uses a script template to recruit them into the player's party. Because of the limitations of the modular concept, these companions will likely have no unique quest dialogue, but the modder can give them a backstory and personality that is revealed through conversation with them in the "hub" area.
+</p>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Companions" title="Endless Adventures Companions">Released EAC Addins</a></b>
+</td>
+<td> A list of EAC modules available for download.
+</td></tr>
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20EAC%20Compatibility" title="Endless Adventures EAC Compatibility">EAC Compatibility Guidelines</a></b>
+</td>
+<td> Guidelines and information used to make sure EAC modules are compatible.
+</td></tr>
+<tr>
+<td> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20EAC%20Tutorials" title="Endless Adventures EAC Tutorials">EAC Tutorials</a></b>
+</td>
+<td> Tutorials and script templates for begginer modders.
+</td></tr></table>
+<h2><span class="mw-headline" id="Special_Notes">Special Notes</span></h2>
+<p>To begin (or continue) to hone your skills as a Dragon Age modder, try modding for the Community Contest at: <a rel="nofollow" class="external free" href="http://social.bioware.com/wiki/datoolset/index.php/Community_Contest_Main_Page">http://social.bioware.com/wiki/datoolset/index.php/Community_Contest_Main_Page</a>
+</p><p>If you would like to create content that seamlessly integrates into the main DAO campign and setting, check out the Extended Community Canon Project at: <a rel="nofollow" class="external free" href="http://social.bioware.com/group/2171/">http://social.bioware.com/group/2171/</a>
+</p>

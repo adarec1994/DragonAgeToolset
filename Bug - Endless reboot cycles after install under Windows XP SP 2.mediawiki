@@ -1,0 +1,15 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> Will not fix root cause (it's an MSSQL Server problem), 1.0.1008.0 installer now detects and warns against installing on SP 2.</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The MSSQL Server Express installer bundled with the toolset has a potential issue when installed on Windows XP Service Pack 2 that can cause an endless cycle of reboots. The toolset installer will warn you not to proceed if it detects SP2 on your system. Dragon Age: Origins has Service Pack 3 as part of its minimum installation requirements, so you should try upgrading to Service Pack 3 and reinstall.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>If you're stuck in an endless reboot cycle:
+</p>
+<ul><li>Press ctrl+alt+del and open the task manager as soon as possible. Failing that, try booting in safe mode by holding down F8 during the boot process.</li>
+<li>Then go to the start menu and in execute type in "msconfig"</li>
+<li>In MSConfig go to services and deactivate all the SQL services.</li>
+<li>Now you can go to control panel...software and uninstall the SQL server from the last piece upward.</li></ul>
+<p>Alternately, instead of booting into safe mode after holding down F8 during boot, you can choose the option "Last known good configuration (your most recent settings that worked)". This may restore your system to a functional state and allow SQL Server to function correctly.
+</p><p>Once you've uninstalled SQL Server this should prevent further reboot cycles. You can now install Windows XP Service Pack 3.
+</p>

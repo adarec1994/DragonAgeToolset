@@ -1,0 +1,25 @@
+<p>This function applies an effect on an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Engine_ApplyEffectOnObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDurationType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> eEffect,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fDuration&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreator&#160;= OBJECT_SELF,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityId&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nDurationType<dd>an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20DURATION%20TYPE" title="EFFECT DURATION TYPE *">EFFECT_DURATION_TYPE_*</a> constant or literal<dt style="font-weight:normal; font-style:italic;">eEffect<dd>the effect to be applied<dt style="font-weight:normal; font-style:italic;">oTarget<dd>the target of the effect<dt style="font-weight:normal; font-style:italic;">fDuration<dd>the duration in seconds (only for temporary effects)<dt style="font-weight:normal; font-style:italic;">oCreator<dd>effect creator<dt style="font-weight:normal; font-style:italic;">nAbilityId<dd>ability ID of the effect (important for dispelling)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Applies <code>eEffect</code> to <code>oTarget</code>.  
+</p><p>If <code>nDurationType</code> is <code>EFFECT_DURATION_TYPE_TEMPORARY</code>, then <code>fDuration</code> is the duration of the effect. 
+</p><p>Use <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyEffectToObject" title="ApplyEffectToObject (page does not exist)">ApplyEffectToObject</a> instead of calling this directly.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20DURATION%20TYPE" title="EFFECT DURATION TYPE *">EFFECT_DURATION_TYPE_*</a> constant which are valid for the <code>nDurationType</code> parameter are:
+</p>
+<ul><li> <code>EFFECT_DURATION_TYPE_INSTANTANEOUS</code></li>
+<li> <code>EFFECT_DURATION_TYPE_PERMANENT</code></li>
+<li> <code>EFFECT_DURATION_TYPE_TEMPORARY</code></li></ul>

@@ -1,0 +1,12 @@
+<p>When exporting a module or resource any <strong class="selflink">export errors</strong> encountered will be displayed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20window%20panel" title="Log window panel (page does not exist)">Log Window</a>.
+</p>
+<h2><span class="mw-headline" id="Errors">Errors</span></h2>
+<h3><span class="mw-headline" id="Could_not_get_starting_area_resource_information.">Could not get starting area resource information.</span></h3>
+<p>This error can occur when <b>Override campaign export settings</b> option has been enabled in the <b>Export Options</b> window but the <b>Starting Area</b> property is set to an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Unresolved%20DB%20reference%20to%20starting%20area" title="Bug: Unresolved DB reference to starting area">unresolved DB reference</a> or to a resource that no longer exists, for example, because it has been deleted.
+</p><p>To resolve this error select the <b>Tools &gt; Export Options</b> menu option to open the <b>Export Options</b> window and perform one of the following:
+</p>
+<ul><li> Assign a valid area resource to the <b>Starting Area</b> property</li>
+<li> Disable  <b>Override campaign export settings</b> option</li>
+<li> Click on the <b>Restore Defaults</b> button</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiler%20error%20message" title="Compiler error message">Compiler error message</a> for errors encountered during script compilation.</li></ul>

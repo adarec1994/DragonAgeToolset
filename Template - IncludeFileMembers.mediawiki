@@ -1,0 +1,11 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{IncludeFileMembers
+|constants    = true
+|structs      = 
+|functions    = true
+|sourcemodule = Core Game Resources
+}}</pre>
+<p>The <strong class="selflink">IncludeFileMembers</strong> template uses the categories created by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Constant%20table%20start" title="Template:Constant table start">constant</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Struct" title="Template:Struct">struct</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Dafunction" title="Template:Dafunction">function</a> templates to automatically build the lists of the include file's members.
+</p><p>Note name of the include file appearing in the categories names must be in lower case, for example, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions%20from%20ability%20h" title="Category:Functions from ability h">Functions from ability_h</a>.
+</p>

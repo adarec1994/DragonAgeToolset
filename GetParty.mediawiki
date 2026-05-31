@@ -1,0 +1,17 @@
+<p>Returns the party object of the target creature.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> GetParty(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The target creature.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The party object of the target creature.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Always returns <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a>.
+</p>

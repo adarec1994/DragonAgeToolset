@@ -1,0 +1,61 @@
+<p>The Dragon Age toolset exports resources to a set of directories that varies depending on the module's settings, and the game reads these resources from various directories with a certain order of priority. Resources with the same name can override each other by being placed in directories with greater priority, and may or may not be loaded depending on which module the game is currently playing.
+</p><p>This list is the order from top priority to bottom:
+</p>
+<ul><li>My Documents\BioWare\Dragon Age\packages\core\override</li>
+<li>Program Files\Dragon Age\packages\core\override</li></ul>
+<ul><li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\override</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\patch</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\locale</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\textures</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\audio\VO</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\audio\Sound</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\env</li>
+<li>My Documents\BioWare\Dragon Age\AddIns\&lt;module UID&gt;\core\data</li></ul>
+<p><b>Note:</b> There is currently a bug in the game preventing it from reading resources in the "My Documents Module" locations.  This is a bug which has been WNF'ed for initial release. The toolset does read from here, however, so there is some possibility for confusion if you're working on resources that are located here. Until the patch correcting this comes out, users are advised to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">create modules</a> as "addin" type even when they're stand-alone.
+</p>
+<ul><li>My Documents Module Override</li>
+<li>My Documents Module Patch</li>
+<li>My Doucments Module Locale</li>
+<li>My Documents Module Data</li>
+<li>My Documents Module Toolset</li>
+<li>My Documents Module Patch</li>
+<li>My Documents Module Local</li>
+<li>My Documents Module Data</li></ul>
+<ul><li>Module Override</li>
+<li>Module Textures\Patch_&lt;Med/High&gt;</li>
+<li>Module Patch</li>
+<li>Module Locale</li>
+<li>Module Data</li>
+<li>Module Toolset</li>
+<li>Module Audio\VO</li>
+<li>Module Audio\Sound</li>
+<li>Module Root</li></ul>
+<ul><li>Program Files\Dragon Age\packages\core\Patch</li>
+<li>Core Locale</li>
+<li>Core Env</li>
+<li>Core Textures\&lt;Med/High&gt;</li>
+<li>Core Data</li>
+<li>Core Audio\VO</li>
+<li>ENV_LAYOUT??? - Doesn't seem to be used</li>
+<li>ENV_CHUNK??? - Uses for env rims somehow</li>
+<li>Core Audio\Sound</li>
+<li>RESMETRICS??? - Doesn't seem to be used</li></ul>
+<p><b>Note:</b> end-users will not be able to create functioning offers, this is a feature used by official BioWare-produced post-release content.
+</p>
+<ul><li>Offer Textures\Patch_&lt;Med/High&gt;</li>
+<li>Offer Override</li>
+<li>Offer Patch</li>
+<li>Offer Locale</li>
+<li>Offer Audio\VO</li>
+<li>Offer Audio\Sound</li>
+<li>Offer Env</li>
+<li>Offer Data</li></ul>
+<h2><span class="mw-headline" id="Overriding_base_campaign_resources">Overriding base campaign resources</span></h2>
+<p>Currently resources with the same name and type as an existing resource in another module can't be
+created in the same database as that module. Since the database that comes with the toolset has a set of core resources and the base campaign already in it, this makes overriding base campaign resources tricky.
+</p><p>One possible approach to overriding a core resource would be to open a local copy (not checked out), make your edits to it, then export it. This has not yet been tested and may or may not work. Experiments remain to be done.
+</p><p>Another possible approach is to create a new resource with a similar name, and then after exporting it (but before doing a builder to player packaging) go into the toolset export directory where it's been exported and renaming it to match the resource you wish to override. This does work, but there's almost invariably an easier way, such as changing the 2DA that identifies the name of the resource to load.
+</p>
+<h2><span class="mw-headline" id="Overriding_engine_resources">Overriding engine resources</span></h2>
+<p>Note that it is possible to override resources that are used by the game engine. For example, the "fade" framebuffer effect uses the material object "fade.mao"; if you were to create your own material object with this name and put it in override the game would use that instead. This can cause unexpected effects and should be done with care.
+</p>

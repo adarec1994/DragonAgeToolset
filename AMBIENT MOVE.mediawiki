@@ -1,0 +1,120 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> AMBIENT_MOVE_NONE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td> No movement
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_PATROL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td> Patrol waypoints (1, 2, 3, 2, 1, ...)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_LOOP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td> Loop through waypoints (1, 2, 3, 1, 2, 3, ...)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_WARP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td> Jump from the last waypoint to the first (1, 2, 3, jump to 1, 2, 3, ...)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_RANDOM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td> Go to random waypoint
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_WANDER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td> Go to random location within AMBIENT_RANGE_NEAR meters of home location
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_WANDER_FAR
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td> Go to random location within AMBIENT_RANGE_FAR meters of home location
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_PATH_PATROL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td> Follow waypoints using CommandMoveToMultiLocation() in order (1, 2, 3, 2, 1, ...)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_PATH_LOOP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td> Follow waypoints using CommandMoveToMultiLocation() in order (1, 2, 3, 1, 2, 3, ...)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_ONCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td> Follow waypoints in order once (1, 2, 3)
+</td>
+<td align="center"> sys_ambient_h
+</td></tr></table>

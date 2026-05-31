@@ -1,0 +1,23 @@
+<p>Safe wrapper for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject" title="DestroyObject">DestroyObject</a>.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Safe_Destroy_Object(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDelayMs&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>object to destroy<dt style="font-weight:normal; font-style:italic;">nDelayMs<dd>time in milliseconds to delay the destruction of the object, default is for immediate destruction
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Destroys the specified object unless it is a party member; is plot or is immortal.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The reason for this function: there were accidents where creatures would deplete themselves as Ammo because people were not paying attention.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject" title="CreateObject">CreateObject</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject" title="DestroyObject">DestroyObject</a>
+</p>

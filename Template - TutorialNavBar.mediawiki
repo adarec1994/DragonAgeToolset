@@ -1,0 +1,5 @@
+<div class="tutorialnavbar" align="center"><img alt="Icon wiki arrow left disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Icon_wiki_arrow_left_disabled.png" width="64" height="64" /> <img alt="Icon wiki home disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ca/Icon_wiki_home_disabled.png" width="64" height="64" /> <img alt="Icon wiki arrow right disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/86/Icon_wiki_arrow_right_disabled.png" width="64" height="64" />
+</div>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>{{TutorialNavBar|Previous|Next}}
+</pre>

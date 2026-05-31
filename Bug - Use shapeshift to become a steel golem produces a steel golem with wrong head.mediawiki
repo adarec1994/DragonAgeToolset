@@ -1,0 +1,14 @@
+<ul><li><b>Version found:</b>v1.0.1008.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Steps to reproduce: 
+</p><p><br />
+</p>
+<ul><li> Create a shapechange_new.xls to add a new form.</li></ul>
+<ul><li> Use the model No. 7 (steel golem) or a model that uses the mesh of steel golems in the "Appearance" column.</li></ul>
+<ul><li> With all other models, the result is perfect, but with the form of steel golem I get a body of steel golem with the head of a stone golem</li></ul>
+<pre> <a rel="nofollow" class="external text" href="http://img36.imageshack.us/img36/7594/steel2.jpg">This is the result</a>
+</pre>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>nothing
+</p>

@@ -1,0 +1,24 @@
+<p>Handles the event.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> HandleEvent(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> evEvent,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rScriptName&#160;= R""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">evEvent<dd>The event to handle<dt style="font-weight:normal; font-style:italic;">rScriptName<dd>The script that will handle the event (*.ncs). If no script is specified then the object's default script will be run
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Handles the specified event by passing it to the specified script for processing. You can access the event in the script by calling GetCurrentEvent() and doing all of your processing there. This function is executed inline.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The maximum level of event rerouteing is 8.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent" title="GetCurrentEvent">GetCurrentEvent</a>
+</p>

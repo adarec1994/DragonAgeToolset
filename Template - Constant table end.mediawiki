@@ -1,0 +1,47 @@
+<p>This set of templates are used for formatting tables of constants.
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Constant%20table%20start" title="Template:Constant table start">Template:Constant table start</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Constant%20table%20row" title="Template:Constant table row">Template:Constant table row</a></li>
+<li><strong class="selflink">Template:Constant table end</strong></li></ul>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{Constant table start
+|sourcefile    = script.ldf
+|sourcemodule  =
+}}
+{{Constant table row
+|name         = SAMPLE_FIRST_CONSTANT
+|type         = int
+|value        = 9
+|description  = 
+|sourcefile   = script.ldf
+|sourcemodule =
+}}
+{{Constant table row
+|name         = SAMPLE_SECOND_CONSTANT
+|type         = int
+|value        = 7
+|description  = 
+|sourcefile   = script.ldf
+|sourcemodule =
+}}
+:
+{{Constant table row
+|name         = SAMPLE_LAST_CONSTANT
+|type         = int
+|value        = 11
+|description  = 
+|sourcefile   = script.ldf
+|sourcemodule =
+}}
+{{Constant table end}}
+&lt;!--
+== Remarks == --&gt;
+&lt;!-- This section contains additional comments, observations and known issues. --&gt;
+&lt;!--
+== Examples == --&gt;
+&lt;!-- This section contains examples transcluded from the snippet library. --&gt;
+&lt;!--
+== See also == --&gt;
+&lt;!-- This section contains links to articles, functions or constant groups. --&gt;
+</pre>

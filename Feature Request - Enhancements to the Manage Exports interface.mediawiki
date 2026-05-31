@@ -1,0 +1,12 @@
+<p>I prefer to use Manage Exports (is opened via the Tools | Export | Do All Export Operations... menu option) over the combination of toolbar buttons/menu options because all processes are in one place (and not a combination of toolbar buttons/menu options) and because, in theory, allows them all to run automatically and sequentially.   Unfortunately the more I use it the more issues I am finding with it which could hopefully be addressed in the next or a future patch.
+</p>
+<h2><span class="mw-headline" id="Window_Size">Window Size</span></h2>
+<p>It seems silly to have the last two options obscured even if we are make the default window size a little larger so that all the options are visible all without need for the scroll bar.  Alternatively make change to the form's setting persist between toolset sessions, or if that is out of scope then at least make them persist within a single session.
+</p><p>Note: It appears that the default window size is correct on a Vista test machine, this may be an OS-specific problem.
+</p>
+<h2><span class="mw-headline" id="Remember_Settings">Remember Settings</span></h2>
+<p>It would be helpful this feature would remember the Run? options I used both within the same toolset session and between toolset sessions.  Unfortunately each time it is opened it presents the same defaults. Whereas normally I will use the same setting repeatedly which means I am currently having to toggle Render Lightmaps and Wait off (reason below) and toggle Render Minimap and Post to Local on every time it opens. If making the options persist between toolset sessions is out of scope then at least make them persist within a single session.
+</p>
+<h2><span class="mw-headline" id="Batch_Processing">Batch Processing</span></h2>
+<p>Given the time it takes to fully render or export a complex level it would be helpful if Manage Exports could be extended to process multiple levels as a batch.  That way we can leave it running overnight and in the morning have the latest version of each level for our areas.
+</p>

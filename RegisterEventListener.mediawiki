@@ -1,0 +1,27 @@
+<p>Registers an object to listen to the specified event type on the target object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> RegisterEventListener(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oListener,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEventType<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oTarget<dd>The object to listen to<dt style="font-weight:normal; font-style:italic;">oListener<dd>The object to register as a listener<dt style="font-weight:normal; font-style:italic;">nEventType<dd>The type of event to listen for
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Registers an object to listen to the specified event type on the target object.
+When an object is registered as a listener for an event type, whenever the target
+object receives an event of that type a listener event will be fired to the
+listening object with the event data that the listening object can then process.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It is not possible to listen for other listener events, or for event types other than the ones defined in the scripting language.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UnregisterEventListener" title="UnregisterEventListener">UnregisterEventListener</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventTarget" title="GetEventTarget">GetEventTarget</a>
+</p>

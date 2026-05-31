@@ -1,0 +1,100 @@
+<p>This template set includes the following templates:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Variable%20table%20start" title="Template:Variable table start">Template:Variable table start</a></li>
+<li> <strong class="selflink">Template:Variable table row</strong></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Variable%20table%20end" title="Template:Variable table end">Template:Variable table end</a></li></ul>
+<p>It's intended to allow uniform formatting of variable tables for documentation purposes.
+</p><p>For exmample, the following set of templates:
+</p>
+<pre>
+{{Variable table start}}
+{{Variable table row| AREA_WORLD_MAP_ENABLED | int | | If this is set to 1, the party can switch to travel on the world map at any point within the area. }}
+{{Variable table row| ENTERED_FOR_THE_FIRST_TIME | int | FALSE | If false, set true when an area is first entered and exploration XP is awarded.}}
+{{Variable table end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td>  AREA_WORLD_MAP_ENABLED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  If this is set to 1, the party can switch to travel on the world map at any point within the area.
+</td></tr>
+<tr>
+<td>  ENTERED_FOR_THE_FIRST_TIME
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">  FALSE
+</td>
+<td>  If false, set true when an area is first entered and exploration XP is awarded.
+</td></tr></table>
+<p>Alternately, you could use named parameters like so:
+</p>
+<pre>
+{{Variable table start}}
+{{Variable table row
+|name= AREA_WORLD_MAP_ENABLED
+|type= int
+|default=
+|description= If this is set to 1, the party can switch to travel on the world map at any point within the area.
+}}
+{{Variable table row
+|name= ENTERED_FOR_THE_FIRST_TIME
+|type= int
+|default= FALSE
+|description= If false, set true when an area is first entered and exploration XP is awarded.
+}}
+{{Variable table end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> AREA_WORLD_MAP_ENABLED
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center">
+</td>
+<td> If this is set to 1, the party can switch to travel on the world map at any point within the area.
+</td></tr>
+<tr>
+<td> ENTERED_FOR_THE_FIRST_TIME
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> FALSE
+</td>
+<td> If false, set true when an area is first entered and exploration XP is awarded.
+</td></tr></table>
+<p>Here's a blank set of templates to copy and paste:
+</p>
+<pre>
+{{Variable table start}}
+{{Variable table row
+|name= 
+|type= 
+|default=
+|description= 
+}}
+{{Variable table end}}
+</pre>

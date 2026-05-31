@@ -1,0 +1,172 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">Cutscene actions</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">Play animation</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><strong class="selflink">Cutscene capture</strong></li></ul>
+</td></tr></table>
+<p>A series of command line commands to help capture in game video footage and screenshots without any unwanted user interface elements.
+</p><p><b>Note</b>: this document was copied from internal documentation, not all of the command line parameters have been verified to work with the final shipped version of the game.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Auto_Login"><span class="tocnumber">1.1</span> <span class="toctext">Auto Login</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Capture_Movie"><span class="tocnumber">1.2</span> <span class="toctext">Capture Movie</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Disable_GUI"><span class="tocnumber">1.3</span> <span class="toctext">Disable GUI</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Force_High_Resolution"><span class="tocnumber">1.4</span> <span class="toctext">Force High Resolution</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#FPS_Override"><span class="tocnumber">1.5</span> <span class="toctext">FPS Override</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Full_Screen"><span class="tocnumber">1.6</span> <span class="toctext">Full Screen</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Height_.26_Width_Overrides"><span class="tocnumber">1.7</span> <span class="toctext">Height &amp; Width Overrides</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Max_FPS"><span class="tocnumber">1.8</span> <span class="toctext">Max FPS</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#No_Warning_Popup"><span class="tocnumber">1.9</span> <span class="toctext">No Warning Popup</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Run_Cutscene"><span class="tocnumber">1.10</span> <span class="toctext">Run Cutscene</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Staging"><span class="tocnumber">1.11</span> <span class="toctext">Staging</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Batch_Files"><span class="tocnumber">2</span> <span class="toctext">Batch Files</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Capturing_a_Cutscene"><span class="tocnumber">2.1</span> <span class="toctext">Capturing a Cutscene</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Converting_into_video_with_VirtualDub"><span class="tocnumber">2.2</span> <span class="toctext">Converting into video with VirtualDub</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#See_Also"><span class="tocnumber">3</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Parameters">Parameters</span></h2>
+<h3><span class="mw-headline" id="Auto_Login">Auto Login</span></h3>
+<ul><li>Format: -autologin=[string CampaignName]</li>
+<li>Example: -autologin=single player</li></ul>
+<p>Used to automatically load up the campaign specified in <b>CampaignName</b> when the game starts. Also shuts down the start-up movies so you don't constantly recapture the BioWare Logo.
+</p>
+<h3><span class="mw-headline" id="Capture_Movie">Capture Movie</span></h3>
+<ul><li>Format: -capturemovie=[string CaptureName]</li>
+<li>Example: -capturemovie=movie_test</li></ul>
+<p>Starts capturing every frame rendered as soon as the game starts. Useful when automatically running a cutscene.
+</p><p>The movie frames are all written out as TGA files into the directory you give as a <b>CaptureName</b> inside your LOGS directory, for example, in <code>C:\Documents and Settings\&lt;name&gt;\My Documents\bioware\dragon age\Logs\&lt;CaptureName&gt;</code>.
+</p><p>The frames start counting at 00000 and work their way up, and you can clear out the unwanted frames after a capture by simply deleting them.
+</p>
+<h3><span class="mw-headline" id="Disable_GUI">Disable GUI</span></h3>
+<ul><li>Format: -disablegui</li></ul>
+<p>Shuts off the ingame GUI elements so you can capture the movie without the extra bits on the edges.
+Extra useful in the "single player" module as it gets rid of the "character generation" GUI that blocks the screen when you fire it up.
+</p>
+<h3><span class="mw-headline" id="Force_High_Resolution">Force High Resolution</span></h3>
+<ul><li>Format: -forcehighres</li></ul>
+<p>Shuts down both dynamic and static LOD systems and forces all models to their highest possible resolution.
+</p>
+<h3><span class="mw-headline" id="FPS_Override">FPS Override</span></h3>
+<ul><li>Format: -fpsoverride=[float FPS]</li>
+<li>Example: -fpsoverride=29.95</li></ul>
+<p>Regardless of how fast the game is running, every frame will advance the time by the exact amount needed to match the <b>FPS</b> specified here. This lets you capture the movie at a constant 30fps regardless of how slow it takes to actually draw the frames to the screen.
+</p><p>Note: This is a float value, so values of 29.95 are valid.
+</p>
+<h3><span class="mw-headline" id="Full_Screen">Full Screen</span></h3>
+<ul><li>Format: -fullscreen</li></ul>
+<p>Not specifically used for movie captures, but might be useful if the resolution you're trying to capture just happens to be exactly your screen's resolution. This does make the game run a bit faster, so the capture might be a bit quicker.
+</p>
+<h3><span class="mw-headline" id="Height_.26_Width_Overrides">Height &amp; Width Overrides</span></h3>
+<ul><li>Format: -height=[int HeightOverride]</li>
+<li>Format: -width=[int WidthOverride]</li>
+<li>Example: -height=1080 –width=1920</li></ul>
+<p>Overrides the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ini" title="Ini (page does not exist)">ini</a> file and built-in defaults and forces the system to run at this resolution.
+</p><p>Note: This can NOT create a window larger than your current screen, that is a limitation of the D3D system. So if you want a larger resolution, you'll have to get a larger monitor.
+</p>
+<h3><span class="mw-headline" id="Max_FPS">Max FPS</span></h3>
+<ul><li>Format: -maxfps=[int FPS]</li></ul>
+<p>Forces the game to slow down to the <b>FPS</b> specified here, this does not alter the time delta between frames, just sleeps after drawing the frames out until this <b>FPS</b> is reached. Useful if, for example, you're planning on using <a rel="nofollow" class="external text" href="http://www.fraps.com/">FRAPS</a> to capture a movie and you want to make sure that every frame is caught.
+</p><p>Not suggested for movie captures, use <b>CaptureMovie</b> instead, it's much more reliable to catch every frame.
+</p>
+<h3><span class="mw-headline" id="No_Warning_Popup">No Warning Popup</span></h3>
+<ul><li>Format: -nowarningpopup</li></ul>
+<p>Shuts down the Warning message box that pops up when the programmers are trying to tell you that something is going wrong.
+</p><p>This isn't "directly" related to movie capturing, but those boxes do get in the way when you're trying to capture a movie, so it's part of this interface.
+</p>
+<h3><span class="mw-headline" id="Run_Cutscene">Run Cutscene</span></h3>
+<ul><li>Format: -runcutscene=[string CutsceneName]</li>
+<li>Example: -runcutscene=dog_intro.cut</li></ul>
+<p>Must be used in conjunction with <b>autologin</b> to put the game in the right module where the cutscene is to be run. The <b>CutsceneName</b> must include the ".cut" extension, and the file must exist where the game can find it (the base override directory works well) This only works for cutscenes that have the "area" specified in the editor, those that only have a layout will not work with this feature. This is an engine limitation that will be extremely costly to fix. When the cutscene is completed (or cancelled) the game will just sit there, it won't shut down automatically.
+</p>
+<h3><span class="mw-headline" id="Staging">Staging</span></h3>
+<ul><li>Format: -cutscenestage=[string StageName]</li>
+<li>Example: -cutscenestage=cli400st_the_speech</li></ul>
+<p>Allows staged cutscenes to be recorded.
+</p>
+<h2><span class="mw-headline" id="Batch_Files">Batch Files</span></h2>
+<h3><span class="mw-headline" id="Capturing_a_Cutscene">Capturing a Cutscene</span></h3>
+<p>The following batch file will take a text file (named <code>da_cins.txt</code>) with one cutscene name per line and generate frames for each of them. If your game is installed somewhere other than <code>C:\Program Files\</code> remember to edit the corresponding line to point to the proper location of <code>bin_ship</code>. Edit the <b>autologin</b> parameter to point to the UID of the module containing your cutscenes.
+</p>
+<pre>@ECHO OFF
+
+cd C:\Program Files\Dragon Age\bin_ship\
+
+SET INPUT=da_cins.txt
+
+for /f "tokens=1 delims="&#160;%%a in (%INPUT%) do (
+dragonage.exe -runcutscene=%%a -forcehighres -fpsoverride=30 -capturemovie=%%a -nowarningpopup -autologin=single player 
+)
+
+echo COMPLETE
+
+pause
+</pre>
+<h3><span class="mw-headline" id="Converting_into_video_with_VirtualDub">Converting into video with VirtualDub</span></h3>
+<p>You can then use the following batch file with the free video-manipulation program <a rel="nofollow" class="external text" href="http://www.virtualdub.org/">VirtualDub</a> to stitch the images together into movies.
+</p>
+<pre>@ECHO OFF
+
+SET INPUT=da_cins.txt
+
+for /f "tokens=1 delims="&#160;%%a in (%INPUT%) do (
+virtualdub /s preview_cin.vcf /p ..\%%a\00000.tga  ..\preview\%%a.avi /r /x  
+)
+
+echo COMPLETE
+
+pause
+</pre>
+<p>You'll also need to create a text file in the same directory as your batch files named <code>preview_cin.vcf</code> that contains configuration information for VirtualDub:
+</p>
+<pre>VirtualDub.audio.SetSource(1);
+VirtualDub.audio.SetMode(0);
+VirtualDub.audio.SetInterleave(1,500,1,0,0);
+VirtualDub.audio.SetClipMode(1,1);
+VirtualDub.audio.SetConversion(0,0,0,0,0);
+VirtualDub.audio.SetVolume();
+VirtualDub.audio.SetCompression();
+VirtualDub.audio.EnableFilterGraph(0);
+VirtualDub.video.SetInputFormat(0);
+VirtualDub.video.SetOutputFormat(7);
+VirtualDub.video.SetMode(3);
+VirtualDub.video.SetSmartRendering(0);
+VirtualDub.video.SetPreserveEmptyFrames(0);
+VirtualDub.video.SetFrameRate2(30,1,1);
+VirtualDub.video.SetIVTC(0,0,-1,0);
+VirtualDub.video.SetCompression(0x64697678,0,8000,0);
+VirtualDub.video.SetCompData(3532,"AAAAALwCAACQsggAXHZpZGVvLnBhc3MALgBwAGEAcwBzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAEAACh1bnJlc3RyaWN0ZWQpAABpAGMAdABlAGQAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAAEdlbmVyYWwgcHVycG9zZQBwAHUAcgBwAG8AcwBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIERITFRcZGxESExUXGRscFBUWFxgaHB4VFhcYGhweIBYXGBocHiAjFxgaHB4gIyYZGhweICMmKRscHiAjJiktEBESExQVFhcREhMUFRYXGBITFBUWFxgZExQVFhcYGhsUFRYXGRobHBUWFxgaGxweFhcYGhscHh8XGBkbHB4fIQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAACWAAAAZAAAAAEAAAAAAAAABAAAAAMAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAZAAAAPQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABkAAAAZAAAAAEAAAAKAAAAAQAAABQAAAAAAAAAAAAAAAUAAAAFAAAABQAAAAAoCgAAAAAAAQAAAAEAAAAeAAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAAEAAAAAAAAALAEAAAAAAAABAAAAHwAAAAEAAAAfAAAAAQAAAB8AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAzwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==");
+VirtualDub.video.filters.Clear();
+VirtualDub.audio.filters.Clear();
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3528/">Sunjammer's Cutscene Companion</a> provides a simple GUI for the cutscene capture process.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture%20-%20ru" title="Cutscene capture/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

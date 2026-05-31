@@ -1,0 +1,120 @@
+<p>The <strong class="selflink">DLG editor options</strong> or <b>Conversation editor options</b> are accessible from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Options%20menu" title="Options menu (page does not exist)">options</a> menu.
+</p>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">Cinematics and animations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">Plots and scripting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Cinematics</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Maximum Henchmen</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Goto Highlight Options</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Skip Highlighted Links</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Line Preview</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Safe Frame Action Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Safe Frame Aspect Ratio</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Safe Frame Outer Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Safe Frame Title Color</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Linking Options</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Dragging</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Pasting</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Text Tab</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">VO Recorded Highlight Color</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Tree View</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Ambient Highlight Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Error Highlight Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Link Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">NPC Comment Line Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">NPC Line Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Player Line Color</td>
+<td></td>
+</tr>
+</table>

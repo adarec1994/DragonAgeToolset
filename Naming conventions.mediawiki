@@ -1,0 +1,181 @@
+<p>BioWare's resources follow a naming convention which allows for easy management and easy location of resources needed. When creating new resources it is a good idea to follow the existing naming convention (or your own scheme if you have a preferred one), to differentiate your work from that of others and to help you keep your resources organized.
+</p><p>For the most part the names you give your resources will matter only to you, there are very few situations where the toolset pays attention to the specific form that a resource name takes. So provided you're working on your own any naming convention that suits your particular style will suffice.
+</p><p>Although only one campaign is loaded at a time in game, unintended conflict can arise between the campaign and any core resource mods the player may have installed. If two design resources have the same name, only one will load. This is determined by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">Source directory priorities</a>.  So, it's good to choose names that are likely to be unique.         
+</p><p>Usually resources are separated by underscores into categories and have prefixes sorting them based on a certain main class, or suffixes giving them certain variations.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Resource_Naming_Convention"><span class="tocnumber">1</span> <span class="toctext">Resource Naming Convention</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Model_File_Naming_Convention"><span class="tocnumber">2</span> <span class="toctext">Model File Naming Convention</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Items"><span class="tocnumber">2.1</span> <span class="toctext">Items</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Creatures"><span class="tocnumber">2.2</span> <span class="toctext">Creatures</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Model_Main_Class_Naming_Convention"><span class="tocnumber">2.3</span> <span class="toctext">Model Main Class Naming Convention</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Voice_Over_File_Naming_Convention"><span class="tocnumber">3</span> <span class="toctext">Voice Over File Naming Convention</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Animation_File_Naming_Convention"><span class="tocnumber">4</span> <span class="toctext">Animation File Naming Convention</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Vegetation_.28Speedtree.29_File_Naming_Convention"><span class="tocnumber">5</span> <span class="toctext">Vegetation (Speedtree) File Naming Convention</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_Also"><span class="tocnumber">6</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Resource_Naming_Convention">Resource Naming Convention</span></h2>
+<p>Design resource names are free-form. As a matter of convenience and courtesy to players, you might prefer to follow a convention that reduces the risk of conflict between add-ins and improves compatibility with future Bioware releases. Bear in mind that only one resource with a given name will load in game. 
+</p><p>For simple mods, it might be sufficient to use a unique resource name prefix which is unlikely to be used by anyone else. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Prefixes%20in%20use" title="Prefixes in use">Prefixes in use</a>.
+</p><p>Larger mods and campaigns may prefer a more professional approach which makes scripting more legible by identifying the resource type etc.
+</p><p>In either case, it would be wise to avoid a prefix that Bioware has already used, such as "gen". 
+</p><p>The convention used in the main Single Player campaign of Dragon Age is as follows:
+</p>
+<pre>cir200cr_bloodmage</pre>
+<ul><li>Three-letter prefix indicating which large-scale area of the game the resource begins to (particular origin story, prelude, etc) or "gen" for global resources.</li>
+<li>three-digit number unique to a particular area, generally starting with 100 and incrementing in hundreds for major areas. Accessory areas are given numbers within the block of one hundred that their 'parent' area belongs to. "global" resources are often given the number 000.</li>
+<li>two-letter code indicating what general type of resource it is ("ar" for area, "al" for area list, "ip" for placeable, "cr" for creature, "im" for item, "tr" for trigger, "pt" for plot, "st" for stage, "cs" for cutscene, "wp" for waypoint). A major exception here is event scripts, which have exactly the same name as the resource they're the script for. Dialogue files are also generally named exactly the same as their owner resource. Merchants usually have the owner name, with the prefix "store_".</li>
+<li>An underscore.</li>
+<li>The remainder of the name is free-form  and human-readable, a descriptive term to remind you at a glance what the resource is.</li></ul>
+<h2><span class="mw-headline" id="Model_File_Naming_Convention">Model File Naming Convention</span></h2>
+<h3><span class="mw-headline" id="Items">Items</span></h3>
+<pre>[MainClass]_[MODELTYPE]_[MODELSUBTYPE][MODELVARIATION]_[LOD].MMH / PHY 
+
+[ef]_[rob]_[enc][a]_[0].mmh  (ef_rob_enca_0.mmh)</pre>
+<ul><li>Where [MainClass] is of General type of a Model. The Toolset will build the MainClass based on Race/Gender/Itemtype etc, so this must be correct. (see below)</li>
+<li>[MODELTYPE] as defined with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a>. Typically a short name describing the Model ie. Wolf. See: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li>
+<li>[MODELSUBTYPE] is optional as defined with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a>. Typically a short name describing different Variations of a Model. See: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li>
+<li>[MODELVARIATION] is optional as defined with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a>. Typically one letter a, b, c describing further Variations. See: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li>
+<li>[LOD] is optional for LOD Versions of Models, where its 0, 2 or 3 from highest to lowest LOD. Options are dependant on resourcetype, however 0 is always required if LOD is applicable.</li></ul>
+<h3><span class="mw-headline" id="Creatures">Creatures</span></h3>
+<pre>[MainClass]+[ModelName]_[LOD].MMH / PHY
+
+[c]_[deepstkra]_[0].mmh (c_deepstkra_0.mmh)</pre>
+<ul><li>[MainClass] is the general type of the model. When no override is set in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a>, the toolset will generate it based on race and gender. (see below)</li>
+<li>[ModelName] is the Modelname (including mainclass) described in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a>. When no Modelname is given, and Modeltype is P, the toolset will generate it based on <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/NakedVariations.xls" title="NakedVariations.xls (page does not exist)">NakedVariations.xls</a> (unsure)</li>
+<li>[LOD] is optional for LOD Versions of Models, where its 0, 2 or 3 from highest to lowest LOD. Options are dependant on resourcetype, however 0 is always required if LOD is applicable. </li></ul>
+<p>This accounts for the game being able to locate a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> via 2DA definitions. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MSH" title="MSH">MSH</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">DDS</a> Files are referenced by the MMH and each other but follow similar schemes.
+</p>
+<h3><span class="mw-headline" id="Model_Main_Class_Naming_Convention">Model Main Class Naming Convention</span></h3>
+<ul><li>base</li>
+<li>blk - black boxes of various sizes and proportions, used to obscure the portions of models that lie "outside" an interior level where the player shouldn't be able to see.</li>
+<li>c - Creature (full body)</li>
+<li>cai - Cave Int. </li>
+<li>cav - Caves</li>
+<li>cdr - Cave Deep Road</li>
+<li>che - Chantry Exterior</li>
+<li>chi - Chantry Interior</li>
+<li>cn - Creatures split into body/head/eyes</li>
+<li>cs - Cutscene</li>
+<li>df - dwarf female accessories and components</li>
+<li>dm - dwarf male accessories and components</li>
+<li>dne - dwarf noble exterior level pieces</li>
+<li>dni - dwarf noble interior level pieces</li>
+<li>dse - Dwarf Slum Exterior</li>
+<li>dsi - Dwarf Slum Interior</li>
+<li>dwe - Dwarven Exterior (Orzammar City) </li>
+<li>dwi - Dwarven Interior</li>
+<li>ef - elf female accessories and components</li>
+<li>el - Lights</li>
+<li>el_lr - Light Rig</li>
+<li>el_lp - Light Probe</li>
+<li>em - elf male accessories and components</li>
+<li>fca - Fereldan Castle</li>
+<li>fce - Fereldan Castle/City Exterior </li>
+<li>fci - Fereldan Castle Interior</li>
+<li>fde - Fade</li>
+<li>fdi - Fereldan Dungeon Interior</li>
+<li>fhe - Fereldan Human Exterior</li>
+<li>fhec -&#160;? (used in Redcliffe Village)</li>
+<li>fhi - Ferelden Human Interior</li>
+<li>fne - Ferelden noble exterior level pieces</li>
+<li>frt - Fort (Drakon)</li>
+<li>fti - Fereldan Town Interior</li>
+<li>ftr - Fort (Drakon) Roof</li>
+<li>fve - Fereldan Village Exterior</li>
+<li>fx - Effects</li>
+<li>fxa - Ability Effects</li>
+<li>fxc - Creature Effects</li>
+<li>fxe - Environmental Effects</li>
+<li>fxg - Glyph (or Ground?) Effects (eg AOE placement/aim indicators)</li>
+<li>fxm - Animator cutscene effects</li>
+<li>fxp - Prop Effects</li>
+<li>hf - human female accessories and components</li>
+<li>hm - human male accessories and components</li>
+<li>hro - Hero Sets</li>
+<li>kn - Kid (child) related</li>
+<li>lightrig</li>
+<li>material</li>
+<li>nm -&#160;? (just Duncan's body)</li>
+<li>pf - Female (race-neutral) related</li>
+<li>plc - placeables</li>
+<li>pm - Male (race-neutral) related</li>
+<li>pn - Related to any gender or race</li>
+<li>prp - props</li>
+<li>prv - Provings</li>
+<li>qm - Qunari male related</li>
+<li>sb - Skybox</li>
+<li>sca</li>
+<li>sr - Selection Ring (creature allegiance indicator rings)</li>
+<li>tce - Tevinter Castle Exterior</li>
+<li>tci - Tevinter Castle Interior</li>
+<li>tfi - Tevinter Fade Interior</li>
+<li>tools - models used by the toolset</li>
+<li>trn -&#160;? (possibly terrain creation utilities)</li>
+<li>tti - Tevinter Tower Interior</li>
+<li>tve - Tevinter Exterior</li>
+<li>tvi - Tevinter Interior</li>
+<li>tvm -&#160;? (Tevinter something)</li>
+<li>ue - Eye morph targets</li>
+<li>uem - Eyes and eye morph targets</li>
+<li>uh - Head morph targets</li>
+<li>uhm - Heads and head morph targets</li>
+<li>ul - Eyelash morph targets</li>
+<li>ulm - Eyelashes and eyelash morph targets</li>
+<li>v</li>
+<li>vfx - Visual Effects</li>
+<li>vis - Vista Objects</li>
+<li>vst - Vista Objects</li>
+<li>w - weapon models</li>
+<li>water - waterfall pieces</li>
+<li>zz - models used in debugging</li></ul>
+<h2><span class="mw-headline" id="Voice_Over_File_Naming_Convention">Voice Over File Naming Convention</span></h2>
+<pre>[LineID]_m.WAV</pre>
+<ul><li>with [LineID] replaced by the ID number for the conversation line's string table entry.</li></ul>
+<p>This accounts for being able to locate thousands of VO lines, when assigning them to their conversation line.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice over">voice over</a> for more information on how to manage voice over recording.
+</p>
+<h2><span class="mw-headline" id="Animation_File_Naming_Convention">Animation File Naming Convention</span></h2>
+<pre>mh.dg_5p_tn_l_45.ANI</pre>
+<p>The various parts of the animation name gives you information about the type of animation.  This for example means "male human dialogue 5 paces turn left 45 degrees."
+</p><p>All humanoid animations prefix with mh.  (male human). There is also a small list of fh (female human), These work across all races pretty much.
+</p><p>After the prefix you have the following:
+</p>
+<ul><li>2p - a 2 person animation... usually lined up (i.e. give and receive, punch and punched, kiss and kissed)</li>
+<li>am - ambient... full animations that so specific actions (i.e. blacksmith, cheering, clean floor)</li>
+<li>cb - combat animations</li>
+<li>cu - custom animation, usually for a specific cutscene or purpose</li>
+<li>dg - dialog... animation fpr the purpose of use within dialogs (although we use all these animations)</li>
+<li>po - pose based animations - these are specific poses and gestures for talking dialogs</li>
+<li>wi - world interaction - similar to ambient but more about interacting with world objects (desks, leaning, sitting)</li></ul>
+<p>After the above second prefix the rest is usually descriptive (or some what). Key thing to note:
+</p>
+<ul><li>en - enter animation... this is the animation that gets the actor doing the animation... usually from a standing neutral position</li>
+<li>lp - looping animation - this is the animation that loops to keep the actor in a pose or position</li>
+<li>ex - exit animation - this is the animation that gets the actor out of the lp animation... usually to a standing neutral position</li>
+<li>tw - twitch, an animation that plays from the lp animation</li></ul>
+<p>So, for example:
+</p>
+<ul><li>mh.wi_sit_en  - animation goes from standing neutral to sitting</li>
+<li>mh.wi_sit_lp   - animation loops in the sitting pose</li>
+<li>mh.wi_sit_ex  - animation goes from sitting to standing neutral</li>
+<li>mh.wi_sit_tw1 - an animation that plays from sit_lp, such as someone scratching their head</li></ul>
+<h2><span class="mw-headline" id="Vegetation_.28Speedtree.29_File_Naming_Convention">Vegetation (Speedtree) File Naming Convention</span></h2>
+<pre>tre c oakfixl.SPT</pre>
+<p>Vegetation is sorted in main categories via Prefix:
+</p>
+<ul><li>bsh - Bushes</li>
+<li>gra - Grass</li>
+<li>tre - Trees</li></ul>
+<p>The last part is a short description of the vegetation type, ie Oak, which is a Oaktree.
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">Compatibility</a></li></ul>

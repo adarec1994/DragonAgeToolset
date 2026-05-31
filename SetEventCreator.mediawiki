@@ -1,0 +1,24 @@
+<p>Sets the event creator.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> SetEventCreator(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> evEvent,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreator<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">evEvent<dd>The event to set the creator on<dt style="font-weight:normal; font-style:italic;">oCreator<dd>The object to set as the creator of the event
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the modified event, returns an invalid event on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the creator of the specified event.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Overriding the creator object on existing events can have adverse effects.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>
+</p>

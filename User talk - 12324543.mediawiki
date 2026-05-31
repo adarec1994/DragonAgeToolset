@@ -1,0 +1,12 @@
+<p>&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_fls" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_tal" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_tal1" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_tal2" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org0" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org1" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org2" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org3" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org4" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org5" cut="1"/&gt;
+&lt;resource name="art\characters\playercharacter\humanfemale\hf_har_org6" cut="1"/&gt;
+</p>

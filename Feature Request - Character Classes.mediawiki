@@ -1,0 +1,4 @@
+<p><br />
+Currently, adding new character classes seems to require modifying core scripts and the methodology behind editing the 2da files is not particularly clear. If the toolset is to be useful in creating mods that are not based solely on Dragon Age lore, this is a feature that will sooner or later need to be addressed. In addition, extending class functionality with new prestige classes has been discussed on the forums by MANY interested in undertaking such a project.
+</p><p>An easier (read: not requiring potential game-breaking edits) system for creating new classes would be a much-sought-after addition to the toolset.
+</p>

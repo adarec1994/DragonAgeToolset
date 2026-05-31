@@ -1,0 +1,18 @@
+<p>The <strong class="selflink">background.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the standard backgrounds and determine which are available to each combination of race and class.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%202da" title="Backgrounds 2da">Backgrounds</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20desc%202da" title="Background desc 2da">background_desc</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20names%202da" title="Background names 2da">background_names</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20icons%202da" title="Background icons 2da">background_icons</a></li>
+<li> _old</li>
+<li> _old_equipment</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20defaults%202da" title="Background defaults 2da">background_defaults</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20preload%202da" title="Chargen preload 2da">chargen_preload</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

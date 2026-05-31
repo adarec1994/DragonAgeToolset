@@ -1,0 +1,50 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Effect functions"</h2>
+<p>The following 45 pages are in this category, out of 45 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect" title="Effect">Effect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectAreaOfEffect" title="EffectAreaOfEffect">EffectAreaOfEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectDamage" title="EffectDamage">EffectDamage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectHeal" title="EffectHeal">EffectHeal</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectImpact" title="EffectImpact">EffectImpact</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectAtLocation" title="Engine ApplyEffectAtLocation">Engine ApplyEffectAtLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectOnObject" title="Engine ApplyEffectOnObject">Engine ApplyEffectOnObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectOnParty" title="Engine ApplyEffectOnParty">Engine ApplyEffectOnParty</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetClusterCenter" title="GetClusterCenter">GetClusterCenter</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEffect" title="GetCurrentEffect">GetCurrentEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectAbilityID" title="GetEffectAbilityID">GetEffectAbilityID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectAnimation" title="GetEffectAnimation">GetEffectAnimation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectCreator" title="GetEffectCreator">GetEffectCreator</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectDurationType" title="GetEffectDurationType">GetEffectDurationType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectFlags" title="GetEffectFlags">GetEffectFlags</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectFloat" title="GetEffectFloat">GetEffectFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectID" title="GetEffectID">GetEffectID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger" title="GetEffectInteger">GetEffectInteger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectObject" title="GetEffectObject">GetEffectObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffects" title="GetEffects">GetEffects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectsByCreator" title="GetEffectsByCreator">GetEffectsByCreator</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectsFlags" title="GetEffectsFlags">GetEffectsFlags</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectString" title="GetEffectString">GetEffectString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectType" title="GetEffectType">GetEffectType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects" title="GetHasEffects">GetHasEffects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetVisualEffectLocation" title="GetVisualEffectLocation">GetVisualEffectLocation</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20GetInjuryIdFromEffect" title="Injury GetInjuryIdFromEffect">Injury GetInjuryIdFromEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsEffectValid" title="IsEffectValid">IsEffectValid</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveAllEffects" title="RemoveAllEffects">RemoveAllEffects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveEffect" title="RemoveEffect">RemoveEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveEffectsByCreator" title="RemoveEffectsByCreator">RemoveEffectsByCreator</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveEffectsByParameters" title="RemoveEffectsByParameters">RemoveEffectsByParameters</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectAbilityID" title="SetEffectAbilityID">SetEffectAbilityID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectAnimation" title="SetEffectAnimation">SetEffectAnimation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectCreator" title="SetEffectCreator">SetEffectCreator</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectEngineFloat" title="SetEffectEngineFloat">SetEffectEngineFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectEngineInteger" title="SetEffectEngineInteger">SetEffectEngineInteger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectEngineObject" title="SetEffectEngineObject">SetEffectEngineObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectEngineVector" title="SetEffectEngineVector">SetEffectEngineVector</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectFlags" title="SetEffectFlags">SetEffectFlags</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectFloat" title="SetEffectFloat">SetEffectFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectInteger" title="SetEffectInteger">SetEffectInteger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectObject" title="SetEffectObject">SetEffectObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectString" title="SetEffectString">SetEffectString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetIsCurrentEffectValid" title="SetIsCurrentEffectValid">SetIsCurrentEffectValid</a></li></ul></div></div></div>
+</div></div>

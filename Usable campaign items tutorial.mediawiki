@@ -1,0 +1,128 @@
+<p>This is how to make a usable item (such as a sword or a helmet) that is also vital to the plot.
+</p><p>The problem with regular Plot items is that they're really just tokens that can't be used for anything.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Item_Template"><span class="tocnumber">1</span> <span class="toctext">Item Template</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Module_Script"><span class="tocnumber">2</span> <span class="toctext">Module Script</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Merchants"><span class="tocnumber">3</span> <span class="toctext">Merchants</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Lost_Items"><span class="tocnumber">4</span> <span class="toctext">Lost Items</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Dismissed_Followers"><span class="tocnumber">5</span> <span class="toctext">Dismissed Followers</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Item_Template">Item Template</span></h2>
+<p>Set the item variable ITEM_SEND_ACQUIRED_EVENT to 1.
+</p>
+<h2><span class="mw-headline" id="Module_Script">Module Script</span></h2>
+<p>The item variable we just set will trigger a module event when the player acquires the item.
+</p><p>At minimum, we probably want to stop the player destroying the item, so the module event script will include 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+         <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAcquirer     <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oItem         <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sItem         <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// Make item indestructible</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemIndestructible"><span class="kw4">SetItemIndestructible</span></a><span class="br0">&#40;</span>oItem, TRUE<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// Set plot flags if required (sItem tells us which item has been acquired)</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+         <span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="Merchants">Merchants</span></h2>
+<p>We probably don't want to allow the player to sell campaign items.
+</p><p>NOTE: The solution adopted here assumes that event handling is not possible while a merchant is open. It has recently been reported that ToggleGamePause(FALSE) enables event handling, so there might be an easier way.
+</p><p>Here, a custom version of the "open store" plot script is used to store the campaign items in a temporary placeable.
+</p><p>Returning the items to the player is delayed until the next AI update, which happens after the store closes (there's no explicit event for this).
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> COC_GENERAL_OPEN_STORE<span class="sy0">:</span>
+            <span class="br0">&#123;</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oPlayer <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oStore  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;store_&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oConversationOwner<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oBin;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> <span class="br0">&#91;</span><span class="br0">&#93;</span> oItemTable;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oItem;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nItemCount;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nGetItemsOption <span class="sy0">=</span> <span class="kw3">GET_ITEMS_OPTION_BACKPACK</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       i               <span class="sy0">=</span> <span class="sy0">-</span><span class="nu0">1</span>;
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oStore<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                  Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_SYSTEMS</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptName"><span class="kw4">GetCurrentScriptName</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;INVALID STORE OBJECT&quot;</span><span class="br0">&#41;</span>;
+                  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+&#160;
+              <span class="co1">// Hide campaign items (so they can't be sold).</span>
+&#160;
+              oBin <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_PLACEABLE</span>, R<span class="st0">&quot;cocip_bin.utp&quot;</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;  <span class="co1">// Almost any placeable template will do</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetTag"><span class="kw4">SetTag</span></a><span class="br0">&#40;</span>oBin, <span class="st0">&quot;cocip_campaign_items&quot;</span><span class="br0">&#41;</span>;
+&#160;
+              oItemTable <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory"><span class="kw4">GetItemsInInventory</span></a><span class="br0">&#40;</span>oPlayer, nGetItemsOption<span class="br0">&#41;</span>;
+              nItemCount <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>oItemTable<span class="br0">&#41;</span>;
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span><span class="sy0">++</span>i <span class="sy0">&lt;</span> nItemCount<span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                  oItem <span class="sy0">=</span> oItemTable<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+&#160;
+                  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oItem, ITEM_SEND_ACQUIRED_EVENT<span class="br0">&#41;</span><span class="br0">&#41;</span>                        
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MoveItem"><span class="kw4">MoveItem</span></a><span class="br0">&#40;</span>oPlayer, oBin, oItem<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+&#160;
+              <span class="co1">// Schedule an event to return campaign items to the player at the next AI update</span>
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent"><span class="kw4">DelayEvent</span></a><span class="br0">&#40;</span><span class="nu0">0.0</span>, oPlayer, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="kw3">EVENT_TYPE_INVALID</span><span class="br0">&#41;</span>, <span class="st0">&quot;coc_restore_campaign_items&quot;</span><span class="br0">&#41;</span>;
+&#160;
+              <span class="co1">// Open store</span>
+&#160;
+              ScaleStoreItems<span class="br0">&#40;</span>oStore<span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OpenStore"><span class="kw4">OpenStore</span></a><span class="br0">&#40;</span>oStore<span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span></pre></div></div>
+<p>The delayed script coc_restore_campaign_items looks like this:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Restore campaign items to the player</span>
+<span class="co1">//</span>
+<span class="co1">// Campaign items were removed from inventory while the player was trading with a merchant.</span>
+<span class="co1">// Now they are returned.</span>
+<span class="co1">//</span>
+<span class="co1">// Proleric 08-Dec-2010</span>
+<span class="co1">//</span>
+&#160;
+<span class="co2">#include &quot;log_h&quot;</span>
+<span class="co2">#include &quot;utility_h&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;plot_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oPlayer <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oBin    <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;cocip_campaign_items&quot;</span><span class="br0">&#41;</span>;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> <span class="br0">&#91;</span><span class="br0">&#93;</span> oItemTable;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>    oItem;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nItemCount;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       nGetItemsOption <span class="sy0">=</span> <span class="kw3">GET_ITEMS_OPTION_BACKPACK</span>;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>       i               <span class="sy0">=</span> <span class="sy0">-</span><span class="nu0">1</span>;
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oBin<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+      oItemTable <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory"><span class="kw4">GetItemsInInventory</span></a><span class="br0">&#40;</span>oBin, nGetItemsOption<span class="br0">&#41;</span>;
+      nItemCount <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>oItemTable<span class="br0">&#41;</span>;
+&#160;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/While%20keyword"><span class="kw1">while</span></a> <span class="br0">&#40;</span><span class="sy0">++</span>i <span class="sy0">&lt;</span> nItemCount<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+          oItem <span class="sy0">=</span> oItemTable<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MoveItem"><span class="kw4">MoveItem</span></a><span class="br0">&#40;</span>oBin, oPlayer, oItem<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+&#160;
+      WR_DestroyObject<span class="br0">&#40;</span>oBin<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="Lost_Items">Lost Items</span></h2>
+<p>If your campaign allows items to be lost by other means (such as a camp storage chest), you may want to set the ITEM_SEND_LOST_EVENT variable on the item. This can be intercepted in the EVENT_TYPE_CAMPAIGN_ITEM_LOST module event to control what happens.
+</p>
+<h2><span class="mw-headline" id="Dismissed_Followers">Dismissed Followers</span></h2>
+<p>If your campaign allows the player to dismiss followers without being able to get them back easily, you might want to check if the follower being fired has a campaign item equipped. Either notify the player, or move it to the shared inventory space automatically.
+</p>

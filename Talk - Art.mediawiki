@@ -1,0 +1,92 @@
+<p>Maybe need separation between Art and Designer Resources. As well as cleanup the Design Page, which is cluttered with everything.
+</p>
+<hr />
+<p>Would something like this be worth replacing the image in overview? Im not sure if i see it correctly. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 02:44, 26 January 2010 (UTC)
+</p>
+<table style="border: 1px solid">
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td style="background-color:#eFeDeB" align="center">Game
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
+</td>
+<td>
+</td>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td style="background-color:#CFCDCB" width="10pt" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a>
+</td>
+<td>
+</td>
+<td style="background-color:#CFCDCB" width="10pt" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design">Design</a>
+</td>
+<td>
+</td>
+<td style="background-color:#CFCDCB" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a>
+</td></tr>
+<tr>
+<td>
+</td>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow1.JPG"><img alt="Arrow1.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Arrow1.JPG" width="25" height="25" /></a>
+</td>
+<td>
+</td>
+<td align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Arrow2.JPG"><img alt="Arrow2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Arrow2.JPG" width="25" height="25" /></a>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td style="background-color:#9F9D9B" width="10pt" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a>
+</td>
+<td>
+</td>
+<td style="background-color:#DF3D3B" width="10pt" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art" title="Art">Art</a>
+</td>
+<td>
+</td>
+<td style="background-color:#9F9D9B" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a>
+</td>
+<td>
+</td>
+<td>
+</td></tr></table>
+<dl><dd>Seems reasonably accurate to me. I'll take a stab at redoing the overview graphic tomorrow along these lines. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 01:03, 27 January 2010 (UTC)</dd></dl>
+<hr />
+<dl><dd><dl><dd>Actually it's not: art resources also form the basis of other art resources and designer resources are included in other designer resources. That aside, there doesn't seem to be any real point to this diagram: in some ways it is overly simplistic and yet, with seemingly no rhyme or reason include both custom content and 2da while omitting everything else.  Who is it for?  What purpose is it supposed to serve?  However, and hopefully most compelling, given that navigation is already under review why not incorporate these ideas into that review? Global structured solutions rather than dislocated piecemeal reactions.</dd>
+<dd>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 01:26, 27 January 2010 (UTC)</dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd>Ahh ok , was unsure about it. I dont have the best idea, this was meant to tell what what is needed to be visited but obviously it isnt everything. The current overview picture is actully quiet good i was surprised it was hiding somewhere at first. Just it doesnt have clickyclicky, to jump to pages hehe <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 01:48, 27 January 2010 (UTC)</dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd>Art resources have always been a bit of a loose cannon in the toolset, they insert themselves everywhere. Perhaps a better overview page would label major types of art resource, showing eg. level layouts, model meshes, etc., and how they interrelate. But that's starting to get a little complicated for an "overview". I think the important message of the image is not necessarily where every specific type of resource goes, but rather the big picture - ie, there are some things stored in the database, there are some things stored in the file system, and to put them all in the game you have to process them into a finalized form via various tools. The database-filesystem-export arrangement isn't necessarily intuitive to people coming to the toolset fresh and knowing the general layout makes it easier for readers to fill in the blanks later.</dd>
+<dd> One way or another this overview image does need some updating, though. I believe back when I created it the only "art editor" we'd put in the toolset so far had been the face morph editor.&#160;:) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 17:20, 27 January 2010 (UTC)</dd></dl></dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd> Perhaps something like that could serve the main page? If replace "game" with "module" and just leave one "art" and one "design". Then add "Scripts" to the picture and you have what is on the front page. Sidenotes are "getting started" and "tutorials". Semitransparent images to click and go into a category like it is now.  This means dropping cinematofy and sounds, which im all for anyway. Then one may drop having this as navigational aid here. But take that just as a comment rather than a suggestion&#160;:P <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 17:59, 27 January 2010 (UTC)</dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd> Well, I wouldn't want to limit the main page's options based on what can conveniently fit into a flowchart. Something like this might serve as a good overview image on <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Getting%20Started" title="Getting Started">Getting Started</a>, though, since its purpose would be to give some orientation to a new user who has no idea what the lay of the land is. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 20:57, 27 January 2010 (UTC)</dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd><dl><dd> Additionally the wiki is intended to support more than just novice builders: there are supposed to be high profile (i.e. front page) sections for machinima makers and cutscene editors (cinematography); composers, voice over artists and sound engineers (sound and music); custom content developers, etc. Moreover the wiki is intended  to be useful to experienced and veteran modders as well as to novices. It is important we remember all of this when editing or restructuring the wiki: we shouldn't edit or remove something simply because we don't think it is relevant or because we don't understand it as it may be vital to another interest group or experience level. </dd>
+<dd> --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 23:19, 27 January 2010 (UTC)</dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>

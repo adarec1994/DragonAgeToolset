@@ -1,0 +1,41 @@
+<p>The <strong class="selflink">M2DA_base 2da</strong> defines the other <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files which are <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> files and can be <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">extended</a> using an m2da fragment.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  Brief description of the 2DA
+</td></tr>
+<tr>
+<th> Worksheet
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The name of the worksheet to load in and access. This is a prefix for any Worksheet beginning with it
+</td></tr>
+<tr>
+<th> PackageIDForAI
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  ID of the package that this 2DA is the tactics table for. M2DAs that are not tactics tables should leave this as "****".
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This 2da is itself an m2da. Even though it does not define itself as such and does not assign itself an <b>ID</b>,  it can be extended by m2da fragments which have names starting with "M2DA_"
+</p>

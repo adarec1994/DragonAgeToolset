@@ -1,0 +1,30 @@
+<p>Called by: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleCommandAttack" title="Combat HandleCommandAttack">Combat_HandleCommandAttack</a>
+</p><p>Calls: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponStyle" title="GetWeaponStyle">GetWeaponStyle</a>
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"> <span class="coMULTI">/**
+* @brief Determine which hand to use for an attack
+*
+* Only applicable in dual weapon style. Returns which hand to use for the next attack
+*
+* @returns  0 - main hand, 1 - offhand
+*
+* @author Georg Zoeller
+*
+**/</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetAttackHand<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nHand <span class="sy0">=</span> <span class="nu0">0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponStyle"><span class="kw4">GetWeaponStyle</span></a><span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">WEAPONSTYLE_DUAL</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nHand <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oCreature, COMBAT_LAST_WEAPON<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, COMBAT_LAST_WEAPON, <span class="sy0">!</span>nHand<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nHand;
+<span class="br0">&#125;</span></pre></div></div>

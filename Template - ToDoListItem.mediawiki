@@ -1,0 +1,6 @@
+<p>Using the <strong class="selflink">ToDoListItem</strong> template on a page adds to a dynamic "To do list for &lt;user&gt;" category. A user's "ToDoList" can be rendered using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20ToDoList" title="Template:ToDoList">ToDoList</a> template.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{ToDoListItem|Sunjammer}}
+</pre>

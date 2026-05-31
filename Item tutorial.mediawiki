@@ -1,0 +1,57 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p><br />
+</p>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><strong class="selflink">Item tutorial</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20set" title="Item set">Item sets</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20properties" title="Item properties">Item properties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li></ul>
+</td></tr></table>
+<p>In Dragon Age, "items" are things that a player can take into his inventory and carry around with him through the game. They are distinct and very different from placeables, which are interactive objects that are visible in the game area. Items cannot be placed directly on the area map, they can only be added to the inventory of placeables or creatures in the area. They can also be put in a player's inventory using scripting, a common occurrence for "plot" items. This tutorial doesn't cover any of that; see the tutorials on creatures, placeables, or scripting for more detail. This tutorial just covers the creation of items themselves.
+</p><p>Note that due to the large number of items the toolset has to deal with, the item list displayed while editing creature and merchant inventories is cached. If you create a new item you'll need to refresh the toolset to see them in these lists (the "refresh" option is listed under the View menu).
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#A_longsword"><span class="tocnumber">1</span> <span class="toctext">A longsword</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#A_shield"><span class="tocnumber">2</span> <span class="toctext">A shield</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#A_suit_of_armor"><span class="tocnumber">3</span> <span class="toctext">A suit of armor</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#A_potion"><span class="tocnumber">4</span> <span class="toctext">A potion</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Inventory_Subgroup"><span class="tocnumber">5</span> <span class="toctext"><i>Inventory Subgroup</i></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="A_longsword">A longsword</span></h2>
+<p>First, select the item palette from the palette menu (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconItem.png"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>). Right-click on the empty item list and select "New -&gt; Item" (alternately, go to the file menu and select "New -&gt; Item" from there) and a new item resource will be created. You'll need to name it; we're going to create a sword for starters so we'll call it "longsword". This is just the internal name used by the game to keep track of the item, not the name the player will see, so you can pick whatever naming scheme makes things easiest for you.
+</p><p>The default base item type is "Weapon - Longsword", which is what we want for this particular item and so we'll leave it at that. Most of the other properties can be left as defaults, too. The ones you'll want to change right off the bat are:
+</p>
+<ul><li>Name - the name of the item that the player actually sees in-game. We'll use "Longsword".</li>
+<li>Description - a short block of text that the player can see if he "examines" the item. A basic "This is a longsword." will suffice.</li>
+<li>Icon - the small image that's displayed next to the item's entry in the inventory, and in the equipped item slot when the player has the item equipped. A set of icons is included in the core resources, all prefixed with "ico_"; we'll use "ico_longsword.dds" for this item.</li></ul>
+<p>Since not all longswords look the same, you may wish to choose from a set of alternate models for your item. The "Item Variation" field does this. Unlike Neverwinter Nights, swords cannot be customized by putting together several different parts. 
+</p><p>MaterialProgression and MaterialType are of particular significance to weapons and armor; they determine the general quality of the item (magical effects are added in other properties)
+</p><p>!! need to look up some details on materials for this&#160;!!
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Item%20editing%20longsword.png"><img alt="Item editing longsword.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Item_editing_longsword.png" width="540" height="713" /></a>
+</p><p>The "Attributes" section includes a base cost field (measured in copper pieces - silver and gold are calculated automatically), whether the item is damaged or intact, and a variety of advanced properties that can be set for magical weapons.
+</p><p>You have to set the base cost manually. As far as I can see, the base cost of official items is determined by the Item Variation. So, if we're making a sword of variation Longsword 2, have a look at the offical longswords in the Object Inspector. It turns out that gen_im_wep_mel_lsw_oth is Longsword 2, so we can copy the base cost (1500 cp). Don't worry about material or item properties - the game automatically adjusts the buy/sell cost for that (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item#Item_Cost" title="Item">Item#Item_Cost</a>).
+</p><p>"Item Properties" brings up a display for adding properties that go into effect whenever the item is equipped. These are any special power, effects, or stat variations beyond the basic item attributes. There are two general classes of properties that can be added; abilities and restrictions. Abilities are properties that enhance the item's function in some way - increased damage against certain targets, bonuses to the character's attributes, and so forth. Restrictions are limitations that can be put on who can use the item - for example, only certain classes, or only characters with certain skills or talents. There are also visual effect properties. Each property also has an associated power, which determines how "strong" the property is - generally, how much of a bonus it gives.
+</p><p>An item can have up to five properties on it, including both abilities and restrictions in the total.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Item%20properties.png"><img alt="Item properties.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/79/Item_properties.png" width="590" height="447" /></a>
+</p><p>You can also assign an item an "OnHit Effect".
+</p>
+<h2><span class="mw-headline" id="A_shield">A shield</span></h2>
+<h2><span class="mw-headline" id="A_suit_of_armor">A suit of armor</span></h2>
+<h2><span class="mw-headline" id="A_potion">A potion</span></h2>
+<h2><span class="mw-headline" id="Inventory_Subgroup"><i>Inventory Subgroup</i></span></h2>
+<p>The <i>Inventory Subgroup</i> (located in the item properties) is a number that designates which category the item belongs to.  For quick reference, a list of the more common items can be found <a rel="nofollow" class="external text" href="http://social.bioware.com/wiki/datoolset/index.php/Inventory">[here</a>]
+</p>

@@ -1,0 +1,30 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Class_Methods_of_Interest"><span class="tocnumber">2</span> <span class="toctext">Class Methods of Interest</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Related_Classes_of_Interest"><span class="tocnumber">3</span> <span class="toctext">Related Classes of Interest</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Referenced_External_Attributes"><span class="tocnumber">4</span> <span class="toctext">Referenced External Attributes</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<div style="float:right; background-color:#ffffcc; border:2px #ffff99 solid; padding:4px; margin:4px; width:200px;">
+<ul><li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFX" title="GFX (page does not exist)">GFx</a> file:</b> journal.gfx</li>
+<li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="Erf">ERF</a>:</b> guiexport.erf</li></ul>
+</div>
+<p>This class is for the journal UI.
+</p>
+<h2><span class="mw-headline" id="Class_Methods_of_Interest">Class Methods of Interest</span></h2>
+<p>TBD
+</p>
+<h2><span class="mw-headline" id="Related_Classes_of_Interest">Related Classes of Interest</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ColorDefines" title="ActionScript:ColorDefines">ColorDefines</a> - contains RGB properties used for coloring text in the journal.</li></ul>
+<dl><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ColorDefines#Properties" title="ActionScript:ColorDefines">Colors</a> used in the <strong class="selflink">Journal</strong> class:
+<dl><dd><code>JOURNAL_TEXT_UPDATED</code></dd>
+<dd><code>JOURNAL_TEXT_COMPLETE</code></dd></dl></dd></dl>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20CodexEntry" title="ActionScript:CodexEntry (page does not exist)">CodexEntry</a> - the button class in journal.gfx also responsible for loading and displaying the Codex entry text.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20QuestDescription" title="ActionScript:QuestDescription (page does not exist)">QuestDescription</a> - textfield subclass in journal.gfx responsible for displaying the journal status.</li></ul>
+<h2><span class="mw-headline" id="Referenced_External_Attributes">Referenced External Attributes</span></h2>
+<p>These strings are used by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> class for intercommunication between the engine and other GUI forms.
+</p><p>TBD
+</p>

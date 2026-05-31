@@ -1,0 +1,41 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>Up in the View Menu other windows you will see one called "Console".
+</p><p>This is where you would enter console commands that allow the toolset to interact with the game engine. It is mostly (if not always) used when you have an area open in the Area Editor.
+</p><p>The console commands were built to work with the game not the toolset but some of them do work with the toolset alone.
+</p><p>Your toolset will crash when using some of them so make sure you save your work before trying them.
+</p>
+<h2><span class="mw-headline" id="Using_the_console_in-game">Using the console in-game</span></h2>
+<p>The in-game console is normally not accessible. To enable it run the game with a command line parameter "-enabledeveloperconsole". Then, when the game is running, press the tilde key (~) to bring up the console. This is a prompt in the upper left corner of the screen. The console was used extensively in development for debugging and testing purposes, but in the finished version of the game there's only one console command available; "runscript".
+</p><p>The runscript command does exactly as it says - it runs a script, given as a name typed after a space. So for example:
+</p>
+<pre>
+&gt;runscript killallhostiles
+</pre>
+<p>will cause the script named "killallhostiles" to be run.
+</p><p>You can pass the script additional parameters if you like. These parameters will be stored in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a> variable RUNSCRIPT_VAR. RUNSCRIPT_VAR is a simple string, your script will need to parse it itself.
+</p><p><b>Caution:</b> Using scripts like killallhostiles may break scripted plot situations, so you should avoid using it outside of custom content testing.
+</p><p><br />
+For example,
+</p>
+<pre>
+&gt;runscript usespecificobject demo100pl_lever
+</pre>
+<p>calls the script "usespecificobject" and puts "demo100pl_lever" into the module RUNSCRIPT_VAR. The script can then call
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sParam <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="st0">&quot;RUNSCRIPT_VAR&quot;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>to retrieve it.
+</p><p>If you need more than one parameter, pick a separator (a space is usually most appropriate) and split up the string in RUNSCRIPT_VAR appropriately. For example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">//parse out first parameter - the object to use.</span>
+    nSpaceLoc <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString"><span class="kw4">FindSubString</span></a><span class="br0">&#40;</span>sParam,<span class="st0">&quot; &quot;</span><span class="br0">&#41;</span>;
+    sTemp <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SubString"><span class="kw4">SubString</span></a><span class="br0">&#40;</span>sParam,<span class="nu0">0</span>,nSpaceLoc<span class="br0">&#41;</span>;
+    oDestination <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span>sTemp<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id="Console_text_is_invisible_in_some_game_installs">Console text is invisible in some game installs</span></h2>
+<p>This problem is caused in some systems by the DVD's installer failing to install the fonts.erf file. Fonts.erf is included on the game disk, so you should be able to redo this part of the installation and properly install fonts.erf by running datasetup.exe manually (which is on the game disk in the "data" directory). This should not be an issue for Steam users since a different installer is involved in Steam installations.
+</p><p>If you still have trouble obtaining fonts.erf from your installation, install the <a rel="nofollow" class="external text" href="http://social.bioware.com/page/da-character-creator">Character Creator</a> and then copy fonts.erf from <i>Dragon Age Origins Character Creator\packages\core\data</i>.
+</p><p>Alternatively, install the free 7-zip program, right click on <i>data\DataSetup.exe</i>, select <i>7-Zip -&gt; Open archive</i>, and then extract fonts.erf from <i>$0"\packages\core\data\"</i>.
+</p><p>You can also get the font from the <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1110">Make CONSOLE commands visible</a> file.
+</p>

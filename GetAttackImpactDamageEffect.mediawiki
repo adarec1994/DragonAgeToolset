@@ -1,0 +1,14 @@
+<p>This function retrieves a damage effect associated with an attack
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> GetAttackImpactDamageEffect(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oAttacker,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDamageEffectId<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oAttacker<dd>the creature whose attack damage effect we are retrieving<dt style="font-weight:normal; font-style:italic;">nDamageEffectId<dd>the id of the damage effect to get (this id is passed in the ATTACK_IMPACT event)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>damage effect associated with an attack
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

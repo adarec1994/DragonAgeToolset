@@ -1,0 +1,56 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png"><img alt="File:Selecting starting area and waypoint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" width="320" height="140" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" title="Selecting starting area and waypoint.png">Selecting_starting_area_and_waypoint.png</a> &#8206;<span class="fileInfo">(320 × 140 pixels, file size: 3 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td>
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png">02:43, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png"><img alt="Thumbnail for version as of 02:43, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/Selecting_starting_area_and_waypoint.png" width="120" height="53" /></a></td><td>320 × 140 <span style="white-space: nowrap;">(3 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 3 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Selecting%20starting%20area%20and%20waypoint.png" title="File:DA Audio Design Documentation Ambience Content html m5dbadeda.png">File:DA Audio Design Documentation Ambience Content html m5dbadeda.png</a> (file redirect) <ul class="mw-imagepage-redirectstofile"><li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module" title="Exporting and running a module">Exporting and running a module</a></li>
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Exporting and running a module/ru</a></li>
+</ul>
+</li>
+</ul>
+</div>

@@ -1,0 +1,69 @@
+<div id="mw-clearyourcache" lang="en" dir="ltr" class="mw-content-ltr">
+<p><strong>Note:</strong> After saving, you may have to bypass your browser's cache to see the changes.
+</p>
+<ul><li> <strong>Firefox / Safari:</strong> Hold <em>Shift</em> while clicking <em>Reload</em>, or press either <em>Ctrl-F5</em> or <em>Ctrl-R</em> (<em>⌘-R</em> on a Mac)</li>
+<li> <strong>Google Chrome:</strong> Press <em>Ctrl-Shift-R</em> (<em>⌘-Shift-R</em> on a Mac)</li>
+<li> <strong>Internet Explorer:</strong> Hold <em>Ctrl</em> while clicking <em>Refresh</em>, or press <em>Ctrl-F5</em></li>
+<li> <strong>Opera:</strong> Clear the cache in <em>Tools → Preferences</em></li></ul>
+</div>
+<div dir="ltr"><pre class="css source-css"><span class="coMULTI">/* CSS placed here will be applied to all skins */</span>
+&nbsp;
+&nbsp;
+<span class="coMULTI">/* Toolset's anvil logo */</span>
+<span class="re0">#p-logo</span> a <span class="br0">&#123;</span> 
+  <span class="kw1">background-image</span><span class="sy0">:</span> <span class="kw3">url</span><span class="br0">&#40;</span><span class="st0">'http://www.datoolset.net/mw/images/4/4c/DA_Toolset.png'</span><span class="br0">&#41;</span> !important<span class="sy0">;</span> 
+  <span class="kw1">background-repeat</span><span class="sy0">:</span><span class="kw2">no-repeat</span> !important<span class="sy0">;</span> 
+  <span class="kw1">background-position</span><span class="sy0">:</span> <span class="re3">35%</span> <span class="re3">50%</span> !important<span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+&nbsp;
+<span class="coMULTI">/* 'show'/'hide' buttons created dynamically by the        */</span>
+<span class="coMULTI">/* CollapsibleTables JavaScript in [[MediaWiki:Common.js]] */</span>
+<span class="coMULTI">/* are styled here so they can be customised.              */</span>
+<span class="re1">.collapseButton</span> <span class="br0">&#123;</span>
+  <span class="kw1">float</span><span class="sy0">:</span> <span class="kw1">right</span><span class="sy0">;</span>
+  <span class="kw1">font-weight</span><span class="sy0">:</span> <span class="kw2">normal</span><span class="sy0">;</span>
+  <span class="kw1">text-align</span><span class="sy0">:</span> <span class="kw1">right</span><span class="sy0">;</span>
+  <span class="kw1">width</span><span class="sy0">:</span> <span class="kw2">auto</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+&nbsp;
+<span class="coMULTI">/* Hide the heading on the main page */</span>
+body<span class="re1">.page-Main_Page</span> h1<span class="re1">.firstHeading</span> <span class="br0">&#123;</span> 
+  <span class="kw1">display</span><span class="sy0">:</span><span class="kw2">none</span><span class="sy0">;</span> 
+<span class="br0">&#125;</span>
+&nbsp;
+&nbsp;
+<span class="coMULTI">/* Fix font size for dascript and pre */</span>
+<span class="re1">.dascript</span><span class="sy0">,</span> code<span class="sy0">,</span> <span class="kw2">pre</span> <span class="br0">&#123;</span>
+  <span class="kw1">font-size</span><span class="sy0">:</span> <span class="re3">10pt</span> !important<span class="sy0">;</span> 
+<span class="br0">&#125;</span>
+&nbsp;
+&nbsp;
+&nbsp;
+<span class="coMULTI">/* wikitable/prettytable class for skinning normal tables */</span>
+table.wikitable<span class="sy0">,</span>
+table<span class="re1">.prettytable</span> <span class="br0">&#123;</span>
+  <span class="kw1">margin</span><span class="sy0">:</span> <span class="re3">1em</span> <span class="re3">1em</span> <span class="re3">1em</span> <span class="nu0">0</span><span class="sy0">;</span>
+  <span class="kw1">background</span><span class="sy0">:</span> <span class="re0">#F9F9F9</span><span class="sy0">;</span>
+  <span class="kw1">border</span><span class="sy0">:</span> <span class="re3">1px</span> <span class="re0">#AAAAAA</span> <span class="kw2">solid</span><span class="sy0">;</span>
+  <span class="kw1">border-collapse</span><span class="sy0">:</span> <span class="kw2">collapse</span><span class="sy0">;</span>
+  <span class="kw1">empty-cells</span><span class="sy0">:</span> <span class="kw2">show</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re1">.wikitable</span> th<span class="sy0">,</span> <span class="re1">.wikitable</span> td<span class="sy0">,</span>
+<span class="re1">.prettytable</span> th<span class="sy0">,</span> <span class="re1">.prettytable</span> td <span class="br0">&#123;</span>
+  <span class="kw1">border</span><span class="sy0">:</span> <span class="re3">1px</span> <span class="re0">#AAAAAA</span> <span class="kw2">solid</span><span class="sy0">;</span>
+  <span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">0.2em</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re1">.wikitable</span> th<span class="sy0">,</span>
+<span class="re1">.prettytable</span> th <span class="br0">&#123;</span>
+  <span class="kw1">background</span><span class="sy0">:</span> <span class="re0">#F2F2F2</span><span class="sy0">;</span>
+  <span class="kw1">text-align</span><span class="sy0">:</span> <span class="kw2">center</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="re1">.wikitable</span> <span class="kw2">caption</span><span class="sy0">,</span>
+<span class="re1">.prettytable</span> <span class="kw2">caption</span> <span class="br0">&#123;</span>
+  <span class="kw1">font-weight</span><span class="sy0">:</span> <span class="kw2">bold</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div>

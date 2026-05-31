@@ -1,0 +1,17 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>A plot is getting a plot flag
+<dt>Sent from:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine" title="Engine (page does not exist)">engine</a>
+<dt>Sent to:
+<dd>plot script
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: owner of the plot table, should be a player</li><li>Integer 1: bit flag number being affected</li><li>Integer 4: 1 if the current flag (Int 1) is defined, 0 for normal flag.</li><li>String 0: plot GUID, defined as string constants</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_GET_PLOT:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlayer = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// owner of the plot table, should be a player</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nFlagAffected = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">1</span>); <span style="color: #007F00; font-style: italic;">// bit flag number being affected</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDefined = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>(ev, <span style="color: #7F007F;">4</span>); <span style="color: #007F00; font-style: italic;">// 1 if the current flag (Int 1) is defined, 0 for normal flag.</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sPlotGUID = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// plot GUID, defined as string constants</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

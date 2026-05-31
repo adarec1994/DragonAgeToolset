@@ -1,0 +1,101 @@
+<p>How to create facial tattoos for use in the toolset.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Tattoo_Textures_in_base_game_guide"><span class="tocnumber">2</span> <span class="toctext">Tattoo Textures in base game guide</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Make_a_tattoo"><span class="tocnumber">3</span> <span class="toctext">Make a tattoo</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Saving_options"><span class="tocnumber">4</span> <span class="toctext">Saving options</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#The_Compressonator"><span class="tocnumber">5</span> <span class="toctext">The Compressonator</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#In_Game_Implementation"><span class="tocnumber">6</span> <span class="toctext">In Game Implementation</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Texture_Tools"><span class="tocnumber">7</span> <span class="toctext">Texture Tools</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Useful_Links"><span class="tocnumber">8</span> <span class="toctext">Useful Links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>This tutorial requires GIMP. You can also use Photoshop’s dds plugin, it doesn’t matter, but this tutorial is for GIMP.
+</p><p>If you wish to modify the base games textures or have them as a reference, extract them manually from the game’s ERFs. <a rel="nofollow" class="external text" href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial">This page</a> will explain how to extract the textures from the game.
+</p><p>A texture is a tint map file. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How%20to%20create%20textures" title="How to create textures">How to create textures</a> for extra details on textures.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Tattoo_Textures_in_base_game_guide">Tattoo Textures in base game guide</span></h2>
+<p>uh_pct_dc1_0t - Dwarf common player tattoos
+</p><p>uh_pct_dn1_0t - Dwarf noble player tattoos
+</p><p>uh_pct_h01_0t – uh_pct_h02_0t – Human player tattoos 
+</p><p>uh_tat_ed1_0t - uh_tat_ed4_0t - Elf vallaslin
+</p><p><br />
+<b>Toolset only</b>
+</p><p>uh_tat_av1_0t - uh_tat_av1_03 – Human tattoos. Probably leftover from scrapped avvar origin.
+</p><p>uh_tat_dw1_0t - uh_tat_dw2_0t - Dwarf tattoos
+</p><p>uh_pmt_001_0t - Companion tattoos- Morrigan eyeshadow, Zevran tattoo,  Casteless brand, Unused Oghren tattoo
+</p><p><br />
+<b>DLC</b>
+</p><p>uh_pct_exp_0t – Awakening tattoos- Velanna vallaslin and Sigrun tattoos.
+</p>
+<h2><span class="mw-headline" id="Make_a_tattoo">Make a tattoo</span></h2>
+<p>You need at least one image. However tattoos come in a pack of 4 images composed together. If this is a standalone tattoo, you can leave all the other slots blank if you want.
+</p><p>The 4 images are stored in the red, blue, green and alpha channels. You can use the files you extracted as reference. 
+</p><p>To create the tattoo , it may be helpful to extract one of the games base heads and have it as an .OBJ to draw on, or at least have a UV map of the head. Every head in the game will have the same UV map, from child to dwarf, so a tattoo for one should work for every character in the toolset.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hm%20head.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bf/Hm_head.png" width="200" height="200" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bf/Hm_head.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bf/Hm_head.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Hm%20head.png" title="Enlarge"></a></div>Head UV map</div></div></div>
+<p>The background of your image needs to be pure black, with the tattoo in white. How bright the tattoo’s base colour is, depends on how white or off white you have made the tattoo. A purer white will be a darker tattoo.
+</p><p>Import one of your new images into GIMP, anything the right size.
+Go to the toolbar of GIMP and Colours&gt;Components&gt;Decompose
+It will have made some extra layers that look identical to the ones you already have. Delete the extra layers, then paste in the four you have made. 
+</p><p>Colours&gt;Components&gt;Compose
+Compose colour model, RGBA
+Make sure they are in the right slots.
+</p><p>When done, you can check the channels tab to see if what you did worked. The image should now look mostly transparent but with odd bands of colour on it.
+</p><p>Save it in preferred format and then you can test it in the toolset.
+Try to name it something with the uh_tat_ whatever _0t file convention so it is easy to select in the toolset.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png" width="200" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d0/Decm1.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm1.png" title="Enlarge"></a></div>How to decompose an image</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png" width="200" height="131" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4b/Decm4.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Decm4.png" title="Enlarge"></a></div>How to recompose an image</div></div></div>
+<p>A tattoo does not need a normal map, but it will need 2 LODS. Simply resize the image to be much smaller and save it with l2, and then l3, after it.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Saving_options">Saving options</span></h2>
+<p><b>File sizes</b>
+</p><p>The game's default textures for most items are 1024x1024, but I would recommend working 2048x2048 at least. Most custom face textures are that size. 
+</p><p>For face tattoos, make the lod2/3 very small and save as dxt5, because they will occupy a very small amount of the screen.
+</p><p><b>Example sizes:</b>
+</p><p>128 ,
+256 ,
+512 ,
+1024 ,
+2048 ,
+4096 
+</p><p><b>Saving formats</b>
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Dxt5.png/200px-Dxt5.png" width="200" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/11/Dxt5.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/11/Dxt5.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dxt5.png" title="Enlarge"></a></div>Dtx5 option</div></div></div>
+<p>The game’s default file format for tattoo tint files is u4444. This is smaller than U8888, but it may compress gradients. You can also not compress it at all, but this will make the file very large, so make sure your computer can handle it.
+DXT5 compression or lower is not recommended as it may leave artefacts.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Texture%20u4444.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/Texture_u4444.png/200px-Texture_u4444.png" width="200" height="67" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/06/Texture_u4444.png/300px-Texture_u4444.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/06/Texture_u4444.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Texture%20u4444.png" title="Enlarge"></a></div>How to generate u4444</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Texture%20u8888.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Texture_u8888.png" width="200" height="65" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Texture_u8888.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/22/Texture_u8888.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Texture%20u8888.png" title="Enlarge"></a></div>How to generate u8888</div></div></div>
+<p>To use U8888 format, you can select [none] under compression options and [RGBA8] under format.
+To use u4444 format, select [none] under compression options and [RGBA4] under format.
+</p><p>For face tattoos, you can make the lod2/3 very small and save as dxt5 to save space, because they will occupy a very small amount of the screen.
+</p><p>Make sure to generate mipmaps, no matter how you save it!
+</p>
+<h2><span class="mw-headline" id="The_Compressonator">The Compressonator</span></h2>
+<p>This is a Dragon Age Origins texture tool.
+Under tools\ResourceBuild\Processors\Texture in the DAO install directory you will find a tool called TheCompressonator. 
+You can use this to check what compression a dds file has and if it has mipmaps or not.
+Drag the dds into it, and use view -&gt; properties.
+</p>
+<h2><span class="mw-headline" id="In_Game_Implementation">In Game Implementation</span></h2>
+<p>Unfortunately it is not currently possible to edit the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargenmorphcfg.xml" title="Chargenmorphcfg.xml">Chargenmorphcfg.xml</a> to add more tattoos to the character creation slider, as they are hardcoded into the game somewhere. So you will have to either replace a set of existing tattoos(see above for files), or apply them in the toolset if you want them in-game. This is easy enough to do with an alternate morph for a NPC, but to put them on a player character you may wish to create a preset out of your morph.
+</p>
+<h2><span class="mw-headline" id="Texture_Tools">Texture Tools</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage/mods/4929">Beerfish Excel Utilities (references)</a>
+</p>
+<h2><span class="mw-headline" id="Useful_Links">Useful Links</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morph</a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Texture Formats">Texture Formats</a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargenmorphcfg.xml" title="Chargenmorphcfg.xml">Chargenmorphcfg.xml</a>
+</p><p><a rel="nofollow" class="external text" href="https://sapphimods.me/tutorials/dragon-age-texture-guide/">Dragon age texture guide – Exhaustive</a> 
+</p><p><a rel="nofollow" class="external text" href="https://whuffie.wordpress.com/2011/02/27/creating-simple-1-color-or-3-color-tattoos-from-scratch-dragon-age-da-toolset-tutorial/">How to make Tattoos</a>
+</p><p><a rel="nofollow" class="external text" href="https://dragonagemods.tumblr.com/tagged/tattoos">Tattoo guides</a>
+</p>

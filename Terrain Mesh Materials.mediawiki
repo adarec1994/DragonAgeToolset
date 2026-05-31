@@ -1,0 +1,137 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Level editor topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20new%20level" title="Creating a new level">Creating a new level</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">Exportable area</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">Level Editor Tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exterior%20Level%20Manual" title="Exterior Level Manual">Exterior Level Manual</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">Model list</a> <small>(screenshots)</small></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vista%20object" title="Vista object">Vista objects</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation%20list" title="Vegetation list">Vegetation list</a> <small>(screenshots)</small></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lighting">Lighting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20mesh" title="Terrain mesh">Terrain mesh</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20list" title="Terrain list">Terrain list</a> <small>(screenshots)</small></li></ul></li></ul>
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Terrain_Mesh_Painting"><span class="tocnumber">1</span> <span class="toctext">Terrain Mesh Painting</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Materials"><span class="tocnumber">2</span> <span class="toctext">Materials</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Grass.2FMoss"><span class="tocnumber">3</span> <span class="toctext">Grass/Moss</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Dirt.2FEarth"><span class="tocnumber">4</span> <span class="toctext">Dirt/Earth</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Stone"><span class="tocnumber">5</span> <span class="toctext">Stone</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Wood"><span class="tocnumber">6</span> <span class="toctext">Wood</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Terrain_Mesh_Painting">Terrain Mesh Painting</span></h2>
+<p>To create a new material, expand Terrain Mesh and right click on Palette. Choose New Material.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Leveleditor%20TerrainMesh%20Palette.png"><img alt="Leveleditor TerrainMesh Palette.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" width="667" height="612" /></a>
+</p><p>In the new material properties, name the material to whatever you want to call it.
+</p><p>The click diffuse and look for a material ending with _d, here for instance I choose mossground2_d
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Leveleditor%20TerrainMesh%20Diffuse.png"><img alt="Leveleditor TerrainMesh Diffuse.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Leveleditor_TerrainMesh_Diffuse.png" width="768" height="579" /></a>
+</p><p>Do the same with Normal, ending with _n and Specular ending with _s. Not all textures have all the different types. But you can combine a specular from a similar material for use.
+</p>
+<h2><span class="mw-headline" id="Materials">Materials</span></h2>
+<h2><span class="mw-headline" id="Grass.2FMoss">Grass/Moss</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mossground2%20d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/Mossground2_d.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/Mossground2_d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/db/Mossground2_d.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>mossground2_d
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mossground2%20n.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Mossground2_n.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Mossground2_n.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Mossground2_n.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>mossground2_n
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Mossground2%20s.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/Mossground2_s.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/Mossground2_s.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/Mossground2_s.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>mossground2_s
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Dirt.2FEarth">Dirt/Earth</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tci%20stonedirt%20d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Tci_stonedirt_d.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Tci_stonedirt_d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cd/Tci_stonedirt_d.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tci_stonedirt_d
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tci%20stonedirt%20n.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Tci_stonedirt_n.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Tci_stonedirt_n.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Tci_stonedirt_n.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tci_stonedirt_n
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tci%20stonedirt%20s.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/Tci_stonedirt_s.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/Tci_stonedirt_s.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d9/Tci_stonedirt_s.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tci_stondeirt_s
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Stone">Stone</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tce%20brconcrete%20d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Tce_brconcrete_d.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Tce_brconcrete_d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Tce_brconcrete_d.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tce_brconcrete_d
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tce%20brconcrete%20n.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/19/Tce_brconcrete_n.jpg/120px-Tce_brconcrete_n.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/19/Tce_brconcrete_n.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/19/Tce_brconcrete_n.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tce_brconcrete_n
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Tce%20brconcrete%20s.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/69/Tce_brconcrete_s.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/69/Tce_brconcrete_s.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/69/Tce_brconcrete_s.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>tce_brconcrete_s
+</p>
+			</div>
+		</div></li>
+</ul>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Stone%2001d.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Stone_01d.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Stone_01d.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/71/Stone_01d.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>stone01d
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Stone%2001n.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Stone_01n.jpg/120px-Stone_01n.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/01/Stone_01n.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/01/Stone_01n.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>stone01n
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Stone01%20n.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e1/Stone01_n.jpg" width="120" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e1/Stone01_n.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e1/Stone01_n.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>stone01_n
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Wood">Wood</span></h2>

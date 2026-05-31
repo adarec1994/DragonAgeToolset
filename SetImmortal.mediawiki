@@ -1,0 +1,18 @@
+<p>Wrapper for the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20SetImmortal" title="Engine SetImmortal">Engine_SetImmortal</a> function to allow its usage to be tracked
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetImmortal(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bImmortal<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>Object to set immortality of<dt style="font-weight:normal; font-style:italic;">bImmortal<dd>Immortality state to set it to
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If you encounter a creature that is set immortal but shouldn't be you can trace all calls to this function in context of the game session via the reports function on the SkyNet server.
+</p><p>The SkyNet server was an internal server used during testing at BioWare, so this feature may be of limited use to end users.
+</p>

@@ -1,0 +1,681 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> SS_COMBAT_ATTACK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_BATTLE_CRY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_STAMINA_LOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_MANA_LOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_HEAL_ME
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_HEAL_ME
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_SCRIPTED_HELP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_UNDEAD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_DARKSPAWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_DRAGON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_ANIMAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">11
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_BEAST
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">12
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_OTHER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">13
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_TAUNT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">14
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_ATTACK_GRUNT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">15
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_PAIN_GRUNT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">16
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_NEAR_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">17
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">18
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_POISONED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">19
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_SPELL_FAILED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">20
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_ENEMY_KILLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">21
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_MONSTER_SLEW_PARTY_MEMBER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_CHEER_PARTY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">23
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_WEAPON_INEFFECTIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">24
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_TRAP_DETECTED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">25
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_LOOK_HERE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">26
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_MOVE_OVER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">27
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_START_TASK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">28
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_STEALTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">29
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_CANNOT_DO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">30
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_TASK_COMPLETE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">31
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_COMBAT_SELECT_NEUTRAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">32
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_SELECT_NEUTRAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">36
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_SELECT_FRIENDLY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">37
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_SELECT_HATE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">38
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_SELECT_LOVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">39
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GIFT_NEUTRAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">42
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GIFT_NEGATIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">43
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GIFT_POSITIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">44
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GIFT_ECSTATIC
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">45
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_HELLO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">46
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_YES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">47
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_NO
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">48
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_STOP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">49
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_BORED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">50
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GOODBYE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">51
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_THANK_YOU
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">52
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_LAUGH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">53
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_CUSS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">54
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_CHEER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">55
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_SOMETHING_TO_SAY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">56
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_GOOD_IDEA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">57
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_BAD_IDEA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">58
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_THREATEN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">59
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_BERSERK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">60
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_WARCRY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">61
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_CAUGHT_STEALING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">62
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_NO_WEAPON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">63
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_ORDER_RECIEVED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">64
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_EXPLORE_ENEMIES_SIGHTED_DEMON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">65
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> SS_SKILL_FAILURE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">66
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>

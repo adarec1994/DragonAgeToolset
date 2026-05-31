@@ -1,0 +1,63 @@
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<div style="float:right; background-color:#ffffcc; border:2px #ffff99 solid; padding:4px; margin:4px; width:200px;">
+<ul><li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFX" title="GFX (page does not exist)">GFx</a> file:</b> tooltips.gfx</li>
+<li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="Erf">ERF</a>:</b> guiexport.erf</li></ul>
+</div>
+<p>This class is the point of origin for tooltips in the game's user interface. They come in many different forms, from the those that pop up when you hover over an inventory item, to the draggable spell and skill icons that you can drop onto the quickbar. The <strong class="selflink">Tooltips</strong> class is only found in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFX" title="GFX (page does not exist)">GFX</a> file tooltips.gfx, contained in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="Erf">ERF</a> guiexport.erf.
+</p><p>The other GUI files use the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> class to send the tooltip text to this class through the game engine.
+</p>
+<h2><span class="mw-headline" id="Class_Methods_of_Interest">Class Methods of Interest</span></h2>
+<p>Called by the engine when the player drags on a movable tooltip; of note are the spell and skill icons that can be dropped onto the quickbar. This entry-point of updating the tooltip is special in that the update is not triggered by a change to an observed <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> attribute, but called externally instead.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em;">
+<p>StartDragging(
+</p>
+<dl><dd>a_nPosX,</dd>
+<dd>a_nPosY</dd></dl>
+<p>);
+</p>
+</div>
+<dl>
+<dt>Parameters:
+<dd>
+<dl>
+<dt style="font-weight:normal; font-style:italic;">a_nPosX<dd>The X coordinate at which the mouse drag started.<dt style="font-weight:normal; font-style:italic;">a_nPosY<dd>The Y coordinate at which the mouse drag started.
+</dl>
+<p><dt>Returns:
+<dd>Nothing
+</p>
+</dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Referenced_External_Attributes">Referenced External Attributes</span></h2>
+<p>These strings are used by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> class for intercommunication between the engine and other GUI forms.
+</p>
+<ul><li> "DebugOptions.EnableController"</li>
+<li> "DebugOptions.EnableDebugHelpers"</li>
+<li> "GameModeController.CurrentGameMode"</li>
+<li> "GameModeExplore.PendingTargetID"</li>
+<li> "GameModeExplore.PendingTargetID.IsCreature"</li>
+<li> "GameModeExplore.PendingTargetID.IsPlaceable"</li>
+<li> "GameModeExplore.PendingTargetID.PlaceableName"</li>
+<li> "GameModeExplore.PendingTargetID.PrimaryAction"</li>
+<li> "GameModeExplore.PendingTargetID.SecondaryAction"</li>
+<li> "GUI.DragData.DragAbortAttribute"</li>
+<li> "GUI.DragData.DragImage"</li>
+<li> "GUI.DragData.OnPickupCallback"</li>
+<li> "GUI.QuickbarXMax"</li>
+<li> "GUI.SelectedBookPage"</li>
+<li> "InputMappings.Mappings.PerformPrimaryAction.PrimaryMappedKey"</li>
+<li> "InputMappings.Mappings.PerformSecondaryAction.PrimaryMappedKey"</li>
+<li> "GUITooltips.HostAnchor"</li>
+<li> "GUITooltips.HostX"</li>
+<li> "GUITooltips.HostY"</li>
+<li> "GUITooltips.HostWidth"</li>
+<li> "GUITooltips.HostHeight"</li>
+<li> "GUITooltips.MaxTooltipWidth"</li>
+<li> "GUITooltips.MinTooltipWidth"</li>
+<li> "GUITooltips.TooltipAnchor"</li>
+<li> "GUITooltips.TooltipCompare0"</li>
+<li> "GUITooltips.TooltipCompare1"</li>
+<li> "GUITooltips.TooltipText"</li>
+<li> "GUITooltips.TooltipType"</li>
+<li> "Scaleform.Platform"</li></ul>

@@ -1,0 +1,27 @@
+<p>Sets a local effect variable on an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetLocalEffect(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sVarName,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> eEffect<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>Object to set the variable on<dt style="font-weight:normal; font-style:italic;">sVarName<dd>The name of the variable to set<dt style="font-weight:normal; font-style:italic;">eEffect<dd>The value of the effect variable to set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets a local effect variable sVarName on the specified object.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>All local variables must be predefined in the target object's variables 2da file before this function can be used successfully. If a local variable is not predefined this function will fail silently.
+</p><p>It should be noted that effects taken from current effects on an object are just copies of those effects, not references to them.
+</p><p><b>NOTE!</b> This type of local variable is not saved/loaded via the save system. So, if a community member or designer wants to save information like this for use later, and someone saves/loads the game, that information is lost forever. Thus, using them outside of situations where you can guarantee no save/load occurs (i.e. during combat) is pretty much guaranteed to fail for some enduser. Furthermore, if you use these variable types in the var_ 2DAs, it will fail gloriously.
+</p><p>Don’t use this function. It will in all likelihood be removed in a future patch. 
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalEffect" title="GetLocalEffect">GetLocalEffect</a>
+</p>

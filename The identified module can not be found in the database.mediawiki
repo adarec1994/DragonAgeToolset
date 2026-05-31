@@ -1,0 +1,12 @@
+<ul><li><i> 'Versión encontrados: 1.0.1008.0'</i></li>
+<li><i> 'Estado:'</i> Open</li></ul>
+<h2><span class="mw-headline" id="Descripci.C3.B3n">Descripción</span></h2>
+<p>I have Windows XP SP3, I followed this tutorial step by step <a rel="nofollow" class="external free" href="http://www.youtube.com/watch?v=d6b-7OAwHpc">http://www.youtube.com/watch?v=d6b-7OAwHpc</a>, I could create a server (BWDATOOLSET), restore the database (bw_dragonage_content, bw_dragonage_content.mdf and bw_dragonage_content.ldf) and the test tool Configure Toolset is OK.
+When I open the DA Toolset gives me error
+"The idintified module can be found not in the database. Do you wish to open the default module insdtead?"
+If I choose NO, the message is:
+"The module ID to be opened is not valid in the selected database. Run the toolset configuration program and verify your settings" but this same program when the connection test tells me this well
+If I choose YES:
+Windows Palette window is blank and the Resources folder open / save is blank for .are, .lst and scripts. No files available for upload to Starting Area mode, AreaList or Scripts
+What is the module ID referred to the program?
+</p>

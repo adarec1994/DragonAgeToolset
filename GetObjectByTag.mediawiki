@@ -1,0 +1,20 @@
+<p>Returns the nth specified object with the appropriate tag
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> GetObjectByTag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTag,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nNth&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sTag<dd>The tag reference to get the object by<dt style="font-weight:normal; font-style:italic;">nNth<dd>If there are multiple objects with the same tag, get the 'nth' specified object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the desired object or OBJECT_INVALID on failure
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the nth specified object with the appropriate tag
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>GetObjectByTag only gets objects that are currently loaded into memory, meaning any objects in the current area list (active or inactive), as well as objects like world maps and map locations (also anything in the char_stage area).
+</p>

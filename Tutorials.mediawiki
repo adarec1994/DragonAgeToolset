@@ -1,0 +1,134 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>This page lists links to step-by-step tutorials, both on this wiki and on external sites.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introductory_tutorials"><span class="tocnumber">1</span> <span class="toctext">Introductory tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Demo_module"><span class="tocnumber">2</span> <span class="toctext">Demo module</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Custom_content_tutorials"><span class="tocnumber">3</span> <span class="toctext">Custom content tutorials</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Character_generation_tutorials"><span class="tocnumber">4</span> <span class="toctext">Character generation tutorials</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Companion_Tutorials"><span class="tocnumber">5</span> <span class="toctext">Companion Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Other_Tutorials"><span class="tocnumber">6</span> <span class="toctext">Other Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_Tutorials"><span class="tocnumber">7</span> <span class="toctext">External Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_Also"><span class="tocnumber">8</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introductory_tutorials">Introductory tutorials</span></h2>
+<p>In the course of these tutorials we'll go through all the steps needed to create a basic adventure.
+</p>
+<table align="right">
+<tr>
+<td><table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- [[Boxes like these contain links,]]</i><br /><i>- [[to topics taking you to further information]]</i></td>
+</tr></table>
+</td></tr>
+<tr>
+<td>
+</td></tr>
+<tr>
+<td><div style="float:right; background-color:#ffffcc; border:2px #ffff99 solid; padding:4px; margin:4px; width:200px;">
+<ul><li>Boxes like this contain a checklist of important steps.</li>
+<li>They're intended as a reminder and as a navigational aid.</li></ul>
+</div>
+</td></tr></table>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Introductory%20tutorial" title="Introductory tutorial">Introductory tutorial</a> - An overview of the toolset as a whole</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20tutorial" title="Module tutorial">Module tutorial</a> - how to create a module to work in.</li></ul>
+<p>This set of tutorials forms a series, each building on or filling in omissions by the last:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial" title="Area tutorial">Area tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20tutorial" title="Placeable tutorial">Placeable tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20tutorial" title="Creature tutorial">Creature tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting%20Tutorial" title="Lighting Tutorial">Lighting Tutorial</a></li></ul>
+<p>Once you've become familiar with the basics introduced on those tutorials you might have a better grounding for:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial" title="Map tutorial">Map tutorial</a> (which also introduces you to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> editing)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">Level Editor Tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a> </li></ul></li></ul>
+<p>Various small Tutorials, in a unsorted manner. 
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How-tos" title="How-tos">How-tos</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial" title="VFX Tutorial">VFX Tutorial</a></li></ul>
+<h2><span class="mw-headline" id="Demo_module">Demo module</span></h2>
+<p>The toolset currently ships with a simple demo module pre-loaded into its database.
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Demo%20module" title="Demo module">Demo module</a> - how to export and run the demo module.</li></ul>
+<h2><span class="mw-headline" id="Custom_content_tutorials">Custom content tutorials</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20armor%20tutorial" title="Adding custom armor tutorial">Adding custom armor tutorial</a> - This is how to import a new mesh into the game with 3DSMax.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20level%20tutorial" title="Adding custom level tutorial">Adding custom level tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20spell%20tutorial" title="Adding a new spell tutorial">Adding a new spell tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20weapon%20type%20tutorial" title="Adding a new weapon type tutorial">Adding a new weapon type tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20custom%20model%20to%20the%20toolset%20tutorial" title="Adding a custom model to the toolset tutorial">Adding a custom model to the toolset tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20heraldry%20to%20a%20shield%20tutorial" title="Adding custom heraldry to a shield tutorial">Adding custom heraldry to a shield tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20items%20to%20custom%20modules%20tutorial" title="Adding custom items to custom modules tutorial">Adding custom items to custom modules tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20shield%20tutorial" title="Adding custom shield tutorial">Adding custom shield tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20item%20with%20note%20in%20Codex" title="Creating item with note in Codex">Creating item with note in Codex</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20custom%20placeable%20from%20a%20model%20tutorial" title="Creating a custom placeable from a model tutorial">Creating a custom placeable from a model tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20recolors%20of%20existing%20items%20tutorial" title="Creating recolors of existing items tutorial">Creating recolors of existing items tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Customisation%20of%20original%20Dragon%20age%20armor" title="Customisation of original Dragon age armor">Customisation of original Dragon age armor</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Extending%20GDAs%20tutorial" title="Extending GDAs tutorial">Extending GDAs tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Overriding%20and%20creating%20tints%20tutorial" title="Overriding and creating tints tutorial">Overriding and creating tints tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial" title="Reskinning an item tutorial">Reskinning an item tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Usable%20campaign%20items%20tutorial" title="Usable campaign items tutorial">Usable campaign items tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Using%20DLC%20areas%20in%20your%20mods%20tutorial" title="Using DLC areas in your mods tutorial">Using DLC areas in your mods tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UI%20Tutorial%20%28draft%29" title="UI Tutorial (draft)">UI Tutorial (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Playing%20custom%20Player%20Character" title="Playing custom Player Character">Playing custom Player Character</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How%20to%20create%20textures" title="How to create textures">How to create textures</a></li></ul>
+<h2><span class="mw-headline" id="Character_generation_tutorials">Character generation tutorials</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial" title="Backgrounds tutorial">Background/Origin Tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Add%20A%20New%20Class%20Tutorial" title="Add A New Class Tutorial">Add A New Class Tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/High-Level%20Character%20Generation" title="High-Level Character Generation">High-Level Character Generation</a></li></ul>
+<h2><span class="mw-headline" id="Companion_Tutorials">Companion Tutorials</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Basic%20follower%20tutorial" title="Basic follower tutorial">Basic follower tutorial</a>: covers the basics of adding a follower to party (which has space)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20tutorial" title="Follower tutorial">Follower tutorial</a>: a more comprehensive tutorial for creating followers (script heavy)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20tutorial%20%28alternative%29" title="Follower tutorial (alternative)">Follower tutorial (alternative)</a>: an alternative to the main follower tutorial </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Satans%20karma" title="User:Satans karma">Follower tutorial (satans_karma)</a>: an alternative to the main follower tutorial </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation">Advanced follower tutorial</a>: a comprehensive tutorial for creating followers with a focus on compatibility (very script heavy)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20guidelines" title="Follower guidelines">Follower_guidelines</a> (contains general guidelines and compatibility information)</li></ul>
+<h2><span class="mw-headline" id="Other_Tutorials">Other Tutorials</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20Location%20to%20the%20Single%20Player%20Campaign%20Tutorial" title="Adding a Location to the Single Player Campaign Tutorial">Adding a Location to the Single Player Campaign Tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Noob%20to%20pro" title="Noob to pro">Noob to pro</a> (Step by step guide to making a new standalone campaign)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial" title="Module Priority Tutorial">Module Priority Tutorial</a> How to set module. Priority for multiple mods with similar files, so they don't interfere</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a> Information on configuring plot flags for journal and codex entries</li></ul>
+<h2><span class="mw-headline" id="External_Tutorials">External Tutorials</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://dragonagemodding.wordpress.com">Beyond Ferelden</a> has many in-depth tutorials by jwvanderbeck.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=TwQNRBFLhrE">Playable Area and Conversation</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/64020/">st4rdog</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=CaHldJcUTz8">Simple Conversation Cameras</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/64020/">st4rdog</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=QOQJ2heQto4">Cutscene and Trigger</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/64020/">st4rdog</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=szWKgj2ZuXo">Custom Level and Room Building</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/64020/">st4rdog</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=DKJ7F14n8o8">Downloading and Installing the Toolset</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/74287/">DragonAge22</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=iMPBsulv9xI">Creating a Room</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/74287/">DragonAge22</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=g3kx2CaarHo">How to Make an Interior Level with Lighting</a> video tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/group/60/">Darkworld Development Team</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=O6TeZeE1Lc8">Making a Room</a> video tutorial by BigDrip681.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/5339/blog/576/">Custom Player Items In Single Player</a> by <a rel="nofollow" class="external text" href="http://social.bioware.com/5339/">weriK</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/5339/blog/651/">The Secret Behind Item Statistics</a> by <a rel="nofollow" class="external text" href="http://social.bioware.com/5339/">weriK</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/923/">Guide for installing/uninstalling/updating Mods</a> Beginner Guide to get started with using Mods by <a rel="nofollow" class="external text" href="http://social.bioware.com/237411/">Alexspeed</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.jezelf.co.uk/tutorials.htm">Photoshop Map making tutorials</a> Credits to Jason Elford, brought to DAT wiki by <a rel="nofollow" class="external text" href="http://social.bioware.com/48156/">Arixsus</a></li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/project/527/">Video Tutorials by SilentCid</a> Multiple in-depth video tutorials of the DA Toolset</li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/view_play_list?p=EF29DD1AACEBA92A">Qkrch's Video Tutorials</a> Toolset tutorial complete series for the experienced builder (Spanish &amp; English)</li>
+<li><a rel="nofollow" class="external text" href="http://www.theengineeringguild.co.uk/da-new-campaign-location-tutorial">World Editing and Area Creation</a> Tutorial by <a rel="nofollow" class="external text" href="http://social.bioware.com/profile/7848">giskard44</a> where he walks you through a module creation process for an single player addin.</li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/203442/blog/1352/">Custom Item Materials</a> by <a rel="nofollow" class="external text" href="http://social.bioware.com/203442/">Chains-Gore</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://bg2redux.student.utwente.nl/trac/wiki/TutorialLightmapping">Lighting Tutorial with Troubleshooting section</a> (aimed at beginners)</li>
+<li><a rel="nofollow" class="external text" href="https://youtu.be/_q4mmFMmIK8">How to make a dress with crinoline</a></li>
+<li><a rel="nofollow" class="external text" href="https://youtu.be/370D7Lul9tk">Skinning tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="https://youtu.be/1QMcAX1cDyo">Rigging tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="https://youtu.be/m8DFXmIGJZc">Creating Props using 3ds max</a></li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20layouts%20used%20in%20the%20single%20player%20module" title="Area layouts used in the single player module">Area layouts used in the single player module</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">Compatibility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%202" title="Dragon Age 2">Dragon Age 2</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials%20-%20ru" title="Tutorials/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

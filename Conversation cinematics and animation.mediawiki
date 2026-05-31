@@ -1,0 +1,109 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><strong class="selflink">Cinematics and animations</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">Plots and scripting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Cinematics"><span class="tocnumber">1</span> <span class="toctext">Cinematics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Emotion_Filters"><span class="tocnumber">1.1</span> <span class="toctext">Emotion Filters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Custom_Line_Cinematics"><span class="tocnumber">2</span> <span class="toctext">Custom Line Cinematics</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Animation"><span class="tocnumber">3</span> <span class="toctext">Animation</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Preview"><span class="tocnumber">4</span> <span class="toctext">Preview</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Cinematics">Cinematics</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20cinematics.png"><img alt="Conversation cinematics.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Conversation_cinematics.png" width="774" height="200" /></a>
+</p><p>Conversations that take place in a specific predefined location can be set up to use cinematics that define where the camera is positioned and how the various participants in the conversation are acting, much like a detailed stage play. This is where the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">stage</a> object type comes into play. Conversations that can occur at any of a variety of different locations cannot have stages set and instead use a generic "over the shoulder" style of presentation.
+</p><p>Select a stage to use in the "Stage" dropdown menu (or with the "..." button if it wasn't recently used and so doesn't appear here). If you need to edit the stage, clicking the "open" button opens the selected stage in the stage editor.
+</p><p>"helmet" and "weapons" can be set to force the actor to have their helmet removed or weapon sheathed during the conversation. "body look" and "head look" determines who the actor's body or head is facing, respectively (note that body look 'snaps' instantly to the target whereas the head will turn smoothly when switching from target to target). "pose" has a list of various poses the actor can be placed in. "Active" can make the actor visible or invisible.
+</p><p>It is possible to switch from one stage camera to another in the middle of the line by setting a "2nd Camera". The "Delay" parameter determines the delay in seconds before switching from the first camera to the second camera. If you need more camera movement than this you'll need to turn the cinematics into a full-blown cutscene for further editing.
+</p>
+<h3><span class="mw-headline" id="Emotion_Filters">Emotion Filters</span></h3>
+<p>An Emotion Filter (or Emotion) modifies the gestures and facial animations the toolset generates for this line. 
+For example, a character who's set to an "angry" emotion filter will have more vigorous and aggressive gestures generated for him.
+</p><p>When <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a> generates lip-synching, the emotion filter will also be used by the RoboBrad subsystem to add emotional cues to the character's facial expression. For example, an angry character could have a scowl added. You can disable RoboBrad with the "lock RoboBrad" checkbox. This is useful when you've generated a facial performance you're satisfied with, as it prevents RoboBrad from being re-run and replacing it should you later want to generate a new facial performance for the entire conversation.
+</p>
+<h2><span class="mw-headline" id="Custom_Line_Cinematics">Custom Line Cinematics</span></h2>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20convert%20to%20cutscene.png"><img alt="Conversation convert to cutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Conversation_convert_to_cutscene.png" width="274" height="505" /></a></div>
+<p>This functionality should be used by cinematic designers. It allows them to export a complete dialog line, along with emotions, staging cameras and functional shots, into the DA <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">cutscene</a> editor.
+</p><p>At this point the line is considered a normal cutscene and every aspect of it can be edited. You can add subsequent lines from the dialogue to the cutscene as well, marking them "Skip" in the conversation editor (checkbox in the upper right corner of the cinematics tab) to ensure that they won't be played twice. This allows lengthy dialogue between non-player characters to be scripted more naturally and reduces the number of times the player needs to press a key to continue the conversation.
+</p><p>Once this new cutscene is saved, the dialog line is flagged as 'custom' and all other cinematic control fields in it are grayed out and disabled. The only way for the user to re-enable them is to disable the custom cinematics for that specific line.
+</p><p>You can also attach a pre-existing cutscene to a dialogue node using "Associate Cutscene with Line". In this case, you can only attach a cutscene if it has exactly one speakline in it that matches the speakline of the dialogue node it's being attached to. This restriction is for technical reasons, to ensure that the starting point for the custom line cinematic is similar to what would be generated automatically for it. Once you've attached a pre-existing cutscene, you can edit it freely and add additional speak line actions if you wish.
+</p><p>If you're combining several lines in a conversation into a single cutscene, make sure to set the other lines you're combining to "skip". The checkbox for this is in the upper right corner of the cinematics tab.
+</p><p><b>Note:</b> When you convert a conversation line into a cutscene, the default name of the cutscene will be the string ID of the line in question. If you then export the cutscene with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">builder to builder</a> tools and import it again, the string ID will be changed to link up properly but the name of the cutscene will be left the same. This won't cause problems for the game or toolset - the name is just an arbitrary label as far as the game is concnerned - but it could be confusing for a human builder to have a cutscene named after one string ID but hooked up to a different one. Use a non-default name for these cutscenes to avoid this hassle.
+</p><p>Conversation lines spoken in a cutscene are not recorded in the journal. Their duration is determined by the cutscene, not by the VO, so the cutscene timing must be edited manually whenever the VO changes.  
+</p><p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Animation">Animation</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20animation.png"><img alt="Conversation animation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8b/Conversation_animation.png" width="777" height="161" /></a>
+</p><p>Animation is where you can add gestures for the actors in the conversation to make during the line, such as angrily shaking their fist. Select which actor you want to set animations for from the "tag" dropdown, then right-click on the animation list to select "add animation". This adds a new row where you can select an animation from the available resources. You can then set various parameters such as when the animation starts, whether the built-in sounds some animations have will be audible, and so forth.
+</p>
+<ul><li>Lock tag: </li>
+<li>Lock all:</li>
+<li>Play sound effects: some animations have sound effects built into them (for example, an animation of collapsing to the ground may be accompanied by the sound of impact). This selects whether the sound effects are played.</li>
+<li>Use animation duration:</li></ul>
+<table border="1">
+
+<tr>
+<td> Animation </td>
+<td> Name of the animation, selected from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20Animation%20List" title="Conversation Animation List">existing library of animation resources</a>. When an animation runs longer than the recorded voice-over it is shown in red text. Note that this is always the case when there is no voice over recorded.
+</td></tr>
+<tr>
+<td> Start Time </td>
+<td> Number of seconds into the line when the animation should start
+</td></tr>
+<tr>
+<td> Weight </td>
+<td> How "vigorous" the animation should be.
+</td></tr>
+<tr>
+<td> Speed </td>
+<td> How quickly the animation should be executed.
+</td></tr>
+<tr>
+<td> Start Offset </td>
+<td>
+</td></tr>
+<tr>
+<td> End Offset </td>
+<td>
+</td></tr>
+<tr>
+<td> Blend In </td>
+<td>
+</td></tr>
+<tr>
+<td> Blend Out </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Preview">Preview</span></h2>
+<p>Before previewing a line cinematic, you'll need to do the following:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Generate%20poses%20for%20children" title="Generate poses for children (page does not exist)">Generate poses for children</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Generate%20-%20clear%20gestures%20for%20line" title="Generate/clear gestures for line (page does not exist)">Generate/clear gestures for line</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Process%20camera%20for%20line" title="Process camera for line">Process camera for line</a></li></ul>
+<p>To preview a conversation you may need to set some defaults in the preview tab to assign an area and an identity for certain speakers that may be undefined in the conversation itself. The command to generate a preview is availble under the "Tools" menu.
+</p><p>Designers should be able to preview dialog lines inside the toolset. The area the dialog takes place in can be set, with the stage location either being explicitly set or defaulting to the first match.
+</p><p>There are 2 preview types:
+</p>
+<ul><li>Single line preview:
+<ul><li>This is for playing a single dialog line including all cinematics and voice, as it would appear in the game.</li></ul></li></ul>
+<ul><li>Tree preview:
+<ul><li>This is for playing a complete dialog tree, until the end. The designer should have the option of choosing scripted NPC lines if more than 1 line is supposed to be displayed. Otherwise, this is the same as a single line preview.</li></ul></li></ul>

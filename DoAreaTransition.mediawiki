@@ -1,0 +1,20 @@
+<p>Moves the entire party into an area
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> DoAreaTransition(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sArea,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWaypointTag<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sArea<dd>tag of the target area<dt style="font-weight:normal; font-style:italic;">sWaypointTag<dd>tag of the target waypoint
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>1 for success, 0 for failure (area list does not exist or area does not exist)
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function will do an area transtion if the target area is within the same area  list of the current area OR if the target area is in a different area list then it will unload the current area list and load into memory (with a loading bar) a new area list. The party will then be jumped to the specified waypoint (if it exists)
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>this function will jump ALL party members
+</p>

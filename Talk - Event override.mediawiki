@@ -1,0 +1,4 @@
+<p>This forum thread seems to have some useful information in it that should be sifted into the wiki at some point, if not already: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/71/index/255550/1">[1]</a>
+--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 02:07, 26 January 2010 (UTC)
+</p><p>This page needs a health warning or at the very least some context as to when this technique is appropriate (i.e. rarely). Novices are assuming this is the normal way to customise event handling rather than simply creating an alternative or wrapper event handling script and are consquently becoming confused/frustrated.  --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 13:08, 9 December 2009 (UTC)
+</p>

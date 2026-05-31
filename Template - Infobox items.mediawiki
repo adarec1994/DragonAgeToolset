@@ -1,0 +1,14 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20set" title="Item set">Item sets</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20properties" title="Item properties">Item properties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li></ul>
+</td></tr></table>

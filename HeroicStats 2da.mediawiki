@@ -1,0 +1,123 @@
+<p>The <strong class="selflink">HeroicStats 2da</strong> defines the properties used to track and display the player's individual performance.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>269</b>.  It can be extended by m2da fragments which have names starting with <b>HeroicStats</b>.  It has not been assigned a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_*</a> constant.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Stat
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Human Readable statname. Spaces are not allowed in these strings
+</td></tr>
+<tr>
+<th> Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> SIMPLE, ATTRIBUTE, DEPLETABLE
+</td></tr>
+<tr>
+<th> Min
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Minimum value possible
+</td></tr>
+<tr>
+<th> Max
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Maximum value possible
+</td></tr>
+<tr>
+<th> UIMapping
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> NameStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DescStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> NonCombatEffect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CombatEffect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> EngineLink
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See above
+</td></tr>
+<tr>
+<th> ToolsetName
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bShowInToolset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Constant
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bShowInPartyPicker
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SortOrder
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Sorts ascending, negative values allowed
+</td></tr></table>

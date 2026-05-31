@@ -1,0 +1,17 @@
+<p>Displays a floating message over a creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> DisplayFloatyMessage(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sMessage,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStyle&#160;= FLOATY_MESSAGE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nColour&#160;= 16777215,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> nDuration&#160;= 0.5<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The creature to display the floaty over<dt style="font-weight:normal; font-style:italic;">sMessage<dd>The text of the message<dt style="font-weight:normal; font-style:italic;">nStyle<dd>The visual style of the floaty. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FLOATY" title="FLOATY *">FLOATY_*</a>.<dt style="font-weight:normal; font-style:italic;">nColour<dd>The text colour, in hex (eg. 0xff0000 is red)<dt style="font-weight:normal; font-style:italic;">nDuration<dd>If specified, the floaty will be displayed for the indicated seconds. Note: If the time is zero, the floaty message is still displayed momentarily, as there is a fade in and fade out animation. Also  If the floaty message sports a style of "FLOATY_HIT" or "FLOATY_CRITICAL_HIT" the duration is completely ignored, this is controlled through ActionScript!
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Displays an animated message or number floating over a creature indicating damage taken, critical hits, etc.
+</p>

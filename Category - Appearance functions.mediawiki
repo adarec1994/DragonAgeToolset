@@ -1,0 +1,19 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Appearance functions"</h2>
+<p>The following 14 pages are in this category, out of 14 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType" title="GetAppearanceType">GetAppearanceType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureGender" title="GetCreatureGender">GetCreatureGender</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureGoreLevel" title="GetCreatureGoreLevel">GetCreatureGoreLevel</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType" title="GetCreatureRacialType">GetCreatureRacialType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemHeraldry" title="GetItemHeraldry">GetItemHeraldry</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetName" title="GetName">GetName</a></li></ul></div><div class="mw-category-group"><h3>L</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/LoadItemsFromTemplate" title="LoadItemsFromTemplate">LoadItemsFromTemplate</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAppearanceType" title="SetAppearanceType">SetAppearanceType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureGender" title="SetCreatureGender">SetCreatureGender</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureGoreLevel" title="SetCreatureGoreLevel">SetCreatureGoreLevel</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureRacialType" title="SetCreatureRacialType">SetCreatureRacialType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemHeraldry" title="SetItemHeraldry">SetItemHeraldry</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocName" title="SetLocName">SetLocName</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetName" title="SetName">SetName</a></li></ul></div></div></div>
+</div></div>

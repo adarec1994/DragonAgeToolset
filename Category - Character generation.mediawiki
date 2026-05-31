@@ -1,0 +1,39 @@
+<p>Articles related to the generation of a character at the beginning of a module
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Character generation"</h2>
+<p>The following 27 pages are in this category, out of 27 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Add%20A%20New%20Class%20Tutorial" title="Add A New Class Tutorial">Add A New Class Tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Add%20A%20New%20Class%20Tutorial%20-%20zh" title="Add A New Class Tutorial/zh">Add A New Class Tutorial/zh</a></li></ul></div><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background.xls" title="Background.xls">Background.xls</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial" title="Backgrounds tutorial">Backgrounds tutorial</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20generation" title="Character generation">Character generation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharGen%20ClearAbilityList" title="CharGen ClearAbilityList">CharGen ClearAbilityList</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargenmorphcfg.xml" title="Chargenmorphcfg.xml">Chargenmorphcfg.xml</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes%20-%20ru" title="Classes/ru">Classes/ru</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20ASSIGN%20ABILITIES" title="EVENT TYPE CHARGEN ASSIGN ABILITIES">EVENT TYPE CHARGEN ASSIGN ABILITIES</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20ASSIGN%20ATTRIBUTES" title="EVENT TYPE CHARGEN ASSIGN ATTRIBUTES">EVENT TYPE CHARGEN ASSIGN ATTRIBUTES</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20AUTOLEVEL" title="EVENT TYPE CHARGEN AUTOLEVEL">EVENT TYPE CHARGEN AUTOLEVEL</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20END" title="EVENT TYPE CHARGEN END">EVENT TYPE CHARGEN END</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20IMPORT%20HERO" title="EVENT TYPE CHARGEN IMPORT HERO">EVENT TYPE CHARGEN IMPORT HERO</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SCREEN%20ENTERED" title="EVENT TYPE CHARGEN SCREEN ENTERED">EVENT TYPE CHARGEN SCREEN ENTERED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20BACKGROUND" title="EVENT TYPE CHARGEN SELECT BACKGROUND">EVENT TYPE CHARGEN SELECT BACKGROUND</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20CLASS" title="EVENT TYPE CHARGEN SELECT CLASS">EVENT TYPE CHARGEN SELECT CLASS</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20GENDER" title="EVENT TYPE CHARGEN SELECT GENDER">EVENT TYPE CHARGEN SELECT GENDER</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20LEVELUP%20CLASS" title="EVENT TYPE CHARGEN SELECT LEVELUP CLASS">EVENT TYPE CHARGEN SELECT LEVELUP CLASS</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20NAME" title="EVENT TYPE CHARGEN SELECT NAME">EVENT TYPE CHARGEN SELECT NAME</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20RACE" title="EVENT TYPE CHARGEN SELECT RACE">EVENT TYPE CHARGEN SELECT RACE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20SOUNDSET" title="EVENT TYPE CHARGEN SELECT SOUNDSET">EVENT TYPE CHARGEN SELECT SOUNDSET</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20START" title="EVENT TYPE CHARGEN START">EVENT TYPE CHARGEN START</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PreloadCharGen" title="PreloadCharGen">PreloadCharGen</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureGender" title="SetCreatureGender">SetCreatureGender</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureRacialType" title="SetCreatureRacialType">SetCreatureRacialType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StartCharGen" title="StartCharGen">StartCharGen</a></li></ul></div></div></div>
+</div></div>

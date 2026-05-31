@@ -1,0 +1,90 @@
+<p><br />
+The following have been moved here as a temporary measure. These need to be confirmed as actual constants otherwise their literal value should be noted in the Remarks section rather than creating fake constants:
+</p>
+<pre>
+{{Constant table start
+|sourcefile   = combat_damage_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_ATTRIBUTE_CRITICAL_RANGE
+|type         = int
+|value        = 54
+|description  =  This property doesn't have a defined constant, use it as it is.
+|sourcefile   = combat_damage_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table end}}
+
+{{Constant table start
+|sourcefile   = core_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_SIMPLE_AI_BEHAVIOR
+|type         = int
+|value        = 18
+|description  = Conflict with PROPERTY_SIMPLE_AGE in script.ldf
+|sourcefile   = core_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_SIMPLE_DAMAGE_MAIN
+|type         = int
+|value        = 50
+|description  = This value represent the damage output value on the character sheet, but it isn't defined in any file and the value 50 is used as it is.
+|sourcefile   = core_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_SIMPLE_DAMAGE_OFFHAND
+|type         = int
+|value        = 49
+|description  = This value represent the damage output value on the character sheet, but it isn't defined in any file and the value 49 is used as it is.
+|sourcefile   = core_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table end}}
+
+{{Constant table start
+|sourcefile   = core_h.nss,sys_chargen_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_SIMPLE_SPECIALIZATION_POINTS
+|type         = int
+|value        = 38
+|description  =  This value represent what should be PROPERTY_SIMPLE_SPECIALIZATION_POINTS but it isn't defined in any file and the value 38 is used as it is.
+|sourcefile   = core_h.nss,sys_chargen_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table end}}
+
+{{Constant table start
+|sourcefile   = effect_heal_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_ATTRIBUTE_HEALING_MODIFIER
+|type         = int
+|value        = 51
+|description  =  This property doesn't have a defined constant, use it as it is.
+|sourcefile   = effect_heal_h
+|sourcemodule = Core Game Resources
+}}
+{{Constant table end}}
+
+{{Constant table start
+|sourcefile   = properties.2da
+|sourcemodule = Core Game Resources
+}}
+{{Constant table row
+|name         = PROPERTY_ATTRIBUTE_ABILITY_COST_MODIFIER
+|type         = int
+|value        = 41
+|description  =  fatigue
+|sourcefile   = properties.2da
+|sourcemodule = Core Game Resources
+}}
+{{Constant table end}}
+</pre>

@@ -1,0 +1,36 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png"><img alt="File:Export options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" width="326" height="111" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" title="Export options.png">Export_options.png</a> &#8206;<span class="fileInfo">(326 × 111 pixels, file size: 6 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr">
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png">02:36, 3 July 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png"><img alt="Thumbnail for version as of 02:36, 3 July 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Export_options.png" width="120" height="41" /></a></td><td>326 × 111 <span style="white-space: nowrap;">(6 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen" class="mw-userlink">BryanDerksen</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20BryanDerksen" title="User talk:BryanDerksen">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FBryanDerksen" title="Special:Contributions/BryanDerksen">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 5 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Export%20options.png" title="File:DA Audio Design Documentation Ambience Content html 6e39c036.png">File:DA Audio Design Documentation Ambience Content html 6e39c036.png</a> (file redirect) <ul class="mw-imagepage-redirectstofile"><li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module" title="Exporting and running a module">Exporting and running a module</a></li>
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></li>
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Exporting and running a module/ru</a></li>
+<li class="mw-imagepage-linkstoimage-ns6"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Exporting a module/ru</a></li>
+</ul>
+</li>
+</ul>
+</div>

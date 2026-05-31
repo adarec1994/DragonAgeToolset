@@ -1,0 +1,16 @@
+<p><strong class="selflink">Events_h</strong> is an include file of all events that are created via scripting. The file contains:
+</p>
+<ul><li> SendEvent* functions</li>
+<li> event structs</li></ul>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE" title="EVENT TYPE *">EVENT TYPE *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EventOnCastAtParamStruct" title="EventOnCastAtParamStruct">EventOnCastAtParamStruct</a></li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<p>No pages meet these criteria.
+</p>

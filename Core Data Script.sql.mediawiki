@@ -1,0 +1,434 @@
+<p>This is the SQL script for populating the database with core data needed by the toolset to run. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database" title="Database">Database</a> for more details.
+</p>
+<pre>
+ 
+
+/*
+*****************************************************
+    Populate the core data
+*****************************************************
+*/
+
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Area')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaObject')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaObjectGeometry')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaSound')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AssociatedResource')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Conversation')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ConversationLine')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ConversationTransition')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Creature')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CreatureAbility')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Cutscene')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CutsceneAction')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CutsceneActionTransition')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CutsceneObject')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CutsceneTrack')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Inventory')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Item')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ItemProperty')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Merchant')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_MerchantRestrictedItem')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Placeable')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Plot')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_PlotStatus')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Script')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_String')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Trigger')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Variable')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaWaypoint')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Role')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Character')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Character2')
+DELETE FROM t_ResourceTables WHERE NAME = 't_Character2'
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaList')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Stage')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_StageObject')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_StageObjectReference')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ConversationTagMap')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ConversationCinematics')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_Map')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_MapPin')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_PlotAssist')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_ConversationAnimations')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaReverbVolume')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaReverbVolumeGeometry')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaAudioVolume')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaAudioVolumeGeometry')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaAudioVolumeSound')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaMusicVolume')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaMusicVolumeGeometry')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_CutsceneActionFBEParameter')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaObjectVariable')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_StageFBEParameter')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_AreaInstanceAssociations')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_MapTrail')
+INSERT INTO t_ResourceTables([Name]) VALUES ('t_MapTrailPoint')
+
+
+
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('are', 1)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('dlg', 6)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('utc', 9)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('cut', 11)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('uti', 17)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('utm', 19)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('utp', 21)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('plo', 22)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('nss', 24)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('nsc', 24)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('str', 25)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('utt', 26)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('rol', 29)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('chr', 30)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('lst', 32)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('stg', 33)
+INSERT INTO t_ResourceDefinition([ResType], [BaseResourceTableID]) VALUES ('map', 38)
+
+
+
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 1, '1.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 2, '1.2.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 4, '1.4.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 5, '1.5.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 27, '1.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 28, '1.28.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 42, '1.42.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 44, '1.44.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 47, '1.47.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (1, 52, '1.52.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (2, 3, '1.2.3.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (2, 50, '1.2.50.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (6, 6, '6.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (6, 7, '6.7.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (6, 8, '6.8.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (6, 36, '6.36.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (6, 37, '6.37.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (7, 41, '6.7.41.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (9, 9, '9.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (9, 10, '9.10.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (9, 16, '9.16.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (9, 27, '9.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (11, 11, '11.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (11, 14, '11.14.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (12, 13, '11.14.15.12.13.', 5)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (12, 49, '11.14.15.12.49.', 5)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (14, 15, '11.14.15.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (15, 12, '11.14.15.12.', 4)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (17, 17, '17.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (17, 18, '17.18.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (17, 27, '17.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (19, 16, '19.16.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (19, 19, '19.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (19, 20, '19.20.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (19, 27, '19.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (21, 16, '21.16.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (21, 21, '21.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (21, 27, '21.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (22, 22, '22.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (22, 23, '22.23.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (23, 40, '22.23.40.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (24, 24, '24.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (26, 26, '26.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (26, 27, '26.27.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (29, 29, '29.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (30, 30, '30.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (32, 32, '32.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (33, 33, '33.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (33, 34, '33.34.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (34, 35, '33.34.35.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (34, 51, '33.34.51.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (38, 38, '38.', 1)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (38, 39, '38.39.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (38, 53, '38.53.', 2)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (53, 54, '38.53.54.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (42, 43, '1.42.43.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (44, 45, '1.44.45.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (44, 46, '1.44.46.', 3)
+INSERT INTO t_ResourceTableRelationship([ParentResourceTableID], [ChildResourceTableID], [FullPath], [Level]) VALUES (47, 48, '1.47.48.', 3)
+
+
+
+INSERT INTO [t_ModuleType]([Name], [Directory]) VALUES('Core', 'packages')
+INSERT INTO [t_ModuleType]([Name], [Directory]) VALUES('Package', 'packages')
+INSERT INTO [t_ModuleType]([Name], [Directory]) VALUES('Module', 'modules')
+INSERT INTO [t_ModuleType]([Name], [Directory]) VALUES('Addin', 'addins')
+INSERT INTO [t_ModuleType]([Name], [Directory]) VALUES('Offer', 'offers')
+
+
+/*
+*****************************************************
+    Create the Core and first Module
+*****************************************************
+*/
+
+DECLARE @a_iModuleID int
+exec bsp_AddNewModule 'Core Game Resources', 'core', -1, 1, 'core', NULL, NULL, '', NULL, '', NULL, 1, 1, -1,-1,-1, NULL, NULL, NULL, NULL, NULL, -1, -1, -1, -1, NULL, NULL, NULL, -1, 1, 1, -1, -1, @a_iModuleID OUTPUT
+exec bsp_AddNewModule 'Single Player', 'Single Player', 1, 0, 'Single Player', NULL, NULL, '', NULL, '', NULL, 1, 3,-1,-1,-1, NULL, NULL, NULL, NULL, NULL, -1, -1, -1, -1, NULL, NULL, NULL, -1, 1, 1, -1, -1, @a_iModuleID OUTPUT
+
+/*
+*****************************************************
+    Create the String Data
+*****************************************************
+*/
+
+
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Base Item Type Names', 'Strings associated with the base items.', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Conversation, Extra', 'Conversation strings not managed by the designer toolset.', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Area Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Conversation Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Creature Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Door Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Item Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Journal Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Placeable Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Sound Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Store Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Trap Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Trigger Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported GUI Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Item Properties', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Skills', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Spells', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Talents', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Rules', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Merchant Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Cutscene Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Plot Text', 'Strings managed by the designer toolset', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Not Used', NULL, NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('GUI', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Not Used', NULL, NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Exported Map Text', 'Strings managed by the designer toolset.', NULL, 1)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Module Localized Text', 'Strings associated with Module Display Names and Descriptions.', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('PRC GUI', NULL, NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('GUI Console', 'Console-only GUI strings', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('GUI Xbox360', 'Xbox360-only GUI strings', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('GUI PS3', 'PS3-only GUI strings', NULL, 0)
+INSERT INTO t_StringType ([Name], [Description], [IncludeFile], [Exported]) values ('Imported from Console', 'Imported from Console strings', NULL, 1)
+
+INSERT INTO [t_StringLanguage]([Name], [Description]) VALUES('English', 'English')
+
+/*
+*****************************************************
+    Define the Male and Female Genders
+    These are fixed at 1 and 2 respectively
+*****************************************************
+*/
+SET IDENTITY_INSERT t_StringVariant ON
+
+IF NOT EXISTS 
+(
+    SELECT 1
+    FROM t_StringVariant
+    WHERE [ID] = 1
+)
+BEGIN
+    INSERT t_StringVariant ([ID], [Name])
+    VALUES (1, 'Male/Neutral')
+END
+ELSE
+BEGIN
+    UPDATE t_StringVariant
+    SET [Name] = 'Male/Neutral'
+    WHERE [ID] = 1
+END
+
+
+IF NOT EXISTS 
+(
+    SELECT 1
+    FROM t_StringVariant
+    WHERE [ID] = 2
+)
+BEGIN
+    INSERT t_StringVariant ([ID], [Name])
+    VALUES (2, 'Female')
+END
+ELSE
+BEGIN
+    UPDATE t_StringVariant
+    SET [Name] = 'Female'
+    WHERE [ID] = 2
+END
+
+SET IDENTITY_INSERT t_StringVariant OFF
+
+
+INSERT INTO [t_StringLanguageVariant]([StringLanguageID], [StringVariantID]) VALUES(1, 1)
+
+
+/*
+*****************************************************
+    Define the English Language tag as 'en-us', and
+    hook it up as the default tag.
+*****************************************************
+*/
+IF NOT EXISTS
+(
+    SELECT [ID] 
+    FROM t_StringLanguageTag
+    WHERE [Tag] = 'en-us'
+    AND [StringLanguageID] = 1
+)
+BEGIN
+    INSERT t_StringLanguageTag ([StringLanguageID], [Tag])
+    VALUES (1, 'en-us')
+END
+
+IF EXISTS
+(
+    SELECT 1
+    FROM t_StringLanguage
+    WHERE [ID] = 1
+    AND [DefaultStringLanguageTagID] IS NULL
+)
+BEGIN
+    DECLARE @iTagID int
+    SELECT @iTagID = [ID] 
+    FROM t_StringLanguageTag
+    WHERE [Tag] = 'en-us'
+    AND [StringLanguageID] = 1
+
+    UPDATE t_StringLanguage
+    SET [DefaultStringLanguageTagID] = @iTagID
+    WHERE [ID] = 1
+END
+
+
+
+
+/*
+*****************************************************
+    Define the Foreign Languages to be used on 
+    this project.
+*****************************************************
+*/
+
+-- Define the foreign languages we want to add to this project
+DECLARE @tForeignLanguages TABLE
+(
+    [Name] varchar(128),
+    [Tag]  varchar(64)
+)
+
+INSERT @tForeignLanguages VALUES ('French-France', 'fr-fr')
+INSERT @tForeignLanguages VALUES ('Italian-Italy', 'it-it')
+INSERT @tForeignLanguages VALUES ('German-Germany', 'de-de')
+INSERT @tForeignLanguages VALUES ('Spanish-Spain', 'es-es')
+
+INSERT @tForeignLanguages VALUES ('Polish-Poland', 'pl-pl')
+INSERT @tForeignLanguages VALUES ('Russian-Russia', 'ru-ru')
+
+INSERT @tForeignLanguages VALUES ('PseudoLoc', 'pseudo')
+
+INSERT @tForeignLanguages VALUES ('Czech - Czech Republic', 'cs-cz')
+INSERT @tForeignLanguages VALUES ('Hungarian - Hungary', 'hu-hu')
+
+
+-- Add these foreign languages iteratively
+-- ONLY add the languages if they are not found in the database already
+DECLARE @currentName varchar(128)
+DECLARE @currentTag varchar(64)
+
+DECLARE language_cursor CURSOR FOR 
+SELECT [Name], [Tag]
+FROM @tForeignLanguages
+    WHERE [Name] NOT IN 
+    (SELECT [Name] FROM t_StringLanguage)
+
+OPEN language_cursor
+
+FETCH NEXT FROM language_cursor 
+INTO @currentName, @currentTag
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    print 'Defining new Foreign Language: ' + @currentName + ' - ' + @currentTag
+    DECLARE @iLanguageID int
+    DECLARE @iLanguageTagID int
+
+    -- Insert the language  
+    INSERT t_StringLanguage ([Name], [Description])
+    VALUES (@currentName, @currentName) 
+
+    SELECT @iLanguageID = SCOPE_IDENTITY()
+
+    -- Insert the StringLanguageTag
+    INSERT t_StringLanguageTag ([StringLanguageID], [Tag])
+    VALUES (@iLanguageID, @currentTag)
+
+    SELECT @iLanguageTagID = SCOPE_IDENTITY()
+
+    -- Mark the LanguageTag as Default for this language
+    UPDATE sl
+    SET sl.[DefaultStringLanguageTagID] = @iLanguageTagID
+    FROM t_StringLanguage sl
+    WHERE sl.[ID] = @iLanguageID
+
+    -- Define the LanguageVariant combinations (male and female)
+    INSERT t_StringLanguageVariant ([StringLanguageID], [StringVariantID])
+    VALUES (@iLanguageID, 1)
+
+    INSERT t_StringLanguageVariant ([StringLanguageID], [StringVariantID])
+    VALUES (@iLanguageID, 2)
+
+    print '- Done adding language ' + @currentName
+        
+    -- Get the next language
+    FETCH NEXT FROM language_cursor 
+    INTO @currentName, @currentTag
+END
+
+CLOSE language_cursor
+DEALLOCATE language_cursor
+
+GO
+
+/*
+*****************************************************
+    Create the Core Scripts
+*****************************************************
+*/
+
+declare @iRRID int
+declare @iVerID int
+declare @sName varchar(32)
+declare @sScriptFolderName varchar(32)
+
+set @sScriptFolderName = 'Core Scripts'
+set @sName = 'area_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'creature_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'merchant_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'placeable_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'trigger_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'module_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+set @sName = 'plot_core'
+EXEC [bsp_AddResRef] 1, 1, @sName, @sScriptFolderName, 'nss', 0, @iRRID OUTPUT, @iVerID OUTPUT
+INSERT INTO t_Script(ModuleResRefVersionID, [Text]) VALUES (@iVerID, 'void main ()  {  }  ')
+
+
+/*
+*****************************************************
+    Create the Global Parameters
+*****************************************************
+*/
+
+INSERT INTO t_GlobalParameters ([Name], [Value]) VALUES ('DatabaseVersion', '1.0.0.194')
+INSERT INTO t_GlobalParameters ([Name], [Value]) VALUES ('StringIDEndRange', '2147483647')
+INSERT INTO t_GlobalParameters ([Name], [Value]) VALUES ('StringIDStartRange', '610000000')
+
+
+INSERT INTO t_KeyGenStringID ([LastUsedID]) VALUES (609999999)
+</pre>

@@ -1,0 +1,37 @@
+<p>A class method of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> ActionScript class.
+</p><p>Returns the requested attribute value from the game engine
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em;">
+<p>GetValue(
+</p>
+<dl><dd>a_sAttributeName</dd></dl>
+<p>);
+</p>
+</div>
+<dl>
+<dt>Parameters:
+<dd>
+<dl>
+<dt style="font-weight:normal; font-style:italic;">a_sAttributeName<dd>The hierarchical attribute-string associated with the value to retrieve
+</dl>
+<p><dt>Returns:
+<dd>The requested attribute value from the game engine
+</p>
+</dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The attribute name is a string which has meaning to the game engine. It's typically hierarchical, using dots to separate the levels. 
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<p>The following would return the gamma setting in the user's DragonAge.ini file:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">ExternalCommands.<span class="me1">GetValue</span><span class="br0">&#40;</span><span class="st0">&quot;ClientOptions.VideoOptions.Gamma&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<p>The following would return the name of the selected character:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">ExternalCommands.<span class="me1">GetValue</span><span class="br0">&#40;</span><span class="st0">&quot;GUI.SelectedCharacter.Name&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<p>Getting the selected characters tag is similar, but with .Tag instead of .Name
+</p>
+<h2><span class="mw-headline" id="Known_Issues">Known Issues</span></h2>
+<p>If the retrieved value is to be passed back to the game and is a number, you must instead use <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands.GetNumber" title="ActionScript:ExternalCommands.GetNumber (page does not exist)">GetNumber</a> or convert the value back into a Number type first.
+</p>

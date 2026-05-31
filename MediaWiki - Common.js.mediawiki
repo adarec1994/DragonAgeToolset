@@ -1,0 +1,100 @@
+<div id="mw-clearyourcache" lang="en" dir="ltr" class="mw-content-ltr">
+<p><strong>Note:</strong> After saving, you may have to bypass your browser's cache to see the changes.
+</p>
+<ul><li> <strong>Firefox / Safari:</strong> Hold <em>Shift</em> while clicking <em>Reload</em>, or press either <em>Ctrl-F5</em> or <em>Ctrl-R</em> (<em>⌘-R</em> on a Mac)</li>
+<li> <strong>Google Chrome:</strong> Press <em>Ctrl-Shift-R</em> (<em>⌘-Shift-R</em> on a Mac)</li>
+<li> <strong>Internet Explorer:</strong> Hold <em>Ctrl</em> while clicking <em>Refresh</em>, or press <em>Ctrl-F5</em></li>
+<li> <strong>Opera:</strong> Clear the cache in <em>Tools → Preferences</em></li></ul>
+</div>
+<div dir="ltr"><pre class="javascript source-javascript"><span class="coMULTI">/* Any JavaScript here will be loaded for all users on every page load. */</span>
+&nbsp;
+<span class="coMULTI">/** Collapsible tables *********************************************************
+ *
+ *  Description: Allows tables to be collapsed, showing only the header. See
+ *               http://www.mediawiki.org/wiki/Manual:Collapsible_tables.
+ *  Maintainers: [[**MAINTAINERS**]]
+ */</span>
+<span class="kw1">var</span> autoCollapse <span class="sy0">=</span> <span class="nu0">2</span><span class="sy0">;</span>
+<span class="kw1">var</span> collapseCaption <span class="sy0">=</span> <span class="st0">'hide'</span><span class="sy0">;</span>
+<span class="kw1">var</span> expandCaption <span class="sy0">=</span> <span class="st0">'show'</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw1">function</span> collapseTable<span class="br0">&#40;</span> tableIndex <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	<span class="kw1">var</span> Button <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">&#40;</span> <span class="st0">'collapseButton'</span> <span class="sy0">+</span> tableIndex <span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="kw1">var</span> Table <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">&#40;</span> <span class="st0">'collapsibleTable'</span> <span class="sy0">+</span> tableIndex <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+	<span class="kw1">if</span> <span class="br0">&#40;</span> <span class="sy0">!</span>Table <span class="sy0">||</span> <span class="sy0">!</span>Button <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		<span class="kw1">return</span> <span class="kw2">false</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+&nbsp;
+	<span class="kw1">var</span> Rows <span class="sy0">=</span> Table.<span class="me1">rows</span><span class="sy0">;</span>
+&nbsp;
+	<span class="kw1">if</span> <span class="br0">&#40;</span> Button.<span class="me1">firstChild</span>.<span class="me1">data</span> <span class="sy0">==</span> collapseCaption <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		<span class="kw1">for</span> <span class="br0">&#40;</span> <span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> Rows.<span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			Rows<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">style</span>.<span class="me1">display</span> <span class="sy0">=</span> <span class="st0">'none'</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+		Button.<span class="me1">firstChild</span>.<span class="me1">data</span> <span class="sy0">=</span> expandCaption<span class="sy0">;</span>
+	<span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+		<span class="kw1">for</span> <span class="br0">&#40;</span> <span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> Rows.<span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			Rows<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">style</span>.<span class="me1">display</span> <span class="sy0">=</span> Rows<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">style</span>.<span class="me1">display</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+		Button.<span class="me1">firstChild</span>.<span class="me1">data</span> <span class="sy0">=</span> collapseCaption<span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw1">function</span> createCollapseButtons<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	<span class="kw1">var</span> tableIndex <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+	<span class="kw1">var</span> NavigationBoxes <span class="sy0">=</span> <span class="kw1">new</span> <span class="kw4">Object</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="kw1">var</span> Tables <span class="sy0">=</span> document.<span class="me1">getElementsByTagName</span><span class="br0">&#40;</span> <span class="st0">'table'</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+	<span class="kw1">for</span> <span class="br0">&#40;</span> <span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> Tables.<span class="me1">length</span><span class="sy0">;</span> i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span> hasClass<span class="br0">&#40;</span> Tables<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'collapsible'</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			<span class="coMULTI">/* only add button and increment count if there is a header row to work with */</span>
+			<span class="kw1">var</span> HeaderRow <span class="sy0">=</span> Tables<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">getElementsByTagName</span><span class="br0">&#40;</span> <span class="st0">'tr'</span> <span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+			<span class="kw1">if</span><span class="br0">&#40;</span> <span class="sy0">!</span>HeaderRow <span class="br0">&#41;</span> <span class="kw1">continue</span><span class="sy0">;</span>
+			<span class="kw1">var</span> Header <span class="sy0">=</span> HeaderRow.<span class="me1">getElementsByTagName</span><span class="br0">&#40;</span> <span class="st0">'th'</span> <span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+			<span class="kw1">if</span><span class="br0">&#40;</span> <span class="sy0">!</span>Header <span class="br0">&#41;</span> <span class="kw1">continue</span><span class="sy0">;</span>
+&nbsp;
+			NavigationBoxes<span class="br0">&#91;</span>tableIndex<span class="br0">&#93;</span> <span class="sy0">=</span> Tables<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy0">;</span>
+			Tables<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">setAttribute</span><span class="br0">&#40;</span> <span class="st0">'id'</span><span class="sy0">,</span> <span class="st0">'collapsibleTable'</span> <span class="sy0">+</span> tableIndex <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+			<span class="kw1">var</span> Button     <span class="sy0">=</span> document.<span class="me1">createElement</span><span class="br0">&#40;</span> <span class="st0">'span'</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+			<span class="kw1">var</span> ButtonLink <span class="sy0">=</span> document.<span class="me1">createElement</span><span class="br0">&#40;</span> <span class="st0">'a'</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+			<span class="kw1">var</span> ButtonText <span class="sy0">=</span> document.<span class="me1">createTextNode</span><span class="br0">&#40;</span> collapseCaption <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+			Button.<span class="me1">className</span> <span class="sy0">=</span> <span class="st0">'collapseButton'</span><span class="sy0">;</span> <span class="co1">// Styles are declared in MediaWiki:Common.css</span>
+&nbsp;
+			ButtonLink.<span class="me1">style</span>.<span class="me1">color</span> <span class="sy0">=</span> Header.<span class="me1">style</span>.<span class="me1">color</span><span class="sy0">;</span>
+			ButtonLink.<span class="me1">setAttribute</span><span class="br0">&#40;</span> <span class="st0">'id'</span><span class="sy0">,</span> <span class="st0">'collapseButton'</span> <span class="sy0">+</span> tableIndex <span class="br0">&#41;</span><span class="sy0">;</span>
+			ButtonLink.<span class="me1">setAttribute</span><span class="br0">&#40;</span> <span class="st0">'href'</span><span class="sy0">,</span> <span class="st0">&quot;javascript:collapseTable(&quot;</span> <span class="sy0">+</span> tableIndex <span class="sy0">+</span> <span class="st0">&quot;);&quot;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+			ButtonLink.<span class="me1">appendChild</span><span class="br0">&#40;</span> ButtonText <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+			Button.<span class="me1">appendChild</span><span class="br0">&#40;</span> document.<span class="me1">createTextNode</span><span class="br0">&#40;</span> <span class="st0">'['</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+			Button.<span class="me1">appendChild</span><span class="br0">&#40;</span> ButtonLink <span class="br0">&#41;</span><span class="sy0">;</span>
+			Button.<span class="me1">appendChild</span><span class="br0">&#40;</span> document.<span class="me1">createTextNode</span><span class="br0">&#40;</span> <span class="st0">']'</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+			Header.<span class="me1">insertBefore</span><span class="br0">&#40;</span> Button<span class="sy0">,</span> Header.<span class="me1">childNodes</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+			tableIndex<span class="sy0">++;</span>
+		<span class="br0">&#125;</span>
+	<span class="br0">&#125;</span>
+&nbsp;
+	<span class="kw1">for</span> <span class="br0">&#40;</span> <span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>  i <span class="sy0">&lt;</span> tableIndex<span class="sy0">;</span> i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span> hasClass<span class="br0">&#40;</span> NavigationBoxes<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'collapsed'</span> <span class="br0">&#41;</span> <span class="sy0">||</span> <span class="br0">&#40;</span> tableIndex <span class="sy0">&gt;=</span> autoCollapse <span class="sy0">&amp;&amp;</span> hasClass<span class="br0">&#40;</span> NavigationBoxes<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'autocollapse'</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			collapseTable<span class="br0">&#40;</span> i <span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+addOnloadHook<span class="br0">&#40;</span> createCollapseButtons <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="coMULTI">/** Test if an element has a certain class **************************************
+ *
+ * Description: Uses regular expressions and caching for better performance.
+ * Maintainers: [[User:Mike Dillon]], [[User:R. Koot]], [[User:SG]]
+ */</span>
+&nbsp;
+<span class="kw1">var</span> hasClass <span class="sy0">=</span> <span class="br0">&#40;</span><span class="kw1">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	<span class="kw1">var</span> reCache <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><span class="sy0">;</span>
+	<span class="kw1">return</span> <span class="kw1">function</span><span class="br0">&#40;</span> element<span class="sy0">,</span> className <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		<span class="kw1">return</span> <span class="br0">&#40;</span>reCache<span class="br0">&#91;</span>className<span class="br0">&#93;</span> <span class="sy0">?</span> reCache<span class="br0">&#91;</span>className<span class="br0">&#93;</span> <span class="sy0">:</span> <span class="br0">&#40;</span>reCache<span class="br0">&#91;</span>className<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="kw1">new</span> RegExp<span class="br0">&#40;</span><span class="st0">&quot;(?:<span class="es0">\\</span>s|^)&quot;</span> <span class="sy0">+</span> className <span class="sy0">+</span> <span class="st0">&quot;(?:<span class="es0">\\</span>s|$)&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">test</span><span class="br0">&#40;</span>element.<span class="me1">className</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div>

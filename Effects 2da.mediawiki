@@ -1,0 +1,156 @@
+<p>The <strong class="selflink">effects 2da</strong> defines the different types of game effects which exist.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>136</b>. It can be extended by m2da fragments which have names starting with <b>effect</b>. It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_EFFECTS</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string  </a>
+</td>
+<td>  Used to generate human readable debug output
+</td></tr>
+<tr>
+<th> Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CancelOnPlotEvent
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bConsiderHostile
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bDropStealth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AllowPermanent
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AllowInstant
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AllowTemp
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AffectImmortal
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AffectPlot
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Flags
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> FlagsOld
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Comment
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Notes
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Priority
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>  Animation priority, from low (0) to high (999). If the priority field is set, the animation associated with the effect will only play if no other effect with a higher priority is present on the creature.
+</td></tr>
+<tr>
+<th> Animation
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>  An ID in an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">ANIM_2da</a> file, defining an animation that will be played while the effect is active.
+</td></tr>
+<tr>
+<th> IgnoreDeath
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SimpleEffect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int     </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CameraFollow
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool    </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Effects with an <b>ID</b> under 1000 are engine effects, meaning their apply and remove handlers are not signalled for processing into the scripting virtual machine but instead they are handled by the game engine. However some engine effects (such as VFX and Screenshake) have their effect constructor defined in scripting and require the proper <code>effect_&lt;effect-name&gt;_h</code> script file to be included.
+</p><p>Effects with an <b>ID</b> of 1000 or more are scripted effects, meaning they are handled entirely in scripting.
+</p><p>For all effects with a positive <b>Priority</b>, the engine assumes that <b>INT 2</b> (set to 1)  is used to indicate if an angle (in degrees) will be stored in <b>FLOAT 0</b>. This angle will be used to orient creatures playing reaction animations.
+</p>

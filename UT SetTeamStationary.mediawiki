@@ -1,0 +1,14 @@
+<p>Sets a team to be stationary.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_SetTeamStationary(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTeam,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStationaryStatus<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTeam<dd>The team number to set stationary.<dt style="font-weight:normal; font-style:italic;">nStationaryStatus<dd>The stationary status of the team.  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI%20STATIONARY%20STATE%20DISABLED" title="AI STATIONARY STATE DISABLED (page does not exist)">AI_STATIONARY_STATE_DISABLED</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI%20STATIONARY%20STATE%20SOFT" title="AI STATIONARY STATE SOFT (page does not exist)">AI_STATIONARY_STATE_SOFT</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI%20STATIONARY%20STATE%20HARD" title="AI STATIONARY STATE HARD (page does not exist)">AI_STATIONARY_STATE_HARD</a>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>

@@ -1,0 +1,17 @@
+<p>Remove effects based on certain parameters
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> RemoveEffectsByParameters(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nType&#160;= EFFECT_TYPE_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityId&#160;= ABILITY_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreator&#160;= OBJECT_INVALID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oTarget<dd>The object to remove the effect from<dt style="font-weight:normal; font-style:italic;">nType<dd>Only remove effects of this type (setting <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT_TYPE_INVALID</a> will remove all types of effects)<dt style="font-weight:normal; font-style:italic;">nAbilityId<dd>Only remove effects of with this ability id (setting <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY-eb87f3dc" title="ABILITY *">ABILITY_INVALID</a> will remove effects due to any ability)<dt style="font-weight:normal; font-style:italic;">oCreator<dd>Only remove effects created by this object (setting <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a> will remove effects created by anything)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Removes a group of effects that have the specified values from the object it's applied to.
+</p>

@@ -1,0 +1,21 @@
+<p>returns the cost (mana or stamina) of using an ability
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> Ability_GetAbilityCost(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityType&#160;= <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20TYPE%20INVALID" title="ABILITY TYPE INVALID (page does not exist)">ABILITY_TYPE_INVALID</a>,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bUpkeep&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">nAbility<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">nAbilityType<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">bUpkeep<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The cost of using the ability
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Note: nAbility = ABILITY_TYPE_INVALID will cause a lookup in the 2da.
+</p><p>This function is duplicated within the game executable. Any change made to this function will result in GUI glitches and other bugs. Sorry.
+</p><p><br />
+</p>

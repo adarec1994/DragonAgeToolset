@@ -1,0 +1,31 @@
+<ul><li> Create <b>new</b> a plot resource (because <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Duplicating%20a%20plot%20duplicates%20the%20uneditable%20GUID" title="Bug: Duplicating a plot duplicates the uneditable GUID">duplicating a plot duplicates the uneditable GUID</a>)
+<ul><li> Set the plot type to one with a "Codex - " prefix</li>
+<li> Add a single Main Flag: remember the number (usually 0 as it is the only flag)</li></ul></li>
+<li> Create a placeable and place it in an area</li>
+<li> Open the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable#Variables" title="Placeable">placeable's variables</a></li>
+<li> Set PLC_CODEX_PLOT to the name of the plot resource</li>
+<li> Set PLC_CODEX_FLAG to the number of the plot flag</li></ul>
+<p>When the Player examines the placeable it triggers EVENT_TYPE_USE event
+</p><p>The default behaviour (routed through the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20core%20script" title="Placeable core script (page does not exist)">placeable_core script</a>) is perfectly adequate.
+</p><p>When the Player clicks on the placeable the following script runs:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Placeable_ShowCodexEntry<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oPlc<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sCodexPlot <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span>oPlc, PLC_CODEX_PLOT<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCodexFlag    <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oPlc, PLC_CODEX_FLAG<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>sCodexPlot <span class="sy0">!=</span> <span class="st0">&quot;&quot;</span> <span class="sy0">&amp;&amp;</span> nCodexFlag <span class="sy0">&gt;=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sSummary <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPlotSummary"><span class="kw4">GetPlotSummary</span></a><span class="br0">&#40;</span>sCodexPlot, nCodexFlag<span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">//&#160;:</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>WR_GetPlotFlag<span class="br0">&#40;</span>sCodexPlot, nCodexFlag<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            WR_SetPlotFlag<span class="br0">&#40;</span>sCodexPlot, nCodexFlag, TRUE, TRUE<span class="br0">&#41;</span>;
+            RewardXPParty<span class="br0">&#40;</span>XP_CODEX, XP_TYPE_CODEX, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword"><span class="kw1">OBJECT_INVALID</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+        UI_DisplayCodexMessage<span class="br0">&#40;</span>oPlc, sSummary<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetObjectInteractive"><span class="kw4">SetObjectInteractive</span></a><span class="br0">&#40;</span>oPlc, FALSE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>

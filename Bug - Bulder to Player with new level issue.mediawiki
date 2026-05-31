@@ -1,0 +1,24 @@
+<ul><li><b>Version found:</b> Final</li>
+<li><b>Status:</b> Solved</li>
+<li><b>Related:</b> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20New%20level%20doesn%27t%20work%20correctly" title="Bug: New level doesn't work correctly">Bug: New level doesn't work correctly</a>.</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>I have new level for my module and after I did "Bulder to Player" it ask to delete some files. When I do it my level doesn't work correctly later. There are no problems with models and all necessary components for Toolset are installed.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p><a rel="nofollow" class="external text" href="https://datoolsetblog.wordpress.com/">Dr. dummie addition</a>
+</p><p>It is well known issue with B2P exporter when your file have more then two dots in name. Usually it is with *.gpu.rim files so here is simple how-to to pack your areas into dazip.
+</p><p>So you go ahead and create your dazip file without your areas. I’m not gonna explain here how to create dazip file, I assume you already know how to do that.  Now when you have your file ready, open it with 7-zip (you can also do the same with any app which can open zip files – note that dazip is just a renamed zip file).
+</p><p><b>SO WHEN YOU HAVE OPENED YOUR DAZIP FILE WITH 7 ZIP:</b>
+</p>
+<ul><li> Navigate into “contents” -&gt; “packages” – &gt; “core” folder.</li></ul>
+<ul><li> There should already be a “data” folder. If there is already folder named “override” you are ready to go. If not -&gt; Right click onto view and select “Create folder” and name it “override” (without quotes of course). Here I usually create another folder into override named “env_short_name_of_my_mod” like “env_yad” to keep things grouped, but it’s not needed.</li></ul>
+<ul><li> Drag your areas into that folder. They will be automatically added to dazip file. Exported areas are usually grouped into folder named by your exported level name which you have set up in your level editor.</li></ul>
+<p><b>SOME NOTES:</b>
+</p><p>Be aware that anything you put in packages/core/override folder  can override all other resources from game if they have same name.
+</p><p>When dazip is installed with damodder, it will unpack your areas into packages/core/override on target system.
+</p><p><b>ON TARGET SYSTEM:</b>
+</p><p>Your areas (levels) will be unpacked into ../packages/core/override/env_your_mod_short_name/..
+</p><p>If user wants to uninstall mod, he must also manually delete “env_your_mod_short_name” folder from “../packages/core/override/..” folders in their documents folder after mod uninstall with damodder.
+</p><p>If not, your areas and items will be, or can be, used by game further on (other modders can use your areas, and items will continue to override other same named resources in main game).
+</p><p>You can use similar procedure for almost any resource from the game. You just need to follow exact same folder structure as in your mod, remember, mod is working on your PC with your files without any erf files or similar.
+</p>

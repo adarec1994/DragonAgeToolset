@@ -1,0 +1,34 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">effect_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> EFFECT_VECTOR_ORIGIN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_VECTOR_TINTING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr></table>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectEngineVector" title="SetEffectEngineVector">SetEffectEngineVector</a></li></ul>

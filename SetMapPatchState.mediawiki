@@ -1,0 +1,21 @@
+<p>Controls the state of a map patch
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetMapPatchState(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oMapPatch,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nState<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oMapPatch<dd>Object ID of patch to control<dt style="font-weight:normal; font-style:italic;">nState<dd>State number to set, -1 = invisible
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Map patches with a state of -1 are "invisible" to the client. Any other setting 0-N will make the patch appear on the client's map.
+If the action ID for the state is not -1, the patch is clickable, and the action ID will be sent to server whenever client clicks on the patch.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMapPatchState" title="GetMapPatchState">GetMapPatchState</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPlayerMapPatch" title="GetPlayerMapPatch">GetPlayerMapPatch</a>
+</p>

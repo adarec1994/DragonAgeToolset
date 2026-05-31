@@ -1,0 +1,20 @@
+<p>return an array of objects enclosed by the specified shape
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] GetObjectsInShape(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nObjectTypeMask,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nShapeId,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLocation,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fB&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fC&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bExcludeDead&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nObjectTypeMask<dd>Which objects to look for<dt style="font-weight:normal; font-style:italic;">nShapeId<dd>the shape to use<dt style="font-weight:normal; font-style:italic;">lLocation<dd>origin and direction for this shape<dt style="font-weight:normal; font-style:italic;">fA<dd>floating point generic parameter<dt style="font-weight:normal; font-style:italic;">fB<dd>optional floating point generic parameter<dt style="font-weight:normal; font-style:italic;">fC<dd>optional floating point generic parameter<dt style="font-weight:normal; font-style:italic;">bExcludeDead<dd>filter out dead objects if necessary
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>an array of objects enclosed by the specified shape
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns all objects enclosed by a specific shape. 
+</p><p>Parameter Info for generic parameters fA, fB, fC:
+</p>
+<ul><li>SPHERE:    fA = radius (meters)</li>
+<li>CONE:      fA = angle (degrees), fB = length (meters)</li></ul>

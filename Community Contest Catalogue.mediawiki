@@ -1,0 +1,168 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#About_the_Catalogue"><span class="tocnumber">1</span> <span class="toctext">About the Catalogue</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Levels"><span class="tocnumber">2</span> <span class="toctext">Levels</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.231_-_Settlement_Level_contest"><span class="tocnumber">2.1</span> <span class="toctext">#1 - Settlement Level contest</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.235_-_Room_contest"><span class="tocnumber">2.2</span> <span class="toctext">#5 - Room contest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Props.2FPlaceables"><span class="tocnumber">3</span> <span class="toctext">Props/Placeables</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#.232_-_Prop_Model_contest"><span class="tocnumber">3.1</span> <span class="toctext">#2 - Prop Model contest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Characters.2FNPCs"><span class="tocnumber">4</span> <span class="toctext">Characters/NPCs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#.233_-_Character_contest"><span class="tocnumber">4.1</span> <span class="toctext">#3 - Character contest</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.233_mini_-_Head_morph_mini-contest"><span class="tocnumber">4.2</span> <span class="toctext">#3 mini - Head morph mini-contest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Scripts.2FModular_packages"><span class="tocnumber">5</span> <span class="toctext">Scripts/Modular packages</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#.234_-_Minigame_Script"><span class="tocnumber">5.1</span> <span class="toctext">#4 - Minigame Script</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Equipment"><span class="tocnumber">6</span> <span class="toctext">Equipment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#.236_Equipment_Contest"><span class="tocnumber">6.1</span> <span class="toctext">#6 Equipment Contest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Modules"><span class="tocnumber">7</span> <span class="toctext">Modules</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#.237_Addin_Module_Contest"><span class="tocnumber">7.1</span> <span class="toctext">#7 Addin Module Contest</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="About_the_Catalogue">About the Catalogue</span></h2>
+<p>This is the catalogue of shared content from the Community Contest. All participants have agreed to allow other modders to make use of their entries, so please feel free to make use of the following work in your own mods. We <b>strongly encourage users to please credit the authors</b> when using work from this catalogue, though you do not need to contact the author to ask permission.
+</p><p>For more information on the Community Contest, including how to enter, and a list of contests, please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page">Community Contest Main Page</a>
+</p>
+<h2><span class="mw-headline" id="Levels">Levels</span></h2>
+<h4><span class="mw-headline" id=".231_-_Settlement_Level_contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%201%20-%20Settlement%20Level" title="Community Contest 1: Settlement Level">#1 - Settlement Level contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots, descriptions and Judges' comments</i>
+</p><p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1673">Hillside Village</a> by AmstradHero - <b>1st place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1675">Village by the Sea</a> by Talisander - <b>2nd place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1666">Sylvhaven</a> by Princecorg - <b>3rd place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1635">Settlement of Belgray</a> by Jackkel Dragon</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1630">Hakkon's Gift</a> by Lord of Fangs</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1670">Village in the River</a> by Nattfodd</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1599">The Swamp</a> by Ponozsticka </li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1647">Evermist</a> by TimelordDC</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1626">Ojardsi</a> by Turtlecrunch</li></ul>
+<h4><span class="mw-headline" id=".235_-_Room_contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%205%20-%20Room%20Contest" title="Community Contest 5: Room Contest">#5 - Room contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots, descriptions and Judges' comments</i>
+</p><p><b>Bundle:</b> (contains all entries in a level and as SEL files)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1899">Banqueting Hall</a> by Nattfodd - <b>1st Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3811/">Library</a> by Semper - <b>2nd Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1928">A place to call home</a> by Nimee - <b>3rd Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1898">Inn Bedrooms</a> by Jackkel Dragon</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1901">Dead Room</a> by Shadow5973</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1922">Vigil Suite</a> by Bloodsong</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1925">Estate Dormitory</a> by BlackPhi</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Props.2FPlaceables">Props/Placeables</span></h2>
+<h4><span class="mw-headline" id=".232_-_Prop_Model_contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%202%20-%20Prop%20Model" title="Community Contest 2: Prop Model">#2 - Prop Model contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots, desriptions and Judges' comments</i>
+</p><p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1720">Ornate Fountain</a> by mikemike37 - <b>1st place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1739">Maz-Ti Temple</a> by Calydon - <b>2nd place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1738">Crates</a> by Princecorg - <b>3rd place</b></li></ul>
+<h2><span class="mw-headline" id="Characters.2FNPCs">Characters/NPCs</span></h2>
+<h4><span class="mw-headline" id=".233_-_Character_contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%203%20-%20Character%20Contest" title="Community Contest 3: Character Contest">#3 - Character contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots, descriptions and Judges' comments</i>
+</p><p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1819">Ratha</a> by Jackkel Dragon and DahliaLynn - <b>1st place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1821">Knives</a> by Vaylise - <b>2nd place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1827">Saarebas</a> by uberdowzen - <b>3rd place</b></li></ul>
+<p><br />
+</p>
+<h4><span class="mw-headline" id=".233_mini_-_Head_morph_mini-contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%203%20mini%20-%20Head%20Morph" title="Community Contest 3 mini: Head Morph">#3 mini - Head morph mini-contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots and descriptions</i>
+</p><p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Granny Rockbottom</a> by Bloodsong Vengeance</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Ratha</a> by Jackkel Dragon</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Arbither</a> by uberdowzen</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Sin</a> by Princecorg</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Knives</a> by Vaylise</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Sinister Elf Man</a>  by mikemike37</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Amber</a> by MidnightGuardian</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Saarebas</a> by uberdowzen</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3410/#files">Katriana</a> by AmstradHero</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/bw_projects_file_download.php?project_file_id=6898">Vaelina</a> by TimelordDC</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Scripts.2FModular_packages">Scripts/Modular packages</span></h2>
+<h4><span class="mw-headline" id=".234_-_Minigame_Script"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%204%20-%20Minigame%20Script" title="Community Contest 4: Minigame Script">#4 - Minigame Script</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots and descriptions</i>
+</p><p>(no bundle available)
+</p><p><b>Entries:</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1850">Weighted RPS by Mengtzu</a> - <b>1st Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1869">The Cranky Harem by TimelordDC</a> - <b>2nd Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1860">The Doors of Death by Lobo</a> - <b>3rd Place</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1859">Nug Chase by Bloodsong</a> - <b>Best Newcomer</b></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1863">Assembly</a> by mikemike37</li></ul>
+<h2><span class="mw-headline" id="Equipment">Equipment</span></h2>
+<h4><span class="mw-headline" id=".236_Equipment_Contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%206%20-%20Equipment%20Contest" title="Community Contest 6: Equipment Contest">#6 Equipment Contest</a></span></h4>
+<p><i>Please see the Contest page (above) for screenshots and descriptions</i>
+</p><p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<p><b>weapon models</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1970">Crow &amp; Crane</a> by Adonnay - 1st Place</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1989">HjorrMikill</a> by Nattfodd - 2nd Place</li>
+<li> Fenod's Weapons - 3rd Place</li></ul>
+<dl><dd><ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2018">Lunacy (dagger)</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2017">Dreadscale (Battleaxe)</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2016">Deadweight (Maul)</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2015">Barbarous Mace</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2014">Bonemaw</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2013">Malice (Dagger)</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2012">Pestilence</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2011">Lament</a></li></ul></dd></dl>
+<ul><li> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=2020">Knotwood Staff</a> by Helekanalaith - Best Newcomer</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2038">Dagger of Ashyera's Cult</a> by Gisle Aune</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1957">Warhammer</a> by mikemike37</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2007">Cudgel</a> by BlackPhi</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2009">Lightsaber</a> by InBleedingRapture</li></ul>
+<p><b>armour retextures</b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1988">Mage Helm</a> by BlackPhi - 1st Place</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2005">The Valorous</a> by Vaylise - 2nd Place</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Modules">Modules</span></h2>
+<h4><span class="mw-headline" id=".237_Addin_Module_Contest"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%207%20-%20Module%20Contest" title="Community Contest 7: Module Contest">#7 Addin Module Contest</a></span></h4>
+<p><b>Bundle:</b> (contains all entries in a playable format)
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Contest Bundle</a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2535">Spiders and Knives</a> by BlackPhi</li>
+<li> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2563">Eye and Shadow</a> by Mengtzu</li></ul>

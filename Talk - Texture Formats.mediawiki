@@ -1,0 +1,8 @@
+<p>To be clear. 
+A 'black and white normal map' is actually a 'displacement map.' I think it's confusing that you call a b&amp;w texture, that fakes geometry height, a 'normal map' and
+a RGB texture, that fakes geometry height and position, a 'RGB normal map'. B&amp;W = displacement. RGB = normal  <i>-Freebeers</i>
+</p>
+<ul><li>No its actually a normal map too. Its a normal map because it stores normals. That some are colorful, others are not is of no matter. Its just grey because of different channel assignment. I think the descriptions RGB and B&amp;W could get a workover. RGB is the standard format. B&amp;W is the Bioware format. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 06:09, 8 February 2010 (UTC)</li></ul>
+<h2><span class="mw-headline" id="Specular_Maps">Specular Maps</span></h2>
+<p>It appears to me that the specular map RGB channels are not 3 unrelated maps as implied by the 4 packed-maps descriptin, but instead simply control the color of the specular highlight. The alpha seems to control the intensity of the highlight. Can anyone else confirm or rebuke that based on their experience/experiments? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nezroy" title="User:Nezroy (page does not exist)">Nezroy</a> 15:40, 26 March 2010 (UTC)
+</p>

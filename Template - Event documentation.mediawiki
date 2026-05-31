@@ -1,0 +1,58 @@
+<p>This template produces the standard formatting in the first part of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Event%20types" title="Category:Event types">Event types</a> articles. The following is a comprehensive set of all the possible parameters for this template; feel free to delete the unused parameters when using it in an article for tidiness. The various parameter types have higher number ranges than just those shown here, for example you can use up to <code>int6name</code> and <code>int6desc</code>, but since they're not common they weren't included in the template.
+</p>
+<dl><dt> sortkey&#160;</dt>
+<dd> An optional parameter, this controls how the event is sorted in categories. Omit the "EVENT_TYPE_" part of the page's title.</dd>
+<dt> when&#160;</dt>
+<dd> This parameter is for a simple prose description of the situation in which the event is fired.</dd>
+<dt> from&#160;</dt>
+<dd> What's the source of this event? Usually <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine" title="Engine (page does not exist)">engine</a> or a script name.</dd>
+<dt> to&#160;</dt>
+<dd> What resource types receive this event? Put notes on special conditions here.</dd>
+<dt> tocategory1 through tocategory5&#160;</dt>
+<dd> This is split into multiple parameters and used to generate categories, put one resource type in each to# parameter. </dd></dl>
+<p>You can omit a particular variable from the example code by not setting its corresponding name parameter. For example, if an event has both <code>object0</code> and creator as the "attacker", you can omit the creator from the example code by not setting <code>creatorname</code>.
+</p>
+<pre>
+{{event
+|sourcefile    =
+|sourcemodule  =
+|sortkey       =
+|when          =
+|from          =
+|to            =
+|tocategory1   =
+|tocategory2   =
+|creatorname   =
+|creatordesc   =
+|targetname    =
+|targetdesc    =
+|int0name      =
+|int0desc      =
+|int1name      =
+|int1desc      =
+|int2name      =
+|int2desc      =
+|float0name    =
+|float0desc    =
+|float1name    =
+|float1desc    =
+|float2name    =
+|float2desc    =
+|string0name   =
+|string0desc   =
+|string1name   =
+|string1desc   =
+|string2name   =
+|string2desc   =
+|object0name   =
+|object0desc   =
+|object1name   =
+|object1desc   =
+|object2name   =
+|object2desc   =
+|location0name =
+|location0desc =
+|location1name =
+|location1desc =
+}}
+</pre>

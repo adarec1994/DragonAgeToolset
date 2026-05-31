@@ -1,0 +1,32 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png"><img alt="File:Leveleditor TerrainMesh Palette.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" width="653" height="599" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png 2x" /></a><div class="mw-filepage-resolutioninfo">Size of this preview: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" class="mw-thumbnail-link">653 × 599 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolution: <a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" class="mw-thumbnail-link">262 × 240 pixels</a>.</span></div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" title="Leveleditor TerrainMesh Palette.png">Original file</a> &#8206;<span class="fileInfo">(667 × 612 pixels, file size: 262 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>Add a new terrain mesh material
+</p>
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png">15:26, 11 December 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png"><img alt="Thumbnail for version as of 15:26, 11 December 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fe/Leveleditor_TerrainMesh_Palette.png" width="120" height="110" /></a></td><td>667 × 612 <span style="white-space: nowrap;">(262 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Swedish%20elk" class="new mw-userlink" title="User:Swedish elk (page does not exist)">Swedish elk</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Swedish%20elk" title="User talk:Swedish elk (page does not exist)">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FSwedish_elk" title="Special:Contributions/Swedish elk">contribs</a>)</span></span></td><td dir="ltr">Add a new terrain mesh material</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following page links to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20Mesh%20Materials" title="Terrain Mesh Materials">Terrain Mesh Materials</a></li>
+</ul>
+</div>

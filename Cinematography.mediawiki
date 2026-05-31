@@ -1,0 +1,16 @@
+<p>Dragon Age is an RPG, so story-telling elements often play a significant part of adventures built in it. One of the keys to enhancing the impact of the story you're telling is good cinematography.
+</p>
+<h2><span class="mw-headline" id="Conversations"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></span></h2>
+<p>Each line of a conversation is a miniature cutscene in its own right, and can be edited with the cutscene editor for fine control if needed. Most lines will likely not need such treatment, however. You can instead use a variety of options in the conversation editor to animate the characters and generate a facial performance to match their voice over.
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li></ul>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice over">Voice over</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul>
+<h2><span class="mw-headline" id="Stages"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stages</a></span></h2>
+<p>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">stage</a> is a bundle of defined character positions and camera positions that can be referenced by conversations to make it easier to create decent cinematography quickly.
+</p><p>Stages can be intended for use with a single conversation or cutscene, or they can be made more "generic" and used in multiple different situations.
+</p>
+<h2><span class="mw-headline" id="Cutscenes"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscenes</a></span></h2>
+<p>The cutscene editor for Dragon Age is extremely powerful and flexible, allowing all sorts of actions and effects not normally possible with the game engine in play.
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li></ul>

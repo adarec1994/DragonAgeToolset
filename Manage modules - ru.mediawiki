@@ -1,0 +1,101 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Управление модулями</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Manage_modules/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Модули
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> </li>
+<li><strong class="selflink">Управление модулями</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module%20-%20ru" title="Feature request: Deleting a module/ru">Удаление модуля</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Экспорт модуля</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Cтартовая локация</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Архив для игрока</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder%20-%20ru" title="Builder to builder/ru">Архив для разработчика</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Новый модуль и DLC</a></li></ul>
+<dl><dd><small>Обеспечение совместимости между новым модулем и официальными DLC</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events%20-%20ru" title="Category:Module events/ru (page does not exist)">События модуля</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events" title="Category:Module events">(en)</a></li></ul>
+<dl><dd><small>Категория, содержащая описания и параметры событий модуля</small></dd></dl>
+</td></tr></table>
+<p>Команда "Manage modules" используется для переключения между <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">модулями</a>, для <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">создания модулей</a>, и для изменения свойств модулей.
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20menu%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/60px-Module_menu_command.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/90px-Module_menu_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Module_menu_command.png/120px-Module_menu_command.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Откройте окно управления модулями (Manage Modules)
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20manage%20module%20window.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png" width="96" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7c/Module_manage_module_window.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Затем нажмите кнопку "New" для создания модуля
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id=".D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Настройки модуля</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties%20general.PNG"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Module_properties_general.PNG" width="106" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Module_properties_general.PNG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Module_properties_general.PNG 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Общие
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties%20info.PNG"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Module_properties_info.PNG" width="80" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Module_properties_info.PNG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Module_properties_info.PNG 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Информация
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:23px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Module%20properties%20other.PNG"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7f/Module_properties_other.PNG" width="120" height="104" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7f/Module_properties_other.PNG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7f/Module_properties_other.PNG 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Другие
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>От параметров настройки <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">модуля</a> зависит, как игра будет реагировать на него. Модуль должен обязательно стартовые условия, при которых он запускается. Этими условиями являются "Script", "Starting Area", "Starting Waypoint".
+</p>
+<h3><span class="mw-headline" id=".D0.9E.D1.82.D0.B4.D0.B5.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D0.BA.D0.B0.D0.BC.D0.BF.D0.B0.D0.BD.D0.B8.D1.8F">Отдельная кампания</span></h3>
+<ul><li>Выберите свой модуль в списке модулей.</li>
+<li>Нажмите на кнопку "Properties".</li>
+<li>Свойство "Script" определяет, какой скрипт будет обрабатывать события модуля, например его запуск. Это свойство должно быть установлено как "module_core" или ваш скрипт.</li>
+<li>Свойства "Starting Area" и "Starting Waypoint" определяет с какой локации начинается кампания. Может быть любой созданной вами локацией.</li></ul>
+<p>Указанный вами скрипт запускается и обрабатывает все события после запуска игры и является обязательным для старта новой кампании, также как и стартовые локации и точки входа.
+</p>
+<h3><span class="mw-headline" id=".D0.A0.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D0.B5">Расширение</span></h3>
+<ul><li>Выберите свой модуль в списке модулей.</li>
+<li>Нажмите на кнопку "Properties".</li>
+<li>В свойстве "Script" должен быть установлен либо пустой скрипт, либо ваш.</li>
+<li>Очистите свойства "Starting Area" и "Starting Waypoint".</li>
+<li>В свойстве "Extended Module" укажите модуль, расширение которого вы хотите сделать.</li></ul>
+<p>По умолчанию стартовые локации и точка входа не установлены, что и нужно для создания модуля, расширяющего другой существующий модуль. 
+</p><p>Наиболее простой способ изменить существующие ресурсы является замена оригинального контента игры, но этого стоит избегать. Более сложным методом, но и более правильным(так как позволяет не изменять оригинальные ресурсы игры), является использование <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">PRCSCR</a> скриптов. Этот скрипт может размещать ресурсы, новые точки входа на карте, запускать другие скрипты и многое другое. Этот же метод использует и Bioware при создании своих DLC. 
+</p>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99%;"><div style="text-align:center;"><b>Обратите внимание:</b></div>
+<p>Используя тулсет версии 1.01 и игры версии 1.02b, вы не должны использовать скрипт "module_core" в качестве скрипта модуля, если ваш модуль является расширением другого модуля, в противном случае вы столкнётесь с проблемами в диалогах и распределением атрибутов.  Источник проблемы неизвестен, но использование чистого скрипта с пустой главной функцией устраняет её.
+</p>
+</div>
+<p>Детальное описание свойств модуля вы найдёте в статье <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

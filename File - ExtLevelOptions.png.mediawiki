@@ -1,0 +1,55 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png"><img alt="File:ExtLevelOptions.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png" width="631" height="409" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png" title="ExtLevelOptions.png">ExtLevelOptions.png</a> &#8206;<span class="fileInfo">(631 × 409 pixels, file size: 16 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>A screen shot of the options used for exterior levels for bug reproduction.
+</p>
+<table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td> 1008
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td> level
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td> Unknown
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png">05:23, 13 November 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png"><img alt="Thumbnail for version as of 05:23, 13 November 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/ExtLevelOptions.png" width="120" height="78" /></a></td><td>631 × 409 <span style="white-space: nowrap;">(16 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard" class="mw-userlink">Languard</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Languard" title="User talk:Languard">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FLanguard" title="Special:Contributions/Languard">contribs</a>)</span></span></td><td dir="ltr">A screen shot of the options used for exterior levels for bug reproduction.</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following page links to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Lighting" title="Talk:Lighting">Talk:Lighting</a></li>
+</ul>
+</div>

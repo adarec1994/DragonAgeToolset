@@ -1,0 +1,12 @@
+<p>The material in this section is about technical features underlying the toolset, not normally important for routine usage.
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">List of file types</a> - currently just a list of file format extensions.</li></ul>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database" title="Database">Database</a> - database schema and other related information.
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20migration" title="Database migration">Database migration</a> - instructions for how to update your database when updating your toolset</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore" title="Database backup and restore">Database backup and restore</a> - How to back up or restore the EUTS database</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20sharing" title="Database sharing">Database sharing</a> - How to share a database between two or more developers</li></ul></li>
+<li>Manuals
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exterior%20Level%20Manual" title="Exterior Level Manual">Exterior Level Manual</a> - Manual on the exterior level editor</li></ul></li></ul>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20Save%20Values" title="Character Save Values">Character Save Values</a> - values and structures that can be found inside a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAS" title="DAS">DAS</a> (savegame) file.</li></ul>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Console" title="Console">Console</a> - a window for entering console commands. Caution, some of these were intended for internal use and may crash the toolset when used in its current state.</li></ul>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Release%20notes" title="Release notes">Release notes</a></li></ul>

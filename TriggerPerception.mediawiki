@@ -1,0 +1,17 @@
+<p>Makes a creature be perceived as long as its within the outer perception radius
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> TriggerPerception(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPerceivingCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPerceivedCreature<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oPerceivingCreature<dd>The creature that will see another creature<dt style="font-weight:normal; font-style:italic;">oPerceivedCreature<dd>The creature that is being seen
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the creature is percieved, FALSE otherwise
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This command goes beyond the normal AI perception ring, but will return false if the creature to be perceived is dead, the same as the perceiving creature or beyond the visual radius (about 60m).
+</p>

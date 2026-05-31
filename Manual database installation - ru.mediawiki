@@ -1,0 +1,126 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Ручная установка базы данных</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/Manual_database_installation/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>"Тихая" установка MSSQL Server Express 2005, интегрированного в программу установки тулсета, является одним из основных источников сбоев при установке и появления ошибки подключения, известной также как "Unable to connect to the database". Если другие методы устранения такой неполадки не прошли, то выходом может стать ручная установка SQL сервера. Также ручная установка SQL сервера позволяет использовать другие версии серверов (однако следует принимать во внимание то, что BioWare проверяли тулсет только на совместимость с MSSQL Server Express 2005, хотя пользователи сообщают о его совместимости и с версией 2008). 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_MSSQL_Server_Express_2005"><span class="tocnumber">1</span> <span class="toctext">Установка MSSQL Server Express 2005</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_SQL_Server_Management_Studio_Express"><span class="tocnumber">2</span> <span class="toctext">Установка SQL Server Management Studio Express</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#SQL_Server_Management_Studio_Express_-_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D1.8B.D0.B5_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B"><span class="tocnumber">2.1</span> <span class="toctext">SQL Server Management Studio Express - возможные проблемы</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D0.BD.D0.B0_64-.D1.85_.D0.B1.D0.B8.D1.82.D0.BD.D1.8B.D0.B5_.D1.81.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D1.8B"><span class="tocnumber">2.1.1</span> <span class="toctext">Установка на 64-х битные системы</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#.D0.9E.D1.88.D0.B8.D0.B1.D0.BA.D0.B0_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D1.8F_.D0.BA_.3Ccomputername.3E.5CBWDATOOLSET_.D0.BF.D1.80.D0.B8_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B5_SQL_Server_Management_Studio_Express"><span class="tocnumber">2.1.2</span> <span class="toctext">Ошибка подключения к &lt;computername&gt;\BWDATOOLSET при запуске SQL Server Management Studio Express</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B1.D0.B0.D0.B7.D1.8B_.D1.81_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0.D0.BC.D0.B8_.D0.B4.D0.BB.D1.8F_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.28bw_dragonage_content.29"><span class="tocnumber">3</span> <span class="toctext">Создание базы с ресурсами для тулсета (bw_dragonage_content)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.D0.B4.D0.BB.D1.8F_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BD.D0.BE.D0.B2.D0.BE.D0.B9_.D0.B1.D0.B0.D0.B7.D1.8B"><span class="tocnumber">4</span> <span class="toctext">Настройка тулсета для использования новой базы</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_MSSQL_Server_Express_2005">Установка MSSQL Server Express 2005</span></h2>
+<p>Первым делом необходимо найти дистрибутив. 
+Вот официальная страница с информацией о [<a rel="nofollow" class="external text" href="http://www.microsoft.com/Sqlserver/2005/en/us/express.aspx">SQL Server Express</a>].
+</p><p><b>Внимание:</b> 
+Если установка не удаётся из-за проблем с MSXML6, то перейдите по адресу <a rel="nofollow" class="external free" href="http://support.microsoft.com/kb/968749">http://support.microsoft.com/kb/968749</a> и скачайте утилиту Windows Installer CleanUp для удаления MSXML6.
+</p>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99%;"><div style="text-align:center;"></div>
+<p><b>Возможная проблема для пользователей Windows XP SP3:</b> В SP3 интегрирована своя версия MSXML6, которая конфликтует с MSXML6, включённому в установщик SQL Express 2005. Причём даже Windows Installer CleanUp не сможет удалить его. 
+</p><p><b>Решение:</b> Сделайте откат системы до SP2, установите SQL Express 2005, переустановите SP3 (займёт много времени и возможно проблемы с другими программами, но для решения нашей задачи срабатывает) Как альтернативный вариант - можно установить SQL Express 2008. Он также во время установки выдаёт предупреждение о MSXML6, но в отличие от 2005 не изменяет установки.
+</p>
+</div>
+<p>В соответствии с вашей системой, скачайте 32-х или 64-х битную версию установщика со страницы <a rel="nofollow" class="external free" href="http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx">http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx</a>
+</p><p>Запустите установку и в процессе установки оставляйте все опции по умолчанию. Имя серверу можете дать любое (по умолчанию тулсет использует имя "BWDATOOLSET").
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_SQL_Server_Management_Studio_Express">Установка SQL Server Management Studio Express</span></h2>
+<p>После установки SQL Express 2005 всё управление и настройка сервера осуществляется посредством командной сроки. Однако для удобства управления сервером Microsoft предоставляет бесплатное приложение SQL Server Management Studio Express (далее SSMSE), имеющее мощный и удобный графический интерфейс  Скачать его можно по следующим ссылкам:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796">http://www.microsoft.com/downloads/details.aspx?FamilyId=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx">http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx</a> (там же где и сам SQL Express 2005)</li></ul>
+<p>Установите SSMSE, опять же в процессе установки выбирая опции по умолчанию.
+</p>
+<h3><span class="mw-headline" id="SQL_Server_Management_Studio_Express_-_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D1.8B.D0.B5_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">SQL Server Management Studio Express - возможные проблемы</span></h3>
+<h4><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D0.BD.D0.B0_64-.D1.85_.D0.B1.D0.B8.D1.82.D0.BD.D1.8B.D0.B5_.D1.81.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D1.8B">Установка на 64-х битные системы</span></h4>
+<p>В Windows Vista и Windows 7 может произойти ошибка "29506 SSMSE не может изменить права базы данных". Попробуйте следующее:
+</p>
+<ul><li> Сохраните SQLServer2005_SSMSEE.msi на <b>C:\</b>.</li>
+<li> Запустите командную строку от имени администратора.</li>
+<li> Перейдите в "C:\" набрав "cd \" (Enter). Путь должен выглядеть как "C:\&gt;".</li>
+<li> Наберите "SQLServer2005_SSMSEE.msi" (Enter) и установка пойдёт без проблем.</li></ul>
+<p>В качестве альтернативы можно попробовать запустить установщик SQL Server Management Studio Express от имени администратора (контекстное меню).
+</p>
+<h4><span class="mw-headline" id=".D0.9E.D1.88.D0.B8.D0.B1.D0.BA.D0.B0_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D1.8F_.D0.BA_.3Ccomputername.3E.5CBWDATOOLSET_.D0.BF.D1.80.D0.B8_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B5_SQL_Server_Management_Studio_Express">Ошибка подключения к &lt;computername&gt;\BWDATOOLSET при запуске SQL Server Management Studio Express</span></h4>
+<div class="center"><div class="floatnone"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20cant%20connect.png"><img alt="Management studio cant connect.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/38/Management_studio_cant_connect.png" width="611" height="197" /></a></div></div>
+<p>Это может быть следствием неудачной установки, или неполного удаления временных файлов установки. Закройте сообщение и вернитесь к выбору имени сервера (выпадающее меню "Server Name"). Проверьте доступные сервера или выберите опцию "Browse for more". Если SQL Server вы устанавливали вручную, возможно сервер называется "SQLEXPRESS", попробуйте найти его и подключиться.
+</p><p>Если это не сработает, то поищите возможные решения по адресу <a rel="nofollow" class="external free" href="http://go.microsoft.com/fwlink?ProdName=Microsoft+SQL+Server&amp;EvtSrc=MSSQLServer&amp;EvtID=-1&amp;LinkId=20476">http://go.microsoft.com/fwlink?ProdName=Microsoft+SQL+Server&amp;EvtSrc=MSSQLServer&amp;EvtID=-1&amp;LinkId=20476</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B1.D0.B0.D0.B7.D1.8B_.D1.81_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0.D0.BC.D0.B8_.D0.B4.D0.BB.D1.8F_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.28bw_dragonage_content.29">Создание базы с ресурсами для тулсета (bw_dragonage_content)</span></h2>
+<p>Итак, вы установили SSMSE, теперь можно создать базу данных, содержащую ресурса Dragon Age для тулсета, называемую <b>bw_dragonage_content</b>.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20new%20database.png"><img alt="Management studio new database.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Management_studio_new_database.png" width="300" height="229" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Management_studio_new_database.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Management_studio_new_database.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20new%20database.png" title="Enlarge"></a></div></div></div></div></div>
+<p>Вместе с тулсетом поставляется резервный .bak-файл базы данных, он находится по адресу: <b>C:\Program Files\Dragon Age\tools\dbbak\bw_dragonage_content.bak</b>, данные из которого и надо загрузить в нашу новую базу данных "bw_dragonage_content".
+</p><p><b>Примечание:</b> Если вы хотите создать пустую базу данных с нули, то смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database#Creating_a_blank_database_from_scratch.2Fru" title="Database">Создание пустой базы данных с нуля</a>. Однако, как правило, это не требуется.
+</p><p>Для восстановления (то есть загрузки в базу данных из резервного файла bw_dragonage_content.bak) данных используйте опять же SSMSE:
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:36.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20restore%20database%20command.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Management_studio_restore_database_command.png" width="120" height="77" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Management_studio_restore_database_command.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Management_studio_restore_database_command.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Выберите "Restore database"
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20restoring%20database%20backup.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Management_studio_restoring_database_backup.png/119px-Management_studio_restoring_database_backup.png" width="119" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Management_studio_restoring_database_backup.png/178px-Management_studio_restoring_database_backup.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Management_studio_restoring_database_backup.png/237px-Management_studio_restoring_database_backup.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Выберите .bak-файл как источник восстановления
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:21px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Management%20studio%20overwrite%20option.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3b/Management_studio_overwrite_option.png" width="120" height="108" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3b/Management_studio_overwrite_option.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3b/Management_studio_overwrite_option.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Отметьте "Overwrite existing database" в секции "Restore options"
+</p>
+			</div>
+		</div></li>
+</ul>
+<p><b>Внимание</b>: Проверьте результаты проделанной работы"! У вас должны появиться файлы <b>bw_dragonage_content.ldf</b> и <b>bw_dragonage_content.mdf</b>. В зависимости от места установки тулсета и игры они должны быть по одному из следующих путей:
+</p>
+<ul><li>C:\Program Files\Dragon Age\tools\toolssql\Data\ &lt;--- версия 1.00 устанавливается в папке "Tools"</li>
+<li>C:\Program Files\DAODB\ &lt;--- путь установки для версии 1.01</li></ul>
+<p>В редких случаях возможны проблемы и вы не сможете найти эти файлы по указанным путям, попробуйте использовать поиск, возможно они записались в другом месте. 
+</p><p>Если же они не были созданы, то возможно вам придется повторить процесс восстановления.
+</p>
+<h2><span class="mw-headline" id=".D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.D0.B4.D0.BB.D1.8F_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BD.D0.BE.D0.B2.D0.BE.D0.B9_.D0.B1.D0.B0.D0.B7.D1.8B">Настройка тулсета для использования новой базы</span></h2>
+<p>В папке "Dragon Age\tools\" есть программка, называемая "ConfigureToolset.exe". Запустите её и нажимайте "Next", пока не увидите следующую картинку:
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Configure%20toolset%20database%20selection%20window.png"><img alt="Configure toolset database selection window.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Configure_toolset_database_selection_window.png" width="300" height="311" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Configure_toolset_database_selection_window.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/dd/Configure_toolset_database_selection_window.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Configure%20toolset%20database%20selection%20window.png" title="Enlarge"></a></div></div></div></div></div>
+<p>В этом окне вы сможете выбрать базу данных, которую должен использовать тулсет.
+</p><p>Текущая версия ConfigureToolset(тулсет версии 1.01) не может устанавливать значения ключейв реестра, что необходимо тулсету для того, чтобы найти базу. Необходимо установить нужный ключ реестра вручную. Ключ, который необходимо обновить называется "DefaultDatabaseConnection" и находится по адресу:
+</p>
+<pre>
+HKEY_LOCAL_MACHINE\SOFTWARE\BioWare\Dragon Age\Toolset\Environment
+</pre>
+<p>Измените его в соответствии со значениями, указанными на предыдущем шаге в ConfigureToolset. Редактируйте только <b>Source</b>(Server Name) и  <b>Initial_Catalog</b>(database). Для примера настройками по умолчанию являются:
+</p>
+<pre>
+Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\BWDATOOLSET
+</pre>
+<p>Смотрите также  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ConfigureToolset%20application%20fails%20to%20set%20a%20registry%20key%20-%20ru" title="Bug: ConfigureToolset application fails to set a registry key/ru">Ошибка: ConfigureToolset не устанавливает ключи реестра</a>.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation" title="Manual database installation">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

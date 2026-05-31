@@ -1,0 +1,32 @@
+<p>Creating a mat file is not required as you should be able to find one, already defined, which suits your needs. 
+</p><p>A material definition tells the renderer exactly what to do with the textures passed to it. To be overly simplistic, it says "Mister graphics card, here is a texture, print it on the geometry like so. Here is another one, do this and that with it." In each material there is a hierarchy of sets of instructions. If a graphics card can not do a certain task, the material will go down its list until it can find a set of instructions the card CAN do and pass them that. If the material was not given a certain piece of information, say a texture or a set of texture coordinates, it will go down the list until it finds a set of instructions which need only what was given. In most (possible all) cases, required textures have a specified default texture which is used when no appropriate texture is specified in an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> file.
+</p><p>In each material, Parameters of the type Texture define which textures are used when rendering that material. If you open up a material you will find lines like:
+</p>
+<pre>&lt;Parameter Type = "Texture" Name = "mml_tLightmap" SamplerName = "smpLightmap" Default = "Default_black"/&gt;</pre>
+<p>and
+</p>
+<pre>&lt;Parameter Type = "Texture" Name = "mml_tDiffuse" SamplerName = "smpDecal" Default = "Default_Missing"/&gt;</pre>
+<p>These are used with texture definitions in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> files do determine which texture file is used.
+</p><p>In each material definition there are different sets of instructions defined within Semantic tags. In an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">MAO</a> file, the default semantic definition tells the material which set of instructions to start trying to use.
+</p><p>The default material definition used in the material editor is prop.mat. The highest level of rendering has these required streams of data from the model:
+</p>
+<pre>
+&lt;RequiredStreamData Name = "POSITION"/&gt;
+&lt;RequiredStreamData Name = "NORMAL"/&gt;
+&lt;RequiredStreamData Name = "TEXCOORD0"/&gt;
+&lt;RequiredStreamData Name = "BINORMAL"/&gt;
+&lt;RequiredStreamData Name = "TANGENT"/&gt;
+</pre>
+<p>This means it needs vertex coordinates, normals, bi-tangents,tangents and uv coodinates. The required textures, if not provided have default settings, however these streams can not have default settings. If the model were missing any one of these streams of data, the material would default to a lower set of instructions. Mind you, I don't think a model could compile without those pieces of information but that isn't the point.
+If you were to look in a different material definition, say static.mat, you would find that these streams are required:
+</p>
+<pre>
+&lt;RequiredStreamData Name = "POSITION"/&gt;
+&lt;RequiredStreamData Name = "NORMAL"/&gt;
+&lt;RequiredStreamData Name = "TEXCOORD0"/&gt;
+&lt;RequiredStreamData Name = "TEXCOORD1"/&gt;
+&lt;RequiredStreamData Name = "BINORMAL"/&gt;
+&lt;RequiredStreamData Name = "TANGENT"/&gt;
+</pre>
+<p>Notice that it requires two sets of texture (uv) coordinates. In fact, all levels except the very lowest set of instructions require two sets of uv coordinates, meaning that if there was only one set, it would default to this basic, do almost nothing set of instructions.
+</p>

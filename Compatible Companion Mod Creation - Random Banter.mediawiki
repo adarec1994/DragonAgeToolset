@@ -1,0 +1,108 @@
+<p>The <b>Random Banter</b> step describes how to integrate your custom companion into the random banter system.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_we_need"><span class="tocnumber">1</span> <span class="toctext">What we need</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#valeria_random_banters.nss"><span class="tocnumber">2</span> <span class="toctext">valeria_random_banters.nss</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Changes_in_valeria_event_handler"><span class="tocnumber">3</span> <span class="toctext">Changes in valeria_event_handler</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Structure_of_the_file_valeria_random_banter.dlg"><span class="tocnumber">4</span> <span class="toctext">Structure of the file valeria_random_banter.dlg</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="What_we_need">What we need</span></h2>
+<p>A dialog resource, say "valeria_random_banter.dlg", a script "valeria_random_banters.nss" and a plot "valeria_random_banters"
+</p><p>You  will notice that they are done in order of appearance in the .dlg file.  Of course one can change that. Meaning if Alistair is in the party, all his  banters will go through first, then Morrigan, then Leliana, etc, the way  I had them in my file. To change that you can add a random chance to see if you initiate dialog with the party member.(see the script below, it is trivial)
+</p>
+<h2><span class="mw-headline" id="valeria_random_banters.nss">valeria_random_banters.nss</span></h2>
+<p>First  create this script. You can see what flags you need in  plt_valeria_random_banters below (basically a flag for each companion  you want Valeria to banter with). Alternatively, you can use the core  plots to check who is in the party, but I find this more efficient,  since we got full control over the script and plot resource.
+</p><p>//file valeria_random_banters.nss
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;plt_valeria_random_banter&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a>  main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> i;
+&#160;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, ALISTAIR_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, MORRIGAN_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, LELIANA_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, WYNNE_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, ZEVRAN_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, DOG_IN_PARTY, FALSE<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> <span class="br0">&#91;</span><span class="br0">&#93;</span> arParty <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPartyList"><span class="kw4">GetPartyList</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSize <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> which<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Random"><span class="kw4">Random</span></a><span class="br0">&#40;</span>nSize<span class="br0">&#41;</span><span class="sy0">+</span><span class="nu0">1</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_alistair&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, ALISTAIR_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_morrigan&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, MORRIGAN_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_leliana&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, LELIANA_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_wynne&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, WYNNE_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_zevran&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, ZEVRAN_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_dog&quot;</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, DOG_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&#160;
+&#160;
+<span class="co1">//to add a random chance for the party member to banter with Valeria you can simply change</span>
+...
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>which<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;gen00fl_dog&quot;</span> <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Random"><span class="kw4">Random</span></a><span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy0">==</span><span class="nu0">1</span><span class="br0">&#41;</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_RANDOM_BANTER, DOG_IN_PARTY, TRUE<span class="br0">&#41;</span>;
+...</pre></div></div>
+<p>This  way it won't circle through all the banters of Alistair, then Morrigan's etc, but it will skip them with some probability (90%). This  means the probability of an actual banter starting is .0025*.1=.00025  (1/400=.0025).
+</p>
+<h2><span class="mw-headline" id="Changes_in_valeria_event_handler">Changes in valeria_event_handler</span></h2>
+<p>I'll do this structure again(last time), the rest will be the same:
+</p><p>In 'includes' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> valeria_banter<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>In 'body' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">//valeria banter: run this only if valeria is in active party</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_IN_PARTY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        valeria_banter<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>In 'functions' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> valeria_banter<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> i;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Random"><span class="kw4">Random</span></a><span class="br0">&#40;</span><span class="nu0">400</span><span class="br0">&#41;</span><span class="sy0">!=</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="co1">//1 in 400 chance to start banter</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatState"><span class="kw4">GetCombatState</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="co1">//don't start if in combat</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> arParty <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPartyList"><span class="kw4">GetPartyList</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nSize <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nSize<span class="sy0">&lt;=</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="co1">//if only valeria and the PC no banter</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a><span class="br0">&#40;</span>i<span class="sy0">=</span><span class="nu0">0</span>;i<span class="sy0">&lt;</span>nSize;i<span class="sy0">++</span><span class="br0">&#41;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearAmbientDialogs"><span class="kw4">ClearAmbientDialogs</span></a><span class="br0">&#40;</span>arParty<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oval<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>;
+    UT_Talk<span class="br0">&#40;</span>oval,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,R<span class="st0">&quot;valeria_random_banter.dlg&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="Structure_of_the_file_valeria_random_banter.dlg">Structure of the file valeria_random_banter.dlg</span></h2>
+<p>Everything should be set to AMBIENT. First notice where we call the random_banter_script.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters1.JPG" title="random_banter_script"><img alt="random_banter_script" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Banters1.JPG" width="200" height="118" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Banters1.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Banters1.JPG 2x" /></a>
+</p><p>Now,  notice how we structure all the npc's we want Valeria to banter with.  First is Alistair, if he's in the party, and so forth.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters3.JPG" title="random_banter_script"><img alt="random_banter_script" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG" width="200" height="155" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG 2x" /></a>
+</p><p>Second is Morrigan and so forth.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters5.JPG" title="random_banter_script"><img alt="random_banter_script" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Banters5.JPG/200px-Banters5.JPG" width="200" height="129" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Banters5.JPG/300px-Banters5.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/11/Banters5.JPG/400px-Banters5.JPG 2x" /></a>
+</p><p>Notice that once a banter starts, it will never be shown again.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters3.JPG" title="random_banter_script"><img alt="random_banter_script" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG" width="200" height="155" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bd/Banters3.JPG 2x" /></a>
+</p><p>An  example with 3 NPC's (this is a dog banter with Valeria, and Zevran, if  he's in the party(notice the condition C, using the  valeria_random_banters flag) he joins in).
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banters4.JPG" title="random_banter_script"><img alt="random_banter_script" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Banters4.JPG" width="200" height="92" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Banters4.JPG 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Banters4.JPG 2x" /></a>
+</p>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Game%20Mechanics%20And%20Module%20Events" title="Game Mechanics And Module Events"><img alt="Game Mechanics And Module Events" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20End%20Game%20Slideshow" title="End Game Slideshow"><img alt="End Game Slideshow" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

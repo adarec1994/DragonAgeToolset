@@ -1,0 +1,19 @@
+<p>Performs an ability cost check to see if an ability can be used.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_CostCheck(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItem&#160;= OBJECT_INVALID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd>The caster using the ability<dt style="font-weight:normal; font-style:italic;">nAbility<dd>the ability being used<dt style="font-weight:normal; font-style:italic;">nAbilityType<dd>the ability type of that ability<dt style="font-weight:normal; font-style:italic;">oItem<dd>The item consumed to use the ability/spell (optional)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE (enough), FALSE (not enough)
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns TRUE if the caster has enough mana or stamina (depending on ability type) to use (used in ability_core)
+</p><p><br />
+</p><p><br />
+</p>

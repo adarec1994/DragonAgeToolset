@@ -1,0 +1,16 @@
+<p>The <strong class="selflink">ABI_base.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define and integrate all skills, spells, talents and item abilities in the game.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">ABI_Base</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20data%202da" title="Ability data 2da">ability_data</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20effects%202da" title="Ability effects 2da">ability_effects</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Passive%20abilities%202da" title="Passive abilities 2da">passive_abilities</a></li>
+<li> _tooltip_strings</li>
+<li> _damage_strings</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls%20-%20ru" title="ABI base.xls/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

@@ -1,0 +1,19 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Locations functions"</h2>
+<p>The following 14 pages are in this category, out of 14 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAreaFromLocation" title="GetAreaFromLocation">GetAreaFromLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetFacingFromLocation" title="GetFacingFromLocation">GetFacingFromLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation" title="GetLocation">GetLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetOrientationFromLocation" title="GetOrientationFromLocation">GetOrientationFromLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPositionFromLocation" title="GetPositionFromLocation">GetPositionFromLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetSafeLocation" title="GetSafeLocation">GetSafeLocation</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsLocationSafe" title="IsLocationSafe">IsLocationSafe</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsLocationValid" title="IsLocationValid">IsLocationValid</a></li></ul></div><div class="mw-category-group"><h3>L</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location" title="Location">Location</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocation" title="SetLocation">SetLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocationArea" title="SetLocationArea">SetLocationArea</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocationFacing" title="SetLocationFacing">SetLocationFacing</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocationOrientation" title="SetLocationOrientation">SetLocationOrientation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocationPosition" title="SetLocationPosition">SetLocationPosition</a></li></ul></div></div></div>
+</div></div>

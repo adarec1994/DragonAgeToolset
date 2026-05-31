@@ -1,0 +1,14 @@
+<p>This function sets the results of an attack
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetAttackResult(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oAttacker,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nResult1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> eDamageEffect1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nResult2,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> eDamageEffect2<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oAttacker<dd>the creature whose attack result we are storing<dt style="font-weight:normal; font-style:italic;">nResult1<dd>the main attack result (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMBAT%20RESULT" title="COMBAT RESULT *">COMBAT RESULT_*</a>)<dt style="font-weight:normal; font-style:italic;">eDamageEffect1<dd>the main attack damage effect<dt style="font-weight:normal; font-style:italic;">nResult2<dd>the offhand attack result (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMBAT%20RESULT" title="COMBAT RESULT *">COMBAT RESULT_*</a>)<dt style="font-weight:normal; font-style:italic;">eDamageEffect2<dd>the offhand attack damage effect
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

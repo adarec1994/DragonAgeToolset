@@ -1,0 +1,53 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li>
+<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG"><img alt="File:Nightmare2.JPG" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG" width="547" height="297" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG" title="Nightmare2.JPG">Nightmare2.JPG</a> &#8206;<span class="fileInfo">(547 × 297 pixels, file size: 53 KB, MIME type: <span class="mime-type">image/jpeg</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr">
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG">00:13, 30 November 2010</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG"><img alt="Thumbnail for version as of 00:13, 30 November 2010" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/Nightmare2.JPG" width="120" height="65" /></a></td><td>547 × 297 <span style="white-space: nowrap;">(53 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Idomeneas" class="new mw-userlink" title="User:Idomeneas (page does not exist)">Idomeneas</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Idomeneas" title="User talk:Idomeneas (page does not exist)">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FIdomeneas" title="Special:Contributions/Idomeneas">contribs</a>)</span></span></td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 2 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20The%20Fade" title="Compatible Companion Mod Creation/The Fade">Compatible Companion Mod Creation/The Fade</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/On%20NPC%20Mod%20Creation%20and%20Compatibility%2C%20while%20being%20the%20least%20intrusive%20to%20core%20game%20resources%20-%20ru" title="On NPC Mod Creation and Compatibility, while being the least intrusive to core game resources/ru">On NPC Mod Creation and Compatibility, while being the least intrusive to core game resources/ru</a></li>
+</ul>
+</div>
+<h2 id="metadata">Metadata</h2>
+<div class="mw-imagepage-section-metadata">This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
+If the file has been modified from its original state, some details may not fully reflect the modified file.<table id="mw_metadata" class="mw_metadata">
+<tr class="exif-artist">
+<th>Author</th>
+<td>sakis</td>
+</tr><tr class="exif-datetimeoriginal">
+<th>Date and time of data generation</th>
+<td>17:13, 29 November 2010</td>
+</tr><tr class="exif-datetimedigitized collapsable">
+<th>Date and time of digitizing</th>
+<td>17:13, 29 November 2010</td>
+</tr><tr class="exif-subsectimeoriginal collapsable">
+<th>DateTimeOriginal subseconds</th>
+<td>72</td>
+</tr><tr class="exif-subsectimedigitized collapsable">
+<th>DateTimeDigitized subseconds</th>
+<td>72</td>
+</tr></table>
+</div>

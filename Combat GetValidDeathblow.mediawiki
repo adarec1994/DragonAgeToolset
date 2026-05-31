@@ -1,0 +1,62 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+* @brief Determine a valid deathblow for the current target
+*
+* Called when the script decides to do a deathblow, this function will return
+* a DEATHBLOW_* constant representing the deathblow to use against the creature
+*
+* If the creature does not support deathblows (immunity, no animation) or can not
+* be deathblowed (Immortal, Plot, Party Member, Flagged as invalid in the toolset)
+* the function returns 0
+*
+* @param oTarget    The target for the Deathblow
+*
+* @returns  0 or DEATH_BLOW_*
+*
+* @author Georg Zoeller
+*
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetValidDeathblow<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> Combat_GetValidDeathblow<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+     <span class="co1">// ------------------------------------------------------------------------</span>
+     <span class="co1">// First, let's check if we can even perform deathblows with the attacker</span>
+     <span class="co1">// ------------------------------------------------------------------------</span>
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bCanDeathblow <span class="sy0">=</span>       CanPerformDeathblows<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+&#160;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>bCanDeathblow<span class="br0">&#41;</span>
+     <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> FALSE;
+     <span class="br0">&#125;</span>
+&#160;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nValid <span class="sy0">=</span>              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_APPEARANCE,<span class="st0">&quot;ValidDeathblows&quot;</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType"><span class="kw4">GetAppearanceType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bImmortal            <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsImmortal"><span class="kw4">IsImmortal</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bPlot                <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsPlot"><span class="kw4">IsPlot</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bCanDiePermanently   <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCanDiePermanently"><span class="kw4">GetCanDiePermanently</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bAlreadyDead         <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasDeathEffect"><span class="kw4">HasDeathEffect</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+&#160;
+      <span class="co2">#ifdef DEBUG</span>
+     Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT_DEATH</span>,<span class="st0">&quot;GetValidDeathblow&quot;</span>,<span class="st0">&quot;nValid: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nValid<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot; bImmortal: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>bImmortal<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot; bPlot:&quot;</span> <span class="sy0">+</span>
+                                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>bPlot<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot; bCanDiePermanently:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>bCanDiePermanently<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+     <span class="co2">#endif</span>
+&#160;
+     <span class="co1">// ------------------------------------------------------------------------</span>
+     <span class="co1">// If we are immortal, Plot, or can not die permanently (e.g. a party member),</span>
+     <span class="co1">// we return 0</span>
+     <span class="co1">// ------------------------------------------------------------------------</span>
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bImmortal <span class="sy0">||</span> bPlot <span class="sy0">||</span> <span class="sy0">!</span>bCanDiePermanently <span class="sy0">||</span> IsPartyMember<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">||</span> bAlreadyDead<span class="br0">&#41;</span>
+     <span class="br0">&#123;</span>
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">0</span>;
+     <span class="br0">&#125;</span>
+&#160;
+     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">1</span>;
+<span class="br0">&#125;</span></pre></div></div>

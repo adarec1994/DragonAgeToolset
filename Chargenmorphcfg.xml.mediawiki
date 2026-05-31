@@ -1,0 +1,453 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>Chargenmorphcfg.xml is the configuration file for the in-game character creator. It dictates what head <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">morph</a> presets (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MOP" title="MOP (page does not exist)">MOP</a>), hairstyles, beards, tattoos, makeup and colour tints (for skin, hair, etc.) are available as selectable options. It is located in &lt;install directory&gt;\packages\core\data\misc.erf
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#File_Structure"><span class="tocnumber">1</span> <span class="toctext">File Structure</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Section_.3Cheads.3E"><span class="tocnumber">1.1</span> <span class="toctext">Section &lt;heads&gt;</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Section_.3Chairs.3E"><span class="tocnumber">1.2</span> <span class="toctext">Section &lt;hairs&gt;</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Section_.3Cbeards.3E"><span class="tocnumber">1.3</span> <span class="toctext">Section &lt;beards&gt;</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Section_.3Cxxx_colors.3E"><span class="tocnumber">1.4</span> <span class="toctext">Section &lt;xxx_colors&gt;</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Section_.3Ctattoos.3E"><span class="tocnumber">1.5</span> <span class="toctext">Section &lt;tattoos&gt;</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Section_.3Cskins.3E"><span class="tocnumber">1.6</span> <span class="toctext">Section &lt;skins&gt;</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Mod_Conflicts"><span class="tocnumber">2</span> <span class="toctext">Mod Conflicts</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="File_Structure">File Structure</span></h1>
+<p>The contents of the default file are as follows:
+</p>
+<pre>
+﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;morph_config&gt;
+    &lt;heads&gt;
+        &lt;human_male&gt;
+            &lt;resource name="HM_CPS_P01.mop"/&gt;
+            &lt;resource name="HM_CPS_P02.mop"/&gt;
+            &lt;resource name="HM_CPS_P03.mop"/&gt;
+            &lt;resource name="HM_CPS_P04.mop"/&gt;
+            &lt;resource name="HM_CPS_P05.mop"/&gt;
+            &lt;resource name="HM_CPS_P06.mop"/&gt;
+            &lt;resource name="HM_CPS_P07.mop"/&gt;
+            &lt;resource name="HM_CPS_P08.mop"/&gt;
+            &lt;resource name="HM_PCC_B01.mop"/&gt;
+        &lt;/human_male&gt;
+        &lt;human_female&gt;
+            &lt;resource name="HF_CPS_P01.mop"/&gt;
+            &lt;resource name="HF_CPS_P02.mop"/&gt;
+            &lt;resource name="HF_CPS_P03.mop"/&gt;
+            &lt;resource name="HF_CPS_P04.mop"/&gt;
+            &lt;resource name="HF_CPS_P05.mop"/&gt;
+            &lt;resource name="HF_CPS_P06.mop"/&gt;
+            &lt;resource name="HF_CPS_P07.mop"/&gt;
+            &lt;resource name="HF_CPS_P08.mop"/&gt;
+            &lt;resource name="HF_PCC_B01.mop"/&gt;
+        &lt;/human_female&gt;
+        &lt;dwarf_male&gt;
+            &lt;resource name="DM_CPS_P01.mop"/&gt;
+            &lt;resource name="DM_CPS_P02.mop"/&gt;
+            &lt;resource name="DM_CPS_P03.mop"/&gt;
+            &lt;resource name="DM_CPS_P04.mop"/&gt;
+            &lt;resource name="DM_CPS_P05.mop"/&gt;
+            &lt;resource name="DM_CPS_P06.mop"/&gt;
+            &lt;resource name="DM_CPS_P07.mop"/&gt;
+            &lt;resource name="DM_CPS_P08.mop"/&gt;
+            &lt;resource name="DM_PCC_B01.mop"/&gt;
+        &lt;/dwarf_male&gt;
+        &lt;dwarf_female&gt;
+            &lt;resource name="DF_CPS_P01.mop"/&gt;
+            &lt;resource name="DF_CPS_P02.mop"/&gt;
+            &lt;resource name="DF_CPS_P03.mop"/&gt;
+            &lt;resource name="DF_CPS_P04.mop"/&gt;
+            &lt;resource name="DF_CPS_P05.mop"/&gt;
+            &lt;resource name="DF_CPS_P06.mop"/&gt;
+            &lt;resource name="DF_CPS_P07.mop"/&gt;
+            &lt;resource name="DF_CPS_P08.mop"/&gt;
+            &lt;resource name="DF_PCC_B01.mop"/&gt;
+        &lt;/dwarf_female&gt;
+        &lt;elf_male&gt;
+            &lt;resource name="EM_CPS_P01.mop"/&gt;
+            &lt;resource name="EM_CPS_P02.mop"/&gt;
+            &lt;resource name="EM_CPS_P03.mop"/&gt;
+            &lt;resource name="EM_CPS_P04.mop"/&gt;
+            &lt;resource name="EM_CPS_P05.mop"/&gt;
+            &lt;resource name="EM_CPS_P06.mop"/&gt;
+            &lt;resource name="EM_CPS_P07.mop"/&gt;
+            &lt;resource name="EM_CPS_P08.mop"/&gt;
+            &lt;resource name="EM_PCC_B01.mop"/&gt;
+        &lt;/elf_male&gt;
+        &lt;elf_female&gt;
+            &lt;resource name="EF_CPS_P01.mop"/&gt;
+            &lt;resource name="EF_CPS_P02.mop"/&gt;
+            &lt;resource name="EF_CPS_P03.mop"/&gt;
+            &lt;resource name="EF_CPS_P04.mop"/&gt;
+            &lt;resource name="EF_CPS_P05.mop"/&gt;
+            &lt;resource name="EF_CPS_P06.mop"/&gt;
+            &lt;resource name="EF_CPS_P07.mop"/&gt;
+            &lt;resource name="EF_CPS_P08.mop"/&gt;
+            &lt;resource name="EF_PCC_B01.mop"/&gt;
+        &lt;/elf_female&gt;
+    &lt;/heads&gt;
+    
+    &lt;hairs&gt;
+        &lt;human_male&gt;
+            &lt;resource name="hm_har_blda_0" cut="0234"/&gt;
+            &lt;resource name="hm_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="hm_har_hd4a_0" cut="0"/&gt;
+        &lt;/human_male&gt;
+        &lt;human_female&gt;
+            &lt;resource name="hf_har_blda_0" cut="02"/&gt;
+            &lt;resource name="hf_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_ha4a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="hf_har_hd4a_0" cut="1"/&gt;
+        &lt;/human_female&gt;
+        &lt;dwarf_male&gt;
+            &lt;resource name="dm_har_blda_0" cut="0234"/&gt;
+            &lt;resource name="dm_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="dm_har_hd4a_0" cut="0"/&gt;
+        &lt;/dwarf_male&gt;                           1
+        &lt;dwarf_female&gt;
+            &lt;resource name="df_har_blda_0" cut="02"/&gt;
+            &lt;resource name="df_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="df_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="df_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="df_har_ha4a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="df_har_hd4a_0" cut="1"/&gt;
+        &lt;/dwarf_female&gt;
+        &lt;elf_male&gt;
+            &lt;resource name="em_har_blda_0" cut="0234"/&gt;
+            &lt;resource name="em_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="em_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="em_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="em_har_hd4a_0" cut="0"/&gt;
+        &lt;/elf_male&gt;                             
+        &lt;elf_female&gt;
+            &lt;resource name="ef_har_blda_0" cut="02"/&gt;
+            &lt;resource name="ef_har_ha1a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_ha2a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_ha3a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_ha4a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hb1a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hb2a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hb3a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hb4a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hc1a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hc2a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hc3a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hc4a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hd1a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hd2a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hd3a_0" cut="1"/&gt;
+            &lt;resource name="ef_har_hd4a_0" cut="1"/&gt;        
+        &lt;/elf_female&gt;
+    &lt;/hairs&gt;
+    
+    &lt;beards&gt;
+        &lt;human_male&gt;
+            &lt;resource name=""/&gt;
+            &lt;resource name="hm_brd_b1a_0"/&gt;
+            &lt;resource name="hm_brd_b2a_0"/&gt;
+            &lt;resource name="hm_brd_b3a_0"/&gt;
+            &lt;resource name="hm_brd_b4a_0"/&gt;
+            &lt;resource name="hm_brd_b5a_0"/&gt;
+            &lt;resource name="hm_brd_b6a_0"/&gt;
+        &lt;/human_male&gt;
+        &lt;dwarf_male&gt;
+            &lt;resource name=""/&gt;
+            &lt;resource name="dm_brd_b1a_0"/&gt;
+            &lt;resource name="dm_brd_b2a_0"/&gt;
+            &lt;resource name="dm_brd_b3a_0"/&gt;
+            &lt;resource name="dm_brd_b4a_0"/&gt;
+            &lt;resource name="dm_brd_b5a_0"/&gt;
+            &lt;resource name="dm_brd_b6a_0"/&gt;
+        &lt;/dwarf_male&gt;      
+    &lt;/beards&gt;
+
+    &lt;hair_colors&gt;
+        &lt;resource name ="t3_har_wht"/&gt;
+        &lt;resource name ="t3_har_bln"/&gt;
+        &lt;resource name ="t3_har_dbl"/&gt;
+        &lt;resource name ="t3_har_org"/&gt;
+        &lt;resource name ="t3_har_red"/&gt;
+        &lt;resource name ="t3_har_lbr"/&gt;
+        &lt;resource name ="t3_har_rbr"/&gt;
+        &lt;resource name ="t3_har_dbr"/&gt;
+        &lt;resource name ="t3_har_blk"/&gt;
+    &lt;/hair_colors&gt;
+
+    &lt;skin_colors&gt;
+        &lt;resource name="t1_skn_001"/&gt;
+        &lt;resource name="t1_skn_002"/&gt;
+        &lt;resource name="t1_skn_003"/&gt;
+        &lt;resource name="t1_skn_004"/&gt;
+        &lt;resource name="t1_skn_006"/&gt;
+        &lt;resource name="t1_skn_005"/&gt;
+        &lt;resource name="t1_skn_007"/&gt;
+    &lt;/skin_colors&gt;
+
+    &lt;eyes_colors&gt;
+        &lt;resource name="t3_eye_ice"/&gt;
+        &lt;resource name="t3_eye_lbl"/&gt;
+        &lt;resource name="t3_eye_dbl"/&gt;
+        &lt;resource name="t3_eye_tea"/&gt;
+        &lt;resource name="t3_eye_grn"/&gt;
+        &lt;resource name="t3_eye_hzl"/&gt;
+        &lt;resource name="t3_eye_lbr"/&gt;
+        &lt;resource name="t3_eye_amb"/&gt;
+        &lt;resource name="t3_eye_dbr"/&gt;
+        &lt;resource name="t3_eye_gry"/&gt;
+        &lt;resource name="t3_eye_blk"/&gt;
+    &lt;/eyes_colors&gt;
+
+    &lt;eyes_makeup_colors&gt;
+        &lt;resource name=""/&gt;
+        &lt;resource name="t1_mue_bl1"/&gt;
+        &lt;resource name="t1_mue_bl2"/&gt;
+        &lt;resource name="t1_mue_bl3"/&gt;
+        &lt;resource name="t1_mue_gn1"/&gt;
+        &lt;resource name="t1_mue_gn2"/&gt;
+        &lt;resource name="t1_mue_gn3"/&gt;
+        &lt;resource name="t1_mue_gr1"/&gt;
+        &lt;resource name="t1_mue_gr2"/&gt;
+        &lt;resource name="t1_mue_gr3"/&gt;
+        &lt;resource name="t1_mue_or1"/&gt;
+        &lt;resource name="t1_mue_or2"/&gt;
+        &lt;resource name="t1_mue_or3"/&gt;
+        &lt;resource name="t1_mue_pi1"/&gt;
+        &lt;resource name="t1_mue_pi2"/&gt;
+        &lt;resource name="t1_mue_pi3"/&gt;
+        &lt;resource name="t1_mue_pu1"/&gt;
+        &lt;resource name="t1_mue_pu2"/&gt;
+        &lt;resource name="t1_mue_pu3"/&gt;
+        &lt;resource name="t1_mue_re1"/&gt;
+        &lt;resource name="t1_mue_re2"/&gt;
+        &lt;resource name="t1_mue_re3"/&gt;
+        &lt;resource name="t1_mue_ro1"/&gt;
+        &lt;resource name="t1_mue_ro2"/&gt;
+        &lt;resource name="t1_mue_ro3"/&gt;
+        &lt;resource name="t1_mue_te1"/&gt;
+        &lt;resource name="t1_mue_te2"/&gt;
+        &lt;resource name="t1_mue_te3"/&gt;
+        &lt;resource name="t1_mue_ye1"/&gt;
+        &lt;resource name="t1_mue_ye2"/&gt;
+        &lt;resource name="t1_mue_ye3"/&gt;
+    &lt;/eyes_makeup_colors&gt;
+
+    &lt;blush_makeup_colors&gt;
+        &lt;resource name=""/&gt;
+        &lt;resource name="t1_mub_br1"/&gt;
+        &lt;resource name="t1_mub_br2"/&gt;
+        &lt;resource name="t1_mub_br3"/&gt;
+        &lt;resource name="t1_mub_or1"/&gt;
+        &lt;resource name="t1_mub_or2"/&gt;
+        &lt;resource name="t1_mub_or3"/&gt;
+        &lt;resource name="t1_mub_pi1"/&gt;
+        &lt;resource name="t1_mub_pi2"/&gt;
+        &lt;resource name="t1_mub_pi3"/&gt;
+        &lt;resource name="t1_mub_pu1"/&gt;
+        &lt;resource name="t1_mub_pu2"/&gt;
+        &lt;resource name="t1_mub_pu3"/&gt;
+        &lt;resource name="t1_mub_re1"/&gt;
+        &lt;resource name="t1_mub_re2"/&gt;
+        &lt;resource name="t1_mub_re3"/&gt;
+        &lt;resource name="t1_mub_ro1"/&gt;
+        &lt;resource name="t1_mub_ro2"/&gt;
+        &lt;resource name="t1_mub_ro3"/&gt;
+        &lt;resource name="t1_mub_ta1"/&gt;
+        &lt;resource name="t1_mub_ta2"/&gt;
+        &lt;resource name="t1_mub_ta3"/&gt;
+        &lt;resource name="t1_mub_te1"/&gt;
+        &lt;resource name="t1_mub_te2"/&gt;
+        &lt;resource name="t1_mub_te3"/&gt;
+    &lt;/blush_makeup_colors&gt;
+
+    &lt;lip_makeup_colors&gt;
+        &lt;resource name=""/&gt;
+        &lt;resource name="t1_mul_bk1"/&gt;
+        &lt;resource name="t1_mul_bk2"/&gt;
+        &lt;resource name="t1_mul_bk3"/&gt;
+        &lt;resource name="t1_mul_br1"/&gt;
+        &lt;resource name="t1_mul_br2"/&gt;
+        &lt;resource name="t1_mul_br3"/&gt;
+        &lt;resource name="t1_mul_pi1"/&gt;
+        &lt;resource name="t1_mul_pi2"/&gt;
+        &lt;resource name="t1_mul_pi3"/&gt;
+        &lt;resource name="t1_mul_pu1"/&gt;
+        &lt;resource name="t1_mul_pu2"/&gt;
+        &lt;resource name="t1_mul_pu3"/&gt;
+        &lt;resource name="t1_mul_re1"/&gt;
+        &lt;resource name="t1_mul_re2"/&gt;
+        &lt;resource name="t1_mul_re3"/&gt;
+        &lt;resource name="t1_mul_ro1"/&gt;
+        &lt;resource name="t1_mul_ro2"/&gt;
+        &lt;resource name="t1_mul_ro3"/&gt;
+        &lt;resource name="t1_mul_ta1"/&gt;
+        &lt;resource name="t1_mul_ta2"/&gt;
+        &lt;resource name="t1_mul_ta3"/&gt;
+        &lt;resource name="t1_mul_te1"/&gt;
+        &lt;resource name="t1_mul_te2"/&gt;
+        &lt;resource name="t1_mul_te3"/&gt;                    
+    &lt;/lip_makeup_colors&gt;
+
+    &lt;brow_stubble_colors&gt;
+        &lt;resource name="t1_stb_wht"/&gt;
+        &lt;resource name="t1_stb_bln"/&gt;
+        &lt;resource name="t1_stb_dbl"/&gt;
+        &lt;resource name="t1_stb_org"/&gt;
+        &lt;resource name="t1_stb_red"/&gt;
+        &lt;resource name="t1_stb_lbr"/&gt;
+        &lt;resource name="t1_stb_rbr"/&gt;
+        &lt;resource name="t1_stb_dbr"/&gt;
+        &lt;resource name="t1_stb_blk"/&gt;
+    &lt;/brow_stubble_colors&gt;
+
+    &lt;crew_cut_colors&gt;
+        &lt;resource name="t1_stb_wht"/&gt;
+        &lt;resource name="t1_stb_bln"/&gt;
+        &lt;resource name="t1_stb_dbl"/&gt;
+        &lt;resource name="t1_stb_org"/&gt;
+        &lt;resource name="t1_stb_red"/&gt;
+        &lt;resource name="t1_stb_lbr"/&gt;
+        &lt;resource name="t1_stb_rbr"/&gt;
+        &lt;resource name="t1_stb_dbr"/&gt;
+        &lt;resource name="t1_stb_blk"/&gt;
+    &lt;/crew_cut_colors&gt;
+
+    &lt;tattoo_colors&gt;
+        &lt;resource name="T1_TAT_BLK"/&gt;
+        &lt;resource name="T1_TAT_GRY"/&gt;
+        &lt;resource name="T1_TAT_BRN"/&gt;
+        &lt;resource name="T1_TAT_DBR"/&gt;
+        &lt;resource name="T1_TAT_GRN"/&gt;
+        &lt;resource name="T1_TAT_DGN"/&gt;
+        &lt;resource name="T1_TAT_BLU"/&gt;
+        &lt;resource name="T1_TAT_DBL"/&gt;
+        &lt;resource name="T1_TAT_PUR"/&gt;
+        &lt;resource name="T1_TAT_DPU"/&gt;
+        &lt;resource name="T1_TAT_RED"/&gt;
+        &lt;resource name="T1_TAT_DRD"/&gt;
+        &lt;resource name="T1_TAT_ORG"/&gt;
+        &lt;resource name="T1_TAT_YEL"/&gt;
+        &lt;resource name="T1_TAT_PNK"/&gt;
+    &lt;/tattoo_colors&gt;
+
+    &lt;tattoos&gt;
+        &lt;resource name="uh_tat_av1_0t"/&gt;
+        &lt;resource name="uh_tat_av2_0t"/&gt;
+        &lt;resource name="uh_tat_av3_0t"/&gt;
+        &lt;resource name="uh_tat_da1_0t"/&gt;
+        &lt;resource name="uh_tat_da2_0t"/&gt;
+        &lt;resource name="uh_tat_da3_0t"/&gt;
+        &lt;resource name="uh_tat_dw1_0t"/&gt;
+        &lt;resource name="uh_tat_dw2_0t"/&gt;
+        &lt;resource name="uh_tat_p01_0t"/&gt;
+    &lt;/tattoos&gt;
+
+    &lt;skins&gt;
+        &lt;resource name="uh_hed_fema_0d"/&gt;
+        &lt;resource name="uh_hed_elfa_0d"/&gt;
+        &lt;resource name="uh_hed_kida_0d"/&gt;
+        &lt;resource name="uh_hed_masa_0d"/&gt;
+        &lt;resource name="uh_hed_dwfa_0d"/&gt;
+        &lt;resource name="uh_hed_quna_0d"/&gt;
+    &lt;/skins&gt;
+&lt;/morph_config&gt;
+</pre>
+<h2><span class="mw-headline" id="Section_.3Cheads.3E">Section &lt;heads&gt;</span></h2>
+<p>This section defines all of the head morph presets for each race and gender. Additional custom presets can be appended to the relevant list. The MOP file should be placed in the Override folder.
+</p>
+<h2><span class="mw-headline" id="Section_.3Chairs.3E">Section &lt;hairs&gt;</span></h2>
+<p>This section defines the various hair meshes for each race and gender. As with morph presets, additional custom hair meshes can be appended. The mesh files should be placed in the Override folder. 
+</p>
+<h2><span class="mw-headline" id="Section_.3Cbeards.3E">Section &lt;beards&gt;</span></h2>
+<p>This section defines the various beard meshes for each race (males only). Additional custom beard meshes can be appended. The mesh files should be placed in the Override folder. 
+</p>
+<h2><span class="mw-headline" id="Section_.3Cxxx_colors.3E">Section &lt;xxx_colors&gt;</span></h2>
+<p>These sections define the tint files (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TNT" title="TNT">TNT</a>) used for hair, skin, eye, makeup and tattoo colours. Additional custom tints can be appended. The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TNT" title="TNT">TNT</a> files should be placed in the Override folder. 
+</p>
+<h2><span class="mw-headline" id="Section_.3Ctattoos.3E">Section &lt;tattoos&gt;</span></h2>
+<p>This section appears to define the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint maps</a> used for facial tattoos. However, the files listed are not those actually used by the character creator. <b><i>Thus, it is not possible to append or replace these with custom files.</i></b> It would appear that tattoos are hardcoded or specified elsewhere and that this section is unused.
+</p><p>At this time the only known method to achieve custom tattoos in the in-game character generator is either through the use of custom head morph presets or by overriding the default <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint maps</a> (by placing a custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint map</a> of the appropriate file name in the Override folder). If you wish to override the defaults, the races/origins that the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint maps</a> are used for are as follows:
+</p><p>uh_pct_dc1_0t.dds - Dwarf Commoner<br />
+uh_pmt_001_0t.dds - Dwarf Commoner<br />
+uh_pct_dn1_0t.dds - Dwarf Noble<br />
+uh_pct_h01_0t.dds - Human, Elf City/Mage<br />
+uh_pct_h02_0t.dds - Human, Elf City/Mage<br />
+uh_tat_ed1_0t.dds - Elf Dalish<br />
+uh_tat_ed2_0t.dds - Elf Dalish<br />
+uh_tat_ed3_0t.dds - Elf Dalish<br />
+uh_tat_ed4_0t.dds - Elf Dalish<br />
+</p>
+<h2><span class="mw-headline" id="Section_.3Cskins.3E">Section &lt;skins&gt;</span></h2>
+<p>This section defines the skin <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Diffuse_Map" title="Texture Formats">diffuse maps</a>. Custom skin textures for each head morph are achieved by blending two skin textures together in amounts adjusted via sliders. Where the specific combinations of these skins for each race and gender are specified is unknown. Possibly it is hardcoded. Because of this, appending additional skin <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Diffuse_Map" title="Texture Formats">diffuse maps</a> is unlikely to have any effect. They can be overridden however, as described previously for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats#Tint_Map" title="Texture Formats">tint maps</a>.
+</p>
+<h1><span class="mw-headline" id="Mod_Conflicts">Mod Conflicts</span></h1>
+<p>To avoid conflicts, there should only ever be one copy of chargenmorphcfg.xml in the Override folder. The game will ignore additional copies. A number of popular mods make edits to chargenmorphcfg.xml (e.g. Pineappletree's Vibrant Colors, Bidelle's Makeup Studio, CC Tints and Tones, More Hairstyles, etc.). If you install two or more of these mods you will need to delete extra copies of chargenmorphcfg.xml and edit the remaining copy to include the necessary additions for the other mods. To avoid having to manually edit the file, Terra_Ex created a program called <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2440/">CharGenMorph Compiler</a>. This tool will search for multiple instances of chargenmorphcfg.xml in the user's Override folder and condense them into a single file.
+</p>

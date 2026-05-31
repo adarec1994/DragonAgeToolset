@@ -1,0 +1,14 @@
+<p>saves a screenshot to the screenshots directory on the players hard drive
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> TakeScreenshot(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bHideInterface&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTitleStrRef&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDescriptionStrRef&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nType&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sId&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">bHideInterface<dd>(optional) boolean to hide the interface or not<dt style="font-weight:normal; font-style:italic;">nTitleStrRef<dd>(optional) strref for the screenshot's title<dt style="font-weight:normal; font-style:italic;">nDescriptionStrRef<dd>(optional) strref for the screenshot's description<dt style="font-weight:normal; font-style:italic;">nType<dd>(optional) int Screenshot type (auto-screenshot, achievement screenshot, etc)<dt style="font-weight:normal; font-style:italic;">sId<dd>(optional) string screenshot Id for web journal positioning
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

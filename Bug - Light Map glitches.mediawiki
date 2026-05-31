@@ -1,0 +1,32 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>After light maps have been rendered, they may contain obvious glitches (e.g. dark triangles, shadows from models that have been deleted, severe brightness / darkness issues etc).
+</p><p>This may be related in part to the hard-coding of "single player" in part of the resource processing pipeline, which has already been identified as a bug affecting water planes.
+</p><p>However, that's probably not the whole story, because deleting the old erf file can improve the results, too (and makes the rendering process much faster).
+</p><p><br />
+There are numerous bugs and glitches with the currently available eclipseray 1.2 as you can read at the appropriate threads. e.g.:
+</p>
+<h2><span class="mw-headline" id="Bugs">Bugs</span></h2>
+<ul><li> black spots randomly placed at the lightmaps around tesselation borders</li>
+<li> shiny blue shade at certain models</li>
+<li> bugged and therefore corrupted lightmap of a chunk if more than one static/animated light lits it</li>
+<li> wrong calculated intensity value of baked lights</li>
+<li> alpha maps are not rendered correctly -&gt; spider webs drop a shadow but they should not do so</li>
+<li> light probes are not rendered correctly -&gt; they all show the same mirrored texture</li></ul>
+<p>There is <b>no workaround</b> for any of the glitches! The dark triangles are directly connected with tesselation borders. If you tesselate your mesh the triangles will wander around the new border where the high resolution grid hits the low resolution grid.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Most lighting bugs seem to go away if you 
+</p>
+<ul><li> Delete any erf files for the level (you may need to close the toolset first)</li>
+<li> Delete Windows temporary files</li>
+<li> In (Documents)\Bioware\Dragon Age\Toolset, delete all files from subfolders LvlWorkspace, ProbeLightMaps and resourcepostintermediateWin32</li>
+<li> Switch to the Single Player campaign in the toolset (File &gt; Manage Modules)</li>
+<li> Open your level and do all the rendering and posting in Single Player</li>
+<li> Delete the old level folder from AddIns &gt; [module] &gt; core &gt; override &gt; toolsetexport</li>
+<li> Move the folder you just made in packages &gt; core &gt; override &gt; toolsetexport to that Addins location</li>
+<li> Reopen your module (File &gt; Manage Modules)</li></ul>
+<p>If you get a "failed to load" error in Single Player, your level may contain an unnecessary custom object, such as a test creature. 
+</p><p>Routine file deletion (mentioned above) can be done at a stroke using free configurable tools such as <a rel="nofollow" class="external text" href="http://www.piriform.com/ccleaner">CCleaner</a>.
+</p>

@@ -1,0 +1,116 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Brief"><span class="tocnumber">1</span> <span class="toctext">Brief</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Requirements"><span class="tocnumber">1.1</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Guidelines"><span class="tocnumber">1.2</span> <span class="toctext">Guidelines</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Allowable"><span class="tocnumber">1.3</span> <span class="toctext">Allowable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Groups_and_Prizes"><span class="tocnumber">2</span> <span class="toctext">Groups and Prizes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Groups"><span class="tocnumber">2.1</span> <span class="toctext">Groups</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Prizes"><span class="tocnumber">2.2</span> <span class="toctext">Prizes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Helpful_links"><span class="tocnumber">3</span> <span class="toctext">Helpful links</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Entries"><span class="tocnumber">4</span> <span class="toctext">Entries</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Ornate_Fountain_by_mikemike37_-_1st_Place"><span class="tocnumber">4.1</span> <span class="toctext">Ornate Fountain by mikemike37 - 1st Place</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Maz-Ti_Temple_by_Calydon_-_2nd_Place"><span class="tocnumber">4.2</span> <span class="toctext">Maz-Ti Temple by Calydon - 2nd Place</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Crates_by_Princecorg_-_3rd_Place"><span class="tocnumber">4.3</span> <span class="toctext">Crates by Princecorg - 3rd Place</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Brief">Brief</span></h2>
+<p>Create one or more custom prop models for use in a level. The contest discussion thread can be found <a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/discussion/9470/">here</a>.
+</p><p><b>DEADLINE: Monday 27 September</b> - your entry must be ready for judging before midday GMT+0. It is strongly recommended you submit well before this time in case you run into troubles. Modifications to your submission are welcomed - the newest version of your entry will be judged, although modifications made after the submission date will not be judged.
+</p>
+<h3><span class="mw-headline" id="Requirements">Requirements</span></h3>
+<p>All entries must:
+</p>
+<ul><li> have been tested by the user in a level</li>
+<li> be to a suitable scale</li>
+<li> be textured</li>
+<li> where appropriate, have collision</li>
+<li> be submitted before monday 27 september midday (GMT+0)</li>
+<li> include their save file (3ds max, gmax or blender save) - this helps judges troubleshoot errors you're having.</li></ul>
+<h3><span class="mw-headline" id="Guidelines">Guidelines</span></h3>
+<p>Strong entries will:
+</p>
+<ul><li> fit the art style and canon of Dragon Age Origins.</li>
+<li> make good use of the Dragon Age material system, including textures for diffuse, normal, specular, emissive and heightmap where appropriate.</li>
+<li> contain a placeable and static prop version (affects collision and material only).</li>
+<li> where appropriate, have multiple levels of detail for the model and texture. These are particularly valuable for high-poly outdoor models and high-res textures.</li>
+<li> support lightmapping correctly.</li>
+<li> have a suitable poly count - around 250-500 for small props (smaller than a chair), around 2,000 for medium props (human-size), up to 10,000 for large props (buildings).</li>
+<li> make good use of texture space to maximise pixel density</li></ul>
+<h3><span class="mw-headline" id="Allowable">Allowable</span></h3>
+<ul><li> multiple props in one submission where the submission is themed (ex. pack of chair table and bench, modular-style walls or buildings)</li></ul>
+<h2><span class="mw-headline" id="Groups_and_Prizes">Groups and Prizes</span></h2>
+<h3><span class="mw-headline" id="Groups">Groups</span></h3>
+<p>This contest has only one group.
+</p>
+<ul><li> 1st place - 15 points, chooses first</li>
+<li> 2nd place - 10 points, chooses second</li>
+<li> 3rd place - 5 points, chooses third</li>
+<li> All other entries meeting requirements - 1 point</li></ul>
+<p>To receive an "entry point", your submission must meet the requirements of the contest, listed at the top of this page
+</p>
+<h3><span class="mw-headline" id="Prizes">Prizes</span></h3>
+<p>Please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Prizes" title="Community Contest Prizes">Community Contest Prizes</a>
+</p>
+<h2><span class="mw-headline" id="Helpful_links">Helpful links</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2336/">Eshme's import/exporter for 3ds max and GMax</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=m8DFXmIGJZc">Video Tutorial - Creating props using 3ds max</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Texture Formats">Texture Formats</a> on the Toolset Wiki</li>
+<li> <a rel="nofollow" class="external text" href="http://bg2redux.student.utwente.nl/trac/wiki/TutorialTextures">Textures Tutorial for beginners</a> and <a rel="nofollow" class="external text" href="http://bg2redux.student.utwente.nl/trac/wiki/TutorialTexturesAdvanced">Advanced</a> (mostly superceded by the above and Eshme's Tools new material functionality)</li>
+<li> <a rel="nofollow" class="external text" href="http://www.youtube.com/view_play_list?p=A12BF2F8CC489A50">3DS Max 2010 video tutorials</a> - these also largely apply to GMax</li>
+<li> <a rel="nofollow" class="external text" href="http://ssbump-generator.yolasite.com">Normal Map Generator</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.cgtextures.com">Texture Reference</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.texturearchive.com/default.aspx">Texture Archive</a></li></ul>
+<h1><span class="mw-headline" id="Entries">Entries</span></h1>
+<p>For information on how to enter, please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Entry%20FAQ" title="Community Contest Entry FAQ">Entry FAQs</a>
+</p><p>For information on Judging, please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Judging" title="Community Contest Judging">Judging</a> page.
+</p><p><br />
+</p>
+<pre><font size="5" color="red"><b><u>IMPORTANT - consent to share</u></b></font>
+
+<font color="red"><b>By entering this competition you consent to share your work for other community members to benefit from.
+Where appropriate, source files should be shared. 
+The model *MUST* be your own
+You may use DA textures. Do not include these in your submission.
+You may use other people's textures, provided they consent for them to be shared (ex. cgtextures.com allows this type of use)
+Others may use and modify your work in their Dragon Age mods, though are encouraged to give credit. 
+As the entries are judged, local copies will be saved.
+If your work is taken down, you consent for it to be re-uploaded, crediting the work in your name. </b> </font>
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ornate_Fountain_by_mikemike37_-_1st_Place">Ornate Fountain by mikemike37 - 1st Place</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1720">DANexus Project Page</a>
+</p><p>An elaborate fountain for rich towns' squares or perhaps mansion-like indoor levels. Support for lightmap. Has collision. Light probe reflection in the water. No low-LOD model. 6,000 polys.
+</p><p>VFX is used to fire water out of the fish and add distortion and give the illusion of water - please don't give bonus points for the VFX, its just there because its kind of the point of the prop heh!
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC2%20Fountain%201.jpg"><img alt="CC2 Fountain 1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/CC2_Fountain_1.jpg" width="400" height="241" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/CC2_Fountain_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/62/CC2_Fountain_1.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC2%20Fountain%202.jpg"><img alt="CC2 Fountain 2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/CC2_Fountain_2.jpg" width="400" height="241" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/CC2_Fountain_2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/CC2_Fountain_2.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC2%20Fountain%203.jpg"><img alt="CC2 Fountain 3.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC2_Fountain_3.jpg" width="400" height="241" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC2_Fountain_3.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC2_Fountain_3.jpg 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Maz-Ti_Temple_by_Calydon_-_2nd_Place">Maz-Ti Temple by Calydon - 2nd Place</span></h2>
+<p>High within the Aronian mountain ranges, the mystic abbots of the Maz-Ti practice their ancient warrior arts. They have been charged with guarding a mystical secret that contains the power of an untold age.
+</p><p>I will repackage this so that the 4 buildings are available individually. You can download the WIP max file here <a rel="nofollow" class="external free" href="http://dl.dropbox.com/u/8495510/temple_layout.max">http://dl.dropbox.com/u/8495510/temple_layout.max</a> , and I'll upload the final version once the kinks have been worked out. <b>Update:</b> You can now download all the final MAX files and textures, as well as the ERF and matproj files here: <a rel="nofollow" class="external free" href="http://dragonagenexus.com/downloads/download.php?id=8881">http://dragonagenexus.com/downloads/download.php?id=8881</a> 
+</p><p><a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1739">DANexus Project Page</a>
+Be sure to read the readme for known issues.
+</p><p><br />
+(click for larger)
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%206342.jpg"><img alt="6342.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2a/6342.jpg" width="400" height="197" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2a/6342.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2a/6342.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%206341.jpg"><img alt="6341.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/6341.jpg" width="400" height="196" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/6341.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5c/6341.jpg 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%206340.jpg"><img alt="6340.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/eb/6340.jpg" width="400" height="199" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/eb/6340.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/eb/6340.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Banners.jpg"><img alt="Banners.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ed/Banners.jpg" width="400" height="181" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ed/Banners.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ed/Banners.jpg 2x" /></a>
+</p><p>Note: This prop level will alter the start location of the Demo Tutorial level. It shouldn't affect the other areas of the of the demo, but you won't be able to reach those areas until you uninstall this module. After installation, choose 'other campaigns' then 'demo tutorial' and you'll start near the temple.
+</p>
+<h2><span class="mw-headline" id="Crates_by_Princecorg_-_3rd_Place">Crates by Princecorg - 3rd Place</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1738">DANexus Project Page</a>
+</p><p>Some wooden crates to use in the level editor. Support for lightmap and have collision.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Crates.jpg"><img alt="Crates.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Crates.jpg" width="915" height="531" /></a>
+</p>

@@ -1,0 +1,23 @@
+<p>Sets whether two groups are hostile to each other.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetGroupHostility(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGroupA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGroupB,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bHostile<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nGroupA<dd>The source group to use to check the hostility tables<dt style="font-weight:normal; font-style:italic;">nGroupB<dd>The target group to use to check the hostility tables<dt style="font-weight:normal; font-style:italic;">bHostile<dd>Specifies whether to set the two groups as hostile or not
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function sets the group hostility between the two specified groups. Creatures default to their group’s
+hostility, but this can be overridden with SetReactionOverride(). If two creatures are not hostile to each
+other they cannot engage in hostile actions with each other in any way, shape or form.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGroupHostility" title="GetGroupHostility">GetGroupHostility</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGroupId" title="GetGroupId">GetGroupId</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGroupId" title="SetGroupId">SetGroupId</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetReactionOverride" title="SetReactionOverride">SetReactionOverride</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetReactionOverride" title="GetReactionOverride (page does not exist)">GetReactionOverride</a>
+</p>

@@ -1,0 +1,19 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20GFF%20editor.png"><img alt="GFF editor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/GFF_editor.png" width="300" height="257" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/GFF_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/GFF_editor.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20GFF%20editor.png" title="Enlarge"></a></div></div></div></div>
+<p>The GFF editor is a tool for opening and editing <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> files, such as savegames. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> for information about the GFF file format.
+</p>
+<h2><span class="mw-headline" id="Out_of_memory_error">Out of memory error</span></h2>
+<p>The GFF editor that comes with the toolset is not very efficiently programmed, unfortunately. When opening GFF files as small as 7 megabytes or so (which savegames can easily reach) the editor's memory usage can skyrocket above 3 gigabytes and potentially cause the editor to crash.
+</p><p>While the memory usage itself can't be worked around presently (it's an inherent flaw in the editor), it is possible to make the editor less prone to crashing when it reaches such large memory sizes using a trick developed by Krayzie_3334.<a rel="nofollow" class="external autonumber" href="http://social.bioware.com/11689/blog/707/">[1]</a>
+</p>
+<ol><li> Download <a rel="nofollow" class="external text" href="http://www.ntcore.com/">CFF Explorer</a>,</li>
+<li> Open Dragonagetoolset.exe with CFF (make a backup first)</li>
+<li> In the Left-Hand Pane, Left Click ( Highlight ) "File Header" </li>
+<li> In the Right-Hand Pane Click on the "Click here" box.</li>
+<li> In the "Characteristics Window" Check the "App can handle &gt;2GB address space" box.</li>
+<li> Click OK</li>
+<li> File -&gt; Save &amp; Exit.</li></ol>
+<p>Please note that the above workaround requires that you have at least 4 gigabytes of RAM.
+</p>

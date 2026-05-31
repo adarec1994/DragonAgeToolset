@@ -1,0 +1,20 @@
+<p>Wrapper for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyEffectOnObject" title="ApplyEffectOnObject (page does not exist)">ApplyEffectOnObject</a> on an array of Objects
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Ability_ApplyRandomDurationEffectOnObjectArray(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDurationType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> eEffect,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] arTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fDurationMin&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fDurationMax&#160;= 0.0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreator&#160;= <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword" title="OBJECT SELF keyword (page does not exist)">OBJECT_SELF</a>,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityId&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSendAttackedEvent&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPreventStacking&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bExcludeCreator&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nDurationType<dd>will only accept <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20DURATION%20TYPE" title="EFFECT DURATION TYPE *">EFFECT_DURATION_TYPE_TEMPORARY</a>.<dt style="font-weight:normal; font-style:italic;">eEffect<dd>the effect to be applied<dt style="font-weight:normal; font-style:italic;">arTarget<dd>the targets of the effect<dt style="font-weight:normal; font-style:italic;">fDurationMin<dd>minimum duration of the effect<dt style="font-weight:normal; font-style:italic;">fDurationMax<dd>maximum duration of the effect<dt style="font-weight:normal; font-style:italic;">oCreator<dd>effect creator<dt style="font-weight:normal; font-style:italic;">nAbilityId<dd>The ability ID of the effect (Important for dispelling!!!)<dt style="font-weight:normal; font-style:italic;">bSendAttackedEvent<dd>Whether to send an attacked event as well.<dt style="font-weight:normal; font-style:italic;">bPreventStacking<dd>Prevent Stacking?<dt style="font-weight:normal; font-style:italic;">bExcludeCreator<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyEffectOnObjectArray" title="Ability ApplyEffectOnObjectArray">Ability_ApplyEffectOnObjectArray</a>
+</p>

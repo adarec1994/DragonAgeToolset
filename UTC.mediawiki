@@ -1,0 +1,5 @@
+<p>The <strong class="selflink">UTC</strong> file type is used to store a user template for creatures using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> file format.
+</p><p>A UTC file is created when a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">creature</a> resource is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module" title="Export">exported</a>. Every exported creature has a corresponding UTC file.
+</p><p>UTC files are referenced in the following files:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Summons.xls" title="Summons.xls">summons.xls</a> (template / masterTemplate)</li></ul>

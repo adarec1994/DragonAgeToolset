@@ -1,0 +1,22 @@
+<p>Basic effect constructor.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> Effect(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nType&#160;= EFFECT_TYPE_INVALID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nType<dd>an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT_TYPE_*</a> constant or literal
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a blank effect
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Creates an basic effect of the specified type.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The basic effect constructor can be used to create any type of effect however it does not set any of the effect's other parameters so the effect returned may be incomplete. If an effect has additional parameters these would have to be set using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectFloat" title="SetEffectFloat">SetEffectFloat</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectInteger" title="SetEffectInteger">SetEffectInteger</a>, etc. Therefore, for pre-existing effects such as damage or heal it is better to use the appropriate constructor, namely, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectDamage" title="EffectDamage">EffectDamage</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectHeal" title="EffectHeal">EffectHeal</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">Effect keyword</a></li></ul>

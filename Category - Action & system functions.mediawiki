@@ -1,0 +1,19 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Action &#38; system functions"</h2>
+<p>The following 14 pages are in this category, out of 14 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20ConsoleCommand" title="DEBUG ConsoleCommand">DEBUG ConsoleCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DebugSpawnScriptDebugger" title="DebugSpawnScriptDebugger">DebugSpawnScriptDebugger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Deprecated%20ExecuteScript" title="Deprecated ExecuteScript">Deprecated ExecuteScript</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptName" title="GetCurrentScriptName">GetCurrentScriptName</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptResource" title="GetCurrentScriptResource">GetCurrentScriptResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGameDifficulty" title="GetGameDifficulty">GetGameDifficulty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGraphicsDetailLevel" title="GetGraphicsDetailLevel">GetGraphicsDetailLevel</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHashedM2DAInt" title="GetHashedM2DAInt">GetHashedM2DAInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAColumns" title="GetM2DAColumns">GetM2DAColumns</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAFloat" title="GetM2DAFloat">GetM2DAFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt" title="GetM2DAInt">GetM2DAInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAResource" title="GetM2DAResource">GetM2DAResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DARows" title="GetM2DARows">GetM2DARows</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTlkTableString" title="GetTlkTableString">GetTlkTableString</a></li></ul></div></div></div>
+</div></div>

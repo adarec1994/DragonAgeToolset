@@ -1,0 +1,411 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Система Plot-файлов</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Plot/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr></table>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:25%;"><div style="text-align:center;"></div><b>Plot</b> (eng) - план, схема.</div>
+<p>Plot-файл – это система логических (True/False) флагов, это план, с помощью которого игра отслеживает состояние мира. Обычно Plot-файлы используются, чтобы управлять беседами и журналом игрока. Также с их помощью удобно запускать <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">скрипты</a> на выполнение.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Duplicating%20a%20plot%20duplicates%20the%20uneditable%20GUID%20-%20ru" title="Bug: Duplicating a plot duplicates the uneditable GUID/ru (page does not exist)">Bug: Duplicating a plot duplicates the uneditable GUID</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Duplicating%20a%20plot%20duplicates%20the%20uneditable%20GUID" title="Bug: Duplicating a plot duplicates the uneditable GUID">(en)</a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.97.D0.B0.D0.BF.D0.B8.D1.81.D0.B8_.D0.B2_.D0.B6.D1.83.D1.80.D0.BD.D0.B0.D0.BB.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Записи в журнале</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9A.D0.BE.D0.B4.D0.B5.D0.BA.D1.81"><span class="tocnumber">2</span> <span class="toctext">Кодекс</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9F.D0.BE.D0.B2.D0.B5.D1.81.D1.82.D0.B2.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5"><span class="tocnumber">3</span> <span class="toctext">Повествование</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9F.D0.BE.D0.B4.D1.81.D0.BA.D0.B0.D0.B7.D0.BA.D0.B8"><span class="tocnumber">4</span> <span class="toctext">Подсказки</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B"><span class="tocnumber">5</span> <span class="toctext">Скрипты</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0"><span class="tocnumber">5.1</span> <span class="toctext">Скрипты событий Plot-файла</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9C.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D1.8B"><span class="tocnumber">6</span> <span class="toctext">Маркеры</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9F.D0.BE.D1.80.D1.8F.D0.B4.D0.BE.D0.BA_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8_.D1.84.D0.BB.D0.B0.D0.B3.D0.BE.D0.B2"><span class="tocnumber">7</span> <span class="toctext">Порядок установки флагов</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.9D.D0.B0.D0.B3.D1.80.D0.B0.D0.B4.D1.8B"><span class="tocnumber">8</span> <span class="toctext">Награды</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.9F.D0.BE.D0.B4.D1.87.D0.B8.D0.BD.D1.91.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B8_.D0.B3.D0.BB.D0.B0.D0.B2.D0.BD.D1.8B.D0.B5_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D1.8B"><span class="tocnumber">9</span> <span class="toctext">Подчинённые и главные Plot-файлы</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"><span class="tocnumber">10</span> <span class="toctext">Свойства</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D0.B8.D1.81.D0.B8_.D0.B2_.D0.B6.D1.83.D1.80.D0.BD.D0.B0.D0.BB.D0.B5">Записи в журнале</span></h2>
+<p>Когда в тулсете вы открываете Plot-файл, вы можете увидеть поле под названием «Текст журнала» (Journal Text) ниже поля с флагами. Журнальная запись создаётся, когда вы вводите в это поле текст, предварительно выбрав флаг, с которым эта запись ассоциируется.
+</p><p>Для примера, если вы хотите создать журнальную запись для флага ‘’’JOURNAL_TEST’’’ в Plot-файле ‘’’test_journal.plo’’’, тогда вам надо сделать чекаут для указанного Plot-файла, выбрать ‘’’JOURNAL_TEST’’’, и ввести ваш текст в поле «Текст журнала».
+</p><p>Каждый Plot-файл имеет одну-единственную тему для журнала, таким образом, все флаги изменяющие эту тему  (скажем, "Золотой цыплёнок") должны быть перечислены в том же Plot-файле (скажем, "test_chicken"). Название темы журнала вы можете указать в поле "Name"  в окне «Object Inspector» когда Plot-файл открыт.
+</p><p>Для примера, тема «Золотой цыплёнок» включает четыре части: 
+</p>
+<ul><li>QUEST_GIVEN: Отыщите, где последний раз видели цыплёнка.</li>
+<li>RESEARCH_DONE: Вы узнали, где последний раз видели цыплёнка: Музей птицеводства. Поговорите со смотрителем, может он знает что-нибудь о том, где сейчас золотой цыплёнок. </li>
+<li>CURATOR_MET: Вы поговорили со смотрителем Музея птицеводства. Она оказалась разговорчивой и вы кое-что узнали. Найти золотого цыплёнка вы сможете в Подземелье вечной скорби. </li>
+<li>CHICKEN_FOUND: Удивительно, но вы сумели найти золотого цыплёнка. </li></ul>
+<p>Так как все флаги находятся в одном Plot-файле, то каждый раз, когда устанавливается флаг, принадлежащая ему журнальная запись заменяет предыдущую запись в этой теме. 
+</p><p>В журнале отображается только запись, установленная последней, однако все ранее установленные флаги не сбрасываются автоматически. Для примера, когда устанавливается ‘’’RESEARCH_DONE’’’, ‘’’QUEST_GIVEN’’’ также остаётся установленным. Конечно, в случае необходимости вы можете сбросить его самостоятельно.
+</p><p>Если вы хотите пошагово указывать события в журнале, то вы можете использовать подчинённые Plot-файлы(Subplot-файлы). Так, если задание отыскать, где последний раз видели золотого цыплёнка, содержит несколько шагов (посетить и исследовать несколько мест), вы можете создать несколько маленьких Plot-файлов и организовать нужные флаги в их пределах. 
+</p><p>Для примера, если основной Plot-файл задания «Золотой цыплёнок» содержит подчинённые Plot-файлы  "Исследовать пещеры", "Поговорить с профессором" и "Найти книгу поиска", тогда вы должны создать Subplot-файлы с именами " Золотой цыплёнок: Исследовать пещеры" и так далее. 
+</p><p>Если вы хотите чтобы текст, установленный предыдущим флагом, не затирался, то вы также можете вставить первичный текст в запись журнала устанавливаемого флага. 
+</p><p>Для количества флагов в Plot-файле установлено ограничение в 256. 128 из них могут быть стандартными (main) флагами и 128 – определяемыми (defined), которые определяются скриптами каждый раз, когда прочитываются.
+</p><p>Для написания курсивом или полужирным шрифтом, в поле  «Текст журнала» можно использовать тэги (&lt;i&gt; and &lt;/i&gt;) и  (&lt;emp&gt; and &lt;/emp&gt;) соответственно.
+</p><p>Если у флага столбец "Final" установлен как "Yes" тема журнала перемещается на вкладку завершённых заданий.
+</p>
+<h2><span class="mw-headline" id=".D0.9A.D0.BE.D0.B4.D0.B5.D0.BA.D1.81">Кодекс</span></h2>
+<p>Записи кодекса являются специальным типом Plot-файлов, в которых содержится основная информация о мире.
+</p><p>Просто создайте новый Plot-файл, в окне «Object Inspector» для поля ‘’’Entry Type’’’ укажите требуемый вам тип кодекса. Это автоматически создаст новую чистую ячейку кодекса в игре.
+</p><p>Удалить ячейки кодекса, принадлежащие основной компании невозможно, так как Plot-файлы, связанные с ними – основные ресурсы игры. Однако при создании отдельного мода они останутся чистыми и не будут заполняться.
+</p><p>Записи кодекса о существах будут добавляться при первом его убийстве. Используемые в этом случае Plot-файлы и флаги определены в столбцах ‘’’CodexPlot’’’ и ‘’’CodexFlag’’’ (столбцы CT и CU) 2DA-файла ‘’’APR_base’’’. Таким образом, в случае необходимости вы можете, создав новый Plot-файл сделать его записи описанием для существующих либо добавленных вами существ.
+</p><p>Для появления в кодексе записи об размещённом объекте (Placeable) нужно просто установить переменные ‘’’PLC_CODEX_PLOT’’’ и ‘’’PLC_CODEX_FLAG’’’, и ячейка кодекса заполнится при использовании объекта.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B2.D0.B5.D1.81.D1.82.D0.B2.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5">Повествование</span></h2>
+<p>Для использования Plot-файла в качестве коротких выдержек из истории, появляющихся при загрузке ранее сохранённой игры, то в поле ‘’’Entry Type’’’  Plot-файла необходимо выбрать ‘’’Story Plot’’’.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D1.81.D0.BA.D0.B0.D0.B7.D0.BA.D0.B8">Подсказки</span></h2>
+<p>Подсказки, появляющихся при переходах между областями не являются флагами Plot-файлов и загружаются наугад из 2DA-файла ‘’’loadhints’’’.
+</p><p>Чтобы исключить подсказки, связанные с Ферелденом, необходимо удалить из этого файла все записи, именуемые ‘’’Flavor’’’.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B">Скрипты</span></h2>
+<p>Для работы с Plot-файлами из скрипта необходимо включить Plot-файл в скрипт с помощью инструкции ‘’’#include’’’ с префиксом ‘’’plt_’’’. Для примера, если Plot-файл называется "kill_all_wolves", добавьте в начало вашего скрипта, который должен считывать и устанавливать флаги в указанном Plot-файле, следующий текст:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;plt_kill_all_wolves&quot;</span></pre></div></div>
+<p>Считывать и устанавливать значения флагов можно посредством функций из скрипта ‘’’wrappers_h’’’ (включите в скрипте доступ к "wrappers_h") используя имена Plot-файла и флага как констант, к примеру:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;plt_kill_all_wolves&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> flag_value <span class="sy0">=</span> WR_GetPlotFlag<span class="br0">&#40;</span>PLT_KILL_ALL_WOLVES, FLAG_NAME<span class="br0">&#41;</span>; <span class="co1">//Считываем</span>
+WR_SetPlotFlag<span class="br0">&#40;</span>PLT_KILL_ALL_WOLVES, FLAG_NAME, TRUE<span class="br0">&#41;</span>; <span class="co1">//Устанавливаем</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h3><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0">Скрипты событий Plot-файла</span></h3>
+<p>Многие задачи в Dragon Age решаются посредством скриптов, обрабатывающих события Plot-файлов и срабатывающих, когда у флага устанавливается новое значение. Способность флага хранить значения Истина/Ложь позволяет запускать события, которые должны произойти только один раз за игру, не обращаясь к локальным переменным, но необходимо заметить, что скрипт запускается каждый раз, когда устанавливается значение флага, независимо от того, меняется ли оно.
+</p><p>В отличие от других скриптов, обрабатывающих события, скрипт Plot-файла начинается с функции ‘’’int StartingConditional()’’’, которая и вызывается, когда флаг читается или устанавливается. Это и позволяет считывать значение флага (integer true/false), что очень важно, когда вы работаете с «определяемыми» флагами.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SET%20PLOT" title="EVENT TYPE SET PLOT">EVENT_TYPE_SET_PLOT</a> посылается, каждый раз когда устанавливается значение нормального флага, название флага хранится в свойстве ‘’’1’’’ события. Заметьте, что скрипт вызывается до того, как значение флага будет установлено; значение флага не изменится, пока не будет закончено выполнение скрипта.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GET%20PLOT" title="EVENT TYPE GET PLOT">EVENT_TYPE_GET_PLOT</a> посылается, когда «определяемый» флаг считывается. Функция ‘’’StartingConditional()’’’ скрипта Plot-файла возвращает значение «определяемого» флага.
+</p><p>Для использования скриптов события Plot-файла:
+</p>
+<ul><li> создайте скрипт, к примеру, "kill_all_wolves.ncs"</li>
+<li> в окне ‘’’object inspector’’’ установите ваш скрипт (по умолчанию установлен <i>plot_core</i>)</li>
+<li> установите или считайте флаг, устанавливая последний параметр (nCallScript) в ‘’’TRUE’’’ (смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20GetPlotFlag" title="WR GetPlotFlag">WR_GetPlotFlag</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetPlotFlag" title="WR SetPlotFlag">WR_SetPlotFlag</a>)</li></ul>
+<p><br />
+Помните, что скрипт запускается каждый раз, когда флаг считывается или устанавливается.
+</p><p>Если вы хотите установить значение флага и запустить скрипт, то примените следующую конструкцию:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">WR_SetPlotFlag<span class="br0">&#40;</span>PLT_KILL_ALL_WOLVES, FLAG_NAME, flag_value, TRUE<span class="br0">&#41;</span>;</pre></div></div>
+<p><b>Важно:</b> Последний параметр должен быть <b>TRUE</b>. Этот параметр должен устанавливаться в TRUE каждый раз, когда вы хотите запустить скрипт Plot-файла.
+</p>
+<h2><span class="mw-headline" id=".D0.9C.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D1.8B">Маркеры</span></h2>
+<p>У многих НПС, дающих задания в основной компании, над головой висит знак «!». Также на картах им отмечаются расположение таких НПС. Есть два пути для реализации этого, можно отредактировать свойство ‘’’Plot Giver’’’ существа или использовать следующую функцию в скрипте:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPlotGiver"><span class="kw4">SetPlotGiver</span></a><span class="br0">&#40;</span>oObject, TRUE<span class="br0">&#41;</span>;</pre></div></div>
+<p>Когда задание будет взято, вам надо будет убрать восклицательный знак с головы НПС и с карты мира. Это может быть сделано используя скрипт событий Plot-файла, а именно, установка значения флага, о том, что задание взято, запускает скрипт, который должен содержать следующую функцию:
+</p>
+ <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPlotGiver"><span class="kw4">SetPlotGiver</span></a><span class="br0">&#40;</span>oObject, FALSE<span class="br0">&#41;</span>;</pre></div></div>
+<p>Для того, чтобы показать промежуточный маркер (стрелка, направленная вниз), вам необходимо отредактировать сам Plot-файл. Для этого вы должны указать тэг существа или размещённого объекта в таблице ‘’’Plot assist’’’ (снизу от флагов) отдельно для каждого флага и указать, отключается или отключается маркер (Значение Yes или No).
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D1.80.D1.8F.D0.B4.D0.BE.D0.BA_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8_.D1.84.D0.BB.D0.B0.D0.B3.D0.BE.D0.B2">Порядок установки флагов</span></h2>
+<p>Порядок не имеет значения для стандартных Plot-Файлов, чего не скажешь о Plot-файлах кодекса.
+</p><p>Для стандартных Plot-файлов, какой бы флаг не был установлен последним, в журнале показывается только его значение, если для него указана заметка журнала. Если я не ошибаюсь, то после завершения задания установка дополнительных финальных флагов (имеющих признак <i>final</i>) текст журнала обновляться не будет.
+</p><p>Для Plot-файлов кодекса все активные (True) флаги отображаются в порядке от меньшего к большему. Это используется в случаях, когда записи о чём-либо имеют несколько вариантов, которые зависят от значений флагов Plot-файла.
+</p><p>Для примера:
+</p>
+<dl><dd>0: Сладкий монстр – пожиратель печенюшек.</dd>
+<dd>1: Сладкий монстр был пожирателем печенюшек.</dd>
+<dd>2: Он угрожал разрушить королевство.</dd>
+<dd>3: &lt;FirstName/&gt; ловко уничтожил его.</dd>
+<dd>4: Но &lt;FirstName/&gt; купился на его сладкие печеньки.</dd>
+<dd>5: Но Большая птица сделала его хорошим.</dd></dl>
+<p>0-й флаг ставится в TRUE изначально и устанавливается в FALSE (с одновременной установкой 1-го флага в TRUE) если монстр умер. 
+</p><p>2-й флаг всегда должен быть TRUE
+</p><p>Только один из 3-го,4-го или 5-го флагов может быть TRUE, в зависимости от развития событий (убил печенькового монстра, был им подкуплен или проигнорировал его). Если игрок ещё не столкнулся с ним, эти флаги будут FALSE.
+</p>
+<h2><span class="mw-headline" id=".D0.9D.D0.B0.D0.B3.D1.80.D0.B0.D0.B4.D1.8B">Награды</span></h2>
+<p>Каждому флагу можно установить награду, которая будет выдаваться игроку после установки флага и которая выбирается из списка (смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rewards.xls" title="Rewards.xls">rewards.xls</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a>). 
+</p><p>При желании вы можете создать rewards.GDA со своими наградами и поместить его в папке вашего модуля, награды, перечисленные в нём, будут доступны для выбора в тулсете после перезагрузки. Если вы создаёте новую компанию, вы можете полностью переделать rewards.xls, в противном случае просто расширить M2DA.
+</p><p>Это простой и удобный способ выдачи игроку экспы, денег, вещей или комбинаций из них.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.B4.D1.87.D0.B8.D0.BD.D1.91.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B8_.D0.B3.D0.BB.D0.B0.D0.B2.D0.BD.D1.8B.D0.B5_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D1.8B">Подчинённые и главные Plot-файлы</span></h2>
+<p>Иногда у Plot-файлов есть несколько подчинённых Plot-файлов, которые могут запускаться в любом порядке. 
+</p><p>Для примера, "Найдите лимон и утку, затем на кухне сварите суп ".
+</p><p>Мы должны обновить журнал, когда будет найден первый ингредиент, утка или лимон.
+</p><p>Достаточно просто это сделать посредством трёх Plot-файлов: главный ("Суп") и два подчинённых ("Лимон" и "Утка").  Отношения «Главный-Подчинённый» достаточно просто установить в свойствах подчинённого Plot-файла (свойство «Parent plot»). 
+</p><p>Данные отношения имеют значение только для журнала – флаги для родительских или подчинённых Plot-файлов вы устанавливаете независимо.
+</p><p>Теперь остался вопрос, как синхронизировать их, так, в нашем примере может оказаться что в родительском Plot-файле запись «Мне надо найти утку и лимон, затем сварить суп" будет оставаться и после того, как будет найден один из ингредиентов или оба и в подчинённом Plot-файле появится запись «Я нашёл Х» до того как суп будет реально изготовлен.
+</p><p>В этом случае достаточно сделать определяемый флаг в родительском Plot-файле, который будет проверять, найдены ли ингредиенты, когда мы попытаемся сварить суп. Включите в скрипт Plot-файла в секцию для событий определяемых флагов следующий текст:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> eParms  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>   nFlag   <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>eParms, <span class="nu0">1</span><span class="br0">&#41;</span>; <span class="co1">// Plot-флаг</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>   nValue  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>eParms, <span class="nu0">2</span><span class="br0">&#41;</span>; <span class="co1">// 0=Clear 1=Set</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>   nResult <span class="sy0">=</span> FALSE;
+&#160;
+    <span class="coMULTI">/* в секции для определяемых флагов */</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nFlag<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> DEFINED_SOUP_INGREDIENTS_FOUND<span class="sy0">:</span>
+            <span class="br0">&#123;</span>
+              nResult <span class="sy0">=</span> <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_LEMON, LEMON_FOUND<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> WR_GetPlotFlag<span class="br0">&#40;</span>PLT_DUCK, DUCK_FOUND<span class="br0">&#41;</span><span class="br0">&#41;</span>
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+    plot_OutputDefinedFlag<span class="br0">&#40;</span>eParms, nResult<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nResult;</pre></div></div>
+<p><br />
+Однако если вам необходимо обновить главный журнал, когда оба подчинённых заданий выполнены ("Я нашёл лимон и утку, теперь мне надо пойти на кухню и сварить суп "), есть один важный нюанс – когда устанавливается Plot-флаг, его скрипт вызывается до того, как флаг получает новое значение.
+</p><p>Так, в скрипте Plot-файла "lemon", должно быть примерно следующее:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> eParms <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>   nFlag  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>eParms, <span class="nu0">1</span><span class="br0">&#41;</span>; <span class="co1">// Plot-флаг</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>   nValue <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>eParms, <span class="nu0">2</span><span class="br0">&#41;</span>; <span class="co1">// 0=Clear 1=Set</span>
+&#160;
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nFlag<span class="br0">&#41;</span> 
+        <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> LEMON_FOUND<span class="sy0">:</span>
+            <span class="br0">&#123;</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nValue<span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_DUCK, DUCK_FOUND<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                     WR_SetPlotFlag<span class="br0">&#40;</span>PLT_SOUP, SOUP_INGREDIENTS_FOUND, <span class="nu0">1</span>, TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span></pre></div></div>
+<p>‘’’Важно:’’’Проверяя же, что оба флага установлены, вы потерпите неудачу, так как значение флага устанавливается после того, как скрипт его Plot-файла выполнится. 
+</p><p>Конечно, если вы используете вещи, вам могут понадобиться иные способы проверки для синхронизации журнала (например, выдать запись о том, что у вас теперь есть ключ от кухни).
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0">Свойства</span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Allow Pausing</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Entry Type</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">GUID</td>
+<td> Уникальный внутриигровой идентификатор для Plot-файла. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Journal Image</td>
+<td> Картинка для темы журнала этого Plot-файла (опционально). </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td> Имя Plot-файла, будет отображаться как название темы в журнале.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">NameRequiresReTranslation</td>
+<td> Истина/Ложь – используется для указания, что данная строка требует локализации.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Parent Plot</td>
+<td> Указание на главный, по отношению к текущему, Plot-файл.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Priority</td>
+<td> Приоритет, указывается в целях сортировки в журнале.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Resource Name</td>
+<td> Уникальный строковый идентификатор для тулсета и игры, используемый для ссылки на этот ресурс.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Script</td>
+<td> Скрипт событий, ассоциированный с текущим Plot-файлом.</td>
+</tr>
+</table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

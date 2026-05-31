@@ -1,0 +1,109 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Creature topics:
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li><strong class="selflink">Creature groups</strong> - who is hostile to whom.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI" title="AI">AI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a></li></ul>
+</td></tr></table>
+<p>Assigning groups to creatures:
+</p>
+<ul><li>Creatures that start as non-hostile should get assigned the 'Neutral' group.</li>
+<li>Creatures that start as hostile should get assigned the 'Hostile' group.</li>
+<li>Creatures that can end up turning hostile towards other creatures should get a unique group.</li>
+<li>The Neutral group is always non-hostile towards every group in the game</li>
+<li>The Player group is always hostile towards the Hostile group</li>
+<li>The Friendly group is always hostile towards the Hostile group.</li>
+<li>The Friendly group is always non-hostile towards the Player group.</li></ul>
+<p>To create a custom creature group:
+</p>
+<ol><li>  Open the toolset_groups.xls 2DA</li>
+<li>  Place a new entry at the end of the file for your group</li>
+<li>  Turn the xls file into a GDA file (need defined process for accomplishing this) and place in override if testing local.  Check in to perforce to include in nightly build.</li>
+<li>   Now to use the group, use the SetGroupHostility function to set who the group is hostile towards.</li></ol>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Functions"><span class="tocnumber">1</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Party_is_attacked_by_1_or_more_hostiles"><span class="tocnumber">2.1</span> <span class="toctext">Party is attacked by 1 or more hostiles</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Party_attacks_a_single_non-hostile_NPC_after_dialog"><span class="tocnumber">2.2</span> <span class="toctext">Party attacks a single non-hostile NPC after dialog</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Party_attacks_X_non-hostile_enemies_after_dialog"><span class="tocnumber">2.3</span> <span class="toctext">Party attacks X non-hostile enemies after dialog</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#X_non-hostiles_attack_Y_non-hostiles"><span class="tocnumber">2.4</span> <span class="toctext">X non-hostiles attack Y non-hostiles</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#X_hostiles_attack_Y_hostiles_-.3E_player_joins_in"><span class="tocnumber">2.5</span> <span class="toctext">X hostiles attack Y hostiles -&gt; player joins in</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Player_fights_a_group_of_enemies.2C_one_enemy_surrenders"><span class="tocnumber">2.6</span> <span class="toctext">Player fights a group of enemies, one enemy surrenders</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20CombatStart" title="UT CombatStart">UT_CombatStart</a>(object oCreatureA, object oCreatureB)
+</p><p>Triggers combat between 2 creatures.
+</p><p>This function will switch the creature's group to be the 'hostile' group if it's current group is 'neutral' or 'friendly'. No other groups will be switched &#8212;  for these cases the function will just set the 2 groups hostile. This function does not change global hostility status between the Player, Neutral, Friendly and Hostile groups. This function does nothing else. The perception system will trigger the combat itself.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20CombatStop" title="UT CombatStop">UT_CombatStop</a>(object oCreatureA, object oCreatureB)
+</p><p>Stops combat between 2 creatures.
+</p><p>This function will switch the creature's group to be the 'neutral' group if it's current group is 'hostile'. This function does not change global hostility status between the Player, Neutral, Friendly and Hostile groups. No other groups will be switched &#8212;  for these cases the function will just set the 2 groups non-hostile. This function will clear all commands from both creatures but will do nothing else.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<h3><span class="mw-headline" id="Party_is_attacked_by_1_or_more_hostiles">Party is attacked by 1 or more hostiles</span></h3>
+<p>DESIGNER:
+</p>
+<ol><li>Assigns the 'hostile' group to each enemy </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Perception triggers combat when the enemy noticed the player </li></ol>
+<h3><span class="mw-headline" id="Party_attacks_a_single_non-hostile_NPC_after_dialog">Party attacks a single non-hostile NPC after dialog</span></h3>
+<p>DESIGNER: 
+</p>
+<ol><li>Assigns the enemy the non-hostile group </li>
+<li>Runs the Combat_Start() function with the player and NPC as parameters </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Switches the NPC's group to the 'hostile' group </li>
+<li>Perception triggers combat automatically </li></ol>
+<h3><span class="mw-headline" id="Party_attacks_X_non-hostile_enemies_after_dialog">Party attacks X non-hostile enemies after dialog</span></h3>
+<p>DESIGNER: 
+</p>
+<ol><li>Assigns all enemy the non-hostile group </li>
+<li>Runs the Combat_Start() function for each non-hostile NPC with the player and non-hostile NPC as parameters. </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Switches each NPC's group to the 'hostile' group </li>
+<li>Perception triggers combat automatically </li></ol>
+<h3><span class="mw-headline" id="X_non-hostiles_attack_Y_non-hostiles">X non-hostiles attack Y non-hostiles</span></h3>
+<p>DESIGNER:
+</p>
+<ol><li>Assigns unique group IDs for both groups of NPCs </li>
+<li>Runs the Combat_Start() function once with a creature from each group as parameters </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Sets the 2 groups hostile towards each other (not switching groups!) </li>
+<li>Perception causes them to start attacking each other </li></ol>
+<h3><span class="mw-headline" id="X_hostiles_attack_Y_hostiles_-.3E_player_joins_in">X hostiles attack Y hostiles -&gt; player joins in</span></h3>
+<p>DESIGNER:
+</p>
+<ol><li>Assigns unique group IDs for both groups of NPCs </li>
+<li>Runs the Combat_Start() function once with a creature from each group as parameters </li>
+<li>Runs the Combat_Start() function once with the player and a creature from one group as parameters </li>
+<li>Runs the Combat_Start() function once with the player and a creature from the second group as parameters </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Sets the 2 groups hostile towards each other (not switching groups!) </li>
+<li>Sets the 2 groups hostile towards the player group (not switch groups!) </li>
+<li>Perception causes them to start attacking each other and the player's party </li></ol>
+<h3><span class="mw-headline" id="Player_fights_a_group_of_enemies.2C_one_enemy_surrenders">Player fights a group of enemies, one enemy surrenders</span></h3>
+<p>DESIGNER:
+</p>
+<ol><li>Trigger combat using Combat_Start() </li>
+<li>Run Combat_Stop() using each enemy and the player as parameters </li></ol>
+<p>SYSTEM:
+</p>
+<ol><li>Stop combat for each enemy and party member </li>
+<li>Change the group of each enemy to 'non-hostile' only if they are currently hostile. Otherwise, set the NPC's group and the player group as non-hostile.</li></ol>

@@ -1,0 +1,101 @@
+<p>This 2da file is used to define the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injuries" title="Injuries (page does not exist)">Injuries</a> available in Dragon Age: Origins.
+</p>
+<h2><span class="mw-headline" id="Injuries_worksheet">Injuries worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  the injury label
+</td></tr>
+<tr>
+<th>  auto_apply
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  if the injury shall be one of the random injuries you get when you fall in combat.
+</td></tr>
+<tr>
+<th>  auto_remove
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  if the injury shall be removed when all injuries are removed, such as in the party camp
+</td></tr>
+<tr>
+<th>  effect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  the injury effect type <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT_TYPE_*</a>
+</td></tr>
+<tr>
+<th>  effect_label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  commment telling which effect type it is
+</td></tr>
+<tr>
+<th>  effect_int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  effect parameter
+</td></tr>
+<tr>
+<th>  effect_float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  effect parameter
+</td></tr>
+<tr>
+<th>  effect_int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  effect parameter
+</td></tr>
+<tr>
+<th>  effect_float2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  effect parameter
+</td></tr>
+<tr>
+<th>  icon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  the injury icon
+</td></tr>
+<tr>
+<th>  namestrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  the name of the injury
+</td></tr>
+<tr>
+<th>  tooltipstrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  the tooltip of the injury
+</td></tr></table>

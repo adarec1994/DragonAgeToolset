@@ -1,0 +1,72 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_a_Small_Adventure_Step_by_Step"><span class="tocnumber">1</span> <span class="toctext">Creating a Small Adventure Step by Step</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Starting_the_Toolkit"><span class="tocnumber">1.1</span> <span class="toctext">Starting the Toolkit</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Terminology"><span class="tocnumber">1.2</span> <span class="toctext">Terminology</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Create_A_Room_Level"><span class="tocnumber">1.2.1</span> <span class="toctext">Create A Room Level</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#A_Tour_of_the_Toolset_Interface"><span class="tocnumber">1.2.2</span> <span class="toctext">A Tour of the Toolset Interface</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_a_Small_Adventure_Step_by_Step">Creating a Small Adventure Step by Step</span></h2>
+<ul><li> Step #1:  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Step%20by%20Step%20-%20Installing%20the%20Toolset" title="Step by Step: Installing the Toolset">Install the Toolset</a></li>
+<li> Step #2:  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Step%20by%20Step%20-%20Create%20A%20Module" title="Step by Step: Create A Module">Create a Module</a></li></ul>
+<p><br style="clear: both" />
+</p>
+<h3><span class="mw-headline" id="Starting_the_Toolkit">Starting the Toolkit</span></h3>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Startup%20Screen%20001.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9a/Talonius_Toolkit_Startup_Screen_001.png" width="360" height="349" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9a/Talonius_Toolkit_Startup_Screen_001.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9a/Talonius_Toolkit_Startup_Screen_001.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Startup%20Screen%20001.png" title="Enlarge"></a></div>The Windows 7 toolkit startup menu entry.</div></div></div>
+<p>Find the Start Menu entry for the toolkit and click it.  Give the toolkit some time to start up.  As a benchmark, it takes approximately 12 seconds for the toolkit to start on my AMD Phenom 9850 with 4GB of RAM with a Windows Experience score 7.2.
+</p><p><br style="clear: both" />
+</p>
+<h3><span class="mw-headline" id="Terminology">Terminology</span></h3>
+<p>Learning something new is difficult.  Concise terminology is required to give direction, but the terminology is usually somewhat recursive in definition.  The following are some definitions that will help you navigate the remainder of this document.
+</p>
+<dl><dt> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a></dt>
+<dd> A module is the overarching container in which content is housed.  It is the parent of all other content.  The best comparison to the Dragon Age module are Dungeons and Dragons modules.  Each module in D&amp;D was a self contained adventure, complete with background, NPCs, maps, encounters, and any special rules which were to be in effect during the adventure.</dd>
+<dt> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a></dt>
+<dd> An area in a module is a self contained subset of the module, limited in size and/or scope.  Areas are used to break the adventure into pieces, and are where the characters interact with the game.  An area requires a level layout before it can be defined; see below.  Items placed in an area are generally interactive, examinable, or dynamic in nature.</dd>
+<dt> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level</a></dt>
+<dd> A level defines the underlying static, immovable, non interactive portion of an area - structure and appearance.  The level determines where PCs and NPCs can move (pathfinding) and lighting (ambient and otherwise).  A level layout is required in order to define an area.  A level can be created in one of two forms:  terrain and room.</dd>
+<dt> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Room%20Level" title="Room Level (page does not exist)">Room Level</a></dt>
+<dd> TODO:  Define</dd>
+<dt> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20Level" title="Terrain Level (page does not exist)">Terrain Level</a></dt>
+<dd> TODO:  Define</dd></dl>
+<p><br style="clear: both" />
+</p>
+<h4><span class="mw-headline" id="Create_A_Room_Level">Create A Room Level</span></h4>
+<p>As mentioned above a level is the underlying structure to an area.  For our first level we're going to start with a room level.
+</p><p><br style="clear: both" />
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20001.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Talonius_Toolkit_Level_Create_001.png" width="360" height="520" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Talonius_Toolkit_Level_Create_001.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/Talonius_Toolkit_Level_Create_001.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20001.png" title="Enlarge"></a></div>Creating a new level; click File, New, Level.</div></div></div>
+<p>Click <b>File</b>, then <b>New</b>, then <b>Level</b>.
+</p><p><br style="clear: both" />
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20002.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/Talonius_Toolkit_Level_Create_002.png" width="360" height="231" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/Talonius_Toolkit_Level_Create_002.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/29/Talonius_Toolkit_Level_Create_002.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20002.png" title="Enlarge"></a></div>The Level Creation Wizard.</div></div></div>
+<p>You'll find yourself in the Level Creation Wizard.  The first screen prompts you to create a terrain, or exterior level, or a room (interior) level.  We're going to walk through the creation of a room level first, so select <b>Room Level</b> and click <b>Next</b>.
+</p><p><br style="clear: both" />
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20003.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/00/Talonius_Toolkit_Level_Create_003.png/360px-Talonius_Toolkit_Level_Create_003.png" width="360" height="231" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/00/Talonius_Toolkit_Level_Create_003.png/540px-Talonius_Toolkit_Level_Create_003.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/Talonius_Toolkit_Level_Create_003.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20Level%20Create%20003.png" title="Enlarge"></a></div>The Level Creation Wizard.</div></div></div>
+<p>If we were creating a terrain level there would be a number of options presented to us; the room level creation is much simpler.
+</p><p>Click <b>Finish</b> to create the room level.
+</p><p><br style="clear: both" />
+</p>
+<h4><span class="mw-headline" id="A_Tour_of_the_Toolset_Interface">A Tour of the Toolset Interface</span></h4>
+<p>The sheer number of icons and options on the toolset can be intimidating.  We're going to highlight the important areas of the interface to help you familiarize yourself with the toolset.
+</p><p><br style="clear: both" />
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20UI%20Walkthrough%20002.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/17/Talonius_Toolkit_UI_Walkthrough_002.png/360px-Talonius_Toolkit_UI_Walkthrough_002.png" width="360" height="467" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/Talonius_Toolkit_UI_Walkthrough_002.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/Talonius_Toolkit_UI_Walkthrough_002.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20UI%20Walkthrough%20002.png" title="Enlarge"></a></div>The Palette Window.</div></div></div>
+<p>The first section to learn about is the <b>Palette Window</b>.  By default this is located in the upper right hand portion of the toolset screen.  This window is used extensively during the creation of a module.
+</p><p>Two things to note:  first, in the upper left corner of the Palette Window are two icons.  The first is a push pin; the second is an X.  
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:87px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20UI%20Walkthrough%20003.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/Talonius_Toolkit_UI_Walkthrough_003.png" width="85" height="312" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Talonius%20Toolkit%20UI%20Walkthrough%20003.png" title="Enlarge"></a></div>The Palette Window and Object Inspector windows collapsed.</div></div></div>
+<p>The push pin collapses the window into the sidebar, providing a larger workspace for any remaining open windows.  To reopen the window simply click on the window title in the sidebar.  You can then keep the window open by hitting the push pin icon again.
+</p><p>The X closes the window.  If you accidentally close either window they can be opened again from the <b>View</b>, <b>Palette</b> selection and the <b>View</b>, <b>Other Windows</b>, <b>Object Inspector</b> for the Palette Window and Object Inspector windows respectively.
+</p><p>Both of these icons can be found with nearly every window within the toolset.
+</p><p><b>Palette Window</b>
+</p>

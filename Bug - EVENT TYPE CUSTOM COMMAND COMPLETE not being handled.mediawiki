@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> v1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<h2><span class="mw-headline" id="Comment">Comment</span></h2>
+<p>This may be a spurious bug report.
+</p><p>If the AI_CUSTOM_AI_ACTIVE variable on the creature template is set (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI" title="Custom AI">Custom AI</a>), EVENT_TYPE_CUSTOM_COMMAND_COMPLETE is sent to the creature script.
+</p>

@@ -1,0 +1,586 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Соглашение об именах</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Naming_conventions/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A0.D0.B5.D1.81.D1.83.D1.80.D1.81.D1.8B_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">1</span> <span class="toctext">Ресурсы базы данных</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D0.B5.D0.B9"><span class="tocnumber">2</span> <span class="toctext">Файлы моделей</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.9F.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D1.8B"><span class="tocnumber">2.1</span> <span class="toctext">Предметы</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.A1.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D0.B0"><span class="tocnumber">2.2</span> <span class="toctext">Существа</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D1.81.D0.BE.D0.BA.D1.80.D0.B0.D1.89.D0.B5.D0.BD.D0.B8.D0.B9_.D0.BA.D0.BB.D0.B0.D1.81.D1.81.D0.BE.D0.B2_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D0.B5.D0.B9"><span class="tocnumber">2.3</span> <span class="toctext">Список сокращений классов моделей</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.BE.D0.B7.D0.B2.D1.83.D1.87.D0.BA.D0.B8"><span class="tocnumber">3</span> <span class="toctext">Файлы озвучки</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.B0.D0.BD.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D0.B8"><span class="tocnumber">4</span> <span class="toctext">Файлы анимации</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D1.80.D0.B0.D1.81.D1.82.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE.D1.81.D1.82.D0.B8"><span class="tocnumber">5</span> <span class="toctext">Файлы растительности</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.A2.D0.B0.D0.BA.D0.B6.D0.B5_.D1.81.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5"><span class="tocnumber">6</span> <span class="toctext">Также смотрите</span></a></li>
+</ul>
+</div>
+
+<p>Для своих ресурсов, Bioware'цы следовали определённому соглашению об именах, что дало им лёгкое управление ресурсами и их поиск. 
+Когда вы задумаетесь о необходимости создания оригинальных ресурсов для своих модификаций будет неплохим решением следовать этому соглашению. Либо же модифицировать его под свои нужды, например в наименовании каждого ресурса добавлять префикс в виде сокращения от названия вашего модуля, что позволить вам легко идентифицировать ваши ресурсы и создать упорядоченную структуру. 
+</p><p>Обычно наименование ресурса формируется с использованием префикса, наименования и суффикса, разделённых подчёркиванием, что позволяет выделить различные категории ресурсов (например по типу), их принадлежность к чему-либо (например к локации).
+</p><p>Используйте уникальные имёна. Если имеется два ресурса с одинаковым именем, то загружаться будет только один, причём выбор будет сделан согласно <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities%20-%20ru" title="Source directory priorities/ru (page does not exist)">приоритету папок</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">(en)</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D0.B5.D1.81.D1.83.D1.80.D1.81.D1.8B_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Ресурсы базы данных</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Ресурсы базы данных</a> именуются в свободной форме. Однако, исходя из удобства и вежливости по отношении к игрокам и другим разработчикам, желательно следовать соглашению. Это уменьшит риск возникновения конфликтов между модулями разных авторов и улучшит совместимость с будущими версиями игры от Bioware. Также не забывайте, что только один ресурс с заданным именем будет загружен в игру.
+</p><p>Для простых модификаций вполне достаточно будет использовать <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Prefixes%20in%20use%20-%20ru" title="Prefixes in use/ru (page does not exist)">уникальный префикс</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Prefixes%20in%20use" title="Prefixes in use">(en)</a> в имени ресурса, который вряд ли будет использован кем-либо еще.
+</p><p>При создании крупных модификаций предпочтительнее использовать более профессиональный подход, с использованием префиксов и суффиксов, что позволит, помимо вышеперечисленного, сделать более удобным написание скриптов.
+</p><p>По большей части, конечно, наименование ваших ресурсов будет иметь значение только для вас, тулсет же вряд ли обратит внимание на наименование ресурса. Хотя во избежание различных конфликтов лучше следовать парочке правил:
+</p>
+<ul><li> Использовать в именах ресурсов только латиницу, да тулсет вам и не даст назвать ресурс кириллическими символами.</li>
+<li> Не применять префиксы, используемые Bioware'цами, например "gen".</li></ul>
+<p>Разберём на примере одного ресурса из Основной компании (модуль "Single Player"):
+</p>
+<pre>cir200cr_bloodmage</pre>
+<ul><li> Три буквы префикса указывают на игровую область, в которой используется ресурс, (предыстория, башня Круга, Лотеринг и т.д.) или "gen" для общих (глобальных) ресурсов.</li>
+<li> Трёхзначный номер, присваиваемый конкретной локации игровой области, начиная со 100 и увеличивая на 100 для крупных локаций. Для мелких локаций, например домов, нумерация идёт в пределах номера родительской локации. Общие (глобальные) ресурсы часто получают номер 000.</li>
+<li> Двухбуквенный код, указывающий на тип, к которому принадлежит данный ресурс ("ar" - локация, "al" - список локаций, "ip" - размещаемый объект (placeable), "cr" - существа, "im" - предметы, "tr" - триггеры, "pt" - plot-файлы, "st" - сцены, "cs" - ролики, "wp" - точки на карте). Основным исключением являются скрипт ресурсов, которые имеют точно такое же имя, как и сам ресурс. Ресурсы диалогов практически всегда также имеют название, повторяющее название ресурса, к которому они привязаны. Названия ресурсов торговцев, как правило, также повторяют название имя владельца, но с приставкой "store_".</li>
+<li> Подчеркивание.</li>
+<li> Оставшаяся часть названия в принципе и есть само имя ресурса, присваивается в свободной форме с тем, чтобы напомнить вам с первого взгляда, что это за ресурс.</li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D0.B5.D0.B9">Файлы моделей</span></h2>
+<h3><span class="mw-headline" id=".D0.9F.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D1.8B">Предметы</span></h3>
+<pre>[MAINCLASS]_[MODELTYPE]_[MODELSUBTYPE][MODELVARIATION]_[LOD].MMH / PHY 
+
+Пример: [ef]_[rob]_[enc][a]_[0].mmh - ef_rob_enca_0.mmh</pre>
+<ul><li> [MAINCLASS] - Класс модели. Тулсет использует его для сортировки по признаку расы/пола/типа и т.д., так что эта часть названия должна соответствовать представленному ниже списку.</li>
+<li> [MODELTYPE] - Тип модели. Определяется в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-таблицах</a>. Обычно это короткое имя, описывающее модель. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls%20-%20ru" title="ItemVariations.xls/ru (page does not exist)">ItemVariations.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">(en)</a>.</li>
+<li> [MODELSUBTYPE] - Подтип модели. Не является обязательной частью названия. Определяется также в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-таблицах</a>. Обычно это короткое имя, описывающее различные вариации модели. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls%20-%20ru" title="ItemVariations.xls/ru (page does not exist)">ItemVariations.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">(en)</a>.</li>
+<li> [MODELVARIATION] - Вариация модели. Не является обязательной частью названия. Определяется также в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-таблицах</a>. Обычно это одна буква, описывающая дальнейшие вариации. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls%20-%20ru" title="ItemVariations.xls/ru (page does not exist)">ItemVariations.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">(en)</a>.</li>
+<li> [LOD] - Уровень детализации. Опционально для моделей, к которым применим разный уровень детализации, где 0, 2 или 3 от большего к меньшему уровню детализации. Варианты зависят от ResourceType, тем не менее 0 всегда требуется, если LOD применимо.</li></ul>
+<h3><span class="mw-headline" id=".D0.A1.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D0.B0">Существа</span></h3>
+<pre>[MAINCLASS]_[MODELNAME]_[LOD].MMH / PHY
+
+Пример: [c]_[deepstkra]_[0].mmh - c_deepstkra_0.mmh</pre>
+<ul><li>[MAINCLASS] Класс модели. Если не переопределён, то классы модели определяются ​​в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls%20-%20ru" title="APR base.xls/ru (page does not exist)">APR base.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">(en)</a> и тулсет будет генерировать его согласно представленному ниже списку.</li>
+<li>[MODELNAME] Название модели (включая класс модели). Названия модели также определяются ​в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls%20-%20ru" title="APR base.xls/ru (page does not exist)">APR base.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">(en)</a>. При отсутствии названия модели либо если название модели - "P" тулсет будет генерировать его на основе <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/NakedVariations.xls%20-%20ru" title="NakedVariations.xls/ru (page does not exist)">NakedVariations.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/NakedVariations.xls" title="NakedVariations.xls (page does not exist)">(en)</a>(не уверен).</li>
+<li>[LOD]  Уровень детализации. Опционально для моделей, к которым применим разный уровень детализации, где 0, 2 или 3 от большего к меньшему уровню детализации. Варианты зависят от ResourceType, тем не менее 0 всегда требуется, если LOD применимо.</li></ul>
+<p>Данный порядок объясняет игре, где она может, используя <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-файлы</a>, найти <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH%20-%20ru" title="MMH/ru (page does not exist)">MMH</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">(en)</a>. 
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO%20-%20ru" title="MAO/ru (page does not exist)">MAO</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MAO" title="MAO">(en)</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS%20-%20ru" title="DDS/ru (page does not exist)">DDS</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DDS" title="DDS">(en)</a> - файлы, связанные через <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH%20-%20ru" title="MMH/ru (page does not exist)">MMH</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">(en)</a> и придерживающиеся аналогичных схем в формировании названии файла.
+</p>
+<h3><span class="mw-headline" id=".D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA_.D1.81.D0.BE.D0.BA.D1.80.D0.B0.D1.89.D0.B5.D0.BD.D0.B8.D0.B9_.D0.BA.D0.BB.D0.B0.D1.81.D1.81.D0.BE.D0.B2_.D0.BC.D0.BE.D0.B4.D0.B5.D0.BB.D0.B5.D0.B9">Список сокращений классов моделей</span></h3>
+<table width="100%" style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<caption>
+</caption>
+<tr>
+<td width="100pt" align="center" style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Сокращение</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey"><b>Описание</b>
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>base</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>blk</b>
+</td>
+<td style="border-bottom:thin solid grey">Чёрные объекты разных размеров и пропорций, используемые для скрытия частей моделей, которые находятся вне интерьера уровня и которые игрок не должен увидеть.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>c</b>
+</td>
+<td style="border-bottom:thin solid grey">Существо.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cai</b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер пещер.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cav </b>
+</td>
+<td style="border-bottom:thin solid grey">Пещеры.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cdr</b>
+</td>
+<td style="border-bottom:thin solid grey">Пещера глубинных троп.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>che</b>
+</td>
+<td style="border-bottom:thin solid grey">Экстерьер церкви.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>chi</b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер церкви.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cn</b>
+</td>
+<td style="border-bottom:thin solid grey">Commmon Body Meshes.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cs</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>df</b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты гнома-женщины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dm</b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты гнома-мужчины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dne</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы экстерьера (Благородные).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dni</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы интерьера (Благородные).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dse</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы экстерьера (Трущобы).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dsi</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы интерьера (Трущобы).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dwe</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы экстерьера (Орзамар).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dwi</b>
+</td>
+<td style="border-bottom:thin solid grey">Гномские элементы интерьера (Орзамар).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ef</b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты эльфа-женщины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>el</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>em</b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты эльфа-мужчины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fca</b>
+</td>
+<td style="border-bottom:thin solid grey">Ферелденский замок.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fce</b>
+</td>
+<td style="border-bottom:thin solid grey">Экстерьер ферелденского замка/города.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fci</b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер ферелденского замка/города.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fde</b>
+</td>
+<td style="border-bottom:thin solid grey">Экстерьер ферелденских подземелий.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fdi</b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер ферелденских подземелий.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fhe</b>
+</td>
+<td style="border-bottom:thin solid grey">Ферелденские элементы экстерьера.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fhec</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fhi </b>
+</td>
+<td style="border-bottom:thin solid grey">Ферелденские элементы интерьера.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fne</b>
+</td>
+<td style="border-bottom:thin solid grey">Ферелденские элементы экстерьера (Благородные).
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>frt</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fti </b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер ферелденских городов.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ftr</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fve </b>
+</td>
+<td style="border-bottom:thin solid grey">Экстерьер ферелденских деревень.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fx </b>
+</td>
+<td style="border-bottom:thin solid grey">Эффекты.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxa</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxc</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxe</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxg</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxm</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>fxp</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>hf </b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты человека-женщины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>hm </b>
+</td>
+<td style="border-bottom:thin solid grey">Аксессуары и компоненты человека-мужчины.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>hro </b>
+</td>
+<td style="border-bottom:thin solid grey">Наборы героя.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>kn</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>lightrig</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>material</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>nm</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>pf </b>
+</td>
+<td style="border-bottom:thin solid grey">Female specific Gear
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>plc </b>
+</td>
+<td style="border-bottom:thin solid grey">Размещаемые объекты.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>pm </b>
+</td>
+<td style="border-bottom:thin solid grey">Male or Genderless specific Gear
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>pn </b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>prp </b>
+</td>
+<td style="border-bottom:thin solid grey">props
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>prv</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>qm</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>sb </b>
+</td>
+<td style="border-bottom:thin solid grey">Части неба.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>sca</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>sr</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tce </b>
+</td>
+<td style="border-bottom:thin solid grey">Экстерьер тевинтерских замков.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tci </b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер тевинтерских замков.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tfi </b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер тевинтерской тени.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tools </b>
+</td>
+<td style="border-bottom:thin solid grey">Модели, используемые тулсетом.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>trn</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tti </b>
+</td>
+<td style="border-bottom:thin solid grey">Интерьер тевинтерской башни.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tve </b>
+</td>
+<td style="border-bottom:thin solid grey">Тевинтерский экстерьер.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tvi </b>
+</td>
+<td style="border-bottom:thin solid grey">Тевинтерский интерьер.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>tvm</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ue</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>uem </b>
+</td>
+<td style="border-bottom:thin solid grey">Частички лица.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>uh </b>
+</td>
+<td style="border-bottom:thin solid grey">Частички лица.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>uhm </b>
+</td>
+<td style="border-bottom:thin solid grey">Частички лица.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ul</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ulm </b>
+</td>
+<td style="border-bottom:thin solid grey">Ресницы.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>v</b>
+</td>
+<td style="border-bottom:thin solid grey">
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>vfx </b>
+</td>
+<td style="border-bottom:thin solid grey">Визуальные эффекты.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>vis </b>
+</td>
+<td style="border-bottom:thin solid grey">Vista Objects
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>vst </b>
+</td>
+<td style="border-bottom:thin solid grey">Vista Objects
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>w</b>
+</td>
+<td style="border-bottom:thin solid grey">Модели оружия.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>water </b>
+</td>
+<td style="border-bottom:thin solid grey">Части воды.
+</td></tr>
+<tr>
+<td align="center" style="border-right:thin solid grey"><b>zz</b>
+</td>
+<td>Модели, используемые при отладке.
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.BE.D0.B7.D0.B2.D1.83.D1.87.D0.BA.D0.B8">Файлы озвучки</span></h2>
+<pre>[LINEID]_m.WAV</pre>
+<ul><li> [LINEID] - идентификатор реплики диалога (ID строки в TalkTable).</li></ul>
+<p>Данный способ позволяет легко найти нужную озвучку среди тысяч. Смотри <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice%20over%20-%20ru" title="Voice over/ru (page does not exist)">статью про озвучку</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice over">(en)</a> для получения дополнительной информации.
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D0.B0.D0.BD.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D0.B8">Файлы анимации</span></h2>
+<pre>mh.dg_5p_tn_l_45.ANI</pre>
+<p>Название файла анимации также несёт в себе информацию о данной анимации. Например вышеуказанное название означает "человек-мужчина в диалоге делает 5 шагов и поворачивает налево на 45 градусов".
+</p><p>Практически все названия файлов анимации людей имеет префикс "mh", то есть "male human", файлов с женской анимацией ("fh") не так много. Эти файлы в равной степени работают и с другими расами.
+</p><p>После префикса идёт следующее:
+</p>
+<table width="100%" style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<caption>
+</caption>
+<tr>
+<td width="100pt" align="center" style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Сокращение</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey"><b>Описание</b>
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>2p </b>
+</td>
+<td style="border-bottom:thin solid grey">Анимация на две персоны. Обычно применяется в диалоге, например один даёт, другой принимает, один ударяет, другой отшатывается, поцелуй.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>am </b>
+</td>
+<td style="border-bottom:thin solid grey">Окружающая анимация. Используется для оживления окружающего мира, например кузнец куёт, слушатель аплодирует, служанка моёт пол.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cb </b>
+</td>
+<td style="border-bottom:thin solid grey">Анимация боя.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>cu </b>
+</td>
+<td style="border-bottom:thin solid grey">Специальная анимация. Применяется для разового использования, например в каком-нибудь ролике.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>dg </b>
+</td>
+<td style="border-bottom:thin solid grey">Диалог. Анимация, специально предназначенная для использования в диалогах, хотя мы используем всю анимацию.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>po </b>
+</td>
+<td style="border-bottom:thin solid grey">Анимация поз. Различные позы и жесты для использования в диалогах.
+</td></tr>
+<tr>
+<td align="center" style="border-right:thin solid grey"><b>wi </b>
+</td>
+<td>Анимация, позволяющая взаимодействовать с миром. Данная анимация подобна окружающей, но больше предназчена для взаимодействия с объектами, например стоять, наклонившись над столом или сидеть за ним.
+</td></tr></table>
+<p>После указанных выше префиксов идёт краткое описание анимации. В качестве суффикса (при необходимости) используется указание, когда можно использовать анимацию:
+</p>
+<table width="100%" style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<caption>
+</caption>
+<tr>
+<td width="100pt" align="center" style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Сокращение</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey"><b>Описание</b>
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>en </b>
+</td>
+<td style="border-bottom:thin solid grey">Вход. Эта анимация используется из нейтральной позиции, когда актёр начинает анимацию.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>lp </b>
+</td>
+<td style="border-bottom:thin solid grey">Цикл. Эта анимация идёт по кругу, заставляя актёра делать повторяющиеся движения. Используется после анимации входа либо после себя же.
+</td></tr>
+<tr>
+<td align="center" style="border-bottom:thin solid grey;border-right:thin solid grey"><b>ex </b>
+</td>
+<td style="border-bottom:thin solid grey">Выход. Эта анимация выводит актёра из цикла и переводит его в нейтральную позицию. Используется после анимации цикла.
+</td></tr>
+<tr>
+<td align="center" style="border-right:thin solid grey"><b>tw </b>
+</td>
+<td>Эта анимация позволяет разнообразить цикличную и используется внутри цикла.
+</td></tr></table>
+<p>Итак, для примера:
+</p><p><b>mh.wi_sit_en</b> - Анимация входа из нейтральной позы стоя в позу сидя, например за столом.
+</p><p><b>mh.wi_sit_lp</b> - Цикличная анимация позы сидя.
+</p><p><b>mh.wi_sit_ex</b> - Анимация выхода из позы сидя в нейтральную позу стоя.
+</p><p><b>mh.wi_sit_tw1</b> - Анимация, проигрываемая внутри цикличной анимации "mh.wi_sit_lp", например потряхивание головой.
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D1.8B_.D1.80.D0.B0.D1.81.D1.82.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE.D1.81.D1.82.D0.B8">Файлы растительности</span></h2>
+<pre>tre_c_oakfixl.SPT</pre>
+<p>Файлы растительности определяются через префикс:
+</p>
+<ul><li> bsh - Кусты</li>
+<li> gra - Трава</li>
+<li> tre - Деревья</li></ul>
+<p>Суффикс содержит краткое описание типа растительности, в данном случае это дуб.
+</p>
+<h2><span class="mw-headline" id=".D0.A2.D0.B0.D0.BA.D0.B6.D0.B5_.D1.81.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5">Также смотрите</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources%20-%20ru" title="Art Resources/ru (page does not exist)">Художка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Ресурсы базы данных</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility%20-%20ru" title="Compatibility/ru">Совместимость</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions" title="Naming conventions">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

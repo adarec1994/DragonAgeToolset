@@ -1,0 +1,33 @@
+<p>Sandbox page for taking notes for later publication on the subject
+There are a wealth of pages on the web about this process, but this one is put together very specifically for Dragon Age toolset users.  Step by step with pictures etc.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">Note: Instructions generally refer to default installation locations.  You may need to adjust them to match your particular installation.</div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installing_SQL"><span class="tocnumber">1</span> <span class="toctext">Installing SQL</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Installing_SQL_Server_Management_Studio_Express"><span class="tocnumber">2</span> <span class="toctext">Installing SQL Server Management Studio Express</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Backing_up_your_database"><span class="tocnumber">3</span> <span class="toctext">Backing up your database</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Restoring_up_your_database"><span class="tocnumber">4</span> <span class="toctext">Restoring up your database</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installing_SQL">Installing SQL</span></h2>
+<h2><span class="mw-headline" id="Installing_SQL_Server_Management_Studio_Express">Installing SQL Server Management Studio Express</span></h2>
+<p>You will need to have SQL Server Management Studio Express installed to do Backup and Restore your database using the following instructions.
+</p><p>It can be downloaded from: 
+</p><p>Accept all the default settings from the installer.
+</p>
+<h2><span class="mw-headline" id="Backing_up_your_database">Backing up your database</span></h2>
+<p>Instructions Straight from the horses' mouth. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/ms187510%28SQL.90%29.aspx">http://msdn.microsoft.com/en-us/library/ms187510%28SQL.90%29.aspx</a>
+</p><p>Here is a somewhat simpler set of instructions, complete with pictures, and the Dragon Age toolset default database.
+Save your work in the toolset, the close toolset.  (not absolutely necessary, but why tempt fate?)
+Open SQL Server Management Studio Express
+Connect to the your server.  Should come up by default as something like COMPUTERNAME\BWDATOOLSET
+In the left hand pane, open up the databases folder.  You should see "bw_dragonage_content". Right click to bring up the context menu and select Tasks&gt;&gt;Backup
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Restoring_up_your_database">Restoring up your database</span></h2>
+<p>Instructions Straight from the horses' mouth. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/ms177429.aspx">http://msdn.microsoft.com/en-us/library/ms177429.aspx</a>
+</p>

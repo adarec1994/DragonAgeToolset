@@ -1,0 +1,12 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>{{LanguagesBox
+ | image  = [[Image:Geographylogo.png|25px|Languages]]
+ | header = [[Project:Language policy|Languages]]
+ | text   = Languages code
+}}</pre>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Geographylogo.png" title="Languages"><img alt="Languages" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Geographylogo.png" width="25" height="25" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Geographylogo.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Geographylogo.png 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Languages</a></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;">Languages code</td>
+</tr></table>

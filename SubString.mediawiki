@@ -1,0 +1,18 @@
+<p>Returns a substring of a string.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> SubString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStart,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCount<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sString<dd>The string to extract the substring from<dt style="font-weight:normal; font-style:italic;">nStart<dd>The start of the range to extract<dt style="font-weight:normal; font-style:italic;">nCount<dd>The number of letters to use in the substring
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the specified substring, returns an empty string on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns nCount number of sequential characters from the string sString starting at character number nStart.
+Like all string operations, the index is 0 based.
+</p>

@@ -1,0 +1,11 @@
+<ul><li><b>Version found:</b> 1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>SpeedTree rendering distance selector box, in a toolbar, is blank by default. You can select different distance settings into the selector but the actual rendering distance is 20m despite of what ever reads in the selector box. In my case the SpeedTrees were working fine over a month before something went wrong.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Nothing so far. Uninstalling and reinstalling the toolset and the database do not fix the problem. Haven't tried to format the harddrive yet.
+</p>
+<h2><span class="mw-headline" id="Possible_causes">Possible causes</span></h2>
+<p>Corrupted configuration setting that's not replaced during reinstallation.
+</p>

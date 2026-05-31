@@ -1,0 +1,90 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Scripting"><span class="tocnumber">1</span> <span class="toctext">Scripting</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Area_editor"><span class="tocnumber">2</span> <span class="toctext">Area editor</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Cutscene_curve_editor"><span class="tocnumber">3</span> <span class="toctext">Cutscene curve editor</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Stage_Editor"><span class="tocnumber">4</span> <span class="toctext">Stage Editor</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Dialog_Editor"><span class="tocnumber">5</span> <span class="toctext">Dialog Editor</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Scripting">Scripting</span></h2>
+<p>In the Script window:
+</p>
+<ul><li>F1: Compiled doxygen Help (in separate window)</li>
+<li>F2: AutoComplete</li>
+<li>F7: Compile</li>
+<li>CTRL+Space: AutoComplete</li>
+<li>CTRL+Shift+Space: Parameter Tooltip (actually the full declaration)</li>
+<li>Double-click (on a function): Help (in the Help panel)</li></ul>
+<p>In the Function/Variable/Constant/Template Browser pane:
+</p>
+<ul><li>Single-click (on a function): Help</li>
+<li>Double-click (on any token): Insert into script</li>
+<li>Return/Enter (on any token): Insert into script</li>
+<li>Right/Down Cursor: next entry in list</li>
+<li>Left/Up Cursor: previous entry in list </li>
+<li>Page Up: first visible entry</li>
+<li>Page Down: last visible entry</li>
+<li>Home: first entry in list</li>
+<li>End: last entry in list</li></ul>
+<p>When the AutoComplete pop-up is open:
+</p>
+<ul><li>Double-click (on any token): Insert into script</li>
+<li>Return/Enter (on any token): Insert into script</li>
+<li>Right/Down Cursor: next entry in list</li>
+<li>Left/Up Cursor: previous entry in list </li>
+<li>Page Up: first visible entry</li>
+<li>Page Down: last visible entry</li>
+<li>Home: first entry in list</li>
+<li>End: last entry in list </li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Area_editor">Area editor</span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3D%20controls" title="3D control">3D control</a> for more details.
+</p>
+<ul><li>"r": Switch to Standard selection tool (must have an object selected)</li>
+<li>"q": Switch to 3-axis movement tool (must have an object selected)</li>
+<li>"e": Switch to 3-axis rotation tool (must have an object selected)</li>
+<li>"t": Toggle use of local coordinates (i.e. local to objects when selected)</li></ul>
+<ul><li>Middle mouse: Rotate</li>
+<li>CTRL: Pan</li>
+<li>CTRL+Right mouse: Rotate</li>
+<li>ZDrag Function (Move objects up and down): Left mouse button + Shift + Alt (You must click on the selected object though)</li>
+<li>Move Camera: Left mouse button + Ctrl</li>
+<li>Rotate Objects Yaw Left:  Right mouse button + Shift</li></ul>
+<p>I believe for these ones you must be using one of the 3d axis movement tools
+</p>
+<ul><li>Rotate Objects Pitch Up: Right mouse button + Shift + Ctrl</li>
+<li>Rotate Objects Roll Right: Right mouse button + Shift + Alt</li></ul>
+<h2><span class="mw-headline" id="Cutscene_curve_editor">Cutscene curve editor</span></h2>
+<ul><li>K - Set all keys</li>
+<li>P - Set position</li>
+<li>O - Set orientation</li>
+<li>F - FOV</li></ul>
+<p><br />
+</p>
+<ul><li> Insert camera = C</li>
+<li> Insert VFX = V</li>
+<li> Add track = T</li>
+<li> Add Action:
+<ul><li> Play Animation = alt+A</li>
+<li>(Additional hotkeys for other commonly used functions)</li></ul></li>
+<li> Add Transition = X</li>
+<li> Add Effect:
+<ul><li> Fade In= I</li>
+<li> Fade Out= O</li></ul></li>
+<li>Edit FaceFX = alt+F</li></ul>
+<h2><span class="mw-headline" id="Stage_Editor">Stage Editor</span></h2>
+<ul><li> Insert Place= P</li>
+<li> Insert Camera = C</li>
+<li> Hide Object = H</li>
+<li> Show Object= S</li></ul>
+<h2><span class="mw-headline" id="Dialog_Editor">Dialog Editor</span></h2>
+<ul><li> Edit FaceFX= alt+F</li>
+<li> Generate Gestures for line= alt+G</li>
+<li> Find Links= alt+L</li>
+<li> Preview Line=alt+/</li>
+<li> Open Cutscene= alt+C</li>
+<li> Open Stage= alt+S</li>
+<li> Create Cutscene= alt+ctrl+C</li></ul>

@@ -1,0 +1,3 @@
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">vegetation</a> in Dragon Age is created by a third-party program called SpeedTreeCAD. It can be found in the Dragon Age\tools\export_processors\SpeedTreeCAD directory.
+</p><p>SpeedTree allows for an extremely broad set of parameters to be set for trees. Under most circumstances this flexibility should not be required, however, as Dragon Age comes with a large number of pre-generated trees.
+</p>

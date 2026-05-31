@@ -1,0 +1,51 @@
+<p>This will be a general tutorial on creating modules for Dragon Age: Origins; it will apply to both stand-alone addins (player created playable modules) and addins that extend one or more of the official campaign modules created by Bioware. Please note that I will not be assuming that you have read the Official Tutorials created by Bioware and will cover as much as is needed for a thorough understanding of the module creation process, but I will assume that you have installed the Dragon Age Toolset successfully.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_toolset_layout"><span class="tocnumber">1</span> <span class="toctext">The toolset layout</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#The_Editor_Window"><span class="tocnumber">1.1</span> <span class="toctext">The Editor Window</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#The_Log_Window"><span class="tocnumber">1.2</span> <span class="toctext">The Log Window</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#The_Palette_Window"><span class="tocnumber">1.3</span> <span class="toctext">The Palette Window</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#The_Object_Inspector"><span class="tocnumber">1.4</span> <span class="toctext">The Object Inspector</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Editors"><span class="tocnumber">2</span> <span class="toctext">Editors</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Pallets"><span class="tocnumber">3</span> <span class="toctext">Pallets</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Creating_a_new_module_to_work_in"><span class="tocnumber">4</span> <span class="toctext">Creating a new module to work in</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Module_Properties"><span class="tocnumber">4.1</span> <span class="toctext">Module Properties</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Module_Hierarchy"><span class="tocnumber">4.2</span> <span class="toctext">Module Hierarchy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#What_now.3F"><span class="tocnumber">5</span> <span class="toctext">What now?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_toolset_layout">The toolset layout</span></h2>
+<p>The toolset is roughly divided into four sections; the Editor Window, the Log Window, the Palette Window and the Object Inspector. I will describe the function of each of these sections in the following subsections.
+</p>
+<h3><span class="mw-headline" id="The_Editor_Window">The Editor Window</span></h3>
+<p>This section of the toolset is where the majority of the work is done in the Dragon Age Toolset. It starts out empty whenever the toolset is started, and it is where all of the usable editors will load when doing specific tasks, like editing scripts and creating new levels.
+</p>
+<h3><span class="mw-headline" id="The_Log_Window">The Log Window</span></h3>
+<p>This section of the toolset is where you will see all of the error messages and other message output from the toolset when you do certain things, like exporting resources from the toolset (I will talk about this later in this tutorial).
+</p>
+<h3><span class="mw-headline" id="The_Palette_Window">The Palette Window</span></h3>
+<p>This section of the toolset shows all resources available in the module, by catagories; if you are building a new module and have not associated an existing module with it, this will be empty.
+</p>
+<h3><span class="mw-headline" id="The_Object_Inspector">The Object Inspector</span></h3>
+<p>This section of the toolset will allow you to examine the properties of any item stored in the toolset database except for the ownership properties.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Editors">Editors</span></h2>
+<h2><span class="mw-headline" id="Pallets">Pallets</span></h2>
+<h2><span class="mw-headline" id="Creating_a_new_module_to_work_in">Creating a new module to work in</span></h2>
+<p>You should always create a new module to do the majority of your work in the DA Toolset. The only time you should work in the Single Player module (which is what the Origins Campaign is called in the toolset database) is when building new levels; this is required due to a bug in how levels are packaged by the toolset.
+</p>
+<h3><span class="mw-headline" id="Module_Properties">Module Properties</span></h3>
+<h3><span class="mw-headline" id="Module_Hierarchy">Module Hierarchy</span></h3>
+<h2><span class="mw-headline" id="What_now.3F">What now?</span></h2>
+<p>Now that you have your module, what do you do next?
+</p>

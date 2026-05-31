@@ -1,0 +1,125 @@
+<p>The <strong class="selflink">Backgrounds 2da</strong> defines the standard backgrounds and their availability to particular combinations of race and class.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is not listed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> but can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_RULES_BACKGROUNDS</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  Human-friendly description
+</td></tr>
+<tr>
+<th>  NameStrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  StringRef ID
+</td></tr>
+<tr>
+<th>  DescStrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  StringRef ID, but see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20desc%202da" title="Background desc 2da">background_desc</a>.
+</td></tr>
+<tr>
+<th>  TooltipStrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>   StringRef ID
+</td></tr>
+<tr>
+<th>  Elf
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available</li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Human
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available </li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Dwarf
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available </li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Warrior
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available </li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Rogue
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available </li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Mage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li> 0 - not available </li>
+<li> 1 - available</li></ul>
+</td></tr>
+<tr>
+<th>  Skill_1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Dwarf skill (race 1)
+</td></tr>
+<tr>
+<th>  Skill_2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Elf skill (race 2)
+</td></tr>
+<tr>
+<th>  Skill_3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Human Skill (race 3)
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <b>DescStrref</b> column does not appear to be used (all values are 0) and to have been superseded by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20desc%202da" title="Background desc 2da">background_desc</a>.
+</p><p>The <b>Skill_#</b> columns do not appear to be used (all values are **** (i.e. empty)).
+</p>

@@ -1,0 +1,18 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.03 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>When an item is opened in the Object Inspector, the Tint Override dropdown includes any additional entries defined in a tint_override M2DA as expected.
+</p><p>However, after working with the toolset for a while, the dropdown reverts to the default list. The custom list can only be restored by reopening the toolset.
+</p><p>Very often, the bug occurs as soon as any object is saved and exported. However, this cannot be reproduced on every occasion.
+</p><p>It may be relevent that even when there is no M2DA, the default dropdown includes some mysterious labels (7) through (23) which are not defined in tints.xls.
+</p><p>The same issue can occur with a custom Rewards table (even if it overrides the 2DA completely).
+</p><p>UPDATE&#160;: a similar issue has been experienced when trying to use a custom var_module 2DA for the module variables. If the custom file has a different name, it is possible to select it in module properties, but after a while every save/export results in an error message that the custom file cannot be found.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Open the toolset.
+</p><p>Create or open all the items you want to tint, but don't save or export anything.
+</p><p>Then tint all the items without saving or exporting.
+</p><p>Finally save and export all the items.
+</p><p>There is an unverified report that the bug goes away if the tint_override M2DA is placed in the packages override folder.
+</p>

@@ -1,0 +1,114 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><strong class="selflink">Event override</strong></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p>The broadest definition of <strong class="selflink">overriding an event</strong> means redirecting an event from the default handler (or script) to some form of a custom handler. 
+</p>
+<h2><span class="mw-headline" id="Via_a_wrapper_script">Via a wrapper script</span></h2>
+<p>The normal, and safest, way to override an event is to create an event script for the resource whose event-handling you want to override, and use that script to handle the specific events you want to override while passing on all other events to the core script to handle.
+</p><p>For example, if you have a creature called "Death Tyrant" that does something special when it receives the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DEATH" title="EVENT TYPE DEATH">EVENT_TYPE_DEATH</a> event, you could create a script named <code>death_tyrant</code> with the following code:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;utility_h&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot; </span>
+<span class="co2">#include &quot;events_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventHandled;
+&#160;
+    <span class="co1">// decompose the event</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evCurrent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>evCurrent<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// common variable</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oHero <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oParty <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetParty"><span class="kw4">GetParty</span></a><span class="br0">&#40;</span>oHero<span class="br0">&#41;</span>;   
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_DEATH</span><span class="sy0">:</span>
+         <span class="br0">&#123;</span>
+             <span class="co1">// your custom code goes here</span>
+&#160;
+             <span class="co1">// set nEventHandled if no further action is required for this event</span>
+             nEventHandled <span class="sy0">=</span> TRUE; 
+&#160;
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+         <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// if this event wasn't handled by this script, let the core script try</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span>nEventHandled<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>evCurrent, RESOURCE_SCRIPT_CREATURE_CORE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+<span class="br0">&#125;</span></pre></div></div>
+<p>This script is then assigned to the Script property on the Death Tyrant resource. 
+</p><p>When the game engine sends a Death Tyrant creature an event other than <code>EVENT_TYPE_DEATH</code> it will get sent to the core <code>creature_core</code> script by the<code>HandleEvent(evCurrent, RESOURCE_SCRIPT_CREATURE_CORE)</code>  function call. However <code>EVENT_TYPE_DEATH</code> will be intercepted and handled by your custom code.
+</p>
+<h2><span class="mw-headline" id="Via_the_engineevents_2DA">Via the engineevents 2DA</span></h2>
+<p>An alternative, and more advanced, way to override an event is to use the  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">engineevents 2da</a>. Overriding an event in this way does it "global" scale, catching and redirecting an event for all resources in the game.
+</p><p>Create an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">engineevents 2da</a> fragment (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">extending the game via m2da files</a> for further details) to override, for example,  the <code>EVENT_TYPE_INVENTORY_ADDED</code> event so that it will be handled by the custom <code>my_event_override</code> script.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Events.png"><img alt="Events.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Events.png" width="818" height="84" /></a>
+</p><p><b>NOTE</b>: this is a substitution fragment (i.e. one that replaces an  original entry) rather than an extension fragment (i.e. one that adds a  new entry) and will cause compatibility issues with any other mod that also attempts to override the same event using this technique. 
+</p><p>The custom script can be constructed to do whatever is required, for example, displaying a message on screen every time the Player picks up (or steals) an item:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;utility_h&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;events_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// decompose the event</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evCurrent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>evCurrent<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oOwner <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>evCurrent<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_INVENTORY_ADDED</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// only show if the item went into the player's inventory</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>IsPartyMember<span class="br0">&#40;</span>oOwner<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>evCurrent, <span class="nu0">0</span><span class="br0">&#41;</span>;
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DisplayFloatyMessage"><span class="kw4">DisplayFloatyMessage</span></a><span class="br0">&#40;</span>oOwner, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetName"><span class="kw4">GetName</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot; added&quot;</span>, <span class="kw3">FLOATY_MESSAGE</span>, <span class="nu0">14654488</span>, <span class="nu0">10.0</span><span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span>
+&#160;
+            <span class="co1">// Since this script doesn't handle the event itself, but merely adds functionality (displaying the message),</span>
+            <span class="co1">// the event is passed back to its default event handler for the event's target object</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>evCurrent<span class="br0">&#41;</span>; 
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+<span class="br0">&#125;</span></pre></div></div>
+<p><b>NOTE</b>: the "default handler" is the script specified on the resource, therefore even if engineevents 2da is used to make a global change, calling <code>HandleEvent(evCurrent)</code> ensures that the script assigned to the resources <b>Script</b> property is still executed. 
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override%20-%20ru" title="Event override/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

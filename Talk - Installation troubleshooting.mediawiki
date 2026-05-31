@@ -1,0 +1,16 @@
+<p>how do i send in information about a failed install. i am running winXP Pro SP3, and i get the following message:
+</p><p>TITLE: Microsoft SQL Server 2005 Setup
+</p>
+<hr />
+<p>SQL Server Setup failed to execute a command for server configuration. The error was [Microsoft][SQL Native Client][SQL Server]Incorrect syntax near '='.. Refer to the server error logs and Setup logs for detailed error information.
+</p><p>For help, click: <a rel="nofollow" class="external free" href="http://go.microsoft.com/fwlink?LinkID=20476&amp;ProdName=Microsoft+SQL+Server&amp;ProdVer=9.00.4035.00&amp;EvtSrc=setup.rll&amp;EvtID=29521&amp;EvtType=lib%5codbc_statement.h%40Do_sqlScript%40OdbcStatement%3a%3aexecute_batch%40sysdbupg.sql%40119%40x66">http://go.microsoft.com/fwlink?LinkID=20476&amp;ProdName=Microsoft+SQL+Server&amp;ProdVer=9.00.4035.00&amp;EvtSrc=setup.rll&amp;EvtID=29521&amp;EvtType=lib%5codbc_statement.h%40Do_sqlScript%40OdbcStatement%3a%3aexecute_batch%40sysdbupg.sql%40119%40x66</a>
+</p>
+<hr />
+<p>BUTTONS:
+</p><p>&amp;Retry
+Cancel
+</p>
+<hr />
+<p><i>You may also encounter issues running migration scripts on 64 bit OSes. An alternate migration script can be found here: <a rel="nofollow" class="external free" href="http://social.bioware.com/project/46/">http://social.bioware.com/project/46/</a></i>
+</p><p>the Link is out of date
+</p>

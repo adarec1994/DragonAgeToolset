@@ -1,0 +1,6 @@
+<p><br />
+</p>
+<div style="float:right; background-color:#ffadaa; border:2px #fc6661 solid; padding:4px; margin:4px; width:200px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Warning-information.png"><img alt="Warning-information.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/09/Warning-information.png/30px-Warning-information.png" width="30" height="30" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/09/Warning-information.png/45px-Warning-information.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/09/Warning-information.png/60px-Warning-information.png 2x" /></a> Beware of the dog.</div>
+<p>A simple red-background text box with a warning image floating on the right side of the screen with flexible width. Use for warnings.
+</p><p>Usage <b>{{Warnbox|Beware of the dog.|200px}}</b>
+</p>

@@ -1,0 +1,14 @@
+<p>Transitions the entire party to a new area
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_DoAreaTransition(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sArea,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWP,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWorldMapLoc1&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWorldMapLoc2&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWorldMapLoc3&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWorldMapLoc4&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWorldMapLoc5&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sArea<dd>target area for the transition<dt style="font-weight:normal; font-style:italic;">sWP<dd>target wp for the transition<dt style="font-weight:normal; font-style:italic;">sWorldMapLoc1<dd>world map location to set active<dt style="font-weight:normal; font-style:italic;">sWorldMapLoc2<dd>world map location to set active<dt style="font-weight:normal; font-style:italic;">sWorldMapLoc3<dd>world map location to set active<dt style="font-weight:normal; font-style:italic;">sWorldMapLoc4<dd>world map location to set active<dt style="font-weight:normal; font-style:italic;">sWorldMapLoc5<dd>world map location to set active
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>

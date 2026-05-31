@@ -1,0 +1,43 @@
+<p>Returns ID for the given 2DA table and row index.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetM2DARowIdFromRowIndex(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> n2DA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nRowIndex,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> s2DA&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">n2DA<dd>The 2DA to access<dt style="font-weight:normal; font-style:italic;">nRowIndex<dd>Index in the 2DA for which we want to know the ID<dt style="font-weight:normal; font-style:italic;">s2DA<dd>(optional) if n2da is -1 and this is a valid resource, it will retrieve the 2da based on the name instead of the index. Note that this should be avoided when possible.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The ID for the row specified by the parameters.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the value of the ID column for the given 2DA table and row index.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// The crafting recipes M2DA contains 78 rows with ID from 0 to 91. There are gaps in the sequence</span>
+<span class="co1">// and we cannot predict where they appear. Looping over every row to find out would be inefficient, </span>
+<span class="co1">// however we can use the GetM2DARows function to tell us how many actual rows there are and then</span>
+<span class="co1">// use GetM2DARowIdFromRowIndex to convert the row number into the entry's ID number.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> TABLE_CRAFTING_RECIPES <span class="sy0">=</span> <span class="nu0">144</span>;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> CreateRandomCraftedItemOnObject<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// get the total number of rows in the crafting recipes M2DA (this works across all fragments)</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRows <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DARows"><span class="kw4">GetM2DARows</span></a><span class="br0">&#40;</span>TABLE_CRAFTING_RECIPES<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// the Random function gives a number between 0 and nRows - 1 however as the first row is</span>
+    <span class="co1">// invalid and the last row is a lyrium potion we actually want a number between 1 and nRows - 1</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRandomRow <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Random"><span class="kw4">Random</span></a><span class="br0">&#40;</span>nRows <span class="sy0">-</span> <span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy0">+</span> <span class="nu0">1</span>;
+&#160;
+    <span class="co1">// in order to use GetM2DAResource we need the entry's ID number</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nId <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DARowIdFromRowIndex"><span class="kw4">GetM2DARowIdFromRowIndex</span></a><span class="br0">&#40;</span>TABLE_CRAFTING_RECIPES, nRandomRow<span class="br0">&#41;</span>; 
+&#160;
+    <span class="co1">// read the crafted item's resource from the ItemCreated colum using entry's ID number</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAResource"><span class="kw4">GetM2DAResource</span></a><span class="br0">&#40;</span>TABLE_CRAFTING_RECIPES, <span class="st0">&quot;ItemCreated&quot;</span>, nId<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// create the crafted item on the target object</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateItemOnObject"><span class="kw4">CreateItemOnObject</span></a><span class="br0">&#40;</span>rItem, oTarget<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>

@@ -1,0 +1,23 @@
+<p>Sets the specified integer on the effect
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> SetEffectInteger(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> efEffect,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nValue<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">efEffect<dd>The effect to set the value on<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The index of the value to set<dt style="font-weight:normal; font-style:italic;">nValue<dd>The value of the value to set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the modfied effect, returns an invalid effect on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the specified integer on the effect
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It should be noted that there is no maximum number of values on an effect, as the array of values on the effect expands as needed.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger" title="GetEffectInteger">GetEffectInteger</a>
+</p>

@@ -1,0 +1,25 @@
+<p>Create a pool of creatures while loading an area. It should be used under EVENT_TYPE_AREALOAD_PRELOADEXIT. When creatures die or are set inactive they will automatically return to the pool.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> CreatePool(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rTemplate,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPoolSize<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">rTemplate<dd>The template to use<dt style="font-weight:normal; font-style:italic;">nPoolSize<dd>Number of creatures of this type to create
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if successful
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Creatures of this type that are spawned with the CreateObject function in this area will use this block of memory, and when creatures of this type die or are set inactive their memory space will automatically be returned to the pool.
+</p><p>The purpose of this function is to allow for endlessly respawning monsters, or similar situations.
+</p><p>It should be used under <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOAD%20PRELOADEXIT" title="EVENT TYPE AREALOAD PRELOADEXIT">EVENT_TYPE_AREALOAD_PRELOADEXIT</a>. When creatures die or are set inactive they will automatically return to the pool.
+</p><p>Note that pool creatures should have "no permanent death" enabled, otherwise certain effects (such as decapitation) will remain on them when they respawn.
+</p><p>Pool size should be at least twice the number of enemies from that will ever be active simultaneously.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject" title="CreateObject">CreateObject</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetObjectActive" title="SetObjectActive">SetObjectActive</a>
+</p>

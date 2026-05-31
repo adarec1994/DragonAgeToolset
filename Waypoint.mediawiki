@@ -1,0 +1,127 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Area topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area Editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial" title="Area tutorial">Area tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area lists</a></li>
+<li><strong class="selflink">Waypoints</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Volume object">Volume objects</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">triggers</a>, audio, reverb, music)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">Area editor options</a></li></ul>
+</td></tr></table>
+<p>Waypoints are one of the simplest resources in Dragon Age, but they are used extensively for a wide variety of tasks. They are a means of marking a specific point (and facing) within an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> map.
+</p><p>Waypoints and their location on the map can be seen in the menu on the left hand side of the area editor:
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:233px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints%20in%20the%20area%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/42/Waypoints_in_the_area_menu.png" width="231" height="56" class="thumbimage" /></a>  <div class="thumbcaption">Placed waypoints in the menu.</div></div></div></div>
+<p>Selecting and double clicking on a waypoint will take you to that waypoint’s location on the map, provided that “Show waypoints” is toggled on in the toolbar. Waypoints are shown as little red and blue flags:
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:115px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Show%20waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/Show_waypoints.png" width="113" height="66" class="thumbimage" /></a>  <div class="thumbcaption">The waypoint toggle.</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:217px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Waypoints.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Waypoints.png" width="215" height="147" class="thumbimage" /></a>  <div class="thumbcaption">Waypoints in a level.</div></div></div></div>
+<h2><span class="mw-headline" id="Properties">Properties</span></h2>
+<p>Waypoints have only a few properties.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Comments</td>
+<td> General information about this resource  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Group</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">MapNote</td>
+<td> A string of text that's displayed when the player puts his mouse pointer over the waypoint on his map. This is only visible if "MapNote enabled" is set to true.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">MapNote enabled</td>
+<td> If this is set to true, the waypoint will become visible in the player's map of the area. It's false by default. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">MapNote type</td>
+<td> Sets which icon is used to represent the waypoint on the player's map if MapNote is enabled. The available types are "Default" (a small x), "Area Exit" (a circle with arrows within), "Merchant" (a small building), and "Point of Interest" (a small x) </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">MapNoteRequiresReTranslation </td>
+<td> A flag used for keeping track of localization work. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td>  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> Internal name used by the game to refer to this waypoint (eg, within scripts) </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Attributes</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Colour</td>
+<td> The colour of a waypoint has no in-game effect, it is purely for area designer convenience to help keep track of different groups of waypoints more easily. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Location</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Orientation</td>
+<td> Number of degrees off of "north" (the default "up" direction) that the waypoint faces. 0 degrees is "north", value increases from 0 to 180 as you turn west and decreases from 0 to -180 as you turn east.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Position</td>
+<td> The X, Y, Z coordinates of the waypoint within the level </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="waypointtypes_2DA">waypointtypes 2DA</span></h2>
+<p>The waypointtypes <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> defines which options are available in the MapNote type property and which icon is shown for each type that's available. It's a simple 2DA with the following columns:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> [[ (2da type)|]]
+</td>
+<td>  the name of the type, shown in the dropdown menu in the toolset
+</td></tr>
+<tr>
+<th> Icon
+</th>
+<td align="center"> [[ (2da type)|]]
+</td>
+<td>  an image resource name that contains the mapnote's icon.
+</td></tr></table>

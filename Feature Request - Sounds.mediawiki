@@ -1,0 +1,9 @@
+<p><br />
+Builders do not have easy access to the sound files from the game to create an FMOD.  Third party programs exist to extract some of the fsb libraries, but none works with all of them.  It would be great if Bioware could provide the raw .wav files in the way the raw .lvl files were shared.  The sound effects files are where this is most needed.
+</p><p>Tasks like adding music to a cutscene or placing a sound emitter in an area work fine, but if you wanted to add sounds to a cutscene track in addition to the music, there is no easy way to incorporate the sound effects files along with the music in fmod.
+</p><p>Third party extraction utilities and their results:
+</p><p>1) Aezay's DAExtractor: which extracted the music fantastically, but I can't open any of the sound effect wavs): <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/9/index/295486">http://social.bioware.com/forum/1/topic/9/index/295486</a>
+</p><p>Note: Although the extracted sound effect WAV files don't open properly in Windows Media Player, <a rel="nofollow" class="external text" href="http://www.videolan.org/">VideoLAN</a> can open them without any trouble.
+</p><p>2) fsbtext extractor: which seems to do the same thing, that is, extracts the music but not the sound effects. <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/9/index/295486">http://social.bioware.com/forum/1/topic/9/index/295486</a>
+</p><p>3) MusicPlayerEx: which does extract the sound effects files but names them after the library they were extracted from (eg global_amb_glo_1, eg. global_amb_glo_2), so the names are no longer descriptive. The thought of listening to the thousands of sound effects and renaming them is, well, terrifying. <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/73/index/385958">http://social.bioware.com/forum/1/topic/73/index/385958</a>
+</p>

@@ -1,0 +1,17 @@
+<p>Returns the list of effects that are currently applied to an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a>[] GetEffects(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEffectType&#160;= EFFECT_TYPE_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityId&#160;= ABILITY_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreator&#160;= OBJECT_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDurationType&#160;= EFFECT_DURATION_TYPE_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEffectId&#160;= -1<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The object from which we try to get the effects list<dt style="font-weight:normal; font-style:italic;">nEffectType<dd>(optional) only return an array of a specified effect type (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT_TYPE_INVALID</a> means no filter)<dt style="font-weight:normal; font-style:italic;">nAbilityId<dd>(optional) filter the returned array to include only effects with a matching ability id (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY-eb87f3dc" title="ABILITY *">ABILITY_INVALID</a> means no filter)<dt style="font-weight:normal; font-style:italic;">oCreator<dd>(optional) filter the returned array to include only effects created by a specific object (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a> means no filter)<dt style="font-weight:normal; font-style:italic;">nDurationType<dd>(optional) filter the array by duration type (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20DURATION%20TYPE" title="EFFECT DURATION TYPE *">EFFECT_DURATION_TYPE_INVALID</a> means no filter)<dt style="font-weight:normal; font-style:italic;">nEffectId<dd>(optional) filter the array by effect ID (-1 means no filter)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the all effects that are currently applied to an object taking account of any specified filters.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the list of effects that are currently applied to an object. This includes both temporary and permanent effects. The order of the events inside the list is meaningless.
+</p>

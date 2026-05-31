@@ -1,0 +1,175 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20set" title="Item set">Item sets</a></li>
+<li><strong class="selflink">Item properties</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li></ul>
+</td></tr></table>
+<p>An item property is a modifier on an item similar to an effect.  These modifiers affect either the item itself or the item's wielder.
+</p><p>Item properties (i.e., fire damage) are assignable in the toolset and via scripting
+</p>
+<ul><li> Scripting functions to add properties</li>
+<li> Scripting functions to remove properties</li>
+<li> Toolset can add/remove properties</li>
+<li> Item Abilities are not item properties</li></ul>
+<p>MAKE is an item property. Because Dragon Age is a low magical world we cannot flood the player with magical items. However item progression is important to a RPG. We have decided to use an item progression system whereby items get better depending on the materials and processes used in their construction. In Dragon Age each weapon, armor, and shield progresses through several levels of quality. The highest quality items are more powerful and harder to obtain. These quality levels are called makes (they used to be called material types). 
+</p><p>As MAKE improves, it: 
+</p>
+<ul><li>increases the base statistics for a particular item (attack rating, damage and armor penetration for weapons, armor rating for armor, defense rating for shields). </li>
+<li>changes the physical appearance of an item. Generally this change should be a model change though for expansion purposes we may also insert additional makes that are merely color changes. </li>
+<li>Determines the number of upgrade/enchantment slots that are available on the item</li></ul>
+<p>The values in the 2DA MaterialTypes.2da influence the initial damage, attack bonus, armor penetration, defense and armor of an item. There are several upgrade stages for each equipped item. All items follow the same progression, but the labels used to refer to this progression changes based on the item type. The item's progression dictates the number of enchantment rune upgrades it can support.
+</p><p>Each base item type has its own list of material types, with different numbers. However many base items do share material types, so we can group them into Melee Weapons, Ranged Weapons, Wands, Armor, Shields, Helmets, etc.
+</p><p>The item properties allowed to be assigned to an item are based on the item's base types (i.e., a longsword has different properties allowable than a suit of armor)
+</p><p>When an item is equipped or un-equipped, a call-back function is run for each property on it. These usually apply or remove some package of effects with the duration type "Equipped". These are used to create items that grant bonuses when used.
+</p>
+<h3><span class="mw-headline" id="List_of_Item_Properties">List of Item Properties</span></h3>
+<p>Item Properties can be added either directly to an item through the tool builder interface, or assigned via scripting through the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemProperty" title="AddItemProperty">AddItemProperty</a> method.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Name of the property
+</td></tr>
+<tr>
+<th> NameStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Reference to the Name String for the property.
+</td></tr>
+<tr>
+<th> IPType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The Type of the property. 1 = effect, 2 = onhit, 3 = restriction, 4 = special.
+</td></tr>
+<tr>
+<th> effect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Reference to the effect this property invokes. See effects.xls (1012 references: EFFECT_TYPE_MODIFY_PROPERTY)
+</td></tr>
+<tr>
+<th> int0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A possible argument passed to the effect. For EFFECT_TYPE_MODIFY_PROPERTY this points to an ID row inside properties.xls
+</td></tr>
+<tr>
+<th> int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A possible argument passed to the effect.
+</td></tr>
+<tr>
+<th> float0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> A possible argument passed to the effect. For EFFECT_TYPE_MODIFY_PROPERTY this is the amount of effect to apply per point of power.
+</td></tr>
+<tr>
+<th> float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> A possible argument passed to the effect.
+</td></tr>
+<tr>
+<th> ConditionScript
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> A script reference. Used to restrict equipping items when IPType is set to 3. (See \_Global\Item Scripts\ in the single player campaign for examples of the scripts).
+</td></tr>
+<tr>
+<th> VFX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Visual Effect to apply when equipping item.
+</td></tr>
+<tr>
+<th> ScalingVector
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Unknown at this time.
+</td></tr>
+<tr>
+<th> VFX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Visual Effect to apply when equipping item.
+</td></tr>
+<tr>
+<th> Comment
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td> A comment. Not compiled into the resulting .2da file.
+</td></tr>
+<tr>
+<th> BaseCost
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Value added to item per point of power of this property.
+</td></tr>
+<tr>
+<th> IsNegative
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> If this property has a negative effect.
+</td></tr>
+<tr>
+<th> BaseDuration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Assumed to be duration of effect in seconds. Unconfirmed.
+</td></tr>
+<tr>
+<th> ProjectileCrust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Visual Effect to apply to projectiles fired from this item.
+</td></tr>
+<tr>
+<th> AbilityID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Ability to use for onhit (IPType = 2) effects.
+</td></tr></table>

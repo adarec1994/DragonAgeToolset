@@ -1,0 +1,19 @@
+<h2><span class="mw-headline" id="Synopsis">Synopsis</span></h2>
+<p>Please modify the lightmapping script and/or associated binaries to get normals correctly to the lightmapper.
+</p>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>As taken from LightMapper.py:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2"># TODO: Normals are not currently getting to Yafray. Lightmaps would look much better with them, though</span></pre></div></div>
+<p>There's not a whole lot to add to that, really. Especially caves and similar environments with lots of round shapes suffer horribly from being flat shaded. Getting the normals into Yafray would mean a huge leap in lighting quality - getting a cave level to look similar to the levels that ship with the game is almost impossible right now, since the flat shading means "sharp corners everywhere!".
+</p><p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 214368  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>

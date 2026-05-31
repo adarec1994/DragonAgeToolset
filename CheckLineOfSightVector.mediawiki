@@ -1,0 +1,24 @@
+<p>Determines if there is a line of sight between two positions.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> CheckLineOfSightVector(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vSource,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vTarget<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">vSource<dd>The first position vector<dt style="font-weight:normal; font-style:italic;">vTarget<dd>The second position vector
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if there is a clear line of sight between the two positions. Returns FALSE if there is not.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns TRUE if there is a line of sight between the position contained in vector vSource and the position contained in vector vTarget, otherwise returns FALSE. If the line is occluded by geometry then the function will return FALSE. Both vectors are assumed to refer to positions in the area the object running this function is currently in, therefore this function must be run on an object which is in the area in which you wish to test the line of sight.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This function must be run on a valid object in the area, ie: a creature, placeable... etc. It should be noted that the function is somewhat expensive and should not be called in an inner loop of your script.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckLineOfSightObject" title="CheckLineOfSightObject">CheckLineOfSightObject</a>
+</p>

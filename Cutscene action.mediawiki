@@ -1,0 +1,1020 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><strong class="selflink">Cutscene actions</strong>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">Play animation</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">Cutscene capture</a></li></ul>
+</td></tr></table>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a> actions are applied to objects by adding them to generic tracks on the timeline.
+</p><p>Not all actions are applicable to all types of objects in a cutscene. The following table shows which actions are available with which objects:
+</p>
+<table border="1" cellspacing="0" cellpadding="2">
+
+<tr>
+<th> Action </th>
+<th> MASTER <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a> </th>
+<th> Camera <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> </th>
+<th> Creature <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </th>
+<th> Placeable <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </th>
+<th> Sound <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </th>
+<th> Light <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="10" height="16" /></a> </th>
+<th> VFX <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> </th>
+<th> Proxy <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a>
+</th></tr>
+<tr align="center">
+<td align="left"> Active Camera
+</td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Adjust For Player Height
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Animate Face
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Change Visibility
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Draw Weapon
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a>
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Jump to Stage Place
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Jump to Stage Camera
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Link to Actor
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Orientation Follows Curve
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play Animation">Play Animation</a>
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Play Bink Movie
+</td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Set Fog
+</td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Set Gore
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Shake (Orientation)
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Shake (Position)
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Skip Marker
+</td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160;
+</td></tr>
+<tr align="center">
+<td align="left"> Snap to Walkmesh
+</td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Speak Line
+</td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr>
+<tr align="center">
+<td align="left"> Toggle Physics
+</td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713; </td>
+<td> &#x2713; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#160; </td>
+<td> &#x2713;
+</td></tr></table>
+<p>The camera target object (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraTarget.png"><img alt="IconCameraTarget.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/IconCameraTarget.png" width="13" height="12" /></a>) does not support any actions.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Active_Camera"><span class="tocnumber">1</span> <span class="toctext">Active Camera</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Adjust_For_Player_Height"><span class="tocnumber">2</span> <span class="toctext">Adjust For Player Height</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Animate_Face"><span class="tocnumber">3</span> <span class="toctext">Animate Face</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Change_Visibility"><span class="tocnumber">4</span> <span class="toctext">Change Visibility</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Draw_Weapon"><span class="tocnumber">5</span> <span class="toctext">Draw Weapon</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Headtracking"><span class="tocnumber">6</span> <span class="toctext">Headtracking</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Jump_to_Stage_Place"><span class="tocnumber">7</span> <span class="toctext">Jump to Stage Place</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Jump_to_Stage_Camera"><span class="tocnumber">8</span> <span class="toctext">Jump to Stage Camera</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Link_to_Actor"><span class="tocnumber">9</span> <span class="toctext">Link to Actor</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Orientation_Follows_Curve"><span class="tocnumber">10</span> <span class="toctext">Orientation Follows Curve</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Play_Animation"><span class="tocnumber">11</span> <span class="toctext">Play Animation</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Play_Bink_Movie"><span class="tocnumber">12</span> <span class="toctext">Play Bink Movie</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Set_Fog"><span class="tocnumber">13</span> <span class="toctext">Set Fog</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Set_Gore"><span class="tocnumber">14</span> <span class="toctext">Set Gore</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Shake_.28Orientation.29"><span class="tocnumber">15</span> <span class="toctext">Shake (Orientation)</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Shake_.28Position.29"><span class="tocnumber">16</span> <span class="toctext">Shake (Position)</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Skip_Marker"><span class="tocnumber">17</span> <span class="toctext">Skip Marker</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Snap_to_Walkmesh"><span class="tocnumber">18</span> <span class="toctext">Snap to Walkmesh</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Speak_Line"><span class="tocnumber">19</span> <span class="toctext">Speak Line</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Toggle_Physics"><span class="tocnumber">20</span> <span class="toctext">Toggle Physics</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Active_Camera">Active Camera <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a></span></h2>
+<p>While a cutscene can have many cameras, obviously only one camera can be active at any one time.
+</p><p>The MASTER object has an "Active Camera" track. To switch to a specific camera first move the timeline marker to the point where the camera cut is to take place. Then add a “Switch Camera” action to the track.
+</p><p>The next step is to set which camera the scene is supposed to cut to. In the Object Inspector there is a Camera field. This lists all of the placed cameras. Simply select the desired camera.
+</p>
+<h2><span class="mw-headline" id="Adjust_For_Player_Height">Adjust For Player Height <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a></span></h2>
+<p>This action is applicable to cameras only, and is only available when a stage is set for the cutscene.
+</p><p>!!Confirm that this action simply move the camera up or down along the vertical axis depending on character height!!
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Animate_Face">Animate Face <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a></span></h2>
+<p>Applies a FaceFX facial performance to an actor's face. The FaceFX performance is in an FXA file. This action is useful mainly if you want control over a character's facial expression but don't have dialogue for them to say with a "Speak Line" action while doing it.
+</p><p>Facial animations don't play for creatures that haven't had a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Pose" title="Pose (page does not exist)">pose</a> set.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Animate Face</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">FA Head Movement</td>
+<td> Whether the associated FaceFX will move the actor's head. Can be set to face, head, or lips. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">FXA Override</td>
+<td> The FXA that will be used to play the FaceFX. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">String ID</td>
+<td> The string ID associated with the FaceFX animation. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Change_Visibility">Change Visibility <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="10" height="16" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>Allows actors to be set visible or invisible as the cutscene progresses.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Visibility</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Visible</td>
+<td> Whether the actor is visible or invisible at this time. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Draw_Weapon">Draw Weapon <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a></span></h2>
+<p>Sets whether the actor has its equipped weapons drawn. The main hand and off hand can be set independently.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Weapons</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Main Drawn</td>
+<td> Whether the actor's main weapon is drawn at this time. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Off Drawn</td>
+<td> Whether the actor's off weapon is drawn at this time. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Headtracking">Headtracking <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a> for more details.
+</p><p>This action causes the actor to turn its head toward a target. Headtracking behavior can be a suprisingly complex problem in some circumstances. There are many competing factors, and it's the type of thing that has to just "look right" but its hard to come up with rules for.
+</p>
+<h2><span class="mw-headline" id="Jump_to_Stage_Place">Jump to Stage Place <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>Only available if the cutscene has its stage property set.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Stage Place</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Look At</td>
+<td> A stage place to turn the actor's entire body to face. If empty the actor faces the default direction for the place.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Place Tag</td>
+<td> The tag of the place in the stage to jump to. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Jump_to_Stage_Camera">Jump to Stage Camera <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a></span></h2>
+<p>Only available if the cutscene has its stage property set.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Stage Camera</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Default Camera</td>
+<td> If false the tag is the tag of the stage camera to jump to. If true the tag is the tag of the stage place whose default camera will be used.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tag</td>
+<td> Normally the tag of the camera in the stage to jump to. If "Default Camera" is true, however, it represents the tag of the place whose default camera will be used. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Link_to_Actor">Link to Actor <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="10" height="16" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Link Target</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Actor</td>
+<td> The actor to link to. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Node</td>
+<td> The specific node on the actor to link to. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Use Offset</td>
+<td> If false this actor will link directly to the target node. If true it will use the target node as its origin, and its position and orientation keys will be offset from it. When using "Use Offset" you will need to add Bracketing Keys to the actor. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Orientation_Follows_Curve">Orientation Follows Curve <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="10" height="16" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>While this action is enabled, the orientation of the object is overridden so that it faces "forward" along the object's position curve. For example, a moving arrow will automatically point in the direction of its flight, and a walking man will face in the direction he's moving.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Play_Animation">Play Animation <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">play animation</a> for full details.
+</p><p>Playing single animations on objects is very simple — all that needs to be done is a Play Animation action is assigned, and an animation is chosen. There are also more complex options that allow the user to blend two or more animations together.
+</p>
+<h2><span class="mw-headline" id="Play_Bink_Movie">Play Bink Movie <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Movie</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Movie</td>
+<td> The bink movie (*.bik) to play </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Set_Fog">Set Fog <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Fog</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Cap</td>
+<td> The maximum amount of fog. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog intensity</td>
+<td> The intensity of the fog. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Max Color</td>
+<td> The color of the fog. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Override Enabled</td>
+<td> If true the other properties of this action will override the level's fog settings. If false the fog settings will return to the default for the level.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Vertical Fog Zenith</td>
+<td> The vertical fog zenith. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Set_Gore">Set Gore <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Gore</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Gore</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Shake_.28Orientation.29">Shake (Orientation) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>The Shake (Orientation) action has three curves that can be edited with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">curve editor</a>; YawStrength, PitchStrength, and RollStrength.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action starts </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Keyable</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Pitch Strength</td>
+<td> The amplitude of the noise in pitch </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Roll Strength</td>
+<td> The amplitude of the noise in roll </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Yaw Strength</td>
+<td> The amplitude of the noise in yaw </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Noise</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Correlated</td>
+<td> If true, points on the curve affect their neighbors. This leads to a much more muted noise. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Frequency</td>
+<td> The frequency of the noise. Larger frequencies will lead ot faster change. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Roughness</td>
+<td> Affects how rough fractal noise is. It affects the number of noise layers. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Seed</td>
+<td> The random seed for the noise. Changing this value will give a different set of random noise. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Type</td>
+<td> The type of noise. White noise is pure random noise. Smooth noise uses the frequency to create a relatively smooth random curve. Fractal noise generates multiple levels of noise which makes the noise fairly smooth, but more organic. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Transition</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Ramp In</td>
+<td> During the ramp in time the amplitude of the noise will rise from 0 to the value set. This takes place at the beginning of the action. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Ramp Out</td>
+<td> During the ramp out time the amplitude of the noise will fall from the value set to 0. This takes place at the end of the action. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Shake_.28Position.29">Shake (Position) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>The Shake (Position) action has three curves that can be edited with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">curve editor</a>; XStrength, YStrength, and ZStrength.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action starts </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Keyable</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">X Strength</td>
+<td> The amplitude of the noise in the X direction </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Y Strength</td>
+<td> The amplitude of the noise in the Y direction </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Z Strength</td>
+<td> The amplitude of the noise in Z direction </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Noise</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Correlated</td>
+<td> If true, points on the curve affect their neighbors. This leads to a much more muted noise. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Frequency</td>
+<td> The frequency of the noise. Larger frequencies will lead ot faster change. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Roughness</td>
+<td> Affects how rough fractal noise is. It affects the number of noise layers. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Seed</td>
+<td> The random seed for the noise. Changing this value will give a different set of random noise. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Type</td>
+<td> The type of noise. White noise is pure random noise. Smooth noise uses the frequency to create a relatively smooth random curve. Fractal noise generates multiple levels of noise which makes the noise fairly smooth, but more organic. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Transition</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Ramp In</td>
+<td> During the ramp in time the amplitude of the noise will rise from 0 to the value set. This takes place at the beginning of the action. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Ramp Out</td>
+<td> During the ramp out time the amplitude of the noise will fall from the value set to 0. This takes place at the end of the action. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Skip_Marker">Skip Marker <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Snap_to_Walkmesh">Snap to Walkmesh <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCamera.png"><img alt="IconCamera.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/IconCamera.png" width="13" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconSound.png"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLight.png"><img alt="IconLight.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/ff/IconLight.png" width="10" height="16" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconVFX.png"><img alt="IconVFX.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0f/IconVFX.png" width="9" height="12" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>Forces the object's vertical position to the walkmesh. Useful for moving an object so that it follows the terrain automatically.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Speak_Line">Speak Line <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconMASTER.png"><img alt="IconMASTER.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/00/IconMASTER.png" width="15" height="15" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<p>Causes a line of dialogue to be spoken. The line of dialogue is taken from an existing <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> resource and includes text, voice-over, and FaceFX facial performance.
+</p><p>Narration without an in-scene source can be assigned to the MASTER object.
+</p><p>If all of the lines in a cutscene come from a single conversation resource (a common approach to organizing cutscene conversation), you might find it efficient to copy and paste an existing speak line action when adding new lines. This allows you to avoid having to select the same conversation manually for each new line.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Speak Line</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">FA Head Movement</td>
+<td> Whether the associated FaceFX will move the actor's head. Can be set to face, head, or lips. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">No VO In Game</td>
+<td> If true the game will not expect VO for this line. Instead it will just display the caption. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Source Conversation</td>
+<td> The conversation that the line comes from. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Source Line</td>
+<td> The line within the source conversation that's to be spoken. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">text</td>
+<td> The text that will be spoken. </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Toggle_Physics">Toggle Physics <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCreature.png"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconPlaceable.png"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconProxy.png"><img alt="IconProxy.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/IconProxy.png" width="16" height="16" /></a></span></h2>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Physics Switches</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cloth</td>
+<td> Whether cloth physics should be applied to the object at this time. </td>
+</tr>
+</table>

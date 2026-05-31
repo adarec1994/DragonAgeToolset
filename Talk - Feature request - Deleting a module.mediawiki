@@ -1,0 +1,14 @@
+<p>When I try to delete the row I get this error message:
+</p><p>No rows were deleted.
+</p><p>A problem occurred attemting to delete row 4.
+Error Source: .Net SqlClient Data Provider.
+Error Message: The DELETE statement conflicted with the REFERENCE
+constraint "FK_t_ModuleResRef_t_Module". The conflict occurred in
+database "bw_dragonage_content", table "dbo.t_ModuleResRef"'
+column 'ModuleID'.
+The statement has been terminated.
+</p><p>Correct the errors and attempt to delete the row again or press ESC to
+cancel the change(s).
+</p><p><br />
+If anyone could help me I would appreciate it.
+</p>

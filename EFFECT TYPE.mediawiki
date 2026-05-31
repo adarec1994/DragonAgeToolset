@@ -1,0 +1,905 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> EFFECT_TYPE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">effect_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> EFFECT_TYPE_VISUAL_EFFECT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td> Engine effect
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_CAMERA_SHAKE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td> Engine effect
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_PARALYZE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td> Engine effect
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MOVEMENT_RATE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td> Engine effect
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_ALPHA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td> Engine effect
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_AOE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td> Mixed effects
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td> Mixed effects
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MOVEMENT_RATE_DEBUFF
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">11
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_HEARTBEAT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1001
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_WALKING_BOMB
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1002
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_ROOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1003
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SHAPECHANGE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1004
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_RESURRECTION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1005
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_ENCHANTMENT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1006
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_LOCK_INVENTORY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1007
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MODIFYMANASTAMINA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1008
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SUMMON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1009
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_HEALHEALTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1010
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DISEASE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1011
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MODIFY_PROPERTY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1012
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DAMAGE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1013
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_KNOCKDOWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1014
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MODIFYATTRIBUTE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1015
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_UPKEEP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1016
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1017
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DISPEL_MAGIC
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1018
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DAZE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1020
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_STEALTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1021
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MODIFY_CRITCHANCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1022
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_AI_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1023
+</td>
+<td> Parameters: Int0 = Modifier
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_IMPACT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1024
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_REGENERATION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1026
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_STUN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1027
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_GRABBED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1028
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_GRABBING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1029
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_CONECASTING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1030
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_ADDABILITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1031
+</td>
+<td> Parameters: Int0 = Ability, Object0 = Effect Owner object
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_HEAVY_IMPACT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1032
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SLEEP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1033
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_CHARM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1034
+</td>
+<td> Parameters: Int0 = Target Group ID,Int1 = Caster Group ID
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_CONFUSION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1035
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_FEAR
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1036
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SLEEP_PLOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1037
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_LOCK_QUICKBAR
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1038
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_LOCK_CHARACTER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1039
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_LIFE_WARD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1040
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_FEIGN_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1041
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_OVERWHELMED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1042
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_OVERWHELMING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1043
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MARK_OF_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1044
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SIMULATE_DEATH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1045
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_CURSE_OF_MORTALITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1046
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_ROOTING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1047
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MISDIRECTION_HEX
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1048
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DEATH_HEX
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1049
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_FLANK_IMMUNITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1050
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SLIP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1051
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_PETRIFY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1052
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SPELL_WARD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1053
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DAMAGE_WARD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1054
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_WYNNE_REMOVAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1056
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_KNOCKBACK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1057
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DECREASE_PROPERTY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1058
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SWARM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1059
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_SINGING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1060
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DRAINING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1061
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_RECENTLY_STUNNED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1062
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DUMMY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1063
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_LUCK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1064
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_REWARD_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1065
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_TRAP_DETECTION_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1066
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_BLOOD_MAGIC_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1067
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MABARI_DOMINANCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1068
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_MANA_SHIELD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1069
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_DUMMY_HOSTILE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1070
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_AUTOCRIT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1071
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_TEST
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2000
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_RECURRING_KNOCKDOWN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2001
+</td>
+<td>
+</td>
+<td align="center"> effect_constants_h
+</td></tr>
+<tr>
+<td> EFFECT_TYPE_NULL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10000
+</td>
+<td> Null effect: doesn't do anything
+</td>
+<td align="center"> effect_constants_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The comments indicate that there are three types of effect: engine, mixed and scripted.
+</p>
+<ul><li> Engine effect: the effect constructor and destructor is handled by engine</li>
+<li> Mixed effects: the effect constructor is handled by both engine and scripts</li></ul>

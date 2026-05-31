@@ -1,0 +1,43 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Утилита ConfigureToolset - ошибка записи в реестр</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://www.datoolset.net/wiki/Bug:_ConfigureToolset_application_fails_to_set_a_registry_key/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<ul><li><b>Версия тулсета:</b> 1.0.1008.0 </li>
+<li><b>Status:</b> Открыта</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 203026  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5">Описание</span></h2>
+<p>При настройке соединения тулсета с базой данных с помощью утилиты ConfigureToolset возможна ошибка записи в реестр.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BA.D0.B0">Обработка</span></h2>
+<p>Если вы поймали такую ошибку, то вам необходимо установить ключ в реестре вручную. Для этого найдите в реестре папку <b>"HKEY_LOCAL_MACHINE\SOFTWARE\BioWare\Dragon Age\Toolset\Environment"</b> и измените ключик <b>"DefaultDatabaseConnection"</b> следующим образом:
+</p>
+<pre>
+Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\\BWDATOOLSET
+</pre>
+<p>В этой строке указаны дефолтные значения "Initial Catalog=bw_dragonage_content" и "Data Source=.\\BWDATOOLSET", если у вас значения не такие, то измените их на ваши. Например у меня эта строка имеет вид:
+</p>
+<pre>
+Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content_ru;Data Source=.\SQLEXPRESS
+</pre>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ConfigureToolset%20application%20fails%20to%20set%20a%20registry%20key" title="Bug: ConfigureToolset application fails to set a registry key">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

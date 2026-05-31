@@ -1,0 +1,143 @@
+<p>The Dragon Age Toolset is, with just a few omissions and changes, the same set of tools that was used internally at BioWare to develop the main Dragon Age: Origins campaign. It is a very powerful professional game development toolset and therefore some elements can take some time to master.
+</p><p>This <strong class="selflink">overview of the toolset</strong> is intended as a general introduction to help put the later complexity into a simpler context.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Toolset"><span class="tocnumber">1</span> <span class="toctext">The Toolset</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#User_Interface"><span class="tocnumber">1.1</span> <span class="toctext">User Interface</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Changing_the_layout"><span class="tocnumber">1.2</span> <span class="toctext">Changing the layout</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Toolset_resources"><span class="tocnumber">2</span> <span class="toctext">Toolset resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Where_the_game_looks_for_resources"><span class="tocnumber">2.1</span> <span class="toctext">Where the game looks for resources</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Sharing_designer_resources"><span class="tocnumber">2.2</span> <span class="toctext">Sharing designer resources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_Also"><span class="tocnumber">3</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_Toolset">The Toolset</span></h2>
+<p>The Dragon Age Toolset application provides a framework or host for the editor plug-ins used to create and edit the different types of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">designer resources</a>; for various utilities used to compile and export these resources, for creating <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">builder to builder</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">builder to player</a> packages and for many other tasks; and for the editors used to open and edit some of the custom <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20File%20types" title="Category:File types">file types</a> used by the Toolset and/or the Dragon Age:Origins game.
+</p>
+<h3><span class="mw-headline" id="User_Interface">User Interface</span></h3>
+<p>The Toolset's user interface, UI, contains several elements that are common to many modern applications:
+</p>
+<ul><li> <b>Title bar</b> which displays the application's name, version and the name of the current module.</li>
+<li> <b>Menu bar</b> with the default File, Edit, View, Tools, Window and Help menus.</li>
+<li> <b>Toolbar</b> with displays the Standard toobar by default. There are many other toolbars which are only displayed as required. The user can also create custom toolbars.</li>
+<li> <b>Status bar</b> which displays various status information including the current Toolset database.</li>
+<li> <b>Main window</b> where the various resource editors will be displayed.</li></ul>
+<p>The Toolset also provides several panels which can docked or floating. Some of these panels are displayed by default while others can be opened from the <b>Edit &gt; Find</b> menu options, the <b>View</b> menu or the <b>View &gt; Windows</b> submenu. Additionally panels can be opened using keyboard short cuts (for example <b>Ctrl+F</b> to open the Find Window) or simply through interacting with a particular editor (for example double clicking on a function name in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20editor" title="Script editor (page does not exist)">Script editor</a> to open the <b>Help window</b>)
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bookmarks%20panel" title="Bookmarks panel (page does not exist)">Bookmarks panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Console%20panel" title="Console panel (page does not exist)">Console panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20inspector" title="Object inspector panel">Object inspector panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Palette window panel">Palette window panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20window%20panel" title="Help window panel (page does not exist)">Help window panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20window%20panel" title="Log window panel (page does not exist)">Log window panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Find%20panel" title="Find panel (page does not exist)">Find panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Replace%20panel" title="Replace panel (page does not exist)">Replace panel</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20history%20panel" title="Resource history panel (page does not exist)">Resource history panel</a> </li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Search%20results%20window%20panel" title="Search results window panel (page does not exist)">Search results window panel</a></li></ul>
+<p>This gallery contains examples of some of the more important elements of the Toolset's user interface:
+</p>
+<ul class="gallery mw-gallery-traditional" width="800px" style="max-width: 972px;_width: 972px;">
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20default%20view.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Toolset_default_view.png" width="192" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Toolset_default_view.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cb/Toolset_default_view.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The basic Toolset UI
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20palette%20window%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Toolset_palette_window_panel.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Toolset_palette_window_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/96/Toolset_palette_window_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The 'Palette Window' panel
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20object%20inspector%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Toolset_object_inspector_panel.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Toolset_object_inspector_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Toolset_object_inspector_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The 'Object Inspector' panel
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20help%20window%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Toolset_help_window_panel.png/60px-Toolset_help_window_panel.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Toolset_help_window_panel.png/90px-Toolset_help_window_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Toolset_help_window_panel.png/120px-Toolset_help_window_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The 'Help Window' panel
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20file%20new%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Toolset_file_new_menu.png" width="60" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Toolset_file_new_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/Toolset_file_new_menu.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The new resource menu options
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20tools%20export%20menu.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Toolset_tools_export_menu.png" width="72" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Toolset_tools_export_menu.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/Toolset_tools_export_menu.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The export menu options
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20resource%20history%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Toolset_resource_history_panel.png" width="200" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Toolset_resource_history_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Toolset_resource_history_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The 'Resource History' panel
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:51.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20log%20window%20panel.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Toolset_log_window_panel.png" width="200" height="47" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Toolset_log_window_panel.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b2/Toolset_log_window_panel.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The 'Log Window' panel
+</p>
+			</div>
+		</div></li>
+</ul>
+<h3><span class="mw-headline" id="Changing_the_layout">Changing the layout</span></h3>
+<p>To undock a docked panel double-click on the panel's title bar. To dock a floating panel double click on its title bar. To change where a panel is docked and/or the grouped click on its title bar or tab and drag it into desired locations. While dragging a panel docking controls, blue diamonds and blue arrows, will appear to indicate where the panel can be dropped. The inner docking controls indicate which other panels or groups it can dock in, above or below, while the outer docking controls will dock the panel on to and edge.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20arranging%20panels.png" title="Moving a panel"><img alt="Moving a panel" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Toolset_arranging_panels.png" width="200" height="125" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Toolset_arranging_panels.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/68/Toolset_arranging_panels.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Toolset_resources">Toolset resources</span></h2>
+<p>There are three basic sorts of source resource:
+</p>
+<ul><li> Art resources - things like creature models, visual effects, sounds, and levels. These are stored as ordinary files in your file system.</li>
+<li> Database resources - in general, the instructions to the game on how to <i>use</i> art resources. This includes scripts, dialogue, cinematics, plots, placing objects in area layouts, and so forth.</li>
+<li> 2DAs - "two-dimensional arrays", tables of data that are referred to by scripts or by the game engine. These are defined by ordinary Excel spreadsheets.</li></ul>
+<p>The following diagram illustrates the general outline of how each of these types of resource is edited, processed, and used by the game:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png" title="The toolset resources"><img alt="The toolset resources" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png" width="200" height="89" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png 2x" /></a>
+</p><p>The designer toolset exports playable resources to the override directory. To use a programming metaphor, the toolset is a compiler and the objects that go into the override directory are the compiled executables. The "source code" for these finished products is stored elsewhere in a wide variety of formats.
+</p>
+<h3><span class="mw-headline" id="Where_the_game_looks_for_resources">Where the game looks for resources</span></h3>
+<p>When the Dragon Age executable is run and a new game starts up, the game loads a set of resources that define every aspect of the campaign world and the story that the player will experience within it.
+</p><p>All resources are marked as belonging to specific modules or packages (such as the single-player module that's the main campaign of Dragon Age: Origins).
+</p><p>Modules and packages can be set to inherit resources from other modules (called their 'dependencies' since they depend on the resources in them). This allows modules to build on each other and interact in an organized manner; each level in a module hierarchy can add to or supplant the contents of previous levels. At the root of this hierarchy is a special group of resources called "core" resources that all modules inherit from, consisting of basic features such as the game's combat scripts and the default behavior of interactive objects.
+</p><p>Each module or package will also have an "override" directory that can supplant the contents of that package. This is the directory where the toolset exports playable content during development.
+</p><p>As an example, you could create a module named "Dwarven Madness" that takes place in an area that the player visited in the main single-player campaign. You want to make use of the same area layout that was used in the single-player campaign, but add your own resources in the form of different creatures to fight and a new plot to follow. You would therefore set your module to inherit the resources of the single-player campaign, which itself inherits core resources. When the game starts and tries to load a resource it looks in the following places, in order:
+</p>
+<ol><li>Dwarven Madness' override directory</li>
+<li>Dwarven Madness' module directory</li>
+<li>Single Player's override directory</li>
+<li>Single Player module directory</li>
+<li>Core resources override directory</li>
+<li>Core resources directory</li></ol>
+<p>(See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">Source directory priorities</a> for a complete listing of all the places the game can look for resources.)
+</p><p>While you're developing the module in the toolset, exported resources will be placed in the Dwarven Madness override directory.
+</p>
+<h3><span class="mw-headline" id="Sharing_designer_resources">Sharing designer resources</span></h3>
+<p>If you're collaborating with other builders, you'll want to share the "source code" for your game resources instead of just the "compiled" finished product from the override directory.
+</p><p>For the art resources and 2DAs this is simply a matter of locating the files on your hard drive and making those available. Designer resources are a bit trickier and can be shared in two fundamentally different ways:
+</p>
+<ul><li>"<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">Builder to builder</a>" export, which exports selected source resources from the database in a non-playable XML format suitable for importing by another builder's toolset.</li>
+<li>Shared access to a single database. The toolset supports simultaneous access to a single database by many different toolsets, but setting this up can be somewhat tricky and depends on the availability of the database server.</li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">Compatibility</a>
+</p>

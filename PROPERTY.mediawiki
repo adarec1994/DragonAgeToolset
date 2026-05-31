@@ -1,0 +1,629 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_AP
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">53
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_ARMOR
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">11
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_ATTACK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_CONSTITUTION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DEFENSE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DEXTERITY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DISPLACEMENT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">16
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_INTELLIGENCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_MAGIC
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">4
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_MAGIC_CRIT_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td> Conflicts with PROPERTY_ATTRIBUTE_MISSILE_SHIELD in 2da_constants_h
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_MELEE_CRIT_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">21
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_MOVEMENT_SPEED_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">20
+</td>
+<td> Conflicts with PROPERTY_ATTRIBUTE_FLANKING_ANGLE in 2da_constants.2da
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_RANGED_AIM_SPEED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">24
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_RANGED_CRIT_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">23
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_REGENERATION_HEALTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">14
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_SPELLPOWER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">13
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_STRENGTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_WILLPOWER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_DEPLETABLE_HEALTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_DEPLETABLE_MANA_STAMINA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">8
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_AGE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">18
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_EXPERIENCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">19
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_INVENTORY_SIZE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">17
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_LEVEL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">15
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_THREAT_DECREASE_RATE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">40
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_ATTACK_SPEED_MODIFIER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">31
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_COLD_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">57
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">39
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_RESISTANCE_COLD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">43
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_RESISTANCE_ELEC
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">44
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_RESISTANCE_FIRE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">42
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_RESISTANCE_NATURE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">45
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_RESISTANCE_SPIRIT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">46
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_SCALE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">12
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_SHIELD_POINTS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">47
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_DAMAGE_SHIELD_STRENGTH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">48
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_ELECTRICITY_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">59
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_FIRE_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">55
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_FLANKING_ANGLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">20
+</td>
+<td> Conflicts with PROPERTY_ATTRIBUTE_MOVEMENT_SPEED_MODIFIER in script.ldf
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_MISSILE_SHIELD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td> Conflicts with PROPERTY_ATTRIBUTE_MAGIC_CRIT_MODIFIER in script.ldf
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_NATURE_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">58
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_REGENERATION_HEALTH_COMBAT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">28
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_REGENERATION_STAMINA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">29
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_REGENERATION_STAMINA_COMBAT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">30
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_RESISTANCE_MENTAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">32
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_RESISTANCE_PHYSICAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">33
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_SPIRIT_DAMAGE_BONUS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">56
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_ATTRIBUTE_POINTS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">34
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_BACKGROUND
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">37
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_CURRENT_CLASS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">27
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_SKILL_POINTS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">35
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PROPERTY_SIMPLE_TALENT_POINTS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">36
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20resistances%20h" title="Sys resistances h (page does not exist)">sys_resistances_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PROPERTY_ATTRIBUTE_SPELLRESISTANCE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">52
+</td>
+<td>
+</td>
+<td align="center"> sys_resistances_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Properties above 1000 are statistic properties.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HERO%20STAT" title="HERO STAT *">HERO_STAT_*</a></li></ul>

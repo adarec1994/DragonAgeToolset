@@ -1,0 +1,9 @@
+<ul><li><b>Version found:</b> </li>
+<li><b>Status:</b> Fixed</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>There are various issues with the lightmapper creating odd shadows, and black artifacts, particularly along chunk boundaries. 
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>The latest version of the lightmapper is available now at <a rel="nofollow" class="external text" href="http://social.bioware.com/project/717/">the Lightmapper project</a>.  It seems to solve many of the previous issues.  It can be downloaded and installed over top of your existing lightmapper files
+</p><p>The latest lightmapper files are included with version 1.01 of the toolset installer as well.
+</p>

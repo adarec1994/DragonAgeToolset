@@ -1,0 +1,127 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Установка тулсета</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Installing_the_toolset/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Тулсет поставляется в комплекте со следующим программным обеспечением сторонних производителей, которое необходимо для нормальной работы тулсета. К ним относятся:
+</p>
+<ul><li> DirectX 9.0c</li>
+<li> Visual C Runtime Library</li>
+<li> Microsoft SQL Server Express 2005 Edition</li>
+<li> Nvidia PhysX drivers</li></ul>
+<p>Эти компоненты будут установлены в процессе установки тулсета.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9F.D1.83.D1.82.D1.8C_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8"><span class="tocnumber">1</span> <span class="toctext">Путь установки</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.B0.D0.B2.D0.BB.D0.B8.D0.B2.D0.B0.D0.B5.D0.BC.D1.8B.D0.B5_.D0.BA.D0.BE.D0.BC.D0.BF.D0.BE.D0.BD.D0.B5.D0.BD.D1.82.D1.8B"><span class="tocnumber">2</span> <span class="toctext">Устанавливаемые компоненты</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.92.D1.8B.D0.B1.D0.BE.D1.80_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">3</span> <span class="toctext">Выбор базы данных</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0"><span class="tocnumber">4</span> <span class="toctext">Установка</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D1.81.D0.B2.D0.B5.D1.82.D0.BE.D0.B2.D1.8B.D1.85_.D0.BA.D0.B0.D1.80.D1.82_.28Lightmapper.29"><span class="tocnumber">4.1</span> <span class="toctext">Редактор световых карт (Lightmapper)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0"><span class="tocnumber">5</span> <span class="toctext">Настройка</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">5.1</span> <span class="toctext">Перемещение файлов базы данных</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A3.D0.B4.D0.B0.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">6</span> <span class="toctext">Удаление</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.9F.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B"><span class="tocnumber">7</span> <span class="toctext">Проблемы</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.94.D0.BE.D0.BA.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F"><span class="tocnumber">8</span> <span class="toctext">Документация</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9F.D1.83.D1.82.D1.8C_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8">Путь установки</span></h2>
+<p>Первым окном, которое вы увидите после титульного, будет окно выбора пути, но тулсет можно установить только в папку с установленной игрой, поэтому вы не сможете изменить путь установки и его демонстрация вам носит исключительно информационный характер.
+</p><p><b>Примечание:</b> Установщик MSSQL Express 2005, идущий в комплекте с установщиком тулсета ранних версий, имел ограничение, которое не позволяло устанавливать его в каталог, путь к которому больше 58-и символов <sup><a rel="nofollow" class="external autonumber" href="http://support.microsoft.com/kb/935371">[1]</a></sup>. Однако начиная с тулсета версии 1.01 это ограничение отсутствует, так как установка происходит по более короткому пути, а именно: Program Files\DAODB\. Для деталей можете посмотреть <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name%20-%20ru" title="Installation into a directory with a long path name/ru (page does not exist)">статью по этой проблеме</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation into a directory with a long path name">(en)</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.B0.D0.B2.D0.BB.D0.B8.D0.B2.D0.B0.D0.B5.D0.BC.D1.8B.D0.B5_.D0.BA.D0.BE.D0.BC.D0.BF.D0.BE.D0.BD.D0.B5.D0.BD.D1.82.D1.8B">Устанавливаемые компоненты</span></h2>
+<p>На следующем экране вы сможете выбрать компоненты для установки. Выбор будет небольшим: "Основные ресурсы" (сам тулсет) и "Microsoft SQL Server Express". Чтобы мы могли вообще запустить тулсет необходимо установить опцию "Основные ресурсы". Ну а SQL Server представлен в виде отдельной опции, так что если у вас уже есть установленный сервер базы данных, можно его и использовать, сбросив галочку с "Install Microsoft SQL Server Express 2005 SP3".
+</p><p>Если же у вас нет установленного сервера базы данных, или если вы не знаете, есть ли он у вас, то можно с уверенностью оставить настройки по умолчанию и установить SQL Server Express. Установщик сервера сам проверит наличие существующих компонентов и внесёт только необходимые изменения.
+</p>
+<h2><span class="mw-headline" id=".D0.92.D1.8B.D0.B1.D0.BE.D1.80_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Выбор базы данных</span></h2>
+<p>В случае отказа от установки сервера, установщик запросит сервер и имя базы данных для установки базы ресурсов игры. По умолчанию сервер базы данных - "\BWDATOOLSET", имя базы данных - "bw_dragonage_content".
+</p><p><b>Примечание:</b> При установке поверх предыдущей версий тулсета, возможно потребуется обновить формат старой базы данных, чтобы сделать ее совместимой с новой версией. Для получения более полной информации смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20migration%20-%20ru" title="Database migration/ru (page does not exist)">миграции баз данных</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20migration" title="Database migration">(en)</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">Установка</span></h2>
+<p>После выбора этих параметров инструментов Dragon Age начнется процесс установки. Это может занять некоторое время. Когда процесс установки закончен вам будет предоставлена возможность прочитать файл readme.txt.
+</p><p>В папке "Dragon Age" меню "Пуск" будет создана ссылка на тулсет, его удалени и ссылки на внешние утилиты настройки инструментов.
+</p><p>Также установщик запишет лог-файл установки в папке "Мои документы". Если происходит сбой установки, то этот файл журнала будет полезен для отладки.
+</p>
+<h3><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D1.81.D0.B2.D0.B5.D1.82.D0.BE.D0.B2.D1.8B.D1.85_.D0.BA.D0.B0.D1.80.D1.82_.28Lightmapper.29">Редактор световых карт (Lightmapper)</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lightmap%20-%20ru" title="Lightmap/ru (page does not exist)">Редактор световых карт</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lightmap">(en)</a> это инструмент для расчёта света в макетах локаций. Вам он необходим только в том случае, если вы собираетесь создавать или редактировать макеты локаций. Редактор световых карт включён в тулсет, однако требует наличия установленного Python'a, но Python на настоящий момент не включён в тулсет, так что если у вас на компьютере Python'a нет, то вам необходимо установить его, выполнив следующие шаги:
+</p>
+<ol><li> Установите <a rel="nofollow" class="external text" href="http://www.python.org/ftp/python/2.5.4/python-2.5.4.msi">Python 2.5.4 </a></li>
+<li> Установите <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.5.exe/download">win32-расширения</a> для Python 2.5 </li></ol>
+<p><b>OR</b>
+</p>
+<ol><li> Установите <a rel="nofollow" class="external text" href="http://downloads.activestate.com/ActivePython/releases/2.5.5.7/ActivePython-2.5.5.7-win32-x86.msi">ActiveState Python 2.5.5.7</a></li></ol>
+<p>Самое простое, это установить ActiveState Python 2.5.5.7, так как он готов к использованию и содержит все необходимые расширения. Если же вы используете установщик с python.org, то не забудьте установить и необходимые win32-расширения для него.
+</p><p><b>Возможные ошибки:</b>
+</p>
+<ul><li> Если у вас Python'a нет, то при попытке запустить Редактор световых карт вы получите стандартную ошибку Windows "Остановлена работа EclipseRay.exe".</li>
+<li> Существует ошибка с 64-разрядной версией ActiveState Python 2.5 для Windows, что не позволяет Редактору световых карт нормально функционировать. Установите 32-разрядную версию и всё заработает. Ссылка на 32-разрядную версию ActiveState Python 2.5 приведена выше.</li>
+<li> Не устанавливайте одновременно ActivePython и Python.org. Это, скорее всего, приведёт к ошибке с кодом 1 при рендеринге карты освещения.</li>
+<li> Если происходит ошибка с кодом -1073741819, то это означает, что вы используете либо 64-разрядную версию, либо версию выше, чем 2,5. Удалите и используйте инсталлятор из ссылок выше.</li>
+<li> Если происходит ошибка с кодом -1073741515, попробуйте скопировать python25.dll (из каталога установки Python) по следующему пути "&lt;Папка установки Dragon Age&gt;\tools\lightmapper" и перезапустите тулсет.</li></ul>
+<h2><span class="mw-headline" id=".D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0">Настройка</span></h2>
+<p>Внешняя утилита конфигурирования ConfigureToolset.exe (находится в Dragon Age\tools) используется для настройки подключения к базе данных и указания местонахождения игры. Не стоит его запускать без крайней необходимости. 
+</p><p>По умолчанию используется строка подключения "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\SQLEXPRESS". Для дополнительной настройки нажмите на кнопку с многоточием (  ).
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Перемещение файлов базы данных</span></h3>
+<p>По умолчанию файл базы данных и логи устанавливаются в "C:\Program Files\DAODB\data" и именуются "bw_dragonage_content.mdf" и "bw_dragonage_content.ldf".
+</p><p>Если вы не можете их найти, то попробуйте поиск в Program Files по строке".mdf".
+</p><p>Если вы настраивали вашу базу данных во время установки, замените bw_dragonage_content вашим именем базы данных.
+</p><p>Когда вы начнёте работу над модулем база данных будет расти в размерах. Если вы захотите переместить файлы базы данных в другое месте, чтобы освободить место на диске C:, выполните следующие шаги:.
+</p>
+<ul><li> Убедитесь, что вы сделали бэкап вашей базы данных. О том, как сделать это, смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore%20-%20ru" title="Database backup and restore/ru">Бэкап и восстановление базы данных</a>.</li>
+<li> Откройте Microsoft SQL Server Management Studio Express - Если у вас его нет, вы сможете загрузить его <a rel="nofollow" class="external text" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796">здесь</a>.</li>
+<li> Откройте новый запрос. Сделать это можно нажав кнопку "New Query" на панели инструментов, через меню "File -&gt; New -&gt; Query with Current Connection" или сочетанием клавиш "Ctrl+N"</li>
+<li> Введите следующий текст в окно запроса и выполните его (F5) для отсоединения базы данных от файлов с данными:</li></ul>
+<pre>use master
+go
+sp_detach_db 'bw_dragonage_content'
+go
+</pre>
+<ul><li> Переместите файлы с данными в новое место.</li>
+<li> Введите следующий текст в окно запрос и выполните его (F5) для подсоединения базы данных к файлам с данными:</li></ul>
+<pre>use master
+go 
+sp_attach_db 'bw_dragonage_content','&lt;path to the .mdf file&gt;\bw_dragonage_content.mdf','&lt;path to the .ldf file&gt;\bw_dragonage_content.ldf'
+go
+</pre>
+<ul><li> Для проверки пути к файлам с данными вы можете выполнить следующий запрос (по аналогии с предыдущими):</li></ul>
+<pre>use bw_dragonage_content
+go
+sp_helpfile
+go
+</pre>
+<p>Если необходимо больше информации по этому вопросу, то почитайте статью <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/224071">Microsoft KB article</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D0.B4.D0.B0.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">Удаление</span></h2>
+<p>Удаление производится в обычном порядке, либо через ярлык (находится там же где и ярлык тулсета, либо через панель управления.
+При удалении вам надо будет указать, какие компоненты удалять. 
+</p>
+<ul><li> Основные ресурсы тулсета - удаляются по умолчанию, так как это и есть сам тулсет.</li>
+<li> База данных - Программа удаления не может самостоятельно определить, используете ли вы SQL Server для каких-либо иных целей, SQL Server по умолчанию не удаляется. Для удаления сервера снимите этот флажок.</li></ul>
+<p>Деинсталятор тулсета генерируется при установке и, соответственно, не подписан, что может вызвать вопросы в некоторых операционных системах, однако не должно помешать его работе.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">Проблемы</span></h2>
+<p>Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20troubleshooting%20-%20ru" title="Installation troubleshooting/ru">проблемы при инсталляции</a> для определения возможных ошибок при установке, а также путей их исправления.
+</p><p>Логи находятся по адресу "My Documents\BioWare\Dragon Age\Toolset\logs". Имя лога содержит дату его создания. Чтение логов является хорошей помощью при исправлении багов.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.BA.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F">Документация</span></h2>
+<p>Документация собирается в Вики:
+</p><p><a rel="nofollow" class="external free" href="http://social.bioware.com/wiki/datoolset/">http://social.bioware.com/wiki/datoolset/</a>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset" title="Installing the toolset">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

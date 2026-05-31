@@ -1,0 +1,240 @@
+<p>The camera can be controled with a number of different control schemes; select the one you're most intuitively familiar with.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Toolbar"><span class="tocnumber">1</span> <span class="toctext">Toolbar</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Mouse_Control"><span class="tocnumber">2</span> <span class="toctext">Mouse Control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Windows_standard"><span class="tocnumber">2.1</span> <span class="toctext">Windows standard</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#NWN-Style"><span class="tocnumber">2.2</span> <span class="toctext">NWN-Style</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#3DSMax_Style"><span class="tocnumber">2.3</span> <span class="toctext">3DSMax Style</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Additional_notes"><span class="tocnumber">2.4</span> <span class="toctext">Additional notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Number_Pad_Controls"><span class="tocnumber">3</span> <span class="toctext">Number Pad Controls</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Moving_objects"><span class="tocnumber">4</span> <span class="toctext">Moving objects</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Changing_control_schemes"><span class="tocnumber">5</span> <span class="toctext">Changing control schemes</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Toolbar">Toolbar</span></h2>
+<p>The following toolbar appears in several different editors where the movement of objects and cameras in three dimensions is possible. Buttons 1-4 control how the selected object can be moved, and buttons 5 and 6 control how the camera moves relative to the selected object.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Camera%20and%20movement%20toolbar%20labeled.png"><img alt="Camera and movement toolbar labeled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f3/Camera_and_movement_toolbar_labeled.png" width="227" height="123" /></a>
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconStandardSelection.png"><img alt="IconStandardSelection.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2a/IconStandardSelection.png" width="10" height="16" /></a> Standard selection - Keyboard shortcut "r". If the "Allow Movement in Standard Mode" option is off, only options can be edited while in standard mode. If the option is on, then objects can be moved in standard mode in a manner similar to in 3 axis movement mode.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Icon3AxisMovement.png" width="15" height="15" /></a> Axis movement - Keyboard shortcut "q". When an object is selected the 3-axis movement control is displayed on top of the object. By click-dragging an axis the object will move only on that axis. The corners of the 3-axis control can also be dragged &#8212;  this will move the object on 2 axes at the same time.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisRotation.png"><img alt="Icon3AxisRotation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c0/Icon3AxisRotation.png" width="14" height="12" /></a> 3 Axis rotation - Keyboard shortcut "e". This will display the 3-axis rotation control. The circles displayed represent the yaw, pitch and roll. By click-dragging along these circles the object will rotate in the desired direction.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLocalCoordinates.png"><img alt="IconLocalCoordinates.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/IconLocalCoordinates.png" width="16" height="16" /></a> Local coordinates - Keyboard shortcut "t". When local coordinates are active the movement and rotation commands will use the selected object's reference frame. For example, you could move the object "forward" along one axis and it will move in the direction that it's pointing in.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconObjectStyle.png"><img alt="IconObjectStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/IconObjectStyle.png" width="16" height="16" /></a> Set camera to object style - camera rotates around the selected object</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconCameraStyle.png"><img alt="IconCameraStyle.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7b/IconCameraStyle.png" width="16" height="16" /></a> Set camera to camera style - camera rotates "in place"</li></ul>
+<h2><span class="mw-headline" id="Mouse_Control">Mouse Control</span></h2>
+<p>There are three options available for mouse controls, and the method of mouse control can be set differently for the Area editor and the Cutscene editor. To switch between them open the Options window (from the Tools menu). There will be options for mouse control style in the Cutscene Editor portion, the Area editor portion, and the Material Editor portion.
+</p><p>The VfX editor currently only uses the 3DSMax style.
+</p>
+<h3><span class="mw-headline" id="Windows_standard">Windows standard</span></h3>
+<table>
+
+<tr>
+<td> ALT + Left-click (hold) </td>
+<td> slide horizontally &amp; vertically
+</td></tr>
+<tr>
+<td> ALT + Right-click (hold) </td>
+<td> increase/decrease pitch &amp; rotation
+</td></tr>
+<tr>
+<td> Mousewheel up/down </td>
+<td> zoom in/out
+</td></tr></table>
+<h3><span class="mw-headline" id="NWN-Style">NWN-Style</span></h3>
+<table>
+
+<tr>
+<td> CTRL + Left-click (hold) </td>
+<td> slide horizontally &amp; vertically
+</td></tr>
+<tr>
+<td> CTRL + Right-click (hold) </td>
+<td> increase/decrease pitch &amp; rotation
+</td></tr>
+<tr>
+<td> Middle-click (hold) </td>
+<td> increase/decrease pitch &amp; rotation
+</td></tr>
+<tr>
+<td> Mousewheel up/down </td>
+<td> zoom in/out
+</td></tr></table>
+<h3><span class="mw-headline" id="3DSMax_Style">3DSMax Style</span></h3>
+<table>
+
+<tr>
+<td> Middle-click (hold) </td>
+<td> slide horizontally &amp; vertically
+</td></tr>
+<tr>
+<td> CTRL + Middle-click (hold) </td>
+<td> slide horizontally &amp; vertically (quick)
+</td></tr>
+<tr>
+<td> ALT + Middle-click (hold) </td>
+<td> increase/decrease pitch &amp; rotation
+</td></tr>
+<tr>
+<td> Mousewheel up/down </td>
+<td> zoom in/out
+</td></tr></table>
+<h3><span class="mw-headline" id="Additional_notes">Additional notes</span></h3>
+<p>In a level editor camara movement speed in flycam mode can be controlled by holding down a left CTRL and using a mouse wheel.
+</p>
+<h2><span class="mw-headline" id="Number_Pad_Controls">Number Pad Controls</span></h2>
+<p>These keyboard controls are the same regardless of which mouse control method is used.
+</p>
+<table>
+
+<tr>
+<th> Key </th>
+<th> Effect
+</th></tr>
+<tr>
+<td> 1 </td>
+<td> decrease pitch
+</td></tr>
+<tr>
+<td> 2 </td>
+<td> move forward
+</td></tr>
+<tr>
+<td> 3 </td>
+<td> increase pitch
+</td></tr>
+<tr>
+<td> 4 </td>
+<td> roll counter-clockwise
+</td></tr>
+<tr>
+<td> 5 </td>
+<td> reorient to default view
+</td></tr>
+<tr>
+<td> 6 </td>
+<td> roll clockwise
+</td></tr>
+<tr>
+<td> 7 </td>
+<td> rotate left
+</td></tr>
+<tr>
+<td> 8 </td>
+<td> move backward
+</td></tr>
+<tr>
+<td> 9 </td>
+<td> rotate right
+</td></tr>
+<tr>
+<td> + </td>
+<td> zoom in
+</td></tr>
+<tr>
+<td> - </td>
+<td> zoom out
+</td></tr></table>
+<h2><span class="mw-headline" id="Moving_objects">Moving objects</span></h2>
+<p>Moving objects (creatures, placeables, etc.) that have been placed within an area is done in both the area editor and the cutscene editor. By using keyboard modifiers objects can be rotated on each axis. The exact method differs between NWN-style and 3DSMax-style mouse control methods.
+</p>
+<table>
+<caption> <b>NWN-Style</b>
+</caption>
+<tr>
+<td> Left-click (hold) </td>
+<td> Moves object on x/y axis </td>
+<td>
+</td></tr>
+<tr>
+<td> ALT Left-click (hold) </td>
+<td> Moves object on z axis (up/down) </td>
+<td>
+</td></tr>
+<tr>
+<td> SHIFT Right-click (hold) </td>
+<td> Changes yaw (turns left/right) </td>
+<td>
+</td></tr>
+<tr>
+<td> SHIFT-CTRL Right-click (hold) </td>
+<td> Changes pitch </td>
+<td>
+</td></tr>
+<tr>
+<td> SHIFT-ALT Right-click (hold) </td>
+<td> Changes roll </td>
+<td>
+</td></tr></table>
+<table>
+<caption> <b>3DSMax Style</b>
+</caption>
+<tr>
+<td> Left-click (hold) </td>
+<td> Moves object on x/y axis </td>
+<td>
+</td></tr>
+<tr>
+<td> SHIFT Left-click (hold) </td>
+<td> Moves object on z axis (up/down) </td>
+<td>
+</td></tr>
+<tr>
+<td> ALT Left-click (hold) </td>
+<td> Changes yaw (turns left/right) </td>
+<td>
+</td></tr>
+<tr>
+<td> ALT-CTRL Left-click (hold) </td>
+<td> Changes pitch </td>
+<td>
+</td></tr>
+<tr>
+<td> ALT-SHIFT Left-click (hold) </td>
+<td> Changes roll </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Changing_control_schemes">Changing control schemes</span></h2>
+<p>Camera control schemes are defined for each editor in the file <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DefaultSettings.xml" title="DefaultSettings.xml (page does not exist)">DefaultSettings.xml</a>, which is located in the Dragon Age\Toolset directory.
+</p><p>For example, the level editor's camera controls can be found within the tags
+</p>
+<pre>
+&lt;LevelEditorRenderWnd&gt;
+...
+&lt;/LevelEditorRenderWnd&gt;
+</pre>
+<p>You can also find the schemes for the generic "Windows", "3DSMax" and "NWN" styles within the tags:
+</p><p>&lt;Windows&gt;
+&lt;WindowsCamera&gt;
+&lt;Threedsmax&gt;
+&lt;ThreedsmaxCamera&gt;
+&lt;NWN&gt;
+&lt;NWNCamera&gt;
+</p><p>Look for the &lt;CameraToolSet&gt; tag within these tags. They will contain tags for some of the following camera movement functions:
+</p>
+<ul><li>MoveCamera</li>
+<li>ZoomCamera</li>
+<li>RotateObjectsPitchUp</li>
+<li>RotateObjectsRollRight</li>
+<li>RotateCameraOrbOrFly</li>
+<li>RotateCameraOrbOrFly_2</li>
+<li>RotateObjectsYawLeft</li>
+<li>RotateObjectsYawLeft_2</li>
+<li>RotateObjectsYawLeft_3</li>
+<li>MoveCameraAround</li>
+<li>MoveCameraFly</li>
+<li>RollCamera</li>
+<li>RotateCameraFly</li></ul>
+<p>These tags will have a "Chord" attribute that indicates what combination of mouse button and keypress causes the camera to respond in that tag's designated way. For example:
+</p>
+<pre>
+&lt;RotateCameraOrbOrFly Function="RotateCameraOrbOrFly" Chord="RMB+Ctrl"/&gt;
+</pre>
+<p>Causes the camera to enter "RotateCameraOrbOrFly" mode when the right mouse button and the control key are held down.
+</p><p>There is also the optional attribute "IgnoreChord".
+</p>

@@ -1,0 +1,17 @@
+<p>Applies the abilities granted to a character because of picking a class.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Chargen_ApplyClassAbilities(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oChar,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nClass,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bUnApply&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oChar<dd>The character.<dt style="font-weight:normal; font-style:italic;">nClass<dd>Represents the Row of the M2DA_base.<dt style="font-weight:normal; font-style:italic;">bUnApply<dd>Whether to apply (default) or unapply the modifier.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20chargen%20h" title="Sys chargen h">sys_chargen_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Reads the class from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="Cla base.xls">cla_base.xls</a> and applies it.
+</p>

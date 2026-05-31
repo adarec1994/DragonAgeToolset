@@ -1,0 +1,20 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> Open</li>
+<li><b>Related:</b> <strong class="selflink">Bug: Water plane missing in-game</strong>.</li></ul>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 203997  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a>
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If you create a level with a water plane in it the water is appearing properly in the toolset but is non-existent in the game. This problem has been identified. It is not lightmapper related; it turns out that "single player" is hard-coded into a part of the resource processing pipeline.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>A proper fix may take some time, but there's a fairly simple workaround for it.
+</p><p>To post a level layout with water, first ensure that you've switched to the single player module via <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">manage modules</a>, and then once you've posted it you'll need to manually copy the resulting files from the single player <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Override directory">override directory</a> into your addin's override directory.
+</p><p>N.B. This bug is one of several path-related errors in level processing. For example, light mapping is also bugged. So, it's advisable to do all level work in the Single Player module, as described above.
+</p>

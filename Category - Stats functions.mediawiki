@@ -1,0 +1,31 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Stats functions"</h2>
+<p>The following 26 pages are in this category, out of 26 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddAbility" title="AddAbility">AddAbility</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearCreatureProperties" title="ClearCreatureProperties">ClearCreatureProperties</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Deprecated%20GetMaxHealth" title="Deprecated GetMaxHealth">Deprecated GetMaxHealth</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAbilityCount" title="GetAbilityCount">GetAbilityCount</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureAttribute" title="GetCreatureAttribute">GetCreatureAttribute</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMana" title="GetCreatureMana">GetCreatureMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMaxMana" title="GetCreatureMaxMana">GetCreatureMaxMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMaxStamina" title="GetCreatureMaxStamina">GetCreatureMaxStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty" title="GetCreatureProperty">GetCreatureProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreaturePropertyType" title="GetCreaturePropertyType">GetCreaturePropertyType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureStamina" title="GetCreatureStamina">GetCreatureStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHealth" title="GetHealth">GetHealth</a></li></ul></div><div class="mw-category-group"><h3>H</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility" title="HasAbility">HasAbility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasDeathEffect" title="HasDeathEffect">HasDeathEffect</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsAbilityAvailable" title="IsAbilityAvailable">IsAbilityAvailable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsDead" title="IsDead">IsDead</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveAbility" title="RemoveAbility">RemoveAbility</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureMana" title="SetCreatureMana">SetCreatureMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureMaxMana" title="SetCreatureMaxMana">SetCreatureMaxMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureMaxStamina" title="SetCreatureMaxStamina">SetCreatureMaxStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty" title="SetCreatureProperty">SetCreatureProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureStamina" title="SetCreatureStamina">SetCreatureStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetDead" title="SetDead">SetDead</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetMaxHealth" title="SetMaxHealth">SetMaxHealth</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPlaceableHealth" title="SetPlaceableHealth">SetPlaceableHealth</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UpdateCreatureProperty" title="UpdateCreatureProperty">UpdateCreatureProperty</a></li></ul></div></div></div>
+</div></div>

@@ -1,0 +1,133 @@
+<p>The <strong class="selflink">ambient_anim_patterns 2da</strong> defines the ambient animation patterns which form part of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">ambient behaviours</a> for non-player characters and creatures.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>170</b>. It can be extended by m2da fragments which have names starting with <b>ambient_anim_patterns</b>. It can also be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_AMBIENT</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Human-friendly name for the pattern. A green background indicates a pattern that MUST be played in order.
+</td></tr>
+<tr>
+<th> NoPlayNext
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Sets bPlayNext parameter used with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandPlayAnimation" title="CommandPlayAnimation">CommandPlayAnimation</a> function to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constant">FALSE</a>.
+</td></tr>
+<tr>
+<th> ActionTotal
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The total number of actions in the pattern.
+</td></tr>
+<tr>
+<th> Action0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  An action to be played at random or as part of a sequence. The format is <b>Animation.Loops</b> where Animation is a row ID in a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">ANIM_ 2da</a> and loops is:
+<ul><li> 00 - non-looping animation</li>
+<li> 01-98 - specific number of loop</li>
+<li> 99 - infinitely looping animation</li></ul>
+</td></tr>
+<tr>
+<th> Action1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action4
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action5
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action6
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action7
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action8
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action9
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action10
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action11
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr>
+<tr>
+<th> Action12
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> As above
+</td></tr></table>

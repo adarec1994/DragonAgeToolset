@@ -1,0 +1,33 @@
+<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullImageLink" id="file"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png"><img alt="File:Toolset setup screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png" width="513" height="397" /></a><div class="mw-filepage-resolutioninfo">No higher resolution available.</div></div>
+<div class="fullMedia"><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png" title="Toolset setup screen.png">Toolset_setup_screen.png</a> &#8206;<span class="fileInfo">(513 × 397 pixels, file size: 43 KB, MIME type: <span class="mime-type">image/png</span>)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><p>Screenshot of settings to use to install the toolset without installing SQL Server 2005 or restoring the Database.
+</p>
+
+
+
+
+
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png">22:17, 11 December 2009</a></td><td><a href="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png"><img alt="Thumbnail for version as of 22:17, 11 December 2009" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png" width="120" height="93" /></a></td><td>513 × 397 <span style="white-space: nowrap;">(43 KB)</span></td><td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith" class="mw-userlink">Allan Smith</a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Allan%20Smith" title="User talk:Allan Smith (page does not exist)">Talk</a> | <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AContributions%2FAllan_Smith" title="Special:Contributions/Allan Smith">contribs</a>)</span></span></td><td dir="ltr">Screenshot of settings to use to install the toolset without installing SQL Server 2005 or restoring the Database.</td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 2 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">Unable to connect to the database</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database%20-%20ru" title="Unable to connect to the database/ru">Unable to connect to the database/ru</a></li>
+</ul>
+</div>

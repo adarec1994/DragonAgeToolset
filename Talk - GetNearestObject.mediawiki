@@ -1,0 +1,3 @@
+<p>This topic does not say specifically that the array returned by this function is ordered or sorted by distance. I assume it must be, but it isn't apparant from the wording of the page content. Even knowing that it must be ordered doesn't help me to know if its nearest to furthest or the other way around. I would have to experiment to find out. After seeing this information missing from several of these array-returning functions now, it occurs to me that the wiki for all functions which return an array should either specify that the returned array is ordered &amp; lay out how the order is determined, or some statement making it clear the order is indeterminate when that is the case.
+-- Axe_Murderer
+</p>

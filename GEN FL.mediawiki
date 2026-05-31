@@ -1,0 +1,109 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Global%20objects%20h" title="Global objects h (page does not exist)">global_objects_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> GEN_FL_ALISTAIR
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_alistair
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_DOG
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_dog
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_LELIANA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_leliana
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_LOGHAIN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_loghain
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_MORRIGAN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_morrigan
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_OGHREN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_oghren
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_SHALE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_shale
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_STEN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_sten
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr>
+<tr>
+<td> GEN_FL_WYNNE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>
+</td>
+<td>gen00fl_wynne
+</td>
+<td>
+</td>
+<td align="center"> global_objects_h
+</td></tr></table>

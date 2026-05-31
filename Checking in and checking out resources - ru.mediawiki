@@ -1,0 +1,50 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Чекин и чекаут ресурсов</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Checking_in_and_checking_out_resources/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:25%;"><div style="text-align:center;"><b>Применяемые термины:</b></div>
+<p>В дальнейшем, вне рамок этой статьи, я решил не переводить термины "Check in" и "Check out", то есть:
+</p>
+<ul><li><b>"Делаем чекаут"</b> - создаём редактируемую копию ресурса.</li>
+<li><b>"Делаем чекин"</b>, - сохраняем ресурс в базу данных.</li></ul>
+</div>
+<p>При первом открытии ресурса он открывается только для чтения (красная полоса под заголовком ресурса с надписью "Копия только для чтения - Изменения не могут быть сохранены"). Если вы хотите внести изменения в данный ресурс, то необходимо создать его редактируемую копию. Это делается выбором команды "Check Out" в контекстном меню ресурса (щелчок правой кнопки мыши на ресурсе в окне палитры или на заголовке ресурса). В результате этой операции ресурс в окне палитры будет отмечен зелёной галочкой и при его открытии поле под заголовком окрасится в зелёный цвет, его текст изменится на "Редактируемая копия - изменения могут быть сохранены". Теперь вы свободно можете редактировать эту копию, однако сделанные вами изменения автоматически сохраняться в базу не будут. Это позволяет свободно редактировать ресурс и тестировать внесённые изменения, не беспокоясь о возможных ошибках, которые могут повредить ранее проделанной работе.
+</p><p>Также через контекстное меню вы можете создать локальную копию ресурса, полностью отделённую от базы данных, но примите во внимание, что локальные копии не сохраняются в базу данных и не могут быть использованы в игре.
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 385px"><div style="width: 385px">
+			<div class="thumb" style="width: 380px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Checking%20out%20a%20resource.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Checking_out_a_resource.png" width="325" height="200" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Checking_out_a_resource.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/80/Checking_out_a_resource.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Создание редактируемой копии ресурса (Check out)
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 385px"><div style="width: 385px">
+			<div class="thumb" style="width: 380px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Resource%20checkin.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Resource_checkin.png" width="317" height="200" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Resource_checkin.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Resource_checkin.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Сохранение ресурса в базе (Check in)
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>Вы можете просматривать все изменения, внесенные в ресурс, сравнивая его с версиями, сохранёнными в базе данных с помощью команды "Diff to Last Checked In", доступной по щелчку правой кнопки мыши на ресурсе в окне палитры. Вам будет показано два окна редактирования, в котором добавленные строки будут выделены зеленым цветом, измененные - серым, а удаленные - красным. 
+</p><p>Сохраняя ресурс с помощью команды "Save" вы сохраняете редактируемую копию ресурса и можете впоследствии вернуться к её редактированию.
+</p><p>По окончанию редактирования, вы можете сохранить изменённый ресурс в базу данных используя команду "Check In" контекстного меню на ресурсе в окне палитры, либо, если вы предпочитаете вернуться к старой версии, которая хранится в базе данных, выберите пункт "Undo check out".
+</p><p>Также вы можете просмотреть, а в случае необходимости и восстановить, все копии редактируемого ресурса, когда-либо сохраняемые в базу данных. Сделать это можно в том же контекстном меню с помощью команды "Resource History".
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D1.82.D0.B0.D1.82.D1.83.D1.81.D0.BD.D1.8B.D0.B5_.D0.B8.D0.BA.D0.BE.D0.BD.D0.BA.D0.B8">Статусные иконки</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToYou.png"><img alt="IconResourceCheckedOutToYou.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/IconResourceCheckedOutToYou.png" width="16" height="16" /></a> - Копия редактируемого ресурса создана вами.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconResourceCheckedOutToSomeoneElse.png"><img alt="IconResourceCheckedOutToSomeoneElse.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/IconResourceCheckedOutToSomeoneElse.png" width="16" height="16" /></a> - Копия редактируемого ресурса создана другим пользователем. Если база данных используется вами, это может указывать на ошибки в базе. Убедитесь, что вы вошли в систему под той же учётной записью, что и тогда, когда создавали редактируемую копию этого ресурса (делали чекаут).</li></ul>
+<p>Появление красной точки также может быть обусловлено <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Computer%20names%20with%20non-English%20characters%20can%20cause%20checkout%20problems%20-%20ru" title="Bug: Computer names with non-English characters can cause checkout problems/ru">вот этой ошибкой</a>.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Checking%20in%20and%20checking%20out%20resources" title="Checking in and checking out resources">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

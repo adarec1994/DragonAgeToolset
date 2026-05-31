@@ -1,0 +1,410 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Level editor topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20new%20level" title="Creating a new level">Creating a new level</a></li>
+<li> <strong class="selflink">Exportable area</strong></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">Level Editor Tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exterior%20Level%20Manual" title="Exterior Level Manual">Exterior Level Manual</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">Model list</a> <small>(screenshots)</small></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vista%20object" title="Vista object">Vista objects</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation%20list" title="Vegetation list">Vegetation list</a> <small>(screenshots)</small></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lighting">Lighting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20mesh" title="Terrain mesh">Terrain mesh</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20list" title="Terrain list">Terrain list</a> <small>(screenshots)</small></li></ul></li></ul>
+</td></tr></table>
+<p>A layout requires at least one exportable area. This is the area that the player will be able to operate in and percieve when the layout is exported for use in the game.
+</p><p>It's possible to have a large level with several different exportable areas. The player will have to go through an area transition to travel between exportable areas, just as if they were separate layouts entirely, but by combining them into one level in the level editor it becomes easier to maintain consistency between them. This is particularly useful in layouts where a player in one exportable area can see into the other exportable area but not reach it directly.
+</p><p>The name of an exportable area layout is limited to seven characters. BioWare uses the following naming system:
+</p>
+<ul><li>Three-letter prefix that describes the region or plot the layout is for. For example, "ost" for Ostagar and environs.</li>
+<li>Three-digit number that uniquely identifies the layout within that region. Increments of one hundred are commonly used for major areas to allow sub-regions to be grouped together.</li>
+<li>A single character identifying variants of the layout. For example, a "d" suffix for the "daytime" version of an exterior layout. "d" is also often used to mean "default", for areas where day and night are irrelevant (deep in a cave, for example).</li></ul>
+<p>So for example the layout "ost101d" is a layout in the Ostagar region with a daytime ambience.
+</p><p>Once you have done this you can convert your level into an area by clicking on Do All Local Posts.
+</p>
+<h3><span class="mw-headline" id="Creating_an_Exportable_Area_.28Room.29">Creating an Exportable Area (Room)</span></h3>
+<p>The area is created by default whenever a new level file is created.  Its default layout name is “&lt;name of exported…” which must be changed to something with seven characters or less.  This is the prefix for all resources created specific to this layout.
+There is no provision for creating multiple areas inside a room based level file.
+</p>
+<h3><span class="mw-headline" id="Creating_an_Exportable_Area_.28Terrain.29">Creating an Exportable Area (Terrain)</span></h3>
+<p>It is possible to have multiple exportable areas in each outdoor level file.  These can be created and their properties edited much like any other object in the editor.  If you have an exportable area already, you can select it via the drop down menu shown below.  
+</p><p>If you want to create or remove an exportable area, use the plus/minus buttons (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconRemoveExportableArea.png"><img alt="IconRemoveExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/IconRemoveExportableArea.png" width="12" height="4" /></a>).   New areas automatically get an invalid layout name called "&lt;name of exported…"  This needs to be changed to something with seven characters or less.  This is the prefix for all resources created specific to this layout.
+</p>
+<div style="float:right; background-color:#ee9999; border:2px #ff0000 solid; padding:4px; margin:4px; text-align:center; font-size:x-small;">
+<div style="float:right; background-color:#eeee99; border:2px #ffff00 solid; padding:4px; margin:4px;">
+<div style="float:right; background-color:#99ee99; border:2px #00ff00 solid; padding:4px; margin:4px;">
+<p>Walkable
+</p>
+</div>
+<p>Border
+</p>
+</div>
+<p>Vista Border
+</p>
+</div>
+<ul><li> The green box is the area the characters will be able to walk in, so make sure you drag it to cover the entire space you want to be walkable. If you place the green square in one of the corners and then drag diagonally you should be able to expand the box.</li>
+<li> The yellow box is the high level of detail, non-playable border (referred to as the Border).</li>
+<li> The red box is is the low level of detail, non-playable border (referred to as the Vista Border).</li></ul>
+<p>These are used for giving depth/backgrounds to your areas. For example the mountains that surround Ostagar or the castle at Redcliffe.
+</p><p>After a new layout entry has been created, you can edit it by clicking on the properties button with the desired area selected in the dropdown.
+</p>
+<h3><span class="mw-headline" id="Exportable_area_properties">Exportable area properties</span></h3>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Area ID</td>
+<td>This is the ID of the area, this never needs to be changed.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cutoff Height</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cutoff System Enabled</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Layout Name</td>
+<td>This is the name which will be given to the layout on export, this name should never be longer than 7 characters, and if it is it will be truncated so that it is.  This is due to the long names our lightmap files receive, and out 32 character limit.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td>This is the name that shows up in the drop-down list.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Point Name</td>
+<td>Artist can specify the name of a startpoint that he/she wants the character to start at when previewing this level in the game.  They show up in the hierarchy tree, and can be created using the Start Point Tool.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Atmosphere</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Atmo-Sun Color</td>
+<td>RGB color values for the sun. Usually white.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Atmo-Sun Intensity</td>
+<td>Sun power. Multiplies the extintion and In-scattering terms.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Atmosphere Alpha</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Distance Multiplier</td>
+<td>Modulates the distance at which the fog effect is applied.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Earth Reflectance</td>
+<td>Specifies the amount of natural color to allow objects to emit.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Mie Multiplier</td>
+<td>Modulates the Mie scattering term.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Moon Alpha</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Moon Rotation</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Moon Scale</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Rayleigh Multiplier</td>
+<td>Modulates the rayleigh term.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Skydome Model</td>
+<td>This is the model to use for the skydome.  The resource list that appears when you click here is filtered for models beginning is “sb_”.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Turbidity</td>
+<td>Turbidity factor for the Mie term.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Atmosphere Cloud</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Color</td>
+<td>The cloud layer uses this color.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Density</td>
+<td>Lower values make an overcast sky.  Higher values give a scattered cloud layer.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Depth</td>
+<td>The depth value simulates thickness in the clouds.  The lower the value, the darker and more opaque the base is.  Higher values simulate more light passing through the cloud layer.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Range1</td>
+<td>First UV offset into the noise texture.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Range2</td>
+<td>Second UV offset range into the noise texture.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Sharpness</td>
+<td>:  This is a floating point number between 0 and 1, with 0 being no fog and one being a full white out so to speak.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Atmosphere Fog</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Cap</td>
+<td>The maximum value of fog effect.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Intensity</td>
+<td>The intensity at the far plane.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Fog Max Color</td>
+<td>The color at maximum distance.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tactical Fog Multiplier</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Use Separate Water Fog</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Vertical Fog Zenith</td>
+<td> Height of Fog horizon. Best between 0.000-&gt;1.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Water Fog Cap</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Water Fog Intensity</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Buffer Effect 1, 2 and 3</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top"></td>
+<td>The properties available will depend on the specific buffer effect selected.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Layout Sunlight</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Char. Sunlight Can Be Occluded</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Character Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Character Color Multiplier</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Color</td>
+<td>This is the color of the sunlight for the layout.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Color Multiplier</td>
+<td>This is the strength of the sunlight.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Direction</td>
+<td>This is the direction of the sunlight.  It can be typed in manually (a Vector in 3d space), or it can be specified by clicking on the “Set Sunlight” button on the right.  Pressing this pops up an icon that shows both the direction of the sunlight and its color.  Use the mouse to change it.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enabled</td>
+<td>When this is set to true sunlight is enabled, false it is not.  </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Soft Shadow Light Angle</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Soft Shadow Num Samples</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Mini Map</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Mini Map Position X</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Mini Map Position Y</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Mini Map Size X</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Mini Map Size Y</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Model Low-LOD Lightmap</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Downsample Factor</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Max Size</td>
+<td>After downsampling is applied, the texture size is checked against the maximum clamp size.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Pathfinding</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Character Height</td>
+<td>This specifies the average height of a humanoid for the pathfinding info generation.  It is specifically used to generate the bounding volume for a creature for the pathing tests.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Clearance</td>
+<td>This is currently not being used.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Grid Separation</td>
+<td>This is the separation between pathing test points, in the x and y direction.  In the default case there would be a pathing point every 0.5 meters.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Terrain Setup</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Border Cell Width</td>
+<td>This is the number of chunks that will appear in the boundary around the playable area.  In order to specify the playable area, use the “define Area” button.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Position X</td>
+<td>This is the coordinate of the lower left corner of the exportable area, the numbers are in relation to the chunks and not area or world coordinates.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Position Y</td>
+<td>This is the coordinate of the lower left corner of the exportable area, the numbers are in relation to the chunks and not area or world coordinates.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Position Z</td>
+<td>This is the coordinate of the lower left corner of the exportable area, the numbers are in relation to the chunks and not area or world coordinates.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Size X</td>
+<td>This is the width of the exportable area, in chunks.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Size Y</td>
+<td>This is the length of the exportable area, in chunks</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Cell Size Z</td>
+<td>This is the height of the exportable area.  Currently there is only 1 height possible, 1.  This will not change for DA.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Lightmap Texture Size</td>
+<td>This is the size of the lightmap texture for the terrain chunks.  In this case 64 means the texture will be 64x64, which for a chunk size of 64m x 64m will be one texel of lightmap per meter (which is pretty low).</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Lightmap Texture Size (Vista)</td>
+<td>This is the size of the lightmap texture for a vista chunk, outside the playable area and the border.  Again 16 means the texture will be 16x16.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Subdivide Chunks By</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Vista Cell Width</td>
+<td>This is the number of chunks that will appear outside the border cells.  Anything inside the vista area will not be exported at high LOD.</td>
+</tr>
+</table>

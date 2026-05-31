@@ -1,0 +1,20 @@
+<p>Sets the party picker area name
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetPartyPickerStage(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sAreaName,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> s2DAName<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sAreaName<dd>Name of the partypicker stage<dt style="font-weight:normal; font-style:italic;">s2DAName<dd>Name of the 2DA to use with the stage
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the party picker area name. Each module can have its own area
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Note that <b>SetPartyPickerStage</b> only works in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20GETCHARSTAGE" title="EVENT TYPE MODULE GETCHARSTAGE">GETCHARSTAGE</a> module event. It does not replace the default <b>char_stage</b> but loads an overlaying area. <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/71/index/1436426#1446802">[1]</a> <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/71/index/1436426#1521790">[2]</a>
+</p>

@@ -1,0 +1,17 @@
+<p>Returns N nearest objects of a specific type
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] GetNearestObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nObjectType&#160;= OBJECT_TYPE_ALL,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nNumberOfObjects&#160;= 1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCheckLiving&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCheckPerceived&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIncludeSelf&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>target Object<dt style="font-weight:normal; font-style:italic;">nObjectType<dd>type for the objects to query for their distance<dt style="font-weight:normal; font-style:italic;">nNumberOfObjects<dd>(optional) Number of objects to return<dt style="font-weight:normal; font-style:italic;">nCheckLiving<dd>(optional) only returns objects if they are alive<dt style="font-weight:normal; font-style:italic;">nCheckPerceived<dd>(optional) only returns objects if they are within the perception radius<dt style="font-weight:normal; font-style:italic;">nIncludeSelf<dd>whether to include the target object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>N nearest objects that match the criteria
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns N nearest object of a specific type
+</p>

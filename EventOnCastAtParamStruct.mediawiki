@@ -1,0 +1,11 @@
+<p>Use this to typecast event parameters for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CAST%20AT" title="EVENT TYPE CAST AT">EVENT_TYPE_CAST_AT</a>
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.3em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword" title="Struct keyword (page does not exist)">struct</a> EventOnCastAtParamStruct{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster;<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility;<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bHostile;<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fParam1;<br />};</div>
+<dl>
+<dt>Members:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">nAbility<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">bHostile<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup><dt style="font-weight:normal; font-style:italic;">fParam1<dd>for healing spells: amount being healed
+</dl>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+</p>
+</dl>

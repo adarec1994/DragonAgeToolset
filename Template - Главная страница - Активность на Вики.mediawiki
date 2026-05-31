@@ -1,0 +1,41 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://www.datoolset.net/wiki/Template:%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0_-_%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BD%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div style="background-color:#F6F6F6; border:1px solid #A7D7F9; padding-top:0px; padding-bottom:2px; padding-left:3px; padding-right:3px; margin-bottom:10px; -webkit-border-bottom-right-radius:7px; -webkit-border-bottom-left-radius:7px; -moz-border-radius-bottomright:7px; -moz-border-radius-bottomleft:7px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">
+<div style="background-color:#B6D1ED; text-align:left; border:1px solid #A7D7F9; border-top:0; padding:6px 6px 6px 6px; font-size:18px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">Активность на Вики <div style="float:right; text-align:right; font-size:9px;"><strong class="selflink">Ш</strong></div> </div><div style="padding:4px 4px 4px 4px;">
+<table style="background-color:#F6F6F6; width:100%" align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+<td style="width:50%" valign="top"><ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20an%20account%20-%20ru" title="Creating an account/ru">Creating an account/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20Location%20to%20the%20Single%20Player%20Campaign%20Tutorial%20-%20ru" title="Adding a Location to the Single Player Campaign Tutorial/ru">Adding a Location to the Single Player Campaign Tutorial/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore%20-%20ru" title="Database backup and restore/ru">Database backup and restore/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates%20-%20ru" title="PRCSCR Script Templates/ru">PRCSCR Script Templates/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Exporting a module/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls%20-%20ru" title="PRCSCR.xls/ru">PRCSCR.xls/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru" title="Compiling 2DAs/ru">Compiling 2DAs/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database%20-%20ru" title="Unable to connect to the database/ru">Unable to connect to the database/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture%20-%20ru" title="Cutscene capture/ru">Cutscene capture/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Russian%20characters%20are%20displayed%20incorrectly%20-%20ru" title="Bug: Russian characters are displayed incorrectly/ru">Bug: Russian characters are displayed incorrectly/ru</a></li></ul>
+</td>
+<td></td>
+<td>&#160;&#160;
+</td>
+<td></td>
+<td style="width:50%" valign="top">
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA%20-%20ru" title="GDA/ru">GDA/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions%20-%20ru" title="Naming conventions/ru">Naming conventions/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Script/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Designer Resources/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Exporting and running a module/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls%20-%20ru" title="ABI base.xls/ru">ABI base.xls/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">Builder to player/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID%20-%20ru" title="String ID/ru">String ID/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial%20-%20ru" title="Cutscene tutorial/ru">Cutscene tutorial/ru</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%3A_Cannot_open_file_for_writing_C%3A%5CProgram_Files%5CBioWare%5C...%2Fru" title="Bug: Cannot open file for writing C:\Program Files\BioWare\.../ru">Bug: Cannot open file for writing C:\Program Files\BioWare\.../ru</a></li></ul>
+</td></tr></table></div>
+<div style="font-size:80%; text-align:right; padding-right: 4px; padding-left:4px; clear:both"><b>Категории</b>: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%9E%D0%B1%D1%89%D0%B8%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B4%D1%91%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86" title="Category:Общий список переведённых страниц">Общий список переведённых страниц</a></div>
+</div>Шаблон последней активности на Вики. Без параметров.

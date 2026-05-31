@@ -1,0 +1,18 @@
+<p>Returns the Combatant Type of a creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetCombatantType(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oidCreature<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oidCreature<dd>The creature
+</dl>
+</dl><dl><dt>Returns:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20TYPE" title="CREATURE TYPE *">CREATURE_TYPE_COMBATANT</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20TYPE" title="CREATURE TYPE *">CREATURE_TYPE_NON_COMBATANT </a>
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the CREATURE_TYPE_COMBATANT or CREATURE_TYPE_NON_COMBATANT constant.
+</p><p>Note that <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a> also defines a set of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20TYPE" title="CREATURE TYPE *">CREATURE_TYPE_*</a> constants. These are not returned by this function, only the CREATURE_TYPE_* constants defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> apply here.
+</p>

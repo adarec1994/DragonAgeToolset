@@ -1,0 +1,14 @@
+<dl><dt> <span id=""></span>&#160;</dt>
+<dd> </dd></dl>
+<p>The Definition template creates anchored definitions for glossaries and terminology lists. The anchored definitions can be linked to using the [[&lt;page-name&gt;#&lt;anchor&gt;]] style of link.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{Definition|constructor|a function that creates an instance of a data type}}
+</pre>
+<table style="margin-left:3.0em">
+<tr>
+<td>
+<dl><dt> <span id="constructor">constructor</span>&#160;</dt>
+<dd> a function that creates an instance of a data type</dd></dl>
+</td></tr></table>

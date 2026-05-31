@@ -1,0 +1,31 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Welcome_to_Help"><span class="tocnumber">1</span> <span class="toctext">Welcome to Help</span></a></li>
+<li class="toclevel-1"><a href="#Search_Help"><span class="tocnumber">2</span> <span class="toctext">Search Help</span></a></li>
+<li class="toclevel-1"><a href="#Creating_Pages"><span class="tocnumber">3</span> <span class="toctext">Creating Pages</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Pages"><span class="tocnumber">4</span> <span class="toctext">Editing Pages</span></a></li>
+<li class="toclevel-1"><a href="#User_Page"><span class="tocnumber">5</span> <span class="toctext">User Page</span></a></li>
+<li class="toclevel-1"><a href="#Sandbox"><span class="tocnumber">6</span> <span class="toctext">Sandbox</span></a></li>
+</ul>
+</div>
+
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Welcome_to_Help">Welcome to Help</span></h2>
+<p>This help page is for help on using the wiki itself rather than the Dragon Age Toolset.  If you need help with the toolset, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Getting%20Started" title="Getting Started">Getting Started</a> is a good place to start.
+</p>
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Search_Help">Search Help</span></h2>
+<p>Searching in a wiki is a little different than searching with Google.  Google and other search engines search the page content, and return results based on the relevance of the entire page.  MediaWiki however gives first priority to pages.  For example, if you search for water, you will not
+get a list a pages that deal with water.  Rather you will be automatically directed to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Water" title="Water">Water</a> page.  If you search for a term that does not have a page, it will list pages that match the title first, page content second.  So your best bet on searching the wiki is to try and guess at page and article titles, rather than trying to match phrases that might be inside the page its self.
+</p>
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Creating_Pages">Creating Pages</span></h2>
+<p>Creating a page is as simple as placing a link to a page that doesn't exist.  Once you click on the link, you will be in the page edit mode so you can create it.  There are two ways you can approach this.  If you search for a page that doesn't exist, the search results will include a link to that page.  Alternately, you can create a link to the page you want to create in another article.  The markup for creating a page is this: [[Page Name]] which would show up like this: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Page%20Name" title="Page Name (page does not exist)">Page Name</a>.  If you click on a link to a non-existent page you will automatically be brought to the editor so you can create the page.
+</p>
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Editing_Pages">Editing Pages</span></h2>
+<p>Every page that can be edited will have an Edit tab at the top.  Wiki's keep a record of all changes, so don't be afraid of making mistakes or destroying a page.  In the event something goes wrong and you mess up a page, it's a simple matter for someone to come and revert to an older version.
+The DA Wiki uses <a class="external text" href="http://www.mediawiki.org/">MediaWiki</a> as its wiki engine.  Some basic editing help can be found in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Editing" title="Help:Editing">Help:Editing</a> page, or on <a class="external text" href="http://www.mediawiki.org/">MediaWiki's</a> website.
+</p>
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="User_Page">User Page</span></h2>
+<p>Everyone has a User Page.  Link is [[User:User Name]], and when logged in you always have a link to your user page at the top.  Your user page can be used for a variety of things.  Bio page, project notes, ect.  It's really up to you.  Do keep in mind that the best way for someone to communicate with you on the wiki is via the talk page off of your user page, so make sure it looks clean.  Good impressions and all that.
+</p>
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Sandbox">Sandbox</span></h2>
+<p>Want to write a tutorial, but it's not 100% complete?  Unsure how to use the wiki formatting correctly?  Create a sandbox for yourself.  The best place to put a link to your sandbox is in your user page.  The format is this: [[User:User Name/Sandbox]] which looks like this: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20User%20Name%20-%20Sandbox" title="User:User Name/Sandbox (page does not exist)">User:User Name/Sandbox</a>, though sometimes people will rename the link.  This makes the markup this: [[User:User Name/Sandbox|Sandbox]] resulting in this link: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20User%20Name%20-%20Sandbox" title="User:User Name/Sandbox (page does not exist)">Sandbox</a>
+</p>

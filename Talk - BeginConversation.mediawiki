@@ -1,0 +1,2 @@
+<p>EVENT_TYPE_DIALOGUE events apparently do not fire to creatures unless they have a dialog attached to them.
+</p>

@@ -1,0 +1,29 @@
+<p>Sets the position of an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetPosition(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vPosition,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSafePosition&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>The Object to set the position of<dt style="font-weight:normal; font-style:italic;">vPosition<dd>The position vector containing the new coordinates<dt style="font-weight:normal; font-style:italic;">bSafePosition<dd>Specifies whether a safe position should be calculated and used
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the position of the object oObject to the xyz coordinates contained in the vector
+vPosition. If bSafePosition is set to TRUE, then a safe position will be computed based
+off of the vector vPosition and this position will be used. A safe position is a valid
+position on the nearest walkable mesh.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>If an invalid object is specified then the function will fail.
+If a non-creature object is specified, a safe position can not be computed for the object so vPosition will be used, regardless of whether or not it is safe.
+If a safe position cannot be found and the bSafePosition flag is set to TRUE, the function will fail.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPosition" title="GetPosition">GetPosition</a>
+</p>

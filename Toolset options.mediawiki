@@ -1,0 +1,23 @@
+<p>The Toolset's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Options" title="Options (page does not exist)">Options</a> window is opened by selecting <b>Tools &gt; Options</b> from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Toolset%20menu%20bar" title="Toolset menu bar (page does not exist)">Toolset menu bar</a>. 
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20Options.png"><img alt="Toolset Options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Toolset_Options.png" width="200" height="145" class="thumbborder" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Toolset_Options.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e8/Toolset_Options.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p>For more information on the various options see the following:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20composer%20options" title="Animation composer options (page does not exist)">Animation composer options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">Area editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20editor%20options" title="Cutscene editor options">Cutscene editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Diff%20options" title="Diff options (page does not exist)">Diff options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="DLG editor options">DLG editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Environment%20options" title="Environment options (page does not exist)">Environment options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20editor%20options" title="Event editor options (page does not exist)">Event editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/General%20options" title="General options (page does not exist)">General options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor%20options" title="Level editor options (page does not exist)">Level editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20windown%20options" title="Log windown options (page does not exist)">Log windown options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor%20options" title="Material editor options (page does not exist)">Material editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph%20editor%20options" title="Morph editor options (page does not exist)">Morph editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Palette%20window%20options" title="Palette window options (page does not exist)">Palette window options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20editor%20options" title="Script editor options (page does not exist)">Script editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage%20editor%20options" title="Stage editor options (page does not exist)">Stage editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor%20options" title="String editor options (page does not exist)">String editor options</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor%20options" title="VFX editor options (page does not exist)">VFX editor options</a></li></ul>

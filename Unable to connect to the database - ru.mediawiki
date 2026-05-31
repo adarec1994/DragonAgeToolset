@@ -1,0 +1,224 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Невозможно подключиться к базе данных</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Unable_to_connect_to_the_database/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Вступление</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.95.D1.81.D0.BB.D0.B8_.D1.8D.D1.82.D0.BE_.D1.81.D0.BB.D1.83.D1.87.D0.B8.D0.BB.D0.BE.D1.81.D1.8C_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D0.BF.D0.B5.D1.80.D0.B5.D1.83.D1.81.D1.82.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8_SQL"><span class="tocnumber">1.1</span> <span class="toctext">Если это случилось после переустновки SQL</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B"><span class="tocnumber">2</span> <span class="toctext">Диагностика проблемы</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.98.D0.BC.D0.B5.D0.B5.D1.82.D1.81.D1.8F_.D0.BB.D0.B8_.D0.B1.D0.B0.D0.B7.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.28.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B0.2F.D0.B2.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.B0.29.3F"><span class="tocnumber">2.1</span> <span class="toctext">Имеется ли база данных (создана/восстановлена)?</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.B8.D0.BB.D1.81.D1.8F_.D0.BB.D0.B8_SQL_Server.3F"><span class="tocnumber">2.2</span> <span class="toctext">Установился ли SQL Server?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A3.D1.81.D1.82.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_framework_.D0.B4.D0.BB.D1.8F_Windows_7"><span class="tocnumber">3</span> <span class="toctext">Устновка  framework для Windows 7</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.97.D0.B0.D0.BF.D1.83.D1.89.D0.B5.D0.BD_.D0.BB.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B8.D1.81_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F"><span class="tocnumber">3.1</span> <span class="toctext">Запущен ли сервис базы данных?</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.D0.92.D0.B5.D1.80.D0.BD.D1.8B_.D0.BB.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D1.8F_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F"><span class="tocnumber">3.2</span> <span class="toctext">Верны ли настройки подключения тулсета к базе данных?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0"><span class="tocnumber">4</span> <span class="toctext">Ручная установка</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.92.D0.BE.D0.BF.D1.80.D0.BE.D1.81.D1.8B_.D0.BF.D0.BE_.D0.BF.D1.80.D0.B0.D0.B2.D0.B0.D0.BC_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F"><span class="tocnumber">5</span> <span class="toctext">Вопросы по правам пользователя</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.9D.D0.B5.D1.81.D0.BA.D0.BE.D0.BB.D1.8C.D0.BA.D0.BE_.D0.B8.D0.B4.D0.B5.D0.B9.2C_.D0.BA.D0.BE.D1.82.D0.BE.D1.80.D1.8B.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83.D1.82_.D0.B2.D0.B0.D0.BC_.D0.BF.D0.BE.D0.BC.D0.BE.D1.87.D1.8C"><span class="tocnumber">6</span> <span class="toctext">Несколько идей, которые могут вам помочь</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">Вступление</span></h2>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Unable%20to%20connect%20to%20database.png"><img alt="Unable to connect to database.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/Unable_to_connect_to_database.png" width="566" height="171" /></a></div>
+<p>Если при запуске тулсета появляется сообщение об этой ошибке, это означает, что проблема возникла при попытке подключения к серверу базы данных SQL Server 2005. К сожалению, это довольно распространённая ошибка, но довольно непредсказуемая. 
+Когда тулсет запускается, он пытается подключиться к базе данных. Если база данных не отвечает, то тулсет просто возвращает эту ошибку, не имея средств для диагностики причин её возникновения. 
+</p><p>Проводя аналогию с автомобилем&#160;:) можно сказать, что эта ошибка как лампа "Service(Check) Engine" у вашего автомобиля (если конечно у вас не ВАЗ-классика). Когда эта лампа начинает мигать, это означает, что что-то работает неправильно, но что именно - вы не поймёте. Это весьма общее предупреждение. Причиной этого может быть что угодно, начиная плохими свечами зажигания и заканчивая сломанными датчиками.
+</p><p>Когда дело доходит до ошибки подключения, вы будете разрываться между вариантами проблем:
+</p>
+<ul><li>Конфликт с существующей установкой SQL Server</li>
+<li>Проблемы в реестре</li>
+<li>Косяк с местом установки</li>
+<li>E.t.c., в смысле и т.д.</li></ul>
+<p>Список получится длинным, но его можно сократить. Вот руководство по устранению неполадок, призванное попытаться помочь вам диагностировать, какие конкретно проблемы вызывают ошибку подключения и как их исправить. Если всё-таки не получилось, то возможно вам поможет <a href="#.D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">ручная установка</a>, которая может оказаться более эффективной, так как вы собственноручно настраиваете сервер и можете лучше увидеть возможные в будущем проблемы.
+</p><p>Потенциальным помощником в разрешении данной проблемы станет также логи, в которые записываются ошибки подключения:
+</p>
+<ul><li>C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\Log\ERRORLOG</li>
+<li>C:\Program Files\Dragon Age\tools\toolssql\MSSQL.1\MSSQL\LOG\ERRORLOG</li></ul>
+<p>Для чтения их вам понадобится наличие администраторских прав.
+</p><p>Вот, для примера, содержимое такого файла:
+</p>
+<pre>
+2011-01-02 11:32:15.08 Logon       Error: 18456, Severity: 14, State: 38.
+2011-01-02 11:32:15.08 Logon       Login failed for user 'EXAMPLE\Example'. Reason: Failed to open the explicitly specified database. [CLIENT: &lt;named pipe&gt;]
+</pre>
+<p>Обратите внимание, что Windows 7 автоматически блокирует файлы, найденные в C:/ (значок замка на папке). Возможно вам понадобится установить общий доступ для домашней группы (чтение/запись). Это позволит программе установки получить доступ к файлам игры для правильной установки MSSQL Server Express.
+</p>
+<hr />
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a>: По всей видимости речь идёт о случае, когда игра установлена на том же диске, что и операционка.
+</p>
+<hr />
+<h3><span class="mw-headline" id=".D0.95.D1.81.D0.BB.D0.B8_.D1.8D.D1.82.D0.BE_.D1.81.D0.BB.D1.83.D1.87.D0.B8.D0.BB.D0.BE.D1.81.D1.8C_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D0.BF.D0.B5.D1.80.D0.B5.D1.83.D1.81.D1.82.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8_SQL">Если это случилось после переустновки SQL</span></h3>
+<p>Удилите старый SQL В ТОМ ЧИСЛЕ И ВСЕ ПАПКИ ИЗ PROGRAM FILES И УСТАНОВИТЕ ЗАНОВО.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">Диагностика проблемы</span></h2>
+<table cellspacing="5" cellpadding="2" align="center" class="toc">
+
+<tr align="center">
+<td style="border:solid 1px">  <a href="#.D0.98.D0.BC.D0.B5.D0.B5.D1.82.D1.81.D1.8F_.D0.BB.D0.B8_.D0.B1.D0.B0.D0.B7.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.28.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B0.2F.D0.B2.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.B0.29.3F">Имеется ли база данных (создана/восстановлена)?</a>
+</td>
+<td> Нет<br />&#8594;
+</td>
+<td style="border:solid 1px"> <a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.B8.D0.BB.D1.81.D1.8F_.D0.BB.D0.B8_SQL_Server.3F">Установился ли SQL Server?</a>
+</td>
+<td> Нет<br />&#8594;
+</td>
+<td style="border:solid 1px" align="left"> Возможные решения:
+<ol><li> Не хватает прав: Запустите установщик с правами администратора</li>
+<li> Длинный путь: Попробуйте изменить путь установки</li>
+<li> Сжатый диск: Попробуйте изменить диск установки либо отменить сжатие диска</li></ol>
+</td></tr>
+<tr align="center">
+<td> Да<br /> &#8595;
+</td>
+<td>
+</td>
+<td> Да<br /> &#8595;
+</td></tr>
+<tr align="center">
+<td style="border:solid 1px"> <a href="#.D0.97.D0.B0.D0.BF.D1.83.D1.89.D0.B5.D0.BD_.D0.BB.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B8.D1.81_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F">Запущен ли сервис базы данных?</a>
+</td>
+<td>
+</td>
+<td style="border:solid 1px"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore%20-%20ru" title="Database backup and restore/ru">Восстановите базу данных и перезапустите тулсет</a>
+</td></tr>
+<tr align="center">
+<td>
+<table cellspacing="5" cellpadding="2" align="center" style="background-color:transparent">
+
+<tr align="center">
+<td> Да<br />&#8595;
+</td>
+<td> Нет<br />&#8595;
+</td></tr>
+<tr align="center">
+<td style="border:solid 1px"> <a href="#.D0.92.D0.B5.D1.80.D0.BD.D1.8B_.D0.BB.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D1.8F_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F">Верны ли настройки подключения тулсета к базе данных?</a>
+</td>
+<td style="border:solid 1px"> Запустите сервис и перезапустите тулсет
+</td></tr></table>
+</td>
+<td>
+</td>
+<td>
+</td></tr></table>
+<h3><span class="mw-headline" id=".D0.98.D0.BC.D0.B5.D0.B5.D1.82.D1.81.D1.8F_.D0.BB.D0.B8_.D0.B1.D0.B0.D0.B7.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.28.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B0.2F.D0.B2.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.B0.29.3F">Имеется ли база данных (создана/восстановлена)?</span></h3>
+<hr />
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a>: Маленькое пояснение насчёт терминов "создана/восстановлена". Программа установки тулсета после установки сервера восстанавливает базу из поставляемого вместе с ним бэкапа базы данных, отсюда и путаница(во всяком случае для меня). Я же в дальнейшем буду писать "создана".
+</p>
+<hr />
+<p>Проверьте папку установки тулсета на предмет наличия в ней файлов базы данных. В зависимости от места установки тулсета и игры они должны быть в местах, похожих на:
+</p>
+<ul><li><b>C:\Program Files\Dragon Age\tools\toolssql\Data\</b> &lt;--- версия 1.00 устанавливается в папке "Tools"</li>
+<li><b>C:\Program Files\DAODB\</b> &lt;--- путь установки для версии 1.01 (уже лучше)</li></ul>
+<p>Проверьте, есть ли в этих папках два файла:
+</p>
+<ul><li>bw_dragonage_content.ldf</li>
+<li>bw_dragonage_content.mdf</li></ul>
+<p><b>Если файлы есть:</b>, это указывает на то, что SQL Server был установлен и актуальная база тулсета была создана. Переходите к следующим шагам диагностики.
+</p><p><b>Если файлов нет:</b>, это указывает на то, что во время установки не получилось создать базу данных. Вы можете попытаться создать её сами, используя следующие способы:
+</p><p><b>1.</b> Скачайте и используйте SQL Management Studio для создания базы данных и восстановления её контента. Этот способ рассмотрен в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">статье по ручной установке базы данных</a>.  Так как SQL Server уже установлен, вам нужно пропустить первый шаг и начать с раздела "Установка SQL Server Management Studio Express".
+</p><p><b>2.</b> Запустите операцию создания и восстановления через исполняемый bat-ник. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore%20-%20ru#.D0.92.D0.BE.D1.81.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_.22MyRestore.bat.22.2Fru" title="Database backup and restore/ru">статью про бэкап и восстановление базы данных</a>. Также там представлен раздел "Обработка ошибок", так как bat-ник предоставляет номера ошибок.
+</p><p><a href="#.D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">&#8593; К схеме</a>
+</p>
+<h3><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.B8.D0.BB.D1.81.D1.8F_.D0.BB.D0.B8_SQL_Server.3F">Установился ли SQL Server?</span></h3>
+<p>Откройте меню "Пуск" и убедитесь, что сервер установлен (По умолчанию: Пуск -&gt; Программы -&gt; Microsoft SQL Server 2005).  Если ничего не нашли, то возможны две основные причины:
+</p>
+<ol><li> Во время установки вы сняли отметку с флажка "Install MSSQL Express 2005 SP3". В этом случае надо повторно запустить установку тулсета указав на необходимость установки SQL сервера, либо <a href="#.D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">установить SQL сервер вручную</a>.</li>
+<li> Во время установки произошла непредвиденная ошибка и сервер не установлися. Вы можете попробовать повторную установку тулсета, либо <a href="#.D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">установить SQL сервер вручную</a>.</li></ol>
+<p><b>Обратите внимание:</b> MSSQL Server не устанавливается в сжатые и шифрованные папки.
+</p><p><a href="#.D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">&#8593; К схеме</a>
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_framework_.D0.B4.D0.BB.D1.8F_Windows_7">Устновка  framework для Windows 7</span></h2>
+<p>Нужно включить все компоненты framework (в первую очередь) 
+</p>
+<pre>панель управления --------&gt; удаление программ ---------&gt; включение или отключение компонентов виндовс (в боковом меню), галочки напротив <i>всех компонентов framework</i>
+</pre>
+<p>
+</p>
+<h3><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D1.83.D1.89.D0.B5.D0.BD_.D0.BB.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B8.D1.81_.D0.B1.D0.B0.D0.B7.D1.8B_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F">Запущен ли сервис базы данных?</span></h3>
+<p>Если служба(сервис) работает, это признак того, что SQL Server установлен правильно и база данных доступна для использования тулсетом.
+</p><p>Вы можете проверить, работает ли сервис, открыв приложение "Службы". В зависимости от вашей операционной системы, путь может быть немного другой, но если примерно, то <b>Пуск - Панель управления - Администрирование - Службы</b>, либо наберите "services.msc" в окне запуска приложений.
+</p><p>Пролистайте список и найдите службу с именем "SQL Server (BWDATOOLSET)". Проверьте состояние службы. Если служба не запущена, то запустите её.
+</p><p>Если служба не запускается или не существует, значит присутствует какая-то проблема с установкой SQL Server. Возможно файлы базы данных были удалены вручную, а служба висит в списке. Путь к исполняемому поле может содержать некоторые подсказки. здесь.
+</p>
+<ul><li>Убедитесь в наличии SQL Server (BWDATOOLSET): Откройте SQL Server Configuration Manager (по умолчанию Пуск - Microsoft SQL Server 2005 - Configuration Tools - SQL Server Configuration Manager) и в дереве объектов на левой панели щелкните мышью на SQL Server 2005. Убедитесь, что запись для SQL Server (BWDATOOLSET), находящаяся на правой панели имеет статус <b>Running</b>. Если нет, то выберите его и запустите (можно с помощью кнопки на панели инструментов или опции в контекстном меню).</li></ul>
+<p><a href="#.D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">&#8593; К схеме</a>
+</p>
+<h3><span class="mw-headline" id=".D0.92.D0.B5.D1.80.D0.BD.D1.8B_.D0.BB.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D1.8F_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.B0_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.3F">Верны ли настройки подключения тулсета к базе данных?</span></h3>
+<p>Запустите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Configure%20Toolset%20-%20ru" title="Configure Toolset/ru (page does not exist)">программу конфигурации тулсета</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ConfigureToolset.exe" title="Configure Toolset">(en)</a> для проверки настроек и тестирования соединения с базой данных.
+</p><p>Примечания: 
+</p>
+<ul><li>Было отмечено, что для некоторых сборок тулсета возможны ошибки подключения, зависимые от ключей реестра. Возможна имеется связь с ограничением разрешений.  
+<ol><li>Во-первых используя "Configure Toolset" установите правильную строку подключения.
+<dl><dd>Если вы не используете настройки по умолчанию, то вы можете скопировать строку из "Configure Toolset", в противном случае используйте одну из следующих командных строк запрос:</dd>
+<dd><b>Win32:</b> reg query "HKLM\SOFTWARE\BioWare\Dragon Age\Toolset\Environment" /v DefaultDatabaseConnection</dd>
+<dd><b>Win64:</b> reg query "HKLM\SOFTWARE\Wow6432Node\BioWare\Dragon Age\Toolset\Environment" /v DefaultDatabaseConnection</dd></dl></li>
+<li>Теперь запустите из командной строки следующую команду(заменив строку соединения)
+<dl><dd><code>reg add "HKCU\Software\BioWare\Dragon Age\Toolset\Environment" /v DefaultDatabaseConnection /t REG_SZ /d "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\BWDATOOLSET"</code></dd></dl></li></ol></li></ul>
+<dl><dd>Тщательно проверьте правильность ввода, так как один неправильный символ вызовет ту же ошибку подключения.</dd></dl>
+<p><a href="#.D0.94.D0.B8.D0.B0.D0.B3.D0.BD.D0.BE.D1.81.D1.82.D0.B8.D0.BA.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B">&#8593; К схеме</a>]
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D1.83.D1.87.D0.BD.D0.B0.D1.8F_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0">Ручная установка</span></h2>
+<p>С помощью ручной установки SQL сервера и базы данных ошибка подключения практически всегда решается положительно. Если же проблема не решится, то вы, по крайней мере, будете знать, почему это произошло, тогда как установка одновременно с тулсетом вам этого не даст. Итак, если ошибка "Unable to connect to the database" уже напрягает вас, вы хотите, чтобы тулсет наконец-таки заработал, и не хотите проблем, то вот вам решение:
+</p>
+<ol><li> <b>Установите тулсет с отключенными опциями установки SQL сервера и базы данных</b>.<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Toolset%20setup%20screen.png"><img alt="Toolset setup screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/Toolset_setup_screen.png" width="513" height="397" /></a></div>
+<dl><dd>Снимите флажки с опций установки образом, указанным на рисунке.  Это позволит вам установить только файлы тулсета без каких-либо действий по установке SQL сервера и базы данных. Конечно в этом случае при запуске тулсета вы получите ошибку "Unable to to connect to the database".</dd></dl></li>
+<li> <b>Вручную установите SQL Server и создайте базу данных</b>
+<dl><dd>Это не так тяжело как может показаться и как описано в этой <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">статье</a>. Если говорить проще, то если вы решитесь на этот шаг, вы берёте процесс установки SQL сервера и базы данных под свой контроль и делаете всё по своему усмотрению. Ручная установка позволит вам отслеживать основные ошибки и своевременно находить пути решения.</dd></dl></li></ol>
+<p><b>Почему это должно сработать?</b>
+</p><p>Тулсету для запуска нужен установленный SQL сервер с базой данных, содержащих контент игры. Программа установки тулсета содержит встроенную копию SQL Server 2005. Идея заключается в тихой установке SQL сервера, позволяющей простому юзеру избежать настройки и администрирования этой сложной программы. Когда это работает - это здорово, ну а когда нет - то вы приходите на эту страницу...
+</p><p>Когда программа установки тулсета заканчивает основную свою работу (распаковка файлов, настройка разрешений и реестра) она запускает установку SQL Server 2005 в "тихом" режиме, в котором происходит попытка установит SQL сервер с настройками по умолчанию. При этом отсутствует обратная связь. Вам будет сказано, что всё сделано, а о том, как это сделано - умолчится. Это может быть как "Бали пара ошибок, но я попытался обойти их и всё сделал", так и "Все прошло по плану". После установки SQL сервера запускается командная строка для создания и заполнения (восстановления из резервной копии) базы данных. Снова этот процесс не дает надлежащей обратной связи и просто сообщает об успешном завершении и всё, что прошло не так будет причиной ошибки подключения, когда вы запускаете тулсет. 
+</p><p>К сожалению, нет простого способа вычислить эти проблемы и предупредить вас. 
+</p><p>Исходя из этого мы и делаем вывод о предпочтительности ручной установки SQL сервера и базы данных, так как это позволит Вам видеть, что происходит не так и реагировать на это, а Яндекс поможет вам быстро найти в Интернете информацию о любой ошибке установки, которую вы можете  получить.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">Руководство по ручной установке SQL сервера и базы данных</a>
+</p><p><a href="#top">&#8593; Наверх</a>
+</p>
+<h2><span class="mw-headline" id=".D0.92.D0.BE.D0.BF.D1.80.D0.BE.D1.81.D1.8B_.D0.BF.D0.BE_.D0.BF.D1.80.D0.B0.D0.B2.D0.B0.D0.BC_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F">Вопросы по правам пользователя</span></h2>
+<ul><li>Иногда положительный результат даёт отключение UAC (User Account Control) и переустановка тулсета.</li></ul>
+<ul><li>SQL Server требуется разрешение на чтение из каталога, в который вы положили файлы установки. Если он не имеет разрешения, он может быть не в состоянии импортировать ресурсы в базу данных. Чтобы исправить это измените привилегии для каталога, из которого вы устанавливаете тулсет.</li></ul>
+<ul><li>На Windows Vista тулсет может требовать прав администратора для чтения базы данных. Запустите тулсет от имени администратора посредством контекстного меню.</li></ul>
+<ul><li>On Windows XP systems, you may need to run the toolset as the Administrator by right-clicking on the toolset's shortcut, selecting the "Run as..." menu item, and then select "The following user" radio button where you can enter the password for the Administrator account. You can also run the toolset with a power user account, but you'll have to add a new database user to authenticate your user account with. An easy way is to run the Server Surface Area Configuration tool that should have been installed with the toolset and Microsoft SQL Server 2005 Express. Launch it with the Administrator account and then click the "Add New Administrator" link. For "user to provision", enter your Windows account name and grant them the SysAdmin role from the window below. For possibly more information, see the forum thread <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/8/index/5517509/">Anyone able to run the toolset as NOT administrator in XP?</a>. If you were previously using the toolset under another account, then don't forget to check back in any outstanding resources so you can work on them from the current Windows account.</li></ul>
+<p><a href="#top">&#8593; Наверх</a>
+</p>
+<h2><span class="mw-headline" id=".D0.9D.D0.B5.D1.81.D0.BA.D0.BE.D0.BB.D1.8C.D0.BA.D0.BE_.D0.B8.D0.B4.D0.B5.D0.B9.2C_.D0.BA.D0.BE.D1.82.D0.BE.D1.80.D1.8B.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83.D1.82_.D0.B2.D0.B0.D0.BC_.D0.BF.D0.BE.D0.BC.D0.BE.D1.87.D1.8C">Несколько идей, которые могут вам помочь</span></h2>
+<ul><li>Вы можете использовать SQL Server Express 2008 вместо 2005. Он больше подходит для разрешения некоторых вопросов, которые возникают в Vista и Windows 7. Многие пользователи используют SQL Server Express 2008 вместо 2005. Вы можете скачать его и установить, следуя <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">инструкции</a> заменив 2008 for 2005.</li></ul>
+<ul><li> Один пользователь сообщил, что ему помогли следующие действия:
+<ul><li>Удалите SQL сервер и тулсет с компьютера.</li>
+<li>Удалите C:\Program Files\Microsoft SQL Server</li>
+<li>В программе "Regedit", удалите следующее:</li></ul></li></ul>
+<dl><dd><dl><dd><dl><dd>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSSQLServer</dd>
+<dd>HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SQL Server</dd></dl></dd></dl></dd></dl>
+<p>3. Delete the DAODB folder in your C:\Program Filesx64 folder
+4. Restart the system
+5. Reinstall the toolset and server from a COMPLETELY NEW download using the default settings. Existing downloads always gave me the same old messages.
+</p>
+<dl><dd><dl><dd><ul><li>Перезагрузите</li>
+<li>Установите тулсет с SQL сервером.</li></ul></dd></dl></dd></dl>
+<ul><li>Если у вас уже есть MS SQL Server Express, установленный как часть другой программы, тулсет не сможет получить правильную конфигурацию, чтобы использовать его. Откройте программу конфигурации тулсета (configuretoolset.exe, в том же каталоге, что и сам тулсет), затем нажмите кнопку "Далее", пока вы не увидите поле "Content Database". Это поле должно содержать: "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\BWDATOOLSET "</li></ul>
+<ul><li>Некоторые пользователи сообщают, что программа установки не смогла создать базу данных SQL (то есть, папка "Dragon Age\toolssql\data" пуста). Вы можете ввести следующую команду, чтобы попытаться восстановить базу данных вручную (измените пути к bw_dragonage_content.bak и папке установки Dragon Age): </li></ul>
+<p><code>"C:\Program Files\Microsoft SQL Server\90\Tools\Binn\"sqlcmd -S .\BWDATOOLSET -E -Q "RESTORE DATABASE bw_dragonage_content FROM DISK = 'C:\Program Files\Dragon Age\tools\dbbak\bw_dragonage_content.bak' WITH MOVE 'bw_dragonage_content' TO 'C:\Program Files\Dragon Age\tools\toolssql\Data\bw_dragonage_content.mdf', MOVE 'bw_dragonage_content_Log' TO 'C:\Program Files\Dragon Age\tools\toolssql\Data\bw_dragonage_content.ldf'"</code>
+Не забудьте, что вы должны разрешить пользователям изменять папку "Data", прежде чем выполнять эту команду.
+</p>
+<ul><li>Некоторые пользователи добились успеха запуском установки из папки с более коротким путём, например "C:\DAInstall".</li></ul>
+<ul><li>Возможно вам сможет помочь <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2804/">Руководство в рисунках от NErWOnek'а</a>.</li></ul>
+<p><a href="#top">&#8593; Наверх</a>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

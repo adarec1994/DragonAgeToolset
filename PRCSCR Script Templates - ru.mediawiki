@@ -1,0 +1,291 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Шаблоны скриптов PRCSCR</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/PRCSCR_Script_Templates/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>На этой странице собираются скрипты, готовые к использованию в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">системе PRCSCR</a> в сочетании с <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls%20-%20ru" title="PRCSCR.xls/ru">M2DA-файлом PRCSCR</a>.
+</p><p><b>Ссылки:</b>
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">Система PRCSCR</a>.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls%20-%20ru" title="PRCSCR.xls/ru">PRCSCR-файл.</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">Таблицы 2DA</a>.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">Работа со скриптами</a>.</li></ul>
+<p><br />
+<b>Содержание:</b>
+</p>
+<table cellpadding="3" cellspacing="0">
+
+
+<tr>
+<td>- <a href="#.D0.A0.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Размещение объекта на локации</a>
+</td>
+<td> - <i>этот скрипт позволяет разместить объект на загружаемой локации.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.A0.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.9D.D0.9F.D0.A1_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Размещение НПС на локации</a>
+</td>
+<td> - <i>этот скрипт позволяет разместить НПС на загружаемой локации.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.90.D0.BA.D1.82.D0.B8.D0.B2.D0.B0.D1.86.D0.B8.D1.8F_.D0.B8.D0.BA.D0.BE.D0.BD.D0.BA.D0.B8_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0_.D0.BA.D0.B0.D1.80.D1.82.D0.B5_.D0.BC.D0.B8.D1.80.D0.B0">Активация иконки локации на карте мира</a>
+</td>
+<td> - <i>этот скрипт позволяет активировать иконку локации на карте мира.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D1.89.D0.B5.D0.B9_.D0.B2_.D0.B8.D0.BD.D0.B2.D0.B5.D0.BD.D1.82.D0.B0.D1.80.D1.8C">Добавление вещей в инвентарь</a>
+</td>
+<td> - <i>этот скрипт позволяет добавить любую вещь в инвентарь игрока.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D1.89.D0.B5.D0.B9_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B5.D0.BC.D1.83_.D1.82.D0.BE.D1.80.D0.B3.D0.BE.D0.B2.D1.86.D1.83_.D0.B8.D0.BB.D0.B8_.D0.B2_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.B9.D0.BD.D0.B5.D1.80">Добавление вещей существующему торговцу или в контейнер</a>
+</td>
+<td> - <i>этот скрипт позволяет добавлять предметы существующим на локации торговцам или в контейнеры.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B0.D0.BA.D1.82.D0.B8.D0.B2.D0.BD.D0.BE.D0.B9_.D0.B4.D0.B2.D0.B5.D1.80.D0.B8_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E">Добавление активной двери на локацию</a>
+</td>
+<td> - <i>этот скрипт добавит дверь, которая может быть использована для перехода игрока на другую локацию.</i>
+</td></tr>
+<tr>
+<td>- <a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.B2.D0.B5.D1.81.D1.82.D0.B0_.D0.BD.D0.B0_.D0.B4.D0.BE.D1.81.D0.BA.D1.83_.D0.BF.D1.80.D0.BE.D0.BF.D0.BE.D0.B2.D0.B5.D0.B4.D0.BD.D0.B8.D0.BA.D0.B0">Добавление квеста на доску проповедника</a>
+</td>
+<td> - <i>этот скрипт позволяет добавить новое задание на существующую доску проповедника.</i>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Размещение объекта на локации</span></h2>
+<p><b>Настройка M2DA:</b>
+</p>
+<ol><li> "AreaListName" не может быть "any". Укажите определённую локацию.</li>
+<li> Скопируйте PRCSCR-файл в папку "override" вашего модуля.</li></ol>
+<p><b>Скрипт:</b> (пример взят из мода "Storage Chest", созданного одним из сотрудников Bioware)
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> TAL_IP_STORAGE_CHEST <span class="sy0">=</span> <span class="st0">&quot;tal_ip_storage_chest&quot;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> TAL_RESOURCE_IP_STORAGE_CHEST <span class="sy0">=</span> R<span class="st0">&quot;tal_ip_storage_chest.utp&quot;</span>;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oMainControlled <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMainControlled"><span class="kw4">GetMainControlled</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <span class="co1">// ПРОВЕРЯЕМ, ЕСТЬ ЛИ В ЛОКАЦИИ  ОБЪЕКТ С ТАКИМ ТЕГОМ </span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChest <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span>oMainControlled, TAL_IP_STORAGE_CHEST<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//DisplayFloatyMessage(oMainControlled, &quot;Storage script working&quot;, FLOATY_MESSAGE, 16777215, 30.0);</span>
+&#160;
+    <span class="co1">// ЕСЛИ ТАКОГО ОБЪЕКТА ЕЩЁ НЕТ, ТО СОЗДАЁМ ЕГО</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oChest<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lSpawn <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArea"><span class="kw4">GetArea</span></a><span class="br0">&#40;</span>oMainControlled<span class="br0">&#41;</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">148.77</span>, <span class="nu0">117.68</span>, <span class="sy0">-</span><span class="nu0">0.94</span><span class="br0">&#41;</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_PLACEABLE</span>, TAL_RESOURCE_IP_STORAGE_CHEST, lSpawn<span class="br0">&#41;</span>;          
+&#160;
+        <span class="co1">//DisplayFloatyMessage(oMainControlled, &quot;Storage script working&quot;, FLOATY_MESSAGE, 16777215, 30.0);</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ol><li>Замените "tal_ip_storage_chest" в 1-й строке на тэг объекта, который вы хотите разместить (обязательно в нижнем регистре).</li>
+<li>Замените "tal_ip_storage_chest.utp" во 2-й строке на имя файла вашего объекта.</li>
+<li>В 13-ой строке укажите координаты, по которым будет размещён объект. Как определить координаты? В следующем пункте.</li>
+<li>Создайте временный дубликат локации (можете и в оригинале сделать, но не сохраняйте изменения) и поместите объект в нужное место (впоследствии не экспортируйте изменённую локацию). </li>
+<li>В инспекторе свойств объекта найдите свойство "Position". Это координаты позиции объекта, замените на них числа в скобках за словом "Vector".</li>
+<li>В инспекторе свойств объекта найдите свойство "Rotation" (вращение). Это свойство определяет то, куда объект направлен своим фэйсом. На значение этого свойства поменяйте третий аргумент процедуры "Location". Правда перед его указанием в скрипте это свойство надо пересчитать (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> - не понял как). For positive angles do (180-angle). For negative angles do (-180-(-angle)).</li></ol>
+<p>Далее экспортируете скрипт, объект и запускаете игру. Когда вы войдёте в локацию, с которой ассоциируете этот скрипт, ваш объект появится в нужном месте.
+</p><p><b>Примечание:</b> 
+</p>
+<ul><li> Данный метод позволяет избежать дублирования объектов на локации с помощью функции "IsObjectValid". Такого же результат можно добиться и с помощью <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot-файла</a>.</li>
+<li> Если база не русифицирована, то удалите из скрипта русские примечания.</li>
+<li> Для проверки работы скрипта можно раскомментировать строки с функцией "DisplayFloatyMessage". Тогда скрипт сообщит вам при срабатывании - "Storage script working", и при создании объекта - "Storage script working".</li>
+<li> При указании числовых значений в функции "Location" обязательно указывайте с точностью до сотых и обязательно с точкой. Если в инспекторе объекта целое число, то добавьте к нему ".00".</li></ul>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.9D.D0.9F.D0.A1_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Размещение НПС на локации</span></h2>
+<p><b>Настройка M2DA:</b>
+</p>
+<ol><li> "AreaListName" может быть "any". Этот скрипт управляется Plot-флагом.</li>
+<li> # Скопируйте PRCSCR-файл в папку "override" вашего модуля.</li></ol>
+<p><b>Скрипт:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// ЭТО НАЗВАНИЕ Plot-ФАЙЛА &quot;joblos_quest&quot; С УКАЗАНИЕМ СПЕЦИАЛЬНОГО ПРЕФИКСА &quot;plt_&quot;. </span>
+<span class="co1">// УКАЗАНИЕ ПРЕФИКСА ОБЯЗАТЕЛЬНО ДЛЯ ТОГО, ЧТОБЫ ИГРА СМОГЛА ОБРАЩАТЬСЯ К ФЛАГАМ Plot-ФАЙЛА КАК К КОНСТАНТАМ.</span>
+<span class="co2">#include &quot;plt_joblos_quest&quot; </span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// ПРОВЕРЯЕМ ФЛАГ И ВЫЯСНЯЕМ, НЕ ПОМЕЩЁН ЛИ Joblo НА ЛОКАЦИЮ ПРИ ПРЕДЫДУЩИХ ЗАХОДАХ</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_JOBLOS_QUEST, JOBLO_ADDED_TO_TOWN<span class="br0">&#41;</span> <span class="sy0">==</span> FALSE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTown <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;lot100ar_lothering&quot;</span><span class="br0">&#41;</span>; <span class="co1">//ТЭГ ЛОКАЦИИ ИДЕНТИЧЕН НАИМЕНОВАНИЮ ЕЁ РЕСУРСА.</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vJobloLocation <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span><span class="nu0">126.745f</span>, <span class="nu0">120.724f</span>, <span class="nu0">0.460568f</span><span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_CREATURE</span>, R<span class="st0">&quot;joblo.utc&quot;</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>oTown, vJobloLocation, <span class="nu0">180.0f</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+        WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;joblos_quest&quot;</span>, JOBLO_ADDED_TO_TOWN, TRUE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ol><li>Замените "joblos_quest" на название вашего Plot-файла.</li>
+<li>Замените "JOBLO_ADDED_TO_TOWN" на название флага, определяющего, что НПС уже создан на локации.</li>
+<li>Замените "lot100ar_lothering" тэгом локации, где НПС должен быть создан.</li>
+<li>Замените "joblo.utc" на имя файла ресурса вашего <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20-%20ru" title="Creature/ru (page does not exist)">НПС</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">(en)</a>.</li>
+<li>Вычислите и установите координаты появления НПС в переменной "vJobloLocation" и процедуре "CreateObject". Как это сделать рассказано в описании скрипта <a href="#.D0.A0.D0.B0.D0.B7.D0.BC.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Размещение объекта на локации</a>.</li></ol>
+<p>Экспортируйте скрипт, НПС и запустите игру. Когда вы зайдёте на нужную локацию НПС будет уже там.
+</p>
+<h2><span class="mw-headline" id=".D0.90.D0.BA.D1.82.D0.B8.D0.B2.D0.B0.D1.86.D0.B8.D1.8F_.D0.B8.D0.BA.D0.BE.D0.BD.D0.BA.D0.B8_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0_.D0.BA.D0.B0.D1.80.D1.82.D0.B5_.D0.BC.D0.B8.D1.80.D0.B0">Активация иконки локации на карте мира</span></h2>
+<p><b>Требования:</b> 
+</p>
+<ol><li> Ваш модуль должен быть расширением основаной кампании (Single Player).</li></ol>
+<p><b>Настройка M2DA:</b>
+</p>
+<ol><li> "AreaListName" может быть "any", так как этот скрипт должен быть универсальным и управляется Plot-флагом.</li>
+<li> Скопируйте PRCSCR-файл в папку "override" вашего модуля.</li></ol>
+<p><b>Скрипт:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> WML_WOW_Custom <span class="sy0">=</span> <span class="st0">&quot;eshmeswp&quot;</span>;
+<span class="co2">#include &quot;plt_mnp000pt_main_events&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// С ПОМОЩЬЮ PLOT-ФЛАГА ПРОВЕРЯЕМ УСЛОВИЕ</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span> PLT_MNP000PT_MAIN_EVENTS, ARCHDEMON_EVENT_ONE<span class="br0">&#41;</span> <span class="sy0">==</span> TRUE <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// ДЕЛАЕМ ИКОНКУ ЛОКАЦИИ НА КАРТЕ МИРА АКТИВНОЙ</span>
+        WR_SetWorldMapLocationStatus<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span>WML_WOW_Custom<span class="br0">&#41;</span>, <span class="kw3">WM_LOCATION_ACTIVE</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ol><li>Замените в 1-ой строке "eshmeswp" на тэг вашей иконки локации на карте. Эта иконка должна быть серой, неактивной. Подробную информацию о создании иконок на карте мира вы найдёте по <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20-%20ru" title="Map/ru (page does not exist)">этой ссылке</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">(en)</a>.</li></ol>
+<p>Экспортируйте скрипт, карту и запускайте игру. Иконка локации на карте мира станет активной, когда вы покинете Лотеринг, как и многие другие иконки локаций. Это сделано, чтобы соблюдать ход истории, хотя вы конечно можете выбрать и другой момент, для этого:
+</p>
+<ol><li>Выберите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot-файл</a> с флагом, в зависимость от которого вы хотите поставить активацию иконки. В данном примере это Plot-файл с основными событиями игры и флаг первого кошмара с с Архидемоном.</li>
+<li>Замените название Plot-файла ("mnp000pt_main_events") в скрипте. Не забудьте оставить префикс "plt_".</li>
+<li>Замените флаг ("ARCHDEMON_EVENT_ONE") на флаг, который вы выбрали в новом Plot-файле.</li></ol>
+<p>Данный метод должен работать для любого Plot-файла. 
+</p><p>Конечно, для активации иконки локации на карте Plot-файлы совсем не обязательны, ведь можно изначально сделать иконку активной, но этот пример и использование Plot-файлов позволяет привязать ваше расширение к основной кампании и сделать его более логичным. Например ГГ не должен попасть в вашу локацию до того, как закончит дела в Лотеринге, так как это повлияет на нить игры. 
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D1.89.D0.B5.D0.B9_.D0.B2_.D0.B8.D0.BD.D0.B2.D0.B5.D0.BD.D1.82.D0.B0.D1.80.D1.8C">Добавление вещей в инвентарь</span></h2>
+<p><b>Настройка M2DA:</b>
+</p>
+<ol><li> "AreaListName" может быть "any". </li>
+<li> Скопируйте PRCSCR-файл в папку "override" вашего модуля.</li></ol>
+<p><b>Скрипт:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">//ПОДКЛЮЧАЕМ utility_h ДЛЯ РАБОТЫ ФУНКЦИИ UT_AddItemToInventory()</span>
+<span class="co2">#include &quot;utility_h&quot;</span>
+<span class="co1">//ПОДКЛЮЧАЕМ ПОЛЬЗОВАТЕЛЬСКИЙ PLOT-ФАЙЛ</span>
+<span class="co2">#include &quot;plt_$plot_file_name$&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// ЕСЛИ ФЛАГ ИМЕЕТ ИСТИННОЕ ЗНАЧЕНИЕ ТОГДА ПРЕДМЕТ УЖЕ ВЫДАН РАНЕЕ</span>
+    <span class="co1">// В ОБРАТНОМ СЛУЧАЕ НАДО ЕГО ВЫДАТЬ</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> WR_GetPlotFlag<span class="br0">&#40;</span> PLT_$plot_file_name$, $check_flag_name$ <span class="br0">&#41;</span> <span class="sy0">==</span> FALSE <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        UT_AddItemToInventory<span class="br0">&#40;</span>R<span class="st0">&quot;$item_file_name$.uti&quot;</span><span class="br0">&#41;</span>;
+        <span class="co1">// И УСТАНОВИТЬ ЗНАЧЕНИЕ ФЛАГА КАК ИСТИННОЕ ДЛЯ УКАЗАНИЯ О СОСТОЯВШЕЙСЯ ВЫДАЧЕ ПРЕДМЕТА</span>
+        WR_SetPlotFlag<span class="br0">&#40;</span> PLT_$plot_file_name$, $check_flag_name$, TRUE <span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ol><li> Замените все имена, заключённые между знаками $ на используемые вами имена.</li></ol>
+<p>Далее экспортируете скрипт, предмет и запускаете игру. При загрузке первой же локации нужный предмет добавится в инвентарь.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D1.89.D0.B5.D0.B9_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B5.D0.BC.D1.83_.D1.82.D0.BE.D1.80.D0.B3.D0.BE.D0.B2.D1.86.D1.83_.D0.B8.D0.BB.D0.B8_.D0.B2_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.B9.D0.BD.D0.B5.D1.80">Добавление вещей существующему торговцу или в контейнер</span></h2>
+<p><b>Настройка M2DA:</b>
+</p>
+<table style="border:thin solid grey" cellpadding="3" cellspacing="0">
+
+<tr>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Кампания</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Контейнер</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey"><b>Тэг контейнера</b>
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey"><b>AreaListName</b>
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Начало
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Бодан
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">store_camp_bodahn
+</td>
+<td style="border-bottom:thin solid grey">cam100ar_camp_plains
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Начало
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Интендант в королевском лагере
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">pre100sr_quartermaster
+</td>
+<td style="border-bottom:thin solid grey">pre01al_kings_camp
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Пробуждение
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Yuriah
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">store_vgk100cr_merchant
+</td>
+<td style="border-bottom:thin solid grey">vgk210ar_throne_room
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Пробуждение
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">Сундук отряда в Башне Бдения
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">vgk210ip_party_chest
+</td>
+<td style="border-bottom:thin solid grey">vgk210ar_throne_room
+</td></tr>
+<tr>
+<td style="border-right:thin solid grey">Песнь Лелианы
+</td>
+<td style="border-right:thin solid grey">Бонни Лем (первая встреча)
+</td>
+<td style="border-right:thin solid grey">store_lel00cr_lem
+</td>
+<td>lel100ar_market
+</td></tr></table>
+<ol><li> Создайте <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls%20-%20ru" title="PRCSCR.xls/ru">файл PRCSCR</a> используя представленную выше таблицу.</li>
+<li> Поместите созданный M2DA-файл в папку "override" вашего модуля.</li></ol>
+<p><b>Скрипт:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;plt_$plot_file_name$&quot;  // ВКЛЮЧАЕМ НУЖНЫЙ PLOT-ФАЙЛ</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <span class="co1">// ПРОВЕРЯЕМ КАКОЕ-НИБУДЬ УСЛОВИЕ И ЕСЛИ ОНО ИСТИННО, ТО ВЫХОДИМ ИЗ ПРОЦЕДУРЫ (return)</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> WR_GetPlotFlag<span class="br0">&#40;</span> PLT_$plot_file_name$, $check_flag_name$ <span class="br0">&#41;</span> <span class="sy0">==</span> TRUE <span class="br0">&#41;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oContainer <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span>$ContainerTag$<span class="br0">&#41;</span>;
+  <span class="co1">// ПРОВЕРИМ КОНТЕЙНЕР, ЕСЛИ ОБЪЕКТ НОРМАЛЬНЫЙ, ТО ДОБАВЛЯЕМ В НЕГО ПРЕДМЕТ</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oContainer<span class="br0">&#41;</span><span class="br0">&#41;</span>
+  <span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateItemOnObject"><span class="kw4">CreateItemOnObject</span></a><span class="br0">&#40;</span>R<span class="st0">&quot;$resource_name$.uti&quot;</span>, oContainer, <span class="nu0">1</span>, <span class="st0">&quot;&quot;</span>, TRUE<span class="br0">&#41;</span>; <span class="co1">// ПОВТОРИТЬ НУЖНОЕ КОЛИЧЕСТВО РАЗ</span>
+&#160;
+    WR_SetPlotFlag<span class="br0">&#40;</span> PLT_$plot_file_name$, $check_flag_name$, TRUE <span class="br0">&#41;</span>; <span class="co1">// УСТАНОВИТЬ ФЛАГ ДЛЯ БУДУЩЕЙ ПРОВЕРКИ</span>
+  <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ol><li> Замените "$plot_file_name$" и "$check_flag_name$" на используемые вами имена <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru#.D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B" title="Plot/ru">plot-файла и его флага</a>.</li>
+<li> Замените "$resource_name$" на имя ресурса вашего предмета.</li>
+<li> Замените "$ContainerTag$" на тэг контейнера (смотри в таблице выше).</li></ol>
+<p>Далее экспортируете скрипт, предмет и запускаете игру. При загрузке нужной локации выбранный вами предмет добавится указанному торговцу (в иной контейнер).
+</p><p><b>Примечание:</b>
+При заходе в лагерь отряда в первый раз (после ухода из Лотеринга) и просмотра первоого сна с Архидемоном,это скрипт не сработает (при использовании AreaListName "cam100ar_camp_plains"). Это связано с тем, что локация, используемая для катсцены с Архидемоном, имеет другой AreaListName. Поэтому надо выйти с локации и уже по-нормальному (без катсцены) зайти и скрипт сработает.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BD.D0.B0_.D0.BB.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D1.8E_.D0.B4.D0.B2.D0.B5.D1.80.D0.B8">Добавление на локацию двери</span></h2>
+<p><b>Требования:</b>
+</p><p><b>настройка M2DA:</b>
+</p><p><b>Скрипт:</b> <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.B2.D0.B5.D1.81.D1.82.D0.B0_.D0.BD.D0.B0_.D0.B4.D0.BE.D1.81.D0.BA.D1.83_.D0.BF.D1.80.D0.BE.D0.BF.D0.BE.D0.B2.D0.B5.D0.B4.D0.BD.D0.B8.D0.BA.D0.B0">Добавление квеста на доску проповедника</span></h2>
+<p><b>Требования:</b>
+</p><p><b>настройка M2DA:</b>
+</p><p><b>Скрипт:</b> <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates" title="PRCSCR Script Templates">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

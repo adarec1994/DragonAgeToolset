@@ -1,0 +1,59 @@
+<p>Game Design is everything from creating this NPC, to being ready to export everything to be used in Game. This is all made via various sections of the Dragon Age Toolset. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Module_Foundation"><span class="tocnumber">2</span> <span class="toctext">Module Foundation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Designer_resources"><span class="tocnumber">3</span> <span class="toctext">Designer resources</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Two-dimensional_Arrays"><span class="tocnumber">4</span> <span class="toctext">Two-dimensional Arrays</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Saving_and_Exporting"><span class="tocnumber">5</span> <span class="toctext">Saving and Exporting</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_Also"><span class="tocnumber">6</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<table align="right">
+
+<tr>
+<td align="right"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Overview.png"><img alt="Overview.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/59/Overview.png" width="532" height="236" /></a>
+</td></tr></table>
+<p>The Toolset can probably be seen as multiple tools ,with the resources it creates being somewhat independently editable, with the connection being internal references. This is mananged thru a database ,and allows for multiple persons to work in only specific areas of the Toolset, without hindering another. As a whole it is probably too much to learn for one person alone. But the toolset gets it all together.
+</p><p>Anything you design is a single resource for the next step, so one can separate the tools into resource categories, as seen with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource palette</a>. Dragon Age has two main classes of resources. Designer resources that are stored in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database" title="Database">database</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a> that are stored as files in your file system, with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a> being supplemental to what is covered here.
+</p><p>The other important resource are two-dimensional Arrays (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a>) ,which amongst other things contain variables and definitions, that the designer can <i>"play out"</i>. Or are merely supplemental.
+</p><p>The diagram illustrates the general outline of how each of these types of resource is edited, processed, and used by the game:
+</p>
+<h2><span class="mw-headline" id="Module_Foundation">Module Foundation</span></h2>
+<p>Resources are not created into the blue, as each has to be created on top of a so called Module. This is especially the case for Designer Resources in the Database ,since their connections within the Toolset are made with the Modules properties in mind. One such Resource may only be usable and editable when it is connected to the current active Module for example. However it is possible to move Resources from and between modules.
+</p><p>With that in mind, before creating a Resource one should always create and open the correct Module. Custom "Addin" Modules with a Name of your choice is the preferred method and the only way to export a Module and its Resources successfully.
+</p>
+<ul><li>The Toolset is responsible for exporting Designer Resources out of the Database into the corresponding Module directory.</li>
+<li>Art Resources and 2DA Files have to be placed into the Modules directory by hand.</li></ul>
+<dl><dd><i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a></i></dd></dl>
+<h2><span class="mw-headline" id="Designer_resources">Designer resources</span></h2>
+<p>This is what the designer creates, and when talking about designing a resource the resource category is what matters here. Designer resources are stored in the toolset's accompanying database and are for the most part focused on the mechanics of the game - the stuff that makes an adventure "work". 
+</p><p>Designer Resources include the following, but not exclusively: 
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Areas</a> - the fully interactive level</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a> - any item that can be carried by the Player or NPC</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creatures</a> - Creatures that are Monsters or NPC's alike</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a> - a complete Conversation with any Voice over accompanying it</li>
+<li> etc.</li></ul>
+<dl><dd><i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></i></dd></dl>
+<h2><span class="mw-headline" id="Two-dimensional_Arrays">Two-dimensional Arrays</span></h2>
+<p>2DA's contain various Data not only about the Resources, but for the whole game as well. 2DA's are packed into <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">file type</a>, which are generated from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/XLS" title="XLS (page does not exist)">XLS</a> (Excel) files. The original XLS files supplied with the Toolset can be found in:
+</p>
+<pre>[Dragon Age install directory]\tools\source\2da</pre>
+<dl><dd><i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a></i></dd></dl>
+<h2><span class="mw-headline" id="Saving_and_Exporting">Saving and Exporting</span></h2>
+<p>For the new content to be playable, it has to go through a export process by the Toolset. So when the Resources are ready to be tested, it is time to export. This is also covered on the designer resource page.
+</p>
+<dl><dd><i>See Main Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></dd></dl>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">Compatibility</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design%20-%20ru" title="Design/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

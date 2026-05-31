@@ -1,0 +1,126 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>The Dragon Age Toolset installer comes with several pieces of third-party software that are needed for the toolset to function. They are:
+</p>
+<ul><li> DirectX 9.0c</li>
+<li> Visual C Runtime Library</li>
+<li> Microsoft SQL Server Express 2005 Edition</li>
+<li> Nvidia PhysX drivers version ONLY PhysX_9.09.0203_SystemSoftware</li>
+<li> Phyton Version: ActivePython-2.5.5.7-win32-x86. Extremely important for Lightmapping</li></ul>
+<p>These components will be installed along with the toolset by the toolset's installer.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Location"><span class="tocnumber">1</span> <span class="toctext">Location</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Components"><span class="tocnumber">2</span> <span class="toctext">Components</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Manual_database_selection"><span class="tocnumber">3</span> <span class="toctext">Manual database selection</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Installation"><span class="tocnumber">4</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Lightmapper"><span class="tocnumber">4.1</span> <span class="toctext">Lightmapper</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#NVIDIA_PhysX"><span class="tocnumber">4.2</span> <span class="toctext">NVIDIA PhysX</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Configuration"><span class="tocnumber">5</span> <span class="toctext">Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Moving_the_database_files_from_the_default_location"><span class="tocnumber">5.1</span> <span class="toctext">Moving the database files from the default location</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Uninstallation"><span class="tocnumber">6</span> <span class="toctext">Uninstallation</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Troubleshooting"><span class="tocnumber">7</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Documentation"><span class="tocnumber">8</span> <span class="toctext">Documentation</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Location">Location</span></h2>
+<p>The first screen you'll get to after starting the installer and passing the title page is the install location selector. The toolset can only install the program into a specific subdirectory of the Dragon Age game directory, so you won't be able to alter the installation path; it's for informational purposes.
+</p><p><b>Note:</b> MSSQL Express 2005 is bundled with this toolset and is required for it to function. Unfortunately, MSSQL Express 2005's installer has a limitation that prevents it from installing to a directory path that's longer than 58 characters.<sup><a rel="nofollow" class="external autonumber" href="http://support.microsoft.com/kb/935371">[1]</a></sup>
+</p><p>However, this limitation no longer affects the installation, since version 1.01 of the toolset installer installs the SQL instance to a shorter path to avoid this issue. It now installs to Program Files\DAODB\.  See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation into a directory with a long path name">installation into a directory with a long path name</a> for details.
+</p>
+<h2><span class="mw-headline" id="Components">Components</span></h2>
+<p>The next screen after location has been selected is where you can choose which components to install. There are only two selectable components here; Core Resources (the toolset itself) and Microsoft SQL Server Express. To run the toolkit you'll obviously need to install the Core Resources option. SQL Server is presented as a separate option so that if you already have a database server installed on your system you can use that instead of installing a whole new one.
+</p><p>If you don't have an SQL server installed, or if you don't know whether you have one installed, it's safe to go with the default and install SQL Server Express. SQLServer's installer will check the existing components and, finding that all required components are already in place, won't do anything after you click "finish."
+</p>
+<h2><span class="mw-headline" id="Manual_database_selection">Manual database selection</span></h2>
+<p>If you choose not to install SQL Server Express, the installer will ask for a database server and database name to install the toolset's resource database to instead. The default server is <code>.\BWDATOOLSET</code> and the default database name is <code>bw_dragonage_content</code>.
+</p>
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<p>Once you have selected these options the Dragon Age toolset will begin the installation process. This can take a while. When the install process is finished you'll be given the option to read a readme.txt file.
+</p><p>The toolset will create a start menu folder named "Dragon Age". The start menu folder will include a link to start the toolset, a link to the toolset's uninstaller, and a link to the toolset's external configuration utility.
+</p><p>The installer will write a log file in your My Documents folder. If installation fails this log file will be helpful for debugging purposes.
+</p><p>If you are installing over a previous version of the toolset, you may need to update the format of your old database to make it compatible with the new version of the toolset. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20migration" title="Database migration">database migration</a> for details.
+</p>
+<h3><span class="mw-headline" id="Lightmapper">Lightmapper</span></h3>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lightmap">lightmapper</a> is the tool used to calculate lighting in level layouts. You only need to use it if you're going to be creating or modifying level layouts. The lightmapper included with the toolset requires Python to run but Python isn't currently bundled with the toolset, so if you don't already have it installed you'll need to do the following:
+</p>
+<ol><li> Install <a rel="nofollow" class="external text" href="http://www.python.org/ftp/python/2.5.4/python-2.5.4.msi">Python 2.5.4 </a></li>
+<li> Install the <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.5.exe/download">win32 extensions</a> for Python 2.5 <br /> <b>OR</b></li>
+<li> Install <a rel="nofollow" class="external text" href="http://downloads.activestate.com/ActivePython/releases/2.5.5.7/ActivePython-2.5.5.7-win32-x86.msi">ActiveState Python 2.5.5.7</a> <br /> <b>Note</b>: The Community Edition of this release is no longer available! If you have not purchased a Business or Enterprise license from ActiveState you will need to use the python.org release and the pywin32 extensions (2014-04-13).</li></ol>
+<p>The easiest way to do this is to download and install ActiveState python which comes with the needed extensions.  Just click through the defaults on the installer and you will be ready to go.  If you want to use python.org installer, maker sure to install it first, then install the win32 extensions.
+</p>
+<ul><li> If you don't have Python installed and try to run the lightmapper, you'll receive a standard Windows error message indicating that "EclipseRay.exe has stopped working.</li></ul>
+<ul><li> Note for 64 bit machines: There appears to be a bug with the 64-bit version of ActiveState Python 2.5 for Windows that prevents the lightmapper from functioning. Install the 32-bit version instead, it works.  The 32-bit version is the one linked above.</li></ul>
+<ul><li> Do not install both ActivePython and Python.org.  This will most likely cause you to get an Error Code 1 when rendering lightmaps.</li></ul>
+<ul><li> If you get an error code of -1073741819 this means you either have the 64 bit version or you have a version higher than 2.5.  Uninstall and use the installers from the links above.</li></ul>
+<ul><li> If you get an error code of -1073741515, try copying the python25.dll (from your python installation directory) into the &lt;dragon age install directory&gt;\tools\lightmapper folder and restarting the toolset.</li></ul>
+<h3><span class="mw-headline" id="NVIDIA_PhysX">NVIDIA PhysX</span></h3>
+<p>Currently, the Toolset relies on a version of PhysX which may not be readily accessible to some users, specifically 9.09.0408.  It is not included in the latest NVIDIA drivers, and it can render certain parts of the Toolset, specifically pathfinding and lightmapping, partially or totally inoperable.
+</p><p>If you have the game install disc, the correct PhysX installer is included on it.  If not, you can download and install it from <a rel="nofollow" class="external text" href="http://www.nvidia.com/object/physx_9.09.0408_whql.html">NVIDIA's web site</a>.
+</p>
+<h2><span class="mw-headline" id="Configuration">Configuration</span></h2>
+<p>The external configuration utility <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ConfigureToolset.exe" title="ConfigureToolset.exe">ConfigureToolset.exe</a> (found in the Dragon Age\tools directory) is used to configure the toolset's database connection and to tell the toolset where the game's executable is. You shouldn't need to run the configuration utility during routine usage of the toolset, and if the defaults set up by your installer work you may not need to run it at all.
+</p><p>The default database string is "<code>Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=bw_dragonage_content;Data Source=.\SQLEXPRESS</code>". For advanced configuration, click on the ellipsis button (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) to open the data link properties window.
+</p>
+<h4><span class="mw-headline" id="Moving_the_database_files_from_the_default_location">Moving the database files from the default location</span></h4>
+<p>By default, the database data and log files are loaded into C:\Program Files\DAODB\data and are called bw_dragonage_content.mdf and bw_dragonage_content.ldf.
+</p><p>For Vista and Win7 installations, the Program Files path will be whatever is commonly used. If you cannot find the folder, do a search for .mdf files and you should get to the required folder.
+</p><p>If you have customized your database during installation, replace the bw_dragonage_content with your database name.
+</p><p>As you start working on your module and checking in resources, the database will grow in size.
+If you want to move the database files elsewhere to free up space on C:, do the steps below. 
+</p>
+<ul><li> Make sure you have backed up your dragon age database - See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database%20backup%20and%20restore" title="Database backup and restore">Database_backup_and_restore</a> for information on how to do it</li>
+<li> Open Microsoft SQL Server Management Studio Express - If you don't have it, you can download it <a rel="nofollow" class="external text" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796">here</a></li>
+<li> Open a New Query window either by clicking New Query button on the toolbar or going to File -&gt; New -&gt; Query with Current Connection or using the shortcut Ctrl+N</li>
+<li> Type the following into the query window and execute (F5) to detach the dragon age database from the data files</li></ul>
+<pre>use master
+go
+sp_detach_db 'bw_dragonage_content'
+go
+</pre>
+<ul><li> Move the database files to the new location</li>
+<li> Type the following into the query window and execute (F5) to attach the dragon age database to the data files</li></ul>
+<pre>use master
+go 
+sp_attach_db 'bw_dragonage_content','&lt;path to the .mdf file&gt;\bw_dragonage_content.mdf','&lt;path to the .ldf file&gt;\bw_dragonage_content.ldf'
+go
+</pre>
+<ul><li> To check the path to the data files, you can type the following into the query window and execute it</li></ul>
+<pre>use bw_dragonage_content
+go
+sp_helpfile
+go
+</pre>
+<p>This <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/224071">Microsoft KB article</a> has more details, if required.
+</p>
+<h2><span class="mw-headline" id="Uninstallation">Uninstallation</span></h2>
+<p>An uninstaller shortcut is available from the same start menu folder as the toolset itself. It will autodetect the location you installed the toolset in, display it to you to confirm that this is correct, and then after you click "next" it will ask which components to uninstall.
+</p>
+<ul><li> Core Resources - uninstalled by default, this is the toolset itself.</li>
+<li> Database - Since the uninstaller can't automatically determine if you're using SQLServer Express purposes other than just the Dragon Age toolset, SQLServer is <i>not</i> uninstalled automatically by default. To have the uninstaller remove the database server as well, unselect this checkbox.</li></ul>
+<p>The uninstaller is generated on installation and therefore isn't signed. This may cause Vista to complain under some circumstances but shouldn't affect the uninstaller's functioning.
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20troubleshooting" title="Installation troubleshooting">installation troubleshooting</a> for a list of common problems that can occur during installation and how to correct or work around them.
+</p><p>If you experience a crash, logs can be found in <code>My Documents\BioWare\Dragon Age\Toolset\logs</code>. The log filenames will include the date on which the log file was created. Sending in a log will help greatly with bug fixing.
+</p>
+<h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
+<p>Documentation is currently provided via the wiki at:
+</p><p><a rel="nofollow" class="external free" href="http://social.bioware.com/wiki/datoolset/">http://social.bioware.com/wiki/datoolset/</a>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset%20-%20ru" title="Installing the toolset/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

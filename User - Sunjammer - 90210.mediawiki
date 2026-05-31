@@ -1,0 +1,183 @@
+<p><b>90210</b> is an event type <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> that is used in a number of scripts but which does not have a symbolic constant declared in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> or any include file.  The event is routed through <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20core" title="Rules core (page does not exist)">rules_core</a> to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20core" title="Ability core (page does not exist)">ability_core</a>.
+</p><p>Event type 90210 is used where the initial impact can results in secondary impacts on a different target (the Chain Lightning, Scattershot and Stinging Swarm spells); where the initial impact on the target results in a beneficial impact on the caster (Death Magic, Death Syphon, Drain Life and Mana Drain spells; and the Devour talent); or where the event creator needs to destroy itself after a variable delay (traps).
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Usage"><span class="tocnumber">1</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#spell_chainlightning"><span class="tocnumber">1.1</span> <span class="toctext">spell_chainlightning</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Construction"><span class="tocnumber">1.1.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Consumption"><span class="tocnumber">1.1.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#spell_deathmagic"><span class="tocnumber">1.2</span> <span class="toctext">spell_deathmagic</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Construction_2"><span class="tocnumber">1.2.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Consumption_2"><span class="tocnumber">1.2.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#spell_deathsyphon"><span class="tocnumber">1.3</span> <span class="toctext">spell_deathsyphon</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Construction_3"><span class="tocnumber">1.3.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Consumption_3"><span class="tocnumber">1.3.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#spell_drainlife"><span class="tocnumber">1.4</span> <span class="toctext">spell_drainlife</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Construction_4"><span class="tocnumber">1.4.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Consumption_4"><span class="tocnumber">1.4.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#spell_drainmana"><span class="tocnumber">1.5</span> <span class="toctext">spell_drainmana</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Construction_5"><span class="tocnumber">1.5.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Consumption_5"><span class="tocnumber">1.5.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#spell_stingingswarm"><span class="tocnumber">1.6</span> <span class="toctext">spell_stingingswarm</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#Construction_6"><span class="tocnumber">1.6.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Consumption_6"><span class="tocnumber">1.6.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="#talent_devour"><span class="tocnumber">1.7</span> <span class="toctext">talent_devour</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Construction_7"><span class="tocnumber">1.7.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Consumption_7"><span class="tocnumber">1.7.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-23"><a href="#talent_scattershot"><span class="tocnumber">1.8</span> <span class="toctext">talent_scattershot</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="#Construction_8"><span class="tocnumber">1.8.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Consumption_8"><span class="tocnumber">1.8.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-26"><a href="#trap_crafted"><span class="tocnumber">1.9</span> <span class="toctext">trap_crafted</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="#Construction_9"><span class="tocnumber">1.9.1</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Consumption_9"><span class="tocnumber">1.9.2</span> <span class="toctext">Consumption</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="#Remarks"><span class="tocnumber">2</span> <span class="toctext">Remarks</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<h3><span class="mw-headline" id="spell_chainlightning">spell_chainlightning</span></h3>
+<h4><span class="mw-headline" id="Construction">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// in a loop</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">nAbility</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span>; <span class="co1">// oCaster</span>
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, secondaryTargets<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oPrj, ev<span class="br0">&#41;</span>;</pre></div></div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// SPELL_SECONDARY_IMPACT event</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, nAbility<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, <span class="sy0">++</span>nCount<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, oTarget<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span>, oOriginalCaster<span class="br0">&#41;</span>;
+<span class="co1">// ... then in a loop ...</span>
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, secondaryTargets<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oPrj, ev<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">1</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCaster  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCount <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oOriginalCaster  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span><span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="spell_deathmagic">spell_deathmagic</span></h3>
+<h4><span class="mw-headline" id="Construction_2">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">0</span>, nAbility<span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">0</span>, oCreator<span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">1</span>, oCreator<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oProjectile, ev2<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_2">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="spell_deathsyphon">spell_deathsyphon</span></h3>
+<h4><span class="mw-headline" id="Construction_3">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">0</span>, nAbility<span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">0</span>, oCreator<span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev2, <span class="nu0">1</span>, oCreator<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oProjectile, ev2<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_3">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="spell_drainlife">spell_drainlife</span></h3>
+<h4><span class="mw-headline" id="Construction_4">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">nAbility</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventFloat"><span class="kw4">SetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, fDamage<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oProjectile, ev<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_4">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fHeal <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventFloat"><span class="kw4">GetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="spell_drainmana">spell_drainmana</span></h3>
+<h4><span class="mw-headline" id="Construction_5">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">nAbility</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventFloat"><span class="kw4">SetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, fMana<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oProjectile, ev<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_5">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fMana <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventFloat"><span class="kw4">GetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="spell_stingingswarm">spell_stingingswarm</span></h3>
+<h4><span class="mw-headline" id="Construction_6">Construction</span></h4>
+<p>In effect_swarm_h:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// in a loop</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, nAbility<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, nJumps<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, oOwner<span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, oTargets<span class="br0">&#91;</span>nTarget<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventFloat"><span class="kw4">SetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, fDamage<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_6">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamage <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventFloat"><span class="kw4">GetEventFloat</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nJumps <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span><span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="talent_devour">talent_devour</span></h3>
+<h4><span class="mw-headline" id="Construction_7">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">nAbility</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oProjectile, ev<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_7">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> EventSpellScriptImpactStruct stEvent <span class="sy0">=</span> Events_GetEventSpellScriptImpactParameters<span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="talent_scattershot">talent_scattershot</span></h3>
+<h4><span class="mw-headline" id="Construction_8">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventInteger"><span class="kw4">SetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">nAbility</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span>, stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span>; <span class="co1">// oCaster</span>
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span>, secondaryTargets<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span>, stEvent.<span class="me1">oCaster</span><span class="br0">&#41;</span>;
+ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject"><span class="kw4">SetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">3</span>, oWeapon<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetProjectileImpactEvent"><span class="kw4">SetProjectileImpactEvent</span></a><span class="br0">&#40;</span>oPrj, ev<span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_8">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">1</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCaster  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">3</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oOriginalCaster  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span><span class="br0">&#41;</span>;</pre></div></div>
+<h3><span class="mw-headline" id="trap_crafted">trap_crafted</span></h3>
+<h4><span class="mw-headline" id="Construction_9">Construction</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="nu0">90210</span><span class="br0">&#41;</span>;
+ev2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventCreator"><span class="kw4">SetEventCreator</span></a><span class="br0">&#40;</span>ev2, oTrap<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent"><span class="kw4">DelayEvent</span></a><span class="br0">&#40;</span>fDuration, oTrap, ev2, <span class="st0">&quot;trap_crafted&quot;</span><span class="br0">&#41;</span>;</pre></div></div>
+<h4><span class="mw-headline" id="Consumption_9">Consumption</span></h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTrap <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject"><span class="kw4">DestroyObject</span></a><span class="br0">&#40;</span>oTrap<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>In the second looped construction in spell_chainlightning <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Georg%20Zoeller" title="User:Georg Zoeller (page does not exist)">Georg Zoeller</a>'s comments refer to as the <code>SPELL_SECONDARY_IMPACT</code> and in talent_scattershot he terms it as <code>/*the bad event*/</code>.
+</p><p>90210 is an easy to remember number as it (famously) the zip code for Beverly Hills which may be why it was selected as the literal value for and event type which would never be given a symbolic constant.
+</p>

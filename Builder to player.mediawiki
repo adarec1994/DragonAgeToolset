@@ -1,0 +1,66 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Module topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">Creating a module</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules" title="Manage modules">Managing modules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></li></ul></li>
+<li><strong class="selflink">Builder to player</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">Builder to builder</a></li></ul>
+</td></tr></table>
+<p>"Builder to player" packaging is a system for packaging up the playable binary files you've exported from your toolset into a form that is easily installed and played on another system.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Resources_organized"><span class="tocnumber">2</span> <span class="toctext">Resources organized</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Step_by_Step"><span class="tocnumber">3</span> <span class="toctext">Step by Step</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>"Builder to player" packs every resource that is needed to be installed on another computer into a single filetype called <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">DAZIP</a>. You however must select those needed resources from folders and files in a treelike view. The "builder to player" function allows only files to be included from your modules "core" and "module" override folders, and the "Core Game Resources" Folder. As so it is very important that your resources are organized correctly.
+</p><p>It can be found under the "Tools -&gt; Builder" menu.
+</p>
+<h2><span class="mw-headline" id="Resources_organized">Resources organized</span></h2>
+<p>While the Toolset exports Designer Resources into their correct location, Art Resources and 2DA's which you created with external tools need to be arranged manually. 
+</p><p>Likely, in your first steps you have placed those into a random Override folder until it works. The Toolset can read every Override folder just fine, so this didnt cause harm until now. The "builder to player" function requires resources to be organized, so it can package them and get distributed. So that no file is missed in the package, which causes the Module to work for you ,but not for someone else. It can help if you place Resources correctly from the start up.
+</p><p>The primary choice is always your custom Modules folders. Depending on whether your Resources shall be available only in your "module", or to other modules "core". 
+</p>
+<pre>*My Documents*\BioWare\Dragon Age\AddIns\*Modulename*\module\override\toolsetexport\
+*My Documents*\BioWare\Dragon Age\AddIns\*Modulename*\core\override\toolsetexport\</pre>
+<p>The other folder that can be included is the "Core Game Resources" Folder. This Folder must be treated with care, as this place is reserved for Gamewide Core Resources..
+</p>
+<pre>*My Documents*\BioWare\Dragon Age\packages\core\override\toolsetexport\</pre>
+<p>Resources in here is not advised, it allows Resources to be available to other modules even if you deactivate your custom Module. Additionally the Toolset has the habbit of exporting Core Game Resources here, which are mere duplicates unless you modified them. These duplicates need to be deleted, as potentially they still create problems in the singleplayer campaign. <small><i>(See: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20export%20creates%20unnecessary%20core%20override" title="Bug: export creates unnecessary core override">Bug Report</a>)</i></small>  If all your Resources are in your Modules Folder, this is an easy thing of selecting all and deleting.
+</p><p>All Resources need to be present and fully exported (that is if you created them):
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a></li></ul>
+<h2><span class="mw-headline" id="Step_by_Step">Step by Step</span></h2>
+<p>Start the process by selecting from the menu:
+</p>
+<pre>"Tools -&gt; Builder -&gt; Builder to player package" </pre>
+<p>It will ask for a "Manifest". The "Manifest" is a helper, which isnt available the first time. However can be created afterwards, which will save you resource selection, so that exporting the next time you can select this "Manifest" and wouldnt need to select all the resources again.
+</p>
+<pre>Click cancel, or select a previously saved Manifest.</pre>
+<p>The toolset will now list all the binary files you've exported, including 2DA's, art and designer resources, and give you the opportunity to select which ones to include in the package (you usually won't need to include core game resources "from \packages\core", for example). It will then package them into 3 <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERFs</a> (one for each directory listed above), which will be bundled together into a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">DAZIP</a> file along with a manifest file used by the program DAUpdater when installing the package on the end user's machine.
+</p><p>If you followed a clean structure with your resources, you may only select the whole custom module folder and be ready. 
+</p>
+<pre>Select a location to save the file in.
+Click Save.</pre>
+<p>Create a Manifest if you wish, which will save your resources selection for the next time you do the process. 
+</p><p>Currently, there is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20toolset%20export%20generates%20files%20with%20names%20that%20can%27t%20be%20packaged%20in%20builder%20to%20player" title="Bug: toolset export generates files with names that can't be packaged in builder to player"> file name bug</a> which affects external levels etc. Refer to that link for a workaround.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player%20-%20ru" title="Builder to player/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

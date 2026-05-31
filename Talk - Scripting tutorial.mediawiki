@@ -1,0 +1,12 @@
+<p><b>Syntax Error?</b>
+</p><p>In the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How-tos" title="How-tos">How-tos</a> section of the site it shows the following syntax for setting a plot flag:
+</p>
+<pre> WR_SetPlotFlag("xxx_xxx", xxxx_xxxx, TRUE);
+</pre>
+<p>Whereas on this scripting tutorial it shows it as:
+</p>
+<pre>WR_SetPlotFlag(xxx_xxx, xxxx_xxxx, TRUE);
+</pre>
+<p>I don't have access to the toolset yet to check which one is correct or if both are.
+</p>
+<hr />

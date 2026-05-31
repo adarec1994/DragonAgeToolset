@@ -1,0 +1,6 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Русское наименование страницы</b>
+</td></tr></table>
+<p>This sub-template doesn't display properly when not included. Please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Rupage" title="Template:Rupage">Template:Rupage</a> for the complete version.
+</p>

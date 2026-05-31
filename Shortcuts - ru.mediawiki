@@ -1,0 +1,102 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Горячие клавиши</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Shortcuts/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B8.D0.BD.D0.B3"><span class="tocnumber">1</span> <span class="toctext">Скриптинг</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Area_editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.BE.D0.B1.D0.BB.D0.B0.D1.81.D1.82.D0.B8.29"><span class="tocnumber">2</span> <span class="toctext">Area editor(Редактор области)</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Cutscene_curve_editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD-.D0.BA.D1.80.D0.B8.D0.B2.D1.8B.D1.85.29"><span class="tocnumber">3</span> <span class="toctext">Cutscene curve editor(Редактор катсцен-кривых)</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Stage_Editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D1.81.D1.86.D0.B5.D0.BD.29"><span class="tocnumber">4</span> <span class="toctext">Stage Editor(Редактор сцен)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Dialog_Editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.B4.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3.D0.BE.D0.B2.29"><span class="tocnumber">5</span> <span class="toctext">Dialog Editor(Редактор диалогов)</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B8.D0.BD.D0.B3">Скриптинг</span></h2>
+<p>В окне скриптов:
+</p>
+<ul><li>F1: Общая справка (в отдельном окне)</li>
+<li>F2: Автозавершение</li>
+<li>F7: Компиляция</li>
+<li>CTRL+Space: Автозавершение</li>
+<li>CTRL+Shift+Space: Подсказка по функции (почти весь список)</li>
+<li>Двойной щелчок (на функции): Помощь (на панели помощи)</li></ul>
+<p>На панели просмотра Функций/Переменных/Констант/Шаблонов:
+</p>
+<ul><li>Единичный щелчок (на функции): Помощь</li>
+<li>Двойной щелчок (на любом элементе): вставить в скрипт</li>
+<li>Return/Enter (на любом элементе): вставить в скрипт</li>
+<li>Курсор вправо/вниз: следующая запись в списке</li>
+<li>Курсор влево/вверх: предыдущая запись в списке</li>
+<li>Page Up: первая видимая запись</li>
+<li>Page Down: последняя видимая запись</li>
+<li>Home: первая запись в списке</li>
+<li>End: последнаяя запись в списке</li></ul>
+<p>Когда открыто окошко автозавершения:
+</p>
+<ul><li>Двойной щелчок (на любом элементе): вставить в скрипт</li>
+<li>Return/Enter (на любом элементе): вставить в скрипт</li>
+<li>Курсор вправо/вниз: следующая запись в списке</li>
+<li>Курсор влево/вверх: предыдущая запись в списке</li>
+<li>Page Up: первая видимая запись</li>
+<li>Page Down: последняя видимая запись</li>
+<li>Home: первая запись в списке</li>
+<li>End: последнаяя запись в списке</li></ul>
+<h2><span class="mw-headline" id="Area_editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.BE.D0.B1.D0.BB.D0.B0.D1.81.D1.82.D0.B8.29">Area editor(Редактор области)</span></h2>
+<p>Более подпобная информация здесь <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3D%20controls" title="3D control">3D control</a>.
+</p>
+<ul><li>"r": Включить стандартный инструмент выделения (Standard selection tool) (объект должен быть выбран)</li>
+<li>"q": Включить инструмент перемещения по осям (объект должен быть выбран)</li>
+<li>"e": Включить инструмент вращения по осям (объект должен быть выбран)</li>
+<li>"t": Использование локальных координат (объект должен быть выбран)</li></ul>
+<ul><li>Средняя кнопка мышки: Вращение</li>
+<li>CTRL: панорама</li>
+<li>CTRL+Правая кнопка мышки: Вращение</li>
+<li>Функция ZDrag (Перемещение объектов вверх и вниз): Левая кнопка мышки + Shift + Alt (Предварительно нужно кликнуть на выбранный объект)</li>
+<li>Двигать камеру: Левая кнопка мышки + Ctrl</li>
+<li>Rotate Objects Yaw Left:  Правая кнопка мышки + Shift</li></ul>
+<p>Думаю, для этих команд нужно использовать один из инструментов 3d-перемещения.
+</p>
+<ul><li>Rotate Objects Pitch Up: Правая кнопка мышки + Shift + Ctrl</li>
+<li>Rotate Objects Roll Right: Правая кнопка мышки + Shift + Alt</li></ul>
+<h2><span class="mw-headline" id="Cutscene_curve_editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.BA.D0.B0.D1.82.D1.81.D1.86.D0.B5.D0.BD-.D0.BA.D1.80.D0.B8.D0.B2.D1.8B.D1.85.29">Cutscene curve editor(Редактор катсцен-кривых)</span></h2>
+<ul><li>K - Установить все ключи</li>
+<li>P - Установить позицию</li>
+<li>O - Установить ориентацию</li>
+<li>F - FOV</li></ul>
+<ul><li> Вставить камеру = C</li>
+<li> Вставить VFX = V</li>
+<li> Добавить трэк = T</li>
+<li> Добавить действие:
+<ul><li> Проиграть анимацию = alt+A</li>
+<li>(Дополнительные горячие клавиши для других полезных функций)</li></ul></li>
+<li> Добавить переход = X</li>
+<li> Добавить эффект:
+<ul><li> Появление= I</li>
+<li> Исчезание= O</li></ul></li>
+<li>Редактировать FaceFX = alt+F</li></ul>
+<h2><span class="mw-headline" id="Stage_Editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D1.81.D1.86.D0.B5.D0.BD.29">Stage Editor(Редактор сцен)</span></h2>
+<ul><li> Вставить позицию(Place)= P</li>
+<li> Вставить камеру = C</li>
+<li> Скрыть объект = H</li>
+<li> Показать объекты= S</li></ul>
+<h2><span class="mw-headline" id="Dialog_Editor.28.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.BE.D1.80_.D0.B4.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3.D0.BE.D0.B2.29">Dialog Editor(Редактор диалогов)</span></h2>
+<ul><li> Редактировать FaceFX= alt+F</li>
+<li> Сгенерировать жесты для строчки= alt+G</li>
+<li> Найти ссылки= alt+L</li>
+<li> Предпросмотр строки=alt+/</li>
+<li> Открыть катсцену(Cutscene)= alt+C</li>
+<li> Открыть сцену(Stage)= alt+S</li>
+<li> Создать катсцену(cutscene)= alt+ctrl+C</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Shortcuts" title="Shortcuts">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

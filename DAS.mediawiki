@@ -1,0 +1,4 @@
+<p>The <strong class="selflink">DAS</strong> file type is used to store Dragon Age savegame data using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> file format.
+</p>
+<h3><span class="mw-headline" id="See_Also">See Also</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character%20Save%20Values" title="Character Save Values">Character Save Values</a> for information about the structure and information that can be found inside a savegame file.</li></ul>

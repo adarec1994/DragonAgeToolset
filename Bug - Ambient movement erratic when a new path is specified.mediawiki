@@ -1,0 +1,18 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.04 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The Ambient_Start function allows the waypoint path AMBIENT_MOVE_PREFIX to be specified.
+</p><p>However, if it is used to specify a new path for a creature, the new waypoints may be visited in the wrong order.
+</p><p>Specifically, if the creature last moved to old path waypoint N, it will visit new path waypoint N (if it exists) before new path waypoint 1.
+</p><p>This has been verified in AMBIENT_MOVE_ONCE mode, but probably affects most movement patterns.
+</p><p>Ambient_StartTeam() and Ambient_StartTag() depend on Ambient_Start, so they have the same bug.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Add the following initialistions before calling Ambient_Start:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_COUNT, AMBIENT_MOVE_COUNT_INVALID<span class="br0">&#41;</span>; 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_STATE,  AMBIENT_MOVE_NEXT<span class="br0">&#41;</span>;              
+Ambient_Start<span class="br0">&#40;</span>oCreature, ...</pre></div></div>
+<p>where oCreature is the creature object in question.
+</p>

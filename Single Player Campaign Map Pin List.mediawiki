@@ -1,0 +1,130 @@
+<h2><span class="mw-headline" id="wide_open_world.map">wide_open_world.map</span></h2>
+<p>NOTE: The wmlf_* and wml_lc_* pins are not here as I'm not sure what they are.
+</p>
+<ul><li>&#160;???
+<ul><li> Tag: wml_wow_docks</li>
+<li> Location: 266, 299</li></ul></li>
+<li> Lothering
+<ul><li> Tag: wml_wow_lothering</li>
+<li> Location: 410, 372</li></ul></li>
+<li> Brecilian Forest Outskirts
+<ul><li> Tag: wml_wow_dalish</li>
+<li> Location: 529, 380</li></ul></li>
+<li> Brecilian Forest
+<ul><li> Tag: wml_wow_forest </li>
+<li> Location: 643,415</li></ul></li>
+<li> Forest Ruins
+<ul><li> Tag: wml_wow_ruins </li>
+<li> Location: 776, 396</li></ul></li>
+<li> Denerim
+<ul><li> Tag: wml_wow_denerim </li>
+<li> Location: 607, 195</li></ul></li>
+<li> Redcliffe
+<ul><li> Tag: wml_wow_redcliffe </li>
+<li> Location: 219, 461</li></ul></li>
+<li> Redcliffe Castle
+<ul><li> Tag: wml_wow_red_castle </li>
+<li> Location: 229, 410</li></ul></li>
+<li> Frostback Mountains
+<ul><li> Tag: wml_wow_orzammar </li>
+<li> Location: 123, 252</li></ul></li>
+<li> Haven
+<ul><li> Tag: wml_wow_urn_village</li>
+<li> Location: 104, 412</li></ul></li>
+<li> Player Camp (I would not recommend connecting any trails to this pin)
+<ul><li> Tag: wml_wow_camp </li>
+<li> Location: 783, 108</li></ul></li>
+<li> Flemeth's hut
+<ul><li> Tag: wow_wml_flemeth </li>
+<li> Location: 424, 563</li></ul></li>
+<li> Urn Ruins
+<ul><li> Tag: wml_wow_urn_ruins </li>
+<li> Location: 95, 516</li></ul></li>
+<li> Recliffe&#160;??
+<ul><li> Tag: wml_wow_red_village_cli </li>
+<li> Location: 221, 464</li></ul></li>
+<li> Redcliffe Castle&#160;??
+<ul><li> Tag: wml_wow_red_castle_cli </li>
+<li> Location: 227, 414</li></ul></li>
+<li> Circle Tower
+<ul><li> Tag: wml_wow_tower </li>
+<li> Location: 229, 286</li></ul></li>
+<li> Generic Crossroads 1 (reference pin, not shown) Crossroads near Orzammar
+<ul><li> Tag: wml_crossroads_1 </li>
+<li> Location: 201, 310</li></ul></li>
+<li> Generic Crossroads 2 (reference pin, not shown) Crossroads near lake calenhad
+<ul><li> Tag: wml_crossroads_2 </li>
+<li> Location: 292, 247</li></ul></li>
+<li> Generic Crossroads 3 (reference pin, not shown) Crossroads Mid North Road
+<ul><li> Tag: wml_crossroads_3 </li>
+<li> Location: 390, 186</li></ul></li>
+<li> Dalish Camp
+<ul><li> Tag: wml_wow_dalish_camp </li>
+<li> Location: 551, 343</li></ul></li>
+<li> Orzammar City
+<ul><li> Tag: wml_wow_orammar_city </li>
+<li> Location: 113, 291</li></ul></li></ul>
+<h2><span class="mw-headline" id="Denerim.map">Denerim.map</span></h2>
+<ul><li>Fort Drakon
+<ul><li>wml_den_fort_dragkon</li>
+<li>144, 534</li></ul></li>
+<li>Arl of Denerim's Estate
+<ul><li>wml_den_arl_estate</li>
+<li>402, 485</li></ul></li>
+<li>Elven Alienage
+<ul><li>wml_den_alienge</li>
+<li>543, 291</li></ul></li>
+<li>Denerim Market District
+<ul><li>wml_den_market</li>
+<li>520, 146</li></ul></li>
+<li>Arl of Redcliffe's Estate
+<ul><li>wml_den_eamon</li>
+<li>486, 188</li></ul></li>
+<li>Royal Palace
+<ul><li>wml_den_palace</li>
+<li>343, 431</li></ul></li>
+<li>Dark Alley
+<ul><li>wml_lc_alley_justice_1</li>
+<li>576, 519</li></ul></li>
+<li>Dirty Back Alley
+<ul><li>wml_lc_alley_justice_2</li>
+<li>640, 397</li></ul></li>
+<li>Run-Down Back Street
+<ul><li>wml_lc_alley_justice_3</li>
+<li>469, 488</li></ul></li>
+<li>The Pearl
+<ul><li>wml_den_brothel</li>
+<li>640, 331</li></ul></li>
+<li>Ransom Drop Location - part of the Trial of the Crows quest
+<ul><li>wml_lc_end_assassin</li>
+<li>665, 488</li></ul></li>
+<li>Bann Franderel's Manor
+<ul><li>wml_lc_franderel_estate</li>
+<li>388, 234</li></ul></li>
+<li>Bann Franderel's Manor (maybe 2nd visit?)
+<ul><li>wml_lc_franderel_estate_2</li>
+<li>388, 234</li></ul></li>
+<li>Tevinter Warehouse
+<ul><li>wml_den_warehouse</li>
+<li>673, 344</li></ul></li>
+<li>Deserted Building
+<ul><li>wml_lc_blood_mage</li>
+<li>538, 412</li></ul></li>
+<li>D's Hideout
+<ul><li>wml_den_rogue_d</li>
+<li>682, 107</li></ul></li>
+<li>K's Hideout
+<ul><li>wml_den_rogue_k</li>
+<li>374, 312</li></ul></li>
+<li>Generic Crossroads 1 (reference pin, not shown) Crossroads in the north-east of Denerim
+<ul><li>wml_den_dummy_docks_n</li>
+<li>623, 146</li></ul></li>
+<li>Generic Crossroads 2 (reference pin, not shown) Crossroads near the Pearl
+<ul><li>wml_den_dummy_docks_s</li>
+<li>586, 345</li></ul></li>
+<li>Generic Crossroads 3 (reference pin, not shown) Crossroads south of the "D" of Drakon River
+<ul><li>wml_den_dummy_palace_district</li>
+<li>430, 364</li></ul></li>
+<li>Generic Crossroads 4 (reference pin, not shown) Crossroads near K's Hideout and Bann Franderel's Manor
+<ul><li>wml_den_dummy_gates</li>
+<li>410, 267</li></ul></li></ul>

@@ -1,0 +1,24 @@
+<ul><li><b>Toolset verion:</b> (n/a) </li>
+<li><b>Game version:</b> 1.02a </li>
+<li><b>Status:</b> Fixed in patch 1.03</li></ul>
+<p><br />
+</p>
+<table style="background-color:#F9F9F9; border: 1px dashed #2F6FAB;">
+
+<tr>
+<td> <div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BioWare%20BWIcon%20rgb.png"><img alt="BioWare BWIcon rgb.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png" width="32" height="32" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/2e/BioWare_BWIcon_rgb.png 2x" /></a></div>
+</td>
+<td> This issue has been recorded in BioWare's internal tracking system.<br />
+<p>Reference number: 198331  -<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a>
+</p>
+</td></tr></table>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">Update: This problem is solved with game patch 1.03 (unreleased)
+-<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a> 17:49, 25 February 2010 (UTC)</div>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>While not a toolset issue per se, it's an issue that affects builders, so seems just as important to me. After packaging a mod into a DAZIP, the player can't simply install it by double-clicking the file that's already associated with DAUpdater. Instead, DAUpdater errors out with <i>Cannot find "DAUpdater.xml" file. Please contact tech support</i>. Here's the reference thread <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/8/index/567852">[1]</a>.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<ul><li> Run DAUpdater from $GameInstallDir/bin_ship</li></ul>
+<p>Or
+</p>
+<ul><li> Supply a copy of DAUpdater.XML relative to the DAZIP file: $CWD/../data/DAUpdater.XML. The game will complain afterwards about the content requiring a later version of Dragon Age than what's installed, but it will install it. This might not work with the Korean version though... I think there's a Korean-language version at least.</li></ul>

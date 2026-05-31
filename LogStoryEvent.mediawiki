@@ -1,0 +1,20 @@
+<p>Logs an event for the hero's "Story So Far" in the save game.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> LogStoryEvent(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEventID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nEventID<dd>The ID of the Event being logged
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>LogStoryEvent sends its parameter to EA's servers to indicate that a particular event in the character's story has occurred. Since the meaning of each event ID needs to be set up server-side, this is likely of little to no practical use for end user modders.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Story events are queued up and are only sent to the server when the player saves the game.
+</p>

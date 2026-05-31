@@ -1,0 +1,8 @@
+<p>Nothing wrong with this page but reading it made me wonder. In NWN when you updated instances from the palette blueprint, every field in the instances found and updated was changed to match the blueprint. In many situations that fact annihilated the utility of having the update instances feature available. Unless changes made to the blueprint were extensive or there were only a couple of instances in the module it wasn't worth it to use the update feature because you always had to go through the whole module editing all the instances anyway after the fact in order to reset all those deviant attributes, like Name or Tag, that were changed after placement or dependent on location or something and just got wiped out by the update.
+</p><p>So my question is, when you use this feature in DA are there any options to decide which properties are &amp; are not to be pushed to the instances? If not, I'd like to suggest that feature for a future patch. Maybe a list of check boxes, one for each blueprint property or category of related properties, you can select from before the instances get changed.
+</p><p>-- Axe Murderer 18:38 PST, 24 Oct 2009
+</p>
+<hr />
+<p>I assume this is useful information, however isnt this information a bit lost all alone out here&#160;? Its like its standing naked in a desert and nobody cares lol. Not like i can sort this into a category <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 04:21, 25 January 2010 (UTC)
+</p>
+<hr />

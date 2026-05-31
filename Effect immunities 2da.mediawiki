@@ -1,0 +1,105 @@
+<p>The <strong class="selflink">effect_immunities 2da</strong> lists which creature appearances are immune to specific effects. 
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>165</b>. It can be extended by m2da fragments which have names starting with <b>effect_immunities</b>. It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_EFFECT_IMMUNITIES</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  Human readable representation of the ID
+</td></tr>
+<tr>
+<th>  e1014
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Knockback:
+<ul><li> 1 - An "immune" message is displayed</li>
+<li> 2 - No message is displayed</li>
+<li> 3 - A "resisted" message is displayed</li></ul>
+</td></tr>
+<tr>
+<th>  e1027
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Stun
+</td></tr>
+<tr>
+<th>  e1011
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Disease
+</td></tr>
+<tr>
+<th>  e1020
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Daze
+</td></tr>
+<tr>
+<th>  e1033
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Sleep
+</td></tr>
+<tr>
+<th>  e1034
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Charm
+</td></tr>
+<tr>
+<th>  e1035
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Confusion
+</td></tr>
+<tr>
+<th>  e1036
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Fear
+</td></tr>
+<tr>
+<th>  e1003
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Root
+</td></tr>
+<tr>
+<th>  e1051
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Immunity to Slip
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The values in the <b>ID</b> column correspond to the ID of the appearances in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%202da" title="APR 2da">APR_ m2da</a>.
+</p><p>The number value in each of the the e#### column names is an ID of an effect in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%202da" title="Effects 2da">effects 2da</a>. The "e" prefix is required because the 2da specification does not allow purely numeric column names. If the actual value in the column is greater than 0 then a creature with that appearance type is immune to that effect.
+</p><p>Appearances which are immune to a specific effect do not have animations for these effects, so just removing immunity will not necessarily make effects work on that appearance.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%20h" title="Effects h (page does not exist)">effects_h</a></li></ul>

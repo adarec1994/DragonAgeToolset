@@ -1,0 +1,449 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Brief"><span class="tocnumber">1</span> <span class="toctext">Brief</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Requirements"><span class="tocnumber">1.1</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Guidelines"><span class="tocnumber">1.2</span> <span class="toctext">Guidelines</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Suggestions"><span class="tocnumber">1.3</span> <span class="toctext">Suggestions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Allowable"><span class="tocnumber">1.4</span> <span class="toctext">Allowable</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Not_Allowable"><span class="tocnumber">1.5</span> <span class="toctext">Not Allowable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Groups_and_Prizes"><span class="tocnumber">2</span> <span class="toctext">Groups and Prizes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Groups"><span class="tocnumber">2.1</span> <span class="toctext">Groups</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Retexture_Group"><span class="tocnumber">2.2</span> <span class="toctext">Retexture Group</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#New_Model_Group"><span class="tocnumber">2.3</span> <span class="toctext">New Model Group</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Best_Newcomer_Award"><span class="tocnumber">2.4</span> <span class="toctext">Best Newcomer Award</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Prizes"><span class="tocnumber">2.5</span> <span class="toctext">Prizes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Helpful_Links"><span class="tocnumber">3</span> <span class="toctext">Helpful Links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#New_Model_Group_2"><span class="tocnumber">3.1</span> <span class="toctext">New Model Group</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Retexture_Group_2"><span class="tocnumber">3.2</span> <span class="toctext">Retexture Group</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Guidelines_.28extended.29"><span class="tocnumber">4</span> <span class="toctext">Guidelines (extended)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Models"><span class="tocnumber">4.1</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Textures"><span class="tocnumber">4.2</span> <span class="toctext">Textures</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#GDA_.28variations.29"><span class="tocnumber">4.3</span> <span class="toctext">GDA (variations)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Entries"><span class="tocnumber">5</span> <span class="toctext">Entries</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#Entry_File.28s.29"><span class="tocnumber">5.1</span> <span class="toctext">Entry File(s)</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Checklist"><span class="tocnumber">5.2</span> <span class="toctext">Checklist</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Consent_to_Share"><span class="tocnumber">5.3</span> <span class="toctext">Consent to Share</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Weapon_Model_Contest"><span class="tocnumber">6</span> <span class="toctext">Weapon Model Contest</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Crow_.26_Crane_by_Adonnay_-_1st_Place"><span class="tocnumber">6.1</span> <span class="toctext">Crow &amp; Crane by Adonnay - 1st Place</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#HjorrMikill_by_Nattfodd_-_2nd_Place"><span class="tocnumber">6.2</span> <span class="toctext">HjorrMikill by Nattfodd - 2nd Place</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Fenod.27s_Weapons_-_3rd_Place"><span class="tocnumber">6.3</span> <span class="toctext">Fenod's Weapons - 3rd Place</span></a>
+<ul>
+<li class="toclevel-3 tocsection-28"><a href="#Lunacy.28Dagger.29_by_Fenod"><span class="tocnumber">6.3.1</span> <span class="toctext">Lunacy(Dagger) by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Dreadscale.28Battleaxe.29_by_Fenod"><span class="tocnumber">6.3.2</span> <span class="toctext">Dreadscale(Battleaxe) by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#Deadweight.28Maul.29_by_Fenod"><span class="tocnumber">6.3.3</span> <span class="toctext">Deadweight(Maul) by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#Barbarous_Mace_by_Fenod"><span class="tocnumber">6.3.4</span> <span class="toctext">Barbarous Mace by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#Bonemaw_by_Fenod"><span class="tocnumber">6.3.5</span> <span class="toctext">Bonemaw by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="#Malice.28Dagger.29_by_Fenod"><span class="tocnumber">6.3.6</span> <span class="toctext">Malice(Dagger) by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-34"><a href="#Pestilence_by_Fenod"><span class="tocnumber">6.3.7</span> <span class="toctext">Pestilence by Fenod</span></a></li>
+<li class="toclevel-3 tocsection-35"><a href="#Lament_by_Fenod"><span class="tocnumber">6.3.8</span> <span class="toctext">Lament by Fenod</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-36"><a href="#Knotwood_Staff_Helekanalaith_-_Best_Newcomer"><span class="tocnumber">6.4</span> <span class="toctext">Knotwood Staff Helekanalaith - Best Newcomer</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Dagger_of_Ashyera.27s_Cult_by_Gisle_Aune"><span class="tocnumber">6.5</span> <span class="toctext">Dagger of Ashyera's Cult by Gisle Aune</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Warhammer_by_mikemike37"><span class="tocnumber">6.6</span> <span class="toctext">Warhammer by mikemike37</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Cudgel_by_BlackPhi"><span class="tocnumber">6.7</span> <span class="toctext">Cudgel by BlackPhi</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Lightsaber_by_InBleedingRapture"><span class="tocnumber">6.8</span> <span class="toctext">Lightsaber by InBleedingRapture</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="#Armour_Retexture_Contest"><span class="tocnumber">7</span> <span class="toctext">Armour Retexture Contest</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="#Mage_Helm_by_BlackPhi_-_1st_Place"><span class="tocnumber">7.1</span> <span class="toctext">Mage Helm by BlackPhi - 1st Place</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#The_Valorous_by_Vaylise_-_2nd_Place"><span class="tocnumber">7.2</span> <span class="toctext">The Valorous by Vaylise - 2nd Place</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Brief">Brief</span></h2>
+<p><b>Create a piece of equipment. </b> There are two groups:
+</p>
+<ul><li> Armour Retexture Group - This group is creating a new texture for an existing DAO armour or shield. </li>
+<li> Weapon New Model Group - This group is creating a new weapon or shield model.</li></ul>
+<p>The contest discussion thread can be found <a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/discussion/12522/1250851/">here</a>.
+</p><p><b>Contest closed</b> (Monday 10 January). Bundle can be found <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">here</a>.
+</p>
+<h3><span class="mw-headline" id="Requirements">Requirements</span></h3>
+<p>All entries must (many of these steps are covered in the video tutorial):
+</p>
+<ul><li> complete the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%206%20-%20Equipment%20Contest#Checklist" title="Community Contest 6: Equipment Contest">|entry checklist</a> below and agree to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%206%20-%20Equipment%20Contest#Consent_to_Share" title="Community Contest 6: Equipment Contest">|Consent to Share</a></li>
+<li> include either a retexture OR a new model for the piece of equipment</li></ul>
+<ul><li> have a unique ID in a variations GDA
+<ul><li> reserve a variation slot on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges#Variation_sheets" title="Community Contest ID Ranges">Contest ID page</a></li>
+<li> create the variations GDA</li></ul></li></ul>
+<ul><li> be created as an item in the toolset
+<ul><li> have a name/description/style that fits DA-canon or generic-canon (do not make a lightsaber or reference the Dagobah system in the description, for example, but you do not <i>need</i> to reference Ferelden)</li>
+<li> create a dadbdata of the item (R click the item resource &gt; Builder to Builder Create)</li></ul></li></ul>
+<h3><span class="mw-headline" id="Guidelines">Guidelines</span></h3>
+<p>Strong entries will:
+</p>
+<ul><li> have a strong visual design</li></ul>
+<ul><li><i>Retexture Group:</i>
+<ul><li> if using an existing DA model, make the new texture distinctly different so as to do something "new"</li>
+<li> have a high quality of texture at a suitable resolution (see below)</li>
+<li> accommodate tinting the item</li></ul></li></ul>
+<ul><li><i>new Model Group:</i> - (in addition to texture standards above)
+<ul><li> be positioned and scaled correctly to fit character and animations well.</li>
+<li> have a high quality of model</li>
+<li> use a suitable polycount (see below) and use the budget effectively</li></ul></li></ul>
+<h3><span class="mw-headline" id="Suggestions">Suggestions</span></h3>
+<ul><li> New Model Group: sword, blunt weapon, staff, bow, shield, </li>
+<li> Retexture Group: clothing (full-body), chest armour, boots, gloves, shield</li></ul>
+<h3><span class="mw-headline" id="Allowable">Allowable</span></h3>
+<p>While no "bonus points" will be given for the following, entries may: 
+</p>
+<ul><li> create armours for just one race/gender combination (HM, HF, EM, EF, DM, DF, QM). Obviously, creating for all seven combinations is great too&#160;:) </li>
+<li> use existing DA models provided a new texture is made which is distinctly different</li>
+<li> use existing DA textures provided a new model is made which is distinctly different</li>
+<li> modify existing DA models or textures provided the overall texture/model combination is dintinctly different from the original</li>
+<li> include several pieces in one submission (ex. boots, gloves, chest items as an item set)</li>
+<li> entering the contest several times, including entering both groups (provided a single entry only enters a single group)</li></ul>
+<h3><span class="mw-headline" id="Not_Allowable">Not Allowable</span></h3>
+<p>Please:
+</p>
+<ul><li> do not use somebody elses model or texture unless you have permission to do so under the consent to share outlined below</li>
+<li> do not submit weapons for which there is no suitable animation <i>(For example, there is no DA animation for thrusting with a pike, firing a sling, etc)</i></li>
+<li> a single entry may not enter both groups - your entry is EITHER a new (textured) model, OR it is a retextured existing model</li></ul>
+<h2><span class="mw-headline" id="Groups_and_Prizes">Groups and Prizes</span></h2>
+<h3><span class="mw-headline" id="Groups">Groups</span></h3>
+<p>This contest has two groups. A single entry may only enter one group.
+</p>
+<h3><span class="mw-headline" id="Retexture_Group">Retexture Group</span></h3>
+<ul><li> 1st place - 10 points, chooses first</li>
+<li> 2nd place - 5 points, chooses second</li>
+<li> 3rd place - 3 points, chooses third</li>
+<li> Best Newcomer - 3 points (unless 1st, 2nd or 3rd place)</li>
+<li> All other entries meeting requirements - 1 point</li></ul>
+<h3><span class="mw-headline" id="New_Model_Group">New Model Group</span></h3>
+<ul><li> 1st place - 15 points, chooses first</li>
+<li> 2nd place - 10 points, chooses second</li>
+<li> 3rd place - 5 points, chooses third</li>
+<li> Best Newcomer - 3 points (unless 1st, 2nd or 3rd place)</li>
+<li> All other entries meeting requirements - 1 point</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Best_Newcomer_Award">Best Newcomer Award</span></h3>
+<p>If an entrant has not entered a Community Contest before, they qualify for the Best Newcomer Award. This award is given to the newcomer with the highest number of votes.
+</p>
+<h3><span class="mw-headline" id="Prizes">Prizes</span></h3>
+<p>Please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Prizes" title="Community Contest Prizes">Community Contest Prizes</a>
+</p>
+<h2><span class="mw-headline" id="Helpful_Links">Helpful Links</span></h2>
+<h3><span class="mw-headline" id="New_Model_Group_2">New Model Group</span></h3>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=GWvxMXzEbuM">Custom Weapon Appearances</a> - covers how to set up a weapon in 3DS Max for exporting. </li>
+<li> <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=NvJ8yhGborY">Adding item appearances to DA</a> - covers how to add your new appearance to DA without replacing anything.</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2336/">Eshme's Import/Export Script</a> for 3ds max and GMax (new models only)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Texture Formats">Texture Formats</a> - Builder Wiki</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariation Documentation</a> - Builder Wiki</li></ul>
+<h3><span class="mw-headline" id="Retexture_Group_2">Retexture Group</span></h3>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=7E_slY9Latk">Retexturing an existing model</a> - covers how to find and retexture a DA armour model.</li>
+<li> <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=NvJ8yhGborY">Adding item appearances to DA</a> - covers how to add your new appearance to DA without replacing anything.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial" title="Reskinning an item tutorial">Reskinning an item tutorial</a> - Builder Wiki</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Texture%20Formats" title="Texture Formats">Texture Formats</a> - Builder Wiki</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariation Documentation</a> - Builder Wiki</li></ul>
+<h2><span class="mw-headline" id="Guidelines_.28extended.29">Guidelines (extended)</span></h2>
+<h3><span class="mw-headline" id="Models">Models</span></h3>
+<p>As a guideline (not a strict limit), aim for 1000 - 2000 triangles for weapon/shield models. Anything over 3000 triangles had better have a very good reason for it&#160;;)
+</p>
+<h3><span class="mw-headline" id="Textures">Textures</span></h3>
+<p>The recommended is in line with DA spec. Its pretty safe to go over though, but you shouldnt need more than double the texture space. I would not recommend using two or more textures - its really not needed for equipment.
+</p><p><b>Weapons/shields</b>
+</p>
+<ul><li> recommended: 512x512</li>
+<li> reasonable maximum: 512x1024</li></ul>
+<p><b>Full-body outfit</b> (includes hands/gloves and feet/boots)
+</p>
+<ul><li> recommended: 1024x1024</li>
+<li> reasonable maximum: 1024x2048</li></ul>
+<p><b>Chest</b>
+</p>
+<ul><li> recommended: 1024x1024</li>
+<li> reasonable maximum: 1024x1024</li></ul>
+<p><b>Boots/gloves</b>
+</p>
+<ul><li> recommended: 256x256</li>
+<li> reasonable maximum: 256x512</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="GDA_.28variations.29">GDA (variations)</span></h3>
+<p>Remember that you should be EXTENDING (and not replacing) the variations. This also applies to replacing textures - forcibly overwriting textures WILL BE JUDGED UNFAVORABLY, since it requires extra work to fix. As such your variations sheet should contain ONLY one extra line.
+</p><p>Mike will include a screenshot of his finished GDA once he's done.
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Entries">Entries</span></h1>
+<h3><span class="mw-headline" id="Entry_File.28s.29">Entry File(s)</span></h3>
+<p><b>File Contents:</b>
+</p>
+<ul><li> dadbdata of your item file</li>
+<li> variations GDA</li>
+<li> mmh, msh, phy, mao, dds as appropriate</li></ul>
+<p><b>File Format:</b>
+one .7z file (preferred)
+</p>
+<h3><span class="mw-headline" id="Checklist">Checklist</span></h3>
+<ol><li> Create your file (see above)</li>
+<li> Create a <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/">Dragon Age Nexus</a> page for your entry and upload the above file. Please include "Community Contest" in the title.</li>
+<li> Edit <b>this</b> page with a description and pictures of your content. 
+<ul><li> Please include pictures which are both functional as well as attractive (so your work can be seen clearly)</li>
+<li> Link to your DA Nexus page. See the sample entry.</li></ul></li>
+<li> Optionally, let us know in the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/#discussions">Contest Discussion Thread</a> that you've entered</li></ol>
+<p>For the general entry guidelines (as well as more detail on the above steps), please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Entry%20FAQ" title="Community Contest Entry FAQ">Entry FAQs</a>
+</p><p>For information on Judging, please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Judging" title="Community Contest Judging">Judging</a> page.
+</p>
+<h2><span class="mw-headline" id="Consent_to_Share">Consent to Share</span></h2>
+<pre><font size="5" color="red"><b><u>IMPORTANT - consent to share</u></b></font>
+
+<font color="red"><b>By entering this competition you consent to share your work for other community members to benefit from.
+Where appropriate, source files should be shared (prop models, VFXProj files). 
+The work *MUST* be your own (obviously you may use DA assets).
+Others may use and modify your work in their Dragon Age mods, though are encouraged to give credit. 
+As the entries are judged, local copies will be saved If your work is taken down.
+If your work is taken down, you allow for it to be re-uploaded, crediting the work in your name. </b> </font>
+</pre>
+<h1><span class="mw-headline" id="Weapon_Model_Contest">Weapon Model Contest</span></h1>
+<h2><span class="mw-headline" id="Crow_.26_Crane_by_Adonnay_-_1st_Place">Crow &amp; Crane by Adonnay - 1st Place</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1970">Dragon Age Nexus project page</a></b></li></ul>
+<p>A set of two longswords for the dual wielding archetypes. They are meant to really shine during dialog scenes hence the slightly larger textures of 1024 x 1024. 
+Both swords are quite powerful and are meant for higher level content.
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC06%20cnc01.jpg" title="Crow and Crane"><img alt="Crow and Crane" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/CC06_cnc01.jpg" width="400" height="304" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/CC06_cnc01.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/CC06_cnc01.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC06%20cnc02.jpg" title="Crow and Crane"><img alt="Crow and Crane" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC06_cnc02.jpg" width="400" height="304" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC06_cnc02.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/CC06_cnc02.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC06%20cnc03.jpg" title="Crow and Crane"><img alt="Crow and Crane" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/CC06_cnc03.jpg" width="400" height="304" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/CC06_cnc03.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/CC06_cnc03.jpg 2x" /></a> 
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="HjorrMikill_by_Nattfodd_-_2nd_Place">HjorrMikill by Nattfodd - 2nd Place</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1989">Dragon Age Nexus project page</a></b></li>
+<li> <b><a rel="nofollow" class="external text" href="http://social.bioware.com/project/3965/">BSN project page</a></b></li></ul>
+<p>HjorMikill means GreatSword in ancient language. 
+Protected by the mountains and snow, this sword was probably forged for a King when the elders were young, to protect in troubled times.
+This sword is the backbone of the life a warrior knows,
+forged in fire and ice: who will be the one ready to let this old sword to sing again?
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HjorMikill%2005.jpg" title="Logo"><img alt="Logo" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/HjorMikill_05.jpg" width="500" height="148" style="vertical-align: top" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/HjorMikill_05.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/HjorMikill_05.jpg 2x" /></a>
+</p>
+<div class="floatleft"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HjorMikill%2003.jpg" title="Swing 1"><img alt="Swing 1" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/HjorMikill_03.jpg" width="400" height="552" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/HjorMikill_03.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/HjorMikill_03.jpg 2x" /></a></div> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HjorMikill%2001.jpg" title="Swing 2"><img alt="Swing 2" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/10/HjorMikill_01.jpg/400px-HjorMikill_01.jpg" width="400" height="287" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/10/HjorMikill_01.jpg/600px-HjorMikill_01.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/10/HjorMikill_01.jpg 2x" /></a> 
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20HjorMikill%2004.jpg" title="Swing 3"><img alt="Swing 3" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/HjorMikill_04.jpg" width="400" height="253" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/HjorMikill_04.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/HjorMikill_04.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Fenod.27s_Weapons_-_3rd_Place">Fenod's Weapons - 3rd Place</span></h2>
+<h3><span class="mw-headline" id="Lunacy.28Dagger.29_by_Fenod">Lunacy(Dagger) by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2018">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>Many who saw the previous owner of this fine blade in battle thought he was insane. He was </dd>
+<dd>the leader of a group of thugs in Denerim who claimed to be fearless. To set an example for </dd>
+<dd>his men the commander would always fight blindfolded with wax plugging up his ears.  It turns </dd>
+<dd>out he truly was mad and met his end when he ran into a volley of arrows...fired from  his own men.</dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Lunacy.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Lunacy.jpg" width="129" height="412" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Lunacy.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Lunacy.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ingame.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Ingame.jpg" width="400" height="411" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Ingame.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Ingame.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Dreadscale.28Battleaxe.29_by_Fenod">Dreadscale(Battleaxe) by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2017">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>This weapon is not crafted from scales of any sort, instead  </dd>
+<dd>it has been fashioned from obsidian.  Dreadscale's name  </dd>
+<dd>comes from numerous number of dragons that it has slain.  </dd>
+<dd>It is no surprise then that in this age, the Dragon Age, </dd>
+<dd>many believe it to have an enchantment which allows the</dd>
+<dd>one who wields it to strike with enough force to cleave a</dd>
+<dd>dragon in twain.</dd></dl>
+<dl><dd>Whatever enchantment it possesses does not seem to </dd>
+<dd>increase its effectiveness in killing dragons.  This has </dd>
+<dd>become increasingly apparent as fool after fool has met</dd>
+<dd>their end trying to best dragons while wielding Dreadscale.</dd>
+<dd>That is not to say that it is not a formidable weapon, for in</dd>
+<dd>the right hands Dreadscale is truly a sight to behold.</dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Dread.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Dread.jpg" width="130" height="413" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Dread.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/81/CC6Dread.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Dreadscale.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Dreadscale.jpg" width="400" height="411" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Dreadscale.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Dreadscale.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Deadweight.28Maul.29_by_Fenod">Deadweight(Maul) by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2016">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>Every time the story of this weapon's origin is told it varies </dd>
+<dd>to a great degree.  The current telling of the tale claims that </dd>
+<dd>the weapon originally belonged to a scrawny stonecutter in </dd>
+<dd>Denerim by the name of Rupert.  Rupert had grown weary</dd>
+<dd>of cutting stone and so he sought to join the city guard.</dd>
+<dd>The problem was the guard captain told him he had no place </dd>
+<dd>wielding a weapon and that he would only injure himself or </dd>
+<dd>the other guards.  Rupert would show up every year and </dd>
+<dd>try to join and each time he was turned away.</dd></dl>
+<dl><dd>Eventually the guard captain realized that Rupert would </dd>
+<dd>not cease so he had a crude maul fashioned from rock and</dd>
+<dd>told Rupert that if he could wield it he would be allowed to </dd>
+<dd>join the city guard.  Of course the captain did not expect</dd>
+<dd>Rupert to attempt the feat, but much to his dismay Rupert</dd>
+<dd>bent down, gripping the rock.</dd></dl>
+<dl><dd>The guard captain looked on in astonishment as Rupert</dd>
+<dd>hefted the ungainly weapon over his head, only to have it</dd>
+<dd>fall onto him, crushing him.  Such is the tale of Rupert and </dd>
+<dd>his weapon, aptly named Deadweight.  </dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Deadweight.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/41/CC6Deadweight.jpg" width="129" height="409" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/41/CC6Deadweight.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/41/CC6Deadweight.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Deadweight.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e0/Deadweight.jpg" width="400" height="411" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e0/Deadweight.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e0/Deadweight.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Barbarous_Mace_by_Fenod">Barbarous Mace by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2015">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>This crude weapon appears to be Chasind, but has no  </dd>
+<dd>legends to its name and bears no unique markings,   </dd>
+<dd>nonetheless its effectiveness cannot be denied when in </dd>
+<dd>capable hands.  The ensuing carnage is enough to paralyze</dd>
+<dd>foes with fear.</dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6BarbarousMace.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/93/CC6BarbarousMace.jpg" width="125" height="413" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/93/CC6BarbarousMace.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/93/CC6BarbarousMace.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20BarbarousMace.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/BarbarousMace.jpg" width="400" height="411" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/BarbarousMace.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/BarbarousMace.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Bonemaw_by_Fenod">Bonemaw by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2014">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>This macabre weapon was carved from the bone of a high  </dd>
+<dd>dragon, sharpened so that it can be wielded as a crude </dd>
+<dd>blade.  The name of the smith that created the blade and </dd>
+<dd>why it was made in such a manner has been lost to time.</dd>
+<dd>With each passing age it finds a new name, in this age it is</dd>
+<dd>known as Bonemaw.</dd></dl>
+<dl><dd>Unlike a refined dragonbone blade Bonemaw is misshapen</dd>
+<dd>and unwieldy.  Those who have seen it wielded in battle</dd>
+<dd>claim that it can fell a pride demon in one swing though such</dd>
+<dd>claims are naught but fanciful tales, giving the blade a </dd>
+<dd>legendary status of sorts.</dd></dl>
+<dl><dd>While it may not dispatch a Pride demon in a single blow </dd>
+<dd>there is no denying that the blade is indeed a formidable</dd>
+<dd>weapon.  If you find yourself pitted against an opponent </dd>
+<dd>wielding this weapon it is advisable that you flee.  You are</dd>
+<dd>lucky then that you find it in your hands. </dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Bonemaw.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/CC6Bonemaw.jpg" width="129" height="410" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/CC6Bonemaw.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/CC6Bonemaw.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bonemaw.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cf/Bonemaw.jpg" width="505" height="408" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cf/Bonemaw.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cf/Bonemaw.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Malice.28Dagger.29_by_Fenod">Malice(Dagger) by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2013">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>Malice's construction is simple, similar to Chasind weapons</dd>
+<dd>though much cruder in design.  It's blade is fitted to a metal</dd>
+<dd>bar which is in turn fitted to the weapon's basket hilt. It is  </dd>
+<dd>one of the last known weapons to be forged from the same</dd>
+<dd>ore as the greatsword Agony.  The name of the ore has</dd>
+<dd>been lost to the ages along with it's exact properties.</dd></dl>
+<dl><dd>It is apparent  that the ore can be heated to extreme</dd>
+<dd>temperatures without it melting.  Surprisingly, wielding the</dd>
+<dd>weapon will not cause injury as the heat that it gives off is</dd>
+<dd>similar in nature to the effect of a fire enchantment.   </dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Malice.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/CC6Malice.jpg" width="180" height="404" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/CC6Malice.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/CC6Malice.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Malice.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Malice.jpg" width="317" height="404" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Malice.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/Malice.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Pestilence_by_Fenod">Pestilence by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2012">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>It is believed that the axe known as Pestilence was taken </dd>
+<dd>from the fade where it is difficult to discern living beings </dd>
+<dd>from inanimate objects.  This axe is one such object.  It is  </dd>
+<dd>covered in flesh and yet by all appearances it behaves just </dd>
+<dd>as any axe would.</dd></dl>
+<dl><dd>As if this were not peculiar enough it increases the skill of </dd>
+<dd>whomever wields it.  While it is widely assumed that this is</dd>
+<dd>because the weapon is enchanted a few believe that the</dd>
+<dd>weapon is alive and guides the hand of those who wield it.</dd>
+<dd>It's edge is coated with poison leading some to believe that</dd>
+<dd>the axe itself secretes the poison.  Whether or not this </dd>
+<dd>presumption is valid there is no mistaking the foul nature of</dd>
+<dd>the poison.</dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Pestilence.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/ba/CC6Pestilence.jpg" width="129" height="409" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/ba/CC6Pestilence.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/ba/CC6Pestilence.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Pestilence.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/39/Pestilence.jpg" width="320" height="408" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/39/Pestilence.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/39/Pestilence.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Lament_by_Fenod">Lament by Fenod</span></h3>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2011">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>The name of the original owner of this blade is long forgotten </dd>
+<dd>but it is said that she loved battle so much that she would seek  </dd>
+<dd>it out all across Ferelden.  Her skill with a blade was exceptional,  </dd>
+<dd>but it was the blade which she wielded that made her a legend. She</dd>
+<dd>called the blade Lament, in honor of those that fell in battle, </dd>
+<dd>enemies and allies alike.</dd></dl>
+<dl><dd>She believed that death fueled the blade and give her the</dd>
+<dd>will to fight even when all those around her had fallen.</dd>
+<dd>Those who saw her in battle claimed that with every swing </dd>
+<dd>the blade would let out a cry.  Today it is known that the</dd>
+<dd>blade has no such enchantment though it is noted that the </dd>
+<dd>blade does indeed bear an enchantment of an unknown nature. </dd></dl>
+<p><br />  
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6Lament.jpg" title="Toolset Appearance"><img alt="Toolset Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/CC6Lament.jpg" width="129" height="410" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/CC6Lament.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f7/CC6Lament.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Lament.jpg" title="In Game Appearance"><img alt="In Game Appearance" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Lament.jpg" width="509" height="411" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Lament.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7a/Lament.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Knotwood_Staff_Helekanalaith_-_Best_Newcomer">Knotwood Staff Helekanalaith - Best Newcomer</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=2020">Dragon Age Nexus project page</a></b></li></ul>
+<dl><dd>This gnarled staff's origin can be traced back to the Knotwood Hills. No doubt it once belonged to a hangman's tree or worse; a darkspawn scratching pole!</dd></dl>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Kntwdstf1.png" title="Fight fire."><img alt="Fight fire." src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Kntwdstf1.png" width="400" height="400" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Kntwdstf1.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Kntwdstf1.png 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Kntwdstf2.png" title="With fire!"><img alt="With fire!" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Kntwdstf2.png" width="400" height="400" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Kntwdstf2.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/ab/Kntwdstf2.png 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Dagger_of_Ashyera.27s_Cult_by_Gisle_Aune">Dagger of Ashyera's Cult by Gisle Aune</span></h2>
+<p><b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2038">Dragon Age Nexus project page</a></b>
+</p><p>These daggers - allthough scarce in number in Ferelden - are quite common located within a cult in some small state in the Free Marches. (for usage in my mod The Dark Deal (WIP))
+</p><p>Bonuses: +2 damage, +6 attack
+Material: Silverite.
+</p><p>Note: I was granted extra time by Mikemike57 - sorry for delivering almost too late.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20GisleAune%20CC6%20image.jpg" title="Dagger in hand"><img alt="Dagger in hand" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4f/GisleAune_CC6_image.jpg" width="401" height="301" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Warhammer_by_mikemike37">Warhammer by mikemike37</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1957">Dragon Age Nexus project page</a></b></li></ul>
+<p>This is just a sample entry for others to see the sort of thing judges might expect to see, and the format in which it has been submitted.
+</p><p>NOTE: it is not a requirement of this contest to create the script to give the item to the player, or create any kind of player package. You do have to create the item in the toolset and export it as a dadbdata though.
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cc6%20warhammer.jpg" title="Room Plan"><img alt="Room Plan" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/Cc6_warhammer.jpg" width="500" height="372" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/Cc6_warhammer.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/Cc6_warhammer.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Cudgel_by_BlackPhi">Cudgel by BlackPhi</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2007">Dragon Age Nexus project page</a></b></li></ul>
+<p>A lump of wood, crudely shaped and polished, for hitting people with. As used by peasants, poorly equipped militia and low-level thugs. 
+</p><p>Although clubs are a staple of FRPG, DA:O doesn't include any, so this entry for the new model group fills the gap.
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6%20Cudgel-Sheathed.jpg" title="Cudgel Sheathed"><img alt="Cudgel Sheathed" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/CC6_Cudgel-Sheathed.jpg" width="300" height="380" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/CC6_Cudgel-Sheathed.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/CC6_Cudgel-Sheathed.jpg 2x" /></a>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC6%20Cudgel-In-Action.jpg" title="Cudgel In Action"><img alt="Cudgel In Action" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0d/CC6_Cudgel-In-Action.jpg/400px-CC6_Cudgel-In-Action.jpg" width="400" height="253" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0d/CC6_Cudgel-In-Action.jpg/600px-CC6_Cudgel-In-Action.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0d/CC6_Cudgel-In-Action.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Lightsaber_by_InBleedingRapture">Lightsaber by InBleedingRapture</span></h2>
+<ul><li> <b><a rel="nofollow" class="external free" href="http://www.dragonagenexus.com/downloads/file.php?id=2009">http://www.dragonagenexus.com/downloads/file.php?id=2009</a> Dragon Age Nexus project page]</b></li></ul>
+<p>This mod adds a working lightsaber to Dragon Age, complete with a sound pack, multiple blade colors, and appropriate stat bonuses.
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ls%20in%20game%201.jpg" title="Blue Lightsaber"><img alt="Blue Lightsaber" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Ls_in_game_1.jpg" width="600" height="338" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Ls_in_game_1.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Ls_in_game_1.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Armour_Retexture_Contest">Armour Retexture Contest</span></h1>
+<h2><span class="mw-headline" id="Mage_Helm_by_BlackPhi_-_1st_Place">Mage Helm by BlackPhi - 1st Place</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1988">Dragon Age Nexus project page</a></b></li></ul>
+<p>This leather helm is for the mage who prefers to be discreet. At first glance it is merely an ordinary leather helm, only on careful examination are the lyrium infused runes visible. For effective discretion this should be combined with mage's leathers and a mage's club.
+</p><p>An entry for the retexture group.
+</p><p>The helm is restricted to mages and provides a mental resistance bonus. 
+</p><p>Any apostate mage who wants to remain free for long (and doesn't fancy spending the rest of their life in the Korcari Wilds) needs to break the habit of wearing distinctive flowing robes with a daft-looking hood and a dirty great staff poking above their head. This helm is a part of a set of items to provide magical benefits whilst looking, to a casual glance, like ordinary gear.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Helm-Front.jpg" title="Front View"><img alt="Front View" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Helm-Front.jpg" width="300" height="402" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Helm-Front.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9b/Helm-Front.jpg 2x" /></a>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20In-Disguise.jpg" title="Mage Incognito"><img alt="Mage Incognito" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/In-Disguise.jpg" width="300" height="395" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/In-Disguise.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/In-Disguise.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Helm-Back.jpg" title="Rear View"><img alt="Rear View" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Helm-Back.jpg/300px-Helm-Back.jpg" width="300" height="320" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Helm-Back.jpg/450px-Helm-Back.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/01/Helm-Back.jpg/600px-Helm-Back.jpg 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="The_Valorous_by_Vaylise_-_2nd_Place">The Valorous by Vaylise - 2nd Place</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2005">Dragon Age Nexus project page</a></b></li></ul>
+<p>This retexture is available for both genders and all the races. 
+</p><p>Armor description: The Valorous is designed for the fashion conscious to show off their wealth and style in this aesthetically pleasing armor. Even in the battlefield, this lightweight armor is sure to draw the envy of many with its genuine gold studs delicately patterned across the fine polished leather. 
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vaylise%20Armor%20HF.jpg" title="Different Views"><img alt="Different Views" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Vaylise_Armor_HF.jpg" width="300" height="269" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Vaylise_Armor_HF.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/33/Vaylise_Armor_HF.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vaylise%20Armor%20HF%20closeup.jpg" title="Close Up"><img alt="Close Up" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Vaylise_Armor_HF_closeup.jpg" width="300" height="340" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Vaylise_Armor_HF_closeup.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/Vaylise_Armor_HF_closeup.jpg 2x" /></a> 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vaylise%20Armor%20HM.jpg" title="Different Views"><img alt="Different Views" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e5/Vaylise_Armor_HM.jpg" width="300" height="261" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e5/Vaylise_Armor_HM.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e5/Vaylise_Armor_HM.jpg 2x" /></a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Vaylise%20Armor%20HM%20closeup.jpg" title="Close Up"><img alt="Close Up" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3a/Vaylise_Armor_HM_closeup.jpg" width="300" height="307" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3a/Vaylise_Armor_HM_closeup.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/3a/Vaylise_Armor_HM_closeup.jpg 2x" /></a>
+</p>

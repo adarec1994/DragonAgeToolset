@@ -1,0 +1,17 @@
+<p>Returns the visual effect ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">vfx_impact1</a> column for an ability.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_GetImpactObjectVfxId(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nAbility<dd>The ID of the ability to look up
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The visual effect ID  in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">vfx_impact1</a> column.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactLocationVfxId" title="Ability GetImpactLocationVfxId">Ability_GetImpactLocationVfxId</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">ABI_ 2da</a></li></ul>

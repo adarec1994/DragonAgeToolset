@@ -1,0 +1,125 @@
+<p>Animation sequence: holds single animation sequence. These are created via external Tools. See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3rd%20party%20extensions" title="3rd party extensions">3rd party extensions</a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Models</a> ,which are animatable, will be animated with a animation sequence. See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model</a>
+</p>
+<h2><span class="mw-headline" id="ani.xml_schema">ani.xml schema</span></h2>
+<p>See <a rel="nofollow" class="external autonumber" href="http://www.oasis-open.org/committees/relax-ng/spec.html">[1]</a> for information on the RELAX NG 1.0 XML schema format. For a free converter/verifier, see <a rel="nofollow" class="external autonumber" href="http://code.google.com/p/jing-trang/">[2]</a>.
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"&gt;
+  &lt;start&gt;
+    &lt;element name="Animation"&gt;
+      &lt;optional&gt;
+        &lt;attribute name="Additive"&gt;
+          &lt;data type="NCName"/&gt;
+        &lt;/attribute&gt;
+      &lt;/optional&gt;
+      &lt;optional&gt;
+        &lt;attribute name="IgnoreScale"&gt;
+          &lt;data type="NCName"/&gt;
+        &lt;/attribute&gt;
+      &lt;/optional&gt;
+      &lt;attribute name="Length"&gt;
+        &lt;data type="decimal"/&gt;
+      &lt;/attribute&gt;
+      &lt;attribute name="Name"&gt;
+        &lt;data type="NCName"/&gt;
+      &lt;/attribute&gt;
+      &lt;optional&gt;
+        &lt;attribute name="Override"&gt;
+          &lt;data type="NCName"/&gt;
+        &lt;/attribute&gt;
+      &lt;/optional&gt;
+      &lt;optional&gt;
+        &lt;attribute name="QuaternionCompressedSize"&gt;
+          &lt;data type="integer"/&gt;
+        &lt;/attribute&gt;
+      &lt;/optional&gt;
+      &lt;optional&gt;
+        &lt;element name="Meta"&gt;
+          &lt;element name="CombatRange"&gt;
+            &lt;attribute name="Value"&gt;
+              &lt;data type="decimal"/&gt;
+            &lt;/attribute&gt;
+          &lt;/element&gt;
+          &lt;optional&gt;
+            &lt;element name="GOBAnim"&gt;
+              &lt;attribute name="Value"&gt;
+                &lt;data type="integer"/&gt;
+              &lt;/attribute&gt;
+            &lt;/element&gt;
+          &lt;/optional&gt;
+        &lt;/element&gt;
+      &lt;/optional&gt;
+      &lt;zeroOrMore&gt;
+        &lt;element name="AnimationNode"&gt;
+          &lt;attribute name="Elements"&gt;
+            &lt;data type="integer"/&gt;
+          &lt;/attribute&gt;
+          &lt;attribute name="ExportName"&gt;
+            &lt;data type="NMTOKEN"/&gt;
+          &lt;/attribute&gt;
+          &lt;attribute name="Source"&gt;
+            &lt;data type="NCName"/&gt;
+          &lt;/attribute&gt;
+          &lt;attribute name="SourceType"&gt;
+            &lt;data type="NCName"/&gt;
+          &lt;/attribute&gt;
+          &lt;attribute name="Target"&gt;
+            &lt;data type="NCName"/&gt;
+          &lt;/attribute&gt;
+          &lt;element name="KeyFrame"&gt;
+            &lt;text/&gt;
+          &lt;/element&gt;
+        &lt;/element&gt;
+      &lt;/zeroOrMore&gt;
+    &lt;/element&gt;
+  &lt;/start&gt;
+&lt;/grammar&gt;
+</pre>
+<h2><span class="mw-headline" id="Example_.ANI.xml_File">Example .ANI.xml File</span></h2>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Animation Length="decimal" Name="string"&gt;
+&lt;!-- Attributes:
+		Length is the length of the animation in seconds
+		Name is the name of the animation
+--&gt;
+&lt;!-- Optional Attributes: 
+	Additive="string" -- True or False (additive or rigid)
+	IgnoreScale="string" -- probably True or False
+	Override="string" -- True or False
+	QuaternionCompressedSize="int" -- size of compressed quaternion in bits (32 or 64)
+--&gt;
+	
+	&lt;!-- Optional Element --&gt;
+	&lt;Meta&gt;
+		&lt;CombatRange Value="decimal"/&gt;
+		&lt;!-- Optional Element --&gt;
+		&lt;GOBAnim Value="int"/&gt; 1 or 0, enables "GAD" Transform (allows free horizontal movement of the actor), requires GOB transformation and rotation values
+	&lt;/Meta&gt;
+	
+	&lt;!-- 0 or more of these, obviously having at least one would be usefull... It appears that each bone or node (not nodemeshes) gets one --&gt;
+	&lt;AnimationNode Elements="int" ExportName="?string?" Source="string" Target="string" SourceType="string"&gt;
+	&lt;!-- Attributes:
+		Element refers to the number of elements in the data type. eg: 3 for a vector, 4 for a quaternion
+		ExportName is the name the node will take on export
+		Source is the type of the source 
+		Target is the type of the target
+		SourceType seems to always be "KeyFrame"
+	--&gt;
+	&lt;!-- Notes:
+		For the Source and Target I have seen "Vector", "Quaternion", "Float32" and "Color4" with Elements="3", Elements="4", 
+			Elements="1" and Elements="4" respectively
+		Vector was used for position info, Quaternion for rotation info, Float32 and Color4 for vfx info like birthrate, alpha and colour
+	--&gt;
+		&lt;KeyFrame&gt;
+			data &lt;!-- starts with &lt;![CDATA[ followed with lines of the format "time ntuple" where time is the time in seconds of the
+						keyframe and ntuple is the components of the source type (the 3 elements in a vector or 4 elements in a quaternion or 1 element in a float)
+						Therefore there will be Element+1 numbers per line
+						ends with ]]&gt;
+				 --&gt;
+		&lt;/KeyFrame&gt;
+	&lt;/AnimationNode&gt;
+&lt;/Animation&gt;
+</pre>

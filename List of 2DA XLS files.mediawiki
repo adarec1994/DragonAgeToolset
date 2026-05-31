@@ -1,0 +1,67 @@
+<p>The <strong class="selflink">XLS files listed</strong> here can be found under the Toolset's directory <code>[Program Files]\Dragon Age\tools\Source\2DA\</code>.
+</p><p>Bear in mind that 2DAs names are actually based on the names of the worksheets inside these Excel files, not the names of the files themselves. Some of these files contain a large number of individual 2DAs within them. They are bundled together into Excel files based on the nature of the 2DAs for convenience. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#XLS_files"><span class="tocnumber">1</span> <span class="toctext">XLS files</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Generic"><span class="tocnumber">1.1</span> <span class="toctext">Generic</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Creatures"><span class="tocnumber">1.2</span> <span class="toctext">Creatures</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Objects"><span class="tocnumber">1.3</span> <span class="toctext">Objects</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Areas_and_plots"><span class="tocnumber">1.4</span> <span class="toctext">Areas and plots</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Extending_the_official_campaign"><span class="tocnumber">1.5</span> <span class="toctext">Extending the official campaign</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="XLS_files">XLS files</span></h2>
+<h3><span class="mw-headline" id="Generic">Generic</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">2DA base.xls</a>          - referenced by several other 2DAs for a variety of purposes</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI%20abilities%20cond.xls" title="AI abilities cond.xls">AI abilities cond.xls</a> - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AOE.xls" title="AOE.xls">AOE.xls</a>               - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20ai.xls" title="Ambient ai.xls">Ambient ai.xls</a>        - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Commands.xls" title="Commands.xls">Commands.xls</a>          - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events.xls" title="Events.xls">Events.xls</a>            - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Guitypes.xls" title="Guitypes.xls">Guitypes.xls</a>          - defines the different categories of abilities (talents/spells/hidden)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injuries.xls" title="Injuries.xls">Injuries.xls</a>          - handles the effects of injuries.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Parts.xls" title="Parts.xls">Parts.xls</a>             - defines different body parts for use with equipment placing (hip, left hand, upper-right back, etc.)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups.xls" title="Popups.xls">Popups.xls</a>            - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">Properties.xls</a>        - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ranges.xls" title="Ranges.xls">Ranges.xls</a>            - defines the different range scopes in-game (i.e. touch, spell, long)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Screenshake.xls" title="Screenshake.xls">Screenshake.xls</a>       - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Shapechange.xls" title="Shapechange.xls">Shapechange.xls</a>       - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Skills.xls" title="Skills.xls">Skills.xls</a>            - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Summons.xls" title="Summons.xls">Summons.xls</a>           - defines ranger summons as wolf, bear and spider by default; also defines mage summon as "animated dead"</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20System.xls" title="TS System.xls">TS System.xls</a>         - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Traps.xls" title="Traps.xls">Traps.xls</a>             - defines all trap types and their effects</li></ul>
+<h3><span class="mw-headline" id="Creatures">Creatures</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR_base.xls</a>        - appearance types for creatures</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base.xls">ABI_base.xls</a>        - integrates all talents and spells into the game</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%20base.xls" title="ANIM base.xls">ANIM_base.xls</a>       - defines basic creature animations</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%20combat.xls" title="ANIM combat.xls">ANIM_combat.xls</a>     - defines creature combat animations</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%20placeables.xls" title="ANIM placeables.xls">ANIM placeables.xls</a> - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background.xls" title="Background.xls">background.xls</a>      - defines the various origin stories available to each race and class.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%20base.xls" title="CLA base.xls">CLA_base.xls</a>        - defines the character classes used throughout the game</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%202da" title="CLA data.xls">CLA data.xls</a>        - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creatureranks.xls" title="Creatureranks.xls">Creatureranks.xls</a>   - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE%20base.xls" title="RACE base.xls">RACE_base.xls</a>       - defines the races used throughout the game</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SyncAnimations.xls" title="SyncAnimations.xls">SyncAnimations.xls</a>  - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li></ul>
+<h3><span class="mw-headline" id="Objects">Objects</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a>      - item types</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a> - item appearance variations (eg, all the different ways a longsword can look)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>  - contains stats and other information about the various materials used for scaling</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeables.xls" title="Placeables.xls">placeables.xls</a>     - interactive object types</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRJ%20base.xls" title="PRJ base.xls">PRJ_base.xls</a>       - how various projectiles look and behave</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20base.xls" title="VFX base.xls">VFX_base.xls</a>       - visual effects</li></ul>
+<h3><span class="mw-headline" id="Areas_and_plots">Areas and plots</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Areadata.xls" title="Areadata.xls">areadata.xls</a>    - sets various properties for specific areas</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plotactions.xls" title="Plotactions.xls">Plotactions.xls</a> - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plottypes.xls" title="Plottypes.xls">plottypes.xls</a>   - how plots are grouped at the highest level in the game GUI (codex entry types, story, etc.)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rewards.xls" title="Rewards.xls">rewards.xls</a>     - rewards for plot completion</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Worldmaps.xls" title="Worldmaps.xls">worldmaps.xls</a>   - world maps for open-ended travel between areas</li></ul>
+<h3><span class="mw-headline" id="Extending_the_official_campaign">Extending the official campaign</span></h3>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls" title="PRCSCR.xls">PRCSCR.xls</a> - "Post-Release Content Script" - specifies scripts to run when an area or area list is loaded or entered. (This file is not included with the game, but is a placeholder for any usermade one)</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20matrix" title="2da matrix">2da matrix</a> for  a complete list of all XLS workbooks and 2DA worksheets</li></ul>

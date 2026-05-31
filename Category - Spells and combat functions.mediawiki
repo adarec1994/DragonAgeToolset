@@ -1,0 +1,32 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Spells and combat functions"</h2>
+<p>The following 27 pages are in this category, out of 27 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharGen%20ClearAbilityList" title="CharGen ClearAbilityList">CharGen ClearAbilityList</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEPRECATED%20GetCreatureStrengthModifier" title="DEPRECATED GetCreatureStrengthModifier">DEPRECATED GetCreatureStrengthModifier</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EnableWeaponTrail" title="EnableWeaponTrail">EnableWeaponTrail</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAttackImpactDamageEffect" title="GetAttackImpactDamageEffect">GetAttackImpactDamageEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAttackTarget" title="GetAttackTarget">GetAttackTarget</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCanDiePermanently" title="GetCanDiePermanently">GetCanDiePermanently</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatantType" title="GetCombatantType">GetCombatantType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatState" title="GetCombatState">GetCombatState</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRank" title="GetCreatureRank">GetCreatureRank</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponArmorPenetration" title="GetWeaponArmorPenetration">GetWeaponArmorPenetration</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponAttackRating" title="GetWeaponAttackRating">GetWeaponAttackRating</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponBaseDamage" title="GetWeaponBaseDamage">GetWeaponBaseDamage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponStrengthModifier" title="GetWeaponStrengthModifier">GetWeaponStrengthModifier</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetWeaponStyle" title="GetWeaponStyle">GetWeaponStyle</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAbilityResult" title="SetAbilityResult">SetAbilityResult</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult" title="SetAttackResult">SetAttackResult</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetBodybagDecayDelay" title="SetBodybagDecayDelay">SetBodybagDecayDelay</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCombatState" title="SetCombatState">SetCombatState</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetControllable" title="SetControllable">SetControllable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureRank" title="SetCreatureRank">SetCreatureRank</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreaturesGlobalMaxTimeBeforeDecay" title="SetCreaturesGlobalMaxTimeBeforeDecay">SetCreaturesGlobalMaxTimeBeforeDecay</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetDeathHint" title="SetDeathHint">SetDeathHint</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLoadHint" title="SetLoadHint">SetLoadHint</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLoadImage" title="SetLoadImage">SetLoadImage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPrimaryControlled" title="SetPrimaryControlled">SetPrimaryControlled</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ShowDeathScreen" title="ShowDeathScreen">ShowDeathScreen</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SpawnBodyBag" title="SpawnBodyBag">SpawnBodyBag</a></li></ul></div></div></div>
+</div></div>

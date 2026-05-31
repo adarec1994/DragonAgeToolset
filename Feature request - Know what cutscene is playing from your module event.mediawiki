@@ -1,0 +1,46 @@
+<p>I just want to know what cutscene is about to play so I can act accordingly.  There must be another way but I can't figure it out. This is as close as I've gotten.
+</p><p>Example:
+</p>
+<pre>
+ case EVENT_TYPE_GAMEMODE_CHANGE:
+  {
+   int nNewGameMode = GetEventInteger(ev, 0); 
+   int nOldGameMode = GetEventInteger(ev, 1); 
+
+      if (nNewGameMode == 5)
+      {
+        //find out which cutscene is about to play from the local variable   
+        //CURRENT_CUTSCENE which was set in CS_LoadCutscene
+
+        string sCutscene = GetLocalString(GetModule(), CURRENT_CUTSCENE);    
+      }
+  }
+</pre>
+<pre>
+utility_h.nss
+
+  void CS_LoadCutsceneWithReplacements(resource rCutscene,
+                                     string [] arActors,
+                                     object [] arReplacements,
+                                     string strPlot = "",
+                                     int nPlotFlag = -1,
+                                     string sTalkSpeaker = "")
+  {
+    object oModule = GetModule();
+
+    SetLocalString(oModule, CUTSCENE_SET_PLOT, strPlot);
+    SetLocalInt(oModule, CUTSCENE_SET_PLOT_FLAG, nPlotFlag);
+    SetLocalString(oModule, CUTSCENE_TALK_SPEAKER, sTalkSpeaker);
+
+    //=================================== NEW LINE OF CODE PLEASE ADD
+    SetLocalString(oModule, CURRENT_CUTSCENE, ResourceToString(rCutscene));
+    //=================================== /NEW LINE OF CODE PLEASE ADD
+
+    LoadCutscene(rCutscene, OBJECT_INVALID, TRUE, arActors, arReplacements, TRUE);
+  }
+
+</pre>
+<h2><span class="mw-headline" id="CURRENT_PROBLEMS">CURRENT PROBLEMS</span></h2>
+<p>I just found out that I have to add a single line to utility_h.nss but that means I have to compile every other script that uses it. That means I have to essentially modify so many core files.  
+</p><p>All I want to know is what cutscene is going to play so I can act accordingly.
+</p>

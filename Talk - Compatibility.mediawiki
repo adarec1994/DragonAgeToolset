@@ -1,0 +1,131 @@
+<h2><span class="mw-headline" id="What_if_my_mod_extends_both_Single_Player_and_Awakening.3F">What if my mod extends both Single Player and Awakening?</span></h2>
+<p>I moved this section here because it's under discussion. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 08:27, 21 July 2010 (UTC)
+</p>
+<hr />
+<p>NOTE:
+</p><p>There is an easier way than creating two scripts. Just put the information for both in the manifest.xml file. For one of my mods, the manifest file looked like this:
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;Manifest Type="AddIn"&gt;
+	&lt;AddInsList&gt;
+		&lt;AddInItem UID="elf_cat_pet" Name="ELF the pet cat for DAO and Awakening" ExtendedModuleUID="Single Player" Priority="100" Enabled="1" State="2" Format="1"&gt;
+			&lt;Title DefaultText="ELF the pet cat for DAO and Awakening"&gt;&lt;/Title&gt;
+			&lt;Description DefaultText="ELF the pet cat adds a 'Cat Toy' to the players inventory (rest of text deleted for brevity)
+
+((This package will work in both DAO and Awakening!))"&gt;&lt;/Description&gt;
+			&lt;Image&gt;ico_elf_cat_sleep&lt;/Image&gt;
+			&lt;Rating DefaultText="10"&gt;&lt;/Rating&gt;
+			&lt;RatingDescription DefaultText=""&gt;&lt;/RatingDescription&gt;
+			&lt;URL DefaultText="www.ELFpath.com"&gt;&lt;/URL&gt;
+			&lt;ReleaseDate&gt;6 April 2010&lt;/ReleaseDate&gt;
+			&lt;Version&gt;2.0&lt;/Version&gt;
+			&lt;GameVersion/&gt;
+			&lt;Type&gt;1&lt;/Type&gt;
+			&lt;Publisher DefaultText="Angel == monkeysnest@yahoo.com"&gt;&lt;/Publisher&gt;
+			&lt;PrereqList/&gt;
+			&lt;FileList&gt;
+				&lt;Folder src="packages/" Type="package"/&gt;
+				&lt;Folder src="addins/" Type="addin"/&gt;
+			&lt;/FileList&gt;
+		&lt;/AddInItem&gt;
+
+		&lt;AddInItem UID="elf_cat_pet" Name="ELF the pet cat for DAO and Awakening" ExtendedModuleUID="DAO_PRC_EP_1" Priority="100" Enabled="1" State="2" Format="1"&gt;
+			&lt;Title DefaultText="ELF the pet cat"&gt;&lt;/Title&gt;
+			&lt;Image&gt;ico_elf_cat_sleep&lt;/Image&gt;
+			&lt;Rating DefaultText=""&gt;&lt;/Rating&gt;
+			&lt;RatingDescription DefaultText=""&gt;&lt;/RatingDescription&gt;
+			&lt;URL DefaultText="www.ELFpath.com"&gt;&lt;/URL&gt;
+			&lt;ReleaseDate&gt;6 April 2010&lt;/ReleaseDate&gt;
+			&lt;Version&gt;2.0&lt;/Version&gt;
+			&lt;GameVersion/&gt;
+			&lt;Type&gt;1&lt;/Type&gt;
+			&lt;Publisher DefaultText="Angel == monkeysnest@yahoo.com"&gt;&lt;/Publisher&gt;
+			&lt;PrereqList/&gt;
+			&lt;FileList&gt;
+				&lt;Folder src="addins/" Type="addin"/&gt;
+			&lt;/FileList&gt;
+		&lt;/AddInItem&gt;
+
+	&lt;/AddInsList&gt;
+&lt;/Manifest&gt;
+</pre>
+<p>doing this allowed users to install one package (using DAModder) which worked for both awakening and DAO.
+</p><p>============== ++ Angel
+</p><p><br />
+@monkeysnest - good to have the update concerning the manifest. A few queries:
+</p>
+<ul><li> Perhaps the article would be clearer if you explained which line has to change, rather than reproduce the entire manifest here?</li></ul>
+<ul><li> Would DAUpdater work? I don't see DAModder listed as a project download on the Bioware social site.</li></ul>
+<ul><li> We don't normally leave our signatures on the content pages of a wiki.</li></ul>
+<p>Thanks.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 05:47, 8 April 2010 (UTC)
+</p><p>I don't think the "dual entry, single manifest" approach should be followed or encouraged.  Creating two separate .dazip installations as mentioned in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility#What_if_my_mod_extends_both_Single_Player_and_Awakening.3F" title="Compatibility"> Compatibility: What if my mod extends both Single Player and Awakening?</a> is IMHO the preferred approach.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nukenin" title="User:Nukenin (page does not exist)">Nukenin</a> 00:24, 24 April 2010 (UTC)
+</p><p>I'll have to agree with Nukenin here, especially since using the "dual entry, single manifest" approach will cause DAUpdater to crash and would unnecessarily force players to use third-party apps. Moreover, it's perfectly possible to include several addons (each one with its own manifest entry) in a single dazip package&#160;:
+</p>
+<ul><li> Package root
+<ul><li> Manifest including several AddInItem elements</li>
+<li> Contents
+<ul><li> addins
+<ul><li> addin_uid1</li>
+<li> addin_uid2</li>
+<li> addin_uid3</li>
+<li> etc</li></ul></li>
+<li> packages</li></ul></li></ul></li></ul>
+<p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Phaenan" title="User:Phaenan (page does not exist)">Phaenan</a> 06:45, 21 July 2010 (UTC)
+</p><p>I find myself agreeing with Phaenan and Nukenin on this; end users should only use community created tools if they want a specific function that's only available to them that way (like the ability to uninstall a dazip). 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ladydesire" title="User:Ladydesire (page does not exist)">Ladydesire</a> 18:40, 25 December 2010 (UTC)
+</p>
+<h2><span class="mw-headline" id="Override_Events_while_minimizing_compat_issues..">Override Events while minimizing compat issues..</span></h2>
+<p>I believe this may be useful to others - through trial and error, and with some help, I have figured out a way to override events only when my module is running - I had to add a variable to var_module.xls/gda (which is probably where the only potential compatibility issue will arise via string ID, though I am not sure what would happen if someone tried to override the same events - depends on which engineevents get's loaded last I suppose...).
+</p><p>The variable is defaulted to a 0....in my modules properties, I set the variable to a 1. My event overrides check for this variable to be == 1, if not, send it off the proper handler. 
+</p><p><br />
+See the following post where I came to this 'workaround'...would love to know if there is a better way:
+</p><p><a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/2371093/1#2531362">http://social.bioware.com/forum/1/topic/8/index/2371093/1#2531362</a>
+</p>
+<h2><span class="mw-headline" id="Resource_scope_edit">Resource scope edit</span></h2>
+<p>I have removed the reference to tint maps following the discussion at <a rel="nofollow" class="external free" href="http://social.bioware.com/group/2937/discussion/12738/">http://social.bioware.com/group/2937/discussion/12738/</a> .
+</p><p>Also beefed up the recommendations about not putting files into packages --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 12:43, 30 December 2010 (UTC)
+</p>
+<hr />
+<p>Good update! I'm very much on the same wavelength. I have one question, though, concerning the Talk Table. Normally, the best way to change a core string is to make a new one, then point the appropriate 2DA at it. However, there are cases where no such mechanism exists. For example, if you want to make a module that isn't set in the Ferelden gameworld, you need to change the gender descriptions, replace all instances of "marabi" with "dog" and so on. To the best of my knowledge, this can't be done without an override - see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String_editor</a>. If there's a better solution, I'd be keen to hear it. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 08:50, 31 December 2010 (UTC)
+</p>
+<hr />
+<p>As it happens, I had to do exactly that for the campaign I have in development, where I wanted to override the gender description. Create the string but make the Owner Module your module. This will be exported to the talktable placed in your core, and will overwrite the core string as long as your module is enabled. Also tested the head morph stuff, and that doesn't need to be in packages either, so will make a further update. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 04:28, 3 January 2011 (UTC)
+</p>
+<hr />
+<p>Have you tried to reproduce this <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bug</a> for the specific string mentioned there? I double-checked that the Owner Module is set correctly. It isn't exported to the talk table in core (which seems to be empty), nor does it work if the talk table in packages override is moved to any of the add-in folders.
+</p><p>A couple of other issues:
+</p><p>You recommend moving content from the override folders before B2P packaging. Is there any technical reason for that? I haven't heard this from Bioware. "If it ain't bust, don't fix it" might apply here? 
+</p><p>You've added some strong words about mods that use packages override. My heart is with you, but my head says the tone could be counter-productive. We seem to be making some progress with persuading the community that compatibility is important, but the "package overriders" are still in the majority. IMO we need to convince them to change their approach voluntarily, not antagonise them. After all, none of us has the power to deprecate anything (nor would we wish to have it). What do you think? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 08:27, 3 January 2011 (UTC)
+</p>
+<hr />
+<p>Moving the compiled scripts and exported plots out of the toolsetexport folder <b>into</b> the override folder is a good idea, since when doing an "empty export directories", you could accidently delete files needed for the builder to player package. I'm not sure why it would be necessary to move files out of the override folder.
+</p><p>As far as the "package overriders" go, some may never change, no matter what we do; I have even seen people that were doing it basically the right way change because they weren't wanting to build multiple packages for their mods. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ladydesire" title="User:Ladydesire (page does not exist)">Ladydesire</a> 00:03, 4 January 2011 (UTC)
+</p>
+<hr />
+<p>1. I have deleted the sentence about DAZIPs. On re-reading it actually compresses together two different ideas, and in any case doesn't really belong there. I will have a rethink about this when I have a bit more time on the weekend&#160;:-)
+</p><p>2. Proleric, the string I override is the gender description string 377283. I export the talktable (which creates the three files) and delete the one in packages, <i>core_en-us.tlk</i>, together with everything else there). Start my game and the string in overwritten correctly by the <i>&lt;uid&gt;_c_en-us.tlk</i> table.
+</p><p>3. On the issue of packages override, the issue is whether or not this wiki contains correct information and procedures. If someone disagrees that this is the correct procedure (particularly in terms of mod inter-compatibility), I am more than happy to have the discussion. I suspect real change is only going to happen if the end-users start complaining in the comments sections of the download pages, but that's another story. In the meantime, the wiki should stick to the straight and narrow of providing the best information we can assemble --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 04:37, 4 January 2011 (UTC)
+</p>
+<hr />
+<p>1. Thanks.
+</p><p>2. Issue closed. EDIT <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 17:16, 4 January 2011 (UTC) It is not necessary to put a talk table in packages override. Instead of changing core strings, it's better to refer to new strings in the 2DA files (even though finding them is a lot of work when making a global change, such as "Marabi" to "Dog". The gender description string does have to be overridden, but since it's only used in character generation, it's not affected by the save-load bug. 
+</p><p>3. Agreed. However, the wiki is about practical advice. The section in question talks about deprecating other people's stuff, which is beyond the reader's control! Instead, I suggest a two-pronged approach. Firstly, we already have the Disclaimer section of this article. Secondly, contribute to the <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3966/">project</a> which is developing an FAQ for players. Just my 2 cents. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 08:33, 4 January 2011 (UTC)
+</p>
+<hr />
+<p>On 3, since most players assume that the modder knows best, or are from a game where adding mods can only be done in a specific directory (TES III and TES IV, Fallot 3 and Fallout: New Vegas, just for a few examples), they won't be the ones to complain about having to do that. We should be suggesting the use of modules/Single Player/override for Origins content, addins/&lt;uid&gt;/module/override for things for DLCs (where uid is the folder name of the specific DLC (I listed several of them in the Module Priority tutorial) instead of packages/core/override if a mod <b>must</b> use the override. The only mods that need to be done this way are compatibility files for various mods that might be editing the same files, at least as far as I'm concerned; everything else should be done as dazips. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ladydesire" title="User:Ladydesire (page does not exist)">Ladydesire</a> 23:26, 6 January 2011 (UTC)
+</p>
+<hr />
+<p>Just on the term "deprecated", this is really a technical term in software development and deployment, and does not carry a value judgement. It simply means a superseded method that should no longer be used. This is a developer not a player wiki, and the use of the term is entirely appropriate, imho --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 07:56, 8 January 2011 (UTC)
+</p>
+<hr />
+<p>OK I had a go at rewording, to emphasise that it is the technique which is deprecated, not the mods. Only players have the power to deprecate (i.e. cease using and/or archive) mods, which I've reiterated in the form of a link to the Disclaimer section. What do you think? 
+</p><p>@ladydesire&#160;: you might want to do an edit to capture your thoughts above. I don't disagree, but you know a lot more than I about how to mod the OC.
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 11:43, 8 January 2011 (UTC)
+</p>
+<hr />
+<p>That edit looks fine to me. 
+</p><p>On the separate issue of what should be in the core and what in the module folders of you &lt;uid&gt; folder, I am actually scheduled to do some testing on this very question for my own campaign (in dev), and will return to this issue for this page in a week or two --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 08:26, 10 January 2011 (UTC)
+</p>

@@ -1,0 +1,21 @@
+<p>Returns TRUE if the follower is in the active party FALSE otherwise
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> UT_IsFollowerInParty(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oFollower<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oFollower<dd>the follower being checked
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the follower is in the active party, FALSE otherwise
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns TRUE if the follower is in the active party FALSE otherwise. This should be used only for non-plot followers. For plot followers (Alistair, Sten etc.) use the plot flags in the global party plot.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20FireFollower" title="UT FireFollower">UT_FireFollower</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20HireFollower" title="UT HireFollower">UT_HireFollower</a>
+</p>

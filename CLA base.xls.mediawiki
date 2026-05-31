@@ -1,0 +1,4 @@
+<p>The <strong class="selflink">CLA_base.xls</strong> file contains the 2da data that defines the available <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Character Classes</a>. These 2da  files are used by the Toolset, in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20editor" title="Creature editor (page does not exist)">Creature editor</a>, and by the game engine.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%202da" title="CLA data 2da">CLA_data</a></li></ul>

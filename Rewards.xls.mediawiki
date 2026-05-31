@@ -1,0 +1,104 @@
+<p>Rewards.xls is used to set up rewards given to players upon the completion of a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">plot</a>.
+</p><p>Once the custom version of rewards.GDA is in the export folder for the module, the toolset must be restarted to make the new rewards visible to the plot editor.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The name you see when you are setting a reward for completing a plot.
+</td></tr>
+<tr>
+<th>  Copper
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The amount of copper to reward the player with.
+</td></tr>
+<tr>
+<th>  Silver
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The amount of silver to reward the player with.
+</td></tr>
+<tr>
+<th>  Gold
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The amount of gold to reward the player with.
+</td></tr>
+<tr>
+<th>  XP
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The amount of experience to reward the player with (but see below).
+</td></tr>
+<tr>
+<th>  Item1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The resource name of an item to reward the player with, e.g. nw_ring01.uti.
+</td></tr>
+<tr>
+<th>  Item2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  ""
+</td></tr>
+<tr>
+<th>  Item3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  ""
+</td></tr>
+<tr>
+<th>  Item4
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  ""
+</td></tr>
+<tr>
+<th>  Item5
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  ""
+</td></tr>
+<tr>
+<th>  Item6
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  ""
+</td></tr>
+<tr>
+<th>  Bonus Ability
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Reference ID number of a bonus ability to grant to the player. A list can be found in 2da_constants_h in the toolset and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base">ABI_base</a>.
+</td></tr></table>
+<p>By default, the XP award is only 50% of the specified value. This is hard-coded in sys_rewards_h.  
+</p><p>There is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20DLC%20conflicts%20with%20standalone%20campaigns" title="Bug: DLC conflicts with standalone campaigns">bug</a> which means that even standalone campaigns should use very high row id numbers.
+</p>

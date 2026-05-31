@@ -1,0 +1,120 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> BASE_ITEM_TYPE_SHORTBOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">19
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_LONGBOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">20
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_ARMOR_LIGHT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">9
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_ARMOR_MEDIUM
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">10
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_ARMOR_HEAVY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">11
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_ARMOR_MASSIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">12
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_ARMOR_SUPERMASSIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">22
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_STAFF
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">16
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_QUICK
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">39
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> BASE_ITEM_TYPE_GIFT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">109
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>

@@ -1,0 +1,13 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<ul><li><b>Version found:</b> 1.01</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>If you are creating new resources with appropriate entries within the string editor, your exported talktable will not get recognized because your resources won't get flagged right. This means that the ID entries of your talktable are not overwriting the text you entered inside the toolset. That's not so important for all english speaking natives but for foreigners who are using special symbols in their alphabet. These letters are not displayed right without functional talktables. To avoid this you have to use an external tool anakin5 provided.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Just use the tool, drag'n drop your file(s) at the executable and you're done.
+<a rel="nofollow" class="external autonumber" href="http://social.bioware.com/project/1586/#files">[1]</a>
+</p>

@@ -1,0 +1,100 @@
+<h2><span class="mw-headline" id="View">View</span></h2>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center"><b>Navigation</b><br /> <a href="#0">0</a> <a href="#1">1</a> <a href="#2">2</a> <a href="#3">3</a> <a href="#4">4</a> <a href="#5">5</a> <a href="#6">6</a> <a href="#7">7</a> <a href="#8">8</a> <a href="#9">9</a><br /> <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a><br /> <a href="#.D0.90">А</a> <a href="#.D0.91">Б</a> <a href="#.D0.92">В</a> <a href="#.D0.93">Г</a> <a href="#.D0.94">Д</a> <a href="#.D0.95">Е</a> <a href="#.D0.81">Ё</a> <a href="#.D0.96">Ж</a> <a href="#.D0.97">З</a> <a href="#.D0.98">И</a> <a href="#.D0.99">Й</a> <a href="#.D0.9A">К</a> <a href="#.D0.9B">Л</a> <a href="#.D0.9C">М</a> <a href="#.D0.9D">Н</a> <a href="#.D0.9E">О</a> <a href="#.D0.9F">П</a> <a href="#.D0.A0">Р</a> <a href="#.D0.A1">С</a> <a href="#.D0.A2">Т</a> <a href="#.D0.A3">У</a> <a href="#.D0.A4">Ф</a> <a href="#.D0.A5">Х</a> <a href="#.D0.A6">Ц</a> <a href="#.D0.A7">Ч</a> <a href="#.D0.A8">Ш</a> <a href="#.D0.A9">Щ</a> <a href="#.D0.AA">Ъ</a> <a href="#.D0.AB">Ы</a> <a href="#.D0.AC">Ь</a> <a href="#.D0.AD">Э</a> <a href="#.D0.AE">Ю</a> <a href="#.D0.AF">Я</a><br />
+</td></tr></table> 
+<pre>{{Abc|nn=1|en=1|ru=1|caption='''Navigation'''|notoc=1|align=center}}</pre>
+<h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
+<table border="1">
+<tr>
+<th style="background:#EEEEFF">Param
+</th>
+<th style="background:#EEEEFF">Value
+</th>
+<th style="background:#EEEEFF">Result
+</th></tr>
+<tr>
+<td>caption
+</td>
+<td>" '''Navigation''' "
+</td>
+<td>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center"><b>Navigation</b><br />
+</td></tr></table>
+</td></tr>
+<tr>
+<td>nn
+</td>
+<td>Not empty
+</td>
+<td>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center"> <a href="#0">0</a> <a href="#1">1</a> <a href="#2">2</a> <a href="#3">3</a> <a href="#4">4</a> <a href="#5">5</a> <a href="#6">6</a> <a href="#7">7</a> <a href="#8">8</a> <a href="#9">9</a>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>en
+</td>
+<td>Not empty
+</td>
+<td>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center">  <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>ru
+</td>
+<td>Not empty
+</td>
+<td>
+<table class="toccolours" style="margin: 0;background:#ffffff;" align="center">
+
+<tr>
+<td align="center">   <a href="#.D0.90">А</a> <a href="#.D0.91">Б</a> <a href="#.D0.92">В</a> <a href="#.D0.93">Г</a> <a href="#.D0.94">Д</a> <a href="#.D0.95">Е</a> <a href="#.D0.81">Ё</a> <a href="#.D0.96">Ж</a> <a href="#.D0.97">З</a> <a href="#.D0.98">И</a> <a href="#.D0.99">Й</a> <a href="#.D0.9A">К</a> <a href="#.D0.9B">Л</a> <a href="#.D0.9C">М</a> <a href="#.D0.9D">Н</a> <a href="#.D0.9E">О</a> <a href="#.D0.9F">П</a> <a href="#.D0.A0">Р</a> <a href="#.D0.A1">С</a> <a href="#.D0.A2">Т</a> <a href="#.D0.A3">У</a> <a href="#.D0.A4">Ф</a> <a href="#.D0.A5">Х</a> <a href="#.D0.A6">Ц</a> <a href="#.D0.A7">Ч</a> <a href="#.D0.A8">Ш</a> <a href="#.D0.A9">Щ</a> <a href="#.D0.AA">Ъ</a> <a href="#.D0.AB">Ы</a> <a href="#.D0.AC">Ь</a> <a href="#.D0.AD">Э</a> <a href="#.D0.AE">Ю</a> <a href="#.D0.AF">Я</a><br />
+</td></tr></table>
+</td></tr>
+<tr>
+<td>bgcolor
+</td>
+<td>"Pink" or "#FFC0CB"
+</td>
+<td>
+<table class="toccolours" style="margin: 0;background:pink;" align="center">
+
+<tr>
+<td align="center"><b>Navigation</b><br />
+</td></tr></table>
+</td></tr>
+<tr>
+<td>notoc
+</td>
+<td>Not empty
+</td>
+<td>Disables standard toc
+</td></tr>
+<tr>
+<td rowspan="3">align
+</td>
+<td>"left"
+</td>
+<td>Aligns the table to the left
+</td></tr>
+<tr>
+<td>"center" or empty
+</td>
+<td>Aligns the table in the center
+</td></tr>
+<tr>
+<td>"right"
+</td>
+<td>Aligns the table to the right
+</td></tr></table>

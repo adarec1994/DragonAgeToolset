@@ -1,0 +1,105 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">Cutscene actions</a>
+<ul><li><strong class="selflink">Headtracking</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">Play animation</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">Cutscene capture</a></li></ul>
+</td></tr></table>
+<p>This <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">cutscene action</a> causes the actor to turn its head toward a target. If you want the actor to look at an arbitrary point in space you'll need to add an invisible actor there to serve as the target. All objects are valid headtracking targets, including creatures, placeables, and even cameras. When the target is another creature, the actor will attempt to look at the target's head. If the target is another object (placeable, camera) the actor will look at its base position.
+</p><p>For the duration of the headtracking action the actor will keep its head "locked on" to the target, turning it if either of them moves. Once the head tracking action ends the actor will continue pointing its head in the direction it was pointing at the time. If you want the actor to return its head to its neutral position, add another head tracking action with a target of "(none)".
+</p><p>The default speed is 1. Larger values turn the head faster. To turn the head at twice the normal speed, set the speed to 2. To turn the head at half speed, set the speed to 0.5. To immediately snap the head towards its target, set the speed to any large number, like 100.
+</p><p>Head angle is constrained, so this action won't be able to twist an actor's head around to unnatural angles. The headtracking system must take into account the characters “natural” head position from his pose/animations. This is not an easy thing to do - for example, the system needs to tell the difference between an animation that is permanently moving the head or just a brief head bob. Some manual fixing will be required from time to time.
+</p>
+<h3><span class="mw-headline" id="How_it_works">How it works</span></h3>
+<p>The headtracking system takes snapshots of where the characters head orientation is at certain points during a line:
+</p>
+<ul><li>At the start of the line, but only if the change is more than 20 degrees</li>
+<li>During a pose transition, but only if the change is more than 20 degrees</li>
+<li>At the end of a pose transition, always</li>
+<li>At the start of a headtracking action, IF the “Realign Source Head” is true (it is false by default)</li></ul>
+<p>At these times the system looks where the characters head is pointed (relative to their body) and remembers it, and uses that orientation from that point onward.
+</p><p>For this reason it is very important where the character's head is during those points in time, especially the first frame and at the end of the pose transition.
+</p><p>The look targets and speeds of all those in the conversation/cutscene are explicitly controlled by the conversation/cutscene. While a headtracking action is playing the source is constantly tracking the target exactly (there are no movement thresholds, or ease in periods). The exception is the angle of the source’s head, due to his pose/animation
+</p>
+<h3><span class="mw-headline" id="How_to_fix_glitches">How to fix glitches</span></h3>
+<p>You should be able to fix many headtracking glitches by:
+</p>
+<ul><li>Adding blend in times for head-affecting animations that play on the first frame</li>
+<li>Making head-affecting animations start after the first frame</li>
+<li>Avoiding pose transitions at the same time as head-affecting animations</li></ul>
+<p>For other glitches you will need to create a custom cutscene. When you have a custom cutscene you will see that headtracking actions have two properties:
+</p>
+<ul><li> Realign Source Head At Start - This will force head realignment as the headtracking action begins. This is useful if you are starting a headtracking action after a major change animation</li>
+<li> Realign Source Head Continuously - This is useful during an animation which changes the head constantly and you want headtracking to always compensate. You don’t want this on all the time since it will make headtracking “fight” with small head bobs, but if you are doing something major it can be useful.</li></ul>
+<p>At the end of a pose transition, or when using “Realign Source Head At Start” the update is forced. This means that even if the head has just moved a tiny bit the system will notice the difference. The other updates only pay attention if there is a significant change. This prevents a sudden, noticeable change between lines or at the beginning of a continuous update.
+</p><p>During a continuous update the head won’t update until there has been a noticeable change. However, from that point on it will update every frame for the rest of the action, regardless of how big the change is.
+</p>
+<h2><span class="mw-headline" id="Cutscene_editor_performance">Cutscene editor performance</span></h2>
+<p>If you have a long scene and you jump to the end, the only way to accurately reflect the characters head is to replay all the headtracking to that point. This can cause significant performance issues in the cutscene editor. You can tell the toolset to take a shortcut by disabling "Accurate Headtracking", either by using the toolbar button <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAccurateHeadtracking.png"><img alt="IconAccurateHeadtracking.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/17/IconAccurateHeadtracking.png" width="16" height="16" /></a> or by a setting in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20editor%20options" title="Cutscene editor options">cutscene editor options</a>. The cutscene editor will then use a variety of assumptions to approximate proper head orientation, usually getting something very close to the "proper" headlook behavior.
+</p><p><br />
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Headtracking</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Realign Source Head At Start</td>
+<td> Whether we should force a source head realignment as this action begins. This can be useful before and after an animation that significantly changes the angle of the source creature's head.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Realign Source Head Continuously</td>
+<td> If true the source head position will be updated continuously during this action (assuming that the change is significant) </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Speed Multiplier</td>
+<td> How fast the head should turn to face the target. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Target</td>
+<td> The actor to look at.</td>
+</tr>
+</table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking%20-%20ru" title="Headtracking/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

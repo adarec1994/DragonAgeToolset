@@ -1,0 +1,17 @@
+<p>An example of one of these files would be great.
+</p><p><br />
+Thanks
+</p><p>Josh
+</p>
+<h2><span class="mw-headline" id="This_Needs_Serious_Help">This Needs Serious Help</span></h2>
+<p>creating stuff for/with PRCSCR needs a step-by-step tutorial. and more information. like how to name it, that you need to convert it, where to stick it, etc etc etc.
+</p><p>see information on these threads:
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/750495">http://social.bioware.com/forum/1/topic/71/index/750495</a>
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/564274">http://social.bioware.com/forum/1/topic/71/index/564274</a>
+and this tutorial:
+<a rel="nofollow" class="external free" href="http://dragonagemodding.wordpress.com/2009/11/15/creating-a-custom-merchant-for-the-players-camp-part-1/">http://dragonagemodding.wordpress.com/2009/11/15/creating-a-custom-merchant-for-the-players-camp-part-1/</a>
+</p><p>and there's a bioware project with a gda tool on it; and i just lost the link.  GAH
+~~
+</p>
+<dl><dd> In actual fact we probably need less here: i.e. strip it down so it is a simple definition of the PRCSCR m2da and to consolidate all the explanatory notes, examples, etc. to the main <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR" title="PRCSCR">PRCSCR</a> article; clean up the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates" title="PRCSCR Script Templates">PRCSCR_Script_Templates</a> and, as you suggested, create a step-by-step tutorial. - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 17:36, 3 August 2011 (UTC)
+<dl><dd> I've started a thread for this in the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/3423/discussion/16601/">Dragon Age Toolset Wiki Editors</a> group. - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 10:54, 3 August 2011 (PDT)</dd></dl></dd></dl>

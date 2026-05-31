@@ -1,0 +1,40 @@
+<p>Author: amycus
+</p><p>Tools:
+</p>
+<ul><li>3ds max (gmax) no older than 2011 year - Eshme Import/Export DAO Tools doesn't work with new versions.</li>
+<li><a rel="nofollow" class="external text" href="http://www.nexusmods.com/dragonage/mods/895/?">Eshme Import/Export DAO Tools</a> - Script for 3s max</li>
+<li>Dragon Age Origins and Dragon Age Toolset - install it in the same folder as the game.</li>
+<li>Adobe Photoshop and Nvidia DDS Plugin for textures.</li>
+<li>Create <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a> file. See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">Compiling 2DAs</a>. You can use this program <a rel="nofollow" class="external text" href="http://www.nexusmods.com/dragonage/mods/214/?">GDA Editor</a> to work with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a> type. </li>
+<li>Engine won't work with models bigger than 45 000 polygons and 30 000 vertexes.</li></ul>
+<p><b>Before we begin extract DAO resources and keep it somewhere. You will need them.</b>
+</p><p>You can use also the toolset to extract the models and textures, but fisrt you need to know the name of what you are looking for, in the tooset go File-&gt;Open file-&gt; /packages/core/data/modelmeshdata.erf there you have some strings to help you find the models: shield:w_shd.
+</p><p>Extract from:
+</p>
+<ul><li>the modelmeshdata.erf the .msh files, the _0 files - high level of detail (LOD) and the _2 and _3 files - low level of detail when other NPCs are using them and they are far away from you.</li>
+<li><b>in the .../core/data/modelmeshhierarchy.erf you need extract the .mmh and .phy files.</b></li>
+<li><b>in the .../core/data/materialobjects.erf you need to extract the .mao file.</b></li>
+<li><b>the textures.erf (.../core/textures/high/)  the .dds files.</b></li>
+<li><b>in the files .../core/data/textures.erf (props, placeables) and/or .../core/textures/high/textures.erf (characters and armours) you need to extract the .dds files</b>.</li></ul>
+<h2><span class="mw-headline" id="Script_Settings">Script Settings</span></h2>
+<p>Watch where you install Eshme script - program files(x86) for 32 programs at 64 bit computers. Eshme script and the game have to be in one folder of program files.
+</p><p>Take Eshme Import/Export: Startup, YAGG and  DAOTools -&gt; put into C(your disc):/Program Files/Autodesk/3dsmax/Scripts -&gt; scripts 
+</p><p>If your installation is correct them when you first open 3d man you will see window with the settings
+</p><p>The path setting depends on the installation path. It should look similiar to this setting:
+The export path&#160;: C:\Program Files (x86)\Dragon Age
+The game path&#160;: C:\Program Files (x86)\Dragon Age\packages\core\override
+</p>
+<h2><span class="mw-headline" id="3d_Max">3d Max</span></h2>
+<p>1) Import any base shield of the vanilla game. Unlike for armor, you dont need to think how close the vanilla item is to the new one, ANY vanilla shield will do.
+</p><p>2) Import the new shield you want to import to the game. Take the extra time needed to get the size and angle right compared to the vanilla shield.
+</p><p>3) Collapse any active modifiers on the "new" item. Then add a new "unwrap UVW" modiefier to it, and double click it to open the UVW window. then drag and select everything you see there, and DRAG IT ANYWHERE OUTSIDE THE OUTLINED BOX IN THE CENTER. This will make life easier for you in step 6.
+</p><p>4) Then select the vanilla mesh, and select all modifiers BESIDES this one's "unwrap UVW" modifier. Then  right-click and choose "cut" here (these modifiers we will want to use again soon). Make this vanilla mesh an "editable mesh" (right click the mesh and select "make editable mesh"). 
+</p><p>5) Now attach the vanilla shield with the "new" shield. 
+</p><p>6) Add a new "unwrap uvw" modifier to the combined mesh. Make sure that it is listed above the other modifiers, and press the "+" sign to it's left. Select "face", and select everything that is inside the outlined box in the middle. Right click the "unwrap UVW" modifier and choose "collapse to".
+</p><p>7) Next press the "+" sign that is to the left of the words "editable mesh". Then choose "element" and press delete. Paste the old modifiers I asked you to cut in step 4. 
+</p><p>9) Add all textures and export it with Eshmes tools.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20armor%20tutorial" title="Adding custom armor tutorial">Adding custom armor tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20level%20tutorial" title="Adding custom level tutorial">Adding custom level tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.greentoken.de/onlineconv/">3D converter</a></li></ul>

@@ -1,0 +1,68 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Bugfixes_and_some_comments"><span class="tocnumber">1</span> <span class="toctext">Bugfixes and some comments</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#When_is_an_M2DA_not_like_an_M2DA.3F"><span class="tocnumber">2</span> <span class="toctext">When is an M2DA not like an M2DA?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Is_this_correct.3F"><span class="tocnumber">3</span> <span class="toctext">Is this correct?</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Why_are_the_CHARGEN_event_scripts_customised.3F"><span class="tocnumber">4</span> <span class="toctext">Why are the CHARGEN event scripts customised?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Bugfixes_and_some_comments">Bugfixes and some comments</span></h2>
+<p>The crashing because of the background description string ID is actually because of the UI and can be fixed by modders. In the chargen.gfx's ActionScript RaceGenderScene.GrabBackgrounds() static function, the following is what's causing the crash - basically using the StringID as an array index for the sole purpose of checking if that StringID has been seen yet, so this can be worked around to check it some way else - or just drop it if it's not strictly needed (Apparently it is, but see below the code). Incidentally, this is probably also why you need unique background description string IDs for each race for them to get properly enumerated.
+</p><p>You *could* just constrain your string ID to a lower value given the other mentioned workaround, but wouldn't it be nice not to have to worry about bugs?
+</p><p><b>This is the code causing the crash:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">var aStringCheck <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span>;
+<span class="co1">// ...</span>
+<span class="co1">// ... nested for-loops</span>
+       var bBackgroundAllowedByRace <span class="sy0">=</span> Number<span class="br0">&#40;</span>ExternalCommands.<span class="me1">Get2DAValueByRowIndexColumnName</span><span class="br0">&#40;</span>_2DA.<span class="me1">TABLE_BACKGROUND</span>, nBackgroundRow, RaceGenderScene.<span class="me1">m_aRaces</span><span class="br0">&#91;</span>nRaceIndex<span class="br0">&#93;</span>.<span class="me1">sLabel</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+       var nDescStringID <span class="sy0">=</span> Number<span class="br0">&#40;</span>ExternalCommands.<span class="me1">Get2DAValueByRowIndexColumnName</span><span class="br0">&#40;</span>_2DA.<span class="me1">TABLE_BACKGROUND_DESC</span>, nBackgroundRow, RaceGenderScene.<span class="me1">m_aRaces</span><span class="br0">&#91;</span>nRaceIndex<span class="br0">&#93;</span>.<span class="me1">sLabel</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bBackgroundAllowedByRace <span class="sy0">==</span> <span class="nu0">1</span> <span class="sy0">&amp;&amp;</span> aStringCheck<span class="br0">&#91;</span>nDescStringID<span class="br0">&#93;</span> <span class="sy0">==</span> null<span class="br0">&#41;</span>
+       <span class="br0">&#123;</span>
+                    aStringCheck<span class="br0">&#91;</span>nDescStringID<span class="br0">&#93;</span> <span class="sy0">=</span> nDescStringID;
+&#160;
+       <span class="br0">&#125;</span>
+<span class="co1">// ... end nested for-loops</span></pre></div></div>
+<p>The check *is* needed or else the background will show up active in the list of each race that possesses it. One simple workaround is use a dictionary instead of an array:
+</p><p><b>This would seem to be a workaround:</b>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">var aStringCheck <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>;
+<span class="co1">// ...</span>
+<span class="co1">// ... nested for-loops</span>
+       var bBackgroundAllowedByRace <span class="sy0">=</span> Number<span class="br0">&#40;</span>ExternalCommands.<span class="me1">Get2DAValueByRowIndexColumnName</span><span class="br0">&#40;</span>_2DA.<span class="me1">TABLE_BACKGROUND</span>, nBackgroundRow, RaceGenderScene.<span class="me1">m_aRaces</span><span class="br0">&#91;</span>nRaceIndex<span class="br0">&#93;</span>.<span class="me1">sLabel</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+       var nDescStringID <span class="sy0">=</span> Number<span class="br0">&#40;</span>ExternalCommands.<span class="me1">Get2DAValueByRowIndexColumnName</span><span class="br0">&#40;</span>_2DA.<span class="me1">TABLE_BACKGROUND_DESC</span>, nBackgroundRow, RaceGenderScene.<span class="me1">m_aRaces</span><span class="br0">&#91;</span>nRaceIndex<span class="br0">&#93;</span>.<span class="me1">sLabel</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bBackgroundAllowedByRace <span class="sy0">==</span> <span class="nu0">1</span> <span class="sy0">&amp;&amp;</span> aStringCheck<span class="br0">&#91;</span><span class="st0">&quot;&quot;</span> <span class="sy0">+</span> nDescStringID<span class="br0">&#93;</span> <span class="sy0">==</span> null<span class="br0">&#41;</span>
+       <span class="br0">&#123;</span>
+                    aStringCheck<span class="br0">&#91;</span><span class="st0">&quot;&quot;</span> <span class="sy0">+</span> nDescStringID<span class="br0">&#93;</span> <span class="sy0">=</span> nDescStringID;
+&#160;
+       <span class="br0">&#125;</span>
+<span class="co1">// ... end nested for-loops</span></pre></div></div>
+<p>I think it should be possible to make it so you can share background descriptions, but that would require a bit more work.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 02:44, 29 March 2011 (UTC)
+</p>
+<h2><span class="mw-headline" id="When_is_an_M2DA_not_like_an_M2DA.3F">When is an M2DA not like an M2DA?</span></h2>
+<p>When its rows are enumerated by the UI. Since the UI lacks a function to map a row to its M2DA ID, some of the M2DA files need to be treated as if they're actually just 2DAs. E.g, the classes and some backgrounds tables. E.g., if you had an M2DA with two rows, both with ID 0 and ID 5, then the UI only knows there are two rows, but doesn't know how to map the second row to ID 5. I.e., the UI sees this when trying to enumerate the rows of the M2DA file, but it's told there are only two rows by the functions available to it.
+0 Data
+1 (uninitialized)
+2 (uninitialized)
+3 (uninitialized)
+4 (uninitialized)
+5 Data
+</p><p>Of course if there's a way to derive the row ID (by a prearranged formula or given by another M2DA cell's value), then the UI can use it just like a normal M2DA.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 03:25, 29 March 2011 (UTC)
+</p>
+<h2><span class="mw-headline" id="Is_this_correct.3F">Is this correct?</span></h2>
+<p>I have problems with this solution. I tried it twice now, once I tried to implement it into my module, the other time I did it exactly as written here. 1. The custom templates for the Backgrounds don't work (The character has no equipment, no matter what background I choose) with the scripts on this tutorial, although the changes work fine if I run RESOURCE_SCRIPT_MODULE_CORE 2. The race choice doesn't change the character (But that could be because the scripts are missing alot, it's not that important for test purposes) 3. The strings for the Background description don't work (Yes I have corrected them in the Toolset, because the ExcelProcessor can't handle that big numbers), they don't show up, when I'm clicking on the Backgrounds.
+</p><p>I have not tested dialouge yet, but am I making something wrong? Or has this tutorial some errors? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nobody123456" title="User:Nobody123456 (page does not exist)">Nobody123456</a> 13:49, 26 November 2009 (UTC)
+</p>
+<dl><dd>I think you might be making some errors (although it is possible that there is some error or ommision in what I wrote). I tested the tutorial by running through it from scratch after I wrote it and my game worked fine. It is a very sensitive process though, so the slightest thing wrong can really throw you out. </dd></dl>
+<dl><dd> The first thing I would suggest is to get the background description strings working because I know that can cause issues if you don't get it right. Try a new module and don't make any changes execpt for adding your own strings to the backgrounds and see if that works. Oh and be sure to export your talk table along with any other resources before you play. Actaully that's probably it - I should add that to the tutorial. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Stuntpope" title="User:Stuntpope (page does not exist)">Stuntpope</a> 15:01, 26 November 2009 (UTC)</dd></dl>
+<dl><dd><dl><dd> I did export the string table, so that can't be it. I recreated it from scratch, now some equipment choices work, some don't. The race choices now works fine, but the strings still don't show up. I tested the background choices in a dialouge, and this works perfectly fine. I uploaded the module, so if you wanna take a quick look, that would be great. <a rel="nofollow" class="external text" href="http://www.megaupload.com/?d=CYHIVYJL">Background Test Module</a> and if you want to install the module as an addin <a rel="nofollow" class="external text" href="http://www.megaupload.com/?d=2FILLQ5N">DAZIP format</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nobody123456" title="User:Nobody123456 (page does not exist)">Nobody123456</a> 05:20, 27 November 2009 (UTC)</dd></dl></dd></dl>
+<dl><dd>I notice your talk table is called strings.tlk. That seems strange to me, I didn't know you could rename tlk files but mine is called bg_demo_en-us, where bg_demo is what my module is called. so i would have expected yours to be bdm_2_en-us.tlk if you hadn't renamed it. You say that you are able to display strings in dialogue though so maybe that's not it. Another possibility is that this is another bug in the description strings. Your strings are a good million higher than mine - try using exctly the same string ID range that I used.</dd></dl>
+<dl><dd>As for equipment - I didn't really spend any time looking at what equipment those templates start with. I just selected some that had the look I was going for in chargen, so the ones that are just dressed plainly and don't have weapons or anything are that way becasue that is what those templates are (I think i used those for the servants). To check that this is working go into the toolset and find those templates - compare them to what those characters have if you create them. If you want them to have equipment, simply create a new creature and give them whatever equipment you want, then use that template name in the GDA. Try and resolve your other issue first though before you try that. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Stuntpope" title="User:Stuntpope (page does not exist)">Stuntpope</a> 07:25, 27 November 2009 (UTC)</dd></dl>
+<dl><dd><dl><dd> It was indeed the table name. It was exportet that way, that's strange, but now the Strings work fine, thank you very much! <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nobody123456" title="User:Nobody123456 (page does not exist)">Nobody123456</a> 07:52, 27 November 2009 (UTC)</dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd> I ran into this same problem which is a user error. Make sure you export the "talk table" and NOT "string table". The export "string table" option appears on the export menu if you have the talk table open at the time. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Deadrockstar" title="User:Deadrockstar (page does not exist)">Deadrockstar</a> 11:43, 8 December 2009 (UTC)</dd></dl></dd></dl></dd></dl>
+<dl><dd>Great to hear you got it working! <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Stuntpope" title="User:Stuntpope (page does not exist)">Stuntpope</a> 08:14, 27 November 2009 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Why_are_the_CHARGEN_event_scripts_customised.3F">Why are the CHARGEN event scripts customised?</span></h2>
+<p>I managed to get my custom background working without customising the CHARGEN event scripts. In fact, I don't remember seeing those scripts, so maybe they were added later? At any rate, now we have a forum query about it. Can anyone explain why that customisation is proposed, and how the code differs from the Bioware script? That would help people to understand which lines they need to change to suit their own scenario. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 09:41, 7 January 2011 (UTC)
+</p>

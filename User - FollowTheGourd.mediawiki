@@ -1,0 +1,44 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20GUI" title="Category:GUI">Category:GUI</a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript" title="Category:ActionScript">Category:ActionScript</a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript%20-%20Classes" title="Category:ActionScript:Classes">Category:ActionScript:Classes</a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript%20-%20Functions" title="Category:ActionScript:Functions">Category:ActionScript:Functions</a>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20ActionScript%20-%20Tools" title="Category:ActionScript:Tools">Category:ActionScript:Tools</a>
+</p><p>Temporary Conversation UI page. Just need to make sure of a few things more first.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Class_Methods_of_Interest"><span class="tocnumber">2</span> <span class="toctext">Class Methods of Interest</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Related_Classes_of_Interest"><span class="tocnumber">3</span> <span class="toctext">Related Classes of Interest</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Referenced_External_Attributes"><span class="tocnumber">4</span> <span class="toctext">Referenced External Attributes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Letterbox_Behavior"><span class="tocnumber">5</span> <span class="toctext">Letterbox Behavior</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<div style="float:right; background-color:#ffffcc; border:2px #ffff99 solid; padding:4px; margin:4px; width:200px;">
+<ul><li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFX" title="GFX (page does not exist)">GFx</a> file:</b> conversation.gfx</li>
+<li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="Erf">ERF</a>:</b> guiexport.erf</li></ul>
+</div>
+<p>This class is for the conversation UI.
+</p>
+<h2><span class="mw-headline" id="Class_Methods_of_Interest">Class Methods of Interest</span></h2>
+<p>Many. TBD.
+</p>
+<h2><span class="mw-headline" id="Related_Classes_of_Interest">Related Classes of Interest</span></h2>
+<p>TBD.
+</p>
+<h2><span class="mw-headline" id="Referenced_External_Attributes">Referenced External Attributes</span></h2>
+<p>These strings are used by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands" title="ActionScript:ExternalCommands">ExternalCommands</a> class for intercommunication between the engine and other GUI forms.
+</p><p>TBD
+</p>
+<h2><span class="mw-headline" id="Letterbox_Behavior">Letterbox Behavior</span></h2>
+<p>The conversation UI uses the following formula to calculate the height of the top and bottom letterbox:
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">(height<sub>screen</sub> - [width<sub>screen</sub> / <i>AspectRatio</i>]) / 2</div>
+<p>where <i>AspectRatio</i> is a <b>constant</b> 1.777777777777778 (or 16:9) regardless of the player settings.
+</p><p>What this means in practice is that regardless of your display resolution, you view the cutscene as if your display had a 16:9 aspect ratio, the letterboxes taking up enough of the screen's height to ensure that.
+</p><p>Sometimes instead of a solid black letterbox, you'll instead see a translucent bar. This occurs when, according to the above forumla, the letterboxes are lower than a hardcoded height of 40 pixels. You'll especially see this when your display settings use a 16:9 aspect ratio, as the letterboxes have a height of zero or (near-zero for resolutions like 1360x768, which is almost 16:9). The translucent bar is not the letterbox, but another movieclip. In fact, in 1360x768 you can still see a sliver of the solid black letterbox at the bottom, which should have a height of 1.5 pixels.
+</p><p>In the case of the bottom translucent bar, there's the movieclip <b>ResponseBackground_mc</b>, which has the frame labels <i>full</i> and <i>gradiant</i> [sic]. The behavior here depends on a few things: <i>full</i> (the translucent bar) is played when the actual letterbox height is less than maximum value of 40 pixels. Otherwise, <i>gradiant</i> (black bar with a fuzzy gradient at the top) is played if the currently available PC response lines would rise above the letterbox. Finally, if the letterbox height is at least 40 pixels and the PC response lines would not rise above the letterbox, then this background movieclip is hidden and so only the letterbox itself is used as a background for the text.
+</p><p>In the case of the top translucent bar, there's the movieclip <b>TextBacking_mc</b>, the height of which is adjusted for the lines of text that would otherwise spill out under the bottom of the letterbox, only as long as the actual letterbox height is less than the hardcoded value of 40 pixels. So if the actual letterbox height is less than 40 pixels, then the text is shifted down below the letterbox and falls onto the translucent TextBacking_mc movieclip instead. Note: whether the TextBacking_mc is shown is not dynamically dependent on the number of NPC lines - the only thing of importance is the actual black letterbox height. But if it is shown, then the height of TextBacking_mc will adjust to the number of current NPC lines. From the available game resolutions available at the time of writing, TextBacking_mc should only be shown in 1280x720 as the letterbox height is 24 pixels.
+</p>

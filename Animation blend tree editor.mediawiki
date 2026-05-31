@@ -1,0 +1,68 @@
+<p>Animation blend trees are used to group and combine animations (stored in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANI" title="ANI">ANI</a> files) so that the game engine knows how to use them when they're triggered by game events.
+</p><p>The animation blend trees used by the single player module can be downloaded from the <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1331/#files">Single player and core resource source files</a> project.
+</p><p>A new blend tree can be created via the "File &#8594; New &#8594; Animation Worksheet" menu command.
+</p>
+<h2><span class="mw-headline" id="Animation_worksheet_editor">Animation worksheet editor</span></h2>
+<p>An animation worksheet is used to group and blend separate animations together.
+</p><p>The 2DA file <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR_base.xls</a> contains 3 columns for the blend trees, so unique bend trees can be assigned to a class of creatures or a unique creature.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Animation%20worksheet%20editor.png"><img alt="Animation worksheet editor.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ef/Animation_worksheet_editor.png" width="300" height="233" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ef/Animation_worksheet_editor.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ef/Animation_worksheet_editor.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Animation%20worksheet%20editor.png" title="Enlarge"></a></div></div></div></div>
+<p>The main window shows the various nodes that are defined in the open worksheet and how they are interconnected. There are two main kinds of nodes; animation streams and blend trees. Animation streams are the sources of animation information; each animation stream node can be associated with a single animation source file. They can also take streams from other animation stream nodes.
+</p><p>Blend tree nodes form the roots; these take animation information streams and blend them together into a finished product.
+</p><p>The properties for a blend tree are as follows:
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Color</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Looping</td>
+<td>Specifies whether this animation will be marked as looping in the exported blend tree.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Tree Name</td>
+<td>Specifies the node label in the exported blend tree. If this is left blank, a unique name will be automatically generated.</td>
+</tr>
+</table>
+<p>And the properties for an animation stream are:
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Animation</td>
+<td>Animation that streams from this node.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Color</td>
+<td> </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Looping</td>
+<td>Specifies whether this animation will be marked as looping in the exported blend tree.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Node Name</td>
+<td>Specifies the node label in the exported blend tree. If this is left blank, a unique name will be automatically generated.</td>
+</tr>
+</table>
+<p>Below the main pane is a timeline and a curve editor, much like those found in the cutscene editor. The curve editor allows you to modify the relative strengths of the blended animations.
+</p><p>To the right of the worksheet editor is a pane showing a creature or placeable that will allow you to preview your blend tree. You can use any pre-existing creature or placeable.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20editor" title="Event editor">Event editor</a></li></ul>

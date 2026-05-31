@@ -1,0 +1,32 @@
+<p>Returns the location of the specified object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> GetLocation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object to get the location of
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid location on success or invalid location on error
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function returns the location of the specified object.
+If an invalid object is specified, then an invalid location will be returned.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>     
+    <span class="co1">// get a location from a waypoint with a unique tag</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWaypoint <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;wp_werewolf_spawn&quot;</span><span class="br0">&#41;</span>; 
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lWaypoint <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span>oWaypoint<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// create a werewolf object at the location</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWerewolf <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_CREATURE</span>, R<span class="st0">&quot;werewolf_core.utc&quot;</span>, lWaypoint<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsLocationValid" title="IsLocationValid">IsLocationValid</a>
+</p>

@@ -1,0 +1,45 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><strong class="selflink">Rules</strong>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<h3><span class="mw-headline" id="Overview">Overview</span></h3>
+<p>The Core Game rules of Dragon Age are implemented mostly in the Scripting Language and Data. This page details the organization of the rules system, design principles, technical implementation details and limitations.
+</p>
+<table width="100%">
+
+<tr>
+<td valign="top" height="100%">
+<table style="margin:0; background:#f5fffa; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em; width:100%; height:100%">
+
+<tr>
+<td valign="top">
+<h2 style="margin:0; background:#cef2e0; font-size:150%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Categories">Categories</span></h2>
+</td></tr>
+<tr>
+<td>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a> - Attributes, Stats and other numbers that make up a character.
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a> - Details about attributes.</li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a> - Technical information on the implementation of character classes.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a> - The rules of conflict resolution. Who hits. When. For how much.</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a> - Spells, Skills, Talents and Item Abilities.</li></ul>
+</td></tr></table>
+</td></tr></table>
+<h3><span class="mw-headline" id="Detailed_Description">Detailed Description</span></h3>

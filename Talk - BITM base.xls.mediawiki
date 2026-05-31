@@ -1,0 +1,10 @@
+<p><b>SourceData - This is the worksheet where the information for the 2da should be edited. </b> Is this true? I wondered how these edits will get exported. This page has all the kinds of wrong entries it seems to me. --Eshme 
+</p>
+<dl><dd>They wouldn't, but the changes are supposedly mirrored in the other worksheet (maybe with a script, macro, by hand, or something). It actually starts with an underscore, so it shouldn't become a GDA. I haven't really compared the two worksheets in detail, but they don't look totally in sync anyway. Maybe there was some internal reason at BioWare for doing it that way, but I don't know. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 06:47, 27 January 2010 (UTC)</dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".22Type.22_confusion">"Type" confusion</span></h2>
+<p>In the Type line, it says the values used here can be found in "the ItemTypes worksheet in this document."
+But this has to be a typo. There is no "ItemTypes" on this page, and I cannot even find a file named ItemTypes anywhere.
+Does anyone know what this is actually supposed to be? I think it needs to be corrected. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kesaru" title="User:Kesaru (page does not exist)">Kesaru</a> 20:21, 8 March 2010 (UTC)
+</p>

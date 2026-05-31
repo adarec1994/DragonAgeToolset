@@ -1,0 +1,170 @@
+<p>The <b>Joining The Party</b> step describes how to handle adding your custom companion to the party.
+</p><p>In this step Valeria is allowed to have a class chosen the first time you meet her. So create in VALERIA_NPC_HIRE the flags ISMAGE, ISROGUE, ISWARRIOR and ISROGUEWARRIOR, if you want to do that, otherwise delete all the references to those flags. One of these is set to TRUE through dialog with Valeria. At the end of the dialog this script is called.
+</p>
+<h2><span class="mw-headline" id="The_joining_script">The joining script</span></h2>
+<p>Create the following script. I call it valeria_valjoin.nss
+This script contains EVERYTHING you need to properly hire a follower without leveling him/her automatically.
+</p><p>Valeria in my mod is allowed to choose her class to Warrior, Rogue, Mage or Multiclass (here I show you only the case Rogue-Warrior).
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;sys_chargen_h&quot;</span>
+<span class="co2">#include &quot;sys_rewards_h&quot;</span>
+&#160;
+<span class="co2">#include &quot;plt_valeria_npc_hire&quot;</span>
+&#160;
+<span class="co1">//this function resets an NPC</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> basic_blank_char<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChar<span class="br0">&#41;</span>;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oPC<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> me<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>;
+&#160;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED, TRUE<span class="br0">&#41;</span>;
+&#160;
+    basic_blank_char<span class="br0">&#40;</span>me<span class="br0">&#41;</span>;
+    <span class="co1">//select race, otherwise skills tree wont show</span>
+&#160;
+    Chargen_SelectRace<span class="br0">&#40;</span>me,RACE_HUMAN<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nClass;
+    <span class="co1">//remove the rogue defaults, valeria's char is rogue when created</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharGen%20ClearAbilityList"><span class="kw4">CharGen_ClearAbilityList</span></a><span class="br0">&#40;</span>me,<span class="nu0">1</span><span class="br0">&#41;</span>;<span class="co1">//remove talents</span>
+    <span class="co1">//CharGen_ClearAbilityList(me,2);//remove spells</span>
+    <span class="co1">//CharGen_ClearAbilityList(me,3);//remove skills</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveAbility"><span class="kw4">RemoveAbility</span></a><span class="br0">&#40;</span>me, ABILITY_TALENT_DIRTY_FIGHTING<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveAbility"><span class="kw4">RemoveAbility</span></a><span class="br0">&#40;</span>me, ABILITY_SKILL_POISON_1<span class="br0">&#41;</span>;
+    <span class="co1">//depending on which flags you set in the dialog that lead to this script, choose the appropriate class</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,ISMAGE<span class="br0">&#41;</span><span class="sy0">==</span>TRUE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nClass<span class="sy0">=</span>CLASS_WIZARD;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_SPELL_ARCANE_BOLT<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,ISROGUE<span class="br0">&#41;</span><span class="sy0">==</span>TRUE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nClass<span class="sy0">=</span>CLASS_ROGUE;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_TALENT_DIRTY_FIGHTING<span class="br0">&#41;</span>;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_SKILL_POISON_1<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,ISWARRIOR<span class="br0">&#41;</span><span class="sy0">==</span>TRUE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nClass<span class="sy0">=</span>CLASS_WARRIOR;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_TALENT_POWERFUL<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,ISROGUEWARRIOR<span class="br0">&#41;</span><span class="sy0">==</span>TRUE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>nClass<span class="sy0">=</span>CLASS_ROGUE;<span class="br0">&#125;</span>
+&#160;
+    <span class="co1">//apply attributes, abilities and stats for the core class</span>
+    <span class="co1">//SetCreatureProperty(me,PROPERTY_SIMPLE_CURRENT_CLASS, n1-3.0,PROPERTY_VALUE_BASE);</span>
+&#160;
+    Chargen_SelectCoreClass<span class="br0">&#40;</span>me,nClass<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//add mage spells</span>
+    <span class="co1">//_AddAbility(me, ABILITY_TALENT_HIDDEN_ASSASSIN);//this works if it's available on the core class</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE,ISROGUEWARRIOR<span class="br0">&#41;</span><span class="sy0">==</span>TRUE<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_TALENT_HIDDEN_WARRIOR<span class="br0">&#41;</span>;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_TALENT_DIRTY_FIGHTING<span class="br0">&#41;</span>;
+        _AddAbility<span class="br0">&#40;</span>me, ABILITY_SKILL_POISON_1<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">//tactics</span>
+&#160;
+    Chargen_SetNumTactics<span class="br0">&#40;</span>me<span class="br0">&#41;</span>;
+    Chargen_EnableTacticsPresets<span class="br0">&#40;</span>me<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//level needed for scaling</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPackage <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPackage"><span class="kw4">GetPackage</span></a><span class="br0">&#40;</span>me<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nTargetLevel;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPlayerLevel <span class="sy0">=</span> GetLevel<span class="br0">&#40;</span>oPC<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nPlayerLevel <span class="sy0">&gt;=</span> <span class="nu0">13</span> <span class="sy0">||</span> nPlayerLevel <span class="sy0">==</span> <span class="nu0">1</span> <span class="br0">&#41;</span>
+       nTargetLevel <span class="sy0">=</span> nPlayerLevel;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+       nTargetLevel <span class="sy0">=</span> nPlayerLevel <span class="sy0">+</span> <span class="nu0">1</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMinLevel <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PACKAGES, <span class="st0">&quot;MinLevel&quot;</span>, nPackage<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nMinLevel <span class="sy0">&gt;</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> nMinLevel <span class="sy0">&gt;</span> nTargetLevel<span class="br0">&#41;</span>
+       nTargetLevel <span class="sy0">=</span> nMinLevel;
+&#160;
+    <span class="co1">//xp until hero level</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nXp <span class="sy0">=</span> RW_GetXPNeededForLevel<span class="br0">&#40;</span>Max<span class="br0">&#40;</span>nTargetLevel, <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    RewardXP<span class="br0">&#40;</span>me, nXp, TRUE, FALSE<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//add specialization</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> count<span class="sy0">=</span><span class="nu0">1.0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>GetLevel<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">&gt;=</span><span class="nu0">7</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>me, <span class="nu0">38</span>, count<span class="br0">&#41;</span>;  <span class="co1">// 38 is the spec point ID</span>
+        count<span class="sy0">=</span>count<span class="sy0">+</span><span class="nu0">1</span>.;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>GetLevel<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">&gt;=</span><span class="nu0">14</span><span class="br0">&#41;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>me, <span class="nu0">38</span>, count<span class="br0">&#41;</span>;  <span class="co1">// 38 is the spec point ID</span>
+&#160;
+    <span class="co1">//make available in party picker</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>me, <span class="kw3">FOLLOWER_STATE_ACTIVE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState"><span class="kw4">SetFollowerState</span></a><span class="br0">&#40;</span>me, <span class="kw3">FOLLOWER_STATE_AVAILABLE</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//dont fire player_core scaling</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>me, FOLLOWER_SCALED, <span class="nu0">1</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>me, AI_FLAG_STATIONARY, <span class="nu0">0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>me, AMBIENT_SYSTEM_STATE, <span class="nu0">0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>me, CREATURE_REWARD_FLAGS, <span class="nu0">0</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//change script to player and send hire event</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventScript"><span class="kw4">SetEventScript</span></a><span class="br0">&#40;</span>me, RESOURCE_SCRIPT_PLAYER_CORE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/InitHeartbeat"><span class="kw4">InitHeartbeat</span></a><span class="br0">&#40;</span>me, CONFIG_CONSTANT_HEARTBEAT_RATE<span class="br0">&#41;</span>;
+    SendPartyMemberHiredEvent<span class="br0">&#40;</span>me, FALSE<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerApprovalEnabled"><span class="kw4">SetFollowerApprovalEnabled</span></a><span class="br0">&#40;</span>me,TRUE<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">//open up party picker to allow Valeria to join in the active party</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPartyPickerGUIStatus"><span class="kw4">SetPartyPickerGUIStatus</span></a><span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ShowPartyPickerGUI"><span class="kw4">ShowPartyPickerGUI</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;  
+<span class="br0">&#125;</span>
+&#160;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> basic_blank_char<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChar<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<span class="co1">// Initialize all creature properties to default value</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_SIMPLE_LEVEL</span>,<span class="nu0">1.0f</span>,<span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_SIMPLE_EXPERIENCE</span>,<span class="nu0">0.0f</span>,<span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_STRENGTH</span>,      CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_DEXTERITY</span>,     CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_CONSTITUTION</span>,  CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_WILLPOWER</span>,     CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_INTELLIGENCE</span>,  CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_MAGIC</span>,         CHARGEN_BASE_ATTRIBUTE_VALUE, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_ATTRIBUTE_ATTACK_SPEED_MODIFIER,     <span class="nu0">1.0f</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_ATTRIBUTE_DAMAGE_SCALE,       <span class="nu0">1.0f</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_ATTRIBUTE_RESISTANCE_MENTAL,         <span class="nu0">0.0f</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_ATTRIBUTE_RESISTANCE_PHYSICAL,       <span class="nu0">0.0f</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,<span class="nu0">51</span>,       <span class="nu0">1.0f</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_REGENERATION_HEALTH_COMBAT,  REGENERATION_HEALTH_COMBAT_DEFAULT<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_REGENERATION_STAMINA_COMBAT, REGENERATION_STAMINA_COMBAT_DEFAULT<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_ATTRIBUTE_REGENERATION_HEALTH</span>,REGENERATION_HEALTH_EXPLORE_DEFAULT, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_REGENERATION_STAMINA, REGENERATION_STAMINA_EXPLORE_DEFAULT, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_MISSILE_SHIELD,<span class="nu0">0.0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="nu0">38</span>,<span class="nu0">0.0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_DEPLETABLE_HEALTH</span> ,          <span class="nu0">1.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_DEPLETABLE_MANA_STAMINA</span> ,    <span class="nu0">0.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_ATTRIBUTE_DEFENSE</span> ,          <span class="nu0">0.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_ATTRIBUTE_ATTACK</span>,            <span class="nu0">0.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_DAMAGE_BONUS,      <span class="nu0">0.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_ATTRIBUTE_FLANKING_ANGLE,  <span class="nu0">60.0f</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+&#160;
+<span class="br0">&#125;</span></pre></div></div>
+<div class="tutorialnavbar" align="center"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20The%20Fade" title="The Fade"><img alt="The Fade" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a5/Icon_wiki_arrow_left_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Gifts%20And%20Approval" title="Gifts And Approval"><img alt="Gifts And Approval" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

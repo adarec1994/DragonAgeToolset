@@ -1,0 +1,6 @@
+<p>Do you know if fonts.erf available in any specific RAR file on the install DVD?
+</p><p>I don't see it in any of them so far, and datasetup.exe doesn't seem to be doing anything when I click on it... I have the N. American regular DVD version.
+</p><p>I solved it by using fonts.erf from the character creator download instead, though.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 02:34, 19 February 2010 (UTC)
+</p>
+<dl><dd>I'm told fonts.erf is only in datasetup on the DVD. However, this issue is going to be fixed in the 1.04 patch so eventually this will be a non-issue. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 17:09, 19 February 2010 (UTC)</dd></dl>

@@ -1,0 +1,23 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> {{{title}}}
+</th></tr>
+<tr>
+<td>
+<p>{{{contents}}}
+</p>
+</td></tr></table>
+<p>Format:
+</p>
+<pre>
+ {{infobox template
+ |title=
+ |contents=
+ |collapsed=
+ }}
+</pre>
+<p>If you put the string "yes" in the collapsed= parameter, the table will be collapsible and will default to hidden.
+</p><p>If you put the string "no" in the collapsed= parameter, the table will be collapsible and will default to shown.
+</p><p>Any other value in the collapsed= parameter, or no value at all, will make the table non-collapsible.
+</p>

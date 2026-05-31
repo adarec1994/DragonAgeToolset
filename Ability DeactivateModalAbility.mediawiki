@@ -1,0 +1,19 @@
+<p>Deactivates a modal ability
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_DeactivateModalAbility(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityType&#160;= <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20TYPE%20INVALID" title="ABILITY TYPE INVALID (page does not exist)">ABILITY_TYPE_INVALID</a><br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd>The creature to deactivate the ability on<dt style="font-weight:normal; font-style:italic;">nAbility<dd>the modal ability to deactivate<dt style="font-weight:normal; font-style:italic;">nAbilityType<dd>the ability type of the modal ability
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the ability was terminated successfully
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Runs the spellscript for an ability with the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SPELLSCRIPT%20DEACTIVATE" title="EVENT TYPE SPELLSCRIPT DEACTIVATE">EVENT TYPE SPELLSCRIPT DEACTIVATE</a> event
+</p><p><br />
+</p><p><br />
+</p>

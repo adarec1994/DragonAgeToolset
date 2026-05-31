@@ -1,0 +1,74 @@
+<p><big><b>Welcome to the Dragon Age Toolset documentation wiki!</b></big>
+</p><p>The Dragon Age Toolset puts the power of the game developer in the palm of your hands. The Dragon Age Toolset will allow you to produce your own content including dungeons crawls, full-length campaigns, add-ons and cut-scenes you can share with friends and the BioWare community. 
+</p><p>You can <a rel="nofollow" class="external text" href="http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/dragonage/toolset/DragonAgeToolset1.01Setup.exe">click here</a> to download Dragon Age Toolset  v1.01 from the Bioware CDN.
+</p><p>For assistance with installing or running the game, or for issues regarding BioWare-published content, see the <a rel="nofollow" class="external text" href="https://dragonagekeep.com/">Dragon Age Keep</a>.
+</p>
+<table width="100%">
+
+<tr>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Getting_Started_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Getting%20Started" title="Getting Started">Getting Started</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Getting%20Started" title="Getting Started">link</a>)</div></span></h2>
+<div style="margin:0; background: #f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; float:right; font-size:x-small;">
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20an%20account" title="Creating an account">Creating an account</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset" title="Installing the toolset">Installing the toolset</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20troubleshooting" title="Installation troubleshooting">Installation troubleshooting</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Overview%20of%20the%20toolset" title="Overview of the toolset">Overview of the toolset</a></li></ul>
+</div>
+<p>The toolset can be very daunting to dive into at first. This section covers topics useful to new users - how to get the toolset set up, how to navigate its interfaces, and where to look to get started on common tasks.
+</p>
+</td>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Tutorials_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials" title="Tutorials">Tutorials</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials" title="Tutorials">link</a>)</div></span></h2>
+<p>This section contains a list of step-by-step tutorials for a wide variety of editors and tasks you might need to do. Note that these tutorials will also be linked to from the sections that cover their respective subject matter; this is just to collect them all into one place for ease of reference.
+</p>
+</td></tr>
+
+<tr>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Design_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design">Design</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design">link</a>)</div></span></h2>
+<p>Once you have the pieces you need for an adventure - level layouts, creatures, abilities, and so forth - there's still the step of putting it all together into a playable game. This involves placing resources into areas, hooking up plots, and all sorts of other miscellaneous tasks. 
+</p>
+</td>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%;">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Art_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art" title="Art">Art</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art" title="Art">link</a>)</div></span></h2>
+<p>This section covers such things as how to import new models into the game, how to design level layouts, and how to create unique head morphs for NPCs. You can download the art sources for the main campaign from <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1331/#files">the Single player and core resource source files</a> project.
+</p>
+</td></tr>
+<tr>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Cinematography_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cinematography" title="Cinematography">Cinematography</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cinematography" title="Cinematography">link</a>)</div></span></h2>
+<p>Dragon Age is a heavily cinematics-oriented game. Every line in every conversation has the potential to be written as a full-blown cutscene, though in most cases a simpler treatment is perfectly adequate. Cutscenes can also be created independent of any conversation, to be triggered by script at appropriate moments.
+</p>
+</td>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Sound_and_music_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">link</a>)</div></span></h2>
+<p>Sounds are used in Dragon Age in a variety of ways. Voice over, background music, the sounds of combat and spells, ambient noises placed throughout areas or triggered by scripts and player actions, are all covered in this section.
+</p>
+</td></tr>
+<tr>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="Script_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">link</a>)</div></span></h2>
+<p>Scripting is used whenever the designers need control over the game's behaviour. The syntax for DA scripts is very similar to the C programming language. Scripting is commonly used to:
+</p>
+<ul><li> Trigger plot events </li>
+<li> Create or modify abilities - skills, talents, and spells </li>
+<li> Handle creature and party member AI</li></ul>
+</td>
+<td valign="top" height="100%" style="margin:0; background:#f5faff; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em; width:50%; height:100%">
+<h2 style="margin:0; background:#cedff2; font-size:150%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;"><span class="mw-headline" id="3rd_party_extensions_.28link.29"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3rd%20party%20extensions" title="3rd party extensions">3rd party extensions</a> <div style="float:right; font-size:x-small;">(<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3rd%20party%20extensions" title="3rd party extensions">link</a>)</div></span></h2>
+<p>The toolset released by BioWare doesn't cover every possible task that might be needed by the end user. This section covers third-party tools that don't easily fall under other subject areas covered by the toolset.
+</p>
+</td></tr></table>
+<ul><li> Also see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Technical%20information" title="Technical information">technical information</a> for a list of documents about the more in-depth technical workings of the toolset and of Dragon Age: Origins.</li></ul>
+<h2><span class="mw-headline" id="Editing_this_wiki">Editing this wiki</span></h2>
+<p>The documentation for the toolset is still being worked on so some of the material here may be incomplete or somewhat out-of-date. If you wish to contribute (either by adding your own material or by highlighting holes) you are most welcome to jump right in and edit. If you see something that needs improvement but you're not sure how (or you just don't have the time) you can mark it by adding "{{undocumented}}" at the trouble spot.
+</p>
+<ul><li>The <b><a rel="nofollow" class="external text" href="http://meta.wikimedia.org/wiki/Help:Contents">Wiki User's Guide</a></b> has information on how to edit this wiki. This wiki is powered by the MediaWiki engine.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GeSHi%20highlighting" title="GeSHi highlighting">GeSHi highlighting</a> is installed, including "nwscript" and "dascript" tags.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

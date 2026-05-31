@@ -1,0 +1,17 @@
+<p>EffectImpact Constructor.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> EffectImpact(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fDamage,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oWeapon,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nVfx&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbi&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDamageType&#160;= 1<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fDamage<dd>Amount of damage to be applied<dt style="font-weight:normal; font-style:italic;">oWeapon<dd>Weapon that applies the damage<dt style="font-weight:normal; font-style:italic;">nVfx<dd>Impact VFX to play.  Default of 0 is no impact VFX<dt style="font-weight:normal; font-style:italic;">nAbi<dd>Ability (default is invalid ability)<dt style="font-weight:normal; font-style:italic;">nDamageType<dd>Damage Type to be applied (Physical, Fire):  Default of 1 is physical
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>An impact effect
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>EffectImpact Constructor.
+</p>

@@ -1,0 +1,14 @@
+<p>This sets an integer associated with the specified command
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetCommandInt(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword" title="Command keyword">command</a> cCommand,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCommandInt,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">cCommand<dd>The command<dt style="font-weight:normal; font-style:italic;">nCommandInt<dd>The integer being set on the command<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The nth integer being set. Defaults to 0
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

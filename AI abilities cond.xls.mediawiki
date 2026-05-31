@@ -1,0 +1,4 @@
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base.xls">ABI_base.xls</a> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> file that <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ai%20abilities%20cond%202da" title="Ai abilities cond 2da">ai_abilities_cond</a></li></ul>

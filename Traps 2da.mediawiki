@@ -1,0 +1,296 @@
+<p>The <strong class="selflink">traps 2da</strong> defines the various elements that constitute each trap in the game.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>182</b>. It can be extended by m2da fragments which have names starting with <b>traps</b>. It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_TRAPS</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Human-friendly name for the trap
+</td></tr>
+<tr>
+<th> TrapPlaceable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> aoe_index
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A row ID in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Persistent%202da" title="Persistent 2da">Persistent 2da</a>
+</td></tr>
+<tr>
+<th> AoEVFX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A row ID in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%202da" title="VFX Base 2da">VFX_Base 2da</a>
+</td></tr>
+<tr>
+<th> HideWhenUndetected
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AnimImpact
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th> ResetDelay
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Offset added to the longest duration effect to determine when trap is reset
+</td></tr>
+<tr>
+<th> Projectile
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A row ID in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRJ%20base%202da" title="PRJ base 2da (page does not exist)">PRJ_base 2da</a>
+</td></tr>
+<tr>
+<th> ProjectileCount
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The number of projectiles released
+</td></tr>
+<tr>
+<th> ProjectileCrust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A row ID in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%202da" title="VFX Base 2da">VFX_Base 2da</a>
+</td></tr>
+<tr>
+<th> LocationVfx
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> If negative, this will be played at the location of the placeable</li>
+<li> If positive, this will be applied on the target object</li></ul>
+</td></tr>
+<tr>
+<th> Effect1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The literal value of an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP%20EFFECT" title="TRAP EFFECT *">TRAP_EFFECT_*</a> constant
+</td></tr>
+<tr>
+<th> Effect1_Float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> (optional) A parameter to configure the effect
+</td></tr>
+<tr>
+<th> Effect1_Float2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> (optional) A parameter to configure the effect
+</td></tr>
+<tr>
+<th> Effect1_Int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> (optional) A parameter to configure the effect
+</td></tr>
+<tr>
+<th> Effect1_Int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> (optional) A parameter to configure the effect
+</td></tr>
+<tr>
+<th> Effect1_Duration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> (optional) The duration of a temporary effect
+</td></tr>
+<tr>
+<th> Effect1_Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> (optional) Resource name of a resource used or created by the effect
+</td></tr>
+<tr>
+<th> Effect2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1
+</td></tr>
+<tr>
+<th> Effect2_Float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float1
+</td></tr>
+<tr>
+<th> Effect2_Float2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float2
+</td></tr>
+<tr>
+<th> Effect2_Int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int1
+</td></tr>
+<tr>
+<th> Effect2_Int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int2
+</td></tr>
+<tr>
+<th> Effect2_Duration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Duration
+</td></tr>
+<tr>
+<th> Effect2_Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> See Effect1_Resource
+</td></tr>
+<tr>
+<th> Effect3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1
+</td></tr>
+<tr>
+<th> Effect3_Float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float1
+</td></tr>
+<tr>
+<th> Effect3_Float2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float2
+</td></tr>
+<tr>
+<th> Effect3_Int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int1
+</td></tr>
+<tr>
+<th> Effect3_Int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int2
+</td></tr>
+<tr>
+<th> Effect3_Duration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Duration
+</td></tr>
+<tr>
+<th> Effect3_Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> See Effect1_Resource
+</td></tr>
+<tr>
+<th> Effect4
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1
+</td></tr>
+<tr>
+<th> Effect4_Float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float1
+</td></tr>
+<tr>
+<th> Effect4_Float2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Float2
+</td></tr>
+<tr>
+<th> Effect4_Int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int1
+</td></tr>
+<tr>
+<th> Effect4_Int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See Effect1_Int2
+</td></tr>
+<tr>
+<th> Effect4_Duration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> See Effect1_Duration
+</td></tr>
+<tr>
+<th> Effect4_Resource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> See Effect1_Resource
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20traps%20h" title="Sys traps h">sys_traps_h</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trap%20ApplyEffect" title="Trap ApplyEffect (page does not exist)">_Trap_ApplyEffect</a> function is used to map the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TRAP%20EFFECT" title="TRAP EFFECT *">TRAP_EFFECT_*</a> values onto the appropriate effect type and creates the actual effect. However this is not a direct translation so, for example <code>TRAP_EFFECT_PARALYSE</code> has a literal value of 10 but is mapped onto <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT_TYPE_PARALYSE</a> which as a literal value of 8. Adding new trap effects would require the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trap%20ApplyEffect" title="Trap ApplyEffect (page does not exist)">_Trap_ApplyEffect</a> function to be updated and all dependant scripts would have to be recompiled.
+</p>

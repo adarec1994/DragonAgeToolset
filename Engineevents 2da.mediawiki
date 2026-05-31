@@ -1,0 +1,42 @@
+<p>The <strong class="selflink">engineevents 2da</strong> defines the game engine <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">events</a> that are exposed to the scripting engine, and controls whether they are routed to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">script</a>, for example <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules%20core" title="Rules core (page does not exist)">rules_core</a>, or to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource">resource</a>, for example a creature.
+</p><p>This <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da"> M2DA_base 2da</a> and has an <b>ID</b> of <b>114</b>. It can be extended by m2da fragments which have names starting with <b>engineevents</b>. It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_EVENTS</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>. 
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string  </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Visualizer
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Script
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string  </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event keyword</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul>

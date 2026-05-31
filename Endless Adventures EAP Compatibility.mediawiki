@@ -1,0 +1,44 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p>
+<h2><span class="mw-headline" id="Basic_Module_Information">Basic Module Information</span></h2>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> EAP Name
+</td>
+<td> EAP UID
+</td>
+<td> EAP PRCSCR ID(s)
+</td></tr>
+<tr>
+<td> EAP Darkest Larder
+</td>
+<td> eap_drklrdr_jckl
+</td>
+<td> 1500502
+</td></tr></table>
+<h2><span class="mw-headline" id="Basic_PRCSCR_Information">Basic PRCSCR Information</span></h2>
+<table class="wikitable" cellpadding="8">
+
+<tr>
+<td> <b>EAP Name</b>
+</td>
+<td> <b>Hook Object Tag</b>
+</td>
+<td> <b>Hook Object ResRef</b>
+</td>
+<td> <b>PRCSCR Spawn Area</b>
+</td>
+<td> <b>PRCSCR Spawn Coordinates</b>
+</td></tr>
+<tr>
+<td> EAP Darkest Larder
+</td>
+<td> eap_dl_cook
+</td>
+<td> eap_dl_cook.utc
+</td>
+<td> ea_hub_main
+</td>
+<td> 63.1808,45.4908,0.0
+</td></tr></table>

@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> 1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Engine DLL will crash when moving an object from a palette window into the scene. The problem has been traced down to a walkable mesh. Simple flat surface seems to be more problematic than a more complex surface. So far, I haven't been able to find any specific reason for the crash. Adding some extra polygons to bend-down the edges of the walkmesh seems to improve the situation. I have included all nessecary files needed to reproduce the CTD in here <a rel="nofollow" class="external text" href="http://users.kymp.net/p501474a/Crashed.zip">Model Files</a> And the log files.  This is the key entry that's printed in the logs: <b>47596  Assert  Unable to create NxActor  .\PhysicsActor.cpp(244)</b>
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Add more polygons into the walkmesh and bend them in a different directions.
+</p>

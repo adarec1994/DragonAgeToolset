@@ -1,0 +1,6 @@
+<p>There's a bit of information about DefaultSettings hacking at <a rel="nofollow" class="external autonumber" href="http://daforums.bioware.com/viewtopic.html?topic=693231&amp;forum=137&amp;sp=15">[1]</a> (the old beta test forum) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 20:52, 1 October 2009 (UTC)
+</p><p><br />
+Might anyone know the proper names for the back and forward buttons on a mouse to put into the xml?
+I really couldn't find any kind of list.
+</p><p>I tried MB4 and MB5 but they had no effect. MMB is seriously uncomfortable to hold down after a while..
+</p>

@@ -1,0 +1,22 @@
+<p>Loads a cutscene
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> LoadCutscene(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rCutscene,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlayer,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPlayImmediately,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>[] aTargetTagsToReplace,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] aReplacementObjects,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bActorsHaveWeapons<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">rCutscene<dd>The file name of the cutscene.cut file to load<dt style="font-weight:normal; font-style:italic;">oPlayer<dd>The specific player that this cutscene is for. If none is specified, all players get it<dt style="font-weight:normal; font-style:italic;">bPlayImmediately<dd>Takes over control on the client and forces the load in one big hit, then plays it automatically<dt style="font-weight:normal; font-style:italic;">aTargetTagsToReplace<dd>The tags of the actors that should be replaced (tag aTargetTagsToReplace[0] will be replaced by object aReplacementObjects[0])<dt style="font-weight:normal; font-style:italic;">aReplacementObjects<dd>The object ids of the objects that will override the appearances of the actors specified in aTargetTagsToReplace<dt style="font-weight:normal; font-style:italic;">bActorsHaveWeapons<dd>If the actors have been overridden, do the creatures bring their weapons into the scene with them
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Starts off the cutscene process by loading up the cutscene in the background while the game plays (loads a little bit each update). Will not take over control of the input or interfere with the user's play experience, except for the slight slow-down while the system loads up the scene.
+</p><p>If parameter actors are specified, the objects will be used to take the appearance only of the creatures and bring them into the scene.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlayCutscene" title="PlayCutscene">PlayCutscene</a>
+</p>

@@ -1,0 +1,49 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Constants from script.ldf"</h2>
+<p>The following 44 pages are in this category, out of 44 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY-eb87f3dc" title="ABILITY *">ABILITY *</a></li></ul></div><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constants">Boolean constants</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMBAT%20RESULT" title="COMBAT RESULT *">COMBAT RESULT *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND" title="COMMAND *">COMMAND *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND%20ADDBEHAVIOR" title="COMMAND ADDBEHAVIOR *">COMMAND ADDBEHAVIOR *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND%20PRIORITY%20INVALID" title="COMMAND PRIORITY INVALID">COMMAND PRIORITY INVALID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND%20RESULT" title="COMMAND RESULT *">COMMAND RESULT *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMMAND%20TYPE" title="COMMAND TYPE *">COMMAND TYPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20TYPE" title="CREATURE TYPE *">CREATURE TYPE *</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEATHBLOW" title="DEATHBLOW *">DEATHBLOW *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DIRECTION" title="DIRECTION*">DIRECTION*</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20DURATION%20TYPE" title="EFFECT DURATION TYPE *">EFFECT DURATION TYPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20FLAG" title="EFFECT FLAG *">EFFECT FLAG *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EFFECT%20TYPE" title="EFFECT TYPE *">EFFECT TYPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE" title="EVENT TYPE *">EVENT TYPE *</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FLOATY" title="FLOATY *">FLOATY *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FOLLOWER%20STATE" title="FOLLOWER STATE *">FOLLOWER STATE *</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GAME%20PLOT%20ASSIST" title="GAME PLOT ASSIST *">GAME PLOT ASSIST *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GENDER" title="GENDER *">GENDER *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GET%20ITEMS%20OPTION" title="GET ITEMS OPTION *">GET ITEMS OPTION *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GM" title="GM *">GM *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GUI" title="GUI *">GUI *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GUI%20HIGHLIGHT" title="GUI HIGHLIGHT *">GUI HIGHLIGHT *</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/INVALID%20WEAPON%20SET" title="INVALID WEAPON SET">INVALID WEAPON SET</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/INVENTORY%20SLOT" title="INVENTORY SLOT *">INVENTORY SLOT *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IS%20PRC" title="IS PRC *">IS PRC *</a></li></ul></div><div class="mw-category-group"><h3>L</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/LOG%20CHANNEL" title="LOG CHANNEL *">LOG CHANNEL *</a></li></ul></div><div class="mw-category-group"><h3>O</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20TYPE" title="OBJECT TYPE *">OBJECT TYPE *</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PI" title="PI">PI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLACEABLE%20ACTION" title="PLACEABLE ACTION *">PLACEABLE ACTION *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLACEABLE%20TYPE" title="PLACEABLE TYPE *">PLACEABLE TYPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLATFORM" title="PLATFORM *">PLATFORM *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PP%20GUI%20STATUS" title="PP GUI STATUS *">PP GUI STATUS *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROJECTILE%20TARGET" title="PROJECTILE TARGET*">PROJECTILE TARGET*</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY" title="PROPERTY *">PROPERTY *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20TYPE" title="PROPERTY TYPE *">PROPERTY TYPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20VALUE" title="PROPERTY VALUE *">PROPERTY VALUE *</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RESISTANCE%20CHECK" title="RESISTANCE CHECK *">RESISTANCE CHECK *</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SHAPE" title="SHAPE *">SHAPE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SLanguage" title="SLanguage">SLanguage</a></li></ul></div><div class="mw-category-group"><h3>V</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VARIABLE%20TYPE" title="VARIABLE TYPE *">VARIABLE TYPE *</a></li></ul></div><div class="mw-category-group"><h3>W</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WEAPONSTYLE" title="WEAPONSTYLE *">WEAPONSTYLE *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WM%20GUI%20STATUS" title="WM GUI STATUS *">WM GUI STATUS *</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WM%20LOCATION" title="WM LOCATION *">WM LOCATION *</a></li></ul></div></div></div>
+</div></div>

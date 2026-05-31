@@ -1,0 +1,47 @@
+<p>Does anybody know how to get rid of the default grey portrait and create new ones for the followers?
+</p>
+<h2><span class="mw-headline" id="CUSTOMIZED_FOLLOWER.E2.80.99S_PORTRAIT_FOR_DRAGON_AGE_ORIGINS_PERSONAL_CAIMPAINGNS">CUSTOMIZED FOLLOWER’S PORTRAIT FOR DRAGON AGE ORIGINS PERSONAL CAIMPAINGNS</span></h2>
+<p>This tutorial was developed to help users of Dragon Age Origins Toolset to customize the portraits used by player’s followers in Personal Campaigns.
+</p><p>We recommend extra care when using this guide, since it will be necessary to change some core files used by the game engine and there is no scripts assigned to customize them. We don’t want to mess things up, right?
+</p><p><b>1 – Find the necessary files</b>
+</p><p>First you have to locate the file <i>Portrait.xls</i>. Probably it will be found at <i>Program Files/Dragon Age/Tools/Source/2DA</i>.
+</p><p>The <i>Portrait.xls</i> file columns are:
+</p><p>A – ID – A referenced line use by game engine as a key identification of the line;
+</p><p>B – Label – The name of the follower as it is seen in the game. Ex: <i>Alistair</i>;
+</p><p>C – Tag – The creature tag used by the game to identify the follower.  Is it typed at the tag field when the creature is created at <i>DAO Toolset</i>. Remember to look up for how to create a new creature at some other tutorials at this wiki;
+</p><p>D to O – These are the same variables to the choices you have at the Character Creator when creating a new player.
+</p><p>Then you have to locate <i>ExcelProcessor</i>. This file is necessary to transform the <i>xls</i> file into a binary one that can be used by the game.
+</p><p>It must be located at <i>Program Files/Dragom Age/Tools/ResouceBild/Processors</i>.
+</p><p>Finally, we also will need the file <i>2da.erf</i>, at <i>Program Files/Dragom Age/Packaes/Core/Data</i>. 
+</p><p>This file will tell the game engine where to find the parameters for the follower’s portraits.
+</p><p><b>2 – Prepare custom files</b>
+</p><p>You have to choose the parameters for your player’s followers’ portraits.
+</p><p>To do this, just add new lines at the portrait spreadsheet. Be careful not to override any of the existing lines to avoid problems at the game play through.
+</p><p>It is recommended that you make a copy of the original <i>Portrati.xls</i> file, just in case.
+</p><p>The last ID used is 43. So you can choose ID 44 for the first follower.  Try to use names different from the names listed at this spreadsheet for the columns B and C and copy the values of the others columns to the line of the new follower.
+</p><p>Pay attention to the names of the common characters to duplicate the parameters that suits you follower the best. Also feel free to try new combinations.
+</p><p>It is possible that the OS will not allow you to save the spreadsheet at this folder. If so, copy the <i>Portrait.xls</i> to another folder that you can write at.
+</p><p>Now it is time to transform the <i>XLS</i> file into binary <i>GDA</i>. You will need the <i>ExcelProcessor</i> to do so.
+</p><p>If you are having problems to save your custom files, it is recommended that you make a copy of the <i>ExcelProcessor</i> to the same folder you made a copy of the <i>Protrati.xls</i>.
+</p><p>To create the GDA file, just hold and drag the <i>XLS</i> file over the <i>ExcelProcessor</i> at windows explorer (if you are using Windows OS).
+</p><p>A copy of the <i>Portrait.xls</i> file will be made with <i>GDA</i> extension.
+</p><p>If your system firewall asks for permitions, please do so.
+</p><p><b>3 – Update the portrait at DAO Toolset</b>
+</p><p>That is the part you should be “extra extra” careful.
+</p><p>Make a copy of the <i>2DA.erf</i>, so you can restore things if something goes wrong.
+</p><p>Open toolset and chose <i>File -&gt; Open File</i>.
+</p><p>Look for the folder <i>Program Files/Dragom Age/Packaes/Core/Data</i> and click at<i> 2DA.erf</i> file to open it.
+You will be able to locate the line Portrait.GDA.
+</p><p>Right click over this line and chose the option <i>Insert Resource</i>. It will open the explorer window, so you can upload your customized <i>Portrait.gda</i> file into the game.
+</p><p>When you select your file, a warning message will alert you that the core file will be replaced. Confirm that and the parameters you have just created four you own followers will be available at your personal campaign.
+</p><p>Thanks to Bioware Solcial Foruns to help me build this tutorial. I hope you find it useful.
+</p><p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="GOT_AN_IDEA"><b>GOT AN IDEA</b></span></h2>
+<p>Hello, I'm Gisle Aune and I did not wirte anything above this, but had an idea to make it simpler and avoid possible conflicts or overwrite original 2DAs. I have tested this and it worked.
+</p><p>Locate and find the Portraits.xls and copy it, remove every row except for default and make your own row(s), remember to use an unique ID. I recommend going in game and make a similiar character and tweak the portrait there, and take a screenshot and copy the values of the screenshot.
+</p><p>When you are ready, run the .xls file through excel processor and move it into documents/bioware/addons/your mod(module/override/
+</p><p>Now, it is done, you don't have to do anything to the 2da.erf file.
+</p><p>You can try to use the partypicker files as well if you want to try animations when hiring followers.
+</p>

@@ -1,0 +1,187 @@
+<p>The <strong class="selflink">Properties 2da</strong> defines core properties for the game.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>98</b>.  It can be extended by m2da fragments which have names starting with <b>properties</b>.  It has not been assigned a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_*</a> constant.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> Stat
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Human Readable statname. Spaces are not allowed in these strings
+</td></tr>
+<tr>
+<th> Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> SIMPLE, ATTRIBUTE, DEPLETABLE
+</td></tr>
+<tr>
+<th> Min
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Minimum value possible
+</td></tr>
+<tr>
+<th> Max
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Maximum value possible
+</td></tr>
+<tr>
+<th> UIMapping
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 1 - Base resistances</li>
+<li> 2 - (deprecated)</li>
+<li> 3 - Elemental (%) resistances</li></ul>
+</td></tr>
+<tr>
+<th> NameStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> NameLowerStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DescStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Desc2StrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> ID of string to be displayed when hovering over the numerical values of the attributes in the character sheet. Contains detailed and technical text that explains the effects of these stats. Only necessary for rows 4 - 9 (i.e. Strength, Dexterity, Willpower, Magic, Cunning, and Constitution)
+</td></tr>
+<tr>
+<th> NonCombatEffect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CombatEffect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> EngineLink
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> See <a href="#Remarks">#Remarks</a> below:
+<ul><li> 0 - DerivedDefault: No modification of stats</li>
+<li> 1 - DerivedAttack: Each point of STR and DEX above 10 adds 0.5 attack</li>
+<li> 2 - DerivedDefense: Each point of DEX above 10 adds 1.0 defence</li>
+<li> 3 - DerivedArmor: No special interaction</li>
+<li> 4 - DerivedAP: Each point of CUN above 10 adds (1/7) points of AP</li>
+<li> 5 - DerivedSpellPower: Each point of MAG above 10 adds 1.0 Spellpower</li>
+<li> 6 - DerivedHealth: Each point of CON above 10 adds 5 points of health</li>
+<li> 7 - DerivedManaStamina: Each point of WIL above 10 adds 5 points of Mana/Stamina</li>
+<li> 8 - DerivedResistanceMental: Each mental attribute point above 10 adds 0.5 Mental Resistance</li>
+<li> 9 - DerivedResistancePhysical: Each physical attribute above 10 adds 0.5 Physical Resistance</li></ul>
+</td></tr>
+<tr>
+<th> ToolsetName
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bShowInToolset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Constant
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bShowInPartyPicker
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Precision
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Number of digits to display after the decimal place.
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Depletable properties will be updated by their "combat" value every 2 seconds and their "non-combat" value every 5 seconds.
+</p><p>Eclipse engine code for the <b>EngineLink</b> column:
+</p><p>&lt;cpp&gt;
+// DerivedDefault: No modification of stats
+return 0;
+</p><p>// DerivedAttack: Each point of STR and DEX above 10 adds 0.5 attack
+return (FLOAT32) (max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_STRENGTH)    - 10) / 2.0 , 0.0) +
+</p>
+<pre>                 max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_DEXTERITY)   - 10) / 2.0 , 0.0));
+</pre>
+<p>// DerivedDefense: Each point of DEX above 10 adds 1.0 defence
+return (FLOAT32) max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_DEXTERITY)    - 10), 0.0);
+</p><p>// DerivedArmor: No special interaction
+return 0;
+</p><p>// DerivedAP: Each point of CUN above 10 adds (1/7) points of AP
+return (FLOAT32) max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_CUNNING)      - 10), 0.0) / 7;
+</p><p>// DerivedSpellPower: Each point of MAG above 10 adds 1.0 Spellpower
+return (FLOAT32) max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_MAGIC)        - 10), 0.0);
+</p><p>// DerivedHealth: Each point of CON above 10 adds 5 points of health
+return (FLOAT32) max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_CONSTITUTION) - 10), 0.0) * 5;
+</p><p>// DerivedManaStamina: Each point of WIL above 10 adds 5 points of Mana/Stamina
+return (FLOAT32) max((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_WILLPOWER)    - 10), 0.0) * 5;
+</p><p>// DerivedResistanceMental: Each mental attribute point above 10 adds 0.5 Mental Resistance
+return (FLOAT32)    ((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_MAGIC)        - 10) +
+</p>
+<pre>                    (cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_WILLPOWER)    - 10) + 
+                    (cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_INTELLIGENCE) - 10)) / 2.0;          
+</pre>
+<p>// DerivedResistancePhysical: Each physical attribute above 10 adds 0.5 Physical Resistance
+return (FLOAT32)   ((cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_STRENGTH)      - 10) +
+</p>
+<pre>                   (cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_CONSTITUTION)  - 10) + 
+                   (cPropertiesList.GetValue(PROPERTY_ATTRIBUTE_DEXTERITY)     - 10)) / 2.0;          
+</pre>
+<p>&lt;/cpp&gt;
+</p>

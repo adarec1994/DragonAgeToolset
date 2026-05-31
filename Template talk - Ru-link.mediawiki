@@ -1,0 +1,2 @@
+<p>Убрал форматирование ''' и '', так-как в жирном или написанном курсивом тексте, они выполняют роль открывающих и закрывающих тегов, в результате чего ссылка становится "нежирной" в жирном и "некурсивом" в курсиве. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a>
+</p>

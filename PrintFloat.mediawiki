@@ -1,0 +1,23 @@
+<p>Prints a float to the log file.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> PrintFloat(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fFloat,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nWidth&#160;= 18,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDecimals&#160;= 9,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPrepend&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fFloat<dd>The float value to print out to the log<dt style="font-weight:normal; font-style:italic;">nWidth<dd>The size of the value before the decimal. Must be a value between 0 and 18 inclusive<dt style="font-weight:normal; font-style:italic;">nDecimals<dd>The number of decimal places. Must be a value between 0 and 9 inclusive<dt style="font-weight:normal; font-style:italic;">bPrepend<dd>Specifies if the type of value should be prepended on to the log string
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Prints the float fFloat to the log file based on the nWidth and nDecimal specifications.
+If bPrepend is TRUE, then 'PRINTFLOAT' will be prepended onto the text outputted to the
+log file.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintInteger" title="PrintInteger">PrintInteger</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintString" title="PrintString">PrintString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintObject" title="PrintObject">PrintObject</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintVector" title="PrintVector">PrintVector</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog" title="PrintToLog">PrintToLog</a>
+</p>

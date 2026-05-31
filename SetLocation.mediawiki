@@ -1,0 +1,23 @@
+<p>Sets the location of the specified object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetLocation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLocation<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object to set the location of<dt style="font-weight:normal; font-style:italic;">lLocation<dd>the location to set the object to
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function sets the location of the specified object.
+If another area is specified, the object will be moved. However it should be
+noted that moving an object in this manner is inherently unsafe as the target
+location might not be a "safe" location.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Moving an object to another area via this function should probably be discouraged. Use of the JumpToPoint or JumpToObject commands would be much safer.
+</p>

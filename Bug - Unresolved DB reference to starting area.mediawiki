@@ -1,0 +1,10 @@
+<ul><li><b>Toolset verion:</b> 1.0.1008.0</li>
+<li><b>Game version:</b> 1.02a </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>I don't know how or when this happened, but in the module's "Starting Area", instead of my area's tag, I had a DB URL instead. E.g., bw-db://.\BWDATOOLSET/bw_dragonage_content?resrefid=21717. I've only seen this happen when inspecting other modules I haven't loaded yet.
+</p><p>This is an issue because it prevented a new campaign.cif file from being generated (I was trying to figure out why my module script wasn't getting changed from module_core - this was why). During export you get the error: <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Export%20error" title="Export error">Could not get starting areas resource information</a>.</i> and the warning <i>Some resources failed their post processing.  Please see below for more details.</i>
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Open your module properties, click the "Starting Area" and find your area again in the file-chooser dialog.
+</p>

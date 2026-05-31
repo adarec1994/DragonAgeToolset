@@ -1,0 +1,266 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>2DAs</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/2DA/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Многие из свойств объектов в тулсете ссылаются на таблицы 2DA, которые содержат различные данные игры и используются при написании скриптом и движком самой игры. Каждый 2DA является простой коллекцией строк и чисел. Функция, которую выполняет определённый 2DA, зависит от того, как он используется другими системами в игре.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9E.D0.B1.D0.B7.D0.BE.D1.80_.E2.80.93_.D1.87.D1.82.D0.BE_.D1.82.D0.B0.D0.BA.D0.BE.D0.B5_2DA.3F"><span class="tocnumber">1</span> <span class="toctext">Обзор – что такое 2DA?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A4.D0.BE.D1.80.D0.BC.D0.B0.D1.82_.D1.82.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D1.8B_Excel"><span class="tocnumber">2</span> <span class="toctext">Формат таблицы Excel</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.A0.D0.B5.D0.BA.D0.BE.D0.BC.D0.B5.D0.BD.D0.B4.D0.B0.D1.86.D0.B8.D0.B8"><span class="tocnumber">2.1</span> <span class="toctext">Рекомендации</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A0.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.B3.D1.80.D1.8B_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_M2DA"><span class="tocnumber">3</span> <span class="toctext">Расширение игры с помощью M2DA</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.97.D0.B0.D1.80.D0.B5.D0.B7.D0.B5.D1.80.D0.B2.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B4.D0.B8.D0.B0.D0.BF.D0.B0.D0.B7.D0.BE.D0.BD.D1.8B_ID_.D0.B8_.D0.BF.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D1.82.D1.80.D0.BE.D0.BA"><span class="tocnumber">3.1</span> <span class="toctext">Зарезервированные диапазоны ID и переопределение существующих строк</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.9F.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B_.D1.81_M2DA"><span class="tocnumber">3.2</span> <span class="toctext">Проблемы с M2DA</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#2DA_XLS_.D1.84.D0.B0.D0.B9.D0.BB.D1.8B.2C_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D0.B2_Dragon_Age"><span class="tocnumber">4</span> <span class="toctext">2DA XLS файлы, используемые в Dragon Age</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A2.D0.B5.D0.BC.2C_.D0.BA.D1.82.D0.BE_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D0.B5.D1.82_Open_Office"><span class="tocnumber">5</span> <span class="toctext">Тем, кто использует Open Office</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Adding_Strings"><span class="tocnumber">6</span> <span class="toctext">Adding Strings</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D1.81.D0.BA.D0.B8.D1.85_2DA_.D0.BF.D1.80.D0.B8_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.B5_.D1.81_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.BE.D0.BC"><span class="tocnumber">7</span> <span class="toctext">Использование пользовательских 2DA при работе с тулсетом</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.A2.D0.B0.D0.BA.D0.B6.D0.B5_.D1.81.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5"><span class="tocnumber">8</span> <span class="toctext">Также смотрите</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D0.B7.D0.BE.D1.80_.E2.80.93_.D1.87.D1.82.D0.BE_.D1.82.D0.B0.D0.BA.D0.BE.D0.B5_2DA.3F">Обзор – что такое 2DA?</span></h2>
+<p>2DA содержит ряд столбцов, каждый из которых имеет определённое название и определённый тип данных. Для примера, в <b>ABI_Base</b> есть столбец, который называется <b>namestrref</b> и тип данных <b>int</b>. Это означает, что данные, которые хранятся в этом столбце, имеют целочисленный тип и могут быть получены при обращении к 2DA с указанием столбца <b>namestrref</b>. Количество и тип столбцов в 2DA обычно никогда не изменяются. Столбцы представляют структуру 2DA, которая позволяет последовательно обращаться к нему. Первый столбец каждого 2DA называется <b>ID</b> и всегда имеет тип <b>integer</b>. Этот столбец используется для уникальной идентификации строк в 2DA.
+</p><p>Строки 2DA содержат всю информацию, хранящуюся в нём. Каждая ячейка строки имеет название и тип данных, которые определены в первых двух строках 2DA, но данные, содержащиеся в них, могут быть разными. Лёгким и доступным способом расширения 2DA является добавление новых строк, для этого надо добавить строку, указать уникальный номер в столбце <b>ID</b> и заполнить ячейки строки в соответствии с вашими потребностями. Присвоенный строке номер никогда не должен изменяться. Игра также имеет удобный механизм <b>M2DA</b>, с помощью которого можно расширить 2DA не редактируя основной 2DA(более подробно рассказано ниже).
+</p><p>Некоторые 2DA ссылаются на строки в других 2DA. Для примера, в <b>ABI_Base</b> есть столбец, именуемый <b>projectile</b>, ячейки которого ссылаются на строки в <b>PRJ_Base 2DA</b>. Эти отношения определяются только в скриптах, использующих 2DA, а не являются непосредственно встроенными в него, таким образом отслеживать эти связи нужно самостоятельно.
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D0.BE.D1.80.D0.BC.D0.B0.D1.82_.D1.82.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D1.8B_Excel">Формат таблицы Excel</span></h2>
+<p>Исходными файлами для 2DA являются рабочие листы Microsoft Excel. Это позволяет использовать сложные методы при задании значений для ячеек 2DA, такие как формулы и макросы. Это также делает редактирование 2DA достаточно удобным и простым, так как позволяет использовать аннотации к ячейкам и их форматирование, а связанные листы могут быть объединены в один файл. Прежде чем использоваться игрой или тулсетом, 2DA должны быть скомпилированы из файлов Excel в формат, понимаемый ими. После компиляции файла Excel каждый его рабочий лист преобразуется в файл с расширением <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA%20-%20ru" title="GDA/ru">.GDA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">(en)</a></i>.
+</p><p>Более полную информацию о способах компиляции и месте размещения GDA-файлов вы найдёте по ссылке <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru" title="Compiling 2DAs/ru">Преобразование 2DA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">(en)</a></i>.
+</p>
+<table border="2" cellpadding="5" cellspacing="0" width="700pt">
+<caption> <b>Пример рабочего листа "Monsters"</b>
+</caption>
+<tr>
+<td width="30pt" style="background-color:#808080"><b>ID</b>
+</td>
+<td width="30pt" style="background-color:#AFAFAF"><b>Label</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Strenght</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Name</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>ResourceExample</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Scale</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>disabled</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Commentexample</b>
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF"><i><b>int</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>string</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>int</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>string</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>resource</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>float</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>bool</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>comment</b></i>
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF">0
+</td>
+<td>INVALID
+</td>
+<td>****
+</td>
+<td>sometimes
+</td>
+<td>bioware said
+</td>
+<td>****
+</td>
+<td>****
+</td>
+<td>i stay unused
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF">1
+</td>
+<td>Evilmonster1
+</td>
+<td>23
+</td>
+<td>Abomination
+</td>
+<td>prp_barrel01
+</td>
+<td>1,0
+</td>
+<td>0
+</td>
+<td>totally evil
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF">2
+</td>
+<td>Evilmonster2
+</td>
+<td>34
+</td>
+<td>Shriek
+</td>
+<td>prp_bucket_01
+</td>
+<td>1,0
+</td>
+<td>1
+</td>
+<td>very bad
+</td></tr></table>
+<p>Данные в 2DA идентифицируются по номеру (столбец <b>ID</b>) строки, первая строка с ID равным 0 зарезервирована для внутреннего использования (неопределённые, неверные данные и т.д.). Каждый ряд имеет произвольное количество столбцов, идентифицируемых по названию. Серые поля в данном примере являются определяющими для 2DA, в белых полях могут храниться любые произвольные данные, которые движок игры идентифицирует для этого 2DA.
+</p><p>ID строки – это ссылка для игры, по которой она осуществляет доступ и связь с данными. Как таковые они должны быть уникальны как для 2DA, так и для расширяющего его M2DA. 
+</p><p>Содержание каждого столбца может быть произвольным, но иметь тип данных, определяемый 2DA. Когда 2DA расширяется, присваиваются новые ID, но количество столбцов и тип данных в них должны оставаться такими, как и в исходном 2DA.
+</p>
+<h3><span class="mw-headline" id=".D0.A0.D0.B5.D0.BA.D0.BE.D0.BC.D0.B5.D0.BD.D0.B4.D0.B0.D1.86.D0.B8.D0.B8">Рекомендации</span></h3>
+<ul><li>Ячейка <b>A1</b> должна содержать "ID". Это проверяется процессором при компиляции и если это не так, то компиляция потерпит неудачу.</li>
+<li>Столбец <b>A</b>, начиная с третьей строки, содержат ID строки, который должен быть уникален для данного 2DA (кроме случаев использования M2DA). Строки должны быть перечислены по ID от меньшего к большему, но необязательно в прямой последовательности.</li>
+<li>Пустая строка или столбец указывает на окончание таблицы и всё лежащее за ними будет проигнорировано.</li>
+<li>Наименования столбцов регистрозависимы. Это связано с алгоритмом CRC32, используемым для хэш-ключа. Изменение регистра названия столбца после его использования может повредить игру. Пробелы до и после наименования – удаляются.</li>
+<li>Вторая строка обязательно должна быть строкой, содержащей сведения о типе данных в столбцах. Причём – одним словом: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a> (single chars as well), <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a> или <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>. Специальный тип "<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>" может использоваться, чтобы исключить колонку при компиляции.</li>
+<li>Любой столбец, который используется для ссылки на файл, должен иметь тип "resource" а не "string".</li>
+<li>Тип «bool» может иметь одно значение из: ноль или не ноль, Yes или No (регистрозависимо), или слова, начинающиеся на T или F (такие как True! и False!). ВНИМАНИЕ: Нельзя использовать слова <b>TRUE</b> и <b>FALSE</b>, потому что Excel посчитает их своими зарезервированными словами. Также обратите внимание на то, что язык скриптов, используемый в 2DA  не умеет извлекать из 2DA логические значения и поведение игры может быть непредсказуемым. При написании скриптов более безопасно будет использовать целочисленные значения (ноль или не ноль).</li>
+<li>Если вы хотите оставить ячейку не заполненной, то вместо значения вы можете вставить четыре звёздочки "****".</li>
+<li>Any worksheets that are not exportable 2DA data will have an underscore prepended to their name - the resource builder will subsequently ignore them.</li>
+<li>Рабочие листы в 2DA должны иметь уникальное имя, так как при компиляции создаваемые файлы с одинаковыми именами будут переписаны.</li>
+<li>Во время преобразования таблицы открывать нельзя.</li>
+<li>Строковые значения имеют ограничения в 768 символов. Остальное будет урезано.</li>
+<li>ExcelProcessor.exe ограничивает название рабочего листа 27 символами.</li></ul>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8.D0.B3.D1.80.D1.8B_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_M2DA">Расширение игры с помощью M2DA</span></h2>
+<table border="2" cellpadding="5" cellspacing="0" width="700pt">
+<caption> <b>Пример рабочего листа "MonstersCustom"</b>
+</caption>
+<tr>
+<td width="30pt" style="background-color:#808080"><b>ID</b>
+</td>
+<td width="30pt" style="background-color:#AFAFAF"><b>Label</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Strenght</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Name</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>ResourceExample</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Scale</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>disabled</b>
+</td>
+<td width="50pt" style="background-color:#AFAFAF"><b>Commentexample</b>
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF"><i><b>int</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>string</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>int</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>string</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>resource</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>float</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>bool</b></i>
+</td>
+<td style="background-color:#AFAFAF"><i><b>comment</b></i>
+</td></tr>
+<tr>
+<td style="background-color:#AFAFAF">2300000
+</td>
+<td>Evilmonster3
+</td>
+<td>32
+</td>
+<td>Wolf
+</td>
+<td>c_wolfa
+</td>
+<td>1,0
+</td>
+<td>0
+</td>
+<td>New Monster
+</td></tr></table>
+<p>"M2DA" это "Multiple 2DA", что на русский можно перевести как "Составные 2DA", представляет собой комплект нескольких 2DA, объединённых в одну таблицу. Принцип работы у них такой же как и у 2DA, с тем отличием, что они могут исправляться или дополняться путём добавления ещё одного 2DA. Это значит, что с помощью M2DA можно отредактировать имеющиеся, либо добавить новые ресурсы, <b>не изменяя основных 2DA</b>, а полезность такой возможности переоценить трудно. 2DA в системе M2DA объединены построчно, используя столбец <b>ID</b> в качестве ключевого поля.
+</p><p>Для сторонних мододелов очень важно то, что официальные обновления могут привести к перезаписи любых изменений в 2DA, ими внесённых. Именно поэтому стоит использовать M2DA с уникальными именем и ID. Используемый в M2DA диапазон ID должен отличаться от биоваровских и используемых другими мододелами. 
+</p><p>Все M2DA, используемые в игре, перечислены в <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls%20-%20ru" title="2DA base.xls/ru (page does not exist)">Базе M2DA</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">(en)</a></i>. Игра распознаёт в качестве M2DA только те 2DA, ID которых находятся вне диапазона от 10000 до 10999, 2DA, расположенные в этом диапазоне являются обычными и не подлежат расширению. Каждый M2DA в этом файле имеет краткое описание, определяющее круг его применения и префикс, с которого должны именоваться рабочие листы Excel. Игра считывает этот префикс, ищет M2DA, чьи названия начинаются с этого префикса и объединяет их всех в один большой 2DA.
+</p><p>Для примера: M2DA ID 0 это "ANIM_". Система просматривает список доступных 2DA и обнаруживает "ANIM_base", "ANIM_combat" и "ANIM_walk". Они считываются и объединяются в M2DA, называемый "ANIM_".
+</p><p><b>Обратите внимание</b> M2DA_base также является M2DA  и может быть расширен тем же способом.
+</p>
+<ul><li><i>В вышеприведённом примере 2DA "MonstersCustom" будет объединён с оригинальным 2DA "Monsters", если "Monsters" был перечислен в M2DA_base.</i></li></ul>
+<h3><span class="mw-headline" id=".D0.97.D0.B0.D1.80.D0.B5.D0.B7.D0.B5.D1.80.D0.B2.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B4.D0.B8.D0.B0.D0.BF.D0.B0.D0.B7.D0.BE.D0.BD.D1.8B_ID_.D0.B8_.D0.BF.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D1.82.D1.80.D0.BE.D0.BA">Зарезервированные диапазоны ID и переопределение существующих строк</span></h3>
+<p>Хотя M2DA и позволяют избежать некоторых проблем, связанных с использованием обычных 2DA, идентификаторы всех 2DA, объединённых в один M2DA, должны быть уникальными. 
+</p><p>Использование существующего ID позволит вам переопределить данные исходной строки, которой принадлежит используемый ID. Такая возможность и позволяет изменить существующий контент без редактирования исходных 2DA.
+</p><p>Для обеспечения совместимости с модами сторонних авторов постарайтесь, чтобы ваши диапазоны ID не вступали в конфликт с используемыми другими авторами. Проверить это вы можете по ссылке - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use%20-%20ru" title="2DA ranges in use/ru (page does not exist)">Используемые диапазоны ID</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use" title="2DA ranges in use">(en)</a></i>. Также проверьте уникальность префиксов, используемых в ваших модах. Сделать это вы можете по ссылке - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Prefixes%20in%20use%20-%20ru" title="Prefixes in use/ru (page does not exist)">Используемые префиксы</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Prefixes%20in%20use" title="Prefixes in use">(en)</a></i>.
+</p><p><br />
+Информацию о том, где должны располагаться готовые M2DA, ищите по следующей ссылке - <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru#Afterwards" title="Compiling 2DAs/ru">Преобразование 2DA(Заметки)</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs#Afterwards" title="Compiling 2DAs">(en)</a></i>.
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D1.8B_.D1.81_M2DA">Проблемы с M2DA</span></h3>
+<p>Стоит отметить, что в настоящее время есть ошибка с некоторыми M2DA, в которых имеются ID выше 255. Известно, что такая проблема есть у 2DA, связанных с <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls%20-%20ru" title="ItemVariations.xls/ru (page does not exist)">ItemVariations.xls/ru</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">(en)</a></i>. Смотрите <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game%20-%20ru" title="Bug: High M2DA ID ranges might work in the toolset, but not in game/ru (page does not exist)">Информация об ошибке</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game" title="Bug: High M2DA ID ranges might work in the toolset, but not in game">(en)</a></i> для получения большей информации.
+</p>
+<h2><span class="mw-headline" id="2DA_XLS_.D1.84.D0.B0.D0.B9.D0.BB.D1.8B.2C_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D0.B2_Dragon_Age">2DA XLS файлы, используемые в Dragon Age</span></h2>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%202DA%20XLS%20files%20-%20ru" title="List of 2DA XLS files/ru (page does not exist)">Список 2DA таблиц</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%202DA%20XLS%20files" title="List of 2DA XLS files">(en)</a></i>
+</p><p>Исходные файлы, установленные вместе с игрой вы сможете найти по следующему пути:
+</p>
+<pre>&lt;Installdir&gt;\Dragon Age\tools\Source\2DA\</pre>
+<h2><span class="mw-headline" id=".D0.A2.D0.B5.D0.BC.2C_.D0.BA.D1.82.D0.BE_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D0.B5.D1.82_Open_Office">Тем, кто использует Open Office</span></h2>
+<ul><li> Users of Open Office may find that no .gda file is created when they use ExcelProcessor.exe - one workaround is to copy a worksheet from an existing .xls file (such as placeable_types from placeables.xls), process the file, then remove the extraneous .gda file (e.g. placeable_types.gda). Alternately, upload your .xls file to Google Docs and then download the file as Excel format, then process the file with ExcelProcessor.exe.</li>
+<li> When editing existing xls files, it also works to leave the format as standard while saving the file. Open Office asks to change the file to its own spreatsheet format when saving a format other then its own, don't change the format and it should work. [Edit- And yet it doesn't seem to.]</li>
+<li> It is seemingly better at this time to simply use <a rel="nofollow" class="external text" href="http://docs.google.com">Google Docs</a> instead as a free alternative, as Open Office will truncate floating point values in certain XLS files when compiled into a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a>, while seemingly not in others. This can lead to unpredictable behavior, such as the game crashing when extending <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR_base.xls</a> while all appears normal in the toolset. (Possibly this was just a result of adding an extraneous space to a cell.)</li></ul>
+<h2><span class="mw-headline" id="Adding_Strings">Adding Strings</span></h2>
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<p>When adding strings to a 2DA, you have two options.  The simplest is to enter **** for the StringID column.  In that case, the name column will be used in the game.
+</p><p>The other approach is to use the toolset's string editor to create a new string.  When that happens, you'll get a new StringID. Next enter that number into the StringID column in the 2DA.
+</p><p>The second approach works better when translating your module, at the cost of portability.  If someone else wanted to reuse your 2DA, they'd have to generate their own strings, then update the StringID number based on these IDs.
+</p><p><b>Attention:</b>
+</p>
+<ul><li> The current version of the "ExelProcessor"-App is buggy as it can't hanlde INT values above 8388607! Many thanks to elys for figuring that out.</li>
+<li> Also note that the original toolset (v1.0) core-talktable contains wrong ids as well - don't forget to delete it from the "packages\core\override\toolsetexport" directory if you are still using that version.</li></ul>
+<p><b>Workaround:</b>
+</p>
+<ul><li> Create and export your talktable, delete the core-talktable override.</li>
+<li> Create your M2DA File that you want to refer to your talk-table strings. Never Mind using the real IDs at this stage.</li>
+<li> Use the "Exelprocessor" to create the GDA file.</li>
+<li> Open the GDA-File with the toolset or elys's GDA-Editor App (<a rel="nofollow" class="external free" href="http://social.bioware.com/project/755/">http://social.bioware.com/project/755/</a>)</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Edit-GDA-Values.jpg"><img alt="Edit-GDA-Values.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Edit-GDA-Values.jpg" width="800" height="564" /></a>
+</p>
+<ul><li> Change the StringIDs to the StringIDs in your talktable.</li></ul>
+<p><b>Remark:</b> 
+</p><p>The previous Version stated: <i>Take that StringID and add 16777216 to the number.</i> this appears to be wrong and is likely a holdover from NWN.
+</p>
+<h2><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D1.81.D0.BA.D0.B8.D1.85_2DA_.D0.BF.D1.80.D0.B8_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.B5_.D1.81_.D1.82.D1.83.D0.BB.D1.81.D0.B5.D1.82.D0.BE.D0.BC">Использование пользовательских 2DA при работе с тулсетом</span></h2>
+<p>Некоторые 2DA используются при работе с тулсетом, например 2DA, в которых перечислены существа, награды за выполненные задания.
+</p><p>Скомпилированные 2DA необходимо расположить в папке экспорта вашего модуля и тогда, при следующем запуске тулсета, вы сможете использовать их
+</p>
+<h2><span class="mw-headline" id=".D0.A2.D0.B0.D0.BA.D0.B6.D0.B5_.D1.81.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5">Также смотрите</span></h2>
+<ul><li><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility%20-%20ru" title="Compatibility/ru">Совместимость</a></b> <i><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">(en)</a></i></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

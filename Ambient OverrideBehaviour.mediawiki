@@ -1,0 +1,17 @@
+<p>Overrides a creature's predefined ambient behaviour.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Ambient_OverrideBehaviour(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAnimPattern,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fAnimFreq,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nOverrideCount<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The creature performing the ambient behaviour.<dt style="font-weight:normal; font-style:italic;">nAnimPattern<dd>The override animation pattern (index into <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20ai.xls" title="Ambient ai.xls">ambient_ai.xls</a>).<dt style="font-weight:normal; font-style:italic;">fAnimFreq<dd>The override animation frequency.<dt style="font-weight:normal; font-style:italic;">nOverrideCount<dd>The number of times the override animation pattern is to be played (-1 for infinite).
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Overrides the ambient behaviour animation pattern and animation frequency defined by the creature template. -1.0 to play all animations in order
+</p>

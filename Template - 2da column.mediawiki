@@ -1,0 +1,92 @@
+<p>This template set includes the following templates:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20start" title="Template:2da start">Template:2da start</a></li>
+<li><strong class="selflink">Template:2da column</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20end" title="Template:2da end">Template:2da end</a></li></ul>
+<p>It's intended to allow quick and easy creation of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> description tables for documentation purposes. Note that although the 2da column template is called "column", it actually produces rows in the formatted table. this is due to the fact that the Excel source documents for 2DAs are organized by column.
+</p><p>You should omit the "ID" column that all 2DAs have by default, this is added automatically by the 2da start template. You should add the name of the 2da's worksheet to the 2da start template; the worksheet name is what the resulting 2da file will be named after.
+</p><p>For exmample, the following set of templates:
+</p>
+<pre>
+{{2da start  | ANIM_base}}
+{{2da column | LABEL | string | name of the model }}
+{{2da column | bHasAppearAnim | int | 0: Creature has no default appear animation &lt;br/&gt;1: Creature DOES have a default appear animation}}
+{{2da end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  name of the model
+</td></tr>
+<tr>
+<th>  bHasAppearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0: Creature has no default appear animation <br />1: Creature DOES have a default appear animation
+</td></tr></table>
+<p>Alternately, you could use named parameters like so:
+</p>
+<pre>
+{{2da start
+|name        = ANIM_base}}
+{{2da column
+|name        = LABEL
+|type        = string
+|description = name of the model
+}}
+{{2da column
+|name        = bHasAppearAnim
+|type        = int
+|description = 0: Creature has no default appear animation &lt;br/&gt;1: Creature DOES have a default appear animation
+}}
+{{2da end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> name of the model
+</td></tr>
+<tr>
+<th> bHasAppearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> 0: Creature has no default appear animation <br />1: Creature DOES have a default appear animation
+</td></tr></table>

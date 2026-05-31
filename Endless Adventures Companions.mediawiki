@@ -1,0 +1,32 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endless%20Adventures%20Main%20Page" title="Endless Adventures Main Page">Endless Adventures Main Page</a>
+</p><p>This page lists all currently available Endless Adventures Companions.
+</p><p>Note: Modders should make sure to fill out as many parts of the template as they can, to make sure players aren't confused by the entry.
+</p>
+<h2><span class="mw-headline" id="Duncan">Duncan</span></h2>
+<p>Created by Jackkel Dragon
+</p><p><i>Disappointed by his minor role in the first Dragon Age game, Duncan has decided to sign on as a minor companion in a fan module for some extra screen time.</i>
+</p><p>Duncan
+</p>
+<ul><li>Male Human Rogue</li></ul>
+<p>A demo addin to make sure the companion template script worked properly. Go ahead and feel bad for Duncan; he was picked because of his popularity to be the demo character and thus has nothing to say.
+</p><p>Available at:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4771/">BSN Project Page</a></li></ul>
+<h2><span class="mw-headline" id="Template_Entry">Template Entry</span></h2>
+<p>Created by Module Author Name Here and 2nd Module Author Name Here
+</p><p><i>Character addin description in-game. Try to keep this under five lines.</i>
+</p><p>Character Name
+</p>
+<ul><li>Gender Race Class (Specialization)</li></ul>
+<p>Character Description. Try to keep this under five lines.
+</p><p>Download links ("Available at..."):
+</p>
+<ul><li> Site 1 Link</li>
+<li> Site 2 Link</li>
+<li> Please make sure there's no dangerous links here.</li>
+<li> DANexus and BSN are good hosting sites for DAO modules.</li>
+<li> You should only need 4-5 sites at maximum.</li></ul>
+<p>(Optional: Two screenshots of your module.)
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a2/EAP_JCKL_Poor_Conversation.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Poor%20Conversation.jpg" title="Enlarge"></a></div>Sample Screenshot 1</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:258px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg" width="256" height="144" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/88/EAP_JCKL_Defenders_of_the_Cheese.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20EAP%20JCKL%20Defenders%20of%20the%20Cheese.jpg" title="Enlarge"></a></div>Sample Screenshot 2</div></div></div>

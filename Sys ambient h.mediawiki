@@ -1,0 +1,49 @@
+<p>The Ambient System include file, <strong class="selflink">sys_ambient_h</strong>, is the implementation of the ambient behaviour system.
+</p><p>By default, ambient behaviour begins when a creature sees the player and ceases a short time after the party leaves the creature's sight. Ambient behaviour alternates between a movement phase and an animation phase. In a movement phase, the creature (optionally) moves to a new destination object. In an animation phase, the creature (optionally) performs one or more animations either in sequence or at random. Exact behaviour is controlled by local variables on the creature template (see below).
+</p><p>The actions comprising the animation pattern used in an animation phase are listed in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20ai.xls" title="Ambient ai.xls">ambient_ai.xls</a>. Each row defines an animation pattern consisting of up to nine actions. Each action is composed of an animation (left of the decimal) and loop count (right of decimal). For example, 619.05 will play a sleeping animation for 5 loops and 619.99 will loop infinitely. Non-looping animations require no loop count (e.g. 808.00 = point right).
+</p><p>The only functions safe to call outside <strong class="selflink">sys_ambient_h</strong> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20core" title="Creature core (page does not exist)">creature_core</a> are:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20Start" title="Ambient Start (page does not exist)">Ambient_Start</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20StartTeam" title="Ambient StartTeam (page does not exist)">Ambient_StartTeam</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20StartTag" title="Ambient StartTag (page does not exist)">Ambient_StartTag</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20Stop" title="Ambient Stop (page does not exist)">Ambient_Stop</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20OverrideBehaviour" title="Ambient OverrideBehaviour">Ambient_OverrideBehaviour</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20RestoreBehaviour" title="Ambient RestoreBehaviour (page does not exist)">Ambient_RestoreBehaviour</a></li></ul>
+<p>Local variables stored on the creature used by this script:
+</p>
+<ul><li> <code>AMBIENT_SYSTEM_STATE</code> = State bitmask of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMBIENT%20SYSTEM" title="AMBIENT SYSTEM *">AMBIENT_SYSTEM_*</a> values</li>
+<li> <code>AMBIENT_MOVE_PATTERN</code> = Ambient movement pattern constant <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMBIENT%20MOVE" title="AMBIENT MOVE *">AMBIENT_MOVE_*</a></li>
+<li> <code>AMBIENT_MOVE_PREFIX</code> = Prefix of ambient movement destination (waypoint or creature)</li>
+<li> <code>AMBIENT_ANIM_PATTERN</code> = Ambient animation pattern - index into <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20ai.xls" title="Ambient ai.xls">ambient_ai.xls</a></li>
+<li> <code>AMBIENT_ANIM_FREQ</code> = Animation frequency:</li></ul>
+<dl><dd> 0.0 = no animations</dd>
+<dd> -1.0 = play all in order</dd>
+<dd> x.y = play random number (between x and y) animations in random order</dd></dl>
+<ul><li> <code>AMBIENT_ANIM_PATTERN_OVERRIDE</code> = (Internal use) If non-zero, takes precedence over AMBIENT_ANIM_PATTERN</li>
+<li> <code>AMBIENT_ANIM_FREQ_OVERRIDE</code> = (Internal use) If non-zero, takes precedence over AMBIENT_ANIM_FRE</li>
+<li> <code>AMBIENT_ANIM_OVERRIDE_COUNT</code> = (Internal use) If non-zero, the number of times to play the override animation pattern before resuming the default animation pattern</li>
+<li> <code>AMBIENT_ANIM_STATE</code> = (Internal use) Animation state</li></ul>
+<dl><dd> 0 = start move phase</dd>
+<dd>  -1 = start anim phase</dd>
+<dd>  +ve = # anims left to play</dd></dl>
+<ul><li> <code>AMBIENT_MOVE_STATE</code> = (Internal use) loword = # of the waypoint moved to last, hiword = direction of travel</li>
+<li> <code>AMBIENT_MOVE_COUNT</code> = (Internal use) Number of NPC/WPs available to move to</li></ul>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20rubberband%20h" title="Sys rubberband h (page does not exist)">sys_rubberband_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Var%20constants%20h" title="Var constants h (page does not exist)">var_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">wrappers_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMBIENT%20ANIM%20FREQ" title="AMBIENT ANIM FREQ *">AMBIENT ANIM FREQ *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMBIENT%20MOVE" title="AMBIENT MOVE *">AMBIENT MOVE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMBIENT%20SYSTEM" title="AMBIENT SYSTEM *">AMBIENT SYSTEM *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20OverrideBehaviour" title="Ambient OverrideBehaviour">Ambient OverrideBehaviour</a></li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a></li></ul>

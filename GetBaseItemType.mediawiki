@@ -1,0 +1,20 @@
+<p>Gets the BaseItemType of an item
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetBaseItemType(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItem<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oItem<dd>An Item Object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BASE%20ITEM%20TYPE" title="BASE ITEM TYPE *">BASE_ITEM_TYPE_*</a> constant
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the base item type of an item as <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BASE%20ITEM%20TYPE" title="BASE ITEM TYPE *">BASE_ITEM_TYPE_*</a> constant
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>BASE_ITEM_TYPE constants are defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>

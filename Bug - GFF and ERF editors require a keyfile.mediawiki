@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> fixed in version 1.0.1008.0 </li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Attempting to run the ERF and GFF Editors as stand alone applications from the Dragon Age\tools\ directory (as opposed to within the toolset) will result in a "Keyfile not found" error.  This is a remnant of the security that was in place for our Beta Testers.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>GFF and ERF files can be opened by the main toolset, which acts as a wrapper around the GFF and ERF editors that bypasses the key checks. The key checks only remained in place for the standalone editors.
+</p>

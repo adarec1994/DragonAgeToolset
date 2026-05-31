@@ -1,0 +1,17 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Item_Tiers_and_Rewards"><span class="tocnumber">1</span> <span class="toctext">Item Tiers and Rewards</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Plot_and_Indestructable_Items"><span class="tocnumber">2</span> <span class="toctext">Plot and Indestructable Items</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Item_Tiers_and_Rewards">Item Tiers and Rewards</span></h2>
+<p>Maybe you can piece this together from the 2DA sections, but I don't think it's as straightforward as it could be. <s>I'm still not 100% sure how the game assigns a tier to an item, either.</s> Apparently the "tier" is just part of the name in the TLK under <b>LongNameStrRef</b> in materialtypes.xls:materialrules. E.g., "Iron (Tier 1)".
+</p><p>From what I can tell so far, TS_System.xls:TS_Material determines how items are scaled in <i>sys_rewards_h.nss</i> and <i>sys_treasure_h.nss</i>. If the item isn't flagged as unique, then we calculate the column to use in the TS_Material GDA by ((nLevel - 1) / 3) + 1, where nLevel is the hero's level clamped between 1 and 45, inclusive. Also in sys_rewards_h.nss, it seems like you *might* inflate the hero's level by 3 as long as the current areas doesn't have this "INJURY_FLAG" set. It doesn't seem to get set anywhere in script though.
+</p><p>E.g., take gen_im_wep_gsw_gsw (Greatsword). It has a material progression of "Weapon, All Metal" - ID 43 in TS_System.xls:TS_Material. The material column to use when scaling the item depends on the hero's level. Say the hero is level 15 (and we're not inflating the level like mentioned above), then ((15 - 1) / 3) + 1 = 5 and so the Material5 column is used [need to confirm]. 
+</p><p>Row ID 43 by column Material5 has the value 44 in its cell. Looking that up in rules/materialtypes.xls:materialtypes, you can see it's referencing "Weapon, Red Steel", which in turn references material 5 from rules/materialtypes.xls:materialrules, which is "Red Steel".
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 16:31, 15 February 2010 (UTC)
+</p>
+<h2><span class="mw-headline" id="Plot_and_Indestructable_Items">Plot and Indestructable Items</span></h2>
+<p>The <b>Plot Items</b> and <b>Indestructible Items</b> sections appear to be talking about essentially the same thing.  Moreover in the toolset items only have a <b>Plot Item</b> property (unless I'm missing something) and where possible the terminology should be consistent.  Unfortunately there also appears to be some overlap between the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsPlot" title="IsPlot">IsPlot</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemIndestructible" title="IsItemIndestructible">IsItemIndestructible</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemIrremovable" title="IsItemIrremovable">IsItemIrremovable</a> functions. - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 11:59, 27 September 2009 (UTC)
+</p>

@@ -1,0 +1,10 @@
+<hr />
+<p><i><b>An integer row ID number that is unique to that row across all files (unless creating an M2DA override).</b></i>
+</p><p>This line is totally not understandable. Across all files would mean across all 2DA's&#160;? This is not the case. Of that XLS? doesnt make sense. Of the 2DA? Theres only one in each row.
+</p><p>I would rather say, ID's doesnt matter ,all they have to do is not collide. Perhaps? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 03:20, 25 January 2010 (UTC)
+</p>
+<hr />
+<p>I have heard that IDs for Itemvariation have to be consecutive, even for M2DA's. Or otherwise they dont appear in the Game, which i also read is a aknowledged bug. Is this worth noting?
+</p><p>I have myself experienced a limit in ID as well ,because over about 254 in the "helmet_light_variation" the toolset crashes when equipping said helmet on a NPC. However the Wiki sais values can be 2 billion or somesuch. On the "Int" page. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 03:20, 25 January 2010 (UTC)
+</p>
+<hr />

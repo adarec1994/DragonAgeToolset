@@ -1,0 +1,97 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inventory_Subgroup_Numbers"><span class="tocnumber">1</span> <span class="toctext">Inventory Subgroup Numbers</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Armor"><span class="tocnumber">2</span> <span class="toctext">Armor</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Gloves"><span class="tocnumber">3</span> <span class="toctext">Gloves</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Boots"><span class="tocnumber">4</span> <span class="toctext">Boots</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Helmets"><span class="tocnumber">5</span> <span class="toctext">Helmets</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Shields"><span class="tocnumber">6</span> <span class="toctext">Shields</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Axes"><span class="tocnumber">7</span> <span class="toctext">Axes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Blades"><span class="tocnumber">8</span> <span class="toctext">Blades</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Blunts"><span class="tocnumber">9</span> <span class="toctext">Blunts</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Ranged"><span class="tocnumber">10</span> <span class="toctext">Ranged</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Accessories"><span class="tocnumber">11</span> <span class="toctext">Accessories</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Quick_Items"><span class="tocnumber">12</span> <span class="toctext">Quick Items</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inventory_Subgroup_Numbers">Inventory Subgroup Numbers</span></h2>
+<p>This is a list of all the subgroup ID numbers for various equipment types.
+</p>
+<h2><span class="mw-headline" id="Armor">Armor</span></h2>
+<ul><li>Light Armor    331000</li>
+<li>Medium Armor    332000</li>
+<li>Heavy Armor    333000</li>
+<li>Massive Armor    334000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Gloves">Gloves</span></h2>
+<ul><li>Light Gloves    311000</li>
+<li>Medium Gloves    312000</li>
+<li>Heavy Gloves    311000</li>
+<li>Massive Gloves    314000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Boots">Boots</span></h2>
+<ul><li>Light Boots    321000</li>
+<li>Medium Boots    322000</li>
+<li>Heavy Boots    323000</li>
+<li>Massive Boots    324000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Helmets">Helmets</span></h2>
+<ul><li>Light Helmet    301000</li>
+<li>Medium Helmet    302000</li>
+<li>Heavy Helmet   303000</li>
+<li>Massive Helmet    304000</li>
+<li>Mage Helmet    351500</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Shields">Shields</span></h2>
+<ul><li>Kite Shield    343000</li>
+<li>Large Shield    342000</li>
+<li>Small Shield    341000</li>
+<li>Tower Shield    344000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Axes">Axes</span></h2>
+<ul><li>Axes    201000</li>
+<li>Battleaxes    202000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Blades">Blades</span></h2>
+<ul><li>Daggers    203000</li>
+<li>Greatswords    204000</li>
+<li>Longswords    205000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Blunts">Blunts</span></h2>
+<ul><li>Maces    206000</li>
+<li>Mauls    207000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ranged">Ranged</span></h2>
+<ul><li>Ammo    214000</li>
+<li>Staff    221000</li>
+<li>Crossbows    213000</li>
+<li>Longbows    212000</li>
+<li>Shortbows    211000</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Accessories">Accessories</span></h2>
+<ul><li>Amulets    411000</li>
+<li>Belts      421000</li>
+<li>Rings      431000</li>
+<li>Dog Collar 361000</li>
+<li>Dog Warpaint 362000</li></ul>
+<h2><span class="mw-headline" id="Quick_Items">Quick Items</span></h2>
+<ul><li>Grenades 101000</li>
+<li>Health Potions 102000</li>
+<li>Injury Repair Kit 103000</li>
+<li>Dog Food 104000</li>
+<li>Mana Potions 105000</li>
+<li>Poisons 106000</li>
+<li>Weapon Coatings 106000</li>
+<li>Resistance Potions 107000</li>
+<li>Misc. 109000</li>
+<li>Unique 199999</li></ul>

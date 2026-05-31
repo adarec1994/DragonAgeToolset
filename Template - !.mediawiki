@@ -1,0 +1,5 @@
+<p>This is the {{!}} meta-template.
+</p><p>It is an auxiliary template allowing the encoding of "|" within template parameters. It is necessary if the character is used in wiki table syntax, or if the parameter is automatically wikilinked and you wish to use a pipe to specify different link text from the target page name. In other cases it is better to use "&amp;#124;".
+</p><p>This template cannot be used for putting the character as text in a wiki table; in that case, again, "&amp;#124;" can be used.
+</p><p>Note that no special template is needed for "!" (exclamation mark)
+</p>

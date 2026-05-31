@@ -1,0 +1,30 @@
+<p>The <b>player</b> type represents a player slot.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>There is no <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> for the player type.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<p>There is no explicit or implicit conversion to or from the player type.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow a player to exist outside of the scope of the current script by storing it on an object:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalPlayer" title="GetLocalPlayer">GetLocalPlayer</a></li></ul>
+<p>The following functions allow a player which exist outside of the scope of the current script to be used in the current script by retrieving it from an object:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalPlayer" title="SetLocalPlayer">SetLocalPlayer</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The player type is an artefact from or a placeholder for a multi-player version of Dragon Age.  With the exception of the two functions mentioned above all reference to the player type in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> have been replaced by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object">object</a> type.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Player%20keyword"><span class="kw2">player</span></a> pDefault;
+&#160;
+    <span class="co1">// initialised using a function</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Player%20keyword"><span class="kw2">player</span></a> pFunction <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalPlayer"><span class="kw4">GetLocalPlayer</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetModule"><span class="kw4">GetModule</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,  <span class="st0">&quot;current_player&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Player%20functions" title="Category:Player functions (page does not exist)">Player functions</a>
+</p>

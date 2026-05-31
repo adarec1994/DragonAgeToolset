@@ -1,0 +1,164 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20damage%20h" title="Effect damage h (page does not exist)">effect_damage_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_NONE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000000
+</td>
+<td>
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_CRITICAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000001
+</td>
+<td> critical hit
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_DEATHBLOW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000002
+</td>
+<td> death blow
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_UPDATE_GORE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000004
+</td>
+<td> update gore on attacker
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_LEECH_50
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000008
+</td>
+<td> leech 50% health back to attacker
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_LEECH_75
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000010
+</td>
+<td> leech 75% health back to attacker
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_LEECH_100
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000020
+</td>
+<td> leech 100% health back to attacker
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_LEECH_MANA
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000040
+</td>
+<td> mana is leeched instead of health
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_UNRESISTABLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000080
+</td>
+<td> can not be resisted
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_BACKSTAB
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000100
+</td>
+<td> backstab
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_LEECH_25
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000200
+</td>
+<td> leech 20% health back to attacker
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_BONUS_DMG
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000400
+</td>
+<td> 'bonus' damage (different message) from item property.
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_FROM_DOT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00000800
+</td>
+<td> coming from dots.
+</td>
+<td align="center"> effect_damage_h
+</td></tr>
+<tr>
+<td> DAMAGE_EFFECT_FLAG_NOLEECH
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0x00001000
+</td>
+<td> convert leech into simple 'also deal damage'
+</td>
+<td align="center"> effect_damage_h
+</td></tr></table>

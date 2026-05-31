@@ -1,0 +1,9 @@
+<p>Many problems with the toolset come from exported files in the packages\core\override directory.
+</p><p>if the export process would export files to addins\"modulename"\core\override many issues could be avoided.
+</p><p>as i understand the hierarchy the addins core directory would be loaded first 
+so the exporter should export to that directory first and foremost
+</p><p>the moving of files from addins\"modulename"\core\ to addins\"modulename"\module\override seems to be still important when the files should only be used in that module alone
+</p><p>the problem is also that some dependant resources namely scripts and plots in packages core cause problem ingame sometimes even unrelated problems like wynne not being able to join the party in the circle tower when some generic plot was exported (but not changed) into the packages\core directory.
+after deleting those files everythings works fine again 
+fyi: the export was <b>without</b> dependant resources!
+</p>

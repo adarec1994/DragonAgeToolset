@@ -1,0 +1,45 @@
+<p>The <strong class="selflink">TLK</strong> file is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> formatted file used to contain strings. They can be opened in the Toolset or the GFF Editor.
+</p><p>Keep in mind that all numbers are in little-endian format if you are looking at the raw file.
+</p><p>This may be incomplete, as I believe previous TLK files had timing info, etc as well.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Structure"><span class="tocnumber">1</span> <span class="toctext">Structure</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Header"><span class="tocnumber">1.1</span> <span class="toctext">Header</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#String_ID_Section"><span class="tocnumber">1.2</span> <span class="toctext">String ID Section</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#String_Data_Section"><span class="tocnumber">1.3</span> <span class="toctext">String Data Section</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<p>A cursory glance at the file leads me to believe it's formatted something like this:
+</p>
+<pre>
+Header
+String ID Section
+String Data Section
+</pre>
+<h3><span class="mw-headline" id="Header">Header</span></h3>
+<ul><li>104 bytes
+<ul><li>20 byte string describing the file, watch the 2 spaces between PC and TLK <pre>GFF V4.0PC  TLK V0.2</pre></li>
+<li>80 bytes of other info I haven't figured out yet. May include info about the table, offsets</li>
+<li>4 bytes - number of entries in the table</li></ul></li></ul>
+<h3><span class="mw-headline" id="String_ID_Section">String ID Section</span></h3>
+<p>Tightly packed.
+</p>
+<ul><li>4 bytes 
+<ul><li>unsigned 32 bit integer - TALK_STRING_ID</li></ul></li>
+<li>4 bytes
+<ul><li>unsigned 32 bit integer - offset to string (appears to be an offset from 0x60)</li></ul></li></ul>
+<h3><span class="mw-headline" id="String_Data_Section">String Data Section</span></h3>
+<ul><li>4 bytes
+<ul><li> Unsigned 32 bit integer, little endian - number of characters in string.</li>
+<li> The toolset seems to ignore this.</li></ul></li>
+<li>String in UTF-16, little endian. 
+<ul><li> Terminated by a NUL character (0x00) (twice, since it is UTF-16LE) and filled up (with 0xff) to be a multiple of 4 bytes.</li></ul></li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TLK%20%28DA2%29" title="TLK (DA2)">TLK (DA2)</a> for information of the TLK format used in Dragon Age 2</li></ul>

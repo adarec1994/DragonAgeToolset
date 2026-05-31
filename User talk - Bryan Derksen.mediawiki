@@ -1,0 +1,13 @@
+<h2><span class="mw-headline" id="Question_about_spell_chains_in_the_UI">Question about spell chains in the UI</span></h2>
+<p>Hi Bryan,
+</p><p>I have a UI question that hopefully you might still be able to relay...
+</p><p>Normally in the skills/spells/talents page, you can use this script fragment to help enumerate through the available spell chains.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">var cid<span class="sy0">:</span>Number <span class="sy0">=</span> Number<span class="br0">&#40;</span>ExternalCommands.<span class="me1">GetValue</span><span class="br0">&#40;</span>'GUI.<span class="me1">SelectedChar</span>.<span class="me1">ID</span>'<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+ExternalCommands.<span class="me1">SendMessageArgs</span><span class="br0">&#40;</span>'GameModeController.<span class="me1">FindAbilityChains</span>', cid , <span class="nu0">2</span> <span class="coMULTI">/* =SPELLS */</span>, SharedLibrary.<span class="me1">Ability</span>.<span class="me1">DISPLAYMODE_SPELLBOOK</span><span class="br0">&#41;</span>;
+&#160;
+ExternalCommands.<span class="me1">GetNumMembers</span><span class="br0">&#40;</span>'GUI.<span class="me1">SelectedChar</span>.<span class="me1">Stats</span>.<span class="me1">SpellChains</span>'<span class="br0">&#41;</span>;</pre></div></div>
+<p>However, this doesn't seem to be properly initialized for other UI elements until the abilities menu has been opened at least once. E.g., if I want this information from the quickbar UI then I need to open and close the abilities page at least once. As far as I can tell, it's probably something the engine is doing behind the scenes... at least the above fragment works in the abilities menu at basically the same entry point that it fails in another UI.
+</p><p>I can work with that, but I'm just asking if my assumption is correct or if there's some other way to get the spell chains outside the abilities page without having first opened and closed it.
+</p>

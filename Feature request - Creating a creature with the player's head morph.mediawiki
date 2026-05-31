@@ -1,0 +1,12 @@
+<h2><span class="mw-headline" id="Custom_Creature_Uses_Player_Head">Custom Creature Uses Player Head</span></h2>
+<p>I want my custom creature that I design to have the head of the player.  So under "head morph" in creature creation I want to simply type PLAYER to have it use the players head morph.
+</p>
+<ul><li> This creature will be customized to wear items and equipment the player does not have.  </li></ul>
+<ul><li> Such cutscenes are past and future cutscenes that show the player from another point in time in the game.</li></ul>
+<ul><li> I will use the correct body type. If the player is a human I would naturally use a human body in the creature creation. The point is that the creature will have the look I want (via armor &amp; items).</li></ul>
+<h2><span class="mw-headline" id="Unfortunate_Work_Around">Unfortunate Work Around</span></h2>
+<ul><li> Disassociate cutscene from conversation line and instead have the conversation line fire a custom script.</li></ul>
+<ul><li> Custom script adds the items and gear I want the player to wear in the cutscene.  Custom script also remembers what the user was wearing previously.  The script does all this then fires the cutscene so the player is wearing the intended armor and items ONLY needed for the cutscene.</li></ul>
+<ul><li> When the cutscene is finished, have the cutscene fire another custom script which restores the players original armor and deletes the new armor and items added that were only intended for the cutscene.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20Request%20-%20script%20function%20for%20setting%20head%20morph" title="Feature Request: script function for setting head morph">Feature Request: script function for setting head morph</a></li></ul>

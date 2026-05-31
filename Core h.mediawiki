@@ -1,0 +1,19 @@
+<p>The <b>core_h</b> include file containing definitions for low level functions independent of specific systems.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20data%20h" title="2da data h (page does not exist)">2da_data_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20difficulty%20h" title="Core difficulty h (page does not exist)">core_difficulty_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">effect_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20RULES%20FLAG" title="CREATURE RULES FLAG *">CREATURE RULES FLAG *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureCoreClass" title="GetCreatureCoreClass">GetCreatureCoreClass</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MaxF" title="MaxF">MaxF</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MinF" title="MinF">MinF</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Safe%20Destroy%20Object" title="Safe Destroy Object">Safe Destroy Object</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetImmortal" title="SetImmortal">SetImmortal</a></li></ul>

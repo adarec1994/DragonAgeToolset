@@ -1,0 +1,106 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Инструкции</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Tutorials/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>На этой странице собираются ссылки на пошаговые учебники, статьи и прочую нужную информацию, расположенные на этой Вики и сторонних сайтах.
+</p><p>С помощью ниже представленной информации вы подружитесь с Toolset`ом и сможете создавать свои собственные расширения для Dragon Age Origins.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.98.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.80.D0.B8.D0.B9"><span class="tocnumber">1</span> <span class="toctext">Инструментарий</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9C.D0.BE.D0.B4.D1.83.D0.BB.D0.B8"><span class="tocnumber">2</span> <span class="toctext">Модули</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9B.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8"><span class="tocnumber">3</span> <span class="toctext">Локации</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9F.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D1.8B"><span class="tocnumber">4</span> <span class="toctext">Предметы</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.9C.D0.BE.D0.B4.D0.B5.D0.BB.D0.B8"><span class="tocnumber">5</span> <span class="toctext">Модели</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A1.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D0.B0"><span class="tocnumber">6</span> <span class="toctext">Существа</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9C.D1.83.D0.BB.D1.8C.D1.82.D0.B8.D0.BC.D0.B5.D0.B4.D0.B8.D0.B0"><span class="tocnumber">7</span> <span class="toctext">Мультимедиа</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9C.D0.B8.D1.80"><span class="tocnumber">8</span> <span class="toctext">Мир</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.9F.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5"><span class="tocnumber">9</span> <span class="toctext">Программирование</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B"><span class="tocnumber">10</span> <span class="toctext">Эффекты</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.A3.D0.BC.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">11</span> <span class="toctext">Умения</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5"><span class="tocnumber">12</span> <span class="toctext">Разное</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.D0.94.D0.BE.D0.BF.D0.BE.D0.BB.D0.BD.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D0.B8.D0.BD.D1.84.D0.BE.D1.80.D0.BC.D0.B0.D1.86.D0.B8.D1.8F_.D0.BD.D0.B0_.D1.81.D1.82.D0.BE.D1.80.D0.BE.D0.BD.D0.BD.D0.B8.D1.85_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0.D1.85"><span class="tocnumber">13</span> <span class="toctext">Дополнительная информация на сторонних ресурсах</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.D0.A1.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5_.D1.82.D0.B0.D0.BA.D0.B6.D0.B5"><span class="tocnumber">14</span> <span class="toctext">Смотрите также</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.98.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.80.D0.B8.D0.B9">Инструментарий</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Introductory%20tutorial%20-%20ru" title="Introductory tutorial/ru (page does not exist)">Вводная информация об инструментарии</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Introductory%20tutorial" title="Introductory tutorial">(en)</a></li></ul>
+<p>Дополнительно:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial%20-%20ru" title="Level Editor Tutorial/ru (page does not exist)">Редактор уровней</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Demo%20module%20-%20ru" title="Demo module/ru (page does not exist)">Демонстрационный модуль</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Demo%20module" title="Demo module">(en)</a> - Как экспортировать и запустить демонстрационный модуль.</li></ul>
+<h2><span class="mw-headline" id=".D0.9C.D0.BE.D0.B4.D1.83.D0.BB.D0.B8">Модули</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20tutorial%20-%20ru" title="Module tutorial/ru (page does not exist)">Модули</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20tutorial" title="Module tutorial">(en)</a></li></ul>
+<p>Дополнительно:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Приоритеты модулей</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9B.D0.BE.D0.BA.D0.B0.D1.86.D0.B8.D0.B8">Локации</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial%20-%20ru" title="Area tutorial/ru">Локации</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20tutorial%20-%20ru" title="Placeable tutorial/ru (page does not exist)">Размещаемые объекты</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20tutorial" title="Placeable tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20Layouts%20-%20ru" title="Area Layouts/ru (page does not exist)">Area Layouts</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20Layouts" title="Area Layouts (page does not exist)">(en)</a></li></ul>
+<p>Дополнительно:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Using%20DLC%20areas%20in%20your%20mods%20tutorial%20-%20ru" title="Using DLC areas in your mods tutorial/ru">Использование локаций из DLC в своих модах</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20Location%20to%20the%20Single%20Player%20Campaign%20Tutorial%20-%20ru" title="Adding a Location to the Single Player Campaign Tutorial/ru">Добавление локации в основную компанию</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B5.D0.B4.D0.BC.D0.B5.D1.82.D1.8B">Предметы</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial%20-%20ru" title="Item tutorial/ru (page does not exist)">Предметы</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">(en)</a></li></ul>
+<p>Бронь и вооружение:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20weapon%20type%20tutorial%20-%20ru" title="Adding a new weapon type tutorial/ru (page does not exist)">Как добавить новый тип оружия</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20weapon%20type%20tutorial" title="Adding a new weapon type tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20heraldry%20to%20a%20shield%20tutorial%20-%20ru" title="Adding custom heraldry to a shield tutorial/ru (page does not exist)">Как добавить пользовательскую геральдику на щиты</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20heraldry%20to%20a%20shield%20tutorial" title="Adding custom heraldry to a shield tutorial">(en)</a></li></ul>
+<p>Дополнительно:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20items%20to%20custom%20modules%20tutorial%20-%20ru" title="Adding custom items to custom modules tutorial/ru (page does not exist)">Как добавить предмет в созданный модуль</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20custom%20items%20to%20custom%20modules%20tutorial" title="Adding custom items to custom modules tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial%20-%20ru" title="Reskinning an item tutorial/ru (page does not exist)">Как изменить текстуру предметов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reskinning%20an%20item%20tutorial" title="Reskinning an item tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20recolors%20of%20existing%20items%20tutorial%20-%20ru" title="Creating recolors of existing items tutorial/ru (page does not exist)">Как изменить окраску существующих предметов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20recolors%20of%20existing%20items%20tutorial" title="Creating recolors of existing items tutorial">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9C.D0.BE.D0.B4.D0.B5.D0.BB.D0.B8">Модели</span></h2>
+<p>Дополнительно:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20custom%20model%20to%20the%20toolset%20tutorial%20-%20ru" title="Adding a custom model to the toolset tutorial/ru (page does not exist)">Как добавить пользовательскую модель в Тулсет</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20custom%20model%20to%20the%20toolset%20tutorial" title="Adding a custom model to the toolset tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20custom%20placeable%20from%20a%20model%20tutorial%20-%20ru" title="Creating a custom placeable from a model tutorial/ru (page does not exist)">Как создать размещаемый объект из сторонних моделей</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20custom%20placeable%20from%20a%20model%20tutorial" title="Creating a custom placeable from a model tutorial">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A1.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D0.B0">Существа</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20tutorial%20-%20ru" title="Creature tutorial/ru (page does not exist)">Существа</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20tutorial" title="Creature tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial%20-%20ru" title="Backgrounds tutorial/ru">Backgrounds tutorial</a></li></ul>
+<p>Работа со спутниками:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20tutorial%20-%20ru" title="Follower tutorial/ru">Два способа работы со спутниками</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/On%20NPC%20Mod%20Creation%20and%20Compatibility%2C%20while%20being%20the%20least%20intrusive%20to%20core%20game%20resources%20-%20ru" title="On NPC Mod Creation and Compatibility, while being the least intrusive to core game resources/ru">Создание <b>полноценного</b> спутника</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20ru" title="Compatible Companion Mod Creation/ru (page does not exist)">Структурированная статья</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation">(en)</a></li></ul>
+<p>Классы:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Add%20A%20New%20Class%20Tutorial%20-%20ru" title="Add A New Class Tutorial/ru (page does not exist)">Добавление нового класса</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Add%20A%20New%20Class%20Tutorial" title="Add A New Class Tutorial">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9C.D1.83.D0.BB.D1.8C.D1.82.D0.B8.D0.BC.D0.B5.D0.B4.D0.B8.D0.B0">Мультимедиа</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial%20-%20ru" title="Conversation tutorial/ru">Диалоги</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial%20-%20ru" title="Cutscene tutorial/ru">Видеоролики</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9C.D0.B8.D1.80">Мир</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial%20-%20ru" title="Map tutorial/ru (page does not exist)">Карты</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial" title="Map tutorial">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B3.D1.80.D0.B0.D0.BC.D0.BC.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5">Программирование</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial%20-%20ru" title="Scripting tutorial/ru">Написание скриптов</a></li></ul>
+<h2><span class="mw-headline" id=".D0.AD.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B">Эффекты</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20Tutorial%20-%20ru" title="VFX Tutorial/ru">Эффекты</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A3.D0.BC.D0.B5.D0.BD.D0.B8.D1.8F">Умения</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20spell%20tutorial%20-%20ru" title="Adding a new spell tutorial/ru (page does not exist)">Как добавить новые заклинания</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Adding%20a%20new%20spell%20tutorial" title="Adding a new spell tutorial">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D0.BD.D0.BE.D0.B5">Разное</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How-tos%20-%20ru" title="How-tos/ru (page does not exist)">Небольшая подборка советов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/How-tos" title="How-tos">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Noob%20to%20pro%20-%20ru" title="Noob to pro/ru (page does not exist)">Пошаговое создание новой компании</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Noob%20to%20pro" title="Noob to pro">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Overriding%20and%20creating%20tints%20tutorial%20-%20ru" title="Overriding and creating tints tutorial/ru (page does not exist)">Overriding and creating tints tutorial</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Overriding%20and%20creating%20tints%20tutorial" title="Overriding and creating tints tutorial">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UI%20Tutorial%20%28draft%29%20-%20ru" title="UI Tutorial (draft)/ru (page does not exist)">UI Tutorial (draft)</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UI%20Tutorial%20%28draft%29" title="UI Tutorial (draft)">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20guidelines%20-%20ru" title="Follower guidelines/ru (page does not exist)">Follower_guidelines</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20guidelines" title="Follower guidelines">(en)</a> (contains general guidelines and compatibility information)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/High-Level%20Character%20Generation%20-%20ru" title="High-Level Character Generation/ru (page does not exist)">High-Level Character Generation</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/High-Level%20Character%20Generation" title="High-Level Character Generation">(en)</a></li></ul>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.BF.D0.BE.D0.BB.D0.BD.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D0.B8.D0.BD.D1.84.D0.BE.D1.80.D0.BC.D0.B0.D1.86.D0.B8.D1.8F_.D0.BD.D0.B0_.D1.81.D1.82.D0.BE.D1.80.D0.BE.D0.BD.D0.BD.D0.B8.D1.85_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0.D1.85">Дополнительная информация на сторонних ресурсах</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials#External_Tutorials" title="Tutorials">Ссылки на англоязычные сторонние статьи, учебники и тому подобное</a>
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5_.D1.82.D0.B0.D0.BA.D0.B6.D0.B5">Смотрите также</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility%20-%20ru" title="Compatibility/ru">Совместимость</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tutorials" title="Tutorials">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

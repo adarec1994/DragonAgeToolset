@@ -1,0 +1,223 @@
+<p>There is one <strong class="selflink">StateCnt_* 2da</strong> for each type of placeable that can be in multiple states such as, for example, a container which can be open, closed and unlocked, closed and locked, and destroyed.
+</p><p>The StateCnt_* 2da files are not listed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%202da" title="M2DA 2da (page does not exist)">M2DA_base 2da</a> and have not been assigned a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_*</a> constant.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<p>Each StateCnt_* 2da has the following columns in common:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  The entries on this page pertain to entries in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMIN%20placeables%202da" title="AMIN placeables 2da (page does not exist)">AMIN_placeables 2da</a>
+</td></tr>
+<tr>
+<th>  Action0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an entry in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20interactions%202da" title="Placeable interactions 2da">placeable_interactions 2da</a> representing the primary action
+</td></tr>
+<tr>
+<th>  Success0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an entry in the current <b>StateCnt_&lt;type&gt;</b> 2da representing the new state
+</td></tr>
+<tr>
+<th>  Success0A
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an alternate entry in the current <b>StateCnt_&lt;type&gt;</b> 2da representing the new state
+</td></tr>
+<tr>
+<th>  Action1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an entry in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20interactions%202da" title="Placeable interactions 2da">placeable_interactions 2da</a> representing the secondary action
+</td></tr>
+<tr>
+<th>  Success1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an entry in the current <b>StateCnt_&lt;type&gt;</b> 2da representing the new state
+</td></tr>
+<tr>
+<th>  Success1A
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Id of an alternate entry in the current <b>StateCnt_&lt;type&gt;</b> 2da representing the new state
+</td></tr>
+<tr>
+<th>  BlockVis
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Set this to non-zero if you want this state to block visibility
+</td></tr>
+<tr>
+<th>  STRREF
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Unknown (0 in all default <b>StateCnt_&lt;type&gt;</b> 2da)
+</td></tr></table>
+<p>There are two <b>Success</b> columns for each <b>Action</b> because the new state may depend on the relative position of the Player. For example, doors can open forwards or backwards and a ballista can turn left or right.
+</p><p>In addition, each state has its own row and its own column. So, for example, a container would have rows and columns for its four possible states, like so:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> </th>
+<th> Closed_Unlocked </th>
+<th> Closed_Locked </th>
+<th> Open </th>
+<th> Dead
+</th></tr>
+<tr>
+<td> <b>Closed_Unlocked</b> </td>
+<td> 1025 </td>
+<td> 1025 </td>
+<td> 1027 </td>
+<td> 1029
+</td></tr>
+<tr>
+<td> <b>Closed_Locked</b> </td>
+<td> 1025 </td>
+<td> 1025 </td>
+<td> 1027 </td>
+<td> 1029
+</td></tr>
+<tr>
+<td> <b>Open</b> </td>
+<td> 1028 </td>
+<td> 1028 </td>
+<td> 1024 </td>
+<td> 1029
+</td></tr>
+<tr>
+<td> <b>Dead</b> </td>
+<td> **** </td>
+<td> **** </td>
+<td> **** </td>
+<td> 1026
+</td></tr></table>
+<p>The numbers in the grid correspond to the ID of entries in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AMIN%20placeables%202da" title="AMIN placeables 2da (page does not exist)">AMIN_placeables 2da</a> representing the animation used to change from the old state to the new state. So, for example, a door going from <b>Closed_Unlocked</b> to <b>Open</b> would use the <b>Door Opening</b> animation. 
+</p><p>The following placeable types each have their own 2da, each with the following state lists:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Placeable type </th>
+<th> States </th>
+<th> Notes
+</th></tr>
+<tr>
+<td> Bridge </td>
+<td> Active, Inactive, Destroyed  </td>
+<td>
+</td></tr>
+<tr>
+<td> AreaTransition  </td>
+<td> Unlocked, Locked  </td>
+<td>
+</td></tr>
+<tr>
+<td> Furniture  </td>
+<td> Idle, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Informational </td>
+<td> Active  </td>
+<td>
+</td></tr>
+<tr>
+<td> AOE </td>
+<td> Idle, Triggered, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> FlipCover </td>
+<td> Idle, Cover, Dead </td>
+<td> Flip cover has been cut from the game, this is a leftover from when it was implemented
+</td></tr>
+<tr>
+<td> Trap_Trigger </td>
+<td> Inactive_Enabled, Inactive_Disabled, Active  </td>
+<td>
+</td></tr>
+<tr>
+<td> NonSelectable_Trap </td>
+<td> Idle1, Idle2  </td>
+<td>
+</td></tr>
+<tr>
+<td> Selectable_Trap </td>
+<td> Idle, Active, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Puzzle </td>
+<td> Active, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Destroy </td>
+<td> Active, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Cage </td>
+<td> Closed_Unlocked, Closed_Locked, Open, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Bodybag </td>
+<td> Unlocked  </td>
+<td>
+</td></tr>
+<tr>
+<td> Container_Static </td>
+<td> Unlocked, Locked, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Container </td>
+<td> Closed_Unlocked, Closed_Locked, Open, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> BBase </td>
+<td> Idle, IdleLeft, IdleRight, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Trigger </td>
+<td> Active, Inactive, Dead  </td>
+<td>
+</td></tr>
+<tr>
+<td> Door </td>
+<td> Closed_Unlocked, Closed_Locked, Open, Dead, Open_1, Dead_2  </td>
+<td>
+</td></tr></table>

@@ -1,0 +1,22 @@
+<p>Returns whether two objects are hostile to each other.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> IsObjectHostile(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oSource,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oSource<dd>The source object to use to check the hostility tables<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The target object to use to check the hostility tables
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if the two objects are hostile to one another, FALSE otherwise. Returns FALSE on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function checks the hostility of the two specified objects and returns whether they are hostile to each other or not.
+If either of the two objects are not valid, the function will return FALSE
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGroupHostility" title="SetGroupHostility">SetGroupHostility</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetGroupHostility" title="GetGroupHostility">GetGroupHostility</a>
+</p>

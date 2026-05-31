@@ -1,0 +1,79 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p>Description  of the attributes used by the game from a design perspective, with a  focus on information needed by content and gameplay designers, such as  how to incorporate attributes with ability, skill and campaign design.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Primary_Attributes"><span class="tocnumber">1</span> <span class="toctext">Primary Attributes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Strength"><span class="tocnumber">1.1</span> <span class="toctext">Strength</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Effects"><span class="tocnumber">1.1.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-4"><a href="#Dexterity"><span class="tocnumber">1.2</span> <span class="toctext">Dexterity</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Effects_2"><span class="tocnumber">1.2.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Cunning"><span class="tocnumber">1.3</span> <span class="toctext">Cunning</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Effects_3"><span class="tocnumber">1.3.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Willpower"><span class="tocnumber">1.4</span> <span class="toctext">Willpower</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Effects_4"><span class="tocnumber">1.4.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Constitution"><span class="tocnumber">1.5</span> <span class="toctext">Constitution</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Effects_5"><span class="tocnumber">1.5.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Magic"><span class="tocnumber">1.6</span> <span class="toctext">Magic</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Effects_6"><span class="tocnumber">1.6.1</span> <span class="toctext">Effects</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Primary_Attributes">Primary Attributes</span></h3>
+<p>The primary attributes in Dragon Age's rules system are
+</p>
+<h4><span class="mw-headline" id="Strength">Strength</span></h4>
+<h5><span class="mw-headline" id="Effects">Effects</span></h5>
+<h4><span class="mw-headline" id="Dexterity">Dexterity</span></h4>
+<h5><span class="mw-headline" id="Effects_2">Effects</span></h5>
+<h4><span class="mw-headline" id="Cunning">Cunning</span></h4>
+<h5><span class="mw-headline" id="Effects_3">Effects</span></h5>
+<h4><span class="mw-headline" id="Willpower">Willpower</span></h4>
+<h5><span class="mw-headline" id="Effects_4">Effects</span></h5>
+<h4><span class="mw-headline" id="Constitution">Constitution</span></h4>
+<h5><span class="mw-headline" id="Effects_5">Effects</span></h5>
+<h4><span class="mw-headline" id="Magic">Magic</span></h4>
+<h5><span class="mw-headline" id="Effects_6">Effects</span></h5>

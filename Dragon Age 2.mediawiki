@@ -1,0 +1,50 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>No toolset has been announced for Dragon Age 2 at the time of writing.
+</p><p>Nevertheless, some of the information in this wiki will help DA2 modders, who may wish to share their knowledge here, too. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Clarity"><span class="tocnumber">1</span> <span class="toctext">Clarity</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Overview_:_how_DA2_differs_from_DAO"><span class="tocnumber">2</span> <span class="toctext">Overview&#160;: how DA2 differs from DAO</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Builder_Resources"><span class="tocnumber">3</span> <span class="toctext">Builder Resources</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Followers"><span class="tocnumber">4</span> <span class="toctext">Followers</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Clarity">Clarity</span></h2>
+<p>Obviously, since this wiki was originally written for DAO, by default it refers to DAO, not DA2.
+</p><p>The same applies to the <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/subindex/70">Toolset Forum</a> and <a rel="nofollow" class="external text" href="http://social.bioware.com/browse_bw_projects.php">Projects</a>, where DA2 modders are most welcome.
+</p><p>So, it would help everyone if DA2 projects, forum posts, wiki articles, sections and comments were clearly labelled as DA2, to avoid confusion.
+</p><p>Ideally, information which only applies to DAO should be labelled, too, but that isn't going to happen comprehensively, so make no assumptions!
+</p>
+<h2><span class="mw-headline" id="Overview_:_how_DA2_differs_from_DAO">Overview&#160;: how DA2 differs from DAO</span></h2>
+<p>This information is evolving. Early days!
+</p>
+<ul><li> Since there is no toolset or source material for DA2, it is not possible to work with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Design" title="Design"> design resources</a>.</li></ul>
+<ul><li> However, it is possible to make simple changes to the exported DA2 resources (areas, creatures, conversations etc) that ship with the game.</li></ul>
+<ul><li> It may also be possible to make new resources with the DAO toolset, export them, and package them for DA2.</li></ul>
+<ul><li> The official exported resource files are held in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">ERF</a> containers. DA2 uses version 3.0 for both main game content and DLC, whereas DAO uses version 2.0 for main game and expansion resources  and version 2.2 for DLC.</li></ul>
+<ul><li> The exported resource file format is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a>. DA2 uses versions 4.1 and 4.0, while DAO uses version 4.0. Both games also use version 3.2 for some content types.</li></ul>
+<ul><li> The DAO toolset does not support ERF 3.0 or GFF 4.1 (see next section for alternate tools). With an available version 2.0 erf file, courtesy of Thought Process, the DAO toolset can be used to compile scripts that can be used in DA2. Similar custom erf files could likely be made to enable using models from DA2 in the DAO toolset to create new creature templates, though these will likely require hand editing in a stand-alone gff editor for use in DA2. Since many DA2 file types are the same as their DAO counterparts (with perhaps minor differences), those files will likely work as exported from the DAO toolset; if not, there are ways to tweak them manually.</li></ul>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">Resource formats</a> are generally the same (or similar) for both DAO and DA2.</li></ul>
+<ul><li> One exception is that the DAO conversation format (.dlg) has been replaced by .cnv in DA2. However, they share the same basic node structure, and it may be possible to convert dlg files to cnv.</li></ul>
+<h2><span class="mw-headline" id="Builder_Resources">Builder Resources</span></h2>
+<p>Some of the basic tools are
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage/mods/4512">pyGFF</a> for working with GFF files</li>
+<li> <a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage/mods/214">GDApp</a> for editing 2DA files and exporting them to Excel</li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4419/">ERFv3 Packer</a> for putting files into the new format ERF container</li></ul>
+<p>See also <a rel="nofollow" class="external text" href="http://code.google.com/p/dragon-age-open-house/wiki/BSN_DA2IndexBuilders">Community Index</a>.
+</p>
+<h2><span class="mw-headline" id="Followers">Followers</span></h2>
+<ul><li> gen00fl_bethany</li>
+<li> gen00fl_carver</li>
+<li> gen00fl_varric</li>
+<li> gen00fl_anders</li>
+<li> gen00fl_aveline</li>
+<li> gen00fl_isabela</li>
+<li> gen00fl_merrill</li>
+<li> gen00fl_fenris</li></ul>

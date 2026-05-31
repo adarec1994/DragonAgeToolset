@@ -1,0 +1,176 @@
+<p>Custom AI allows the creature's event script to handle the creature's combat activities directly and prevents the usual default combat AI from running for it.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Custom_AI_state_variable"><span class="tocnumber">1</span> <span class="toctext">Custom AI state variable</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Custom_AI_creature_variables"><span class="tocnumber">2</span> <span class="toctext">Custom AI creature variables</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Giving_creatures_commands"><span class="tocnumber">3</span> <span class="toctext">Giving creatures commands</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Example_code_with_comments"><span class="tocnumber">4</span> <span class="toctext">Example code with comments</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Custom_AI_state_variable">Custom AI state variable</span></h2>
+<p>Custom AI is enabled via the AI_CUSTOM_AI_ACTIVE variable in a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">creature</a>'s variable table, which also keeps track of the current 'state' the custom AI is in.
+</p><p>When the game completes the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword" title="Command">command</a> that a creature is currently executing, a creature whose AI_CUSTOM_AI_ACTIVE variable is set to a non-zero value will be sent an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CUSTOM%20COMMAND%20COMPLETE" title="EVENT TYPE CUSTOM COMMAND COMPLETE">EVENT_TYPE_CUSTOM_COMMAND_COMPLETE</a> event (older documentation said <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HANDLE%20CUSTOM%20AI" title="EVENT TYPE HANDLE CUSTOM AI">EVENT_TYPE_HANDLE_CUSTOM_AI</a>, but this doesn't seem to be the case).
+</p><p>The event is sent after rules_core has processed the regular <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMMAND%20COMPLETE" title="EVENT TYPE COMMAND COMPLETE">EVENT_TYPE_COMMAND_COMPLETE</a> event, which may mean that <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a> has already issued another command.
+</p><p>These are the available value ranges and predefined constants for AI_CUSTOM_AI_ACTIVE:
+</p>
+<table border="1">
+
+<tr>
+<td> 0 - 999 </td>
+<td>  Reserved for Basic Custom AI Modes
+</td></tr>
+<tr>
+<td> 1000 - 9999 </td>
+<td>  Free to use for Local Custom AI
+</td></tr>
+<tr>
+<td> 10000 - * </td>
+<td>  Reserved for Global Custom AI
+</td></tr></table>
+<p>Basic custom AI modes that have been defined are:
+</p>
+<ul><li>CAI_DISABLED - Custom AI is disabled (normal AI takes over again)</li>
+<li>CAI_STASIS - Creature will become dormant and issue no commands</li>
+<li>CAI_INACTIVE - </li>
+<li>CAI_INITIATE - A default "starting state" that can be used for initialization.</li></ul>
+<p>Global custom AI constants that have been defined are:
+</p>
+<ul><li>CAI_RUNNER_RUN - used by a creature who flees from the PC in the middle of combat for some reason or another.</li>
+<li>CAI_USEPLACEABLE_LYRIUM_VEIN</li>
+<li>CAI_USEPLACEABLE_BALISTA</li></ul>
+<h2><span class="mw-headline" id="Custom_AI_creature_variables">Custom AI creature variables</span></h2>
+<p>The default var_creature variable table has three variables that are intended for use by designers writing custom AI scripts. They are:
+</p>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> AI_CUSTOM_AI_VAR_FLOAT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center">
+</td>
+<td>  A float value that can be used by custom AI scripts for any purpose.
+</td></tr>
+<tr>
+<td> AI_CUSTOM_AI_VAR_INT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  An int value that can be used by custom AI scripts for any purpose.
+</td></tr>
+<tr>
+<td> AI_CUSTOM_AI_VAR_STRING
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">
+</td>
+<td>  A string value that can be used by custom AI scripts for any purpose
+</td></tr></table>
+<p>To make using them easier, the following functions are defined:
+</p>
+<ul><li>CAI_SetCustomAIFloat</li>
+<li>CAI_SetCustomAIInteger</li>
+<li>CAI_SetCustomAIString</li>
+<li>CAI_GetCustomAIFloat</li>
+<li>CAI_GetCustomAIInteger</li>
+<li>CAI_GetCustomAIString</li></ul>
+<h2><span class="mw-headline" id="Giving_creatures_commands">Giving creatures commands</span></h2>
+<p>It's very important that you ensure that every time the custom AI code is called the creature has a command in its command queue when the code is finished running. If it doesn't, the creature's AI code won't be called again and it will cease performing any actions from that point onward.
+</p><p>The function AI_DetermineCombatRound(); is very useful and important when designing a custom AI. This function issues the creature a "default" command that's based on its capabilities and perceptions. For example, in a monster's custom AI this will generally mean attacking the player in some way.
+</p>
+<h2><span class="mw-headline" id="Example_code_with_comments">Example code with comments</span></h2>
+<p>Here is the skeleton of a basic <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HANDLE%20CUSTOM%20AI" title="EVENT TYPE HANDLE CUSTOM AI">EVENT_TYPE_HANDLE_CUSTOM_AI</a> case for an event script. This code is for an extremely simple custom AI that causes a creature to do nothing except run an animation every five seconds during combat.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;cai_h&quot; //Include this file to use custom AI support functions</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CAI_USER_DEFINED_STATE_ANIMATION <span class="sy0">=</span> <span class="nu0">1000</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CAI_USER_DEFINED_STATE_DELAY <span class="sy0">=</span> <span class="nu0">1001</span>;
+<span class="co1">//and so forth - use more descriptive names for your state constants to make the code easier to understand.</span>
+&#160;
+...
+&#160;
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_SPAWN</span><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">//Setting the custom AI to &quot;initiate&quot; means the custom AI will be called</span>
+            <span class="co1">//when the creature enters combat. You can use one of your own custom states</span>
+            <span class="co1">//as the starting point instead, CAI_INITIATE is only 'special' in that it has</span>
+            <span class="co1">//had a constant pre-defined for it already in the core library.</span>
+            CAI_SetCustomAI<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, CAI_INITIATE<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_HANDLE_CUSTOM_AI<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// Determine which custom AI state the creature is in.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCustomAI <span class="sy0">=</span> CAI_GetCustomAI<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a><span class="br0">&#41;</span>;
+&#160;
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_TEMP</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentScriptName"><span class="kw4">GetCurrentScriptName</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;Firing custom AI event: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nCustomAI<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">//Fall-through for if the custom AI command failed.</span>
+            <span class="co1">//This addresses issues with creatures that run appear/disappear animations</span>
+            <span class="co1">//when they're made active or inactive.</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev,<span class="nu0">2</span><span class="br0">&#41;</span><span class="sy0">==</span><span class="kw3">COMMAND_FAILED</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                WR_AddCommand<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandWait"><span class="kw4">CommandWait</span></a><span class="br0">&#40;</span><span class="nu0">0.01f</span><span class="br0">&#41;</span>,TRUE<span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+            <span class="br0">&#125;</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a> <span class="br0">&#40;</span> nCustomAI <span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> CAI_INITIATE<span class="sy0">:</span>
+                <span class="br0">&#123;</span>
+                    <span class="co1">//insert whatever initialization code you need here, and then set the custom</span>
+                    <span class="co1">//AI to another state.</span>
+&#160;
+                    CAI_SetCustomAI<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, CAI_USER_DEFINED_STATE_ANIMATION<span class="br0">&#41;</span>;
+                    AI_DetermineCombatRound<span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//we didn't give the creature a command in this state, so call this to determine a default action.</span>
+                    bActionPerformed <span class="sy0">=</span> TRUE;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> CAI_USER_DEFINED_STATE_ANIMATION<span class="sy0">:</span>
+                <span class="br0">&#123;</span>
+                    <span class="co1">//creates a command to play an animation (index is to a row defined in the ANIM_base 2DA)</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword"><span class="kw2">command</span></a> cPlayAnim <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandPlayAnimation"><span class="kw4">CommandPlayAnimation</span></a><span class="br0">&#40;</span><span class="nu0">247</span><span class="br0">&#41;</span>;
+&#160;
+                    <span class="co1">//Puts the animation at the front of the creature's command queue.</span>
+                    <span class="co1">//Setting it as &quot;static&quot; means nothing will interrupt it, which</span>
+                    <span class="co1">//is particularly useful for animations.</span>
+                    WR_AddCommand<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, cPlayAnim, TRUE, TRUE<span class="br0">&#41;</span>;
+&#160;
+                    <span class="co1">//Set the next state we want to be in</span>
+                    CAI_SetCustomAI<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, CAI_USER_DEFINED_STATE_DELAY<span class="br0">&#41;</span>;
+&#160;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> CAI_USER_DEFINED_STATE_DELAY<span class="sy0">:</span>
+                <span class="br0">&#123;</span>
+                     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCommand"><span class="kw4">AddCommand</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandWait"><span class="kw4">CommandWait</span></a><span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="co1">//adds a wait command.</span>
+                     CAI_SetCustomAI<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, CAI_USER_DEFINED_STATE_ANIMATION<span class="br0">&#41;</span>; <span class="co1">//we'll do this state next</span>
+                     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+&#160;
+                <span class="co1">//Include this default case just in case something weird happens and the custom AI event is</span>
+                <span class="co1">//run with an unexpected state.</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Default%20keyword"><span class="kw1">default</span></a><span class="sy0">:</span> AI_DetermineCombatRound<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+...</pre></div></div>

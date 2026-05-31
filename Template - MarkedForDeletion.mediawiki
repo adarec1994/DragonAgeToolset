@@ -1,0 +1,8 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>{{MarkedForDeletion|because the page is now redundant}}
+</pre>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<div align="center" style="background-color:#FFF7F7; border:2px #F70000 solid; padding:4px; margin:4px;">
+<p>This page has been marked for deletion because the page is now redundant
+</p>
+</div>

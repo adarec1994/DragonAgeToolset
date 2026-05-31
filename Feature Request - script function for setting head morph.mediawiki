@@ -1,0 +1,9 @@
+<p>There are situations where modders need to manipulate which head morph is on a body. Examples of threads where this has come up: 
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/508250">Character Generation</a></li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/8/index/685284">Change head morph for PC in game?</a></li>
+<li><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/617374">How to change the PC to a creature: a quick guide</a></li></ul>
+<p>Script functions that get and set head morphs would be very useful for these situations.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Creating%20a%20creature%20with%20the%20player%27s%20head%20morph" title="Feature request: Creating a creature with the player's head morph">Feature request: Creating a creature with the player's head morph</a></li></ul>

@@ -1,0 +1,41 @@
+<p>The PRCSCR system enables a modder to add content into existing campaign areas in a fully compatible manner.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#PRCSCR_M2DA"><span class="tocnumber">2</span> <span class="toctext">PRCSCR M2DA</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Scripts"><span class="tocnumber">3</span> <span class="toctext">Scripts</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Usage_Scenarios"><span class="tocnumber">4</span> <span class="toctext">Usage Scenarios</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>PRCSCR (Post Release Content Script) is a sytem that executes custom scripts on entry into a game area in a manner that is fully <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility" title="Compatibility">compatible</a> with existing campaign resources and 3rd party mods. The custom script can add the necessary hooks for new content to the existing area; placing items on vendors/in containers, adding map waypoints, spawning NPCs, adding doors/transitions to new areas, etc. This system is used by Bioware's DLC to add new content hooks, and it is the preferred option for integrating new content because it does not modify or change any existing campaign resources (e.g. it is not necessary to modify and override existing areas, which is not compatible with other mods trying to affect the same area).
+</p>
+<h2><span class="mw-headline" id="PRCSCR_M2DA">PRCSCR M2DA</span></h2>
+<p>The system works by using an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">M2DA</a> to specify a custom script to run when entering an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">area list</a> (alternately, the script can be told to run on entering ANY area list). If multiple M2DAs specify a script to run for the same area list, ALL of these defined scripts will be run, preventing any compatibility issues and allowing for everyone's custom scripts to get a chance to run and do their thing.
+</p><p>The M2DA override for the PRCSCR system is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls" title="PRCSCR.xls">PRCSCR.xls</a>.
+</p>
+<h2><span class="mw-headline" id="Scripts">Scripts</span></h2>
+<p>The usefulness of PRCSCR is that it can run ANY custom script you want. Anything that you can add to the game via scripting can therefore be compatibly added to an existing area. There is a collection of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates" title="PRCSCR Script Templates">PRCSCR Script Templates</a> that provide PRCSCR scripts for several common tasks.
+</p><p><b>Note</b>: The script will be run every time the player enters the specified area list, so plot flags or similar methods are needed in the script to ensure that changes are only made once to the area.
+</p><p><b>Note</b>: A limitation on scripts is that you cannot add merchants or stages via scripting. To add a merchant to an area with PRCSCR, a workaround would be necessary (e.g. creating the merchant in a custom area attached to the same area list that is deployed with the mod, then moving the merchant with PRCSCR to the existing area).
+</p><p><b>Note</b>: An area list can have several areas. You can't predict which area the player will be in when the area list loads. Fortunately, GetObjectByTag can be used to refer to any object in the current area list (even if it isn't in the current area).  
+</p><p><b>Note</b>: You can have a different script for each area list. If you prefer to have one script for all area lists, you may need to test which area list has loaded. A neat way of doing that is IsObjectValid(GetObjectByTag("area-tag")).
+</p>
+<h2><span class="mw-headline" id="Usage_Scenarios">Usage Scenarios</span></h2>
+<p><b>Where it applies:</b>
+</p>
+<ul><li>You have made a new <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> and need to add a door to an existing location that transitions to your new area. With PRCSCR you can spawn an entrance door in an existing area without having to modify the area resources directly.</li></ul>
+<ul><li>You have made a new item. With PRCSCR you can add the new item to an existing vendor or an existing container without having to edit the vendor/container resource or the area that contains that resource.</li></ul>
+<ul><li>You have made a new <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial#Activating_and_deactivating_map_pins" title="Map tutorial">map pin</a> on the world map for a new area. With PRCSCR, you can "spawn" the map pin when the player next enters the game, or in response to certain plot or area conditions, including conditions based on main campaign plot flags (e.g. only after Lothering has been destroyed).</li></ul>
+<p><b>Where it doesn't apply:</b>
+</p>
+<ul><li>You have made a new interior area and are placing items or NPCs in this area. Because the new area is unique content for your mod, you do not need to use PRCSCR to modify it. However, you would still probably use PRCSCR to provide a link to your new area from an existing area/world map.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20-%20ru" title="PRCSCR/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

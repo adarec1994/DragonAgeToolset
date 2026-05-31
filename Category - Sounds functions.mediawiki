@@ -1,0 +1,16 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Sounds functions"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActivateSoundByTag" title="ActivateSoundByTag">ActivateSoundByTag</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlayMusic" title="PlayMusic">PlayMusic</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlaySound" title="PlaySound">PlaySound</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlaySoundObject" title="PlaySoundObject">PlaySoundObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PlaySoundSet" title="PlaySoundSet">PlaySoundSet</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetMusicIntensity" title="SetMusicIntensity">SetMusicIntensity</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetMusicVolumeStateByTag" title="SetMusicVolumeStateByTag">SetMusicVolumeStateByTag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetSoundSet" title="SetSoundSet">SetSoundSet</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StopMusic" title="StopMusic">StopMusic</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StopSound" title="StopSound">StopSound</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StopSoundObject" title="StopSoundObject">StopSoundObject</a></li></ul></div></div></div>
+</div></div>

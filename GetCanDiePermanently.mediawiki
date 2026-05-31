@@ -1,0 +1,17 @@
+<p>This function returns if a creature is allowed to die permanently
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetCanDiePermanently(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oidCreature<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oidCreature<dd>The creature
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Whether or not it is allowed to kill the creature permanently.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function returns the value set for the 'NoPermDeath' field in the toolset. This is usually used to prevent deathblows or other methods of permanent destruction from affecting plot important creatures in cases where using the Plot flag is not an option. It always returns FALSE for members of the player's party.
+</p>

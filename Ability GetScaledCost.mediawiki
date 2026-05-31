@@ -1,0 +1,17 @@
+<p>Returns the nCost parameter without any scaling.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_GetScaledCost(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCost<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nAbility<dd>an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY-eb87f3dc" title="ABILITY *">ABILITY_*</a> constant<dt style="font-weight:normal; font-style:italic;">oCaster<dd>the creature using the ability<dt style="font-weight:normal; font-style:italic;">nCost<dd>an item cost
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the nCost parameter
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Despite its name this function simply returns the nCost parameter without any scaling.
+</p>

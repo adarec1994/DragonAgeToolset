@@ -1,0 +1,118 @@
+<p>The Awakening and post-Awakening DLC allows players to create new characters that start at a higher level, i.e. the character generation screen does not start at level 1. This <strong class="selflink">High-Level Character Generation</strong> tutorial demonstrates how to add similar functionality to stand-alone modules.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_the_scripts"><span class="tocnumber">1</span> <span class="toctext">Creating the scripts</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Editing_the_sys_chargen_h_file"><span class="tocnumber">2</span> <span class="toctext">Editing the sys_chargen_h file</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Editing_the_sys_chargen_file"><span class="tocnumber">3</span> <span class="toctext">Editing the sys_chargen file</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Editing_the_module_core"><span class="tocnumber">4</span> <span class="toctext">Editing the module_core</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#An_alternative_view"><span class="tocnumber">4.1</span> <span class="toctext">An alternative view</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Calling_the_custom_module_script"><span class="tocnumber">5</span> <span class="toctext">Calling the custom module script</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Final_steps"><span class="tocnumber">6</span> <span class="toctext">Final steps</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Export_and_Test"><span class="tocnumber">7</span> <span class="toctext">Export and Test</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_Also"><span class="tocnumber">8</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_the_scripts">Creating the scripts</span></h2>
+<p>First, it is very important that you DUPLICATE the important core scripts. By creating your own scripts, you won't have to worry about screwing the official campaign or other modules.
+</p><p>The scripts that must be duplicated for this tutorial:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20core" title="Module core (page does not exist)">module_core</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20chargen%20h" title="Sys chargen h">sys_chargen_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20chargen" title="Sys chargen (page does not exist)">sys_chargen</a></li></ul>
+<p>If you already have duplicates of these for other systems/tutorials (such as the background tutorial), make your edits in those files.
+</p><p>When you duplicate the files, make sure that the names are unique while still naming their purpose for easy editing. For example, you might add a module-specific prefix:
+</p>
+<ul><li> scar_module_core</li>
+<li> scar_sys_chargen_h</li>
+<li> scar_sys_chargen</li></ul>
+<h2><span class="mw-headline" id="Editing_the_sys_chargen_h_file">Editing the sys_chargen_h file</span></h2>
+<p>The first thing you want to do is avoid duplicate functions, as this confuses the compiler. You won't need or want to edit every function, so at the top of the file place another include:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;sys_chargen_h&quot;</span></pre></div></div>
+<p>For this tutorial, you can delete everything except the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20InitializeCharacter" title="Chargen InitializeCharacter (page does not exist)">Chargen_InitializeCharacter</a> function. (Leave any functions that you may have edited, but don't forget to integrate them when necessary.)
+</p><p>Next you need to create a new name for this function. I suggest the prefix you used for the script files:
+</p><p><code>scar_Chargen_InitializeCharacter</code>
+</p><p>Near the top of the function you should see a group of lines that look like this:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// 2. Set Creature to Level and Experience 0</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_SIMPLE_LEVEL</span>, <span class="nu0">1.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, <span class="kw3">PROPERTY_SIMPLE_EXPERIENCE</span>, <span class="nu0">0.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>Set the level and XP to the appropriate values for your starting level. (You can give less XP, forcing a character to gain that extra XP before leveling. This does not affect companions.)
+</p><p>You also need to find this group:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// 6. Set up points available to distribute (skills only on humanoids)</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsHumanoid"><span class="kw4">IsHumanoid</span></a><span class="br0">&#40;</span>oChar<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_SIMPLE_SKILL_POINTS, <span class="nu0">1.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_SIMPLE_ATTRIBUTE_POINTS, <span class="nu0">5.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar,PROPERTY_SIMPLE_TALENT_POINTS, <span class="nu0">2.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>And set the values to the appropriate level (or give more/less that usual for certain modules.)
+</p>
+<h2><span class="mw-headline" id="Editing_the_sys_chargen_file">Editing the sys_chargen file</span></h2>
+<p>Now that the include file is created, open the sys_chargen file. Make sure that you have both chargen includes. For example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;sys_chargen_h&quot;</span>
+<span class="co2">#include &quot;scar_sys_chargen_h&quot;</span></pre></div></div>
+<p>This will keep normal functions from breaking.
+</p><p>Find and replace all <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20InitializeCharacter" title="Chargen InitializeCharacter (page does not exist)">Chargen_InitializeCharacter</a> functions with your custom function. This will start your character at the appropriate level.
+</p><p>There is a bug that occurs during "Quick-Start" unless another step is taken. Find all instances of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AL%20DoAutoLevelUp" title="AL DoAutoLevelUp (page does not exist)">AL_DoAutoLevelUp</a>. (There should be two in an unedited file.)
+</p><p>The function that causes the problem looks like this:
+</p><p><code>AL_DoAutoLevelUp(oChar, TRUE, TRUE);</code>
+</p><p>Either set both trues to falses or copy/paste the other function to this space.
+</p>
+<h2><span class="mw-headline" id="Editing_the_module_core">Editing the module_core</span></h2>
+<p>The home stretch. Now we have to associate the module chargen script with our custom script.
+</p><p>Near the bottom of an unedited script, you should find:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Handle character generation events sent by the engine.</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span> <span class="br0">&#40;</span>nEvent <span class="sy0">&gt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_START</span> <span class="sy0">&amp;&amp;</span> nEvent <span class="sy0">&lt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_END</span><span class="br0">&#41;</span> <span class="sy0">||</span> nEvent <span class="sy0">==</span> <span class="kw3">EVENT_TYPE_PLAYERLEVELUP</span> <span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, R<span class="st0">&quot;sys_chargen.ncs&quot;</span><span class="br0">&#41;</span>;
+            <span class="br0">&#125;</span></pre></div></div>
+<p>Switch the script handling the event to your custom script.
+</p><p>Edit: To avoid confusion, the file that should be edited here is your CUSTOM module_core (thanks for pointing that out below, Gaxkang55.) NEVER edit the core scripts, almost anything that you may need to do can be done with custom duplicates.
+</p>
+<h3><span class="mw-headline" id="An_alternative_view">An alternative view</span></h3>
+<p>Editing the module_core script is almost certainly a bad idea, and is probably not even what was intended. But to be crystal clear, this code should be placed in your own module script (see next section), with appropriate modification (depending on how you have defined your event variables in that script). For example, if your module script initialisations are:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bEventHandled <span class="sy0">=</span> FALSE;</pre></div></div>
+<p>then you will need:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Default%20keyword"><span class="kw1">default</span></a><span class="sy0">:</span>
+   <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span> <span class="br0">&#40;</span>nEventType <span class="sy0">&gt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_START</span> <span class="sy0">&amp;&amp;</span> nEventType <span class="sy0">&lt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_END</span><span class="br0">&#41;</span> <span class="sy0">||</span> nEventType <span class="sy0">==</span> <span class="kw3">EVENT_TYPE_PLAYERLEVELUP</span> <span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, R<span class="st0">&quot;scar_sys_chargen.ncs&quot;</span><span class="br0">&#41;</span>;
+                bEventHandled <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+   <span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="Calling_the_custom_module_script">Calling the custom module script</span></h2>
+<p>For those who don't know, a module script now must be associated with the module itself. This is done through [File-&gt;Manage Modules-&gt;Poperties]. Make sure you have your module selected before you hit properties.
+</p><p>Underneath the module name, there should be a parameter named "Script". Enter the browser and select your custom module_core script. Once you're finished eidting the module, click OK.
+</p>
+<h2><span class="mw-headline" id="Final_steps">Final steps</span></h2>
+<p>Unless you already have the function in your module_core, you need to actually run character generation.
+</p><p>Under <code>EVENT_TYPE_MODULE_START</code>, add these lines:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PreloadCharGen"><span class="kw4">PreloadCharGen</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StartCharGen"><span class="kw4">StartCharGen</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id="Export_and_Test">Export and Test</span></h2>
+<p>Make sure you save each file along the way, and compile all scripts once finished. Export the scripts and play your module. You should begin character generation at the appropriate level.
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/5020925">Original BSN thread</a></li></ul>

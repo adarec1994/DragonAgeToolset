@@ -1,0 +1,17 @@
+<p>Inserts a string into another string.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> InsertString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sDestination,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPosition<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sDestination<dd>The destination string<dt style="font-weight:normal; font-style:italic;">sString<dd>The string to insert<dt style="font-weight:normal; font-style:italic;">nPosition<dd>The position in the destination string to insert at
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The modified string. Returns an empty string on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns a string which is the string sDestination with the string sString insered at the position index nPosition. This index is 0 indexed, so if nPosition = 0 the string sString will be added to the front of the string sDestination.
+</p>

@@ -1,0 +1,28 @@
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 2 subcategories, out of 2 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Item%20properties%20functions" title="Category:Item properties functions">Item properties functions</a></li><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Item%20upgrading%20-%20runes%20functions" title="Category:Item upgrading / runes functions">Item upgrading / runes functions</a></li></ul></div>
+</div><div id="mw-pages">
+<h2>Pages in category "Items functions"</h2>
+<p>The following 18 pages are in this category, out of 18 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemVisualEffect" title="AddItemVisualEffect">AddItemVisualEffect</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CanUseItem" title="CanUseItem">CanUseItem</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetBaseItemType" title="GetBaseItemType">GetBaseItemType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemAbilityId" title="GetItemAbilityId">GetItemAbilityId</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemAttackRating" title="GetItemAttackRating">GetItemAttackRating</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemEquipSlot" title="GetItemEquipSlot">GetItemEquipSlot</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemMaterialType" title="GetItemMaterialType">GetItemMaterialType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory" title="GetItemsInInventory">GetItemsInInventory</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemStackSize" title="GetItemStackSize">GetItemStackSize</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemSubItems" title="GetItemSubItems">GetItemSubItems</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemVisualEffectsIDs" title="GetItemVisualEffectsIDs">GetItemVisualEffectsIDs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMaxItemStackSize" title="GetMaxItemStackSize">GetMaxItemStackSize</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveAllItemVisualEffects" title="RemoveAllItemVisualEffects">RemoveAllItemVisualEffects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveItemVisualEffect" title="RemoveItemVisualEffect">RemoveItemVisualEffect</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCanUseItem" title="SetCanUseItem">SetCanUseItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemAbilityId" title="SetItemAbilityId">SetItemAbilityId</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemMaterialType" title="SetItemMaterialType">SetItemMaterialType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemStackSize" title="SetItemStackSize">SetItemStackSize</a></li></ul></div></div></div>
+</div></div>

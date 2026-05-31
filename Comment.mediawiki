@@ -1,0 +1,13 @@
+<p><br />
+In <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">scripts</a>, comments are denoted by a double slash "//". Anything after a double slash is ignored by the compiler.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;rules&quot;</span>
+&#160;
+<span class="co1">//This entire line is a comment.</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    DoSomethingOrOther<span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//The function &quot;DoSomethingOrOther();&quot; will be compiled, but there rest of this line will not be.</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>In <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a>, the special data type "comment" can be used to omit a column from the resource exporter's output.
+</p>

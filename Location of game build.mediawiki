@@ -1,0 +1,23 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>On toolset start up, you may encounter the following error message:
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">Location of game build either not specified or the update program was never run to copy the build onto your computer.
+<p>Run the toolset configuration program and verify your settings or search the toolset wiki <a rel="nofollow" class="external free" href="http://social.bioware.com/wiki/datoolset">http://social.bioware.com/wiki/datoolset</a> to help with this issue.
+</p>
+This toolset must now exit.</div>
+<p>When the toolset starts up, it looks for the existence of the game.  It looks in a specified location for the game.  When this error is thrown, it means the game has not been found.  There are two possible reasons for this.
+</p>
+<ol><li>The game is not installed, or</li>
+<li>It is looking in the wrong place for the game</li></ol>
+<p>If the game is not installed, you need to do that.  The more likely case is that the toolset has been told to look in the wrong place for the game, and you need to correct that using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ConfigureToolset.exe" title="Configure Toolset">Configure Toolset</a> utility.
+</p><p>Navigate to the directory where you have installed the toolset.  Typically the location would be something like:
+</p>
+<pre>C:\Program Files\Dragon Age\Tools\
+</pre>
+<p>In the Tools directory, double click on ConfigureToolset.exe to launch the utility.
+</p><p>The first screen that comes up will be called "Game Builds", with a field called "Win32 Game Build".  This needs to point to the directory where Dragon Age is installed.  Either type the path into this field, or click the button next to it to browse to the directory.  Once this field is displaying the correct directory, click next, and then Finish.
+</p><p>Launch the toolset again, and it should not give you this error anymore.
+</p>

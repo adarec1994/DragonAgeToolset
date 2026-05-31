@@ -1,0 +1,20 @@
+<p>Enable / disable access to the world map.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetWorldMapGuiStatus(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStatus<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nStatus<dd>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WM%20GUI%20STATUS" title="WM GUI STATUS *">WM_GUI_STATUS_*</a> constant
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Status constants you can use:
+</p>
+<ul><li>WM_GUI_STATUS_NO_USE = 0 (unavailable from area map)</li>
+<li>WM_GUI_STATUS_READ_ONLY = 1 (available from area map, cannot travel)</li>
+<li>WM_GUI_STATUS_USE = 2 (available from area map, click pin to travel)</li></ul>

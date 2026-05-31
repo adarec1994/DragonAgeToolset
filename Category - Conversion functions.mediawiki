@@ -1,0 +1,22 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Conversion functions"</h2>
+<p>The following 17 pages are in this category, out of 17 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharToInt" title="CharToInt">CharToInt</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FeetToMeters" title="FeetToMeters">FeetToMeters</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToInt" title="FloatToInt">FloatToInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToString" title="FloatToString">FloatToString</a></li></ul></div><div class="mw-category-group"><h3>H</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HexStringToInt" title="HexStringToInt">HexStringToInt</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToChar" title="IntToChar">IntToChar</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToFloat" title="IntToFloat">IntToFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToHexString" title="IntToHexString">IntToHexString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString" title="IntToString">IntToString</a></li></ul></div><div class="mw-category-group"><h3>O</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ObjectToString" title="ObjectToString">ObjectToString</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ResourceToString" title="ResourceToString">ResourceToString</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat" title="StringToFloat">StringToFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToInt" title="StringToInt">StringToInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToVector" title="StringToVector">StringToVector</a></li></ul></div><div class="mw-category-group"><h3>T</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString" title="ToString">ToString</a></li></ul></div><div class="mw-category-group"><h3>V</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString" title="VectorToString">VectorToString</a></li></ul></div><div class="mw-category-group"><h3>Y</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/YardsToMeters" title="YardsToMeters">YardsToMeters</a></li></ul></div></div></div>
+</div></div>

@@ -1,0 +1,47 @@
+<p>The first version of <b>The Swamp level</b> was added mainly because I wasn´t sure I could make it till the deadline. Version 0.1 has no lights, though it got light probe (makes water look nice&#160;:) ). It has village finished and all plants in level planted.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#For_future_use"><span class="tocnumber">1</span> <span class="toctext">For future use</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#About_the_Swamp"><span class="tocnumber">2</span> <span class="toctext">About the Swamp</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Screenshots"><span class="tocnumber">3</span> <span class="toctext">Screenshots</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_Links"><span class="tocnumber">4</span> <span class="toctext">External Links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="For_future_use">For future use</span></h2>
+<p>For there are other contests being held, community will probably be enriched by new probes or models of different kind. I do not want to apply any different terms of use, then those mentioned in Community Contest rules. I, personally, would like to ask anyone, who is capable of creating new enviromental models, to supply older version of ruins, that could be used in this level (and by that I don´t mean to change the texture of models used in DA), so the level could look more aged (more holes it has better&#160;:) ). So, if by any chance, I´ll get my hands on those models, I´ll be posting new version anyway. 
+</p>
+<h2><span class="mw-headline" id="About_the_Swamp">About the Swamp</span></h2>
+<p>As you can see from screenshots and other files, the village is situated in the middle of the swamp, among ancient ruins of the city that used to be there long time ago (before the place turned into a swamp). Remainings of the city can be seen to the north of the settlement, while southern roads are being used by merchants, this way there are less plants (carriage wheels, walking etc.)
+</p><p>Village itself is surrounded by wooden fences, to secure it from anything that might come from the swamp. In the middle of the village you can find the market, while the outskirt serves as camp for merchantes or traspassers.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Screenshots">Screenshots</span></h2>
+<ul class="gallery mw-gallery-traditional" style="max-width: 972px;_width: 972px;">
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Plot2.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/51/Plot2.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Fences
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 235px"><div style="width: 235px">
+			<div class="thumb" style="width: 230px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Swamp13.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg" width="160" height="120" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/67/Swamp13.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>The Fog in the Village
+</p>
+			</div>
+		</div></li>
+</ul>
+<p>More pictures on <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1599">Dragon Age Nexus Project Page</a>
+</p>
+<h2><span class="mw-headline" id="External_Links">External Links</span></h2>
+<p><a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1599">Dragon Age Nexus Project Page</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/project/3310/">Bioware Social Network Project Page</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/&amp;v=discussions">Community Contest Discussion Group</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/wiki/datoolset/index.php/Community_Contest_Main_Page">Community Contest Wiki Page</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/9/index/4584918">Mikemike´s level tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/4618/">Ponozsticka BSN profile</a>
+</p>

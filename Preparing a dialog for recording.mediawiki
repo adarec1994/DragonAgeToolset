@@ -1,0 +1,49 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">Cinematics and animations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">Plots and scripting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+<ul><li><strong class="selflink">Preparing a dialog for recording</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<p><i>(this article is based on the investigations of Kaldir II and KingEtzel)</i>
+</p><p>For specific information about voiceover, file conventions, integration see here: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a>
+</p>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>When you successfully have created dialogs in your toolset, you may want to send it out to voiceactors for recording at a certain point. 
+</p><p>You could do that by writing all dialogs in a textprocessor like MS Word and just send them those documents. However, you would have to copy and paste the whole tree of lines into the toolset one by one, in order to get even the text work ingame. On the other hand you could type your whole dialog stuff in the toolset, but then - lacking a native export function - you would have to copy and paste again to get it into a form, where voiceactors can read your dialog.
+</p><p>Below we describe a way of creating the dialog inside of the toolset and then, by using little SQL queries, export not only the lines but also their corresponding LineIDs so that the voiceactor can not only match the format convention, but also the naming convention for the files themselves. The only thing for you left to do is putting those recorded files into the right folder and everything should work. No need for you to rename thousands of files manually to put them into the module/game!
+</p>
+<h2><span class="mw-headline" id="Creating_the_Dialog_Script">Creating the Dialog Script</span></h2>
+<p>First of all, you need Microsoft SQL Server Management Studio Express to be installed: <a rel="nofollow" class="external free" href="http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&amp;displaylang=en</a>
+</p><p>Install and run it.  The first time it starts, it should find your Dragon Age database (BWDATOOLSET).  Just click OK.
+</p><p>Remember to start the tool with administrator privileges, if necessary. Otherwise you won't be granted permission to access the database.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ServerManagementTool.jpg"><img alt="ServerManagementTool.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/ServerManagementTool.jpg" width="800" height="269" /></a>
+</p><p>Click on "New query" at the upper Left.  Enter the text below into the right pane.
+Find the String ID from any line of your conversation inside the toolset, and substitute it where the #### is:
+</p>
+<pre>  SELECT [StringID],[ModuleResRefVersionID]
+    FROM [bw_dragonage_content].[dbo].[t_StringText]
+    WHERE StringID = ####
+</pre>
+<p>Click the "! Execute" button.  This will find the ID number of your dialogue, shown in the bottom pane under the query panel.
+</p><p>Copy the text below, select the entire text of your first query, and paste over it.  (Or if you prefer, you can press the "New Query" button again.)  Right click on the dialogue ID number in the result pane and copy/paste -- or just type it in where the #### is in this query:
+</p>
+<pre>  Declare @ResID INT
+  Set @ResID = #####
+  SELECT A1.StringID, A2.SPEAKER, A1.Text
+     FROM bw_dragonage_content.dbo.t_StringText A1, bw_dragonage_content.dbo.t_ConversationLine A2
+     WHERE A1.StringID = A2.TextStringID AND A1.ModuleResRefVersionID = @ResID AND A2.ModuleResRefVersionID = @ResID
+</pre>
+<p>Press the "! Execute" button again.  This will give you a list consisting of the LineIDs in the column 1, the speaker tag (blank is the OWNER) in column 2, and the spoken words in column 3. You can now mark everything and save it into CSV and reopen it with Excel. Or you can select all the lines up to the PLAYER lines and paste to your editing program of choice, etc.
+</p><p>Now you can send the script to your voiceactors and you have minimized unneccessary work!
+</p>

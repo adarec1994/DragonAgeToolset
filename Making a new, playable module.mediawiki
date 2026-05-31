@@ -1,0 +1,119 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>Anyone who cares has probably gotten the toolset up and running, but in case you were struggling like me, here are some notes to save you a little time, hair, and anguish. You can sell those back to a vendor for a few copper.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installing_the_Toolset"><span class="tocnumber">1</span> <span class="toctext">Installing the Toolset</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Creating_a_Module"><span class="tocnumber">2</span> <span class="toctext">Creating a Module</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Setting_Up_Your_New_Module"><span class="tocnumber">3</span> <span class="toctext">Setting Up Your New Module</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Getting_a_basic_usable_character"><span class="tocnumber">3.1</span> <span class="toctext">Getting a basic usable character</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Setting_up_a_basic_level"><span class="tocnumber">3.2</span> <span class="toctext">Setting up a basic level</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Navigating_the_Toolset"><span class="tocnumber">3.3</span> <span class="toctext">Navigating the Toolset</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Exporting_Resources"><span class="tocnumber">4</span> <span class="toctext">Exporting Resources</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installing_the_Toolset">Installing the Toolset</span></h2>
+<p>You can find the Wiki's main installation notes at <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset" title="Installing the toolset">Installing the toolset</a>. First off, some installation notes:
+</p>
+<ul><li> Make sure you have Activepython 2.5.x.x installed (or Python 2.5.x.x with Win32 extensions). You want those in BEFORE you get your toolset installed, and it does need to be the 2.5 version.</li>
+<li> There's also an updated LightMapper script. You get the LightMapper <a rel="nofollow" class="external text" href="http://social.bioware.com/project/717/%7C">here</a>.</li></ul>
+<p>More on these later, but most likely you will get to know the LightMapper very well.
+</p>
+<h2><span class="mw-headline" id="Creating_a_Module">Creating a Module</span></h2>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Manage%20modules.jpg"><img alt="Manage modules.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c5/Manage_modules.jpg" width="200" height="200" /></a></div>
+<p>The first thing you should do is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">create a module</a>. As you can see, you start with "Manage Modules," NOT with File-&gt; New. When you installed the Dragon Age Toolset, you were also asked to install a SQL database, and this is where many Dragon Age resources are stored. This means that if you want to point to actual folders for reference, custom level files and so forth, you should make a folder yourself and put those resources in for you to mangle, er, use. Remember that 1) it's difficult to delete your module, unless you want to trash your SQL database and 2) even though modules are all called "addins," any module can either stand alone or be used to enhance an existing module. They are simply addins of the core of the game, not of any particular campaign.
+</p><p><b>Takeaways</b>
+</p>
+<ul><li> The Toolset uses a SQL database system to store information.</li>
+<li> Remember that it's difficult to delete modules or change their names because they are stored in the database.</li>
+<li> New modules are used as both addins or standalone campaigns.</li>
+<li> Use the Manage Modules menu to control many of the basic functions of your module.</li>
+<li> Under Content Module, select Core Game Resources to use as a base for a standalone module.</li></ul>
+<h2><span class="mw-headline" id="Setting_Up_Your_New_Module">Setting Up Your New Module</span></h2>
+<p>This is the quick and dirty way to make a brand new module. We'll get into adjusting the details as we go through this series.
+</p>
+<h3><span class="mw-headline" id="Getting_a_basic_usable_character">Getting a basic usable character</span></h3>
+<p>I found it easiest to just cut and paste from Bryan Derksen's script from the Demo to start. Open up the Demo with Manage Modules and select the Script Palette in the Palette window on the right and you'll see some little gray can icons in the folder "Demo." Choose "Demo_Module" and you'll see the starting script for the Toolset Demo.
+</p>
+<ul><li> You can copy and paste the basics of that script (Thanks Bryan Derksen!) into a script of your own. Just highlight his script and CTRL-C to copy.</li>
+<li> To set up basic character creation, create a new script by going into the File menu and selecting New &gt; Script. Paste the text you just copied from the demo in, or use this more basic template:</li></ul>
+<pre>
+#include "log_h"
+#include "utility_h"
+#include "wrappers_h"
+#include "events_h"
+
+void main()
+{
+    event ev = GetCurrentEvent();
+    int nEventType = GetEventType(ev);
+    string sDebug;
+    object oPC = GetHero();
+    object oParty = GetParty(oPC);
+    int nEventHandled = FALSE;
+
+    switch(nEventType)
+    {
+        case EVENT_TYPE_MODULE_START:
+        {
+            PreloadCharGen();
+            StartCharGen(GetHero(),0);
+            break;
+        }
+    }
+    if (!nEventHandled)
+    {
+        HandleEvent(ev, RESOURCE_SCRIPT_MODULE_CORE);
+    }
+}
+</pre>
+<ul><li> Then open up Manage Modules on your own Module and select Properties.</li>
+<li> Right under the name of your module, there's a field labeled "Script" - use this to enter the starting script for your module.</li></ul>
+<p>Now you have good old fashioned Character Generation! We'll look at how to modify that a little later, as script writing is something you'll most likely get to delve deep into at some point in the future. Note that without Character Generation of this sort, you'll end up with a fairly ugly fellow named Jaden (Sorry Jaden) who has 0 for all stats and 1 HP.
+</p><p><b>Takeaways</b>
+</p>
+<ul><li> Use File &gt; New to create new resources that you will need for your module.</li>
+<li> You can look at examples from the Demo, Single Player, or any other module for guidance.</li>
+<li> You have to have a <i>script</i> to make a new character in your module.</li>
+<li> A number of fairly basic features like character generation and moving between levels are controlled by scripting.</li></ul>
+<h3><span class="mw-headline" id="Setting_up_a_basic_level">Setting up a basic level</span></h3>
+<p>There's your Character, but now he needs a place to go. You can muck with the Level Editor for custom levels, but right now it may be more pain than I want to give you, so I'll talk about it a little later. For now, we'll stick with the default areas. Here's what you do:
+</p>
+<ul><li> Go to File &gt; New &gt; Area and go through the motions of making a new area.</li>
+<li> Once you have it, go to the Area Palette. All the Palettes are on the right side of the screen, and the Area Palette is the first one - it looks like a little bed.</li>
+<li> Open up your area by double clicking on its little gray icon.</li>
+<li> The Object Inspector on the lower right shows your open resource's properties. Under your new area's properties, choose an Area Layout to make a map that you can walk around. Any layout will do, try opening them up and looking around.</li>
+<li> First things first, you need to tell the module where your character will start. On the left-hand side, you'll see "Waypoints" - right-click there and insert a new one.</li>
+<li> Edit the name and tag of your Waypoint in its properties.</li></ul>
+<p>You can also change its color to Start if that matters to you - I find  it a little easier to recognize that way. There's a starting area now and a starting Waypoint, and this means you can adjust your module to include these.
+</p>
+<ul><li> Once more, enter Manage Modules and choose Properties.</li>
+<li> Set the Starting Area to the area you just created.</li>
+<li> Set the Starting Waypoint to the Waypoint that you just made.</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20ss.jpg"><img alt="Level ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/01/Level_ss.jpg" width="500" height="312" /></a>
+</p><p><b>Takeaways</b>
+</p>
+<ul><li> The Palettes, in the upper right, let you manage resources for a specific aspect of the game - scripts, NPCs, plots, etc.</li>
+<li> The Object Inspector, in the lower right, lets you see and edit properties of a specific resource.</li></ul>
+<h3><span class="mw-headline" id="Navigating_the_Toolset">Navigating the Toolset</span></h3>
+<p>Here's your first taste of mouse navigation in the toolset as well - by default: you can rotate with the Middle Mouse button, zoom with Scroll Wheel, and hold CTRL+left click to pan from side to side. Sorry, I'm not sure about one-button mouse options.
+</p>
+<h2><span class="mw-headline" id="Exporting_Resources">Exporting Resources</span></h2>
+<p>There you have it, you're done! Right? Not just yet - remember this info is stored in the database. Now you need to bring it into the game.
+</p>
+<ul><li> Go to Tools &gt; Export.</li>
+<li> Choose "Export without Dependent Resources". In general, you want to export as few resources as possible.</li>
+<li> The Log Window at the bottom will show the status of your action, including where the Campaign resource gets exported and if there were errors - hopefully not.</li>
+<li> Now when you go to DA, you'll be able to go to Other Campaigns and select your custom campaign!</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Campaign%20ss.jpg"><img alt="Campaign ss.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/50/Campaign_ss.jpg" width="500" height="281" /></a>
+</p><p><b>Takeaways</b>
+</p>
+<ul><li> Use Tools &gt; Export to make actual files usable by the game for your module.</li>
+<li> You should export after making changes to any areas, so that changes you make in the toolset are reflected in your game.</li></ul>

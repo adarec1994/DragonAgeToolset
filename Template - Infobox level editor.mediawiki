@@ -1,0 +1,21 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Level editor topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20new%20level" title="Creating a new level">Creating a new level</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">Exportable area</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">Level Editor Tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exterior%20Level%20Manual" title="Exterior Level Manual">Exterior Level Manual</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">Model list</a> <small>(screenshots)</small></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vista%20object" title="Vista object">Vista objects</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation%20list" title="Vegetation list">Vegetation list</a> <small>(screenshots)</small></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lighting">Lighting</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20mesh" title="Terrain mesh">Terrain mesh</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20list" title="Terrain list">Terrain list</a> <small>(screenshots)</small></li></ul></li></ul>
+</td></tr></table>

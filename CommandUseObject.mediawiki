@@ -1,0 +1,23 @@
+<p>Create a command to use an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword" title="Command keyword">command</a> CommandUseObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAction<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oTarget<dd>the object to use<dt style="font-weight:normal; font-style:italic;">nAction<dd>the action to use on the object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid command
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This will create a command to use an object. Sub commands include:
+</p>
+<ol><li> move to use point</li>
+<li> face object</li>
+<li> use object</li></ol>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLACEABLE%20ACTION" title="PLACEABLE ACTION *">PLACEABLE_ACTION_*</a>
+</p>

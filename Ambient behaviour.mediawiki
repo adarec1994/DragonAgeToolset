@@ -1,0 +1,296 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Creature topics:
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="Creature group">Creature groups</a> - who is hostile to whom.</li>
+<li><strong class="selflink">Ambient behaviour</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI" title="AI">AI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a></li></ul>
+</td></tr></table>
+<p>Ambient behaviour begins when the player moves within 50m of a creature and ceases when the player remains more than 50m away for at least 40s. Ambient behaviour alternates between a movement phase and an animation phase, simulating a bubble of activity around the player. In a movement phase, the creature (optionally) moves to a new destination (typically a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">waypoint</a> but it could be any object) and turns to face the same direction as the destination object. In an animation phase, the creature (optionally) performs one or more animations either in sequence or at random. Exact behaviour is controlled by local variables set on either the creature instance or template (see table below). All other local variables with the prefix AMBIENT_* are used internally by the ambient behaviour system (see script <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a>.nss) and should not be manually modified. Never directly modify AMBIENT_* local variables at run time using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt" title="SetLocalInt">SetLocalInt</a> - always use the functions <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20Start" title="Ambient Start (page does not exist)">Ambient_Start</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20Stop" title="Ambient Stop (page does not exist)">Ambient_Stop</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20OverrideBehaviour" title="Ambient OverrideBehaviour">Ambient_OverrideBehaviour</a>, and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20RestoreBehaviour" title="Ambient RestoreBehaviour (page does not exist)">Ambient_RestoreBehaviour</a> instead. Ambient behaviour is persisted when a game is saved and automatically resumes when a game is loaded. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Local_Variables_.28var_creature.29"><span class="tocnumber">1</span> <span class="toctext">Local Variables (var_creature)</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#ambient_anim_patterns_2da"><span class="tocnumber">2</span> <span class="toctext">ambient_anim_patterns 2da</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#sys_ambient_h"><span class="tocnumber">3</span> <span class="toctext">sys_ambient_h</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Overriding_Ambient_Behaviour"><span class="tocnumber">4</span> <span class="toctext">Overriding Ambient Behaviour</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Customising_Ambient_Behaviour"><span class="tocnumber">5</span> <span class="toctext">Customising Ambient Behaviour</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Animations"><span class="tocnumber">5.1</span> <span class="toctext">Animations</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Movement"><span class="tocnumber">5.2</span> <span class="toctext">Movement</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Bugs"><span class="tocnumber">6</span> <span class="toctext">Bugs</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Local_Variables_.28var_creature.29">Local Variables (var_creature)</span></h2>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> AMBIENT_SYSTEM_STATE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int</a>
+</td>
+<td align="center">  0
+</td>
+<td>  Bitmask controlling ambient system operation. (ergo, values below are in hexadecimal).
+<ul><li> 0x01 (AMBIENT_SYSTEM_ENABLED): Ambient behaviour enabled. For non-looping animations this is the only bit that need be set.</li>
+<li> 0x02 (AMBIENT_SYSTEM_SPAWNSTART): Begin ambient behaviour immediately after spawning. Generally, only infinitely looping animations require this.</li>
+<li> 0x04 (AMBIENT_SYSTEM_NOPLAYNEXT): Sets <b>bPlayNext</b> parameter to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandPlayAnimation" title="CommandPlayAnimation">CommandPlayAnimation</a> to false. Only infinitely looping animations require this.</li>
+<li> 0x08 (AMBIENT_SYSTEM_NOBLEND): Sets <b>bBlendIn</b> parameter to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandPlayAnimation" title="CommandPlayAnimation">CommandPlayAnimation</a> to false. Set this to force a creature to resume an infinitely looping animation after a conversation.</li>
+<li> 0x10 (AMBIENT_SYSTEM_ALWAYSON): Ambient behaviour never stops, regardless of distance to player. This should rarely, if ever, be used but at least the functionality exists if needed.</li></ul>
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_PATTERN
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">  0
+</td>
+<td>  Dictates how the creature moves. Add 100 to the values below make creature run instead of walk. Add 10-90 for a random mix of running and walking (a higher value means more running).
+<ul><li>  0 (AMBIENT_MOVE_NONE): No ambient movement </li>
+<li>  1 (AMBIENT_MOVE_PATROL): Patrol waypoints (1, 2, 3, 2, 1, ...) </li>
+<li>  2 (AMBIENT_MOVE_LOOP): Loop through waypoints (1, 2, 3, 1, 2, 3, ...) </li>
+<li>  3 (AMBIENT_MOVE_WARP): Jump creature from the last waypoint to the first (1, 2, 3, jump to 1, 2, 3, ...) </li>
+<li>  4 (AMBIENT_MOVE_RANDOM): Move to a random waypoint other than the one the creature is currently at </li>
+<li>  5 (AMBIENT_MOVE_WANDER): Move to random location within 10m of home location </li>
+<li>  6 (AMBIENT_MOVE_WANDER_FAR): Move to random location within 30m of home location </li>
+<li>  7 (AMBIENT_MOVE_PATH_PATROL): Patrol all waypoints using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToMultiLocations" title="CommandMoveToMultiLocations">CommandMoveToMultiLocations</a> (1,2,3,2,1,...) </li>
+<li>  8 (AMBIENT_MOVE_PATH_LOOP): Loop through all waypoints using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToMultiLocations" title="CommandMoveToMultiLocations">CommandMoveToMultiLocations</a> (1,2,3. 1,2,3)</li>
+<li>  9 (AMBIENT_MOVE_ONCE): Walk through the waypoint set once (1-2-3)</li></ul>
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_PREFIX
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword"> string </a>
+</td>
+<td align="center">  ap_&lt;tag&gt;
+</td>
+<td>  The prefix is used to determine the waypoints the creature can travel to. Note that <i>&lt;tag&gt;</i> is a placeholder filled in at run-time with the tag of the creature. Hence, for example, if AMBIENT_MOVE_PREFIX is <i>ap_&lt;tag&gt;</i> and the creature's tag is <i>cr_dog</i> then the system will look for waypoints with tags <i>ap_cr_dog_01</i>, <i>ap_cr_dog_02</i>, <i>etc</i>. If no waypoint is found with the <i>_01</i> extension, the system will search instead for all waypoints with tags matching the AMBIENT_MOVE_PREFIX value exactly (i.e. <i>ap_cr_dog</i>). This is useful in cases where you just want to add N waypoints all with the same tag.
+</td></tr>
+<tr>
+<td>  AMBIENT_ANIM_PATTERN
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">  0
+</td>
+<td>  A row ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">ambient_anim_patterns 2da</a>. Specifies the list of possible actions the creature can/will perform during an animation phase.
+<ul><li>  0: No ambient animation pattern (ergo, no ambient animations).</li></ul>
+</td></tr>
+<tr>
+<td>  AMBIENT_ANIM_FREQ
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center">  -1.0
+</td>
+<td>  Animation frequency. The part left of the decimal specifies the minimum and the part right of the decimal specifies the maximum number of random animations to play during an animation phase. So, for example, a value of 1.3 will play between 1 and 3 random animations from the animation pattern listed in ambient_ai.xls. A value of -1.0 plays all animations in the animation pattern in the order they are listed in ambient_ai.xls. Animation pattens that are highlighted in green on the worksheeet should always be played in order (i.e. AMBIENT_ANIM_FREQ is -1.0).
+</td></tr>
+<tr>
+<td>  AMBIENT_COMMAND
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">  0
+</td>
+<td> If non-zero, this value forces the creature to perform a specific command (instead of moving and animating).
+<ul><li>  0: Use standard ambient ambient behaviour system to perform movement and animations. </li>
+<li>  1: Forces creature to attack the nearest object with tag <i>&lt;tag&gt;_target</i>. There's an interval of 1-5 seconds between attack commands. </li>
+<li>  2: Forces creature to attack the nearest object with tag <i>&lt;tag&gt;_target</i>. There's an interval of 0-0.5 seconds between attack commands.</li></ul>
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_PATTERN_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int</a>
+</td>
+<td align="center">  0
+</td>
+<td>  Overrides AMBIENT_ANIM_PATTERN if non-zero.
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_FREQ_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int</a>
+</td>
+<td align="center">  0
+</td>
+<td>  Overrides AMBIENT_ANIM_FREQ if non-zero.
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_STATE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Internal use by ambient behaviour system. Tracks number of animations left to play.
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> -1
+</td>
+<td>  Internal use by ambient behaviour system. Tracks total number of destination points for a creature.
+</td></tr>
+<tr>
+<td> AMBIENT_MOVE_STATE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Internal use by ambient behaviour system. Tracks the last waypoint creature moved to and direction of travel.
+</td></tr>
+<tr>
+<td> AMBIENT_TICK_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center"> 0
+</td>
+<td>  Used internally, do not modify
+</td></tr>
+<tr>
+<td> AMBIENT_ANIM_OVERRIDE_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="center"> 0
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="ambient_anim_patterns_2da">ambient_anim_patterns 2da</span></h2>
+<p>The actions used in an animation phase are listed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">ambient_anim_patterns 2da</a>. Each row defines an animation pattern, consisting of up to thirteen actions. Each action is composed of an animation (left of the decimal) and the number of loops it is played (right of decimal). For example, 619.02 will play a sleeping loop animation twice and 619.99 will play an infinitely looping sleeping animation. Non-looping animations require no loop-count (i.e. decimal) component. The list of all available animations is located in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">ANIM_ 2da</a>.
+</p>
+<h2><span class="mw-headline" id="sys_ambient_h">sys_ambient_h</span></h2>
+<p>The script <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">sys_ambient_h</a> contains the implementation of the ambient behaviour system. The AMBIENT_* local variables should never be directly modified at run-time. Instead, use the following functions to customize a creature's ambient behaviour through script.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Normally this function is called automatically to begin or resume  ambient behaviour when a </span>
+<span class="co1">// creature perceives the player. However, it can be called explicitly to force a creature to begin </span>
+<span class="co1">// performing ambient behaviour or, if nAmbientEnable is 1, to enable ambient behaviour on a creature. </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Ambient_Start<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAmbientEnable <span class="sy0">=</span> <span class="nu0">0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMovePattern <span class="sy0">=</span> <span class="nu0">0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sMovePrefix <span class="sy0">=</span> <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Normally this function is called automatically to pause ambient behaviour after the party has </span>
+<span class="co1">// been out of the creature's sight for a while. However, this function can be used to force a </span>
+<span class="co1">// creature to temporarily cease ambient behaviour. Note that the creature will automatically  </span>
+<span class="co1">// resume ambient behaviour when it perceives the player again. </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Ambient_Pause<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bCheckVisibility <span class="sy0">=</span> TRUE<span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Turns off ambient behaviour on a creature. The creature will resume ambient behaviour only </span>
+<span class="co1">// after Ambient_Start() is called.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Ambient_Stop<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a><span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Overrides the ambient animation pattern and animation frequency defined by the creature's template. </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Ambient_OverrideBehaviour<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAnimPattern, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fAnimFreq<span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Restores a creature's ambient animation behaviour to that defined in the creature's template.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Ambient_RestoreBehaviour<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id="Overriding_Ambient_Behaviour">Overriding Ambient Behaviour</span></h2>
+<table class="wikitable sortable">
+
+<tr>
+<th> Variable name </th>
+<th> Type </th>
+<th> Default </th>
+<th> Description
+</th></tr>
+<tr>
+<td> AMBIENT_ANIM_PATTERN_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">  0
+</td>
+<td>  A row ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">ambient_anim_patterns 2da</a>.  Specifies the list of possible actions the creature can/will perform during an animation phase.
+<ul><li> 0: no animations.</li></ul>
+</td></tr>
+<tr>
+<td>  AMBIENT_ANIM_FREQ_OVERRIDE
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword"> float </a>
+</td>
+<td align="center">  -1.0
+</td>
+<td>  Animation frequency. The portion left of decimal specifies the minimum and the portion right of the decimal specifies the maximum number of animations to play during an animation phase. A value of -1.0 plays all animations in the animation pattern in the order listed in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">ambient_anim_patterns 2da</a>.
+</td></tr>
+<tr>
+<td>  AMBIENT_ANIM_OVERRIDE_COUNT
+</td>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword"> int </a>
+</td>
+<td align="center">
+</td>
+<td>  Used internally, do not modify
+</td></tr></table>
+<h2><span class="mw-headline" id="Customising_Ambient_Behaviour">Customising Ambient Behaviour</span></h2>
+<h3><span class="mw-headline" id="Animations">Animations</span></h3>
+<p>New ambient_anim_patterns can be added as an M2DA.
+</p><p>Provisionally, it seems that some animations are cutscene-only. They don't work when scripted. This requires further investigation and documentation, as there is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Some%20animations%20in%20ANIM%20base%20won%27t%20fire" title="Bug: Some animations in ANIM base won't fire"> bug</a> which may account for some or all of this.
+</p>
+<h3><span class="mw-headline" id="Movement">Movement</span></h3>
+<p>The system doesn't provide an explicit hook for a user-defined movement pattern.
+</p><p>However, it does support walking once through a set of waypoints.
+</p><p>We can implement any custom movement pattern as several sets of waypoints (each with its own prefix).
+</p><p>For example, if we want to walk from A to B, then C or D and E depending on some condition, we might define the sets as ap1 (A, B), ap2 (C) and ap3 (D, E).
+</p><p>We tell Ambient AI to walk waypoints prefixed ap1. On completion, we tell it to walk ap2 or ap3, depending on the condition.
+</p><p>Intercepting the Ambient AI is tricky. By default, EVENT_TYPE_COMMAND_COMPLETE is handled directly by the rules_core script, which kicks off the next Ambient AI action before we can stop it. Presumably, this is for performance reasons.
+</p><p>Set the AI_CUSTOM_AI_ACTIVE variable (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Custom%20AI" title="Custom AI">Custom AI</a>) on the creature template to generate a new event (EVENT_TYPE_CUSTOM_COMMAND_COMPLETE) which can be handled in the creature script. If the creature is a non-combatant, CAI_INACTIVE (1) works fine.
+</p><p>Using AMBIENT_MOVE_ONCE, when the final waypoint is reached, Ambient AI will reset the move pattern to AMBIENT_MOVE_NONE before this new event fires.
+</p><p>We can then trigger the next set of waypoints by including a snippet like this in our creature script:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CUSTOM_COMMAND_COMPLETE<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>;
+&#160;
+         <span class="co1">// Do nothing unless we have arrived at our destination </span>
+&#160;
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_PATTERN<span class="br0">&#41;</span> <span class="sy0">==</span> AMBIENT_MOVE_NONE<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>     
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>    nLastCommandType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">0</span><span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>    nCommandStatus   <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">1</span><span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>    nLastSubCommand  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span><span class="br0">&#41;</span>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oLastTarget      <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword"><span class="kw1">OBJECT_INVALID</span></a>;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oBlockingObject  <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev, <span class="nu0">2</span><span class="br0">&#41;</span>;  
+&#160;
+              <span class="co1">// Check which path just finished</span>
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString"><span class="kw4">GetLocalString</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_PREFIX<span class="br0">&#41;</span> <span class="sy0">!=</span> <span class="st0">&quot;ap1_&lt;tag&gt;&quot;</span><span class="br0">&#41;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+&#160;
+              <span class="co1">// Stop Ambient AI for good order</span>
+&#160;
+              Ambient_Stop<span class="br0">&#40;</span>oCreature<span class="br0">&#41;</span>;
+&#160;
+              <span class="co1">// Fix bug in Ambient_Start</span>
+&#160;
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_COUNT, AMBIENT_MOVE_COUNT_INVALID<span class="br0">&#41;</span>; 
+              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt"><span class="kw4">SetLocalInt</span></a><span class="br0">&#40;</span>oCreature, AMBIENT_MOVE_STATE,  AMBIENT_MOVE_NEXT<span class="br0">&#41;</span>;   
+&#160;
+              <span class="co1">// Restart on new path           </span>
+&#160;
+              Ambient_Start<span class="br0">&#40;</span>oCreature, AMBIENT_SYSTEM_ENABLED, AMBIENT_MOVE_ONCE, <span class="st0">&quot;ap2_&lt;tag&gt;&quot;</span><span class="br0">&#41;</span>;                
+            <span class="br0">&#125;</span>
+&#160;
+          bEventHandled <span class="sy0">=</span> TRUE;
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span></pre></div></div>
+<p>Note that when using any movement pattern other than AMBIENT_MOVE_ONCE, Ambient AI will issue the next movement command before EVENT_TYPE_CUSTOM_COMMAND_COMPLETE fires.
+</p>
+<h2><span class="mw-headline" id="Bugs">Bugs</span></h2>
+<p>Changing the movement path for a creature is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Ambient%20movement%20erratic%20when%20a%20new%20path%20is%20specified" title="Bug: Ambient movement erratic when a new path is specified"> bugged</a>.
+</p>

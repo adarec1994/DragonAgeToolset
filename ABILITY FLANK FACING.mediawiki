@@ -1,0 +1,109 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_BACK_LEFT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">-135.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_BACK_RIGHT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">135.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_BACK_LEFT2
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">-160.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_BACK_RIGHT2
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">160.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_LEFT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">-60.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_RIGHT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">60.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_LARGE_RIGHT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">45.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_LARGE_LEFT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">-45.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr>
+<tr>
+<td> ABILITY_FLANK_FACING_FRONT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>
+</td>
+<td align="right">0.0
+</td>
+<td>
+</td>
+<td align="center"> ability_h
+</td></tr></table>

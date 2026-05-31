@@ -1,0 +1,102 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Conversation topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial" title="Conversation tutorial">Conversation tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">Cinematics and animations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">Plots and scripting</a></li>
+<li><strong class="selflink">Voice-Over</strong>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">Conversation editor options</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Soundset" title="Soundset">Soundset</a></li></ul>
+</td></tr></table>
+<p>Custom voiceover is stored as <b>.wav</b> files, <b>PCM 24 kHz 16 bit mono</b>. Either record in this format or convert to it afterwards. If you do not do so, the lines cannot be integrated into the module by the toolset and an error message wil be displayed in the log.
+</p><p>The wav file's filename must be of the form "[LineID]_m.wav" with [LineID] replaced by the ID number for the conversation line's string table entry. For example, if a conversation's line ID number is 344169, you'd save the voice over for this line as "344169_m.wav".
+</p><p>The LineID for a distinct line of conversation is displayed in the lower left corner in the Dialog Editor, when editing a conversation.
+</p><p>If you don't want to record those lines yourself, but dedicated voiceactors, it is nice to produce a script from that dialog, that not only contains the lines themselves but also the LineID so you won't have trouble renaming all files that will be returned to you: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Integration_into_a_conversation"><span class="tocnumber">1</span> <span class="toctext">Integration into a conversation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Dummy_Voiceover"><span class="tocnumber">2</span> <span class="toctext">Dummy Voiceover</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Dummy_Voiceover_and_Cutscenes"><span class="tocnumber">3</span> <span class="toctext">Dummy Voiceover and Cutscenes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Setting_up_Recording_Programs"><span class="tocnumber">4</span> <span class="toctext">Setting up Recording Programs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Audacity"><span class="tocnumber">4.1</span> <span class="toctext">Audacity</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Normalize_in_Audacity"><span class="tocnumber">4.2</span> <span class="toctext">Normalize in  Audacity</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Sony_Vegas_7"><span class="tocnumber">4.3</span> <span class="toctext">Sony Vegas 7</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Recruiting_Voice_Actors"><span class="tocnumber">5</span> <span class="toctext">Recruiting Voice Actors</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Integration_into_a_conversation">Integration into a conversation</span></h2>
+<p>Real voiceover recordings need to be stored in ~installpath~\Dragon Age\addins\[moduleuid]\module\override\toolsetexport\[LineID]_m.wav - you can dump .wav files anywhere under the toolsetexport directory and they will be picked up; but for organizational purposes you should probably organize it into subfolders grouped by conversation.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Dummy_Voiceover">Dummy Voiceover</span></h2>
+<p>If you do not yet have real voiceover available, you can test your conversation with placeholders.
+</p><p>Select "Tools-&gt;Generate VO-&gt;Generate VO Local"; the toolset will first check the corresponding \toolsetexport directory for properly named files. Any .wav files that are not present will have Robo VO created, and any that do exist will be used as-is.
+</p><p>A quick way to verify that voice over generation worked after processing: go to My Documents\Dragon Age\packages\core\override\[conversationname].fsb and play it with windows media player. You will hear all of the VO lines for that conversation packaged together with whatever combination of real and robo VO all slapped together in one file.
+</p>
+<h2><span class="mw-headline" id="Dummy_Voiceover_and_Cutscenes">Dummy Voiceover and Cutscenes</span></h2>
+<p><b>Always add 1 second silence before and after the line itself- it is necessary for lypsynch to work correctly.</b>
+</p>
+<ul><li>Get the highest quality format you can from Voice Actor. ( 16 bit 44 kHz, 24 bit 48 kHz etc. ) </li>
+<li> Convert this format to PCM 24 kHz 16 bit mono and keep the original file on hand for later</li>
+<li>3. Use the converted file in toolset conversation editor for facefx animations and lipsync generation</li>
+<li>4. Create your scene and capture it. (I use the frame by frame method Cutscene Capture )</li>
+<li>5. Import your captured material into Vegas (Since that's what you are using)</li>
+<li>6. Take your original higher quality VO file and place it on the voice timeline keeping it in sync with the lip movements.</li>
+<li>7. You can use the other tracks in Vegas to insert music and sound effects </li></ul>
+<p>Note: I personally use Cubase SX to create a full sound mix for the above and import it as a complete mix within the Video Editor.
+</p>
+<h2><span class="mw-headline" id="Setting_up_Recording_Programs">Setting up Recording Programs</span></h2>
+<p>Do yourself and the producer of a module a favor and record your files adhering to the right <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions" title="Naming conventions">conventions</a>, at least concerning the file convention (as mentioned above). Therefore you have to set up your audio program before you actually start recording.
+</p>
+<h3><span class="mw-headline" id="Audacity">Audacity</span></h3>
+<p>Audacity is freeware. For recording purposes it is quite handy, because it is not very complicated. You can get the newest version here: <a rel="nofollow" class="external autonumber" href="http://audacity.sourceforge.net/">[1]</a>.
+</p><p>Recording should work right out of the box. Otherwise you have to go to "Edit-&gt;Preferences-&gt;Audio I/O" and set up the proper audio device for recording and playback.
+</p>
+<ul><li> To set the required Hertz and Bit, go to "Edit-&gt;Preferences-&gt;Quality".</li>
+<li> "Standard Sample Frequency": Select "Other", then type in the text field the required "24000" (Hertz) (=24kHz)</li>
+<li> "Standard Sample Format": Select "16bit"</li></ul>
+<p>When you now press the red recording button, Audacity records in the right file-convention. You now can trim and edit your recording until you're satisfied and then select the a region by holding the left mouse button and dragging it around the area that you want to export. Then save it by "File-&gt;Export Selection", select as filetype "WAV (microsoft) signed 16 bit PCM" and you're done.
+</p>
+<h3><span class="mw-headline" id="Normalize_in_Audacity">Normalize in  Audacity</span></h3>
+<p>If you one of your lines sound silenter than another one you can fix that. Just use "Effect -&gt; Normalize".
+</p>
+<h3><span class="mw-headline" id="Sony_Vegas_7">Sony Vegas 7</span></h3>
+<p>Vegas is a program, that's primarily developed for video editing, but also has a powerful audio engine, that makes editing of sound also very nice. Also, the application of VST effects and tweaks within the recording is pretty good implemented.
+</p><p>Old versions, like Vegas 7 should be pretty inexpensive, and even the current version in its basic package (which only is needed for audio recording/mixing/editing) is around about only 40$.
+</p>
+<ul><li>To set the required Hertz and Bit, select the part of your recording that is going to be a line of conversation (=a LineID) and then go to "File-&gt;Render As...". </li>
+<li>Choose as filetype "WAV (Microsoft) (*.wav)" and click on the "Custom" button on the right hand side of the presets tab.</li>
+<li>Type in the name field a name for your Dragon Age preset</li>
+<li>Choose as format "PCM (uncompressed)"</li>
+<li>"Samplerate (Hz)": "24.000"</li>
+<li>"Bitdepth": "16"</li>
+<li>"Channels": "Mono"</li>
+<li>Press the little diskette to save your preset, then "OK" to select it</li></ul>
+<p>You can now save your selection as required by the toolset.
+</p>
+<h2><span class="mw-headline" id="Recruiting_Voice_Actors">Recruiting Voice Actors</span></h2>
+<p>Currently there are the following sources where you can get vocal support for your module:
+</p>
+<ul><li>The Voice Actors Guild<a rel="nofollow" class="external autonumber" href="http://social.bioware.com/group/146/">[2]</a></li>
+<li>The Voice Acting Alliance<a rel="nofollow" class="external autonumber" href="http://voiceactingalliance.com/board">[3]</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">Preparing a dialog for recording</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a></li></ul>

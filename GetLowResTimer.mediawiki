@@ -1,0 +1,16 @@
+<p>Gets the current system tick count.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetLowResTimer(<br />);</div>
+<dl>
+<dt>Parameters:
+<dd>None
+</dl><dl><dt>Returns:
+<p><dd>the current system tick count
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Gets an int32 representing the system tick count. This is useful to create unique timestamps for logging purposes
+</p>

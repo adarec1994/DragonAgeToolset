@@ -1,0 +1,796 @@
+<p>The <strong class="selflink">APR_ 2da</strong> defines the different appearances available for the Player, non-player characters and creatures.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>2</b>. It can be extended by m2da fragments which have names starting with <b>APR_</b>. It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_APPEARANCE</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p><p>There is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20APR%20base%20maximum%20M2DA%20row%20ID%20is%2065535%20in%20the%20toolset" title="Bug: APR base maximum M2DA row ID is 65535 in the toolset">known issue</a> with this 2da which limits the maximum ID to 65535.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  the name of the appearance type, as seen in the Toolset when selecting appearance type for a creature.
+</td></tr>
+<tr>
+<th> STRING_REF
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> MODELTYPE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Sets whether the model is set up to allow interchangeable parts for customization. There are four types of model:
+<ul><li> S - Simple: The model has only one mesh.</li>
+<li> W - Welded, Baked: The model has its own weapon and cannot equip new ones.</li>
+<li> H - Welded, Head: The model's head is a separate mesh that can be swapped with other meshes.</li>
+<li> P - Parts: The model is fully customizable that accepts parts such as gloves, boots, and armor. The player races have examples of this kind of model.</li></ul>
+</td></tr>
+<tr>
+<th>  MODELRACE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Appears to match the first letter of the model name:
+<ul><li> E - Elf</li>
+<li> D - Dwarf</li>
+<li> H - Human </li>
+<li> K - Child</li>
+<li> N - (certain) NPC</li>
+<li> C - Creatures</li></ul>
+</td></tr>
+<tr>
+<th>  MODELNAME
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The name of the model file used for this appearance. (See: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions#Model_File_Naming_Convention" title="Naming conventions">Model File Naming Convention</a>)
+</td></tr>
+<tr>
+<th> PlayHumanoidAnimations
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> MODELGENDEROVERRIDE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Gender is important for loading the models associated with an appearance type. Gender will be used as the second letter in the resource. For example: HM_ARM_HVYa corresponds to the armor for a human male. CN_BDY_HLKa is the body for a neutral hurlock. Gender usually comes from the designer Toolset. But in some cases only one gender is supported from a model perspective. The letter in this column will be used in those cases to override designer data when loading models (note that this is only used for loading models everywhere else the selection in the designer Toolset applies). Valid values are M, F, or N. If you don't want to override the gender (allowing it to be defined in the Toolset) use "****".
+</td></tr>
+<tr>
+<th> MaxScaleLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AvoidAOEChance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Percentage chance to exit AOE per round.
+</td></tr>
+<tr>
+<th> RULESRACE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A default rules race for each appearance.
+</td></tr>
+<tr>
+<th> SYNCHRONIZEDCOMBAT
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 for no synchronized combat</li>
+<li> 1 for synchronized combat</li></ul>
+</td></tr>
+<tr>
+<th> AI_ARMOR_TYPE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Used by the AI to figure out how tough a creature is.
+</td></tr>
+<tr>
+<th> CRUST_EFFECT
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> - defines a visual effect to apply to the creature as a "crust".
+</td></tr>
+<tr>
+<th> MODELTREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The main <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Blend tree">blend tree</a> name. The <i>blend tree name</i> correspond to the value of <i>Tree Name</i> field of the blend tree nodes properties. The blend tree soruce files can be downloaded from the <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1331/#files">Single player and core resource source files</a> project and opened into Toolset for a better understanding.
+</td></tr>
+<tr>
+<th> COMBATMODELTREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Blend tree">blend tree</a> name used for the animations of the action in combat. This blend tree, groups animations to use when creature perform attacks, avoid attacks, take damage etc.
+</td></tr>
+<tr>
+<th> MOVEMENTTREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Blend tree">blend tree</a> name used for creature movement
+</td></tr>
+<tr>
+<th> COMBATMOIVETREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Blend tree">blend tree</a> name used for the animations of the movements in combat. This blend tree, groups animations to use when during combat, creature perform base movements such as walk/run forward, walk/run back, strafe etc.
+</td></tr>
+<tr>
+<th> OVERLAYTREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> OVERRIDETREE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AMBIENTOVERRIDE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> BLENDCURVES
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> BlendTrees
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> WEAPONSCALE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> WEAPONOFFSET
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> BLOODCOLR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Color of blood:
+<ul><li> R - Red</li></ul>
+</td></tr>
+<tr>
+<th> ANIM_WALKSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Walking speed of the source animation
+</td></tr>
+<tr>
+<th> ANIM_RUNSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Running speed of the source animation
+</td></tr>
+<tr>
+<th> ANIM_CBTSTRFSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> ANIM_CBTSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Combat movement speed of the source animation
+</td></tr>
+<tr>
+<th> GAME_WALKSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Desired in-game walking speed of the creature
+</td></tr>
+<tr>
+<th> GAME_RUNSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Desired in-game running speed of the creature
+</td></tr>
+<tr>
+<th> GAME_CBTSTRFSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> In-game speed for combat walking/strafing
+</td></tr>
+<tr>
+<th> GAME_CBTSPEED
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Deired in-game combat movement speed of the creature
+</td></tr>
+<tr>
+<th> AnimationSpeeds
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> HEIGHT
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> HEIGHT_F
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Height for females. Used to position the camera in conversations.
+</td></tr>
+<tr>
+<th> MODELSCALEX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Scaling Factor for Animations (i.e. shorter steps for short legs)
+</td></tr>
+<tr>
+<th> MODELSCALEY
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Scaling Factor for Animations (seems to be a key to allow many animations used cross creature)
+</td></tr>
+<tr>
+<th> MODELSCALEZ
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Scaling Factor for Animations
+</td></tr>
+<tr>
+<th> ModelSizes
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> TerrainFollowPitch
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Max angle in degrees for pitch adjustment in slopes
+</td></tr>
+<tr>
+<th> TerrainFollowRoll
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Max angle in degrees for roll adjustment in slopes
+</td></tr>
+<tr>
+<th> TerrainFollowData
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> HEAD_WORKSHEET
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> number of the 2DA where the selectable heads for this appearance are listed (you can find the number in the M2DA_base file, with the core worksheets organized in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Heads.xls" title="Heads.xls (page does not exist)">Heads.xls</a> file.)
+</td></tr>
+<tr>
+<th> HAIR_WORKSHEET
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> number of the 2DA where are listed the selectable hair styles for this appearance
+</td></tr>
+<tr>
+<th> EYES_WORKSHEET
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> number of the 2DA where are listed the selectable eyes types for this appearance
+</td></tr>
+<tr>
+<th> BEARD_WORKSHEET
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> number of the 2DA where are listed the selectable beard styles for this appearance
+</td></tr>
+<tr>
+<th> NECK_MODEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> Parts
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> TARGETABLE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> disabled_armor_sounds
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> disabled_weapon_sounds
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> default_SOUND_set
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SOUND_Footstep_type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  column name in sound_movement_footstep
+</td></tr>
+<tr>
+<th> SOUND_unarmed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  material, when creature has no weapon equipped, like: bare hands, claws
+</td></tr>
+<tr>
+<th> SOUND_default_armor
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> SOUND_monster_size
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  used for body-falls. Values can be "small", "medium", "huge", or "unknown".
+</td></tr>
+<tr>
+<th> Sound_X
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> HasTurnAttacks
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  1 is true. Appearance can execute left and right attacks that reorient it 90 degrees.
+</td></tr>
+<tr>
+<th> ValidDeathBlows
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> -1  - Unknown</li>
+<li> 0x0 - standard humanoid</li>
+<li> 0x1 - beast or large creatures</li>
+<li> 0x2 - large creature positional</li></ul>
+</td></tr>
+<tr>
+<th> CREATURE_TYPE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Bitfield, with each bit in the integer enabling a deathblow type (max 32).
+<ul><li> 0x1 - unused</li>
+<li> 0x2 - standard humanoid</li>
+<li> 0x4 - decapitate (only if neck node present)</li>
+<li> 0x8 - creature deathblow</li></ul>
+</td></tr>
+<tr>
+<th> CREATURE_GROUP
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  associates appearances with creature treasure groups in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20Group.xls" title="TS Group.xls (page does not exist)">TS_Group.xls</a>.
+<ul><li> -ve - No Treasure</li>
+<li> 0  - Generic Treasure Group</li>
+<li> +ve - Specific Treasure Group</li></ul>
+</td></tr>
+<tr>
+<th> OneShotKills
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  If set, creature scales to 1 HP only.
+</td></tr>
+<tr>
+<th> CanDoDeathblows
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DefaultEffectFlags
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 1 - Disable Movement</li>
+<li> 2 - Disable Turning</li>
+<li> 4 - Disable combat</li>
+<li> 8 - Disable talents</li>
+<li> 16 - Disable spells</li>
+<li> 32 - Disable skills</li>
+<li> 64 - Disable items</li>
+<li> 128 - Disable input</li></ul>
+</td></tr>
+<tr>
+<th> PERSPACE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> MeleeRingUpdateAlways
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td> Force the melee ring to run updates all the time even while the creature is not being attacked. Useful for creatures that can't move or large creatures that have directional abilities.
+</td></tr>
+<tr>
+<th> MeleeRingDisabledStart
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> The start angle at which the melee ring will be considered disabled
+</td></tr>
+<tr>
+<th> MeleeRingDisabledEnd
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> The end angle at which the melee ring will be considered disabled
+</td></tr>
+<tr>
+<th> MeleeRingOffset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Offset the main melee ring forward or backwards according to the creature orientation. Value is in meteres. Positive offsets move the ring forward. Range allowed: -0.5 to 0.5 meters
+</td></tr>
+<tr>
+<th> MeleeRingsData
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bHasAppearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 - Creature has no default appear animation</li>
+<li> 1 - Creature does have a default appear animation</li></ul>
+</td></tr>
+<tr>
+<th> bHasDisappearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 - Creature has no default disappear animation</li>
+<li> 1 - Creature does have a default disappear animation</li></ul>
+</td></tr>
+<tr>
+<th> AppearVFX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AppearDisappear
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">comment</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> bCanBleed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  determines whether a creature has a blood effect when hit.
+</td></tr>
+<tr>
+<th> BloodPool
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The size of the blood pool that forms under the creature's body when it's killed.
+<ul><li> 0 - none</li>
+<li> 1 - small</li>
+<li> 2 - medium</li>
+<li> 3 - large</li></ul>
+</td></tr>
+<tr>
+<th> DefaultWeapon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> DefaultArmor
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CorpseModel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  A dead creature decays into this model after some time. Note that model  "plc_bagcoin03_0" will disappear completely after the user loots its content.  So, spells that normally require dead bodies (e.g. to get life or mana) will not work then.  For this reason, this model should be used with care. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bodybag" title="Bodybag">Bodybag</a>.
+</td></tr>
+<tr>
+<th> DecayBehaviour
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 - Decay completely</li>
+<li> 1 - Don't decay, but remove physics (i.e. won't block movement any more)</li>
+<li> 2 - Don't decay and don't remove physics either</li></ul>
+</td></tr>
+<tr>
+<th> AttackFL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Attack angle front left - large creature only
+</td></tr>
+<tr>
+<th> AttackFLWidth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Width of attack cone
+</td></tr>
+<tr>
+<th> AttackFLRing
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Melee ring ID (for very large creatures)
+</td></tr>
+<tr>
+<th> AttackFR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackFRWidth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackFRRing
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Melee ring ID (for very large creatures)
+</td></tr>
+<tr>
+<th> AttackBR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackBRWidth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackBRRing
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Melee ring ID (for very large creatures)
+</td></tr>
+<tr>
+<th> AttackBL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackBLWidth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> AttackBLRing
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Melee ring ID (for very large creatures)
+</td></tr>
+<tr>
+<th> AttackReach
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td> Reach of the attacks
+</td></tr>
+<tr>
+<th> LargeCreature
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> CodexPlot
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  Which codex plot contains a page giving information about this creature.
+</td></tr>
+<tr>
+<th> CodexFlag
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Which flag within the given codex plot to set when the first creature of this type is killed by the player.
+</td></tr>
+<tr>
+<th> AprRulesFlags
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<p>0x1 - Count as construct (for damage)
+</p>
+</td></tr>
+<tr>
+<th> bDisableGore
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Disables all gore updates on the creature via <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20gore%20h" title="Sys gore h (page does not exist)">sys_gore_h</a>
+</td></tr>
+<tr>
+<th> BumpLevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Creatures with higher value bump creatures with lower values. The Player's BumpLevel is 100.
+</td></tr>
+<tr>
+<th> AppearanceRestrictionGroup
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A bit flag indicating which appearance groups this creature belongs to. Abilities can set a condition to restrict use of an ability to a specific appearance group. Only creatures that sport appearances that belong to this group will be allowed to use those abilities.
+</td></tr>
+<tr>
+<th> AppearanceRating
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th> GroupType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Taken_Creature_variation_IDS">Taken Creature variation IDS</span></h2>
+<p>0 to 89 - Base game 
+</p><p>10000 - Skeleton, in DLC
+</p><p>10100 Shale DLC
+</p><p>10200 - Other DLC
+</p><p>20000 to 20205 - Awakening DLC
+</p><p>43000 to 43002 - Witch Hunt DLC
+</p><p>50000 to 50004 - Golems DLC
+</p>

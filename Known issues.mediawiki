@@ -1,0 +1,104 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p>This page is somewhat redundant as it duplicates things from pages such as <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20troubleshooting" title="Installation troubleshooting">Installation troubleshooting</a>.  However, it is gathering place for issues related to specific builds, along with plans to fix them.
+</p><p>We're now moving detailed bug reports to individual pages, grouped in the category <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Toolset%20bugs" title="Category:Toolset bugs">Toolset bugs</a>. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reporting%20a%20bug" title="Reporting a bug">Reporting a bug</a> for instructions on how to submit bugs. This page will remain as a high-level summary of current known issues.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Final_Build"><span class="tocnumber">1</span> <span class="toctext">Final Build</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Toolset_Issues"><span class="tocnumber">1.1</span> <span class="toctext">Toolset Issues</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Build_1.0.1008.0_.28Installer_Version_1.01.29"><span class="tocnumber">2</span> <span class="toctext">Build 1.0.1008.0 (Installer Version 1.01)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Installer_Issues"><span class="tocnumber">2.1</span> <span class="toctext">Installer Issues</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Unable_to_connect_to_the_database"><span class="tocnumber">2.1.1</span> <span class="toctext">Unable to connect to the database</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Toolset_Issues_2"><span class="tocnumber">2.2</span> <span class="toctext">Toolset Issues</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Build_1.0.982.19_.28Installer_Version_1.00.29"><span class="tocnumber">3</span> <span class="toctext">Build 1.0.982.19 (Installer Version 1.00)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Installation_Issues"><span class="tocnumber">3.1</span> <span class="toctext">Installation Issues</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Unable_to_connect_to_the_database_2"><span class="tocnumber">3.1.1</span> <span class="toctext">Unable to connect to the database</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Toolset_Issues_3"><span class="tocnumber">3.2</span> <span class="toctext">Toolset Issues</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Exporting_resources_can_cause_the_main_campaign_to_fail.2C_and_can_corrupt_savegames_made_after_installation"><span class="tocnumber">3.2.1</span> <span class="toctext">Exporting resources can cause the main campaign to fail, and can corrupt savegames made after installation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Older_known_issues_.28Beta_issues.2C_needs_cleanup.29"><span class="tocnumber">4</span> <span class="toctext">Older known issues (Beta issues, needs cleanup)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Build_925_issues"><span class="tocnumber">4.1</span> <span class="toctext">Build 925 issues</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Build_888_issues"><span class="tocnumber">4.2</span> <span class="toctext">Build 888 issues</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Build_773_issues"><span class="tocnumber">4.3</span> <span class="toctext">Build 773 issues</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Final_Build">Final Build</span></h2>
+<h3><span class="mw-headline" id="Toolset_Issues">Toolset Issues</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Out%20of%20memory%20message" title="Bug: Out of memory message">Bug: Out of memory message</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20New%20level%20doesn%27t%20work%20correctly" title="Bug: New level doesn't work correctly">Bug: New level doesn't work correctly</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Bulder%20to%20Player%20with%20new%20level%20issue" title="Bug: Bulder to Player with new level issue">Bug: Bulder to Player with new level issue</a></li></ul>
+<h2><span class="mw-headline" id="Build_1.0.1008.0_.28Installer_Version_1.01.29">Build 1.0.1008.0 (Installer Version 1.01)</span></h2>
+<h3><span class="mw-headline" id="Installer_Issues">Installer Issues</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Cannot%20open%20file%20for%20writing%20C%20-%20Program%20Files%20-%20BioWare" title="Bug: Cannot open file for writing C:\Program Files\BioWare\...">Bug: Cannot open file for writing C:\Program Files\BioWare\...</a></li></ul>
+<h4><span class="mw-headline" id="Unable_to_connect_to_the_database"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">Unable to connect to the database</a></span></h4>
+<p>Unfortunately this will always be a potential issue, as it is an issue with connecting to SQL Server 2005 Express, which can fail in as many ways as there are users.  The latest help can be found <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">here</a>.
+</p>
+<h3><span class="mw-headline" id="Toolset_Issues_2">Toolset Issues</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20SpeedTree%20rendering%20distance" title="Bug: SpeedTree rendering distance">Bug: SpeedTree rendering distance</a> - it has been reported that in at least one case a user can't set his tree rendering distance above 20m.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ConfigureToolset%20application%20fails%20to%20set%20a%20registry%20key" title="Bug: ConfigureToolset application fails to set a registry key">Bug: ConfigureToolset application fails to set a registry key </a>. This bug requires a workaround if you need to use ConfigureToolset to change your database settings.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Computer%20names%20with%20non-English%20characters%20can%20cause%20checkout%20problems" title="Bug: Computer names with non-English characters can cause checkout problems">Bug: Computer names with non-English characters can cause checkout problems</a>. This can cause checked-out resources to be recognized as checked out to the wrong user, making them impossible to edit.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Unable%20to%20save%20a%20new%20module" title="Bug: Unable to save a new module">Bug: Unable to save a new module</a>. This can occur for users with long usernames.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Water%20plane%20missing%20in-game" title="Bug: Water plane missing in-game">Bug: Water plane missing in-game</a>. Level art that's posted when not in the single player module is missing its water planes.</li></ul>
+<h2><span class="mw-headline" id="Build_1.0.982.19_.28Installer_Version_1.00.29">Build 1.0.982.19 (Installer Version 1.00)</span></h2>
+<h3><span class="mw-headline" id="Installation_Issues">Installation Issues</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Endless%20reboot%20cycles%20after%20install%20under%20Windows%20XP%20SP%202" title="Bug: Endless reboot cycles after install under Windows XP SP 2">Bug: Endless reboot cycles after install under Windows XP SP 2</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation into a directory with a long path name">Installation into a directory with a long path name</a> (this arose with Steam installations in particular)</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Installer%20hangs%20at%20the%20stage%20of%20Execute%20-%20regsvr32.exe%20-%20s%20-%20C%20-%20Dragon%20Age%20-%20tools%20-%20Engine.dll" title="Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;">Bug: Installer hangs at the stage of Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Cannot%20open%20file%20for%20writing%20C%20-%20Program%20Files%20-%20BioWare" title="Bug: Cannot open file for writing C:\Program Files\BioWare\...">Bug: Cannot open file for writing C:\Program Files\BioWare\...</a></li></ul>
+<h4><span class="mw-headline" id="Unable_to_connect_to_the_database_2"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">Unable to connect to the database</a></span></h4>
+<p>Unfortunately this will always be a potential issue, as it is an issue with connecting to SQL Server 2005 Express, which can fail in as many ways as there are users.  The latest help can be found <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database" title="Unable to connect to the database">here</a>.
+</p>
+<h3><span class="mw-headline" id="Toolset_Issues_3">Toolset Issues</span></h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20GFF%20and%20ERF%20editors%20require%20a%20keyfile" title="Bug: GFF and ERF editors require a keyfile">Bug: GFF and ERF editors require a keyfile</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20FaceFX%20not%20appearing%20in%20menus" title="Bug: FaceFX not appearing in menus">Bug: FaceFX not appearing in menus</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Lightmapper%20causes%20shading%20artifacts%20along%20chunk%20boundaries" title="Bug: Lightmapper causes shading artifacts along chunk boundaries">Bug: Lightmapper causes shading artifacts along chunk boundaries</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Water%20plane%20missing%20in-game" title="Bug: Water plane missing in-game">Bug: Water plane missing in-game</a> - If you create a level with a water plane in it, the water is appearing properly in the toolset, but is non-existent in the game.  </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Toolset%20freezes%20when%20exporting%20or%20compiling" title="Bug: Toolset freezes when exporting or compiling">Bug: Toolset freezes when exporting or compiling</a></li></ul>
+<h4><span class="mw-headline" id="Exporting_resources_can_cause_the_main_campaign_to_fail.2C_and_can_corrupt_savegames_made_after_installation">Exporting resources can cause the main campaign to fail, and can corrupt savegames made after installation</span></h4>
+<ul><li>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20GUID%20bug" title="Plot GUID bug">Plot GUID bug</a>, or <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/114380">http://social.bioware.com/forum/1/topic/8/index/114380</a> for more details, and for information on how to clean up after this error strikes.</li></ul>
+<p>An incompatibility has been discovered between the core resources in the database released with the toolset and the core resources used by the existing main campaign. This can cause the main campaign to stop working correctly after any resources are exported from the toolset.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">This is fixed in version 1.01 of the toolset.  The underlying problem was identified and fixed, and a new set of core resources has been put into the database that does not give this problem anymore.</div>
+<h2><span class="mw-headline" id="Older_known_issues_.28Beta_issues.2C_needs_cleanup.29">Older known issues (Beta issues, needs cleanup)</span></h2>
+<h3><span class="mw-headline" id="Build_925_issues">Build 925 issues</span></h3>
+<p>When working on a multiple-monitor system, it is possible that rearranging the monitors will cause the previously-recorded default location of popup windows such as "manage modules" to be off the edge of the display area where it can't be seen or manipulated. This can lock up the toolset, since the toolset won't respond until the popup is dismissed. To reset the position of the popup windows, delete the file "My Documents\BioWare\Dragon Age\Toolset\Layouts3.xml". It will be recreated the next time the toolset is run using default values.
+</p>
+<h3><span class="mw-headline" id="Build_888_issues">Build 888 issues</span></h3>
+<p>Build 888 and subsequent builds has some built-in assumptions that it will be installed in "Program Files\Dragon Age". If it's installed elsewhere, the resource processor (used during certain resource exports, the generation of VO, FaceFX, and other activities) will become confused and fail with log messages such as "Unable to load C:\Programme\Dragon Age\tools\ResourceBuild/Settings/ResourceBuilder.xml" or "Failed to copy template 'C:\Program Files\Dragon Age\tools\ResourceBuild\Processors\VO_template_project.fdp' to 'C:\DOCUME~1\Owner\LOCALS~1\Temp\DragonAgePlaceholderVO\VO_template_project.fdp'" To correct this, go to the Tools -&gt; Options -&gt; Environment -&gt; Resource Build Path setting and correct the path listed there to point to the resource builder's actual location.
+</p><p>This appears to have been resolved in 1.0.982.0
+</p>
+<h3><span class="mw-headline" id="Build_773_issues">Build 773 issues</span></h3>
+<ul><li>If you use resource history to view past revisions of a large conversation and then try to diff two of them, the toolset will crash. You can diff small conversations correctly. It's not known exactly what the cutoff between "large" and "small" conversations are as far as this bug is concerned.</li></ul>
+<ul><li>Under Vista, the default install of MSSQL doesn't support multiple different user accounts on the same machine. Attempting to start the toolset from the wrong user account will pop up an error advising that you use the configuration tool to correct the database settings, but the database settings are not in error - it's the database server itself that's refusing to cooperate. One possible solution is to use SQL Server Management Studio Express to set up MSSQL properly.</li></ul>
+<ul><li> When loading a saved game file, areas and objects contained therein are loaded from the save rather than the game resource. This means that if you save your game inside an area, make changes to the area and export them using the toolset, and then reload your game, none of the changes will appear. The changes will only appear if you start a new game. This affects objects such as waypoints, creatures, placeables, and so on.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Known%20issues%20-%20ru" title="Known issues/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

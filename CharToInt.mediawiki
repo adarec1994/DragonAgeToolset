@@ -1,0 +1,24 @@
+<p>Converts a character to an integer value.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> CharToInt(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sString<dd>The string character to convert
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the integer value of the character in the string.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the ascii value of the first character in the string string.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>If a string with more than one character is passed in, the function will only convert the first character in the string.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToChar" title="IntToChar">IntToChar</a>
+</p>

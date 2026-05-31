@@ -1,0 +1,20 @@
+<h2><span class="mw-headline" id="Script_Bug_still_there.3F">Script Bug still there?</span></h2>
+<ul><li><i>Note that as of toolset version 1.01 and game version 1.02b, you should NOT use "module_core" as the script (as found in module properties) for an add-in that extends an existing module, otherwise you will encounter issues that may include slow-downs during conversations and attribute allocation. The exact cause of these issues is not yet known, but using a blank script with an empty main function will eliminate these issues. </i></li></ul>
+<p>Anyone care to provide a link? I have found this to be not the case. Everything works. The bioware made Storage chest uses a empty field. Some mods i downloaded use an empty field and they all work. Scripts scare me. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 08:51, 30 January 2010 (UTC)
+</p>
+<dl><dd>If the addin doesn't do anything with any module events it doesn't need a module script. As I understand it if you've got multiple addins active and they all have module scripts, every time a module event is fired <i>all</i> of the module scripts will be run to handle it. For example, the cause of the attribute doubling is because there's code in module_core that says "when there's an EVENT_TYPE_PLAYERLEVELUP event give the player 3 more attribute points." If there are two copies of module_core active (one from the original campaign module and one from an addin to it) this code gets run twice each time the EVENT_TYPE_PLAYERLEVELUP event fires. The slowdowns are probably caused by similar duplication of effort - I don't know everything that module_core does offhand. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 17:25, 1 February 2010 (UTC)</dd></dl>
+<dl><dd><dl><dd>Probably you are right, i am not so far yet. If it avoids some problems maybe it would help it said somewhere what exactly "a blank script with an empty main function" is. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 17:37, 1 February 2010 (UTC)</dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd>Ah well the module_core thing is right yes. It causes double stuffs. There was an update on <a rel="nofollow" class="external free" href="http://dragonagemodding.wordpress.com/2009/11/16/beware-the-dangers-of-module_core/">http://dragonagemodding.wordpress.com/2009/11/16/beware-the-dangers-of-module_core/</a> which sais that an empty script isnt actually needed, as a "none" option is available. Probably i will reformat this thing later then <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 23:21, 1 February 2010 (UTC)</dd></dl></dd></dl></dd></dl>
+<h2><span class="mw-headline" id="Updates">Updates</span></h2>
+<p>Here are some references to forum posts that may shed some light on the fuzzier parts of modules:
+</p>
+<ul><li> Module properties hierarchy with respect to <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/441232">checking single-player plot flags from an addin</a>.</li>
+<li> Module vs Owner Module and so on: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/8/index/535651">[1]</a></li>
+<li> Getting <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/8/index/665384">external resources into a DAZIP</a> - at least tangentially related to modules.</li>
+<li> <i>More as I dig it up...</i></li></ul>
+<p>I haven't put them into the main article since I haven't really verified it and I don't want to insert my assumptions for fact. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 22:50, 23 January 2010 (UTC)
+</p><p><br />
+</p>
+<hr />
+<p>By agreement with AmstradHero, a section was added on creating a standalone module.
+</p>

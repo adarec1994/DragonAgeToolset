@@ -1,0 +1,27 @@
+<p>Sound in Dragon Age is packaged using a program called <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a>. FMOD sound banks include the audio waveform itself, and can also include settings determining how the sound is played.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Voice-over"><span class="tocnumber">1</span> <span class="toctext">Voice-over</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Placeable_sound_resources"><span class="tocnumber">2</span> <span class="toctext">Placeable sound resources</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Adding_sounds_to_animations"><span class="tocnumber">3</span> <span class="toctext">Adding sounds to animations</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Character_soundsets"><span class="tocnumber">4</span> <span class="toctext">Character soundsets</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Voice-over">Voice-over</span></h2>
+<p>Voice over doesn't actually require you to work with FMOD, as the tools to package VO into FMOD sound banks are built into the toolset.
+</p><p>Placeholder <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a> can be generated automatically by the toolset (using the default Microsoft text-to-speech engine that comes with your OS). This is intended as a way to easily produce a "rough cut" of a cinematic, giving an approximate feel for how long the line will last and allowing <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a> to be generated.
+</p><p>Recording real <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">Voice-Over</a> for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversations</a> is straightforward, though you'll need to keep track of the string IDs of the lines you're recording in order to give the wav files the proper filenames. 
+</p>
+<h2><span class="mw-headline" id="Placeable_sound_resources">Placeable sound resources</span></h2>
+<p>Other types of sound resources will require work with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a> itself to get them into the game. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a> for details.
+</p><p>Sound events are placed in an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a> layout using the area editor. Details such as how the sound loops, where the sound is simulated as coming from, and so forth, are defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FMOD" title="FMOD">FMOD</a>.
+</p><p>Areas can also have <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Audio volume">audio volumes</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Music volume">music volumes</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Reverb volume">reverb volumes</a> defined, with associated sound events.
+</p>
+<h2><span class="mw-headline" id="Adding_sounds_to_animations">Adding sounds to animations</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Blend tree editor">Blend tree editor</a> allows sound events to be associated with an animation's timeline. So for example, an animation of a golem clapping could have a clanging sound added to the moment of impact of its hands.
+</p>
+<h2><span class="mw-headline" id="Character_soundsets">Character soundsets</span></h2>
+<p>Soundsets for characters (the collection of lines they choose from in combat and other routine in-game activities) are created as <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">conversation</a> resources, and are associated with individual creatures via a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">character</a> resource. This allows one soundset to be reused for multiple different creatures. New soundsets can be created from templates listed in /_Core Soundsets/.
+</p>

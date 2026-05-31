@@ -1,0 +1,17 @@
+<ul><li><b>Version found:</b> v1.0.1008.0</li>
+<li><b>Status:</b> Closed</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>After creating a simple conversation, clicked Tools-&gt;Generate VO-&gt;Generate VO Local. Log window then reports:
+</p>
+<ul><li>I: 19:00:13 - Please wait while generating VO for conversation "conv_quest_giver"</li>
+<li>E: 19:00:16 - Failed to copy template 'G:\Dragon Age\tools\ResourceBuild\Processors\VO_template_project.fdp' to 'C:\DOCUME~1\(user)\LOCALS~1\Temp\DragonAgePlaceholderVO\VO_template_project.fdp'</li>
+<li>I: 19:00:16 - no FESL allocator defined</li>
+<li>E: 19:00:16 - RPU process failed with a return code of '1'.</li>
+<li>E: 19:00:16 - Failed to do Local post of placeholder voice over data for conversation conv_quest_giver</li></ul>
+<p>The toolset is trying to use/read/take from G:\Dragon Age\... but it is installed at G:\Program Files\Dragon Age\...
+</p><p>How to make it recognize and use the proper directory? Issue is affecting other functions like exporting custom-created levels.
+</p>
+<h2><span class="mw-headline" id="Solution">Solution</span></h2>
+<p>Ensure the Resource Build Path is correct in Tools-&gt;Options - Environment. Alternate install directory (like in drive G: instead of C:) may cause incorrect directory to be assigned.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20ResourcePath.jpg" title="File:ResourcePath.jpg">See screenshot.</a>
+</p>

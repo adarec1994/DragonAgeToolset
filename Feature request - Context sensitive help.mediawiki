@@ -1,0 +1,4 @@
+<p>Would be nice to have context sensitive help in the toolset that linked the toolset directly to the toolset wiki.
+If you are struggling with some properties on a particular editor, it would be nice to have the toolset take you directly to the related wiki help page.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">This feature is currently in the process of being implemented. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a> 17:04, 15 January 2010 (UTC)</div>

@@ -1,0 +1,238 @@
+<p>Called by:
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+*  @brief Handles processing an attack impact event
+*
+*  @param oAttacker       The command owner, usually OBJECT_SELF
+*  @param oTarget         The Target of the command
+*  @param nAttackResult   The result of the attack (COMBAT_RESULT_*)
+*  @param eImpactEffect   The attack's impact effect.
+*
+*  @returns COMBAT_RESULT_* constant
+*
+*  @author Georg Zoeller
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Combat_HandleAttackImpact<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackResult, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> eImpactEffect<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Combat_HandleAttackImpact<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackResult, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> eImpactEffect<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nUIMessage <span class="sy0">=</span> UI_MESSAGE_MISSED;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// We retired combat result blocked, so we treat it as a miss here.</span>
+    <span class="co1">// Might be back in DA2</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BLOCKED</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nAttackResult <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_MISS</span>;
+        nUIMessage <span class="sy0">=</span> UI_MESSAGE_BLOCKED;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -----------------------------------------------------------------</span>
+    <span class="co1">// If the target managed to stealth, we're converting it into a miss</span>
+    <span class="co1">// -----------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span> <span class="sy0">&amp;&amp;</span> nAttackResult <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_MISS</span> <span class="sy0">&amp;&amp;</span> IsInvisible<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;Target turned invisible - hit converted to miss&quot;</span><span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+        nAttackResult <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_MISS</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_MISS</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// -------------------------------------------------------------</span>
+        <span class="co1">// Tell the damage effect to update gore and by how much...</span>
+        <span class="co1">// see gore_h for details or ask georg.</span>
+        <span class="co1">// -------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectObject"><span class="kw4">GetEffectObject</span></a><span class="br0">&#40;</span>eImpactEffect,<span class="nu0">0</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nApp <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType"><span class="kw4">GetAppearanceType</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger"><span class="kw4">GetEffectInteger</span></a><span class="br0">&#40;</span>eImpactEffect,<span class="nu0">1</span><span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fPerSpace <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAFloat"><span class="kw4">GetM2DAFloat</span></a><span class="br0">&#40;</span>TABLE_APPEARANCE, <span class="st0">&quot;PERSPACE&quot;</span>, nApp<span class="br0">&#41;</span>;
+        <span class="co1">// Skipping range check if the creature is large (personal space greater or equal to one)</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> IsUsingMeleeWeapon<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> fPerSpace <span class="sy0">&lt;</span> <span class="nu0">1.0</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetDistanceBetween"><span class="kw4">GetDistanceBetween</span></a><span class="br0">&#40;</span>oTarget, oAttacker<span class="br0">&#41;</span> <span class="sy0">&gt;</span> <span class="nu0">5.0f</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co2">#ifdef DEBUG</span>
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;Melee attack impact from past 5m found, changed to COMBAT_RESULT_MISS&quot;</span><span class="br0">&#41;</span>;
+                <span class="co2">#endif</span>
+                nAttackResult <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_MISS</span>;
+            <span class="br0">&#125;</span>
+&#160;
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -----------------------------------------------------------------</span>
+    <span class="co1">// The attack was successful, ...</span>
+    <span class="co1">// -----------------------------------------------------------------</span>
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamage <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectFloat"><span class="kw4">GetEffectFloat</span></a><span class="br0">&#40;</span>eImpactEffect,<span class="nu0">0</span><span class="br0">&#41;</span>;
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nVfx <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger"><span class="kw4">GetEffectInteger</span></a><span class="br0">&#40;</span>eImpactEffect,<span class="nu0">0</span><span class="br0">&#41;</span>;
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nDamageType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger"><span class="kw4">GetEffectInteger</span></a><span class="br0">&#40;</span>eImpactEffect, <span class="nu0">2</span><span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// special damage type override for Shale, filtered for performance reasons</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAppearanceType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType"><span class="kw4">GetAppearanceType</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;Attacker appearance type = &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nAppearanceType<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAppearanceType <span class="sy0">==</span> <span class="nu0">10100</span><span class="br0">&#41;</span> <span class="co1">// new shale type</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// check for damage type modifying effect</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> eModifiers <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffects"><span class="kw4">GetEffects</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">10000</span><span class="br0">&#41;</span>;
+            <span class="co2">#ifdef DEBUG</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;  Modifier effects present = &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>eModifiers<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+            <span class="co2">#endif</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsEffectValid"><span class="kw4">IsEffectValid</span></a><span class="br0">&#40;</span>eModifiers<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nOverrideDamageType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectInteger"><span class="kw4">GetEffectInteger</span></a><span class="br0">&#40;</span>eModifiers<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>, <span class="nu0">0</span><span class="br0">&#41;</span>;
+                nDamageType <span class="sy0">=</span> nOverrideDamageType;
+&#160;
+                <span class="co2">#ifdef DEBUG</span>
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;  First modifier is valid with type &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nOverrideDamageType<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+                <span class="co2">#endif</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <span class="co1">// -------------------------------------------------------------</span>
+        <span class="co1">// If damage was negative, something went wrong and we bail out</span>
+        <span class="co1">// -------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>fDamage <span class="sy0">&lt;</span> <span class="nu0">0.0f</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nGore;
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Only melee weapons update gore.</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>GetItemType<span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span> <span class="sy0">==</span> ITEM_TYPE_WEAPON_MELEE<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co1">// -------------------------------------------------------------</span>
+                <span class="co1">// Attacks that are not deathblows may play an attack grount.</span>
+                <span class="co1">// -------------------------------------------------------------</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    SSPlaySituationalSound<span class="br0">&#40;</span>oAttacker, SOUND_SITUATION_ATTACK_IMPACT<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+&#160;
+                <span class="co1">// only update gore if the target can bleed (PeterT 25/7/08)</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nTargetAppearance <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType"><span class="kw4">GetAppearanceType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_APPEARANCE, <span class="st0">&quot;bCanBleed&quot;</span>, nTargetAppearance<span class="br0">&#41;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    nGore <span class="sy0">=</span>  DAMAGE_EFFECT_FLAG_UPDATE_GORE;
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_CRITICALHIT</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+&#160;
+            <span class="co2">#ifdef DEBUG</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_CRITICALHIT&quot;</span><span class="br0">&#41;</span>;
+            <span class="co2">#endif</span>
+&#160;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Damage below a certain threshold is not displayed as critical</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fDamage <span class="sy0">&gt;=</span> DAMAGE_CRITICAL_DISPLAY_THRESHOLD<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsPartyMember<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectOnObject"><span class="kw4">Engine_ApplyEffectOnObject</span></a><span class="br0">&#40;</span><span class="kw3">EFFECT_DURATION_TYPE_TEMPORARY</span>,EffectScreenShake<span class="br0">&#40;</span> SCREEN_SHAKE_TYPE_CRITICAL_HIT <span class="br0">&#41;</span>,oTarget, <span class="nu0">1.0f</span>, oAttacker<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+&#160;
+                nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_CRITICAL;
+            <span class="br0">&#125;</span>
+&#160;
+&#160;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BACKSTAB</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <span class="co2">#ifdef DEBUG</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_BACKSTAB&quot;</span><span class="br0">&#41;</span>;
+            <span class="co2">#endif</span>
+&#160;
+             nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_BACKSTAB;
+             nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_CRITICAL;
+          <span class="co1">//   UI_DisplayMessage(oAttacker, UI_MESSAGE_BACKSTAB);</span>
+&#160;
+&#160;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+              <span class="co2">#ifdef DEBUG</span>
+              Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_DEATHBLOW&quot;</span><span class="br0">&#41;</span>;
+              <span class="co2">#endif</span>
+&#160;
+              nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_CRITICAL;
+&#160;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+        <span class="br0">&#123;</span>
+            <span class="co2">#ifdef DEBUG</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_HIT&quot;</span><span class="br0">&#41;</span>;
+            <span class="co2">#endif</span>
+&#160;
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Templar's Righteous Strike - 25% mana damage</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsMagicUser<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>GetItemType<span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span> <span class="sy0">==</span> ITEM_TYPE_WEAPON_MELEE<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker,ABILITY_TALENT_RIGHTEOUS_STRIKE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                     nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_LEECH_MANA;
+                     nGore <span class="sy0">|=</span> DAMAGE_EFFECT_FLAG_LEECH_25;
+&#160;
+&#160;
+                     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyEffectVisualEffect"><span class="kw4">ApplyEffectVisualEffect</span></a><span class="br0">&#40;</span>oAttacker, oTarget, <span class="nu0">90181</span>, <span class="kw3">EFFECT_DURATION_TYPE_INSTANT</span>, <span class="nu0">0.0f</span>, ABILITY_TALENT_RIGHTEOUS_STRIKE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <span class="co1">// -------------------------------------------------------------</span>
+        <span class="co1">//            Here is where the actual damage is dealt</span>
+        <span class="co1">// -------------------------------------------------------------</span>
+        Effects_ApplyInstantEffectDamage<span class="br0">&#40;</span>oTarget, oAttacker, fDamage, nDamageType, nGore,nAbility,nVfx<span class="br0">&#41;</span>;
+        Combat_Damage_CheckOnImpactAbilities<span class="br0">&#40;</span>oTarget, oAttacker, fDamage, nAttackResult, oWeapon, nAbility<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_MISS</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_MISS&quot;</span><span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+&#160;
+        UI_DisplayMessage<span class="br0">&#40;</span>oAttacker, nUIMessage<span class="br0">&#41;</span>;
+&#160;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackResult <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BLOCKED</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co2">#ifdef DEBUG</span>
+        Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleAttackImpact&quot;</span>,<span class="st0">&quot;COMBAT_RESULT_BLOCKED&quot;</span><span class="br0">&#41;</span>;
+        <span class="co2">#endif</span>
+&#160;
+        <span class="co1">// Do something smart here in the future</span>
+        <span class="co1">//        UI_DisplayMessage(oAttacker, UI_MESSAGE_MISSED);</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// Stats - handle hit rate</span>
+    STATS_HandleHitRate<span class="br0">&#40;</span>oAttacker, nAttackResult<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>

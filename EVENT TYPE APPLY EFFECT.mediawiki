@@ -1,0 +1,31 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>an effect is applied to the receiving object
+<dt>Sent from:
+<dd>engine
+<dt>Sent to:
+<dd>creature, placeable
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_APPLY_EFFECT:<br />{<br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Relevant Eclipse engine code: 
+&lt;cpp&gt;
+</p>
+<pre>   pEvent-&gt;SetType(CSSCRIPTEVENT_EVENTTYPE_RULES_APPLYEFFECT);
+   pEvent-&gt;SetData(0, pEffect);
+</pre>
+<p>&lt;/cpp&gt;
+</p><p>Use <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEffect" title="GetCurrentEffect">GetCurrentEffect</a> to get the effect that was just applied (there is no <code>GetEventEffect</code> function) which can be decomposed to get the effect's creator, type, etc.
+</p>

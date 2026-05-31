@@ -1,0 +1,212 @@
+<p>The <b>1.00 functions</b> category lists functions in the original version of Dragon Age:Origins.
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Functions from version 1.00"</h2>
+<p>The following 200 pages are in this category, out of 798 total.
+</p>(previous page) (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions%20from%20version%201.00#mw-pages" title="Category:Functions from version 1.00">next page</a>)<div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20AdjustDuration" title="Ability AdjustDuration">Ability AdjustDuration</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyEffectOnObjectArray" title="Ability ApplyEffectOnObjectArray">Ability ApplyEffectOnObjectArray</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyLocationImpactVFX" title="Ability ApplyLocationImpactVFX">Ability ApplyLocationImpactVFX</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyObjectImpactVFX" title="Ability ApplyObjectImpactVFX">Ability ApplyObjectImpactVFX</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyRandomDurationEffectOnObjectArray" title="Ability ApplyRandomDurationEffectOnObjectArray">Ability ApplyRandomDurationEffectOnObjectArray</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffect" title="Ability ApplyUpkeepEffect">Ability ApplyUpkeepEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffects" title="Ability ApplyUpkeepEffects">Ability ApplyUpkeepEffects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CheckFlag" title="Ability CheckFlag">Ability CheckFlag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CheckUseConditions" title="Ability CheckUseConditions">Ability CheckUseConditions</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CostCheck" title="Ability CostCheck">Ability CostCheck</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20DeactivateModalAbility" title="Ability DeactivateModalAbility">Ability DeactivateModalAbility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20DoRunSpellScript" title="Ability DoRunSpellScript">Ability DoRunSpellScript</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityCost" title="Ability GetAbilityCost">Ability GetAbilityCost</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityTable" title="Ability GetAbilityTable">Ability GetAbilityTable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityTargetType" title="Ability GetAbilityTargetType">Ability GetAbilityTargetType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactLocationVfxId" title="Ability GetImpactLocationVfxId">Ability GetImpactLocationVfxId</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactObjectVfxId" title="Ability GetImpactObjectVfxId">Ability GetImpactObjectVfxId</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledCost" title="Ability GetScaledCost">Ability GetScaledCost</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledDamage" title="Ability GetScaledDamage">Ability GetScaledDamage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledEffectDuration" title="Ability GetScaledEffectDuration">Ability GetScaledEffectDuration</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledHeal" title="Ability GetScaledHeal">Ability GetScaledHeal</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetSpellscriptPendingEventResult" title="Ability GetSpellscriptPendingEventResult">Ability GetSpellscriptPendingEventResult</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetTargetAllies" title="Ability GetTargetAllies">Ability GetTargetAllies</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20HandleEventOutOfManaStamina" title="Ability HandleEventOutOfManaStamina">Ability HandleEventOutOfManaStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20HandleOnDamageAbilities" title="Ability HandleOnDamageAbilities">Ability HandleOnDamageAbilities</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAbilityActive" title="Ability IsAbilityActive">Ability IsAbilityActive</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAbilityTargetValid" title="Ability IsAbilityTargetValid">Ability IsAbilityTargetValid</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAoE" title="Ability IsAoE">Ability IsAoE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsBloodMagic" title="Ability IsBloodMagic">Ability IsBloodMagic</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsValidAOETarget" title="Ability IsValidAOETarget">Ability IsValidAOETarget</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20OnGameModeChange" title="Ability OnGameModeChange">Ability OnGameModeChange</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20PreventAbilityEffectStacking" title="Ability PreventAbilityEffectStacking">Ability PreventAbilityEffectStacking</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20RemoveAbilityEffectsByCreator" title="Ability RemoveAbilityEffectsByCreator">Ability RemoveAbilityEffectsByCreator</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20SetSpellscriptPendingEventResult" title="Ability SetSpellscriptPendingEventResult">Ability SetSpellscriptPendingEventResult</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20SubtractAbilityCost" title="Ability SubtractAbilityCost">Ability SubtractAbilityCost</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20UseAbilityWrapper" title="Ability UseAbilityWrapper">Ability UseAbilityWrapper</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abilty%20IsUsingRangedWeaponAnim" title="Abilty IsUsingRangedWeaponAnim">Abilty IsUsingRangedWeaponAnim</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abs" title="Abs">Abs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Acos" title="Acos">Acos</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActivateSoundByTag" title="ActivateSoundByTag">ActivateSoundByTag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddAbility" title="AddAbility">AddAbility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCommand" title="AddCommand">AddCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddCreatureMoney" title="AddCreatureMoney">AddCreatureMoney</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddGeneralScoreboardEntry" title="AddGeneralScoreboardEntry">AddGeneralScoreboardEntry</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemProperty" title="AddItemProperty">AddItemProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemVisualEffect" title="AddItemVisualEffect">AddItemVisualEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddNonPartyFollower" title="AddNonPartyFollower">AddNonPartyFollower</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddTacticPresetID" title="AddTacticPresetID">AddTacticPresetID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AdjustFollowerApproval" title="AdjustFollowerApproval">AdjustFollowerApproval</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20OverrideBehaviour" title="Ambient OverrideBehaviour">Ambient OverrideBehaviour</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AngleToVector" title="AngleToVector">AngleToVector</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyEffectModifyProperty" title="ApplyEffectModifyProperty">ApplyEffectModifyProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyEffectVisualEffect" title="ApplyEffectVisualEffect">ApplyEffectVisualEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Asin" title="Asin">Asin</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Atan" title="Atan">Atan</a></li></ul></div><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BeginConversation" title="BeginConversation">BeginConversation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BeginSlideshow" title="BeginSlideshow">BeginSlideshow</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BeginTrainingStep" title="BeginTrainingStep">BeginTrainingStep</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BuyDownload" title="BuyDownload">BuyDownload</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CanUseConditionedAbility" title="CanUseConditionedAbility">CanUseConditionedAbility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CanUseItem" title="CanUseItem">CanUseItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20ApplyClassAbilities" title="Chargen ApplyClassAbilities">Chargen ApplyClassAbilities</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharGen%20ClearAbilityList" title="CharGen ClearAbilityList">CharGen ClearAbilityList</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20ModifyCreaturePropertyBase" title="Chargen ModifyCreaturePropertyBase">Chargen ModifyCreaturePropertyBase</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20SelectCoreClass" title="Chargen SelectCoreClass">Chargen SelectCoreClass</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharToInt" title="CharToInt">CharToInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckLineOfSightObject" title="CheckLineOfSightObject">CheckLineOfSightObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckLineOfSightVector" title="CheckLineOfSightVector">CheckLineOfSightVector</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearAllCommands" title="ClearAllCommands">ClearAllCommands</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearAmbientDialogs" title="ClearAmbientDialogs">ClearAmbientDialogs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearCreatureProperties" title="ClearCreatureProperties">ClearCreatureProperties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearCurrentCommand" title="ClearCurrentCommand">ClearCurrentCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearEnemyThreat" title="ClearEnemyThreat">ClearEnemyThreat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearPerceptionList" title="ClearPerceptionList">ClearPerceptionList</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearThreatTable" title="ClearThreatTable">ClearThreatTable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClosePrimaryWorldMap" title="ClosePrimaryWorldMap">ClosePrimaryWorldMap</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CloseQuestGroup" title="CloseQuestGroup">CloseQuestGroup</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandAttack" title="CommandAttack">CommandAttack</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandDeathBlow" title="CommandDeathBlow">CommandDeathBlow</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandEquipItem" title="CommandEquipItem">CommandEquipItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandFly" title="CommandFly">CommandFly</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandJumpToLocation" title="CommandJumpToLocation">CommandJumpToLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandJumpToObject" title="CommandJumpToObject">CommandJumpToObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveAwayFromObject" title="CommandMoveAwayFromObject">CommandMoveAwayFromObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToLocation" title="CommandMoveToLocation">CommandMoveToLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToMultiLocations" title="CommandMoveToMultiLocations">CommandMoveToMultiLocations</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToObject" title="CommandMoveToObject">CommandMoveToObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandPlayAnimation" title="CommandPlayAnimation">CommandPlayAnimation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandSheatheWeapons" title="CommandSheatheWeapons">CommandSheatheWeapons</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandStartConversation" title="CommandStartConversation">CommandStartConversation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandSwitchWeaponSet" title="CommandSwitchWeaponSet">CommandSwitchWeaponSet</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandTurn" title="CommandTurn">CommandTurn</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandUnequipItem" title="CommandUnequipItem">CommandUnequipItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandUnsheatheWeapons" title="CommandUnsheatheWeapons">CommandUnsheatheWeapons</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandUseAbility" title="CommandUseAbility">CommandUseAbility</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandUseObject" title="CommandUseObject">CommandUseObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandWait" title="CommandWait">CommandWait</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cos" title="Cos">Cos</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CountItemsByTag" title="CountItemsByTag">CountItemsByTag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateItemOnObject" title="CreateItemOnObject">CreateItemOnObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject" title="CreateObject">CreateObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreatePool" title="CreatePool">CreatePool</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CS%20CutsceneEnd" title="CS CutsceneEnd">CS CutsceneEnd</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CS%20LoadCutscene" title="CS LoadCutscene">CS LoadCutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CS%20LoadCutsceneWithReplacements" title="CS LoadCutsceneWithReplacements">CS LoadCutsceneWithReplacements</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20ConsoleCommand" title="DEBUG ConsoleCommand">DEBUG ConsoleCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20PrintToScreen" title="DEBUG PrintToScreen">DEBUG PrintToScreen</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20SendRawInputEvent" title="DEBUG SendRawInputEvent">DEBUG SendRawInputEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20SetCursorPosition" title="DEBUG SetCursorPosition">DEBUG SetCursorPosition</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DebugSpawnScriptDebugger" title="DebugSpawnScriptDebugger">DebugSpawnScriptDebugger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent" title="DelayEvent">DelayEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Deprecated%20ExecuteScript" title="Deprecated ExecuteScript">Deprecated ExecuteScript</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEPRECATED%20GetCreatureStrengthModifier" title="DEPRECATED GetCreatureStrengthModifier">DEPRECATED GetCreatureStrengthModifier</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Deprecated%20GetMaxHealth" title="Deprecated GetMaxHealth">Deprecated GetMaxHealth</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject" title="DestroyObject">DestroyObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DialogIsAmbient" title="DialogIsAmbient">DialogIsAmbient</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20AddDisease" title="Disease AddDisease">Disease AddDisease</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20HasDisease" title="Disease HasDisease">Disease HasDisease</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveAllDiseases" title="Disease RemoveAllDiseases">Disease RemoveAllDiseases</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveAllDiseasesFromParty" title="Disease RemoveAllDiseasesFromParty">Disease RemoveAllDiseasesFromParty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveDisease" title="Disease RemoveDisease">Disease RemoveDisease</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DisplayFloatyMessage" title="DisplayFloatyMessage">DisplayFloatyMessage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DisplayPortraitMessage" title="DisplayPortraitMessage">DisplayPortraitMessage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DisplayStatusMessage" title="DisplayStatusMessage">DisplayStatusMessage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DoAreaTransition" title="DoAreaTransition">DoAreaTransition</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DoAutoSave" title="DoAutoSave">DoAutoSave</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ECSplitString" title="ECSplitString">ECSplitString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect" title="Effect">Effect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectAreaOfEffect" title="EffectAreaOfEffect">EffectAreaOfEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectDamage" title="EffectDamage">EffectDamage</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectHeal" title="EffectHeal">EffectHeal</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectImpact" title="EffectImpact">EffectImpact</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectModifyProperty" title="EffectModifyProperty">EffectModifyProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectModifyPropertyHostile" title="EffectModifyPropertyHostile">EffectModifyPropertyHostile</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EnablevEvent" title="EnablevEvent">EnablevEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EnableWeaponTrail" title="EnableWeaponTrail">EnableWeaponTrail</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EndHeartbeat" title="EndHeartbeat">EndHeartbeat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectAtLocation" title="Engine ApplyEffectAtLocation">Engine ApplyEffectAtLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectOnObject" title="Engine ApplyEffectOnObject">Engine ApplyEffectOnObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20ApplyEffectOnParty" title="Engine ApplyEffectOnParty">Engine ApplyEffectOnParty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20SetImmortal" title="Engine SetImmortal">Engine SetImmortal</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine%20SetModalAbilityGUI" title="Engine SetModalAbilityGUI">Engine SetModalAbilityGUI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EquipDefaultItem" title="EquipDefaultItem">EquipDefaultItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EquipItem" title="EquipItem">EquipItem</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event" title="Event">Event</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Fabs" title="Fabs">Fabs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FB%20SetEffectEnabled" title="FB SetEffectEnabled">FB SetEffectEnabled</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FB%20SetEffectResource" title="FB SetEffectResource">FB SetEffectResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FeetToMeters" title="FeetToMeters">FeetToMeters</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FilterObjectsInShape" title="FilterObjectsInShape">FilterObjectsInShape</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString" title="FindSubString">FindSubString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FireHomingProjectile" title="FireHomingProjectile">FireHomingProjectile</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FireProjectile" title="FireProjectile">FireProjectile</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToInt" title="FloatToInt">FloatToInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToString" title="FloatToString">FloatToString</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAbilitiesDueToAOEs" title="GetAbilitiesDueToAOEs">GetAbilitiesDueToAOEs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAbilityCount" title="GetAbilityCount">GetAbilityCount</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAchievementCountByID" title="GetAchievementCountByID">GetAchievementCountByID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetActiveWeaponSet" title="GetActiveWeaponSet">GetActiveWeaponSet</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAILevel" title="GetAILevel">GetAILevel</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAngleBetweenObjects" title="GetAngleBetweenObjects">GetAngleBetweenObjects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAOEFlags" title="GetAOEFlags">GetAOEFlags</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType" title="GetAppearanceType">GetAppearanceType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArea" title="GetArea">GetArea</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAreaFromLocation" title="GetAreaFromLocation">GetAreaFromLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize" title="GetArraySize">GetArraySize</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAttackImpactDamageEffect" title="GetAttackImpactDamageEffect">GetAttackImpactDamageEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAttackTarget" title="GetAttackTarget">GetAttackTarget</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAutoLevelFollowers" title="GetAutoLevelFollowers">GetAutoLevelFollowers</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAutoLevelUp" title="GetAutoLevelUp">GetAutoLevelUp</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAutoPauseCombatStatus" title="GetAutoPauseCombatStatus">GetAutoPauseCombatStatus</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetBackgroundDefaultsIndex" title="GetBackgroundDefaultsIndex">GetBackgroundDefaultsIndex</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetBaseItemType" title="GetBaseItemType">GetBaseItemType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCanDiePermanently" title="GetCanDiePermanently">GetCanDiePermanently</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCanLevelUp" title="GetCanLevelUp">GetCanLevelUp</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetClassRank" title="GetClassRank">GetClassRank</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetClusterCenter" title="GetClusterCenter">GetClusterCenter</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatantType" title="GetCombatantType">GetCombatantType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCombatState" title="GetCombatState">GetCombatState</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandByIndex" title="GetCommandByIndex">GetCommandByIndex</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandFloat" title="GetCommandFloat">GetCommandFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandInt" title="GetCommandInt">GetCommandInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandIsPlayerIssued" title="GetCommandIsPlayerIssued">GetCommandIsPlayerIssued</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandPriority" title="GetCommandPriority">GetCommandPriority</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandQueueSize" title="GetCommandQueueSize">GetCommandQueueSize</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCommandType" title="GetCommandType">GetCommandType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetConditionedAbilities" title="GetConditionedAbilities">GetConditionedAbilities</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureAttribute" title="GetCreatureAttribute">GetCreatureAttribute</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureBodyBag" title="GetCreatureBodyBag">GetCreatureBodyBag</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureCanBeTracked" title="GetCreatureCanBeTracked">GetCreatureCanBeTracked</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureCoreClass" title="GetCreatureCoreClass">GetCreatureCoreClass</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureGender" title="GetCreatureGender">GetCreatureGender</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureGoreLevel" title="GetCreatureGoreLevel">GetCreatureGoreLevel</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMana" title="GetCreatureMana">GetCreatureMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMaxMana" title="GetCreatureMaxMana">GetCreatureMaxMana</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMaxStamina" title="GetCreatureMaxStamina">GetCreatureMaxStamina</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureMoney" title="GetCreatureMoney">GetCreatureMoney</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty" title="GetCreatureProperty">GetCreatureProperty</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreaturePropertyType" title="GetCreaturePropertyType">GetCreaturePropertyType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType" title="GetCreatureRacialType">GetCreatureRacialType</a></li></ul></div></div></div>(previous page) (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions%20from%20version%201.00#mw-pages" title="Category:Functions from version 1.00">next page</a>)
+</div></div>

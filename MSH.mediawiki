@@ -1,0 +1,184 @@
+<p><b>MSH</b> (mesh) files define a 3D mesh, to be referenced by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> files when creating models in the game.
+</p><p>MSH files are defined using XML source files with the extension .msh.xml. These files are run through the GraphicsProcessorMSH.exe program (found in the Dragon Age\Toolset\export_processors directory) to produce binary files that can be used by the game directly. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/3rd%20party%20extensions" title="3rd party extensions">3rd_party_extensions</a> for custom model export and import.
+</p>
+<dl><dd>GraphicsProcessorMSH [-outdir &lt;out-dir&gt;] [-platform &lt;x360,pc,ps3&gt;] [options] [-indir&lt;input-directory&gt; / &lt;input-file&gt;]</dd></dl>
+<p>Other options include:
+</p>
+<dl><dd>-mmdtogff<sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup> - what mmdtogff means or does is unknowns besides it is required to compile msh.xml files.</dd></dl>
+<h2><span class="mw-headline" id="msh.xml_schema_in_RELAX_NG_1.0_format">msh.xml schema in RELAX NG 1.0 format</span></h2>
+<p>See <a rel="nofollow" class="external text" href="http://www.oasis-open.org/committees/relax-ng/spec.html">Relax NG Specs</a> for information on the RELAX NG 1.0 XML schema format. For a free converter/verifier, see <a rel="nofollow" class="external text" href="http://code.google.com/p/jing-trang/">jing-trang</a>.
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"&gt;
+  &lt;start&gt;
+    &lt;element name="ModelMeshData"&gt;
+      &lt;attribute name="Name"&gt;
+        &lt;data type="NCName"/&gt;
+      &lt;/attribute&gt;
+      &lt;attribute name="Version"&gt;
+        &lt;data type="integer"/&gt;
+      &lt;/attribute&gt;
+      &lt;zeroOrMore&gt;
+        &lt;element name="MeshGroup"&gt;
+          &lt;attribute name="Name"&gt;
+            &lt;data type="NCName"/&gt;
+          &lt;/attribute&gt;
+          &lt;optional&gt;
+            &lt;attribute name="Optimize"&gt;
+              &lt;data type="NCName"/&gt; &lt;!-- "all", "none", or "indices" --&gt;
+            &lt;/attribute&gt;
+          &lt;/optional&gt;
+          &lt;optional&gt;
+            &lt;attribute name="optimize"&gt; &lt;!-- Appears to be the same as Optimize, apparently both capitalizations are allowed--&gt;
+              &lt;data type="NCName"/&gt;
+            &lt;/attribute&gt;
+          &lt;/optional&gt;
+          &lt;oneOrMore&gt;
+            &lt;element name="Data"&gt;
+              &lt;optional&gt;
+                &lt;attribute name="ElementCount"&gt;
+                  &lt;data type="integer"/&gt; &lt;!-- If semantic is not "indices", this count gives the number of tuples in the CDATA. --&gt;
+                &lt;/attribute&gt;
+              &lt;/optional&gt;
+              &lt;optional&gt;
+                &lt;attribute name="IndexCount"&gt;
+                  &lt;data type="integer"/&gt; &lt;!-- If semantic is "indices", this count gives the number of integers in the data's CDATA. --&gt;
+                &lt;/attribute&gt;
+              &lt;/optional&gt;
+              &lt;optional&gt;
+                &lt;attribute name="IndexType"&gt;
+                  &lt;data type="NCName"/&gt; &lt;!-- Every example of this has the value "Index32", without exception. --&gt;
+                &lt;/attribute&gt;
+              &lt;/optional&gt;
+              &lt;attribute name="Semantic"&gt;
+                &lt;data type="NCName"/&gt; &lt;!-- "POSITION", "Indices", "TEXCOORD", "TANGENT", "BINORMAL", "NORMAL", "BLENDWEIGHT", "BLENDINDICES", "COLOR" --&gt;
+              &lt;/attribute&gt;
+              &lt;optional&gt;
+                &lt;attribute name="Type"&gt;
+                  &lt;data type="NCName"/&gt; &lt;!-- indicates how many elements and of what type are in the tuples in the CDATA. Values are "Float4" (four floating point numbers), "Float2" (two floating point numbers), "Short4" (four integers) --&gt;
+                &lt;/attribute&gt;
+              &lt;/optional&gt;
+              &lt;text/&gt; &lt;!-- contains CDATA with tuples of numbers. For example, a Float2 type MSH had this: &lt;![CDATA[0.195959 0.999994 0.195959 0.266686 0 0.266683 0 1. 0.999999 0.999994 1. 0.166668 ]]&gt; --&gt;
+            &lt;/element&gt;
+          &lt;/oneOrMore&gt;
+        &lt;/element&gt;
+      &lt;/zeroOrMore&gt;
+    &lt;/element&gt;
+  &lt;/start&gt;
+&lt;/grammar&gt;
+</pre>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<p>Type enum:
+</p>
+<pre>
+            /// 1 float 
+            DECLTYPE_FLOAT1 = 0,
+            /// 2 floats
+            DECLTYPE_FLOAT2 = 1,
+            /// 3 floats
+            DECLTYPE_FLOAT3 = 2,
+            /// 4 floats
+            DECLTYPE_FLOAT4 = 3,
+            /// 4-byte color
+            DECLTYPE_COLOR = 4,
+            /// 4 unsigned bytes
+            DECLTYPE_UBYTE4 = 5,
+            /// 2 shorts
+            DECLTYPE_SHORT2 = 6,
+            /// 4 shorts
+            DECLTYPE_SHORT4 = 7,
+            /// 4 normalized bytes
+            DECLTYPE_UBYTE4N = 8,
+            /// 2 normalized shorts
+            DECLTYPE_SHORT2N = 9,
+            /// 4 normalized shorts
+            DECLTYPE_SHORT4N = 10,
+            /// 2 normalized unsigned shorts
+            DECLTYPE_USHORT2N = 11,
+            /// 4 normalized unsigned shorts
+            DECLTYPE_USHORT4N = 12,
+            /// 3d unsigned 10/10/10 format
+            DECLTYPE_UDEC3 = 13,
+            /// 3d unsigned 10/10/10 normalized
+            DECLTYPE_DEC3N = 14,
+            /// 2 16-bit floats
+            DECLTYPE_FLOAT16_2 = 15,
+            /// 4 16-bit floats
+            DECLTYPE_FLOAT16_4 = 16,
+            DECLTYPE_UNUSED = 0xffffffff
+</pre>
+<p>Usage enum:
+</p>
+<pre>
+            /// Position
+            DECLUSAGE_POSITION = 0,
+            /// Blend weights
+            DECLUSAGE_BLENDWEIGHT = 1,
+            /// Blend indices
+            DECLUSAGE_BLENDINDICES = 2,
+            /// Normal
+            DECLUSAGE_NORMAL = 3,
+            /// Point Size 
+            DECLUSAGE_PSIZE = 4,
+            /// Texture coordinates
+            DECLUSAGE_TEXCOORD = 5,
+            /// Tangent vector
+            DECLUSAGE_TANGENT = 6,
+            /// binormal vector
+            DECLUSAGE_BINORMAL = 7,
+            /// tessellation factor
+            DECLUSAGE_TESSFACTOR = 8,
+            /// PositionT 
+            DECLUSAGE_POSITIONT = 9,
+            /// color channel
+            DECLUSAGE_COLOR = 10,
+            /// fog value
+            DECLUSAGE_FOG = 11,
+            /// depth 
+            DECLUSAGE_DEPTH = 12,
+            /// sample
+            DECLUSAGE_SAMPLE = 13,
+            // error/other/unset
+            DECLUSAGE_UNUSED = 0xffffffff
+</pre>
+<h2><span class="mw-headline" id="Example_.MSH.XML_file">Example .MSH.XML file</span></h2>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ModelMeshData name="string" Version="int"&gt;
+  &lt;!-- must have 0 or more of these, obviously having at least 1 would be useful --&gt;
+	&lt;MeshGroup name="string"&gt;&lt;!-- optional attributes: Optimize="string"&lt;&lt; all,none, or indicies --&gt;
+	  &lt;!-- must have at least 1 of these, will almost always have at least 6 --&gt;
+		&lt;Data&gt;
+		&lt;!-- optional attributes:
+			ElementCount="int"  -- If semantic is not "indices", this is the number of tuples in the CDATA.
+			IndexCount="int" -- If semantic is "Indices", this is the number of integers in the data's CDATA.
+			IndexType="string"&gt; -- Every example of this has the value "Index32", without exception. 
+			Semantic="string" -- "POSITION", "Indices", "TEXCOORD", "TANGENT", "BINORMAL", "NORMAL", "BLENDWEIGHT", "BLENDINDICES", "COLOR"
+						POSITION - vert coordinates
+						TEXCOORD - texture coordinates
+						TANGENT/BINROMAL/NORMAL - tangent/bitangent/normal of a vert
+						Indices - the vert numbers (from the POSITION data block) which the faces are made from. 
+                                                            Note that the texcoords/tangents/bitangents/normals/blendweights/blendindices are by vertex and the ordering MUST be 
+                                                            the same as in the POSITION block
+						BLENDWEIGHT - the movement weights of up to 4 bones on this vertex
+						BLENDINDICES - the indices of the bones which the above weights apply to the index is the index of the bone in the accompanying 
+                                                               MMH's corresponding NodeMesh tag
+						COLOR - vertex color
+														
+			Type="string" -- indicates how many elements and of what type are in the tuples in the CDATA, as well as the output format for the provided values (as described in the Constants section) Appears to be case-sensitive.
+
+                                                "FLOAT1" (single floating point numbers)
+                                                "FLOAT2", "FLOAT16_2" (two floating point numbers)
+                                                "FLOAT3" (three floating point numbers)
+                                                "FLOAT4", "FLOAT16_4" (four floating point numbers)
+                                                "UDEC3", "DEC3N" (undetermined, the format technically allows for three 10-bit values and one 2-bit value )
+                                                "COLOR", "UBYTE4", "SHORT4", "UBYTE4N", "SHORT4N", "USHORT4N" (four integers)
+                                                "SHORT2", "SHORT2N", "USHORT2N" (two integers)
+		--&gt;
+		data &lt;!-- contains CDATA with tuples of numbers. For example, a Float2 type MSH had this: 
+                          &lt;![CDATA[0.195959 0.999994 0.195959 0.266686 0 0.266683 0 1. 0.999999 0.999994 1. 0.166668 ]]&gt; --&gt;
+		&lt;/Data&gt;
+	&lt;/MeshGroup&gt;
+&lt;/ModelMeshData&gt;
+</pre>

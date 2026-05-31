@@ -1,0 +1,41 @@
+<p><br />
+<sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Ability_ApplyUpkeepEffects(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCaster,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a>[] eEffects,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget&#160;= OBJECT_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bPartywide&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCaster<dd>The caster of the ability on which the upkeep will be applied.<dt style="font-weight:normal; font-style:italic;">nAbility<dd>The ability itself.<dt style="font-weight:normal; font-style:italic;">eEffects<dd>The effects on which the upkeep come from.<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The target is the caster. It is not needed to change the default value.<dt style="font-weight:normal; font-style:italic;">bPartywide<dd>Is the Effect party wide or not.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Upkeep effects are permanent until the effect is removed. They also set the UI-icon toggle inside the effect based on the ability ID.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<p>The following snippet is taken from the function itself:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co1">// as explained above, the Target becomes the Caster. </span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        oTarget <span class="sy0">=</span> oCaster;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// now loop through the Effects[i]</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a><span class="br0">&#40;</span>i <span class="sy0">=</span> <span class="nu0">0</span>; i <span class="sy0">&lt;</span> nCount; i<span class="sy0">++</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        _ApplyUpkeepEffect<span class="br0">&#40;</span>oCaster, eEffects<span class="br0">&#91;</span>i<span class="br0">&#93;</span>, nAbility, oTarget, bPartywide<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// define the spell's mana cost or talent's stamina cost</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> eUpkeep <span class="sy0">=</span> EffectUpkeep<span class="br0">&#40;</span>UPKEEP_TYPE_MANASTAMINA , fCost, nAbility, oTarget, bPartywide<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// apply the effect on the target (caster)</span>
+    ApplyEffectOnObject<span class="br0">&#40;</span><span class="kw3">EFFECT_DURATION_TYPE_PERMANENT</span>, eUpkeep, oCaster, <span class="nu0">0.0</span>, oCaster, nAbility<span class="br0">&#41;</span>;</pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ApplyUpkeepEffect" title="ApplyUpkeepEffect (page does not exist)">_ApplyUpkeepEffect</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffect" title="Ability ApplyUpkeepEffect">Ability_ApplyUpkeepEffect</a>
+</p>

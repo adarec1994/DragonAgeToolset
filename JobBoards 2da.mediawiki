@@ -1,0 +1,81 @@
+<p>The <strong class="selflink">JobBoards 2da</strong> defines each <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Job%20board" title="Job board">job board</a> and provides a unique ID which is used to control which jobs it can potentially display.
+</p><p>This <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da"> M2DA_base 2da</a> and has an <b>ID</b> of <b>115</b>. It can be extended by m2da fragments which have names starting with <b>JobBoards</b>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  A string used by the toolset internally
+</td></tr>
+<tr>
+<th>  Texture
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>
+</td>
+<td>  The background texture displayed by the job board GUI
+</td></tr>
+<tr>
+<th>  HeaderStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="String ID">string ID</a> for a text header at the top of the board
+</td></tr>
+<tr>
+<th>  ModuleRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The campaign that owns this board
+</td></tr>
+<tr>
+<th>  ShowDonationButton
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  DonationScript
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">resource</a>
+</td>
+<td>  The cript to be fired for each donation. Amount donated should be int param 0
+</td></tr>
+<tr>
+<th>  DonationMsgStrId
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  String for the message box that is shown when the donation is accepted
+</td></tr>
+<tr>
+<th>  HeaderTintIndex
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li>1 - chantry</li>
+<li>2 - mage</li>
+<li>3 - blackstone</li>
+<li>4 - rogue</li></ul>
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It has still to be determined if the donation system is functional: none of the boards in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player" title="Single Player (page does not exist)">Single Player</a> module are set up for it and the donation script listed for them does not exist in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a> or Single Player module.
+</p>

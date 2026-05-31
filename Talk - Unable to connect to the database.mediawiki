@@ -1,0 +1,27 @@
+<ul><li>need to add an if all else fails section for complete manual installation</li>
+<li>need to duplicate the file paths to include new paths for toolset installation 1.01</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a> 16:50, 11 December 2009 (UTC)
+</p>
+<h2><span class="mw-headline" id="Did_the_database_get_restored.3F">Did the database get restored?</span></h2>
+<p>Well i wanted to reinstall the Toolset. Somehow in my first try i managed it ,but i cant remember anymore. Anyway the method was different from that here. When i use the batch file method, i get an error message saying
+</p>
+<pre>MSG 5133, Level 16 etcetc... Directory lookup for the file, c:\....\tools\toolssql\data\bw_dragonage_content.mdf. (System cant find that file.
+MSG 5156 Level 15 etcetc... File "bw_dragonage_content" cannot be restored to c:\....tools\toolssql\Data\bw_dragonage_content.mdf." Use WITH MOVE to identify a valid location for the file.
+Equally for ....ldf
+
+etcetc.
+</pre>
+<p>I will eventually post how it really works. BTW, i added a "PAUSE" in the bat file to see the error in the first place which may help others.. the explanation for BAT files can be extensive, if this helps, and account for multiple language ofthe OS. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 14:11, 3 February 2010 (UTC)
+</p>
+<dl><dd>Well i got this one to work, you need to create the folders ,and 1.01 doesnt do this. BTW "C:\Program Files\DAODB\" is access denied, with no way to change it at least with Windoes XP. This is probably why the old toolset worked for me and this doesnt. </dd>
+<dd>i have added a walkthrough, because i see people wondering "where to put the command?"</dd>
+<dd>Anyways, the manual method create the files yet again in the folder, whereas it sais the new Toolset avoids it because a "long path" issue. What will happen in the worst case? Im unsure if that is the same as i did last time <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 14:11, 3 February 2010 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Testimony">Testimony</span></h2>
+<p>Windows Vista 64-Bit and my copy of the game is located on a second drive.
+</p><p>I got this error and I wished to relate my experience of solving it;  Because, this is my first time messing with databases and programming in general... In short I consider myself a novice.
+</p><p>First I uninstalled the DAToolSet and the SQL server.  Then I followed the links to the MicroSoft website, downloaded, and then <b>manually installed</b> the 64-Bit version of both SQL Server Express and the Studio Management.  I followed the steps exactly. {Copy/Pasting the server names and such}
+</p><p>After I had Studio Management up and running I reinstalled the DAToolSet while tell it to skip the installation of its server software.  {As I already did that}  But I made sure the server names and such in the second half of that page where the default values I set while installing from the MicroSoft files.  {BWDATOOLSET and bw_dragonage_content}  I again followed the instructions exactly for restoring with the bw_dragonage_content.bak file and selecting "overwrite existing database" in the <i>options tab</i>.
+</p><p>After all of that I reinstalled the DAToolSet.  I almost missed the part about the default database connection string needing to be set.   So I went and ran ConfigToolSet.exe  I got to the section option and then hit <b>...</b>  Everything was already set there so I just hit OK and it automatically inserted the correct string into the connection field.  I hit 'test connection' and I felt much joy when it said it was successful.
+</p><p>And so now DAToolSet runs great.  I just have to figure out how to use the program now.  lol
+--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Jax%20Sparrow" title="User:Jax Sparrow (page does not exist)">Jax Sparrow</a> 22:53, 23 March 2010 (UTC)
+</p>

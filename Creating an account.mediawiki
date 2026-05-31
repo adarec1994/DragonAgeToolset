@@ -1,0 +1,67 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Creating_a_Social_site_account"><span class="tocnumber">1</span> <span class="toctext">Creating a Social site account</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#I_have_a_BioWare_forums_account_.28username-based.29"><span class="tocnumber">1.1</span> <span class="toctext">I have a BioWare forums account (username-based)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#I_have_a_BioWare_forums_account_.28email_address-based.29"><span class="tocnumber">1.2</span> <span class="toctext">I have a BioWare forums account (email address-based)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#I_have_an_EA_account_from_Spore.2Fetc"><span class="tocnumber">1.3</span> <span class="toctext">I have an EA account from Spore/etc</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#I_do_not_have_either_a_BioWare_forums_account_or_an_EA_account"><span class="tocnumber">1.4</span> <span class="toctext">I do not have either a BioWare forums account or an EA account</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#I_have_an_extranet.bioware.com_account"><span class="tocnumber">1.5</span> <span class="toctext">I have an extranet.bioware.com account</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Troubleshooting"><span class="tocnumber">2</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Creating_a_Social_site_account">Creating a Social site account</span></h2>
+<p>In order to edit pages on this wiki or create projects on the main <a rel="nofollow" class="external text" href="http://social.bioware.com">social website</a>, you require a user account.  This user account is the same one used in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">DA toolset</a> as well as in the final Dragon Age game build.
+</p><p>Choose the section below that most closely matches your situation.
+</p>
+<h3><span class="mw-headline" id="I_have_a_BioWare_forums_account_.28username-based.29">I have a BioWare forums account (username-based)</span></h3>
+<p>BioWare forums accounts still work for authentication, but the new site requires a few additional details before you can proceed.
+</p>
+<ul><li> go to: <a rel="nofollow" class="external free" href="http://social.bioware.com/login.php">http://social.bioware.com/login.php</a></li>
+<li> log in using your BioWare forums username and password</li>
+<li> follow the instructions to complete the setup of your account
+<ul><li> most of your personal details will be detected and filled in, including display name</li></ul></li></ul>
+<p>You will then be able to log in in future using either your email address and the new password you choose, or your old BioWare forums credentials.   You will also be able to log into our old forums sites using your email address.
+</p>
+<h3><span class="mw-headline" id="I_have_a_BioWare_forums_account_.28email_address-based.29">I have a BioWare forums account (email address-based)</span></h3>
+<p>This should be the case if you created your BioWare forums account recently.  You should have been prompted to set up an EA account during that signup.
+</p>
+<ul><li> go to: <a rel="nofollow" class="external free" href="http://social.bioware.com/login.php">http://social.bioware.com/login.php</a></li>
+<li> log in using your BioWare forums email address and password</li>
+<li> follow the instructions to complete the setup of your account
+<ul><li> most of your personal details will be detected and used automatically without prompting</li></ul></li></ul>
+<h3><span class="mw-headline" id="I_have_an_EA_account_from_Spore.2Fetc">I have an EA account from Spore/etc</span></h3>
+<p>If you have previously created an EA account through any recent EA game (i.e. Spore, Madden '07, etc), you already have a master account that will work 
+</p>
+<ul><li> go to: <a rel="nofollow" class="external free" href="http://social.bioware.com/login.php">http://social.bioware.com/login.php</a></li>
+<li> log in using your EA account email address and password</li>
+<li> follow the instructions to complete the setup of your account
+<ul><li> most of your personal details will be detected and used automatically without prompting</li></ul></li></ul>
+<p>You will also be able to log into our older forums websites using this account.
+</p>
+<h3><span class="mw-headline" id="I_do_not_have_either_a_BioWare_forums_account_or_an_EA_account">I do not have either a BioWare forums account or an EA account</span></h3>
+<ul><li> go to: <a rel="nofollow" class="external free" href="http://social.bioware.com/signup.php">http://social.bioware.com/signup.php</a></li>
+<li> follow the instructions to create your new account
+<ul><li> you will be prompted to choose a display name for the website; this must be unique.</li></ul></li></ul>
+<h3><span class="mw-headline" id="I_have_an_extranet.bioware.com_account">I have an extranet.bioware.com account</span></h3>
+<p>Extranet accounts are no longer used.  Forget about it entirely and proceed as per one of the above sections.
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<ul><li> if you are prompted that the display name is already in use, and it's your own BioWare forums account, you must enter your old BioWare forums password to confirm ownership.</li></ul>
+<ul><li> See <a rel="nofollow" class="external text" href="http://social.bioware.com/help.php">the Social Site help FAQ</a> for additional assistance.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20an%20account%20-%20ru" title="Creating an account/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

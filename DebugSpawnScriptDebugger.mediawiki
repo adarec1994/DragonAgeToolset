@@ -1,0 +1,21 @@
+<p>Debug command to spawn the script debugger.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> DebugSpawnScriptDebugger(<br />);</div>
+<dl>
+<dt>Parameters:
+<dd>None
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Debug command to spawn the script debugger. If the script
+has not been compiled with debug information, then this function
+will do nothing.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>To use this function you must have generated debug information for the script you are attempting to debug.
+</p>

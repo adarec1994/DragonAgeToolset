@@ -1,0 +1,51 @@
+<p>Signals a delayed event to the specified object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> DelayEvent(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fSeconds,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> evEvent,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> scriptname&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fSeconds<dd>The number of seconds for which to delay the event<dt style="font-weight:normal; font-style:italic;">oObject<dd>The object to signal the event to<dt style="font-weight:normal; font-style:italic;">evEvent<dd>The event to signal<dt style="font-weight:normal; font-style:italic;">scriptname<dd>If specified overides the default script
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Signals a delayed event to the target object.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>With a negative or zero time in fSeconds, the event will run on the next AI update.
+</p><p>The <code>scriptname</code> parameter does not work for an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">area</a>.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<p>If the intention is simply to delay the execution of a script, the function can be called with a dummy event parameter. For example, the snippet
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent"><span class="kw4">DelayEvent</span></a><span class="br0">&#40;</span><span class="nu0">1.0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span><span class="kw3">EVENT_TYPE_INVALID</span><span class="br0">&#41;</span>, <span class="st0">&quot;my_script&quot;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>will run the script my_script.ncs on the current object after 1 second.
+</p><p><code>DelayEvent</code> can be used to create a heartbeat event that is sent to an object at regular intervals. For example, if you created the following script named "event_heartbeat" it would fire every six seconds after it has been initiated.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;events_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// extract event type from current event</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_HEARTBEAT<span class="sy0">:</span>
+         <span class="br0">&#123;</span>
+             <span class="co1">// insert whatever code you need to execute on every heartbeat here</span>
+&#160;
+             <span class="co1">// schedule a delayed event on this object to call this script again</span>
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DelayEvent"><span class="kw4">DelayEvent</span></a><span class="br0">&#40;</span><span class="nu0">6.0</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event"><span class="kw4">Event</span></a><span class="br0">&#40;</span>EVENT_TYPE_HEARTBEAT<span class="br0">&#41;</span>, <span class="st0">&quot;event_heartbeat&quot;</span><span class="br0">&#41;</span>;
+&#160;
+             <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+         <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>To associate a heartbeat with a particular object you can use that object's event-handling script and omit the <code>scriptname</code> parameter.
+</p>

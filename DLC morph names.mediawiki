@@ -1,0 +1,40 @@
+<p>The source files for DLC head morphs have not been released. However, it should be possible to override them simply by knowing their names.
+</p><p>The head morphs used in  Warden's Keep are:
+</p>
+<ul><li>dm_gwb100cr_warden_07</li>
+<li>ef_gwb100cr_warden_06</li>
+<li>ef_gwb110cr_warden_05</li>
+<li>em_gwb100cr_warden_05</li>
+<li>em_gwb110cr_warden_04</li>
+<li>hf_gwb100cr_scribe</li>
+<li>hf_gwb100cr_warden_04</li>
+<li>hf_gwb110cr_cut_sophia</li>
+<li>hf_gwb110cr_sophia</li>
+<li>hm_gwb000cr_levi</li>
+<li>hm_gwb100cr_archivist</li>
+<li>hm_gwb100cr_warden</li>
+<li>hm_gwb100cr_warden_02</li>
+<li>hm_gwb100cr_warden_03</li>
+<li>hm_gwb100cr_warden_xo</li>
+<li>hm_gwb110cr_cut_avernus</li>
+<li>hm_gwb110cr_warden</li>
+<li>hm_gwb110cr_warden_02</li>
+<li>hm_gwb110cr_warden_03</li>
+<li>hm_gwb110cr_warden_06</li>
+<li>hm_gwb110cr_warden_07</li>
+<li>hm_gwb110cr_warden_08</li>
+<li>hm_gwb120cr_avernus</li>
+<li>hm_gwb200cr_siege_knight</li>
+<li>hm_gwb200cr_siege_lord</li>
+<li>hm_gwb201cr_dryden_cousin1</li>
+<li>hm_gwb201cr_dryden_cousin2</li>
+<li>hm_gwb201cr_dryden_cousin3</li>
+<li>hm_gwb201cr_mikhael</li></ul>
+<p>For Shale (I couldn't spot the export directory so I don't have the prefixes handy, but I expect they're predictable enough - child, human male, and probably human male):
+</p>
+<ul><li>shl200cr_amalia</li>
+<li>shl200cr_mattias</li>
+<li>shl200cr_villager</li></ul>
+<p>For Return to Ostagar:
+</p>
+<ul><li>hm_kco000_durnan</li></ul>

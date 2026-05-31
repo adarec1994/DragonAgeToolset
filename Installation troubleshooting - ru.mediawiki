@@ -1,0 +1,101 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Проблемы при установке</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Installation_troubleshooting/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99%;"><div style="text-align:center;"><b>Обратите внимание:</b></div>
+<p>Версия 1.00 имела проблему с установкой в папку, путь до которой содержал более 58 символов, что является умолчанием для установки через Steam. В версии 1.01 обошли эту проблему, а также исправили несколько других серьёзных ошибок, но если вы всё-таки по каким-либо причинам хотите установить версию 1.00, то смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20with%20Steam%20-%20ru" title="Installation with Steam/ru (page does not exist)">Установка через Steam</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation with Steam">(en)</a>.
+</p>
+</div>
+<p>Перейдите по ссылке <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Known%20issues%20-%20ru" title="Known issues/ru">Известные проблемы</a> для просмотра текущего списка проблем, их обработка и статуса.
+</p><p>Для получения основной информации о процессе установки тулсета перейдите по ссылке <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installing%20the%20toolset%20-%20ru" title="Installing the toolset/ru">Установка тулсета</a>. В случае, если при установке что-то пойдёт не так, на текущей странице возможно вы найдёте полезную информацию и советы.
+</p><p>Информация об ошибках заносится в логи, которые находятся по адресу "My Documents\BioWare\Dragon Age\Toolset\logs". Имя лога содержит дату его создания. Чтение логов является хорошей помощью при исправлении ошибок.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D0.BE.D1.88.D0.B8.D0.B1.D0.BA.D0.B8"><span class="tocnumber">1</span> <span class="toctext">Общие ошибки</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9F.D1.83.D1.81.D1.82.D0.B0.D1.8F_.D0.BF.D0.B0.D0.BB.D0.B8.D1.82.D1.80.D0.B0_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2"><span class="tocnumber">2</span> <span class="toctext">Пустая палитра ресурсов</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.22.D0.9D.D0.B5.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B8.D1.82.D1.8C.D1.81.D1.8F_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.22_.28.22Unable_to_connect_to_the_database.22.29"><span class="tocnumber">3</span> <span class="toctext">"Невозможно подключиться к базе данных" ("Unable to connect to the database")</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D0.B2.D0.B8.D1.81.D0.BD.D0.B5.D1.82_.D0.BD.D0.B0_.22Execute:regsvr32.exe_.2Fs_.22C:.5CDragon_Age.5Ctools.5CEngine.dll.22"><span class="tocnumber">4</span> <span class="toctext">Установка виснет на "Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D0.B2.D0.BE.D0.BF.D1.80.D0.BE.D1.81.D1.8B_.D0.BF.D0.BE_.D0.B1.D0.B0.D0.B7.D0.B0.D0.BC_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">5</span> <span class="toctext">Другие вопросы по базам данных</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Windows_XP_SP_2_.D0.B8_.D0.B1.D0.B5.D1.81.D0.BA.D0.BE.D0.BD.D0.B5.D1.87.D0.BD.D1.8B.D0.B9_.D1.86.D0.B8.D0.BA.D0.BB_.D0.BF.D0.B5.D1.80.D0.B5.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.BE.D0.BA_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8"><span class="tocnumber">6</span> <span class="toctext">Windows XP SP 2 и бесконечный цикл перезагрузок после установки</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.92.D0.BD.D0.B5.D1.88.D0.BD.D0.B8.D0.B5_.D1.81.D1.81.D1.8B.D0.BB.D0.BA.D0.B8"><span class="tocnumber">7</span> <span class="toctext">Внешние ссылки</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D0.BE.D1.88.D0.B8.D0.B1.D0.BA.D0.B8">Общие ошибки</span></h2>
+<p><b>Вы не можете загрузить тулсет с офсайта из-за некачественного интернета (частые обрывы, частичные закачки):</b>
+</p><p>Одним из решений такой проблемы является установка какого-нибудь менеджера загрузок, например свободно распространяемый <a rel="nofollow" class="external text" href="http://www.internetdownloadmanager.com">Internet download manager</a>, что позволит в случае обрыва соединения воспользоваться возможностью докачки.  
+</p><p><b>При запуске тулсета выскакивает ошибка "Dragon Age: Origins game install not found":</b>
+</p>
+<ul><li> Игра должна быть установлена до установки тулсета. </li>
+<li> Также эта ошибка возникает, если игра была установлена, но программа настройки игры ещё не запускалась. В таком случае вы получите сообщение "Please launch the Dragon Age: Origins Configure Utility". Программа настройки запускается автоматически при первом запуске игры. После того, как вы настроите и запустите игру, вы больше не будете получать сообщений о такой ошибке.</li></ul>
+<p><b>Тулсет не может найти библиотеки DLL:</b>
+</p><p>Если тулсет не может найти библиотеки DLL вам может понадобиться запустить утилиту настройки, чтобы указать тулсету, где находится игра. Это может произойти, если вы удаляли тулсет, а затем установили его в другом месте.
+</p><p><b>Тулсет не знает, где находится Resource Builder:</b>
+</p><p>Если вы установили тулсет по пути, отличному от дефолтного, тулсет может не знать, где находится Resource Builder. Это может быть легко исправлено путем изменения переменной "Resource Build Path", в Options -&gt; Environment.
+</p><p><b>Сообщение "Windows заблокировал некоторые из особенностей этой программы":</b>
+</p><p>Если у вас установлена Vista или Windows 7 вы можете получить сообщение "Windows заблокировал некоторые из особенностей этой программы". Это будет означать, что предпринимается попытка использовать программу "Microsoft Register Server", расположенную по пути "C:\WINDOWS\system32\regsvr32.exe". Программа установки использует эту программу, чтобы зарегистрировать библиотеки DLL игрового движка для использования тулсета. Вы можете блокировать или разрешить использование, однако программа установки сработает в любом случае. Хотя несколько безопаснее всё-таки заблокировать.
+</p><p><b>Ошибка при открытии или записи файла "C:\Program Files\Common Files\BioWare\Uninstall Dragon Age Toolset.exe":</b>
+</p><p>На Windows 7 64 бит при установке тулсета у вас может возникнуть ошибка при открытии или записи файла "C:\Program Files\Common Files\BioWare\Uninstall Dragon Age Toolset.exe"
+</p><p>Чтобы обойти эту ошибку необходимо создать папку "BioWare" в каталоге "C:\Program Files\Common Files\" до установки или при возникновении ошибки. Это связано с тем, что программа установки не создает эту папку. После этого установка будет завершена при нажатии кнопки "Retry".
+</p><p><b>Ограничение на путь установки MSSQL Express 2005:</b>
+</p><p>Поставляемый в комплекте с тулсетом версии 1.00 MSSQL Express 2005 имеет ограничение, которое не позволяет установить его в каталог, путь к которому больше 58-и символов <sup><a rel="nofollow" class="external autonumber" href="http://support.microsoft.com/kb/935371">[1]</a></sup>. Для обхода этого ограничения следуйте следующим <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name%20-%20ru" title="Installation into a directory with a long path name/ru (page does not exist)">инструкциям</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation into a directory with a long path name">(en)</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.83.D1.81.D1.82.D0.B0.D1.8F_.D0.BF.D0.B0.D0.BB.D0.B8.D1.82.D1.80.D0.B0_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2">Пустая палитра ресурсов</span></h2>
+<p>Если после успешного запуска тулсета, палитра пуста, вероятнее всего проблема в том, что в свойствах базы данных языком по умолчанию установлен не английский.
+Для исправления этого:
+</p>
+<ul><li> Запустите Microsoft SQL Server Management Studio Express 2005 (эта тема рассмотрена в статье <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">Ручная установка базы данных</a>).</li>
+<li> В дереве базы данных выберите "Security" (По идее на русском должно быть "Безопасность".</li>
+<li> Затем выберите пункт, обозначающий что-то вроде "Учётные записи", который выведет список пользователей, включая и вашего пользователя.</li>
+<li> Правым щелчком мыши на своём пользователе выберите "Свойства" ("Properties").</li>
+<li> В правом нижнем углу окна свойств найдите свойство "Язык по умолчанию" ("Default Language") и измените его на английский.</li>
+<li> Нажмите "Ok".</li></ul>
+<p>Теперь палитра должна отображать текущие ресурсы. <i>Спасибо Vreltek'у за это решение!</i>
+</p>
+<h2><span class="mw-headline" id=".22.D0.9D.D0.B5.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE_.D0.BF.D0.BE.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B8.D1.82.D1.8C.D1.81.D1.8F_.D0.BA_.D0.B1.D0.B0.D0.B7.D0.B5_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85.22_.28.22Unable_to_connect_to_the_database.22.29">"Невозможно подключиться к базе данных" ("Unable to connect to the database")</span></h2>
+<p>Если при запуске тулсета выскакивает ошибка "Unable to connect to the database", говорящая о том, что тулсет не может подключиться к базе данных, это плохо&#160;:), потому что есть много возможных причин возникновения этой ошибки, равно как и путей её исправления.
+</p><p>Специально для этой ошибки была создана страница, содержащая диагностическую таблицу, которую можно использовать вместо того, чтобы вслепую перебирать различные варианты для диагностики и решения этой проблемы. 
+</p><p>Вот ссылка на эту страницу - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Unable%20to%20connect%20to%20the%20database%20-%20ru" title="Unable to connect to the database/ru">Невозможно подключиться к базе данных</a>. Посетив её вы найдёте актуальную информацию по решению этой проблемы.
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D0.B2.D0.B8.D1.81.D0.BD.D0.B5.D1.82_.D0.BD.D0.B0_.22Execute:regsvr32.exe_.2Fs_.22C:.5CDragon_Age.5Ctools.5CEngine.dll.22">Установка виснет на "Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</span></h2>
+<p>В некоторых случаях Regsvr32.exe виснет. Установщик тулсета версии 1.01 обходит эту проблему и не ждет возвращения значения из regsvr32, так что программа установки больше не должна виснуть на данном этапе.
+</p><p>Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Installer%20hangs%20at%20the%20stage%20of%20Execute%20-%20regsvr32.exe%20-%20s%20-%20C%20-%20-%20Dragon%20Age%20-%20tools%20-%20Engine.dll%20-%20-%20ru" title="Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;/ru (page does not exist)">Bug: Installer hangs at the stage of Execute:regsvr32.exe /s "C:\Dragon Age\tools\Engine.dll"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Installer%20hangs%20at%20the%20stage%20of%20Execute%20-%20regsvr32.exe%20-%20s%20-%20C%20-%20Dragon%20Age%20-%20tools%20-%20Engine.dll" title="Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;">(en)</a> для более детальной информации, если эта ошибка у вас всё-таки происходит, либо возникла необходимость в ручной регистрации engine.dll.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D0.B2.D0.BE.D0.BF.D1.80.D0.BE.D1.81.D1.8B_.D0.BF.D0.BE_.D0.B1.D0.B0.D0.B7.D0.B0.D0.BC_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Другие вопросы по базам данных</span></h2>
+<ul><li>Если вы никогда не устанавливали MS SQL Server Express, то можно проверить наличие обновлений для него через Windows Update после установки тулсета.</li></ul>
+<ul><li>Если установка сервера аварийно прекращается, то не исключено, что он конфликтует с MSXML6. Если у вас уже установлен MSXML6, то удалите его и попробуйте переустановить тулсет. Смотрите <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/968749">Страница Microsoft  по этому вопросу</a>. Если возникли проблемы с удалением MSXML6, попробуйте программу <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/290301">Microsoft Windows Installer Cleanup Utility</a>.</li></ul>
+<ul><li>Во время установки SQL Server Express, когда скрипт попытается запустить базу данных, возможно появление сообщения об ошибке "The SQL Server service failed to start..." ("Не удалось запустить службу сервера SQL...") с вариантами "Повторить" или "Отмена".</li></ul>
+<ol><li>Не отменяйте операцию. Это приведёт к откату установки и создания базы данных BWDATOOLSET и вы вынуждены будете начать установку с начала.</li>
+<li>Вместо этого, перейдите в "C:\Documents и Settings\NetworkService\Application Data\Microsoft\", щёлкните правой кнопкой мыши на папке "Protect"("Защита") и нажмите "Properties"("Свойства"). На вкладке "Security"("Безопасность") добавьте NETWORK SERVICE в список групп и имен пользователей и предоставьте ей полный набор разрешений.</li>
+<li>Если у вас отсутствует вкладка "Безопасность", то закройте окно "Свойства" и выберите "Сервис -&gt; Свойства папки" в меню Проводника Windows. В окне свойств папки перейдите на вкладку Вид и снимите флажок "Использовать простой общий доступ к файлам (рекомендуется)". Теперь вы сможете выполнить предыдущий шаг.</li>
+<li>Теперь вы можете вернуться к сообщению "The SQL Server service failed to start..." и нажать кнопку "Повторить".</li></ol>
+<ul><li>Включённая в тулсет версия MSSQL Server 2005 может вызвать проблемы при установке на 64-разрядных операционных системах. Определить это можно по ошибке 70047 SQL Server в логах установки. Для решения этой проблемы  перед установкой тулсета необходимо установить <a rel="nofollow" class="external text" href="http://go.microsoft.com/fwlink/?LinkId=55734">Microsoft .NET Framework Version 2.0</a> для 64-битных архитектур.</li></ul>
+<ul><li>Вы можете также столкнуться с проблемами скриптов миграции баз данных на 64-разрядных ОС. Альтернативный скрипт миграции можно найти здесь: <a rel="nofollow" class="external free" href="http://social.bioware.com/project/46/">http://social.bioware.com/project/46/</a></li></ul>
+<ul><li>Также возможны проблемы с с правами доступа. Этого можно избежать, дав своему пользователю права администратора для базы данных. Для этого:</li></ul>
+<ol><li>Запустите "SQL Server Surface Area Configuration" (ссылка должна быть в меню "Пуск" в Microsoft SQL Server 2005)</li>
+<li>Выберите "Добавить администратора".</li>
+<li>Добавить себя в качестве администратора.</li></ol>
+<ul><li>Если вы получите синтаксическую ошибку во время установки, это может быть вызвано слишком длинным путём. Вместо того чтобы начинать установку заново, попробуйте следующее: <a rel="nofollow" class="external free" href="http://support.microsoft.com/kb/935371">http://support.microsoft.com/kb/935371</a></li></ul>
+<ul><li>Для получения инструкций по ручной установке базы данных для использования в тулсете, смотрите следующий <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manual%20database%20installation%20-%20ru" title="Manual database installation/ru">мануал</a>.</li></ul>
+<h2><span class="mw-headline" id="Windows_XP_SP_2_.D0.B8_.D0.B1.D0.B5.D1.81.D0.BA.D0.BE.D0.BD.D0.B5.D1.87.D0.BD.D1.8B.D0.B9_.D1.86.D0.B8.D0.BA.D0.BB_.D0.BF.D0.B5.D1.80.D0.B5.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.BE.D0.BA_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B8">Windows XP SP 2 и бесконечный цикл перезагрузок после установки</span></h2>
+<ul><li>Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Endless%20reboot%20cycles%20after%20install%20under%20Windows%20XP%20SP%202%20-%20ru" title="Bug: Endless reboot cycles after install under Windows XP SP 2/ru (page does not exist)">Ошибка: Бесконечный цикл перезагрузок после установки на Windows XP SP 2</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Endless%20reboot%20cycles%20after%20install%20under%20Windows%20XP%20SP%202" title="Bug: Endless reboot cycles after install under Windows XP SP 2">(en)</a></li></ul>
+<p>MSSQL Server Express, идущий в комплекте с тулсетом имеет потенциальные проблемы при установке на Windows XP Service Pack 2, что может привести к бесконечному циклу перезагрузок. Программа установки тулсета предупредит вас о возможных ошибках и попросит прекратить установку если обнаружит Service Pack 2 на вашей системе. Минимальное требования для установки Dragon Age: Origins в части операционных систем Windows является Windows XP Service Pack 3.
+</p><p>Если вы уже застряли в бесконечном цикле перезагрузок:
+</p>
+<ul><li>Нажмите "Ctrl+Alt+Del" и откройте "Диспетчер задач" как только будет возможно. </li>
+<li>Если не получится открыть "Диспетчер задач", то попробуйте загрузиться в безопасном режиме, удерживая клавишу "F8" во время процесса загрузки ОС.</li>
+<li>Затем идите в меню "Пуск" и запустите "MSConfig". Сделать это можно через кнопку "Выполнить", если она у вас доступна (если нет то включите её в настройках меню "Пуск").</li>
+<li>В окне "MSConfig" выберите вкладку "Службы" и остановите все сервисы SQL.</li>
+<li>Теперь вы можете удалить SQL Server.</li></ul>
+<p>В качестве альтернативы, вместо загрузки в безопасном режиме, вы можете попробовать выбрать опцию "Последняя удачная конфигурация". Это может восстановить систему до её предыдущего функционального состояния.
+</p><p>Удаление SQL Server прекратит бесконечные перезагрузки. Теперь можно установить Windows XP Service Pack 3.
+</p>
+<h2><span class="mw-headline" id=".D0.92.D0.BD.D0.B5.D1.88.D0.BD.D0.B8.D0.B5_.D1.81.D1.81.D1.8B.D0.BB.D0.BA.D0.B8">Внешние ссылки</span></h2>
+<p><a rel="nofollow" class="external text" href="http://forum.canardpc.com/showthread.php?p=2675920">Canard PC форум</a> Только французский:Forum résumant la marche a faire en cas de problèmes.
+</p>

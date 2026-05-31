@@ -1,0 +1,466 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stats%20core%20h" title="Stats core h (page does not exist)">stats_core_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> HERO_STAT_AREAS_EXPLORED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2022
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_ATTACK_COUNT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1010
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_CODEX_ENTRIES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2020
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_CURRENT_TIME_PLAYED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2025
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_DIALOGUES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2019
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_FRIENDLY_FIRE_DEALT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1006
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_ANIMALS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2013
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_ARCH_ENEMIES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2009
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_CONSTRUCT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2006
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_CORRUPTED_ANIMALS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2011
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_DARKSPAWNS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2008
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_DEMONS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2004
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_DRACONICS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2010
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_FANTASTICAL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2005
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_HARMLESS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2014
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_HUMANOIDS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2007
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_GROUPTYPE_VERMIN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2012
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_HIGHEST_DAMAGE_DEALT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1004
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_HIT_COUNT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1011
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_HIT_RATE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1003
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_INJURIES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1008
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_ITEMS_CRAFTED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2030
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_KILLS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1001
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MONEY_SPENT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2018
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MOST_MONEY_EVER
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2017
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MOST_POWERFUL_RATING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1009
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MOST_POWERFUL_RATING_PARTY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2029
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MOST_POWERFUL_SLAIN
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1007
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_MOST_POWERFUL_SLAIN_BY_PARTY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2003
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_PARTY_DAMAGE_DEALT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2002
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_PARTY_KILLS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2001
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_PREVIOUS_MONEY
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2024
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_STEALING_FAILURE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2016
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_STEALING_SUCCESS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2015
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_TOTAL_DAMAGE_DEALT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1002
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_TOTAL_DAMAGE_PERCENT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1005
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_TOTAL_TIME_PLAYED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2023
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_TRACKING_POS_X
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2026
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_TRACKING_POS_Y
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2027
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_WALKED_DISTANCE_METERS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2028
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr>
+<tr>
+<td> HERO_STAT_WALKED_DISTANCE_MILES
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2021
+</td>
+<td>
+</td>
+<td align="center"> stats_core_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Properties above 1000 are statistic properties.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY" title="PROPERTY *">PROPERTY_*</a></li></ul>

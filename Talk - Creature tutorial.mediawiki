@@ -1,0 +1,2 @@
+<p>I followed the help for getting ambient animations to work, but had to modify the AMBIENT_ANIM_FREQ variable in order to get it to work.  So if you're having trouble with ambients, you may want to change this value as well.
+</p>

@@ -1,0 +1,288 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20traps%20h" title="Sys traps h">sys_traps_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> TRAP_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_SWINGING_LOG
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_EXPLOSION
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_NATURAL_WEB
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">200
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_FIREBALL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">205
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_GREASE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">206
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_GAS_TOXIC
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">207
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_LEGHOLD_STEEL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">400
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_LEGHOLD_WOOD
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">401
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_BIGBOLT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">402
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ARROW
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">403
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ARROWS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">404
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ARROW_ICE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">405
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ARROW_FIRE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">406
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ARROW_POISON
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">407
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_FIRE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">408
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_ICE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">409
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_LIGHTNING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">410
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PROJECTILE_WEB
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">411
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_SCYTHING_BLADE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">412
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_PIERCING_BLADE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">413
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_EXPLODING_BARREL
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">418
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_FIREBALL_EFFECT
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">441
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_AOE_FIRE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">417
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr>
+<tr>
+<td> TRAP_AOE_GAS
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">420
+</td>
+<td>
+</td>
+<td align="center"> sys_traps_h
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The constant <code>SPELL_GLYPH_PARALYSIS</code> with a literal value of <code>301</code> is listed with the other trap types above even though it is missing the <code>TRAP_</code> prefix.
+</p>

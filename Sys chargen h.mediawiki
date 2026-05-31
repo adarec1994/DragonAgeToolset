@@ -1,0 +1,17 @@
+<p>The <strong class="selflink">sys_chargen_h</strong> script is the main <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#Include_file" title="Scripting terminology">include file</a> for the Character Generation system.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ai%20constants%20h" title="Ai constants h (page does not exist)">ai_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plt%20gen00pt%20backgrounds" title="Plt gen00pt backgrounds (page does not exist)">plt_gen00pt_backgrounds</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20chargen%20engine" title="Sys chargen engine (page does not exist)">sys_chargen_engine</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">wrappers_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20ApplyClassAbilities" title="Chargen ApplyClassAbilities">Chargen ApplyClassAbilities</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20ModifyCreaturePropertyBase" title="Chargen ModifyCreaturePropertyBase">Chargen ModifyCreaturePropertyBase</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Chargen%20SelectCoreClass" title="Chargen SelectCoreClass">Chargen SelectCoreClass</a></li></ul>

@@ -1,0 +1,85 @@
+<p>Each line in an animation contains animations that the actors will play while the lines are being carried out. Since the names of the animations don't give the best description of what it is and there is a reasonable delay between assigning an animation and seeing it in a preview. This is a list of some of the animation with some better descriptions.
+</p>
+<table class="wikitable" border="1">
+<caption><b>Animation List</b>
+</caption>
+<tr>
+<th> Name </th>
+<th> Approx Duration </th>
+<th> Description
+</th></tr>
+<tr>
+<td> 2a misc 1 </td>
+<td> 1.0 Secs </td>
+<td> Minor gesture of moving arms in front of lower waist and back again
+</td></tr>
+<tr>
+<td> 2a misc 2 </td>
+<td> 0.75 Secs </td>
+<td> Minor gesture of jerking hands slightly
+</td></tr>
+<tr>
+<td> 2arm_beseech </td>
+<td> 5.2 Secs </td>
+<td> Adding emphasis to talking with major gestures; curcular movements and flicking towards listener; arguably not really beseeching
+</td></tr>
+<tr>
+<td> 2arm_clench_fists </td>
+<td> 2.0 Secs </td>
+<td> Clenching both fists in front of face; blending with a weight of about 50% makes it stomach height an look more like it is an angry gesture, at 100% it just looks like a normal major gesture
+</td></tr>
+<tr>
+<td> 2arm_emphasis2 </td>
+<td> 2.25 Secs </td>
+<td> Tapping one hand in facing up palm of other hand at chest height, then doing a right-handed flick towards listener quickly before resuming pose
+</td></tr>
+<tr>
+<td> 2arm_gesture_1 </td>
+<td> 6.0 Secs </td>
+<td> Medium hand gestures in front of stomach as if explaining something
+</td></tr>
+<tr>
+<td> 2arm_stop </td>
+<td> 2.0 Secs </td>
+<td> Hold hands in front with palms out and fingers splayed then return to sides
+</td></tr>
+<tr>
+<td> head gesture left </td>
+<td> 0.75 Secs </td>
+<td> Minor head jerk to the top left (their left), end result is like a nod
+</td></tr>
+<tr>
+<td> head gesture right </td>
+<td> 0.75 Secs </td>
+<td> Minor head jerk to the top right (their right), end result is like a nod
+</td></tr>
+<tr>
+<td> head_glance_left </td>
+<td> 1.6 Secs </td>
+<td> Look 90 degrees to the left for a shorter time than "headlook left"
+</td></tr>
+<tr>
+<td> head_glance_right </td>
+<td> 1.6 Secs </td>
+<td> Look 90 degrees to the right for a shorter time than "headlook right"
+</td></tr>
+<tr>
+<td> headlook left </td>
+<td> 4.8 Secs </td>
+<td> Look 90 degrees to the left, idles from 1.0 secs to 3.75 secs
+</td></tr>
+<tr>
+<td> headlook right </td>
+<td> 4.8 Secs </td>
+<td> Look 90 degrees to the right, idles from 1.0 secs to 3.75 secs
+</td></tr>
+<tr>
+<td> right hand gesture across </td>
+<td> 1.5 Secs </td>
+<td> Briefly move hand with palm upwards in front of chest
+</td></tr>
+<tr>
+<td> right hand gesture self </td>
+<td> 1.5 Secs </td>
+<td> Briefly move hand to stomach with palm inwards.
+</td></tr></table>

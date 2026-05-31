@@ -1,0 +1,17 @@
+<p>Default handler for a trap's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT" title="EVENT TYPE ATTACK IMPACT">EVENT_TYPE_ATTACK_IMPACT</a> event.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Trap_HandleImpact(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> ev<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">ev<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20traps%20h" title="Sys traps h">sys_traps_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Handles the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT" title="EVENT TYPE ATTACK IMPACT">EVENT_TYPE_ATTACK_IMPACT</a> event sent to a trap when a projectile hits a target.
+</p>

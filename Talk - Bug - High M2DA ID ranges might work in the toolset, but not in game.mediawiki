@@ -1,0 +1,5 @@
+<p>Ok this applies to placables too. "placeable_types"
+</p>
+<ul><li>So this is Items, max 255</li>
+<li>Placeables, max 65500</li>
+<li>Creatures, max 65500.. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 11:21, 5 February 2010 (UTC)</li></ul>

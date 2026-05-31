@@ -1,0 +1,17 @@
+<p>I would suggest breaking this page down into several smaller pages. Starting with an introduction/table of contents/downloads page; then at least 1 page per tutorial (if not more); and possibly a summary or conclusion.  In other words:
+</p>
+<ul><li> VFX Tutorial
+<ul><li> Introduction</li>
+<li> List of parts</li>
+<li> Donwloads</li></ul></li>
+<li> VFX Tutorial (Part 1)</li>
+<li> VFX Tutorial (Part 2)</li>
+<li> VFX Tutorial (Part 3)</li>
+<li> VFX Tutorial (Part 4)</li>
+<li> VFX Tutorial (Conclusion)</li></ul>
+<p>If we can get the approach right with this then we can use it as a model for future tutorials. It might we worth looking at how Sun do their Java "trails".
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 22:59, 7 September 2009 (UTC)
+</p><p><br />
+Can someone add on to the end of the VFX tutorials, of how to actually USE the suckers once they are created?  ie: how to put one in a level.  how to put one in an area.  how to put one on a creature/object.  how to spawn one via script.
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BloodsongVengeance" title="User:BloodsongVengeance (page does not exist)">BloodsongVengeance</a> 12:18, 3 October 2010 (UTC)
+</p>

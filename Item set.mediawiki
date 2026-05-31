@@ -1,0 +1,230 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><strong class="selflink">Item sets</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20properties" title="Item properties">Item properties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li></ul>
+</td></tr></table>
+<p>An item set is a collection of one or more items that bestow additional bonuses if all are equipped at the same time. The item set system is implemented through scripts and 2da tables, and is very flexible.
+</p><p>Examples of item sets include:
+</p>
+<ul><li> All armor sets (Leather, Chain Mail, Heavy Plate, ...)</li>
+<li> Imperium Rings (two rings)</li>
+<li> Juggernaut (full body armor with helmet)</li></ul>
+<p>and many more.
+</p><p>The set bonus of an item set is not explicitly shown on the items themselves, but rather has to be included in the individual item's description.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#item_sets.gda"><span class="tocnumber">1</span> <span class="toctext">item_sets.gda</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Slots"><span class="tocnumber">1.1</span> <span class="toctext">Slots</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Set_Properties"><span class="tocnumber">1.2</span> <span class="toctext">Set Properties</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Item_Properties"><span class="tocnumber">2</span> <span class="toctext">Item Properties</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Example_Set"><span class="tocnumber">3</span> <span class="toctext">Example Set</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="item_sets.gda">item_sets.gda</span></h3>
+<hr />
+<p><br />
+All sets the game recognizes are defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">item_sets.gda</a>. The table has the following structure:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  Label for the set, never seen in game
+</td></tr>
+<tr>
+<th>  namestrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Appears to have been a string reference at some point, but only contains a copy of the Slots column at the moment. Not used.
+</td></tr>
+<tr>
+<th>  Slots
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  A bit mask identifying which slots are occupied by the items in the set. See below for description.
+</td></tr>
+<tr>
+<th>  Prop1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  The ID of the first set bonus property. "Increases Strength", "Increases Armor", etc..., see below for valid values.
+</td></tr>
+<tr>
+<th>  Prop1Value
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  Value for the first set bonus property. +5 Strength, or -12.5% fatigue, etc...
+</td></tr>
+<tr>
+<th>  Prop2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Second set bonus property.
+</td></tr>
+<tr>
+<th>  Prop2Value
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  Magnitude of the second set bonus.
+</td></tr></table>
+<p>The data in item_sets.gda is referenced by sys_itemsets_h to check for equipped sets and apply the corresponding bonuses.
+</p>
+<h4><span class="mw-headline" id="Slots">Slots</span></h4>
+<p>The <b>Slots field</b> contains a bit field that specifies which equipment slots are occupied by the set. These are the individual slot IDs:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th> Slot </th>
+<th> ID
+</th></tr>
+<tr>
+<td> Main Hand </td>
+<td> 1
+</td></tr>
+<tr>
+<td> Off Hand </td>
+<td> 2
+</td></tr>
+<tr>
+<td> Chest </td>
+<td> 4
+</td></tr>
+<tr>
+<td> Head </td>
+<td> 8
+</td></tr>
+<tr>
+<td> Gloves </td>
+<td> 16
+</td></tr>
+<tr>
+<td> Boots </td>
+<td> 32
+</td></tr>
+<tr>
+<td> Belt </td>
+<td> 64
+</td></tr>
+<tr>
+<td> Ring 1 </td>
+<td> 128
+</td></tr>
+<tr>
+<td> Ring 2 </td>
+<td> 256
+</td></tr>
+<tr>
+<td> Neck </td>
+<td> 512
+</td></tr>
+<tr>
+<td> Ammo </td>
+<td> 1024
+</td></tr>
+<tr>
+<td> Dog Collar </td>
+<td> 2048
+</td></tr>
+<tr>
+<td> Dog Paint </td>
+<td> 4096
+</td></tr></table>
+<p>To get the value you have to enter into your own set's <b>Slots</b> field in item_sets.gda, simply add the individual slot IDs together. For example:
+</p><p>Neck + Ring1 + Ring2 = 512 + 128 + 256 = 896
+</p><p>Chest + Helmet + Gloves + Boots = 4 + 8 + 16 + 32 = 60
+</p>
+<h4><span class="mw-headline" id="Set_Properties">Set Properties</span></h4>
+<p>Each item set can have up to two separate set bonuses. The type of bonus is determined by the <b>Prop1</b> and <b>Prop2</b> fields in the item_sets row. If the corresponding value field (<b>Prop1Value</b> for <b>Prop1</b>, <b>Prop2Value</b> for <b>Prop2</b>) is NOT 0.0, then a property modifier will be constructed from the <b>PropX</b> entry. These directly correspond to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>. Here are a few examples:
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th> Prop1 </th>
+<th> Prop1Value </th>
+<th> Description
+</th></tr>
+<tr>
+<td> 1 </td>
+<td> 5.0 </td>
+<td> Increases Strength by 5
+</td></tr>
+<tr>
+<td> 41 </td>
+<td> -15.0 </td>
+<td> Reduces Fatigue by 15%
+</td></tr>
+<tr>
+<td> 22 </td>
+<td> 7.5 </td>
+<td> Increases chance to avoid missiles by 7.5%
+</td></tr></table>
+<p>If the value field to a <b>PropX</b> field is 0.0, an effect from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects.xls" title="Effects.xls">effects.xls</a> will be applied. The only instance of this in the default game is the Griffon set, which uses a <b>Prop1</b> value of 1050, which corresponds to EFFECT_TYPE_FLANK_IMMUNITY. In theory you could make item sets that petrify their wearer, give them transparency or a permanent mana shield.
+</p>
+<h3><span class="mw-headline" id="Item_Properties">Item Properties</span></h3>
+<hr />
+<p>In addition to defining the properties of the set as mentioned above, each individual item in a set also has to be flagged as belonging to that set. This is done by entering the set's ID into the ITEM_SET field on each item's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item#Variables" title="Item">variables</a> list.
+</p>
+<h3><span class="mw-headline" id="Example_Set">Example Set</span></h3>
+<hr />
+<p>Here is an example entry from item_sets.gda for a custom set. <b><span style="color:red">Please do not reuse the ID!</span></b>
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th> ID </th>
+<th> Label </th>
+<th> namestrref </th>
+<th> Slots </th>
+<th> Prop1 </th>
+<th> Prop1Value </th>
+<th> Prop2 </th>
+<th> Prop2Value
+</th></tr>
+<tr>
+<td> 10121480 </td>
+<td> Knight Champion's Aegis </td>
+<td> 60 </td>
+<td> 60 </td>
+<td> 3 </td>
+<td> 5 </td>
+<td> 41 </td>
+<td> -20
+</td></tr></table>
+<p>This set uses all four armor slots (head, chest, gloves and boots). It has two set bonuses, increasing Willpower by 5 and reducing Fatigue by 20% while wearing it. The four armor items would also have to get the value 10121480 inserted into their ITEM_SET variable field.
+</p>

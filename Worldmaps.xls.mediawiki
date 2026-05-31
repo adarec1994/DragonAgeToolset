@@ -1,0 +1,198 @@
+<p>This set of 2DAs is used to define world [map]s. See the [map tutorial] for more information.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#worldmaps_worksheet"><span class="tocnumber">1</span> <span class="toctext">worldmaps worksheet</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#terrain_types_worksheet"><span class="tocnumber">2</span> <span class="toctext">terrain_types worksheet</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#map_pin_images_worksheet"><span class="tocnumber">3</span> <span class="toctext">map_pin_images worksheet</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#target_wps_.2A_worksheets"><span class="tocnumber">4</span> <span class="toctext">target_wps_* worksheets</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="worldmaps_worksheet">worldmaps worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The name that will be given to this map layout in the "Map" property's dropdown menu in the Designer Toolkit.
+</td></tr>
+<tr>
+<th>  NameStrRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  MAP
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  The TGA image file that's used when displaying this map. Standard map size is 1024 pixels by 768 pixels.
+</td></tr>
+<tr>
+<th>  TargetWpTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  references a worksheet in this excel file with a "target_wps_" prefix that determines which pins lead to where.
+</td></tr>
+<tr>
+<th>  TargetWpTableID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  TripsCounterTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  A table to show which trips should have a random encounter and which should not. There is one global counter for the entire game
+</td></tr></table>
+<h2><span class="mw-headline" id="terrain_types_worksheet">terrain_types worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  RandTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  RandChance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  The chance for triggering any encounter in this terrain
+</td></tr>
+<tr>
+<th>  RepeatVar
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>  the module variable being used to store if encounters from this table have triggered or not (32 bit field)
+</td></tr></table>
+<h2><span class="mw-headline" id="map_pin_images_worksheet">map_pin_images worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Icon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>  Icon Image Name
+</td></tr>
+<tr>
+<th>  Symbol
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="target_wps_.2A_worksheets">target_wps_* worksheets</span></h2>
+<p>Each worksheet lists the [area] resources accessible from the given map along both rows and columns, to create a grid with cells for all possible trips between the areas. The source location is listed in rows, the destinations in columns. Within each cell of the table is the [waypoint] that the player will arrive at in the target area.
+</p><p>As a simple example, consider a group of four areas named area_1 through area_4. Each area has an "arrival" waypoint in it named a#_wp1 (with the # replaced with the area's number). To set up the map so that every trip arrives in the corresponding area's arrival waypoint, you'd use this array:
+</p>
+<table border="1">
+
+<tr>
+<th> Dest &#8594;
+</th>
+<td rowspan="2"> area_1
+</td>
+<td rowspan="2"> area_2
+</td>
+<td rowspan="2"> area_3
+</td>
+<td rowspan="2"> area_4
+</td></tr>
+<tr>
+<th> Source &#8595;
+</th></tr>
+<tr>
+<td> area_1 </td>
+<td>        </td>
+<td> a2_wp1 </td>
+<td> a3_wp1 </td>
+<td> a4_wp1
+</td></tr>
+<tr>
+<td> area_2 </td>
+<td> a1_wp1 </td>
+<td>        </td>
+<td> a3_wp1 </td>
+<td> a4_wp1
+</td></tr>
+<tr>
+<td> area_3 </td>
+<td> a1_wp1 </td>
+<td> a2_wp1 </td>
+<td>        </td>
+<td> a4_wp1
+</td></tr>
+<tr>
+<td> area_4 </td>
+<td> a1_wp1 </td>
+<td> a2_wp1 </td>
+<td> a3_wp1 </td>
+<td>
+</td></tr></table>
+<p>One could use this to set up more complex patterns, for example a mountain pass that starts the player at a different waypoint depending on whether he's arriving there from areas on one side of the mountain range or on the other side of the mountain range.
+</p><p>This doesn't allow the creation of chokepoints, eg <i>forcing</i> the player to go through the mountain pass area if they want to reach areas that lie on the other side. This will have to be implemented by using a script to enable and disable the appropriate map pins depending on which world map area transition the player has passed through. So in this example, exiting the mountain pass through an area transition at the western end would enable the map pins to the west of the mountain range and disable the map pins to the east of the mountain range.
+</p>

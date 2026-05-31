@@ -1,0 +1,19 @@
+<p>GeSHi highlighting allows you to specify blocks of content as a particular programming language and have it highlighted appropriately.  
+</p><p>We have installed syntax highlighting for NWN scripting and DA scripting!  Just use either the "dascript" or "nwscript" tags around your code. (like so: &lt;dascript&gt;Dragon Age script code&lt;/dascript&gt; and &lt;nwscript&gt;NWN script code&lt;/nwscript&gt;)
+</p><p><b>NOTE:</b> the dascript highlighting is copied/pasted from the nwscript one; we are looking for contributions/improvements to match what is actually in DAscripts!
+</p><p>Example:
+</p><p>DAscript:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    SendMessageToPC<span class="br0">&#40;</span>GetEnteringObject<span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;Hello world&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>NWScript:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="nwscript source-nwscript"><pre class="de1"><span class="kw4">void</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="http://nwn1.nwn2lexicon.com/compiled/function.SendMessageToPC.html"><span class="kw3">SendMessageToPC</span></a><span class="br0">&#40;</span><a href="http://nwn1.nwn2lexicon.com/compiled/function.GetEnteringObject.html"><span class="kw3">GetEnteringObject</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="st0">&quot;Hello world&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p><br />
+Geshi homepage: <a rel="nofollow" class="external free" href="http://qbnz.com/highlighter/">http://qbnz.com/highlighter/</a>
+</p>

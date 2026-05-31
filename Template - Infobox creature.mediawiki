@@ -1,0 +1,14 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Creature topics:
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="Creature group">Creature groups</a> - who is hostile to whom.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI" title="AI">AI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%20base.xls" title="APR base.xls">APR base.xls</a></li></ul>
+</td></tr></table>

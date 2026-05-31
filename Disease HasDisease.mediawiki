@@ -1,0 +1,18 @@
+<p>Returns whether or not a character has a disease
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Disease_HasDisease(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCharacter,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDiseaseID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCharacter<dd>the Creature to check<dt style="font-weight:normal; font-style:italic;">nDiseaseID<dd>the Disease to check for. If -1, it will return TRUE if ANY disease is present.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE if the Creature has the Disease; otherwise FALSE
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20disease" title="Sys disease">sys_disease</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Checks if a character currently has a certain disease effect applied to him.
+Disease effects are defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Diseases%202da" title="Diseases 2da (page does not exist)">diseases 2da</a> file.
+</p>

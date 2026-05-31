@@ -1,0 +1,745 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p><b>This article contains links to the BioWare Social Network (BSN), which is now closed.</b></p>
+<p>These links should be replaced with working links where possible, and tutorials edited to remove reliance on BSN.</p>
+</div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#File_Locations"><span class="tocnumber">2</span> <span class="toctext">File Locations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Player_Character_Stats"><span class="tocnumber">3</span> <span class="toctext">Player Character Stats</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Player_Character_Skills_and_Talents"><span class="tocnumber">4</span> <span class="toctext">Player Character Skills and Talents</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Skills"><span class="tocnumber">4.1</span> <span class="toctext">Skills</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Mage"><span class="tocnumber">4.2</span> <span class="toctext">Mage</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Warrior"><span class="tocnumber">4.3</span> <span class="toctext">Warrior</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Rogue"><span class="tocnumber">4.4</span> <span class="toctext">Rogue</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Overview">Overview</span></h3>
+<p>This page details character save game values.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="File_Locations">File Locations</span></h3>
+<p>For savegame locations under Vista they are, by default under "&lt;user's document directory&gt;\\Bioware\\Dragon Age\\Characters\\&lt;Name of the Character the save is for&gt;\\&lt;save slot&gt;\\&lt;savename&gt;.das". As the save name is part of the save file name (though not the folders) it should be pretty easy to find the proper folder name provided one named one's save something distinguishable.
+</p><p>If you get an "Toolset out of memory"-error when trying to open your savegame there is a temporary unofficial workaround available <a rel="nofollow" class="external text" href="http://social.bioware.com/11689/blog/707/">here</a>, if your system is equipped with 4+gb ram.
+</p>
+<h3><span class="mw-headline" id="Player_Character_Stats">Player Character Stats</span></h3>
+<p>Found under SAVEGAME_PLAYERCHAR-&gt;SAVEGAME_PLAYERCHAR_CHAR-&gt;SAVEGAME_CREATURE_STATS-&gt;SAVEGAME_STATLIST
+</p><p>For party members the same values should hold. Navigate to:
+SAVEGAME_PARTYLIST-&gt;SAVEGAME_PARTYPOOLMEMBERS-&gt;&lt;number&gt;-&gt;SAVEGAME_CREATURE_STATS-&gt;SAVEGAME_STATLIST
+</p><p>Note: The following values are recorded by the game in a FIFO order, meaning the moment the game needs to generate a specific key, it will do that.
+</p>
+This way you can have index X in position Y in one save, and in the other the same index X will be in position Z. While changing the keys, pay attention to the proper SAVEGAME_STATPROPERTY_INDEX and not the SAVEGAME_STATLIST index.<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png" width="300" height="70" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/61/STATPROPERTY_INDEX.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20STATPROPERTY%20INDEX.png" title="Enlarge"></a></div>Correct Index</div></div></div>
+<table border="1">
+
+<tr>
+<td><b>STAT_PROPERTY_INDEX</b> </td>
+<td> <b>Effect</b> </td>
+<td> <b>Maximum Displayed Value</b>
+</td></tr>
+<tr>
+<td> 1  </td>
+<td> Strength </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 2  </td>
+<td> Dexterity </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 3  </td>
+<td> Willpower </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 4  </td>
+<td> Magic </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 5  </td>
+<td> Cunning </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 6  </td>
+<td> Constitution </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 7  </td>
+<td> Health </td>
+<td> N/A, Clipping Above 1000
+</td></tr>
+<tr>
+<td> 8  </td>
+<td> Mana </td>
+<td> N/A, Clipping Above 1000
+</td></tr>
+<tr>
+<td> 9  </td>
+<td> Attack </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 10  </td>
+<td> Defense </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 11  </td>
+<td> Armor </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 12  </td>
+<td> Damage Scale (?) </td>
+<td> 10
+</td></tr>
+<tr>
+<td> 13  </td>
+<td> Spellpower Bonus </td>
+<td> 1000
+</td></tr>
+<tr>
+<td> 14  </td>
+<td> Health Regen </td>
+<td> 50
+</td></tr>
+<tr>
+<td> 15  </td>
+<td> Level </td>
+<td> 25
+</td></tr>
+<tr>
+<td> 16  </td>
+<td> Melee Dodge&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 18  </td>
+<td> AI Behaviour (aggressive/defensive tactics) (?) </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 19  </td>
+<td> Experience Points </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 20  </td>
+<td> Flanking Angle </td>
+<td> Degrees
+</td></tr>
+<tr>
+<td> 21  </td>
+<td> Melee Crit&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 22  </td>
+<td> Deflect Missiles&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 23  </td>
+<td> Ranged Crit&#160;% (?) </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 24  </td>
+<td> Ranged Aim Speed (?) </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 27  </td>
+<td> Character Class </td>
+<td> 1 - Warrior, 2 - Mage, 3 - Rogue, 17 - Dog
+</td></tr>
+<tr>
+<td> 28  </td>
+<td> Combat Health Regen </td>
+<td> 20
+</td></tr>
+<tr>
+<td> 29  </td>
+<td> Mana Regen </td>
+<td> 50
+</td></tr>
+<tr>
+<td> 30  </td>
+<td> Combat Mana Regen </td>
+<td> 20
+</td></tr>
+<tr>
+<td> 32  </td>
+<td> Mental Resistance </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 33  </td>
+<td> Physical Resistance </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 34 </td>
+<td> Attribute Points </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 35 </td>
+<td> Skill points </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 36 </td>
+<td> Spell and Talent points </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 37 </td>
+<td> Background (Magi, Noble, etc) </td>
+<td> 1 - Dalish (Elf Only), 2 - Commoner (Dwarf only), 3 - City (Elf Only), 4 - Magi, 5 - Noble (Dwarf or Human), 6 - Grey Warden (IN AWAKENING)
+</td></tr>
+<tr>
+<td> 38 </td>
+<td> Specialization points </td>
+<td> 2
+</td></tr>
+<tr>
+<td> 39  </td>
+<td> + Melee Damage </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 40  </td>
+<td> Reduced Hostility </td>
+<td> Higher numbers equals faster decay in threat
+</td></tr>
+<tr>
+<td> 41 </td>
+<td> Fatigue </td>
+<td> N/A, Negative values possible down to -25
+</td></tr>
+<tr>
+<td> 42  </td>
+<td> Fire Damage Resistance </td>
+<td> 75
+</td></tr>
+<tr>
+<td> 43  </td>
+<td> Cold Damage Resistance </td>
+<td> 75
+</td></tr>
+<tr>
+<td> 44  </td>
+<td> Lightning Damage Resistance </td>
+<td> 75
+</td></tr>
+<tr>
+<td> 45  </td>
+<td> Nature Damage Resistance </td>
+<td> 75
+</td></tr>
+<tr>
+<td> 46  </td>
+<td> Spirit Damage Resistance </td>
+<td> 75
+</td></tr>
+<tr>
+<td> 49  </td>
+<td> Off Hand Damage </td>
+<td> -99 or -97 for characters without Dual Weapon Talents. Seen as 7.85625 on Leliana.
+</td></tr>
+<tr>
+<td> 50  </td>
+<td> Estimated Damage Done </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 51  </td>
+<td> Healing Received&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 52  </td>
+<td> Resist Magic&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 53  </td>
+<td> Armor Penetration </td>
+<td> 100
+</td></tr>
+<tr>
+<td> 54  </td>
+<td> Backstab/Melee Critical Damage </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 55  </td>
+<td> Fire Damage modifier&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 56  </td>
+<td> Spirit Damage modifier&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 57  </td>
+<td> Cold Damage modifier&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 58  </td>
+<td> Nature Damage modifier&#160;% </td>
+<td> N/A
+</td></tr>
+<tr>
+<td> 59  </td>
+<td> Lightning Damage modifier&#160;% </td>
+<td> N/A
+</td></tr></table>
+<p><br />
+Values here can go above their displayed values, they simply are just not shown. Editing specialization points allows one to have more than 2 specializations. Having all 4 specializations seems to work, one can get all the spells/talents and all the icons display properly, however it is unknown if there are long term game effects.
+</p><p>Note a: Available stat points max out at 100. Once you've spent all of them you'll need to enter the level up screen again in order to spend any left over.
+b: Index 35 (skill points) only shows up when the save file already has an extra skill point/s.
+</p><p>Typically the structure of the stat properties are:
+</p>
+<ul><li> STRUCT value of ATTR</li>
+<li> SAVEGAME_STATPROPERTY_BASE, FLOAT32, <i>value</i></li>
+<li> SAVEGAME_STATPROPERTY_MODIFIER, FLOAT32, <i>value</i></li>
+<li> SAVEGAME_STATPROPERTY_INDEX, UINT16, <i>value</i></li></ul>
+<p>For health/mana has an additional properties of:
+</p>
+<ul><li> SAVEGAME_STATPROPERTY_CURRENT, FLOAT32, <i>value</i>
+<ul><li> Current health of the PC/NPC</li></ul></li>
+<li> SAVEGAME_STATPROPERTY_COMREGEN, INT32, <i>value</i>
+<ul><li> Pointer to Combat Regen rate. Do not edit.</li></ul></li>
+<li> SAVEGAME_STATPROPERTY_REGEN, INT32, <i>value</i>
+<ul><li> Pointer to Regen rate. Do not edit.</li></ul></li></ul>
+<p>Attribute, Skill, Spell/Talent, Specialization Points have a structure of:
+</p>
+<ul><li> STRUCT value of SMPL</li>
+<li> SAVEGAME_STATPROPERTY_BASE, FLOAT32, <i>value</i></li>
+<li> SAVEGAME_STATPROPERTY_INDEX, UINT16, <i>value</i></li></ul>
+<h3><span class="mw-headline" id="Player_Character_Skills_and_Talents">Player Character Skills and Talents</span></h3>
+<p>The lists of skills, talents and spells are found under:<br />
+SAVEGAME_PLAYERCHAR-&gt;SAVEGAME_PLAYERCHAR_CHAR-&gt;SAVEGAME_CREATURE_STATS-&gt;<br />
+And then:
+</p>
+<dl><dd>SAVEGAME_SPELLLIST for spells.</dd>
+<dd>SAVEGAME_TALENTLIST for talents.</dd>
+<dd>SAVEGAME_SKILLLIST for skills.</dd></dl>
+<p>Adding rogue or warrior talents to a mage is possible. However it is necessary to first add the proper class to gain access to the talent tree and talent wanted.<br />
+E.g. to add ‘Dual-Weapon Mastery’ the rogue or warrior class will first have to be added. Talent-id 4020 (rogue) or 4022 (warrior). Then all the prerequisites: talent-id 6 (Dual-Weapon Training), 8 (Dual-Weapon Finesse) and 5 (Dual-Weapon Expert). Finally the Dual-Weapon Mastery’ talent can be added (talent-id 3036) and the mage can now dual wield main hand weapons.
+</p>
+<h4><span class="mw-headline" id="Skills">Skills</span></h4>
+<table border="1">
+
+<tr>
+<td><b>Tier 1</b> </td>
+<td> <b>Value</b> </td>
+<td> <b>Tier 2</b> </td>
+<td> <b>Value</b> </td>
+<td> <b>Tier 3</b> </td>
+<td> <b>Value</b> </td>
+<td> <b>Tier 4</b> </td>
+<td> <b>Value </b>
+</td></tr>
+<tr>
+<td> Coercion </td>
+<td> 100011 </td>
+<td> Improved Coercion </td>
+<td> 100012 </td>
+<td> Expert Coercion </td>
+<td> 100013 </td>
+<td> Master Coercion </td>
+<td> 100014
+</td></tr>
+<tr>
+<td> Stealing </td>
+<td> 100021 </td>
+<td> Improved Stealing </td>
+<td> 100022 </td>
+<td> Expert Stealing </td>
+<td> 100023 </td>
+<td> Master Stealing </td>
+<td> 100024
+</td></tr>
+<tr>
+<td> Trap-Making </td>
+<td> 100041 </td>
+<td> Improved Trap-Making </td>
+<td> 100042 </td>
+<td> Expert Trap-Making </td>
+<td> 100043 </td>
+<td> Master Trap-Making </td>
+<td> 100044
+</td></tr>
+<tr>
+<td> Survival </td>
+<td> 100051 </td>
+<td> Improved Survival </td>
+<td> 100052 </td>
+<td> Expert Survival </td>
+<td> 100053 </td>
+<td> Master Survival </td>
+<td> 100054
+</td></tr>
+<tr>
+<td> Herbalism </td>
+<td> 100061 </td>
+<td> Improved Herbalism </td>
+<td> 100062 </td>
+<td> Expert Herbalism </td>
+<td> 100063 </td>
+<td> Master Herbalism </td>
+<td> 100064
+</td></tr>
+<tr>
+<td> Poison-Making </td>
+<td> 100071 </td>
+<td> Improved Poison-Making </td>
+<td> 100072 </td>
+<td> Expert Poison-Making </td>
+<td> 100073 </td>
+<td> Master Poison-Making </td>
+<td> 100074
+</td></tr>
+<tr>
+<td> Combat Training </td>
+<td> 100100 </td>
+<td> Improved Combat Training </td>
+<td> 100101 </td>
+<td> Expert Combat Training </td>
+<td> 100102 </td>
+<td> Master Combat Training </td>
+<td> 100103
+</td></tr>
+<tr>
+<td> Combat Tactics </td>
+<td> 100110 </td>
+<td> Improved Combat Tactics </td>
+<td> 100111 </td>
+<td> Expert Combat Tactics </td>
+<td> 100112 </td>
+<td> Master Combat Tactics </td>
+<td> 100113
+</td></tr></table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Mage">Mage</span></h4>
+<ul><li> Main: 4023</li>
+<li><b>Specializations</b>
+<ul><li> Blood Mage: 4017</li>
+<li> Shapeshifter: 4018</li>
+<li> Arcane Warrior: 4012</li>
+<li> Spirit Healer: 4025</li></ul></li>
+<li><b>Mage Normal</b>
+<ul><li> Arcane Bolt: 200254</li>
+<li> Arcane Shield: 200255</li>
+<li> Staff Focus: 200256</li>
+<li> Arcane Mastery: 200257</li></ul></li>
+<li><b>Blood Mage</b>
+<ul><li> Blood Magic: 10700</li>
+<li> Blood Sacrifice: 10701</li>
+<li> Blood Wound: 10702</li>
+<li> Blood Control: 10703</li></ul></li>
+<li><b>Arcane Warrior</b>
+<ul><li> Combat Magic: 17023</li>
+<li> Aura of Might: 17020</li>
+<li> Shimmering Shield: 17022</li>
+<li> Fade Shroud: 17021</li></ul></li>
+<li><b>Shapeshifter</b>
+<ul><li> Spider Shape: 17008</li>
+<li> Bear Shape: 17010</li>
+<li> Flying Swarm: 17007</li>
+<li> Master Shapeshifter: 17009</li></ul></li>
+<li><b>Spirit Healer</b>
+<ul><li> Group Heal: 10509</li>
+<li> Revival: 10504</li>
+<li> Lifeward: 10506</li>
+<li> Cleansing Aura: 10507</li></ul></li>
+<li><b>Primal</b>
+<ul><li> Line I
+<ul><li> Flame Blast: 10001</li>
+<li> Flaming Weapons: 10204</li>
+<li> Fireball: 10003</li>
+<li> Inferno: 10002</li></ul></li>
+<li> Line II
+<ul><li> Rock Armor: 11002</li>
+<li> Stonefist: 12004</li>
+<li> Earthquake: 11116</li>
+<li> Petrify: 11124</li></ul></li>
+<li> Line III
+<ul><li> Winter's Grasp: 13001</li>
+<li> Frost Weapons: 11007</li>
+<li> Cone of Cold: 13002</li>
+<li> Blizzard: 13000</li></ul></li>
+<li> Line IV
+<ul><li> Lightning: 14001</li>
+<li> Shock: 14000</li>
+<li> Tempest: 14002</li>
+<li> Chain Lightning: 10211</li></ul></li></ul></li>
+<li><b>Creation</b>
+<ul><li> Line I
+<ul><li> Heal: 10104</li>
+<li> Rejuvenate: 10200</li>
+<li> Regeneration: 10210</li>
+<li> Mass Rejuvenation: 10207</li></ul></li>
+<li> Line II
+<ul><li> Heroic Offense: 10206</li>
+<li> Heroic Aura: 10202</li>
+<li> Heroic Defense: 10203</li>
+<li> Haste: 10208</li></ul></li>
+<li> Line III
+<ul><li> Glyph of Paralysis: 11001</li>
+<li> Glyph of Warding: 10601</li>
+<li> Glyph of Repulsion: 17000</li>
+<li> Glyph of Neutralization: 17028</li></ul></li>
+<li> Line IV
+<ul><li> Spell Wisp: 11006</li>
+<li> Grease: 11113</li>
+<li> Spellbloom: 11005</li>
+<li> Stinging Swarm: 12008</li></ul></li></ul></li>
+<li><b>Spirit</b>
+<ul><li> Line I
+<ul><li> Spell Shield: 10400</li>
+<li> Dispel Magic: 10401</li>
+<li> Anti-Magic Ward: 10900</li>
+<li> Anti-Magic Burst: 11003</li></ul></li>
+<li> Line II
+<ul><li> Mana Drain: 10704</li>
+<li> Mana Cleanse: 11004</li>
+<li> Spell Might: 17001</li>
+<li> Mana Clash: 11000</li></ul></li>
+<li> Line III
+<ul><li> Walking Bomb: 12005</li>
+<li> Death Syphon: 10500</li>
+<li> Virulent Walking Bomb: 12011</li>
+<li> Animate Dead: 10508</li></ul></li>
+<li> Line IV
+<ul><li> Mind Blast: 12006</li>
+<li> Force Field: 17019</li>
+<li> Telekinetic Weapons: 10209</li>
+<li> Crushing Prison: 11123</li></ul></li></ul></li>
+<li><b>Entropy</b>
+<ul><li> Line I
+<ul><li> Weakness: 11106</li>
+<li> Paralyze: 11107</li>
+<li> Miasma: 11122</li>
+<li> Mass Paralysis: 11110</li></ul></li>
+<li> Line II
+<ul><li> Vulnerability Hex: 11112</li>
+<li> Affliction Hex: 11111</li>
+<li> Misdirection Hex: 11114</li>
+<li> Death Hex: 11100</li></ul></li>
+<li> Line III
+<ul><li> Disorient: 11115</li>
+<li> Horror: 11108</li>
+<li> Sleep: 11121</li>
+<li> Walking Nightmare: 11109</li></ul></li>
+<li> Line IV
+<ul><li> Drain Life: 15002</li>
+<li> Death Magic: 17002</li>
+<li> Curse of Mortality: 11101</li>
+<li> Death Cloud: 15003</li></ul></li></ul></li></ul>
+<h4><span class="mw-headline" id="Warrior">Warrior</span></h4>
+<ul><li> Main: 4022</li>
+<li> <b>Specializations</b>
+<ul><li> Champion: 4013</li>
+<li> Templar: 4021</li>
+<li> Berserker: 4016</li>
+<li> Reaver: 4019</li>
+<li> Spirit Warrior: 401000</li>
+<li> Guardian: 401001</li></ul></li>
+<li> <b>Champion</b>
+<ul><li> War Cry: 3037</li>
+<li> Rally: 3038</li>
+<li> Motivate: 42</li>
+<li> Superiority: 3039</li></ul></li>
+<li> <b>Templar</b>
+<ul><li> Righteous Strike: 23</li>
+<li> Cleanse Area: 3017</li>
+<li> Mental Fortress: 52</li>
+<li> Holy Smite: 25</li></ul></li>
+<li> <b>Berserker</b>
+<ul><li> Berserk: 700</li>
+<li> Resilience: 48</li>
+<li> Constraint: 3006</li>
+<li> Final Blow: 3009</li></ul></li>
+<li> <b>Reaver</b>
+<ul><li> Devour: 3065</li>
+<li> Frightening Appearance: 3066</li>
+<li> Aura of Pain: 3067</li>
+<li> Blood Frenzy: 713</li></ul></li>
+<li> <b>Spirit Warrior</b>
+<ul><li> Beyond the Veil: 401100</li>
+<li> Soulbrand: 401101</li>
+<li> Fade Burst: 401102</li>
+<li> Blessing of the Fade: 401103</li></ul></li>
+<li> <b>Guardian</b>
+<ul><li> Guardian's Shield: 401110</li>
+<li> Fortifying Presence: 401111</li>
+<li> Master Guardian&#160;: 401112</li>
+<li> Aura of the Stalwart Defender: 401113</li></ul></li>
+<li> <b>Warrior Base</b>
+<ul><li> Line 1
+<ul><li> Powerful: 14</li>
+<li> Threaten: 808</li>
+<li> Bravery: 17</li>
+<li> Deathblow: 3021</li></ul></li>
+<li> Line 2
+<ul><li> Precise Striking: 19</li>
+<li> Taunt: 3041</li>
+<li> Disengage: 3016</li>
+<li> Perfect Striking: 20</li></ul></li></ul></li>
+<li> <b>Weapon &amp; Shield</b>
+<ul><li> Line 1
+<ul><li> Shield Bash: 617</li>
+<li> Shield Pummel: 1</li>
+<li> Overpower: 3073</li>
+<li> Assault: 38</li></ul></li>
+<li> Line 2
+<ul><li> Shield Defense: 704</li>
+<li> Shield Balance: 37</li>
+<li> Shield Wall: 12</li>
+<li> Shield Expertise: 36</li></ul></li>
+<li> Line 3
+<ul><li> Shield Block: 3074</li>
+<li> Shield Cover: 13</li>
+<li> Shield Tactics: 3030</li>
+<li> Shield Mastery: 2</li></ul></li></ul></li>
+<li> <b>Two Handed</b>
+<ul><li> Line 1
+<ul><li> Pommel Strike: 3024</li>
+<li> Indomitable: 28</li>
+<li> Stunning Blows: 3000</li>
+<li> Critical Strike: 3</li></ul></li>
+<li> Line 2
+<ul><li> Sunder Arms: 3025</li>
+<li> Shattering Blows: 3001</li>
+<li> Sunder Armor: 4</li>
+<li> Destroyer: 3032</li></ul></li>
+<li> Line 3
+<ul><li> Mighty Blow: 3028</li>
+<li> Powerful Swings: 718</li>
+<li> Two-Handed Strength: 27</li>
+<li> Two-Handed Sweep: 3031</li></ul></li></ul></li></ul>
+<h4><span class="mw-headline" id="Rogue">Rogue</span></h4>
+<ul><li> Main: 4020</li>
+<li> <b>Specializations</b>
+<ul><li> Assassin: 4014 </li>
+<li> Bard: 4015</li>
+<li> Ranger: 4029</li>
+<li> Duelist: 4030</li></ul></li></ul>
+<p><b>Dragon Age: Origins - Awakening</b>
+</p>
+<ul><li><ul><li> Legionnaire Scout: 401004</li>
+<li> Shadow: 401005</li></ul></li>
+<li> <b>Assassin</b>
+<ul><li> Mark of Death: 3060</li>
+<li> Exploit Weakness: 56</li>
+<li> Lacerate: 3059</li>
+<li> Feast of the Fallen: 3058</li></ul></li>
+<li> <b>Duelist</b>
+<ul><li> Dueling: 709</li>
+<li> Upset Balance: 3050</li>
+<li> Keen Defense: 3049</li>
+<li> Pinpoint Strike: 3051</li></ul></li>
+<li> <b>Bard</b>
+<ul><li> Song of Valor: 3045</li>
+<li> Distraction: 701</li>
+<li> Song of Courage: 705</li>
+<li> Captivating Song: 1000</li></ul></li>
+<li> <b>Ranger</b>
+<ul><li>Summon Wolf: 1004</li>
+<li>Summon Bear: 91</li>
+<li>Summon Spider: 93</li>
+<li>Master Ranger:92</li></ul></li></ul>
+<p><b>Dragon Age: Origins - Awakening</b>
+</p>
+<ul><li> <b>Legionnaire Scout</b>
+<ul><li>Mark of the Legion: 401300</li>
+<li>Strength of Stone: 401301</li>
+<li>Endure Hardship: 401302 </li>
+<li>Blessing of the Ancestors: 401303</li></ul></li>
+<li> <b>Shadow</b>
+<ul><li>Shadow Form: 401310</li>
+<li>Decoy: 401311</li>
+<li>Shadow Striking: 401312</li>
+<li>Pandemonium: 401313</li></ul></li>
+<li> <b>Rogue Normal</b>
+<ul><li> Line 1
+<ul><li> Dirty Fighting: 603</li>
+<li> Combat Movement: 21</li>
+<li> Coup de Grace: 3002</li>
+<li> Feign Death: 3023</li></ul></li>
+<li> Line 2
+<ul><li> Below the Belt: 3026</li>
+<li> Deadly Strike: 708</li>
+<li> Lethality: 777</li>
+<li> Evasion: 3069</li></ul></li>
+<li> Line 3
+<ul><li> Deft Hands: 100001</li>
+<li> Improved Tools: 100002</li>
+<li> Mechanical Expertise: 100003</li>
+<li> Device Mastery: 100004</li></ul></li>
+<li> Line 4
+<ul><li> Stealth: 100075</li>
+<li> Stealthy Item Use: 100076</li>
+<li> Combat Stealth: 100077</li>
+<li> Master Stealth: 100078</li></ul></li>
+<li> Line 5 (Dragon Age: Origins - Awakening)
+<ul><li> Heartseeker: 400200</li>
+<li> Ghost: 400201</li>
+<li> Weak Points: 400202</li>
+<li> Flicker: 400203</li></ul></li></ul></li>
+<li> <b>Dual Weapon</b>
+<ul><li> Line 1
+<ul><li> Dual-Weapon Training: 6</li>
+<li> Dual-Weapon Finesse: 8</li>
+<li> Dual-Weapon Expert: 5</li>
+<li> Dual-Weapon Mastery: 3036</li></ul></li>
+<li> Line 2
+<ul><li> Dual Striking: 11</li>
+<li> Riposte: 9</li>
+<li> Cripple: 10</li>
+<li> Punisher: 7</li></ul></li>
+<li> Line 3
+<ul><li> Dual-Weapon Sweep: 3044</li>
+<li> Flurry: 3035</li>
+<li> Momentum: 717</li>
+<li> Whirlwind: 3043</li></ul></li>
+<li> Line 4 (Dragon Age: Origins - Awakening)
+<ul><li> Twin Strikes: 402100</li>
+<li> Find Vitals: 402101</li>
+<li> Low Blow: 402102</li>
+<li> Unending Fury: 402103</li></ul></li></ul></li>
+<li> <b>Archery</b>
+<ul><li> Line 1
+<ul><li> Melee Archer: 34</li>
+<li> Aim: 500</li>
+<li> Defensive Fire: 33</li>
+<li> Master Archer: 35</li></ul></li>
+<li> Line 2
+<ul><li> Pinning Shot: 803</li>
+<li> Crippling Shot: 805</li>
+<li> Critical Shot: 804</li>
+<li> Arrow of Slaying: 802</li></ul></li>
+<li> Line 3
+<ul><li> Rapid Shot: 3071</li>
+<li> Shattering Shot: 3072</li>
+<li> Suppressing Fire: 801</li>
+<li> Scatter Shot: 800</li></ul></li>
+<li> Line 4 (Dragon Age: Origins - Awakening)
+<ul><li> Accuracy: 402000</li>
+<li> Arrow Time: 402001</li>
+<li> Burst Shot: 402002</li>
+<li> Rain of Arrows: 402003</li></ul></li></ul></li></ul>

@@ -1,0 +1,111 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules" title="Combat Rules">Combat Rules</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p>When the compiler encounters a syntax error it aborts the process for that script and displays a <b>compiler error message</b> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20window%20panel" title="Log window panel (page does not exist)">Log window</a>.
+</p><p>There are a couple of guidelines to remember when trying to understand compiler error message:
+</p>
+<ul><li> The compiler reports the error when it can no longer make sense of the script: this often occurs on the line '<i>after</i> the line containing the error.</li>
+<li> If the script has one or more include files the error may have "<b>while compiling &lt;include&gt;.nss</b>" appended to it, however the error may be in the script being compiled rather than an include file.</li></ul>
+<h2><span class="mw-headline" id="Errors">Errors</span></h2>
+<p>The following is a list of compiler error messages that have been encountered and what caused them. It is important to be aware that the listed cause(s) may not be the <i>only</i> cause(s) for a particular error and therefore should be viewed as examples rather than definitions.
+</p>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents
+</th></tr>
+<tr>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+<h3><span class="mw-headline" id="A"><span id="A">A</span></span></h3>
+<dl><dt>After compound statement at end</dt>
+<dd>The double quote before the file name is missing from an <a href="#include">#include</a> directive.</dd></dl>
+<h3><span class="mw-headline" id="B"><span id="B">B</span></span></h3>
+<dl><dt> Break outside of loop or case statement</dt>
+<dd> [example].</dd></dl>
+<h3><span class="mw-headline" id="D"><span id="D">D</span></span></h3>
+<dl><dt>Declaration does not match parameters</dt>
+<dd> The wrong type of argument used when calling a function, e.g. a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String">string</a> passed into a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int">int</a> argument.</dd></dl>
+<dl><dt>Declaration does not match parameters (&lt;function&gt;)</dt>
+<dd> Too few or too many arguments used when calling a function.</dd></dl>
+<dl><dt>Duplicate function implementation (&lt;function&gt;)</dt>
+<dd> Two functions with the same name exist.</dd></dl>
+<h3><span class="mw-headline" id="E"><span id="E">E</span></span></h3>
+<dl><dt> Equality test has invalid operands</dt>
+<dd> [example].</dd></dl>
+<h3><span class="mw-headline" id="F"><span id="F">F</span></span></h3>
+<dl><dt>Function definition missing parameter list</dt>
+<dd>The brackets were omitted when defining a function.</dd></dl>
+<h3><span class="mw-headline" id="I"><span id="I">I</span></span></h3>
+<dl><dt>Included file not found</dt></dl>
+<ol><li> An include file does not exist or has not been saved.</li>
+<li> The wrong file name used or the ".nss" extension included in an <a href="#include">#include</a> directive.</li></ol>
+<dl><dd> NOTE: include files cannot not be compiled directly (attempting to do so will generate a <a href="#S">Script must contain either a main or StartingConditional</a> error).</dd></dl>
+<dl><dt>Invalid declaration type</dt>
+<dd>The brackets were omitted when declaring a function.</dd></dl>
+<h3><span class="mw-headline" id="M"><span id="M">M</span></span></h3>
+<dl><dt> Mismatched types</dt></dl>
+<ol><li> A value or variable is assigned to a variable of a different type, e.g. a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String">string</a> value assigned to an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int">int</a> varaible.</li>
+<li> A function is assigned to a variable of a different type, e.g. a [[string] function to  assigned to an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int">int</a> variable.</li>
+<li> A function returns a different type from its declared return type.</li>
+<li> A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void">void</a> function is assigned to a variable.</li></ol>
+<dl><dt>Multiple case constant statements within switch</dt>
+<dd>Two or more <code>case</code> statements are using the same value. This could be due to the same symbolic constant or literal value being used multiple times, or a literal and a constant with the same value being used.</dd></dl>
+<h3><span class="mw-headline" id="N"><span id="N">N</span></span></h3>
+<dl><dt> No colon after case label </dt>
+<dd> [example].</dd></dl>
+<dl><dt> No left bracket on arg list</dt></dl>
+<ol><li> The brackets were omitted when calling a function (without arguments).</li></ol>
+<dl><dt> No semicolon after expression</dt></dl>
+<ol><li> The statement terminator (;) is missing from the end of an expression.</li>
+<li> A keyword in an expression contains a typo. </li></ol>
+<dl><dt>No semicolon after structure</dt></dl>
+<ol><li> The statement terminator (;) is missing from the end of a structure definition.</li></ol>
+<dl><dt> Not all control paths return a value</dt></dl>
+<ol><li> A function does not have a return statement.</li>
+<li> A logic branch in a function does not have a return statement.</li>
+<li> A function does not have an else or default case with a return function.</li></ol>
+<h3><span class="mw-headline" id="P"><span id="P">P</span></span></h3>
+<dl><dt> Parsing variable list </dt></dl>
+<ol><li> The statement terminator (;) is missing from the on previous line.</li>
+<li> A line contains a rogue double-quotes mark.</li></ol>
+<h3><span class="mw-headline" id="S"><span id="S">S</span></span></h3>
+<dl><dt>Script must contain either a main or StartingConditional</dt></dl>
+<ol><li> Compiled an include file directly (instead of the script including it).</li>
+<li> Used the incorrect case i.e. Main instead of main.</li></ol>
+<h3><span class="mw-headline" id="U"><span id="U">U</span></span></h3>
+<dl><dt> Undefined identifier (&lt;identifier&gt;) </dt></dl>
+<ol><li> A variable is being used before it is defined.</li>
+<li> A string is missing its opening double-quotes mark.</li></ol>
+<dl><dt>Undefined structure</dt>
+<dd> A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword" title="Struct keyword (page does not exist)">struct</a> is being used before it is defined.</dd></dl>
+<dl><dt>Unknown state in compiler</dt>
+<dd> Invalid syntax e.g. an extra comma in a list of arguments.</dd></dl>
+<dl><dt> Unterminated string constant </dt></dl>
+<ol><li> A string is missing its closing double-quotes mark.</li>
+<li> A line contains a rogue double-quotes mark.</li></ol>
+<h3><span class="mw-headline" id="V"><span id="V">V</span></span></h3>
+<dl><dt> Variable defined without type</dt></dl>
+<ol><li> A value is being assigned to a variable before it has been declared.</li>
+<li> A variable is being assigned or passed into a function before it has been declared.</li></ol>
+<dl><dt>Void expression where non void required</dt>
+<dd> Assigned a member of a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector" title="Vector">vector</a> which was itself a member of a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword" title="Struct keyword (page does not exist)">struct</a> to a variable.</dd></dl>

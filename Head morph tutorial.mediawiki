@@ -1,0 +1,72 @@
+<p>After browsing through about 20 some pages of the forums, I have noticed that, due to the fact that the search is down, people have been posting a lot of the same questions. I do not have the answer to all of these questions, but I will share what I have done so far. Mind you, it's not alot, but hopefully it will help some other people with their questions. Mind you, this is how I do it. My girlfriend and I will add to this as we figure things out/have the time.
+</p><p>Alright, first thing is first. Most people are saying they think their characters' faces are hideous and want to change them, but aren't sure how. 
+</p>
+<h2><span class="mw-headline" id="Editing_your_character.27s_head.2Fface_in_the_toolset">Editing your character's head/face in the toolset</span></h2>
+<p>You Need to make sure that you have played long enough to save your game and that you have picked everything you want the character to have/be (class, race, gender, voice, etc.).
+</p><p>1. Open your toolset
+</p><p>What tool set?
+This one <a rel="nofollow" class="external free" href="http://social.bioware.com/page/da-toolset#downloads">http://social.bioware.com/page/da-toolset#downloads</a>
+</p><p>2. Go to File -&gt;New-&gt;Morph
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%202.jpg"><img alt="Step 2.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/Step_2.jpg" width="300" height="366" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/Step_2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/57/Step_2.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%202.jpg" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>3. Choose a base to work with (It must be that of the Gender and Race you picked, althought this is not for certain as I have not messed around with putting a female dwarfs head on a human male or whatever. feel free to try at your own risk) Hm = Human Male, HF = Human Female etc etc
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%203.jpg"><img alt="Step 3.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/16/Step_3.jpg/300px-Step_3.jpg" width="300" height="208" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/16/Step_3.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/16/Step_3.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%203.jpg" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+4. At this point, messing with the head is up to how you want it to look. You can add facial hair to females and makeup to males.
+Something that took us forever to figure out is how to change the angle of the head. 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:217px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%204.jpg"><img alt="Step 4.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fd/Step_4.jpg" width="215" height="413" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%204.jpg" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>As marked in red on the image above, you will see that the Object Orientation is set to 0,0,0
+</p><p>So this is how it works:
+</p>
+<dl><dd>Front View of face (default) = 0,0,0</dd>
+<dd>Right Side view of face = 75,0,0</dd>
+<dd>Back of Head view = 180,0,0</dd>
+<dd>Left Side view of Face = 280,0,0</dd></dl>
+<p>Also, if you don't feel like typing in numbers, holding down CTRL + the right click button (on your mouse) and moving forward/backwards will zoom in and out. Moving it left to right will turn the camera around the head. CTRL + the left click button seems to give your free movement around the entire plane.
+</p><p>5. Once you're finished Save it. However, try not to name it something generic. Once it has been saved, right click on the face and select "Post To Local".
+</p>
+<h2><span class="mw-headline" id="changing_a_savegame_file_in_the_toolset">changing a savegame file in the toolset</span></h2>
+<p>6. Remember how I told you to play through the game first to save it when you first got the chance to? Well, now we're going into the save information of that file and putting your face you made in the toolset on the character. Close the face you had been working on. I AM DOING THIS FOR MY CHARACTER FLAEMARU SO ANYWHERE YOU SEE HER NAME, JUST SUBTITUTE IT WITH THE NAME OF THE CHARACTER WHOSE FACE YOU'RE CHANGING. Then, go to File-&gt;Open File-&gt;owner-&gt;documents-&gt;bioware-&gt;dragonage-&gt;characters-&gt;Flaemaru-&gt;Saves(Since I know how to do this I only has one save for her, but pick the save you want to change)-&gt;Slot_1-&gt;Flaemaru.das
+</p><p>7. Now this part can be a bit confusing or overwhelming if you're not sure what you're doing. But don't fret, I'll walk you though it.
+</p><p>At this point your screen should look like this: 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%207a.jpg"><img alt="Step 7a.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Step_7a.jpg" width="300" height="183" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Step_7a.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Step_7a.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step%207a.jpg" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+Now, go to SAVEGAME_PLAYERCHAR-&gt;SAVEGAME_PLAYERCHAR_CHAR-&gt;SAVEGAME_APPEARANCE-&gt;SAVEGAME_APPEARANCE_MORPH_NAME
+</p><p>Confused? That's okay.
+Maybe this will help: WARNING LARGE IMAGE
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step7b.jpg"><img alt="Step7b.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c5/Step7b.jpg" width="300" height="329" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c5/Step7b.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c5/Step7b.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Step7b.jpg" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>What is circled in red is what you need to click on to Navigate to where you need to go. The thing circled in light blue is area you need to type in to change the face. IT MUST HAVE THE PROPER PREFIX OF RACE/GENDER AND MUST CONTAIN THE UNDERSCORE
+</p>
+<dl><dd>hm_ = human male</dd>
+<dd>hf_ = human female</dd>
+<dd>em_ = elf male</dd>
+<dd>ef_ = elf female</dd>
+<dd>dm_ = dwarf male</dd>
+<dd>df_= dwarf female</dd></dl>
+<p>Flaemaru is an elf female thus in the blue circled area I type ef_Flaemaru        
+So if your character's name is Joe and Joe is a Human male and you saved his face that you morphed as 'Joe' then you would type hm_Joe instead.
+</p><p>8. Now before you get all excited, at this point and after, people start to have problems and errors. Like, starting a New Game. When I had first done this I could not start a new game. It kept giving me the "Unable to Load Module" error whenever I tried. When I loaded a saved game, I could not level up, the AI was messed up as none (even
+the main character) would not fight enemies. Fear not if this happens however. After 4 hours of serching through the forums here, I found an topic with multiple solutions which can be found here: <a rel="nofollow" class="external autonumber" href="http://social.bioware.com/forum/1/topic/8/index/134178">[1]</a>. 
+</p><p>However, I have found that just going into owner-&gt;documents-&gt;Bioware-&gt;Dragonage-&gt;modules and
+completely deleting the "Single Player" Folder always fixes my problem.
+</p><p>9. Go load your game of the character whose face you changed. It should be changed to whatever you made in the morph (Althought I'm told some of the 'debug' features don't work sometimes; I have not encountered this problem). Save your game again, and enjoy! If some of the images are too small or you have any questions, feel free to ask my girlfriend and I would be happy to try and help.
+</p><p>How Flaemaru looked before Head Morph (generic female Dalish and generic female Dalish name is she had already saved over it):
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20StupidFlaemaru.png"><img alt="StupidFlaemaru.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/StupidFlaemaru.png" width="300" height="225" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/StupidFlaemaru.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/54/StupidFlaemaru.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20StupidFlaemaru.png" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>How Flaemaru looked after head morph:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Flaemaru.png"><img alt="Flaemaru.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Flaemaru.png" width="300" height="225" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Flaemaru.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bc/Flaemaru.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Flaemaru.png" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Spoiler_warning">Spoiler warning</span></h2>
+<p>Changing the head morph of your character will cause the transformations applied to the player character during the Fade part of the main storyline to be deformed/glitched to varying degrees. The glitches do not have any negative effects after the Fade section has been completed. To allow the transformations to be applied correctly you can delete the head morph from the character before the fade and re-apply it once this section has been finished.
+</p><p>Source of tutorial: <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/176308/">http://social.bioware.com/forum/1/topic/8/index/176308/</a>
+</p>

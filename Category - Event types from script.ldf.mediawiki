@@ -1,0 +1,121 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Event types from script.ldf"</h2>
+<p>The following 116 pages are in this category, out of 116 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20ACQUIRED" title="EVENT TYPE ABILITY ACQUIRED">EVENT TYPE ABILITY ACQUIRED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20CAST%20IMPACT" title="EVENT TYPE ABILITY CAST IMPACT">EVENT TYPE ABILITY CAST IMPACT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20CAST%20START" title="EVENT TYPE ABILITY CAST START">EVENT TYPE ABILITY CAST START</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20PROJECTILE%20LAUNCHED" title="EVENT TYPE ABILITY PROJECTILE LAUNCHED">EVENT TYPE ABILITY PROJECTILE LAUNCHED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AOE%20HEARTBEAT" title="EVENT TYPE AOE HEARTBEAT">EVENT TYPE AOE HEARTBEAT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20APPLY%20EFFECT" title="EVENT TYPE APPLY EFFECT">EVENT TYPE APPLY EFFECT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALIST%20POSTLOAD" title="EVENT TYPE AREALIST POSTLOAD">EVENT TYPE AREALIST POSTLOAD</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOADSAVE%20POSTLOADEXIT" title="EVENT TYPE AREALOADSAVE POSTLOADEXIT">EVENT TYPE AREALOADSAVE POSTLOADEXIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOADSAVE%20PRELOADEXIT" title="EVENT TYPE AREALOADSAVE PRELOADEXIT">EVENT TYPE AREALOADSAVE PRELOADEXIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOADSAVE%20SPECIAL" title="EVENT TYPE AREALOADSAVE SPECIAL">EVENT TYPE AREALOADSAVE SPECIAL</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOAD%20POSTLOADEXIT" title="EVENT TYPE AREALOAD POSTLOADEXIT">EVENT TYPE AREALOAD POSTLOADEXIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOAD%20PRELOADEXIT" title="EVENT TYPE AREALOAD PRELOADEXIT">EVENT TYPE AREALOAD PRELOADEXIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AREALOAD%20SPECIAL" title="EVENT TYPE AREALOAD SPECIAL">EVENT TYPE AREALOAD SPECIAL</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT" title="EVENT TYPE ATTACK IMPACT">EVENT TYPE ATTACK IMPACT</a></li></ul></div><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20BEGIN%20TRAVEL" title="EVENT TYPE BEGIN TRAVEL">EVENT TYPE BEGIN TRAVEL</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20BLOCKED" title="EVENT TYPE BLOCKED">EVENT TYPE BLOCKED</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHANTERS%20DONATION" title="EVENT TYPE CHANTERS DONATION">EVENT TYPE CHANTERS DONATION</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20ASSIGN%20ABILITIES" title="EVENT TYPE CHARGEN ASSIGN ABILITIES">EVENT TYPE CHARGEN ASSIGN ABILITIES</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20ASSIGN%20ATTRIBUTES" title="EVENT TYPE CHARGEN ASSIGN ATTRIBUTES">EVENT TYPE CHARGEN ASSIGN ATTRIBUTES</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20END" title="EVENT TYPE CHARGEN END">EVENT TYPE CHARGEN END</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20IMPORT%20HERO" title="EVENT TYPE CHARGEN IMPORT HERO">EVENT TYPE CHARGEN IMPORT HERO</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SCREEN%20ENTERED" title="EVENT TYPE CHARGEN SCREEN ENTERED">EVENT TYPE CHARGEN SCREEN ENTERED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20BACKGROUND" title="EVENT TYPE CHARGEN SELECT BACKGROUND">EVENT TYPE CHARGEN SELECT BACKGROUND</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20CLASS" title="EVENT TYPE CHARGEN SELECT CLASS">EVENT TYPE CHARGEN SELECT CLASS</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20GENDER" title="EVENT TYPE CHARGEN SELECT GENDER">EVENT TYPE CHARGEN SELECT GENDER</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20LEVELUP%20CLASS" title="EVENT TYPE CHARGEN SELECT LEVELUP CLASS">EVENT TYPE CHARGEN SELECT LEVELUP CLASS</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20NAME" title="EVENT TYPE CHARGEN SELECT NAME">EVENT TYPE CHARGEN SELECT NAME</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20RACE" title="EVENT TYPE CHARGEN SELECT RACE">EVENT TYPE CHARGEN SELECT RACE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20SELECT%20SOUNDSET" title="EVENT TYPE CHARGEN SELECT SOUNDSET">EVENT TYPE CHARGEN SELECT SOUNDSET</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHARGEN%20START" title="EVENT TYPE CHARGEN START">EVENT TYPE CHARGEN START</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CHAR%20RECORD%20OPENED" title="EVENT TYPE CHAR RECORD OPENED">EVENT TYPE CHAR RECORD OPENED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CLICK" title="EVENT TYPE CLICK">EVENT TYPE CLICK</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CODEX%20CHANGED" title="EVENT TYPE CODEX CHANGED">EVENT TYPE CODEX CHANGED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMBAT%20INITIATED" title="EVENT TYPE COMBAT INITIATED">EVENT TYPE COMBAT INITIATED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMMAND%20COMPLETE" title="EVENT TYPE COMMAND COMPLETE">EVENT TYPE COMMAND COMPLETE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMMAND%20PENDING" title="EVENT TYPE COMMAND PENDING">EVENT TYPE COMMAND PENDING</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CRAFT%20ITEM" title="EVENT TYPE CRAFT ITEM">EVENT TYPE CRAFT ITEM</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20CREATURE%20ENTERS%20DIALOGUE" title="EVENT TYPE CREATURE ENTERS DIALOGUE">EVENT TYPE CREATURE ENTERS DIALOGUE</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DAMAGED" title="EVENT TYPE DAMAGED">EVENT TYPE DAMAGED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DEATH" title="EVENT TYPE DEATH">EVENT TYPE DEATH</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DEATH%20RES%20PARTY" title="EVENT TYPE DEATH RES PARTY">EVENT TYPE DEATH RES PARTY</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DIALOGUE" title="EVENT TYPE DIALOGUE">EVENT TYPE DIALOGUE</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ENTER" title="EVENT TYPE ENTER">EVENT TYPE ENTER</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20EQUIP" title="EVENT TYPE EQUIP">EVENT TYPE EQUIP</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20EXIT" title="EVENT TYPE EXIT">EVENT TYPE EXIT</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20FAILTOOPEN" title="EVENT TYPE FAILTOOPEN">EVENT TYPE FAILTOOPEN</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GAMEMODE%20CHANGE" title="EVENT TYPE GAMEMODE CHANGE">EVENT TYPE GAMEMODE CHANGE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GAMEOBJECTSLOADED" title="EVENT TYPE GAMEOBJECTSLOADED">EVENT TYPE GAMEOBJECTSLOADED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GET%20PLOT" title="EVENT TYPE GET PLOT">EVENT TYPE GET PLOT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GIFT%20ITEM" title="EVENT TYPE GIFT ITEM">EVENT TYPE GIFT ITEM</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GIVE%20UP" title="EVENT TYPE GIVE UP">EVENT TYPE GIVE UP</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20GUI%20OPENED" title="EVENT TYPE GUI OPENED">EVENT TYPE GUI OPENED</a></li></ul></div><div class="mw-category-group"><h3>H</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HEARTBEAT2" title="EVENT TYPE HEARTBEAT2">EVENT TYPE HEARTBEAT2</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVALID" title="EVENT TYPE INVALID">EVENT TYPE INVALID</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20ADDED" title="EVENT TYPE INVENTORY ADDED">EVENT TYPE INVENTORY ADDED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20FULL" title="EVENT TYPE INVENTORY FULL">EVENT TYPE INVENTORY FULL</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20REMOVED" title="EVENT TYPE INVENTORY REMOVED">EVENT TYPE INVENTORY REMOVED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ITEM%20ONHIT" title="EVENT TYPE ITEM ONHIT">EVENT TYPE ITEM ONHIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ITEM%20ONTEST%20USABLE" title="EVENT TYPE ITEM ONTEST USABLE">EVENT TYPE ITEM ONTEST USABLE</a></li></ul></div><div class="mw-category-group"><h3>L</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20LEVEL%20OF%20THE%20WEEK" title="EVENT TYPE LEVEL OF THE WEEK">EVENT TYPE LEVEL OF THE WEEK</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20LISTENER" title="EVENT TYPE LISTENER">EVENT TYPE LISTENER</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20LOAD%20TACTICS%20PRESET" title="EVENT TYPE LOAD TACTICS PRESET">EVENT TYPE LOAD TACTICS PRESET</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20LOCKED" title="EVENT TYPE LOCKED">EVENT TYPE LOCKED</a></li></ul></div><div class="mw-category-group"><h3>M</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MANA%20STAM%20DEPLETED" title="EVENT TYPE MANA STAM DEPLETED">EVENT TYPE MANA STAM DEPLETED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MELEE%20ATTACK%20START" title="EVENT TYPE MELEE ATTACK START">EVENT TYPE MELEE ATTACK START</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20GETCHARSTAGE" title="EVENT TYPE MODULE GETCHARSTAGE">EVENT TYPE MODULE GETCHARSTAGE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20LOAD" title="EVENT TYPE MODULE LOAD">EVENT TYPE MODULE LOAD</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20PRESAVE" title="EVENT TYPE MODULE PRESAVE">EVENT TYPE MODULE PRESAVE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20START" title="EVENT TYPE MODULE START">EVENT TYPE MODULE START</a></li></ul></div><div class="mw-category-group"><h3>O</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ON%20ORDER%20RECEIVED" title="EVENT TYPE ON ORDER RECEIVED">EVENT TYPE ON ORDER RECEIVED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ON%20SELECT" title="EVENT TYPE ON SELECT">EVENT TYPE ON SELECT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20OPTIONS%20CHANGED" title="EVENT TYPE OPTIONS CHANGED">EVENT TYPE OPTIONS CHANGED</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYMEMBER%20ADDED" title="EVENT TYPE PARTYMEMBER ADDED">EVENT TYPE PARTYMEMBER ADDED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYMEMBER%20DROPPED" title="EVENT TYPE PARTYMEMBER DROPPED">EVENT TYPE PARTYMEMBER DROPPED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYPICKER%20CLOSED" title="EVENT TYPE PARTYPICKER CLOSED">EVENT TYPE PARTYPICKER CLOSED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTYPICKER%20INIT" title="EVENT TYPE PARTYPICKER INIT">EVENT TYPE PARTYPICKER INIT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTY%20MONEY%20CHANGED" title="EVENT TYPE PARTY MONEY CHANGED">EVENT TYPE PARTY MONEY CHANGED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PERCEPTION%20APPEAR" title="EVENT TYPE PERCEPTION APPEAR">EVENT TYPE PERCEPTION APPEAR</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PERCEPTION%20DISAPPEAR" title="EVENT TYPE PERCEPTION DISAPPEAR">EVENT TYPE PERCEPTION DISAPPEAR</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLACEABLE%20COLLISION" title="EVENT TYPE PLACEABLE COLLISION">EVENT TYPE PLACEABLE COLLISION</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLACEABLE%20ONCLICK" title="EVENT TYPE PLACEABLE ONCLICK">EVENT TYPE PLACEABLE ONCLICK</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLAYERLEVELUP" title="EVENT TYPE PLAYERLEVELUP">EVENT TYPE PLAYERLEVELUP</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLAYER%20COMMAND%20ADDED" title="EVENT TYPE PLAYER COMMAND ADDED">EVENT TYPE PLAYER COMMAND ADDED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLOT%20COMPLETED" title="EVENT TYPE PLOT COMPLETED">EVENT TYPE PLOT COMPLETED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20POPUP%20RESULT" title="EVENT TYPE POPUP RESULT">EVENT TYPE POPUP RESULT</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20REACHED%20WAYPOINT" title="EVENT TYPE REACHED WAYPOINT">EVENT TYPE REACHED WAYPOINT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20REMOVE%20EFFECT" title="EVENT TYPE REMOVE EFFECT">EVENT TYPE REMOVE EFFECT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ROAM%20DIST%20EXCEEDED" title="EVENT TYPE ROAM DIST EXCEEDED">EVENT TYPE ROAM DIST EXCEEDED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20RUBBER%20BAND" title="EVENT TYPE RUBBER BAND">EVENT TYPE RUBBER BAND</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SET%20PLOT" title="EVENT TYPE SET PLOT">EVENT TYPE SET PLOT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SPAWN" title="EVENT TYPE SPAWN">EVENT TYPE SPAWN</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SPELLCASTAT" title="EVENT TYPE SPELLCASTAT">EVENT TYPE SPELLCASTAT</a></li></ul></div><div class="mw-category-group"><h3>T</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20BEGIN" title="EVENT TYPE TRAINING BEGIN">EVENT TYPE TRAINING BEGIN</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20DELAYED%20NOACTION" title="EVENT TYPE TRAINING DELAYED NOACTION">EVENT TYPE TRAINING DELAYED NOACTION</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20FOLLOWER%20SELECTED" title="EVENT TYPE TRAINING FOLLOWER SELECTED">EVENT TYPE TRAINING FOLLOWER SELECTED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20GUI%20INVENTORY%20OPENED" title="EVENT TYPE TRAINING GUI INVENTORY OPENED">EVENT TYPE TRAINING GUI INVENTORY OPENED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20GUI%20LEVLUP%20OPENED" title="EVENT TYPE TRAINING GUI LEVLUP OPENED">EVENT TYPE TRAINING GUI LEVLUP OPENED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20GUI%20TACTICS%20OPENED" title="EVENT TYPE TRAINING GUI TACTICS OPENED">EVENT TYPE TRAINING GUI TACTICS OPENED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20ITEM%20EQUIPPED" title="EVENT TYPE TRAINING ITEM EQUIPPED">EVENT TYPE TRAINING ITEM EQUIPPED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20ITEM%20UNEQUIPPED" title="EVENT TYPE TRAINING ITEM UNEQUIPPED">EVENT TYPE TRAINING ITEM UNEQUIPPED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20MAXIMUM%20ZOOM%20IN" title="EVENT TYPE TRAINING MAXIMUM ZOOM IN">EVENT TYPE TRAINING MAXIMUM ZOOM IN</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20MOVEMENT%20COMMAND%20ISSUED" title="EVENT TYPE TRAINING MOVEMENT COMMAND ISSUED">EVENT TYPE TRAINING MOVEMENT COMMAND ISSUED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20QBAR%20ITEM%20EQUIPPED" title="EVENT TYPE TRAINING QBAR ITEM EQUIPPED">EVENT TYPE TRAINING QBAR ITEM EQUIPPED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20TACTIC%20PRESET%20SELECTED" title="EVENT TYPE TRAINING TACTIC PRESET SELECTED">EVENT TYPE TRAINING TACTIC PRESET SELECTED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20UNPAUSE" title="EVENT TYPE TRAINING UNPAUSE">EVENT TYPE TRAINING UNPAUSE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAINING%20WEAPON%20EQUIPPED" title="EVENT TYPE TRAINING WEAPON EQUIPPED">EVENT TYPE TRAINING WEAPON EQUIPPED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAP%20DISARMED" title="EVENT TYPE TRAP DISARMED">EVENT TYPE TRAP DISARMED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20TRAP%20TRIGGERED" title="EVENT TYPE TRAP TRIGGERED">EVENT TYPE TRAP TRIGGERED</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20UNEQUIP" title="EVENT TYPE UNEQUIP">EVENT TYPE UNEQUIP</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20UNLOCKED" title="EVENT TYPE UNLOCKED">EVENT TYPE UNLOCKED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20USE" title="EVENT TYPE USE">EVENT TYPE USE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20USE%20ABILITY%20IMMEDIATE" title="EVENT TYPE USE ABILITY IMMEDIATE">EVENT TYPE USE ABILITY IMMEDIATE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20USE%20PLOTACTION" title="EVENT TYPE USE PLOTACTION">EVENT TYPE USE PLOTACTION</a></li></ul></div><div class="mw-category-group"><h3>W</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20WORLDMAP%20POSTTRANSITION" title="EVENT TYPE WORLDMAP POSTTRANSITION">EVENT TYPE WORLDMAP POSTTRANSITION</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20WORLDMAP%20PRETRANSITION" title="EVENT TYPE WORLDMAP PRETRANSITION">EVENT TYPE WORLDMAP PRETRANSITION</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20WORLD%20MAP%20CLOSED" title="EVENT TYPE WORLD MAP CLOSED">EVENT TYPE WORLD MAP CLOSED</a></li></ul></div></div></div>
+</div></div>

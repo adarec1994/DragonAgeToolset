@@ -1,0 +1,41 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Creature events"</h2>
+<p>The following 36 pages are in this category, out of 36 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20ACQUIRED" title="EVENT TYPE ABILITY ACQUIRED">EVENT TYPE ABILITY ACQUIRED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ABILITY%20PROJECTILE%20LAUNCHED" title="EVENT TYPE ABILITY PROJECTILE LAUNCHED">EVENT TYPE ABILITY PROJECTILE LAUNCHED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ALLY%20ATTACKED" title="EVENT TYPE ALLY ATTACKED">EVENT TYPE ALLY ATTACKED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20AMBIENT%20CONTINUE" title="EVENT TYPE AMBIENT CONTINUE">EVENT TYPE AMBIENT CONTINUE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20APPLY%20EFFECT" title="EVENT TYPE APPLY EFFECT">EVENT TYPE APPLY EFFECT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20APPROACH%20TRAP" title="EVENT TYPE APPROACH TRAP">EVENT TYPE APPROACH TRAP</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACKED" title="EVENT TYPE ATTACKED">EVENT TYPE ATTACKED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ATTACK%20IMPACT" title="EVENT TYPE ATTACK IMPACT">EVENT TYPE ATTACK IMPACT</a></li></ul></div><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20BLOCKED" title="EVENT TYPE BLOCKED">EVENT TYPE BLOCKED</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMBAT%20END" title="EVENT TYPE COMBAT END">EVENT TYPE COMBAT END</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMBAT%20INITIATED" title="EVENT TYPE COMBAT INITIATED">EVENT TYPE COMBAT INITIATED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMMAND%20COMPLETE" title="EVENT TYPE COMMAND COMPLETE">EVENT TYPE COMMAND COMPLETE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20COMMAND%20PENDING" title="EVENT TYPE COMMAND PENDING">EVENT TYPE COMMAND PENDING</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DAMAGED" title="EVENT TYPE DAMAGED">EVENT TYPE DAMAGED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DEATH" title="EVENT TYPE DEATH">EVENT TYPE DEATH</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DELAYED%20SHOUT" title="EVENT TYPE DELAYED SHOUT">EVENT TYPE DELAYED SHOUT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DIALOGUE" title="EVENT TYPE DIALOGUE">EVENT TYPE DIALOGUE</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DOT%20TICK" title="EVENT TYPE DOT TICK">EVENT TYPE DOT TICK</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DROP%20STEALTH" title="EVENT TYPE DROP STEALTH">EVENT TYPE DROP STEALTH</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20DYING" title="EVENT TYPE DYING">EVENT TYPE DYING</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20EQUIP" title="EVENT TYPE EQUIP">EVENT TYPE EQUIP</a></li></ul></div><div class="mw-category-group"><h3>H</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HANDLE%20CUSTOM%20AI" title="EVENT TYPE HANDLE CUSTOM AI">EVENT TYPE HANDLE CUSTOM AI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HEARTBEAT" title="EVENT TYPE HEARTBEAT">EVENT TYPE HEARTBEAT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20HEARTBEAT2" title="EVENT TYPE HEARTBEAT2">EVENT TYPE HEARTBEAT2</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20ADDED" title="EVENT TYPE INVENTORY ADDED">EVENT TYPE INVENTORY ADDED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20INVENTORY%20REMOVED" title="EVENT TYPE INVENTORY REMOVED">EVENT TYPE INVENTORY REMOVED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ITEM%20ONTEST%20USABLE" title="EVENT TYPE ITEM ONTEST USABLE">EVENT TYPE ITEM ONTEST USABLE</a></li></ul></div><div class="mw-category-group"><h3>M</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MANA%20STAM%20DEPLETED" title="EVENT TYPE MANA STAM DEPLETED">EVENT TYPE MANA STAM DEPLETED</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PARTY%20MEMBER%20HIRED" title="EVENT TYPE PARTY MEMBER HIRED">EVENT TYPE PARTY MEMBER HIRED</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PERCEPTION%20DISAPPEAR" title="EVENT TYPE PERCEPTION DISAPPEAR">EVENT TYPE PERCEPTION DISAPPEAR</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20PLAYER%20LEVELUP" title="EVENT TYPE PLAYER LEVELUP">EVENT TYPE PLAYER LEVELUP</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20REACHED%20WAYPOINT" title="EVENT TYPE REACHED WAYPOINT">EVENT TYPE REACHED WAYPOINT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20REMOVE%20EFFECT" title="EVENT TYPE REMOVE EFFECT">EVENT TYPE REMOVE EFFECT</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20ROAM%20DIST%20EXCEEDED" title="EVENT TYPE ROAM DIST EXCEEDED">EVENT TYPE ROAM DIST EXCEEDED</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20SPAWN" title="EVENT TYPE SPAWN">EVENT TYPE SPAWN</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20UNEQUIP" title="EVENT TYPE UNEQUIP">EVENT TYPE UNEQUIP</a></li></ul></div></div></div>
+</div></div>

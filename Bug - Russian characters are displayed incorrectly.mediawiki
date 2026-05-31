@@ -1,0 +1,31 @@
+<ul><li><b>Version found:</b> 1.0.1088.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Using russian localization, we can't use russian letters in naming of areas, NPC, items, in dialogs. In toolset it's OK, but in game It becomes "???????" or "[][][][][][][][][][][]".
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot001.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/120px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/180px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/07/Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg/240px-Bug-_Russian_characters_are_displayed_incorrectly_screenshot001.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Effect of this bug
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:40px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Bug-%20Russian%20characters%20are%20displayed%20incorrectly%20screenshot002.jpg"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg" width="120" height="70" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/Bug-_Russian_characters_are_displayed_incorrectly_screenshot002.jpg 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Effect of this bug
+</p>
+			</div>
+		</div></li>
+</ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 02:42, 21 October 2011 (UTC) - Replacing a database types of text fields with text &gt;&gt;&gt; nvarchar or ntext not a fix. The fields are stored in the database are exported okay, but the text that is stored in the string table also turns into gobbledygook. Interestingly, when creating a row in the string are stored and exported normally, but if the slightest change in the text string is changed to "??????????????????".
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Russian%20characters%20are%20displayed%20incorrectly%20-%20ru" title="Bug: Russian characters are displayed incorrectly/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

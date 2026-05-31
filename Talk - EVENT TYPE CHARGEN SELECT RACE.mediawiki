@@ -1,0 +1,12 @@
+<p>Object 0 is the character going through character creator:
+</p><p>Example code:
+</p>
+<pre>       case EVENT_TYPE_CHARGEN_SELECT_RACE:
+       {         
+           object oCreature = GetEventObject(ev,0);
+           int nRace = GetEventInteger(ev,0);
+           int nSelected = GetEventInteger(ev,1);
+           Chargen_SelectRace(oCreature,nRace,!nSelected);
+           break;
+       }
+</pre>

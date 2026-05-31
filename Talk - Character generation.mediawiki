@@ -1,0 +1,7 @@
+<p>The quick and dirty method needs the following includes:
+</p>
+<ol><li>include "sys_chargen_h" </li>
+<li>include "utility_h"</li></ol>
+<h2><span class="mw-headline" id="nEventHandled">nEventHandled</span></h2>
+<p>This variable is initialized to FALSE, but never updated and the scripts will always call HandleEvent() at the end. Considering what it looks like this was supposed to do, calling HandleEvent only when the switch has not handled the event, placing the call to HandleEvent in the default case of the switch seems more elegant and fail-safe to me. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Lynamy" title="User:Lynamy (page does not exist)">Lynamy</a> 23:15, 2 August 2013 (UTC)
+</p>

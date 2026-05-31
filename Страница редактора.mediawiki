@@ -1,0 +1,78 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://www.datoolset.net/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0_%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Вступление</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BD.D0.BE.D0.B2.D0.BE.D0.B9_.D1.81.D1.82.D0.B0.D1.82.D1.8C.D0.B8_.D0.B8_.D0.BF.D1.80.D0.B0.D0.B2.D0.BA.D0.B0_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85"><span class="tocnumber">2</span> <span class="toctext">Создание новой статьи и правка существующих</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4_.D0.B0.D0.BD.D0.B3.D0.BB.D0.BE.D1.8F.D0.B7.D1.8B.D1.87.D0.BD.D1.8B.D1.85_.D1.81.D1.82.D0.B0.D1.82.D0.B5.D0.B9"><span class="tocnumber">3</span> <span class="toctext">Перевод англоязычных статей</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD.D0.BE.D0.B2"><span class="tocnumber">4</span> <span class="toctext">Использование шаблонов</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B0.D1.8F_.D0.B3.D1.80.D1.83.D0.BF.D0.BF.D0.B0"><span class="tocnumber">5</span> <span class="toctext">Рабочая группа</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">Вступление</span></h2>
+<div style="clear:; float:right; width:220pt; height:; background-color: #F6F6F6; border:1px solid #A7D7F9; padding-top:0px; padding-bottom:2px; padding-left:3px; padding-right:3px; margin-bottom:10px; -webkit-border-bottom-right-radius:7px; -webkit-border-bottom-left-radius:7px; -moz-border-radius-bottomright:7px; -moz-border-radius-bottomleft:7px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">
+<div style="background-color: #F1EBB5; text-align:left; border:1px solid #A7D7F9; border-top:0; padding:6px 6px 6px 6px; font-size:18px; border-bottom-right-radius:7px; border-bottom-left-radius:7px">Колонка редактора <div style="float:right; text-align:right; font-size:9px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20-%20%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0%20%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0" title="Template:Главная страница - Колонка редактора">Ш</a></div></div>
+<div style="padding:4px 4px 4px 4px;"><ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0" title="Страница редактора">Страница редактора</a></li></ul>
+<p>Категории:
+</p>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%92%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B0" title="Category:В процессе перевода">В процессе перевода</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A2%D1%80%D0%B5%D0%B1%D1%83%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4" title="Category:Требуется перевод">Требуется перевод</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A2%D1%80%D0%B5%D0%B1%D1%83%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D0%B2%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B5" title="Category:Требуется помощь в переводе">Требуется помощь в переводе</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0" title="Category:Рабочая группа">Рабочая группа</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Category:Тестовые страницы">Тестовые страницы</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B" title="Category:Шаблоны">Шаблоны</a></li></ul>
+<p>Помощь по работе с Вики:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Editing%20-%20ru" title="Help:Editing/ru (page does not exist)">Страница помощи Вики</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Editing" title="Help:Editing">(en)</a></li>
+<li><a class="external text" href="http://www.mediawiki.org/wiki/Help:Contents">Помощь по Media Wiki (англ.)</a></li>
+<li><a class="external text" href="http://www.mediawiki.org/wiki/Help:Contents/ru">Помощь по Media Wiki (рус.)</a></li>
+<li><a rel="nofollow" class="external text" href="http://ru.wikipedia.org/wiki/Википедия:Справка">Справка Википедии</a></li>
+<li><a rel="nofollow" class="external text" href="http://ru.wikipedia.org/wiki/Справка:Помощь_начинающим">Википедия "Помощь начинающим"</a></li>
+<li><a rel="nofollow" class="external text" href="http://ru.wikipedia.org/wiki/Википедия:Как_править_статьи">Википедия "Как править статьи"</a></li></ul>
+<p>А также:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%BE%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B9" title="Глоссарий"> Глоссарий (попытка создать)</a></div></li></ul>
+</div>
+<p>Итак, вы решили помочь в работе над русскоязычной энциклопедией DA Toolset, которую для кратости в последующем постараемся называть просто Вики! На данной странице мы постараемся помочь вам разобраться в основах её редактирования.
+</p><p>Главной особенностью как этой, так и других wiki-энциклопедий (благодаря технологии wiki, лежащей в основе функционирования сайта) является то, что создавать и редактировать её статьи может, в принципе, каждый пользователь сети интернет, причём в абсолютном большинстве случаев даже без регистрации на сайте Вики. Все вносимые такими добровольцами в какую-либо статью изменения незамедлительно становятся видными всем посетителям сайта.
+</p><p><b>Внимание:</b>
+</p>
+<ul><li> Будьте очень аккуратны при редактировании страниц. Следите за тем - какую страницу вы редактируете (чтобы не испортить чужую). </li>
+<li> Если вы прежде не работали в таких системах как Вики, то будьте вдвойне внимательны и постарайтесь изучить синтаксис вики-разметки. </li>
+<li> Если же вы все-таки что-то испортили, перейдите в раздел истории страницы (вкладка "История") и восстановите предыдущую версию.</li></ul>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BD.D0.BE.D0.B2.D0.BE.D0.B9_.D1.81.D1.82.D0.B0.D1.82.D1.8C.D0.B8_.D0.B8_.D0.BF.D1.80.D0.B0.D0.B2.D0.BA.D0.B0_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85">Создание новой статьи и правка существующих</span></h2>
+<ul><li> Зарегистрируйтесь на Вики (login) и в настройках измените язык интерфейса на русский.</li>
+<li> Выберите тему для статьи. Через поиск проверьте наличие на Вики статьи с такой же или похожей темой.</li>
+<li> Если выбранная вами тема уже раскрыта в какой-либо статье, то возможно, если у вас есть дополнительная информация или вы нашли неточности, будет лучше её подредактировать (вкладка "Правка").</li>
+<li> Если ваша тема уникальна, то пора приступить к собственно созданию статьи:
+<ul><li> <b>Первый вариант создания</b>: Введите в вашем браузере в поле адреса что-нибудь наподобие: http://social.bioware.com/wiki/datoolset/index.php/<b>Название вашей статьи</b>. Открывшаяся страница сообщит вам, что такой статьи нет и предложит вам создать её. После нажатия на нужную ссылку откроется окно редактирования, в котором вы сможете ввести текст своей статьи.</li>
+<li> <b>Второй вариант создания</b>: Если вы уже редактируете статью и вам пришла мысль о новой статье, на которую можно сделать ссылку из текущей, то вы увидите, что ссылка на несуществующую статью будет красного света. Переход по этой ссылке сразу приведёт вас в окно редактирования, в котором вы сможете ввести текст своей статьи.</li></ul></li>
+<li> Для редактирования существующих статей необходимо нажать на вкладку "Правка".</li>
+<li> Во время редактирования статьи вы можете нажать кнопку "Предварительный просмотр" и посмотреть, что получается.</li>
+<li> Вы можете включить статью в нужную <a rel="nofollow" class="external text" href="http://ru.wikipedia.org/wiki/Википедия:Категория">категорию</a>, используя конструкцию вида: [[Category:<b>Название категории</b>]]. Конструкция вида: [[:Category:<b>Название категории</b>]] (двоеточие перед словом <b>Category</b>) создаст ссылку на категорию. Определиться с нужной категорией вы можете в категории <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20RU" title="Category:RU">RU</a>.</li>
+<li> После того, как вы закончите редактирование статьи, нажмите кнопку "Записать страницу". Сохранять текущее состояние статьи можно и во время её редактирования.</li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4_.D0.B0.D0.BD.D0.B3.D0.BB.D0.BE.D1.8F.D0.B7.D1.8B.D1.87.D0.BD.D1.8B.D1.85_.D1.81.D1.82.D0.B0.D1.82.D0.B5.D0.B9">Перевод англоязычных статей</span></h2>
+<ul><li> Если вы этого ещё не сделали, то зарегистрируйтесь и настройте интерфейс Вики (как это сделать описано выше).</li>
+<li> Выберите страницу, которую вы хотите перевести и перейдите на неё. В <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F" title="Category:Редакторская">редакторской категории</a> вы можете посмотреть, каких переводов ждут пользователи Вики и откликнуться на их просьбу.</li>
+<li> Добавьте в строке адреса, после названия страницы, постфикс "/ru" таким образом: http://social.bioware.com/wiki/datoolset/index.php/Page_name<b>/ru</b>.
+<ul><li> Если страница откроется и будет содержать какие-либо данные, значит кто-то уже занялся переводом. Вы можете помочь ему, перейдя в режим редактирования (вкладка "Правка").</li>
+<li> Если вам сообщат, что такой страницы нет - создайте ее, после чего, перейдя в режим редактирования, начинайте ввод данных. Легче всего будет скопировать все содержимое англоязычной версии страницы в новую, после чего начать редактировать, меняя содержимое по несколько абзацев.</li></ul></li>
+<li> После завершения перевода страницы или ее части - нажмите кнопку предпросмотра и, если вас все устроит, сохраните изменения.</li>
+<li> Информацию о том, какие статьи вы перевели вы можете разместить на своей страничке.</li></ul>
+<h2><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD.D0.BE.D0.B2">Использование шаблонов</span></h2>
+<p>Шаблоны позволяют автоматизировать некоторые процессы и улучшить навигацию по русской части Вики.
+</p>
+<ul><li> Шаблон <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Rupage" title="Template:Rupage">Rupage</a> (Русская страница) необходим для большей читабельности и навигации. Этот шаблон выводит русское наименование статьи и автоматически назначает ей необходимые категории, например <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%9E%D0%B1%D1%89%D0%B8%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B4%D1%91%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86" title="Category:Общий список переведённых страниц">Общий список переведённых страниц</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%9E%D0%B1%D1%89%D0%B8%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5" title="Category:Общий список страниц на русском языке">Общий список страниц на русском языке</a>. Позволяет указать до трёх других категорий.</li>
+<li> Шаблон <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Languages%20-%20ru" title="Template:Languages/ru (page does not exist)">Languages</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Languages" title="Template:Languages">(en)</a> (Меню выбора языка) необходим для того, чтобы пользователь смог увидеть, что существует иноязычная/русскоязычная версия страницы, и перейти на неё.</li>
+<li> Шаблон <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Translate-link%20-%20ru" title="Template:Translate-link/ru (page does not exist)">Translate-link</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Translate-link" title="Template:Translate-link">(en)</a> (Универсальная ссылка) или его короткая версия <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Ulink" title="Template:Ulink">ulink</a> позволяет облегчить жизнь переводчикам, показывая, что русской версии страницы по ссылке не существует, путём автоматического добавления ссылки на оригинальную английскую страницу <b>(en)</b>, а ссылку на несуществующую страницу делая красной.</li></ul>
+<p>Другие шаблоны вы найдёте по следующим ссылкам: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Templates" title="Category:Templates">Категория английских шаблонов</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B" title="Category:Шаблоны">Категория русских шаблонов</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B0.D1.8F_.D0.B3.D1.80.D1.83.D0.BF.D0.BF.D0.B0">Рабочая группа</span></h2>
+<p>Для того, чтобы у редакторов и пользователей была возможность общаться, желательно, чтобы вы создали страницу пользователя, кликнув на свой ник вверху сайта, и указав на ней свои контакты и любую другую информацию. Свою страницу пользователя нужно внести в категорию <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0" title="Category:Рабочая группа">Рабочая группа</a>, сделать это можно указав внизу страницы следующую конструкцию: [[Category:<b>Рабочая группа</b>]]
+</p>

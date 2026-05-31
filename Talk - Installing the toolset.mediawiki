@@ -1,0 +1,15 @@
+<p>Need help with this error during SQL Server Express 2005 install:
+</p><p>[Microsoft][SQL Native Client][SQL Server]CREATE DATABASE failed. Some file names listed could not be created.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Tannernet" title="User:Tannernet (page does not exist)">Tannernet</a> 01:53, 10 November 2009 (UTC)
+</p><p><br />
+Found help here:
+</p><p><a rel="nofollow" class="external free" href="http://social.bioware.com/wiki/datoolset/index.php/Installation_into_a_directory_with_a_long_path_name">http://social.bioware.com/wiki/datoolset/index.php/Installation_into_a_directory_with_a_long_path_name</a>
+</p><p><br />
+</p>
+<ul><li> I have had problems getting this to work with Microsoft SQL 2008 Express Edition.  Is there any plan to update the tool or the documentation to support the latest version from Microsoft? --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Lord%20Malkav" title="User:Lord Malkav (page does not exist)">Lord Malkav</a> 23:38, 19 January 2010 (UTC)</li></ul>
+<p><br />
+</p>
+<ul><li> This should mention the amount of hard disk space the full installation requires, and the amount the various Python installations require. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20JasonMel" title="User:JasonMel (page does not exist)">JasonMel</a> 02:28, 19 April 2010 (UTC)</li></ul>
+<h2><span class="mw-headline" id="Installation_freaks_out_trying_to_update_DA_Toolset_and_uninstall_executables">Installation freaks out trying to update DA Toolset and uninstall executables</span></h2>
+<p>Good job guys! It starts, but the messages have me worried. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Lynamy" title="User:Lynamy (page does not exist)">Lynamy</a> 18:12, 31 July 2013 (UTC)
+</p>

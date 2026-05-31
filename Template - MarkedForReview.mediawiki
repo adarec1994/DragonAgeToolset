@@ -1,0 +1,8 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>{{MarkedForReview|because the page could be better organised}}
+</pre>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<div align="center" style="background-color:#FFF7F0; border:2px #F77F00 solid; padding:4px; margin:4px;">
+<p>This page has been marked for review because the page could be better organised
+</p>
+</div>

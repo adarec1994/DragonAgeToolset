@@ -1,0 +1,59 @@
+<p>The Ability System library, <strong class="selflink">ability_h</strong>, contains general purpose functions dealing with the ability, talent and spell system including, but not limited to:
+</p>
+<ul><li> Calculating and Subtracting Ability Costs</li>
+<li> Invoking and rerouting Spellscript events</li>
+<li> Wrappers for dealing with Upkeep Effects applied by Abilities</li></ul>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Config%20h" title="Config h (page does not exist)">config_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%20h" title="Effects h (page does not exist)">effects_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20h" title="Items h (page does not exist)">items_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20resistances%20h" title="Sys resistances h (page does not exist)">sys_resistances_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20COST%20TYPE" title="ABILITY COST TYPE *">ABILITY COST TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20FLAG" title="ABILITY FLAG *">ABILITY FLAG *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20FLANK%20FACING" title="ABILITY FLANK FACING *">ABILITY FLANK FACING *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20FLANK%20SIZE" title="ABILITY FLANK SIZE *">ABILITY FLANK SIZE *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20AdjustDuration" title="Ability AdjustDuration">Ability AdjustDuration</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyEffectOnObjectArray" title="Ability ApplyEffectOnObjectArray">Ability ApplyEffectOnObjectArray</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyLocationImpactVFX" title="Ability ApplyLocationImpactVFX">Ability ApplyLocationImpactVFX</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyObjectImpactVFX" title="Ability ApplyObjectImpactVFX">Ability ApplyObjectImpactVFX</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyRandomDurationEffectOnObjectArray" title="Ability ApplyRandomDurationEffectOnObjectArray">Ability ApplyRandomDurationEffectOnObjectArray</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffect" title="Ability ApplyUpkeepEffect">Ability ApplyUpkeepEffect</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffects" title="Ability ApplyUpkeepEffects">Ability ApplyUpkeepEffects</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CheckFlag" title="Ability CheckFlag">Ability CheckFlag</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CheckUseConditions" title="Ability CheckUseConditions">Ability CheckUseConditions</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20CostCheck" title="Ability CostCheck">Ability CostCheck</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20DeactivateModalAbility" title="Ability DeactivateModalAbility">Ability DeactivateModalAbility</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20DoRunSpellScript" title="Ability DoRunSpellScript">Ability DoRunSpellScript</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityCost" title="Ability GetAbilityCost">Ability GetAbilityCost</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityTable" title="Ability GetAbilityTable">Ability GetAbilityTable</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetAbilityTargetType" title="Ability GetAbilityTargetType">Ability GetAbilityTargetType</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactLocationVfxId" title="Ability GetImpactLocationVfxId">Ability GetImpactLocationVfxId</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactObjectVfxId" title="Ability GetImpactObjectVfxId">Ability GetImpactObjectVfxId</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledCost" title="Ability GetScaledCost">Ability GetScaledCost</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledDamage" title="Ability GetScaledDamage">Ability GetScaledDamage</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledEffectDuration" title="Ability GetScaledEffectDuration">Ability GetScaledEffectDuration</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetScaledHeal" title="Ability GetScaledHeal">Ability GetScaledHeal</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetSpellscriptPendingEventResult" title="Ability GetSpellscriptPendingEventResult">Ability GetSpellscriptPendingEventResult</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetTargetAllies" title="Ability GetTargetAllies">Ability GetTargetAllies</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20HandleEventOutOfManaStamina" title="Ability HandleEventOutOfManaStamina">Ability HandleEventOutOfManaStamina</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20HandleOnDamageAbilities" title="Ability HandleOnDamageAbilities">Ability HandleOnDamageAbilities</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAbilityActive" title="Ability IsAbilityActive">Ability IsAbilityActive</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAbilityTargetValid" title="Ability IsAbilityTargetValid">Ability IsAbilityTargetValid</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsAoE" title="Ability IsAoE">Ability IsAoE</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsBloodMagic" title="Ability IsBloodMagic">Ability IsBloodMagic</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20IsValidAOETarget" title="Ability IsValidAOETarget">Ability IsValidAOETarget</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20OnGameModeChange" title="Ability OnGameModeChange">Ability OnGameModeChange</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20PreventAbilityEffectStacking" title="Ability PreventAbilityEffectStacking">Ability PreventAbilityEffectStacking</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20RemoveAbilityEffectsByCreator" title="Ability RemoveAbilityEffectsByCreator">Ability RemoveAbilityEffectsByCreator</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20SetSpellscriptPendingEventResult" title="Ability SetSpellscriptPendingEventResult">Ability SetSpellscriptPendingEventResult</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20SubtractAbilityCost" title="Ability SubtractAbilityCost">Ability SubtractAbilityCost</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20UseAbilityWrapper" title="Ability UseAbilityWrapper">Ability UseAbilityWrapper</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abilty%20IsUsingRangedWeaponAnim" title="Abilty IsUsingRangedWeaponAnim">Abilty IsUsingRangedWeaponAnim</a></li></ul>

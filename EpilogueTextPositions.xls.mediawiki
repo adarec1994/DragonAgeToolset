@@ -1,0 +1,4 @@
+<p>The <strong class="selflink">EpilogueTextPositions.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> file that defines the location of the text boxes for images used in slide show dialogues.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Epilogue%20text%20positions%202da" title="Epilogue text positions 2da">Epilogue_text_positions</a></li></ul>

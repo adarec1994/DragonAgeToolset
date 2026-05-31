@@ -1,0 +1,24 @@
+<p>Returns the value of a plot flag
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetPartyPlotFlag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oParty,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> strPlot,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nFlag,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCallScript&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oParty<dd>party object<dt style="font-weight:normal; font-style:italic;">strPlot<dd>plot name to query<dt style="font-weight:normal; font-style:italic;">nFlag<dd>plot flag number to query<dt style="font-weight:normal; font-style:italic;">nCallScript<dd>Whether or not to call the plot script. Note: this should not be  set to TRUE when this function is used inside a plot script. If nFlag is  a defined flag then the script will start calling itself recursively
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE, if the flag is set, or FALSE
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Queries the state of a plot flag from a party's plot table. In order to query DEFINED flags, this function needs to query the plot script associated with that flag.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a> is valid for the <b>oParty</b> parameter (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetParty" title="GetParty">GetParty</a>).
+</p><p>The plot's GUID and ResRef are both valid for the <b>strPlot</b> parameter.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPartyPlotFlag" title="SetPartyPlotFlag">SetPartyPlotFlag</a>
+</p>

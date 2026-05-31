@@ -1,0 +1,76 @@
+<p>The <b>string</b> type represents a sequence of between zero and approximately two billion characters. The default value is a string containing zero characters.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>A string <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> consists of zero or more characters enclosed in double quotes.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<h3><span class="mw-headline" id="Explicit">Explicit</span></h3>
+<p>The following functions can be used to convert another data type to a string:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToString" title="FloatToString">FloatToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToChar" title="IntToChar">IntToChar</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString" title="IntToString">IntToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToHexString" title="IntToHexString">IntToHexString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ObjectToString" title="ObjectToString">ObjectToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ResourceToString" title="ResourceToString">ResourceToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString" title="ToString">ToString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString" title="VectorToString">VectorToString</a></li></ul>
+<p>The following functions can be used to convert a string to another data type:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CharToInt" title="CharToInt">CharToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HexStringToInt" title="HexStringToInt">HexStringToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat" title="StringToFloat">StringToFloat</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToInt" title="StringToInt">StringToInt</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToVector" title="StringToVector">StringToVector</a></li></ul>
+<h3><span class="mw-headline" id="Implicit">Implicit</span></h3>
+<p>There is no implicit conversion to a string.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow a string to exist outside of the scope of the current script by storing it on an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalString" title="SetLocalString">SetLocalString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectString" title="SetEffectString">SetEffectString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventString" title="SetEventString">SetEventString</a></li></ul>
+<p>The following functions allow a string which exists outside of the scope of the current script to be used in the current script by retrieving it from an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString" title="GetLocalString">GetLocalString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectString" title="GetEffectString">GetEffectString</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a></li></ul>
+<h2><span class="mw-headline" id="Special">Special</span></h2>
+<h3><span class="mw-headline" id="Concatenation">Concatenation</span></h3>
+<p>Two or more strings can be concatenated together using the concatenation operator "+".
+</p>
+<h3><span class="mw-headline" id="Escape_sequences">Escape sequences</span></h3>
+<p>Escape sequences are used to insert special characters into a string literal.  An escape sequence begins with a backslash character "\" followed by another string literal character.
+</p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+<th> Sequence
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> \\
+</td>
+<td> The "\" character
+</td></tr>
+<tr>
+<td> \n
+</td>
+<td> A new line (a carriage return and line feed)
+</td></tr></table>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sDefault;
+&#160;
+    <span class="co1">// initialised using &quot;forty two&quot; literal</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sSpecific <span class="sy0">=</span> <span class="st0">&quot;forty two&quot;</span>;
+&#160;
+    <span class="co1">// initialised using concatenation</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sConcatenated <span class="sy0">=</span> <span class="st0">&quot;Hello &quot;</span> <span class="sy0">+</span> <span class="st0">&quot;World&quot;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintString" title="PrintString">PrintString</a>
+</p>

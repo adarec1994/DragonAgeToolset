@@ -1,0 +1,17 @@
+<p>Loads a cutscene with scripted replacement actors.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> CS_LoadCutsceneWithReplacements(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rCutscene,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a>[] arActors,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] arReplacements,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> strPlot&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPlotFlag&#160;= -1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTalkSpeaker&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">rCutscene<dd>Cutscene resource (CUTSCENE_* constants defined in cutscenes_h.nss)<dt style="font-weight:normal; font-style:italic;">arActors<dd>(string array) List of cutscene tracks whose actors will be replaced.<dt style="font-weight:normal; font-style:italic;">arReplacements<dd>(object array) List of objects that will replace the default actors.<dt style="font-weight:normal; font-style:italic;">strPlot<dd>Plot which contains the flag to be set<dt style="font-weight:normal; font-style:italic;">nPlotFlag<dd>Plot flag to be set<dt style="font-weight:normal; font-style:italic;">sTalkSpeaker<dd>Tag of creature who will initiate dialog
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>For special case use only.  Most cutscenes should use <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CS%20LoadCutscene" title="CS LoadCutscene">CS_LoadCutscene</a>(), as most actor mappings can be handled from the cutscene editor itself.
+</p>

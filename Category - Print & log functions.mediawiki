@@ -1,0 +1,26 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Print &#38; log functions"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DEBUG%20PrintToScreen" title="DEBUG PrintToScreen">DEBUG PrintToScreen</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetDebugHelpersEnabled" title="GetDebugHelpersEnabled">GetDebugHelpersEnabled</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLowResTimer" title="GetLowResTimer">GetLowResTimer</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTime" title="GetTime">GetTime</a></li></ul></div><div class="mw-category-group"><h3>L</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/LogTrace" title="LogTrace">LogTrace</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintFloat" title="PrintFloat">PrintFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintInteger" title="PrintInteger">PrintInteger</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintObject" title="PrintObject">PrintObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintResource" title="PrintResource">PrintResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintString" title="PrintString">PrintString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog" title="PrintToLog">PrintToLog</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLogAndFlush" title="PrintToLogAndFlush">PrintToLogAndFlush</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLogWindow" title="PrintToLogWindow">PrintToLogWindow</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintVector" title="PrintVector">PrintVector</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Probe" title="Probe">Probe</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SendGameEventRunDatabase" title="SendGameEventRunDatabase">SendGameEventRunDatabase</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SendToRunDatabase" title="SendToRunDatabase">SendToRunDatabase</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetGameCompletionPercentage" title="SetGameCompletionPercentage">SetGameCompletionPercentage</a></li></ul></div><div class="mw-category-group"><h3>T</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TakeScreenshot" title="TakeScreenshot">TakeScreenshot</a></li></ul></div><div class="mw-category-group"><h3>W</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Warning" title="Warning">Warning</a></li></ul></div></div></div>
+</div></div>

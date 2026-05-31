@@ -1,0 +1,4 @@
+<p>The <b>void</b> "data type" is actually not a data type at all, but rather the absence of one.
+</p><p>A function that does not return any value after executing will be denoted as having a "void" return type.
+</p><p>You can't define a variable of void type.
+</p>

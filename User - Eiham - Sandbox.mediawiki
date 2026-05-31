@@ -1,0 +1,104 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Eiham.27s_Guide_to_Creating_a_New_Location_in_Dragon_Age:_Origins"><span class="tocnumber">1</span> <span class="toctext">Eiham's Guide to Creating a New Location in Dragon Age: Origins</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Extending_The_World_Map"><span class="tocnumber">2</span> <span class="toctext">Extending The World Map</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Creating_Your_Module"><span class="tocnumber">2.1</span> <span class="toctext">Creating Your Module</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Creating_Your_Map"><span class="tocnumber">2.2</span> <span class="toctext">Creating Your Map</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Extracting_the_Existing_World_Map"><span class="tocnumber">2.2.1</span> <span class="toctext">Extracting the Existing World Map</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Creating_the_Map_Pin"><span class="tocnumber">2.2.2</span> <span class="toctext">Creating the Map Pin</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Creating_the_Map_Trail"><span class="tocnumber">2.2.3</span> <span class="toctext">Creating the Map Trail</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Hacky_Magic"><span class="tocnumber">2.3</span> <span class="toctext">Hacky Magic</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Exporting_Your_Map"><span class="tocnumber">2.3.1</span> <span class="toctext">Exporting Your Map</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Linking_Your_Map_to_the_Main_World_Map"><span class="tocnumber">2.3.2</span> <span class="toctext">Linking Your Map to the Main World Map</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Creating_an_Area_to_Land_in"><span class="tocnumber">2.4</span> <span class="toctext">Creating an Area to Land in</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Making_Sure_You_Can_Get_Back_Out"><span class="tocnumber">2.5</span> <span class="toctext">Making Sure You Can Get Back Out</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Scripting_Your_Area"><span class="tocnumber">2.6</span> <span class="toctext">Scripting Your Area</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Give_it_a_Whirl.21"><span class="tocnumber">2.7</span> <span class="toctext">Give it a Whirl!</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Using_Secondary_Maps"><span class="tocnumber">3</span> <span class="toctext">Using Secondary Maps</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#What_For.3F"><span class="tocnumber">3.1</span> <span class="toctext">What For?</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#How_to_Use_Secondary_Maps"><span class="tocnumber">3.2</span> <span class="toctext">How to Use Secondary Maps</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#How_to_Get_Rid_of_The_Secondary_Map"><span class="tocnumber">3.3</span> <span class="toctext">How to Get Rid of The Secondary Map</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Style_Concerns"><span class="tocnumber">3.4</span> <span class="toctext">Style Concerns</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#How_to_Make_Enemies_for_Fun_and_Profit_.28aka_Spawning_NPCs.29"><span class="tocnumber">4</span> <span class="toctext">How to Make Enemies for Fun and Profit (aka Spawning NPCs)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#Adding_Monsters"><span class="tocnumber">4.1</span> <span class="toctext">Adding Monsters</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Adding_Neutral_NPCs"><span class="tocnumber">4.2</span> <span class="toctext">Adding Neutral NPCs</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Adding_Merchants"><span class="tocnumber">4.3</span> <span class="toctext">Adding Merchants</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Creating_a_Simple_Plot"><span class="tocnumber">5</span> <span class="toctext">Creating a Simple Plot</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Timmy_Fell_Down_The_Well.21"><span class="tocnumber">5.1</span> <span class="toctext">Timmy Fell Down The Well!</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Rescuing_Timmy"><span class="tocnumber">5.2</span> <span class="toctext">Rescuing Timmy</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Getting_Paid_.28or_not.29"><span class="tocnumber">5.3</span> <span class="toctext">Getting Paid (or not)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#Creating_a_New_Companion"><span class="tocnumber">6</span> <span class="toctext">Creating a New Companion</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#Where_to_Put_Him.3F"><span class="tocnumber">6.1</span> <span class="toctext">Where to Put Him?</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#A_Campin.27_We_Will_Go"><span class="tocnumber">6.2</span> <span class="toctext">A Campin' We Will Go</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Too_Banter_or_Not_to_Banter"><span class="tocnumber">6.3</span> <span class="toctext">Too Banter or Not to Banter</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Eiham.27s_Guide_to_Creating_a_New_Location_in_Dragon_Age:_Origins">Eiham's Guide to Creating a New Location in Dragon Age: Origins</span></h2>
+<p><i>TODO: Write some introductory text here</i>
+</p>
+<h2><span class="mw-headline" id="Extending_The_World_Map">Extending The World Map</span></h2>
+<p>This tutorial is intended to show you how to add your own locations to the main Dragon Age: Origins campaign map.  This will allow you to add your own adventures and dungeon crawls that tie in with the main story.
+</p>
+<h3><span class="mw-headline" id="Creating_Your_Module">Creating Your Module</span></h3>
+<p><i>TODO: Add screenshots and more info</i>
+</p><p>First you'll want to create a new Module.  Let's call it "Timmy's Peril".  Select "New Module" and give it a relevant tag (I used "eih_timmys_peril").  Note that we want to extend the single player campaign.
+</p><p><b>IMPORTANT: Change your module_core script to (none) or a script you write yourself.  Mods using module_core will break you area transitions.</b>
+</p>
+<h3><span class="mw-headline" id="Creating_Your_Map">Creating Your Map</span></h3>
+<p><i>TODO: Add screenshots and more info</i>
+</p><p>Next thing to do is actually create the map. Select New &gt; Map.  Give your map a name and tag (I used eih_tim_wide_open_world).
+</p><p>We're going to take an aside here to go and get the world map file from the main campaign.
+</p>
+<h4><span class="mw-headline" id="Extracting_the_Existing_World_Map">Extracting the Existing World Map</span></h4>
+<p><i>TODO</i>
+</p>
+<h4><span class="mw-headline" id="Creating_the_Map_Pin">Creating the Map Pin</span></h4>
+<p>Right click on the Map Pins entry and click "New Pin".  Click where you would like your pin to go.  <i>TODO: finish up</i>
+</p>
+<h4><span class="mw-headline" id="Creating_the_Map_Trail">Creating the Map Trail</span></h4>
+<h3><span class="mw-headline" id="Hacky_Magic">Hacky Magic</span></h3>
+<h4><span class="mw-headline" id="Exporting_Your_Map">Exporting Your Map</span></h4>
+<h4><span class="mw-headline" id="Linking_Your_Map_to_the_Main_World_Map">Linking Your Map to the Main World Map</span></h4>
+<h3><span class="mw-headline" id="Creating_an_Area_to_Land_in">Creating an Area to Land in</span></h3>
+<h3><span class="mw-headline" id="Making_Sure_You_Can_Get_Back_Out">Making Sure You Can Get Back Out</span></h3>
+<h3><span class="mw-headline" id="Scripting_Your_Area">Scripting Your Area</span></h3>
+<h3><span class="mw-headline" id="Give_it_a_Whirl.21">Give it a Whirl!</span></h3>
+<h2><span class="mw-headline" id="Using_Secondary_Maps">Using Secondary Maps</span></h2>
+<h3><span class="mw-headline" id="What_For.3F">What For?</span></h3>
+<h3><span class="mw-headline" id="How_to_Use_Secondary_Maps">How to Use Secondary Maps</span></h3>
+<h3><span class="mw-headline" id="How_to_Get_Rid_of_The_Secondary_Map">How to Get Rid of The Secondary Map</span></h3>
+<h3><span class="mw-headline" id="Style_Concerns">Style Concerns</span></h3>
+<h2><span class="mw-headline" id="How_to_Make_Enemies_for_Fun_and_Profit_.28aka_Spawning_NPCs.29">How to Make Enemies for Fun and Profit (aka Spawning NPCs)</span></h2>
+<h3><span class="mw-headline" id="Adding_Monsters">Adding Monsters</span></h3>
+<h3><span class="mw-headline" id="Adding_Neutral_NPCs">Adding Neutral NPCs</span></h3>
+<h3><span class="mw-headline" id="Adding_Merchants">Adding Merchants</span></h3>
+<h2><span class="mw-headline" id="Creating_a_Simple_Plot">Creating a Simple Plot</span></h2>
+<h3><span class="mw-headline" id="Timmy_Fell_Down_The_Well.21">Timmy Fell Down The Well!</span></h3>
+<h3><span class="mw-headline" id="Rescuing_Timmy">Rescuing Timmy</span></h3>
+<h3><span class="mw-headline" id="Getting_Paid_.28or_not.29">Getting Paid (or not)</span></h3>
+<h2><span class="mw-headline" id="Creating_a_New_Companion">Creating a New Companion</span></h2>
+<h3><span class="mw-headline" id="Where_to_Put_Him.3F">Where to Put Him?</span></h3>
+<h3><span class="mw-headline" id="A_Campin.27_We_Will_Go">A Campin' We Will Go</span></h3>
+<h3><span class="mw-headline" id="Too_Banter_or_Not_to_Banter">Too Banter or Not to Banter</span></h3>

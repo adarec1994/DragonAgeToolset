@@ -1,0 +1,216 @@
+<p>Called by:
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+*  @brief Handles processing an Attack Command
+*
+*  @param oAttacker       The command owner, usually OBJECT_SELF
+*  @param oTarget         The Target of the command
+*
+*  @returns CombatAttackResultStruct with damage and attackresult populated
+*
+*  &quot;Don't touch this if you want to live&quot;
+*
+*  @author Georg Zoeller
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> CombatAttackResultStruct Combat_PerformAttack<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon , <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamageOverride <span class="sy0">=</span> <span class="nu0">0.0f</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> CombatAttackResultStruct Combat_PerformAttack<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon ,  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamageOverride <span class="sy0">=</span> <span class="nu0">0.0f</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a>  CombatAttackResultStruct stRet;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a>   fDamage <span class="sy0">=</span> <span class="nu0">0.0f</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>     nAttackType <span class="sy0">=</span> Combat_GetAttackType<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span>;
+&#160;
+    stRet.<span class="me1">fAttackDuration</span> <span class="sy0">=</span>    ATTACK_LOOP_DURATION_INVALID&#160;;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Attack check happens here...</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+&#160;
+    stRet.<span class="me1">nAttackResult</span> <span class="sy0">=</span> Combat_GetAttackResult<span class="br0">&#40;</span>oAttacker, oTarget, oWeapon <span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// If attack result was not a miss, go on to calculate damage</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stRet.<span class="me1">nAttackResult</span> <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_MISS</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bCriticalHit <span class="sy0">=</span> <span class="br0">&#40;</span>stRet.<span class="me1">nAttackResult</span> <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_CRITICALHIT</span><span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// -------------------------------------------------------------------------</span>
+        <span class="co1">// If attack result was not a miss, check if we need to handle a deathblow</span>
+        <span class="co1">// -------------------------------------------------------------------------</span>
+        fDamage <span class="sy0">=</span> <span class="br0">&#40;</span> <span class="br0">&#40;</span>fDamageOverride <span class="sy0">==</span> <span class="nu0">0.0f</span><span class="br0">&#41;</span> <span class="sy0">?</span>
+                          Combat_Damage_GetAttackDamage<span class="br0">&#40;</span>oAttacker, oTarget, oWeapon, stRet.<span class="me1">nAttackResult</span><span class="br0">&#41;</span> <span class="sy0">:</span> fDamageOverride<span class="br0">&#41;</span>;
+&#160;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fTargetHealth <span class="sy0">=</span> GetCurrentHealth<span class="br0">&#40;</span> oTarget <span class="br0">&#41;</span>;
+&#160;
+&#160;
+        <span class="co1">// -----------------------------------------------------------------</span>
+        <span class="co1">//  Ranged weapons attacks are not synched and therefore we never</span>
+        <span class="co1">//  need to worry about reporting deathblows to the engine.</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// When not using a ranged weapon, there are synchronize death blows to handle</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAttackType <span class="sy0">!=</span> ATTACK_TYPE_RANGED <span class="sy0">&amp;&amp;</span> nAbility <span class="sy0">==</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> stRet.<span class="me1">nAttackResult</span> <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_MISS</span> <span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+&#160;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Deathblows against doors look cool, but really...</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectType"><span class="kw4">GetObjectType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="kw3">OBJECT_TYPE_CREATURE</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+&#160;
+                <span class="co1">// ---------------------------------------------------------</span>
+                <span class="co1">// Special conditions.</span>
+                <span class="co1">//</span>
+                <span class="co1">// There are a few cases in the single player campaign</span>
+                <span class="co1">// where we want the spectacular deathblow to occur if possible.</span>
+                <span class="co1">//</span>
+                <span class="co1">// The following logic defines these conditions</span>
+                <span class="co1">// ---------------------------------------------------------</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAppearance <span class="sy0">=</span>   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAppearanceType"><span class="kw4">GetAppearanceType</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>&#160;;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRank       <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRank"><span class="kw4">GetCreatureRank</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bSpecial <span class="sy0">=</span>   FALSE;
+&#160;
+                <span class="co1">// ---------------------------------------------------------</span>
+                <span class="co1">// ... all boss ogres (there's 1 in the official campaign) by request</span>
+                <span class="co1">//     from Dr. Muzyka.</span>
+                <span class="co1">// ... all elite bosses</span>
+                <span class="co1">// ---------------------------------------------------------</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> <span class="br0">&#40;</span>nAppearance <span class="sy0">==</span> APR_TYPE_OGRE <span class="sy0">||</span> <span class="br0">&#40;</span>nRank <span class="sy0">==</span> CREATURE_RANK_BOSS<span class="sy0">||</span>nRank <span class="sy0">==</span> CREATURE_RANK_ELITE_BOSS<span class="br0">&#41;</span>  <span class="br0">&#41;</span> <span class="sy0">||</span>
+                      nRank <span class="sy0">==</span> CREATURE_RANK_ELITE_BOSS<span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                        <span class="co1">// -------------------------------------------------</span>
+                        <span class="co1">// ... but only if they are at the health threshold</span>
+                        <span class="co1">//     required for deathblows to trigger</span>
+                        <span class="co1">// -------------------------------------------------</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsHumanoid"><span class="kw4">IsHumanoid</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                            bSpecial <span class="sy0">=</span> _GetRelativeResourceLevel<span class="br0">&#40;</span>oTarget, <span class="kw3">PROPERTY_DEPLETABLE_HEALTH</span><span class="br0">&#41;</span> <span class="sy0">&lt;</span> SPECIAL_BOSS_DEATHBLOW_THRESHOLD;
+                        <span class="br0">&#125;</span>
+                <span class="br0">&#125;</span>
+&#160;
+                <span class="co1">// ---------------------------------------------------------</span>
+                <span class="co1">// Deathblows occur when</span>
+                <span class="co1">//  ... target isn't immortal (duh) AND</span>
+                <span class="co1">//      ... the damage of the hit exceeds the creature's health OR</span>
+                <span class="co1">//      ... aforementioned 'special' conditions are met.</span>
+                <span class="co1">// ---------------------------------------------------------</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> <span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsImmortal"><span class="kw4">IsImmortal</span></a><span class="br0">&#40;</span> oTarget <span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <span class="br0">&#40;</span>fDamage <span class="sy0">&gt;=</span> fTargetHealth <span class="sy0">||</span> bSpecial<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+&#160;
+                    <span class="co1">// -----------------------------------------------------</span>
+                    <span class="co1">// ... only from party members AND</span>
+                    <span class="co1">//    ... if we determine that a deathblow doesn't interrupt gameplay OR</span>
+                    <span class="co1">//    ... aforementioned 'special' conditions are met</span>
+                    <span class="co1">// -----------------------------------------------------</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsPartyMember<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <span class="br0">&#40;</span>CheckForDeathblow<span class="br0">&#40;</span>oAttacker, oTarget<span class="br0">&#41;</span> <span class="sy0">||</span> bSpecial<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        <span class="co1">// -------------------------------------------------</span>
+                        <span class="co1">// Verify some more conditions...</span>
+                        <span class="co1">// -------------------------------------------------</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bDeathBlow <span class="sy0">=</span> Combat_GetValidDeathblow<span class="br0">&#40;</span>oAttacker, oTarget<span class="br0">&#41;</span>;
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bDeathBlow<span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                            stRet.<span class="me1">nAttackResult</span> <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span>&#160;;
+&#160;
+                            <span class="co1">// ---------------------------------------------</span>
+                            <span class="co1">// Special treatment for ogre</span>
+                            <span class="co1">// Reason: The ogre, unlike all other special bosses</span>
+                            <span class="co1">//         has a second, non spectacular deathblow.</span>
+                            <span class="co1">//         if we specify 0, there's a 50% chance that</span>
+                            <span class="co1">//         one is played, which we don't want in this</span>
+                            <span class="co1">//         case, so we're passing the id of the</span>
+                            <span class="co1">//         spectacular one instead.</span>
+                            <span class="co1">// ---------------------------------------------</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bSpecial <span class="sy0">&amp;&amp;</span> nAppearance <span class="sy0">==</span> APR_TYPE_OGRE<span class="br0">&#41;</span>
+                            <span class="br0">&#123;</span>
+                                stRet.<span class="me1">nDeathblowType</span> <span class="sy0">=</span> <span class="nu0">5</span>; <span class="co1">// 5 - ogre slowmo deathblow</span>
+                            <span class="br0">&#125;</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                            <span class="br0">&#123;</span>
+                                stRet.<span class="me1">nDeathblowType</span> <span class="sy0">=</span> <span class="nu0">0</span>;  <span class="co1">// 0 - auto select in engine;</span>
+                            <span class="br0">&#125;</span>
+&#160;
+                        <span class="br0">&#125;</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                        <span class="br0">&#123;</span>
+                            <span class="co1">// Failure to meet conditions: convert to hit.</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stRet.<span class="me1">nAttackResult</span> <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_BACKSTAB</span><span class="br0">&#41;</span>
+                            <span class="br0">&#123;</span>
+                                stRet.<span class="me1">nAttackResult</span> <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_HIT</span>;
+                            <span class="br0">&#125;</span>
+                        <span class="br0">&#125;</span>
+                    <span class="br0">&#125;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                    <span class="br0">&#123;</span>
+                        <span class="co1">// Failure to meet conditions: convert to hit.</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stRet.<span class="me1">nAttackResult</span> <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_BACKSTAB</span><span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                            stRet.<span class="me1">nAttackResult</span> <span class="sy0">=</span> <span class="kw3">COMBAT_RESULT_HIT</span>;
+                        <span class="br0">&#125;</span>
+                    <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+                 <span class="br0">&#125;</span> <span class="coMULTI">/* ishumanoid*/</span>
+&#160;
+&#160;
+            <span class="br0">&#125;</span> <span class="coMULTI">/* obj_type creature*/</span>
+        <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nDamageType <span class="sy0">=</span> DAMAGE_TYPE_PHYSICAL;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> nAttackType <span class="sy0">==</span> ATTACK_TYPE_RANGED<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// Certain projectiles modifyt the damage type done by a ranged weapon</span>
+        <span class="co1">// This is defined in PRJ_BASE.</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nProjectileIndex <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt"><span class="kw4">GetLocalInt</span></a><span class="br0">&#40;</span>oWeapon,PROJECTILE_OVERRIDE<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nProjectileIndex<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nDamageTypeOverride <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetM2DAInt"><span class="kw4">GetM2DAInt</span></a><span class="br0">&#40;</span>TABLE_PROJECTILES,<span class="st0">&quot;DamageType&quot;</span>,nProjectileIndex<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nDamageTypeOverride<span class="sy0">&gt;</span><span class="nu0">0</span><span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                nDamageType <span class="sy0">=</span> nDamageTypeOverride;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        <span class="co1">// When using a ranged weapon, we need to report the duration of the</span>
+        <span class="co1">// aim loop to the engine</span>
+        <span class="co1">// ---------------------------------------------------------------------</span>
+        stRet.<span class="me1">fAttackDuration</span> <span class="sy0">=</span> GetCreatureRangedDrawSpeed<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fSpeed <span class="sy0">=</span> CalculateAttackTiming<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fSpeed<span class="sy0">&gt;</span><span class="nu0">0.0f</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            stRet.<span class="me1">fAttackDuration</span> <span class="sy0">=</span> fSpeed;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// The Impact effect is not a real effect - it is not ever applied. Instead</span>
+    <span class="co1">// it is used to marshal information about the attack back to the impact</span>
+    <span class="co1">// event.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    stRet.<span class="me1">eImpactEffect</span> <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectImpact"><span class="kw4">EffectImpact</span></a><span class="br0">&#40;</span>fDamage, oWeapon, <span class="nu0">0</span>, <span class="nu0">0</span>, nDamageType<span class="br0">&#41;</span>;
+&#160;
+    <span class="co2">#ifdef DEBUG</span>
+    Log_Trace_Combat<span class="br0">&#40;</span><span class="st0">&quot;combat_h.Combat_PerformAttack&quot;</span>,<span class="st0">&quot; Attack Result: &quot;</span> <span class="sy0">+</span> Log_GetAttackResultNameById<span class="br0">&#40;</span>stRet.<span class="me1">nAttackResult</span><span class="br0">&#41;</span>,  oAttacker, oTarget, <span class="kw3">LOG_CHANNEL_COMBAT_TOHIT</span> <span class="br0">&#41;</span>;
+    <span class="co2">#endif</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> stRet;
+<span class="br0">&#125;</span></pre></div></div>

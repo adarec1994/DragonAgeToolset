@@ -1,0 +1,29 @@
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{Struct
+|name         = CombatAttackResultStruct 
+|brief        = Attack Result struct, used by Combat_PerformAttack*
+|member1type  = int
+|member1name  = nAttackResult
+|member1desc  = a [[COMBAT_RESULT_*]] constant
+|member2type  = int
+|member2name  = nDeathblowType
+|member2desc  = 
+|member3type  = float
+|member3name  = fAttackDuration
+|member3desc  = duration of the aim loop for ranged weapons
+|member4type  = effect
+|member4name  = eImpactEffect
+|member4desc  = impact effect
+|sourcefile   = combat_h
+|sourcemodule = Core Game Resources
+}}
+&lt;!-- == Description == --&gt;
+&lt;!-- This section contains the full description from the functions comments. Do not change unless you are confident these are incomplete or incorrect. --&gt;
+&lt;!-- == Remarks == --&gt;
+&lt;!-- This section contains additional comments, observations and known issues. --&gt;
+&lt;!-- == Examples == --&gt;
+&lt;!-- This section contains examples transcluded from the snippet library. --&gt;
+&lt;!-- == See also == --&gt;
+&lt;!-- This section contains links to articles, functions or constant groups. --&gt;
+</pre>

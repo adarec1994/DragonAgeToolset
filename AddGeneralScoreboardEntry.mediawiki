@@ -1,0 +1,14 @@
+<p>Adds an entry to the General Scoreboard GUI
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> AddGeneralScoreboardEntry(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sName,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nVictories,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDefeats,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nFatalities,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bQualified,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bDead<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sName<dd>Contestant's name<dt style="font-weight:normal; font-style:italic;">nVictories<dd>Number of victories<dt style="font-weight:normal; font-style:italic;">nDefeats<dd>Number of defeats<dt style="font-weight:normal; font-style:italic;">nFatalities<dd>Number of fatalities<dt style="font-weight:normal; font-style:italic;">bQualified<dd>1 if the contestant has qualified for the Championship, 0 otherwise<dt style="font-weight:normal; font-style:italic;">bDead<dd>1 if the contestant is dead, 0 otherwise
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

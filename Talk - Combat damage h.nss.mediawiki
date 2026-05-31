@@ -1,0 +1,13 @@
+<p>// Exploit Weakness:  Backstab Damage + max(CUN-10,0) / 3.0
+</p>
+<pre>   // -------------------------------------------------------------------------
+   if (HasAbility(oAttacker,ABILITY_TALENT_EXPLOIT_WEAKNESS))
+   {
+       float fBase = MaxF(0.0,(GetAttributeModifier(oAttacker,PROPERTY_ATTRIBUTE_CUNNING)/3.0))&#160;;
+       float fMod = MaxF(0.2,RandomFloat());
+       fDamage += (fBase * fMod);
+</pre>
+<p>________________________________
+</p><p>If Exploit Weakness adds (CUN-10)/3 damage to backstabs, what's the reason for the fMod variable?
+</p><p>Sorry if I misunderstood the script, some elements are new to me here.
+</p>

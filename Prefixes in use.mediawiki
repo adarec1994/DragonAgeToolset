@@ -1,0 +1,222 @@
+<p>Potential conflict between add-ins can be reduced by using a unique prefix for resource names (and a similar suffix for M2DA tables). See also <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20ranges%20in%20use" title="2DA ranges in use">2DA ranges in use</a>.
+</p><p>We don't know for sure which prefixes Bioware may need to use in future, but we can reduce conflict between community offerings by registering our intentions here.
+</p><p>Please insert new entries in alphabetical order.
+</p><p>WARNING - no doubt Bioware has already allocated additional prefixes for DLC and future releases, so registering here does not guarantee that your prefix is unique.
+</p>
+<table class="wikitable" border="1">
+
+<tr>
+<th> Prefix
+</th>
+<th> Used by
+</th></tr>
+<tr>
+<td> APL
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BDC
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BDN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BEC
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BED
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BHM
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BHN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BRC
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> BTC
+</td>
+<td> BTCentral's Projects (Unreleased)
+</td></tr>
+<tr>
+<td> CAM
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> CID
+</td>
+<td> CID-78 project(s) (unreleased)
+</td></tr>
+<tr>
+<td> CIR
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> COC
+</td>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/178/">Crown of Creation</a>
+</td></tr>
+<tr>
+<td> DAW
+</td>
+<td> Dragon Age Workshop - <a rel="nofollow" class="external text" href="http://www.dragon-age-workshop.de/">Dragon Age Workshop</a>
+</td></tr>
+<tr>
+<td> DEN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> EPI
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> FFG
+</td>
+<td> Feline Fuelled Games - <a rel="nofollow" class="external text" href="http://www.felinefuelledgames.de/">Feline Fuelled Games</a>
+</td></tr>
+<tr>
+<td> FTG
+</td>
+<td> <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=73">UI Mod and future projects</a>.
+</td></tr>
+<tr>
+<td> GEN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> HRT
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> HUS
+</td>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1647/">Hilltop Under Siege</a>
+</td></tr>
+<tr>
+<td> LAK
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> LDP
+</td>
+<td> Ladydesire
+</td></tr>
+<tr>
+<td> LGT
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> LOT
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> MIX
+</td>
+<td> Alice Down the Rabbit Hole - <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2222/">Alice DTRH</a>
+</td></tr>
+<tr>
+<td> NEZ
+</td>
+<td> All of <a rel="nofollow" class="external text" href="http://social.bioware.com/profile/20696#bw_projects">nezroy's projects</a>.
+</td></tr>
+<tr>
+<td> NTB
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> NUK
+</td>
+<td> <a rel="nofollow" class="external text" href="http://social.bioware.com/66558/#bw_projects">Nukenin's projects</a>
+</td></tr>
+<tr>
+<td> ORZ
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> OST
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> OTH
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> PRE
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> QPS
+</td>
+<td> QueenPurpleScrap's projects
+</td></tr>
+<tr>
+<td> RAN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> RMT
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> SOB
+</td>
+<td> Saga of Bradenscir
+</td></tr>
+<tr>
+<td> TMOI
+</td>
+<td> The Magic of Innocence
+</td></tr>
+<tr>
+<td> TRE
+</td>
+<td> TreDawn
+</td></tr>
+<tr>
+<td> URN
+</td>
+<td> BIOWARE
+</td></tr>
+<tr>
+<td> VWK
+</td>
+<td> Magic - <a rel="nofollow" class="external text" href="http://social.bioware.com/project/1429/">Void Walker</a>
+</td></tr>
+<tr>
+<td> AMC
+</td>
+<td> amcnow's <a rel="nofollow" class="external text" href="http://social.bioware.com/1297112/#bw_projects">projects</a>
+</td></tr></table>

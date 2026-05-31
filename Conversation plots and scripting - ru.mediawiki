@@ -1,0 +1,185 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Программирование диалогов</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/Conversation_plots_and_scripting/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Диалоги
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20-%20ru" title="Conversation/ru">Обзор</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20tutorial%20-%20ru" title="Conversation tutorial/ru">Инструкция</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation%20-%20ru" title="Conversation cinematics and animation/ru (page does not exist)">Кино и анимация</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20cinematics%20and%20animation" title="Conversation cinematics and animation">(en)</a></li>
+<li><strong class="selflink">Програмирование</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over%20-%20ru" title="Voice-Over/ru (page does not exist)">Озвучка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Voice-Over" title="Voice-Over">(en)</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording%20-%20ru" title="Preparing a dialog for recording/ru (page does not exist)">Реестр реплик</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Preparing%20a%20dialog%20for%20recording" title="Preparing a dialog for recording">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX%20-%20ru" title="FaceFX/ru (page does not exist)">Мимика</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">(en)</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20editor%20options%20-%20ru" title="Conversation editor options/ru (page does not exist)">Свойства редактора</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DLG%20editor%20options" title="Conversation editor options">(en)</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Conversations%20-%20ru" title="Category:Conversations/ru (page does not exist)">Категория "Диалоги"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Conversations" title="Category:Conversations">(en)</a></li></ul>
+<dl><dd><small>все статьи категории</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Dialog%20functions%20-%20ru" title="Category:Dialog functions/ru (page does not exist)">Категория "Функции"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Dialog%20functions" title="Category:Dialog functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>функции, связанные с диалогами</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Dialog%20functions%20-%20ru" title="Category:Dialog functions/ru (page does not exist)">Категория "События"</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Dialog%20functions" title="Category:Dialog functions (page does not exist)">(en)</a></li></ul>
+<dl><dd><small>события, связанные с диалогами</small></dd></dl>
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A0.D0.B0.D0.B7.D0.B4.D0.B5.D0.BB_.22.D0.A3.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5_.28Condition.29.22_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.B8"><span class="tocnumber">1</span> <span class="toctext">Раздел "Условие (Condition)" для реплики</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2"><span class="tocnumber">1.1</span> <span class="toctext">Использование Plot-файлов</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2"><span class="tocnumber">1.2</span> <span class="toctext">Использование скриптов</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D1.83.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D1.8F"><span class="tocnumber">1.3</span> <span class="toctext">Общие условия</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.94.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.8F.2C_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0.D0.B5.D0.BC.D1.8B.D0.B5_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.BE.D0.B9"><span class="tocnumber">2</span> <span class="toctext">Действия, запускаемые репликой</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.8F"><span class="tocnumber">2.1</span> <span class="toctext">Общие действия</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9E.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.BE.D0.BB.D0.B8.D1.87.D0.B5.D1.81.D1.82.D0.B2.D0.B0_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B9_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA"><span class="tocnumber">3</span> <span class="toctext">Ограничение количества использований реплик</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9A.D0.BE.D1.80.D0.BD.D0.B5.D0.B2.D0.BE.D0.B9_.D1.83.D0.B7.D0.B5.D0.BB_.D0.B4.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3.D0.B0"><span class="tocnumber">4</span> <span class="toctext">Корневой узел диалога</span></a></li>
+</ul>
+</div>
+
+<p>Вкладка "Plots and Scripting" на панели вкладок ниже окна реплик содержит несколько параметров, позволяющих использовать <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot-файлы</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20-%20ru" title="Script/ru">скрипты</a> для создания интерактивных диалогов, то есть диалогов, зависимых от состояния мира игры и, в тоже время, способных оказать на него влияние:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting.png"><img alt="Conversation plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/ea/Conversation_plots_and_scripting.png" width="662" height="260" /></a>
+</p>
+<ul><li>Так как действие скриптов не очевидно при просмотре редактора диалогов, то на вкладке предусмотрено поле "Scripting comments", позволяющее описать действие скрипта.</li></ul>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D0.B4.D0.B5.D0.BB_.22.D0.A3.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5_.28Condition.29.22_.D0.B4.D0.BB.D1.8F_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.B8">Раздел "Условие (Condition)" для реплики</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20condition.png"><img alt="Conversation plots and scripting condition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/de/Conversation_plots_and_scripting_condition.png" width="518" height="78" /></a>
+</p>
+<h3><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_Plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2">Использование Plot-файлов</span></h3>
+<p>Раздел "Условие" используется  для определения, будет ли реплика использоваться в диалоге. Для того, чтобы использование реплики зависело от значения определённого флага в Plot-файле:
+</p>
+<ul><li>Выберите Plot-файл в выпадающем списке "Plot", либо, в случае если в редактируемом диалоге данный Plot-файл ещё не использовался, нажмите на кнопку (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a>) и выберите его из доступных Plot-файлов. </li>
+<li>Затем в выпадающем списке "Flag" выберите из имеющихся в Plot-файле требуемый вам флаг.</li>
+<li>Укажите условие на значение этого флага, при котором реплика будет использоваться в диалоге("is true" - истина, "is false" - ложь).</li></ul>
+<p>Несколько примеров использования:
+</p>
+<ul><li>Диалог НПС, который даёт Герою задание. В таком диалоге будут различные варианты реплик как НПС, так и Героя, в зависимости от того, принято ли задание и в каком оно состояние.</li>
+<li>Диалог со спутником, реплики в котором зависят от уровня отношений спутника и Героя, то есть если уровень отношений изменяется, то в диалоге появляются новые реплики.</li>
+<li>Диалог НПС, реплики в котором зависят от знания Героем какой-либо информации.</li></ul>
+<h3><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2">Использование скриптов</span></h3>
+<p>Для отслеживания сложных условий, которые трудно или невозможно отследить с помощью Plot-файлов, можно использовать скрипты. 
+Использование Plot-файлов и скриптов одновременно при задании условия для одной реплики - невозможно.
+Если необходимо использовать и значения Plot-флагов и скрипт, необходимо значения Plot-флагов обрабатывать в скрипте, и для задания условия для реплики использовать скрипт.
+</p><p>В качестве примера использования скриптов можно привести диалоги, в которых реплики различаются в зависимости от навыков Героя, от времени суток.
+</p><p>Чтобы использовать скрипт в качестве условия для реплики выберите в выпадающем меню "Script" необходимый вам (в случае, если в списке он отсутствует, выберите используя кнопку выбора).
+</p><p>Скрипты, ассоциированные с диалогом, должны иметь следующий формат:
+</p>
+<pre>
+int StartingConditional()
+{
+    return 1;
+}
+</pre>
+<p>Если скрипт возвратит значение "Истина (TRUE)", линия, которой он назначен в качестве условия, будет использована в диалоге.
+</p>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:99&#160;%;"><div style="text-align:center;"><b>Внимание:</b></div>
+<p>Последняя реплика каждого ответвления ветки не должна иметь условий на своё использование (и комментариев)! Это гарантирует, что диалог не зайдёт в тупик, если ни одно из условий не выполнится. Для примера: 
+В диалоге есть две реплики, которые зависят от пола Героя. В данном случае только одна из реплик должна иметь условие на пол Героя. Вторая реплика должна использоваться по умолчанию.
+</p>
+</div>
+<p>Скрипт, вызываемый репликой диалога, может передавать в качестве параметра число типа Integer, которое восстанавливается функцией <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetConversationEntryParameter" title="GetConversationEntryParameter">GetConversationEntryParameter</a>. 
+Обратите внимание, что по состоянию на 18 ноября эта функция работает ещё некорректно. Для исправления этого требуется патч.
+</p>
+<h3><span class="mw-headline" id=".D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D1.83.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D1.8F">Общие условия</span></h3>
+<p>Существует несколько общих условий, которые могут использоваться при создании диалогов, определённых в Plot-файлах, именуемых "generic". Значения флагов определяются скриптами обработки событий, ассоциированными с такими Plot-файлами. 
+</p><p>Для определения класса, расы или пола, используйте общий Plot-файл "gen00pt_class_race_gend":
+</p>
+<ul><li>GEN_RACE_ELF - true  - если эльф.</li>
+<li>GEN_RACE_HUMAN - true - если человек.</li>
+<li>GEN_RACE_DWARF - true - если гном.</li>
+<li>GEN_GENDER_MALE - true - если мужчина.</li>
+<li>GEN_GENDER_FEMALE - true - если женщина.</li>
+<li>GEN_CLASS_* - флаг для определения базовых классов. True - если у существа есть этот класс.</li></ul>
+<p>Для генерации случайного шанса использования реплики используйте Plot-файл "gen00pt_random". Позволяет создать элемент случайности и обычно используется для подшучивания или предоставления Герою интересной информации, которая не критична для выполнения заданий. 
+</p><p>Есть два набора флагов в "gen00pt_random plot". Основной набор, который определяет в процентах шанс на возвращение истинного "TRUE" значения:
+</p>
+<ul><li>GEN_R5 - 5%</li>
+<li>GEN_R10 - 10%</li>
+<li>GEN_R25 - 25%</li>
+<li>GEN_R30 - 30%</li>
+<li>GEN_R33 - 33%</li>
+<li>GEN_R50 - 50%</li></ul>
+<p>В дополнение к этому набору есть флаги серии "lines left", которые помогают создать серию случайных реплик, которые будут использоваться с равной вероятностью.
+</p><p>The format of the LINES_LEFT flags is GEN_RAND_RXX Where XX is the total number of random elements left in the series of randoms after the current line. Naturally, GEN_RAND_LINES_LEFT_01 has a 50% chance of being chosen. The very last dialogue line does not need a condition. For the statistically-minded, the probabilities are:
+</p>
+<ul><li> GEN_RAND_LINES_LEFT_15: 6.25%</li>
+<li> GEN_RAND_LINES_LEFT_14: 6.67%</li>
+<li> GEN_RAND_LINES_LEFT_13: 7.14%</li>
+<li> GEN_RAND_LINES_LEFT_12: 7.69%</li>
+<li> GEN_RAND_LINES_LEFT_11: 8.33%</li>
+<li> GEN_RAND_LINES_LEFT_10: 9.09%</li>
+<li> GEN_RAND_LINES_LEFT_09: 10.00%</li>
+<li> GEN_RAND_LINES_LEFT_08: 11.11%</li>
+<li> GEN_RAND_LINES_LEFT_07: 12.50%</li>
+<li> GEN_RAND_LINES_LEFT_06: 14.29%</li>
+<li> GEN_RAND_LINES_LEFT_05: 16.67%</li>
+<li> GEN_RAND_LINES_LEFT_04: 20.00%</li>
+<li> GEN_RAND_LINES_LEFT_03: 25.00%</li>
+<li> GEN_RAND_LINES_LEFT_02: 33.33%</li>
+<li> GEN_RAND_LINES_LEFT_01: 50.00%</li></ul>
+<h2><span class="mw-headline" id=".D0.94.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.8F.2C_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0.D0.B5.D0.BC.D1.8B.D0.B5_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA.D0.BE.D0.B9">Действия, запускаемые репликой</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20action.png"><img alt="Conversation plots and scripting action.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8d/Conversation_plots_and_scripting_action.png" width="518" height="78" /></a>
+</p><p>Реплика диалога также может использоваться для запуска определённых действий, таких как установка значения флага в Plot-файле или запуск скрипта.
+</p><p>Процедура задания для реплики запускаемого ею действия по установке значения флага подобна процедуре задания условия, с той разницей, что вместо условий в выпадающем списке справа от названия Plot-файла необходимо выбрать действие, которое выполняется при использовании реплики:
+</p>
+<ul><li>"set" - установить (TRUE)</li>
+<li>"clear" - сбросить (FALSE)</li></ul>
+<p>Действия по запуску скрипта работают как обычно и запускаются, когда:
+</p>
+<ul><li>Для реплик Героя: в момент, когда игрок кликает на реплике.</li>
+<li>Для реплик НПС: в момент, когда НПС начинает проговаривать реплику.</li></ul>
+<p>Запуск скриптов в основном используется для вознаграждения Героя, отъёму/передаче предметов и установки флагов в Plot-файлах.
+</p><p>Когда предметы передаются скрипт не проигрывает соответствующую анимацию. Анимация должна настраиваться отдельно.
+</p>
+<h3><span class="mw-headline" id=".D0.9E.D0.B1.D1.89.D0.B8.D0.B5_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.8F">Общие действия</span></h3>
+<p>Для простоты запуска некоторых часто используемых действий используется Plot-файл "gen00pt_generic_actions", установка флагов в котором запускает его скрипт, который, в соответствии с установленным флагом, выполняет некое действие.
+Ниже приведён список таких флагов:
+</p>
+<ul><li>GEN_AUTOSAVE - автосохранение.</li>
+<li>GEN_CURE_PC_INJURIES - удаление всех повреждений со всех спутников в активной партии.</li>
+<li>GEN_DIALOG_FADE_IN -&#160;!!кажется, скрипт не содержит код, обрабатывающий установку этого флага!!</li>
+<li>GEN_DIALOG_FADE_OUT -&#160;!!кажется, скрипт не содержит код, обрабатывающий установку этого флага!!</li>
+<li>GEN_EXIT_DESTROY - владелец диалога идёт к ближайшему выходу (объект с тэгом "wp_exit_generic") и уничтожается</li>
+<li>GEN_OPEN_ENCHANTING - opens the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20upgrade" title="Item upgrade (page does not exist)">item upgrade</a> GUI.</li>
+<li>GEN_OPEN_STORE - открывает <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant%20-%20ru" title="Merchant/ru (page does not exist)">лавка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">(en)</a>, которая имеет тэг "store_" + тэг владельца диалога (например, если владелец диалога - "blacksmith_steve", то откроется лавка с тэгом "store_blacksmith_steve").</li>
+<li>GEN_OWNER_DIES - владелец диалога падает замертво.</li>
+<li>GEN_OWNER_DISAPPEARS - владелец диалога исчезает (разрушается).</li>
+<li>GEN_OWNER_MOVES_HOME - владелец диалога возвращается в его домашнюю (home) точку на локации (по умолчанию, точка где он изначально инициализировался).</li>
+<li>GEN_OWNER_TURNS_HOSTILE - владелец диалога пропитывается к Герою враждебностью и нападает на него.</li>
+<li>GEN_TEAM_TURNS_HOSTILE - все собеседники в диалоге становятся врагами и нападают.</li>
+<li>GEN_TEAM_WALKS_TO_EXIT - как и GEN_EXIT_DESTROY, но уходят все члены команды, к которой принадлежит владелец диалога.</li></ul>
+<p>!!Эти два флага определены в Plot-файле общих действий, но, кажется, они определяют значение, а не воздействуют. Перед использованием - изучите их сами!!
+</p>
+<ul><li>GEN_PC_HAS_HEALING</li>
+<li>GEN_PC_IN_COMBAT - Смотри <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Conversation%20plots%20and%20scripting" title="Talk:Conversation plots and scripting">Talk:Conversation_plots_and_scripting</a>.</li></ul>
+<h2><span class="mw-headline" id=".D0.9E.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BA.D0.BE.D0.BB.D0.B8.D1.87.D0.B5.D1.81.D1.82.D0.B2.D0.B0_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B9_.D1.80.D0.B5.D0.BF.D0.BB.D0.B8.D0.BA">Ограничение количества использований реплик</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20plots%20and%20scripting%20line%20settings.png"><img alt="Conversation plots and scripting line settings.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4c/Conversation_plots_and_scripting_line_settings.png" width="518" height="50" /></a>
+</p><p>В самом низу вкладки "Plots and Scripting" есть раздел "Line Settings" с параметром "Visibility", использованием которого можно установить, использовать реплику в диалоге постоянно, один раз за диалог или один раз за игру.
+</p>
+<ul><li>"Один раз за диалог" - когда в диалоге используются ссылки, которые могут вернуть диалог на уже отработанную ветку, но некоторые реплики этой ветки должны прозвучать только один раз за игру (например Герой задал вопрос, получил ответ и диалог возвращается к списку вопросов, а вопрос, ответ на который уже получен, отображаться не должен).</li>
+<li>"Один раз за игру" - когда реплика содержит информацию, которую повторять при каждом запуске диалога нет смысла.</li></ul>
+<p>В этом разделе также есть флаг "ambient".
+</p><p>The ambient flag prevents the default conversation cinematics from operating, leaving the camera view where it was and instead putting the text of the spoken line hovering over the head of the object that spoke it. This is intended for use when generating background conversations for the player to "overhear", or that is a quick one-line response to player interaction that doesn't require a full-blown conversation to play out.
+</p>
+<h2><span class="mw-headline" id=".D0.9A.D0.BE.D1.80.D0.BD.D0.B5.D0.B2.D0.BE.D0.B9_.D1.83.D0.B7.D0.B5.D0.BB_.D0.B4.D0.B8.D0.B0.D0.BB.D0.BE.D0.B3.D0.B0">Корневой узел диалога</span></h2>
+<p>Вкладка "Plots and Scripting" также присутствует и при выбранном корневом узле диалога:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Conversation%20root%20plots%20and%20scripting.png"><img alt="Conversation root plots and scripting.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/03/Conversation_root_plots_and_scripting.png" width="727" height="321" /></a>
+</p><p>Данная вкладка содержит только раздел "Действия", параметры которого функционируют также как и на репликах, но запускаются только по окончании диалога. Действия, установленные на этой вкладке запускаются при каждом окончании диалога.
+Это полезно при создании диалога, окончание которого всегда имеет один и тот же эффект независимо от его течения.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation%20plots%20and%20scripting" title="Conversation plots and scripting">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

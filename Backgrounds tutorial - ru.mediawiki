@@ -1,0 +1,389 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Инструкция по созданию предыстории</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Backgrounds_tutorial/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Вступление</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.94.D0.B5.D0.BC.D0.BE_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8C_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B9"><span class="tocnumber">2</span> <span class="toctext">Демо модуль для предысторий</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_string-.D0.BF.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D1.85_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8"><span class="tocnumber">3</span> <span class="toctext">Создание string-переменных для предыстории</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_2DA-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2"><span class="tocnumber">4</span> <span class="toctext">Редактирование 2DA-файлов</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.9A.D0.BE.D0.BC.D0.BF.D0.B8.D0.BB.D1.8F.D1.86.D0.B8.D1.8F_.D0.B8_.D0.B8.D1.81.D0.BF.D1.80.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F_.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2_GDA"><span class="tocnumber">5</span> <span class="toctext">Компиляция и исправления файлов GDA</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8"><span class="tocnumber">6</span> <span class="toctext">Создание plot-файла для предыстории</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9D.D0.B0.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2"><span class="tocnumber">7</span> <span class="toctext">Написание скриптов</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D0.BA.D0.B0_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BE.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B8"><span class="tocnumber">8</span> <span class="toctext">Проверка работоспособности</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.9E.D0.BF.D1.86.D0.B8.D0.BE.D0.BD.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D1.80.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">9</span> <span class="toctext">Опциональные расширения</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.9E.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D1.8F_.D1.80.D0.B0.D1.81.D1.8B_.D0.B8_.D0.BF.D0.BE.D0.BB.D0.B0"><span class="tocnumber">10</span> <span class="toctext">Описания расы и пола</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.97.D0.B0.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">11</span> <span class="toctext">Заключение</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.83.D0.BF.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">Вступление</span></h2>
+<p>В этом туториале мы расскажем вам, как можно редактировать предыстории, которые мы можем видим во время создания героя. Это пригодиться вам в создании вашей собственной кампании. Добавлять новые предыстории к оригиналу нельзя, можно лишь отредактировать или полностью заменить существующие. В данном туториале мы будем создавать отдельный модуль, который будет полностью заменять все предыстории. Изменение предысторий полезно в случае:
+</p><p>1 – если сюжет вашей кампании разворачивается не в мире Dragon age;
+</p><p>2 – если вы хотите уменьшить количество существующих предысторий.
+</p><p><br />
+Также мы расскажем вам об основных принципах редактирования игровых ресурсов, которые влияют на доступность расы и классов. Что самое важное: мы не будем редактировать подлинные материалы, а будем работать с копиями. Это позволит нашим изменениям быть совместимыми с будущими патчами, которые в ином случае перезапишут нашу работу. 
+</p><p><br />
+Для прохождения данного туториала читателям рекомендуется быть ознакомленными с основами скриптинга и программирования. В ином случае удачное прохождение маловероятно. Чем больше вы будете слепо копировать код, используемый в туториале, тем выше вероятность того, что возникнут ошибки, которые вы будете не в силах исправить.
+</p>
+<h2><span class="mw-headline" id=".D0.94.D0.B5.D0.BC.D0.BE_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8C_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B9">Демо модуль для предысторий</span></h2>
+<p>Для данного туториала подойдет любой модуль. Если вы хотите создать отдельный тестовый модуль специально для прохождения туториала, просто создайте модуль с одной локацией и начальной территорией. Убедитесь, что единственным выбранным пунктом в иерархии модуля является <b>Core game resources</b>(Базовые игровые ресурсы). Это будет означать, что модуль отдельный и что он не вносит никаких изменений в оригинальную кампанию или в другие модули. Давайте назовем наш модуль Backgrounds demo и будем добавлять к названиям наших файлов префикс <b>bdm_</b>, чтобы быть уверенными, что файла с таким названием больше нет.
+Мы заменим существующие предыстории тремя собственными. Вы можете использовать их как угодно. Можете написать отдельный сюжет для каждой предыстории, как это сделано в оригинале (важно, чтобы длинна сюжетов были одинакова). Или же ваша предыстория может влиять только на диалоги, <b>plot</b>-опции и основную часть вашей игры.
+Для нашей демки мы создадим модуль, сюжет которого начинается в маленькой человеческой деревушке (это поможет нам придумать предыстории, на практике мы создавать деревню не будем). В деревне есть маг, который играет в сюжете важную роль. Мы позволим игроку начать игру в качестве ученика этого мага (если игрок - маг), его слуги (если игрок человек или эльф и при этом не маг) или путешественника, который пришел навестить мага (если игрок не человек и не маг). Таким образом, у нас получилось три предыстории:
+</p>
+<ul><li> Слуга</li>
+<li> Ученик</li>
+<li> Путешественник</li></ul>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_string-.D0.BF.D0.B5.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D1.85_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8">Создание string-переменных для предыстории</span></h2>
+<p>Перед тем, как мы приступим к редактированию файлов <b>2DA</b>, нужно создать несколько переменных типа <b>string</b>. Откройте <b>string</b>-редактор в тулсете и создайте таблицу с названием <b>“Background Demo”</b>. В ней создайте следующие переменные:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20talk%20table.png"><img alt="Back tut talk table.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4e/Back_tut_talk_table.png" width="784" height="280" /></a>
+</p><p><b>ID</b>-номера ваших строчек могут быть другими. Это не страшно, просто в дальнейшем вам придется заменять указанные мною <b>ID</b> на свои.
+</p><p><b>ВАЖНО!</b> <i>В игре присутствует баг, который не позволяет <b>ID</b>-номеру принимать значения выше <b>109 912 680</b>. Чтобы исправить его, вы можете <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4695/">скачать фикс</a> от сообщества. Или же вы можете зайти в свойства модуля и изменить начальное значение <b>ID</b> так, чтобы оно было меньше критического. После этого, <b>string</b>-редактор будет генерировать <b>ID</b>-номера, значения которых не приведут к багу. После создания переменных для предысторий, перезагрузите начальное значение <b>ID</b>-номера (это позволит вам избежать нужды в скачивании фикса от Bioware и уменьшит возможность несовместимости с другими модулями).</i>
+</p><p>Вы, должно быть, заметили, что мы задали разные названия и описания предыстории путешественника в зависимости от расы героя. Об этом мы расскажем вам дальше.
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String editor</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_2DA-.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2">Редактирование 2DA-файлов</span></h2>
+<p>Следующим шагом будет редактирование рабочих листов документа под названием <b>backgrounds.xls</b>. Скопируйте этот документ: мы будем редактировать копию, а не оригинал. Рекомендую вам прочесть статью с описанием работы с <b>2DA</b>-файлами. 
+Первый лист называется <b>“background”</b>. Отредактируйте его так, чтобы у вас получилось как на скриншоте:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20backgrounds.png"><img alt="Back tut backgrounds.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Back_tut_backgrounds.png" width="830" height="179" /></a>
+</p><p><b>2DA</b>-файлы соединяются и создают <b>M2DA</b>-файлы, которые заменяют оригиналы с аналогичными названиями. В этом случае нам надо будет заполнить неиспользуемые слоты, чтобы в модуле не было предысторий из оригинала. Поэтому два последних слота мы назвали <b>unused1</b> и <b>unused2</b>. 
+Названия и описания предысторий в зависимости от выбранной расы будут взяты с таблицы string-переменных, так что здесь мы можем оставить соответствующие поля пустыми(если в таблице <b>string</b>-переменных указаны названия и описания предысторий, столбцы  <b>NameStrRef</b> и <b>DesStrRef</b> не используются. Похоже, что <b>ToolTipStrRef</b> также нигде не используется. Если хотите, можете его чем-то заполнить).
+</p><p>Существует три колонки с расами, каждая из которых определяет, какая предыстория какой расе доступна. Также есть три колонки класса, которые определяют, какая предыстория какому классу доступна. На скриншоте видно, что предыстория слуги доступна эльфу и человеку, воину и разбойнику, предыстория ученика доступна магу-эльфу и магу-человеку, предыстория путешественника – эльфу и гному, воину и разбойнику. 
+</p><p>Последние три колонки определяют стартовый навык для каждой предыстории и расы. Заметьте, по умолчанию эти колонки не связаны со скриптом генерации персонажа (они содержатся в сложном блоке кода) и не используются, но мы исправим это на стадии скриптинга. Вы должны быть внимательными, так как каждая колонка связана с <b>ID</b>-номером расы: 
+</p><p><b>1 – гном, 2 – эльф, 3 – человек. </b>
+</p><p>Номера могут быть размещены в другом порядке по отношению к столбцам расы данной таблицы. Номером в колонке является значение <b>ID</b>-номера навыка, указанное в таблице <b>ABI_base.xls</b>. В этой демке мы просто зададим одинаковые навыки всем расам определенных предысторий. Слуги получат бонус к тактике боя, ученики – бонус к убеждению, а путешественники - к выживанию.
+</p><p>Далее мы отредактируем таблицу под названием <b>background_names</b>.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20names.png"><img alt="Back tut bg names.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a1/Back_tut_bg_names.png" width="413" height="180" /></a>
+</p><p>Убедитесь, что <b>ID</b>-номера этой таблицы совпадают с <b>ID</b>-номерами ваших <b>string</b>-переменных. Обратите внимание, что для учеников и слуг вне зависимости от расы мы используем одинаковые переменные, а для путешественников разные строчки. Это чтобы вы увидели, как одной и той же предыстории можно присваивать разные имена и описания. Все они хранятся в одном и том же <b>ID</b>-номере предыстории, но во время генерации персонажа игрок может увидеть разные названия, описания и иконки для одной и той же предыстории. В оригинальной кампании этот метод применялся в случае  героем знатного происхождения, которое менялось на человеческое или гномье в зависимости от выбранной расы.
+</p><p><b>ПРИМЕЧАНИЕ</b> <i>– во время разделения единой предыстории на части вы должны быть внимательными. Названия и описания должны быть разными! Если описания будут одинаковыми, движок сочтет предыстории идентичными, даже если их названия будут разными.</i>
+</p><p>Теперь отредактируйте <b>background_desc</b> как показано на скрине.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20desc.png"><img alt="Back tut bg desc.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8a/Back_tut_bg_desc.png" width="397" height="184" /></a>
+</p><p>Снова обратите внимания на различные описания для предыстории путешественника.
+Теперь отредактируем <b>background_icons</b>. В этой демке мы будем использовать иконки из оригинала, но при желании вы можете использовать собственные.
+<b>“background_icons"</b>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20icons.png"><img alt="Back tut bg icons.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/Back_tut_bg_icons.png" width="757" height="178" /></a>
+</p><p>Таблица под названием <b>background_defaults</b> должна содержать все возможные комбинации расы, предыстории и класса. Значение <b>ID</b>-номера колонки считается следующим образом:
+<b>(1000 * IDрасы) + (100 * IDкласса) + Idпредыстории</b>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tute%20bg%20defaults.png"><img alt="Back tute bg defaults.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/09/Back_tute_bg_defaults.png" width="891" height="331" /></a>
+</p><p>В колонке <b>“Label”</b> должна содержаться комбинация (правда, это ни на что не влияет). В нашей демке место появления героя всех комбинации будет одинаковым (локация, выбранная в модуле по умолчанию) но если вы хотите создать индивидуальное начало для каждой предыстории, вы можете использовать для этого две следующие колонки (чтобы это сработало, нужно написать скрипт).
+В колонке <b>“Template”</b> вы можете вписать название файла с существом, которое вы хотите использовать в качестве шаблона для определенной комбинации расы\предыстории\класса. На скриншоте вы можете увидеть, что мы используем стандартные шаблоны, идущие в комплекте с тулсетом, но вы запросто можете пользоваться своими. Заметьте, что от шаблона герой получает только инвентарь, так что для шаблонных персонажей вам не нужно задавать ничего кроме инвентаря.
+</p><p>Имя берется со <b>string</b>-переменных, так что если вы хотите задать герою новое имя, вам придется создать новые переменные в <b>string</b>-редакторе.
+В конце мы видим столбец с возможностями. Как и в случае с навыками в таблице предыстории, <b>ID</b>-номера возможностей соответствуют записям в файле <b>ABI_base.xls</b>. Раса, класс и предыстория являются единственными источниками стартовых возможностей. Поэтому перед тем, как вписывать в столбец <b>ID</b>-номер возможности, вам следует узнать, какие возможности уже добавлены. Это поможет избежать дубликатов.
+Последняя таблица называется <b>chargen_preload</b>. Два столбца этой таблицы должны точно совпадать со значениями <b>ID</b>-номеров и шаблонов из предыдущей.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20chargen%20preload.png"><img alt="Back tut chargen preload.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1d/Back_tut_chargen_preload.png" width="305" height="241" /></a>
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Excel_file_formatting" title="2DA">2DA#Excel file formatting</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background.xls" title="Background.xls">Background.xls</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.9A.D0.BE.D0.BC.D0.BF.D0.B8.D0.BB.D1.8F.D1.86.D0.B8.D1.8F_.D0.B8_.D0.B8.D1.81.D0.BF.D1.80.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F_.D1.84.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2_GDA">Компиляция и исправления файлов GDA</span></h2>
+<p>Теперь скомпилируйте файл <b>backgrounds.xls</b> и положите полученный в результате компиляции <b>GDA</b>-файл в папку <b>AddIns\название_модуля\module\override</b>
+Никогда не кладите ничего в папке <b>AddIns\название_модуля\core\override</b> иначе изменения коснуться всех модулей.
+Раньше был баг, из-за которого <b>string</b>-переменный с большими <b>ID</b>-значениями компилировались некорректно. Сейчас он исправлен. Чтобы обойти этот баг, <b>GDA</b>-файлы вручную редактировались в тулсете. Если же вы взглянете на <b>ID</b>-номера сейчас, то увидите, что они правильные.
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">Compiling 2DAs</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_plot-.D1.84.D0.B0.D0.B9.D0.BB.D0.B0_.D0.B4.D0.BB.D1.8F_.D0.BF.D1.80.D0.B5.D0.B4.D1.8B.D1.81.D1.82.D0.BE.D1.80.D0.B8.D0.B8">Создание plot-файла для предыстории</span></h2>
+<p><b>Plot</b>-файл предыстории используется для отслеживания выбранной игроком предыстории и позволяет менять диалоги в зависимости от выбора.
+Оригинальная кампания для отслеживания выбранной предыстории использует <b>plot</b>-файл под названием <b>gen00pt_backgrounds</b>. Вы можете найти его в папке <b>\_Global\Generic</b> в разделе <b>“Plots”</b>. Мы создадим похожий файл для наших предысторий. Создайте новый <b>plot</b> и назовите его <b>bdm_000pt_backgrounds</b> (я использую три нуля для обозначения файлов, не привязанных к конкретной локации, вы можете использовать собственное обозначение, только не забудьте о нем в процессе прохождения туториала). Добавьте главные <b>plot</b>-флаги, как это изображено на скриншоте.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Back%20tut%20bg%20plot.png"><img alt="Back tut bg plot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a8/Back_tut_bg_plot.png" width="728" height="148" /></a>
+</p><p>Вы также можете добавить определенные флаги. Они используются для создания комбинации главных флагов(таких как <b>TRAVELLER</b>(путешественник)) или для добавления составных условий, таких как <b>FEMALE_APPRENTICE</b>(женщина-ученица) или <b>ELVEN_APPRENTICE</b>(эльф-ученик). Определенный флаги, тем не менее, не входят в рамки данного туториала.
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources">Designer Resources</a></i><br /><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.9D.D0.B0.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B2">Написание скриптов</span></h2>
+<p>Мы не будем редактировать скрипты оригинальной кампании, мы добавим свои. Для лучшего понимания того, что мы будем делать, вы можете ознакомиться со скриптами оригинала, но ни в коем случае не редактируйте их. Используя в своем модуле измененные скрипты оригинала, вы делаете ваш модуль несовместимым с возможными будущими патчами.
+Начнем с написания скрипта, обрабатывающего события генерации персонажа. Обычно, этот скрипт назначается модуль-скриптом. Создайте новый скрипт и назовите его <b>bdm_module_core</b>. Вы должны решить, какубю структуру папок использовать для распределения ваших скриптов. Советую помещать их в папке с названием модуля: это позволит отделить их от скриптов оригинала. Если вам нравится оригинальная структура, вы сможете воссоздать ее в папке скриптов вашего модуля. 
+Модуль-скрипт оригинальной кампании называется <b>module_core</b> и лежит в папке <b>\_Core Scripts</b>. 
+А наш модуль-скрипт под названием bdm_module_core мы положим в папку <b>\Backgrounds demo\_Core Scripts</b> (знак нижнего подчеркивания вынесет вашу папку в самый верх списка. Похоже, <b>Bioware</b> случайно создали одну папку без знака подчеркивания. Думаю, <b>_Core</b> и <b>Core</b> - одна и та же дирректория). Структуризация скриптов подобным образом упростит вашу работу.
+</p><p><br />
+Откройте ваш bdm_module_core и напишите в нем следующее:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;global_objects_h&quot;</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEvent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>; <span class="co1">//извлечение с текущего события его типа</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventHandled <span class="sy0">=</span> FALSE; <span class="co1">//флаг, следящий за тем, было ли обработано события или нет.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEvent<span class="br0">&#41;</span><span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_MODULE_START</span><span class="sy0">:</span><span class="br0">&#123;</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Initiate character generation.</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PreloadCharGen"><span class="kw4">PreloadCharGen</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//предварительна загрузка ресурсов для генерации персонажа</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StartCharGen"><span class="kw4">StartCharGen</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="nu0">0</span>,TRUE<span class="br0">&#41;</span>; <span class="co1">//начало генерации</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Default%20keyword"><span class="kw1">default</span></a><span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Обработка отправленных движков события генерации персонажа.</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="br0">&#40;</span>nEvent <span class="sy0">&gt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_START</span> <span class="sy0">&amp;&amp;</span> nEvent <span class="sy0">&lt;=</span> <span class="kw3">EVENT_TYPE_CHARGEN_END</span><span class="br0">&#41;</span> 
+                <span class="sy0">||</span> nEvent <span class="sy0">==</span> <span class="kw3">EVENT_TYPE_PLAYERLEVELUP</span> <span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, R<span class="st0">&quot;bdm_sys_chargen.ncs&quot;</span><span class="br0">&#41;</span>;
+                nEventHandled <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+&#160;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>nEventHandled<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="co1">//если событие не было обработано, оно отправляется в core-скрипт</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, RESOURCE_SCRIPT_MODULE_CORE<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Теперь жмите <b>File -&gt; Manage modules -&gt;</b> кнопка <b>Properties</b>. Установите только что написанный скрипт в качестве модуль-скрипта(<b>module script</b>)
+Теперь наш новый скрипт выполняет функцию модуль-скрипта.
+Посла обработки события, наш модуль-скрипт решает, нужно ли отправлять событие в <b>module_core</b> для дальнейшей обработки.
+Первое описанное нами событие носит название <b>EVENT_TYPE_MODULE_START</b> и отвечает за начало процесса генерации персонажа. В этом случае после начала генерации, событие передается в <b>module_core</b>, где собственно и происходит сам процесс генерации.
+</p><p><b>ПРИМЕЧАНИЕ:</b> <i>код из других секций скрипта не нуждается в редактировании. Вообще не понятно, за что он отвечает.</i>
+</p><p>Дальше мы займемся целой группой событий. Если вы заглянете в нижнюю часть <b>module_core</b>-скрипта, то увидите, что часть написанного там за исключением некоторых деталей совпадает с нашим кодом, отвечающим за обработку событий. Вместо того, чтобы пропустить наши события, генерирующие персонажа через sys_chargen.nc, мы пропустим их через наш собственный скрипт под названием bdm_sys_chargen.ncs, который мы вскоре напишем. 
+Если нам попадется одно из событий, генерирующих персонажа, мы должны обработать его сами и освободить от этого core-скрипт, поэтому мы установим флагу <b>nEventHandled</b> значение <b>TRUE</b>(истина): <b>nEventHandled = TRUE;</b>
+Заметьте, что все другие события обрабатываться нашим модуль-скриптом не будут, они сразу же направятся к core-скрипту.
+Перед созданием bdm_sys_chargen скрипта нам понадобятся несколько новых констант. В папке <b>\Backgrounds demo\_Core Includes</b> создайте новый скрипт с названием <b>bdm_2da_constants_h</b>.
+Откройте его и напишите внутри следующее:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// -----------------------------------------------------------------------------</span>
+<span class="co1">// Backgrounds - rules/backgrounds.xls</span>
+<span class="co1">// -----------------------------------------------------------------------------</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> BACKGROUND_SERVANT <span class="sy0">=</span> <span class="nu0">1</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> BACKGROUND_APPRENTICE <span class="sy0">=</span> <span class="nu0">2</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> BACKGROUND_TRAVELLER <span class="sy0">=</span> <span class="nu0">3</span>;</pre></div></div>
+<p>Три константные переменные позволяют нам сослаться на второстепенные параметры персонажа, которые мы указали в <b>2DA</b>-файлах, без использования их <b>ID</b>-номеров. Подобные константы также делаю ваш код более читабельным. Если во время редактирования вам нужно добавить новые параметры в <b>2D</b>A-файлы, вы можете также создать для них переменные в этом скрипте(<b>bdm_2da_constants_h</b>). С этого момента, вместо оригинальных констант(которые вы можете увидеть в скрипте под названием <b>2da_constants_h</b>) мы будем использовать собственные. Это значит, что мы должны найти все участки, где используются эти оригинальные переменные и заменить их своими.
+В папке <b>\Backgrounds demo\_Systems</b> создайте новый скрипт с названием <b>bdm_sys_chargen</b> и напишите в нем: 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;bdm_sys_chargen_h&quot;</span>
+<span class="co2">#include &quot;log_h&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CHARGEN_QUICKSTART_QUICK <span class="sy0">=</span> <span class="nu0">0</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CHARGEN_QUICKSTART_NORMAL <span class="sy0">=</span> <span class="nu0">1</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> CHARGEN_QUICKSTART_ADVANCED <span class="sy0">=</span> <span class="nu0">2</span>;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> _RunChargen<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRace, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nClass, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChar, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nBackground<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    Chargen_InitializeCharacter<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+    Chargen_SelectGender<span class="br0">&#40;</span>oChar,<span class="kw3">GENDER_MALE</span><span class="br0">&#41;</span>;
+    Chargen_SelectRace<span class="br0">&#40;</span>oChar,nRace<span class="br0">&#41;</span>;
+    Chargen_SelectCoreClass<span class="br0">&#40;</span>oChar,nClass<span class="br0">&#41;</span>;
+    Chargen_SelectBackground<span class="br0">&#40;</span>oChar, nBackground,FALSE<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEquipIdx <span class="sy0">=</span> Chargen_GetEquipIndex<span class="br0">&#40;</span>nRace, nClass, nBackground<span class="br0">&#41;</span>;
+    Chargen_InitInventory<span class="br0">&#40;</span>oChar,<span class="nu0">0</span>,nEquipIdx<span class="br0">&#41;</span>;
+    Chargen_SpendAttributePoints<span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_STRENGTH</span>, <span class="nu0">3</span>,FALSE<span class="br0">&#41;</span>;
+    Chargen_SpendAttributePoints<span class="br0">&#40;</span>oChar,<span class="kw3">PROPERTY_ATTRIBUTE_DEXTERITY</span>, <span class="nu0">2</span>,FALSE<span class="br0">&#41;</span>;
+&#160;
+<span class="br0">&#125;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a>   ev              <span class="sy0">=</span>   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>     nEventType      <span class="sy0">=</span>   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a>  oChar           <span class="sy0">=</span>   <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nMode;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nInt0 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev,<span class="nu0">0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nInt1 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>ev,<span class="nu0">1</span><span class="br0">&#41;</span>;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Отладка.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_EVENTS_CHARGEN</span>,<span class="st0">&quot;bdm_sys_chargen&quot;</span>,<span class="st0">&quot;Chargen Event:&quot;</span> <span class="sy0">+</span> Log_GetEventNameById <span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span> 
+               <span class="sy0">+</span> <span class="st0">&quot; &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nInt0<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;,&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nInt1<span class="br0">&#41;</span>, oChar<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventHandled <span class="sy0">=</span> FALSE;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a> <span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <span class="co1">// Срабатывает, когда игрок кликает по иконке одной из доступных</span>
+        <span class="co1">// предысторий.</span>
+        <span class="co1">//</span>
+        <span class="co1">// nInt0 - Constant BACKGROUND_* integer</span>
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_CHARGEN_SELECT_BACKGROUND</span><span class="sy0">:</span> <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nBackground <span class="sy0">=</span> nInt0;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Выбор предыстории для игрока и установка соответствующих предыстории</span>
+            <span class="co1">// plot-флагов.</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            Chargen_InitializeCharacter<span class="br0">&#40;</span>oChar,TRUE<span class="br0">&#41;</span>;
+            Chargen_SelectGender<span class="br0">&#40;</span>oChar,GetCreatureGender<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+            Chargen_SelectRace<span class="br0">&#40;</span>oChar,<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType"><span class="kw4">GetCreatureRacialType</span></a><span class="br0">&#40;</span>oChar<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+            Chargen_SelectCoreClass<span class="br0">&#40;</span>oChar,GetCreatureCoreClass<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+            bdm_Chargen_SelectBackground<span class="br0">&#40;</span>oChar, nBackground, FALSE<span class="br0">&#41;</span>;
+            bdm_Chargen_SetupPlotFlags<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+&#160;
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <span class="co1">// Проверяет шаблоны, указанные в 2DA-файлах</span>
+            <span class="co1">// и, руководствуясь ими создает герою инвентарь.</span>
+            <span class="co1">// -----------------------------------------------------------------</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nClass <span class="sy0">=</span> GetCreatureCoreClass<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRace <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType"><span class="kw4">GetCreatureRacialType</span></a><span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEquipIdx <span class="sy0">=</span> Chargen_GetEquipIndex<span class="br0">&#40;</span>nRace, nClass, nBackground<span class="br0">&#41;</span>;
+           Chargen_InitInventory<span class="br0">&#40;</span>oChar,<span class="nu0">0</span>,nEquipIdx<span class="br0">&#41;</span>;
+            nEventHandled <span class="sy0">=</span> TRUE;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> <span class="kw3">EVENT_TYPE_CHARGEN_END</span><span class="sy0">:</span> <span class="br0">&#123;</span>
+            nMode <span class="sy0">=</span> nInt0;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nQuickStart <span class="sy0">=</span> nInt1;
+            <span class="co1">// 0 - quickstart</span>
+            <span class="co1">// 1 - normal    \</span>
+            <span class="co1">// 2 - advanced  / то же самое</span>
+            Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_CHARACTER</span>,<span class="st0">&quot;bdm_sys_chargen&quot;</span>,<span class="st0">&quot;MODE: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span>nMode<span class="br0">&#41;</span> 
+                       <span class="sy0">+</span> <span class="st0">&quot;, Quick Start: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span>nQuickStart<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nMode <span class="sy0">==</span> CHARGEN_MODE_CREATE <span class="sy0">&amp;&amp;</span> nQuickStart <span class="sy0">==</span> CHARGEN_QUICKSTART_QUICK<span class="br0">&#41;</span><span class="br0">&#123;</span>
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_CHARACTER</span>,<span class="st0">&quot;bdm_sys_chargen&quot;</span>,<span class="st0">&quot;Установка стандартный параметров для игрового персонажа.&quot;</span><span class="br0">&#41;</span>;
+&#160;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRandClass <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abs"><span class="kw4">abs</span></a><span class="br0">&#40;</span><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLowResTimer"><span class="kw4">GetLowResTimer</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">%</span>3<span class="br0">&#41;</span><span class="sy0">+</span><span class="nu0">1</span><span class="br0">&#41;</span>;
+&#160;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nRandClass <span class="sy0">==</span> CLASS_ROGUE <span class="sy0">||</span> nRandClass <span class="sy0">==</span> CLASS_WARRIOR<span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        _RunChargen<span class="br0">&#40;</span>RACE_HUMAN, nRandClass, oChar, BACKGROUND_SERVANT <span class="br0">&#41;</span>;
+&#160;
+                        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_SERVANT, TRUE<span class="br0">&#41;</span>;
+                    <span class="br0">&#125;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <span class="co1">// mage</span>
+                    <span class="br0">&#123;</span>
+                        _RunChargen<span class="br0">&#40;</span>RACE_HUMAN, nRandClass, oChar, BACKGROUND_APPRENTICE <span class="br0">&#41;</span>;
+                        WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_APPRENTICE, TRUE<span class="br0">&#41;</span>;
+                    <span class="br0">&#125;</span>
+                    Chargen_SetNumTactics<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCanLevelUp"><span class="kw4">SetCanLevelUp</span></a><span class="br0">&#40;</span>oChar,Chargen_HasPointsToSpend<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+                    SendEventModuleChargenDone<span class="br0">&#40;</span><span class="st0">&quot;&quot;</span>, <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+                    nEventHandled <span class="sy0">=</span> TRUE;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>    <span class="co1">//end switch</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>nEventHandled<span class="br0">&#41;</span><span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>ev, R<span class="st0">&quot;sys_chargen.ncs&quot;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+<span class="br0">&#125;</span></pre></div></div>
+<p>В оригинальном <b>sys_chargen</b> скрипте есть два события, связанные с генерацией персонажа. Мы должны их отредактировать. Первое называется <b>EVENT_TYPE_CHARGEN_SELECT_BACKGROUND</b>, второе - <b>EVENT_TYPE_CHARGEN_END</b>.
+Во втором событии мы должны изменить только случай, в котором персонаж был создан в <b>Режиме быстрой загрузки</b>. Нашей целью является изменение всего, что надо и передача всех оставшихся событий в оригинальный sys_chargen скрипт. Сравните <b>sys_chargen</b> от <b>Bioware</b> с тем, что вы только что создали.
+</p><p>Вы заметите, что мы подключили скрипт с названием <b>bdm_sys_chargen_h</b> и использовали функции с префиксом <b>bdm_</b>. Эти функции будут содержаться в скрипте, который мы сейчас напишем.
+По сути, они являются усовершенствованными аналогами функций с инклуд-файла под названием <b>sys_chargen_h</b>.
+В папке <b>\Backgrounds demo\_Systems\Includes</b> создайте новый скрипт и назовите его <b>bdm_sys_chargen_h</b>. 
+Внутри напишите это:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co2">#include &quot;sys_chargen_h&quot;</span>
+<span class="co2">#include &quot;bdm_2da_constants_h&quot;</span>
+<span class="co2">#include &quot;wrappers_h&quot;</span>
+<span class="co2">#include &quot;plt_bdm_000pt_backgrounds&quot;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> bdm_Chargen_SelectBackground<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChar, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nBackground, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bUnApply <span class="sy0">=</span> FALSE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+     Log_Chargen<span class="br0">&#40;</span><span class="st0">&quot;bdm_Chargen_SelectBackground&quot;</span>,<span class="st0">&quot;-- &quot;</span> <span class="sy0">+</span> <span class="br0">&#40;</span>bUnApply<span class="sy0">?</span><span class="st0">&quot;Un&quot;</span><span class="sy0">:</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span> <span class="sy0">+</span><span class="st0">&quot;Selecting BG: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ToString"><span class="kw4">ToString</span></a><span class="br0">&#40;</span>nBackground<span class="br0">&#41;</span>,oChar<span class="br0">&#41;</span>;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// 1. Установка переменной предыстории</span>
+    <span class="co1">//          - создание внешности героя (или использование одной из заготовок)</span>
+    <span class="co1">//          </span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>bUnApply<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_SIMPLE_BACKGROUND, <span class="nu0">0.0</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+       <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty"><span class="kw4">SetCreatureProperty</span></a><span class="br0">&#40;</span>oChar, PROPERTY_SIMPLE_BACKGROUND, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToFloat"><span class="kw4">IntToFloat</span></a><span class="br0">&#40;</span>nBackground<span class="br0">&#41;</span>, <span class="kw3">PROPERTY_VALUE_BASE</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// 2. Игрок получает один навык.</span>
+    <span class="co1">//    - найти нужный навык в файле backgrounds.xls</span>
+    <span class="co1">//    - присвоить его игроку.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility <span class="sy0">=</span> ChargenGetBackgroundSkill<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType"><span class="kw4">GetCreatureRacialType</span></a><span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>, nBackground<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAbility<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        _AddAbility <span class="br0">&#40;</span>oChar, nAbility, bUnApply<span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> bdm_Chargen_SetupPlotFlags<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oChar<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nRace       <span class="sy0">=</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureRacialType"><span class="kw4">GetCreatureRacialType</span></a><span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nBackground <span class="sy0">=</span> GetPlayerBackground<span class="br0">&#40;</span>oChar<span class="br0">&#41;</span>;
+&#160;
+    Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_CHARACTER</span>,<span class="st0">&quot;bdm_sys_chargen_h&quot;</span>,<span class="st0">&quot;Установка plot-флагов расы: &quot;</span> 
+               <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span>nRace<span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;, background: &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span>nBackground<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// Сперва происходит инициализация всех флагов</span>
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_SERVANT,FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_APPRENTICE,FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_DWARF_TRAVELLER,FALSE<span class="br0">&#41;</span>;
+    WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_ELF_TRAVELLER,FALSE<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a> <span class="br0">&#40;</span>nBackground<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> BACKGROUND_SERVANT<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_SERVANT,TRUE<span class="br0">&#41;</span>; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> BACKGROUND_APPRENTICE<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_APPRENTICE,TRUE<span class="br0">&#41;</span>; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> BACKGROUND_TRAVELLER<span class="sy0">:</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nRace<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> RACE_DWARF<span class="sy0">:</span> WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_DWARF_TRAVELLER,TRUE<span class="br0">&#41;</span>; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> RACE_ELF<span class="sy0">:</span> WR_SetPlotFlag<span class="br0">&#40;</span>PLT_BDM_000PT_BACKGROUNDS, BDM_GEN_BACK_ELF_TRAVELLER,TRUE<span class="br0">&#41;</span>; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Давайте рассмотрим эти две функции. Для начала сравните их с оригинальными. Наша функция <b>bdm_Chargen_SelectBackground</b> является более универсальной и может работать с любыми предысториями. Мы убрали сложные значения, определяющие начальные возможности для персонажа каждой предыстории и теперь используем функцию <b>ChargenGetBackgroundSkill()</b>, которая берет возможности с <b>2DA</b>-файла предыстории, который мы отредактировали раньше (вспомните три последние столбца, определяющих начальные способности в зависимости от расы и предыстории).
+Если этот способ вам не подходит, и вам нужна более сложная логика распределения возможностей (как в предыстории аристократа), вы всегда можете вернуться к методу кодирования, как это сделали <b>Bioware</b>.
+Вторая функция называется <b>bdm_Chargen_SetupPlotFlags()</b>. Что она делает, можно понять из названия. Помните <b>plot</b>-файл, созданный нами ранее? Здесь мы устанавливаем нужный нам флаг в зависимости от выбранной расы и предыстории.
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D0.BA.D0.B0_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BE.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B8">Проверка работоспособности</span></h2>
+<p>Теперь скомпилируйте ваши скрипты и экспортируйте их в модуль. Также убедитесь, что вы экспортировали вашу <b>string</b>-таблицу.
+</p><p><b>ВАЖНО!</b> <i>После экспорта всегда проверяйте, есть ли что-то в папке <b>\Dragon Age\packages\core\override</b>. Наличие каких-либо файлов может привести к багу и повредить оригинальную кампанию.</i>
+</p><p>Теперь вы можете запустить игру и увидеть созданные вами предыстории. Если вы хотите проверить, правильно ли установлены <b>plot</b>-флаги, добавьте в стартовую локацию непися, создайте для него диалоги, в котором каждая строчка будет выводиться в зависимости от расы\класса\предыстории\пола героя. Также стоит убедиться, что герой получает возможности, указанные в <b>2DA</b>-файлах.
+</p><p><b>NOTE</b> <i>Кажется, изменить сообщение, которое выводится в начале генерации персонажа невозможно.</i>
+</p>
+<table width="400" style="background-color:#eefaee; border: 1px solid #aca899; margin:2px; float:right;"><tr>
+<td valign="top" align="left" width="70"><img alt="Arrowblue.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/Arrowblue.png" width="50" height="30" /></td>
+<td><i>- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></td>
+</tr></table>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D1.86.D0.B8.D0.BE.D0.BD.D0.B0.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D1.80.D0.B0.D1.81.D1.88.D0.B8.D1.80.D0.B5.D0.BD.D0.B8.D1.8F">Опциональные расширения</span></h2>
+<p>У Bioware есть парочка других скриптов, которые имеют отношение к константам предысторий. Их можно не менять, так как они нигде не используются. Скрипт из туториала по генерации использует проверку предыстории, но вам она не нужна, разве что вы хотите использовать свой модуль для написания туториала. Также есть, по крайней мере, один отладочный скрипт, который использует предыстории из оригинала (чтобы гарантировано установить нужный <b>plot</b>-флаг). Если вы хотите, чтобы ваши предыстории обрабатывались подобным образом, вы должны написать для себя схожий скрипт.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D1.8F_.D1.80.D0.B0.D1.81.D1.8B_.D0.B8_.D0.BF.D0.BE.D0.BB.D0.B0">Описания расы и пола</span></h2>
+<p>Если действие вашего модуля происходит не в Ферелдене, вы, возможно, пожелаете изменить описания расы и пола, которое появляется во время генерации персонажа. Описание расы содержится в столбце <b>“Description”</b>(описание) в документе <b>RACE_base 2DA</b>. Вам просто надо изменить строчки, указанные там. Используйте значения <b>ID</b>-номеров в районе <b>100000000</b>. К сожалению, описание пола сложно закодировано в <b>string</b>-переменной с <b>ID</b>-номером <b>377283</b>. К счастью, вы можете сделать локальную версию этой строчки. Они будет применяться исключительно для вашей кампании.
+Или же, если вы опытный пользователь и знакомы с <b>UI</b> туториалом, то нужная нам строчка содержится в файле <b>Localization.as</b> в виде переменной <b>LOC_GENDER_DESCRIPTION = 377283</b>, которая позже используется в файле <b>RaceGenderScene.as</b>. После редактирования файла <b>Localization.as</b> вы должны скомпилировать его и внедрить в соответствующие <b>.gfx</b>-файлы.
+</p>
+<h2><span class="mw-headline" id=".D0.97.D0.B0.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.B8.D0.B5">Заключение</span></h2>
+<p>В этом туториале мы продемонстрировали возможность редактирования игровых предысторий без редактирования оригинальных скриптов. По логике, подобных алгоритм действий можно использовать и для изменения других аспектов игры, например добавления новой расы или класса. В этом случае скрипт, написанный в туториале должен быть дополнен событиями, обрабатывающими процессы выбора класса и расы.
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial" title="Backgrounds tutorial">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

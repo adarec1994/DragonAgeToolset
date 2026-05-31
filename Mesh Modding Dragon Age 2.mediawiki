@@ -1,0 +1,21 @@
+<p>Guides on how to mesh mod Dragon Age 2
+</p>
+<h1><span class="mw-headline" id="Modding_Tools.3D">Modding Tools=</span></h1>
+<p><a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage2/mods/4030">Blender Script</a> 
+</p><p><a rel="nofollow" class="external text" href="http://forum.xentax.com/viewtopic.php?p=52329#p52329">DA2 Blender Import Tool (you will need an account to download, but it is free)</a>
+</p><p><a rel="nofollow" class="external text" href="https://sapphimods.me/tutorials/dragon-age-texture-guide/">Dragon age texture guide – Exhaustive</a> 
+</p><p>TLKEdit: <a rel="nofollow" class="external text" href="http://www.nexusmods.com/neverwinter2/mods/931/?">1</a> OR <a rel="nofollow" class="external text" href="https://neverwintervault.org/project/nwn1/other/tool/tlkedit2-2datlkgfferf-editor">2</a> 
+</p><p><a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage2/mods/4043">QS Modding Resources Grab-Bag </a>
+</p>
+<h2><span class="mw-headline" id="Common_Issues">Common Issues</span></h2>
+<p>The blender script has a bug where, in importing a msh/mmh which is the first or second on the list, it won't work. Make some copies of it and try again.
+</p>
+<h2><span class="mw-headline" id="Tutorials">Tutorials</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=mvuy4LH1kNA&amp;list=PLcuNSTFtRys8VmiUsABT7Hy481rFlyL7CDA2">Mesh Modding Video Tutorial by Sloane Schoolcraft</a>
+</p><p><a rel="nofollow" class="external text" href="https://dragonagemods.tumblr.com/post/146125895344/for-the-anon-who-requested-it-this-tutorial-is">Extracting DA2 meshes</a>
+</p><p><a rel="nofollow" class="external text" href="https://wiki.nexusmods.com/index.php/Dragon_Age_II">Dragon Age II tutorials on Nexus</a>
+</p><p><a rel="nofollow" class="external text" href="http://danceoffools.tumblr.com/post/149178737714">danceoffool's GIMP texture tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="http://danceoffools.tumblr.com/post/150770358194">danceoffool's DA2 Mesh Exportation Tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=fg6Ge3DSr-Q">Padme4000 Custom Hawke Tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="https://dragonagemods.tumblr.com/tagged/da2">DA2 tag on dragonagemods tumblr</a>
+</p>

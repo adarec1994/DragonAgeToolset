@@ -1,0 +1,28 @@
+<ul><li><b>Version found:</b> 1.0.1008.0 (Installer Version 1.01)</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>When exporting a module, unnecessary and potential harmful files are created in the \packages\core\overide folder.
+</p><p>This happens when, for example, you select all resources for your module in the palette (excluding any core resource folders), and export without dependent resources. 
+</p><p>The potentially dangerous resources are plot files, including (but possibily not limited to):
+</p>
+<ul><li>plt_cod_aow_spellcombo9.plo</li>
+<li>plt_gen00pt_backgrounds.plo</li>
+<li>plt_gen00pt_party.plo</li>
+<li>plt_genpt_core_achievements.plo</li>
+<li>plt_tut_combat_injury.plo</li>
+<li>plt_tut_combat_injury_lots.plo</li>
+<li>plt_tut_control_followers.plo</li>
+<li>plt_tut_friendly_aoe.plo</li>
+<li>plt_tut_specialty_class.plo </li></ul>
+<p>The other files are script header source files (.nss). While these cannot have any impact on gameplay, they are unnecessary clutter.
+</p><p>This may not be the full extent of the problem. For example, exporting a cutscene makes folders called ts_cut_blentree and ts_dlgprev_blentree in the \packages\core\overide folder.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Under most circumstances, it is wise and safe to delete the contents of the \packages\core\overide folder before playing the game or doing a Builder to Player export.
+</p><p>Windows Vista example - use Notepad to put the following lines into text file. Fill in the USERNAME. Change the file extension to .bat and double-click on it to execute. 
+</p>
+<pre>
+erase "c:\Users\USERNAME\Documents\Bioware\Dragon Age\packages\core\override\toolsetexport\*.*" /S /Q 
+</pre>
+<p>There a few exceptional cases in which resources must be located in \packages\core\overide - see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatibility#Resource_Scope" title="Compatibility"> Resource Scope</a>. These might be regarded as bugs, too.
+</p>

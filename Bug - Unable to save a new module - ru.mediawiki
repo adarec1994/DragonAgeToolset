@@ -1,0 +1,28 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Невозможно сохранить новый модуль</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Bug:_Unable_to_save_a_new_module/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<ul><li><b>Версия тулсета:</b> 1.0.1008.0 </li>
+<li><b>Статус:</b> Открыта</li></ul>
+<h2><span class="mw-headline" id=".D0.9E.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5">Описание</span></h2>
+<p>Некоторые пользователия не могли создать новый модуль, при этом они получали такие сообщения:
+</p><p><code>String or binary data would be truncated (строка или бинарные данные будут обрезаны).</code> и <code>CDBModule::Add caught an exception: Bad HRESULT: 80040e57 (произошло исключение)</code>
+</p><p><a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/8/index/184494/1">Тема форума на social.bioware.com по данной ошибке</a>.
+</p><p>Эта проблема до сих пор не решена. По всей видимости эта проблема каким-то образом связана с именем учётной записи в винде, например слишком длинное имя, особые символы в имени.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; line-height: 1.1em; padding: 1em; width: 95%;">Мы пытаемся определить источники ошибки и найти программный способ её решения.</div>
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.BA.D0.B0">Обработка</span></h2>
+<p>На настоящий момент единственным способом решить данную проблему остаётся работа в учётной записи имя которой не слишком длинное и не включает специальных символов.
+</p><p><br />
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Unable%20to%20save%20a%20new%20module" title="Bug: Unable to save a new module">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

@@ -1,0 +1,269 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible collapsed">
+
+<tr align="center">
+<th colspan="2">
+<p><b>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource palette">Resource Palette</a></b>
+</p>
+<table style="background-color:#ece9d8; border: 1px solid #aca899; margin:2px;">
+
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a>
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources" title="Designer Resources"><img alt="IconAll.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/a0/IconAll.png" width="16" height="11" /></a>
+</td></tr></table>
+</th></tr>
+
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resources</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animations</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">Level Layouts</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20editor" title="Material editor">Materials</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model"><img alt="IconModel.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e9/IconModel.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Models</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20editor" title="VFX editor">Visual Effects</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FaceFX" title="FaceFX">FaceFX</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20and%20music" title="Sound and music">Sound and music</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><strong class="selflink">Designer Resources</strong></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">Module</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area"><img alt="IconArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/IconArea.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list"><img alt="IconAreaList.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/07/IconAreaList.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">Area list</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character"><img alt="IconCharacter.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/45/IconCharacter.png" width="12" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Character" title="Character">Character</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script"><img alt="IconClientScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/83/IconClientScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Client%20script" title="Client script">Client script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation"><img alt="IconConversation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/20/IconConversation.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Conversation" title="Conversation">Conversation</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature"><img alt="IconCreature.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/9d/IconCreature.png" width="14" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene"><img alt="IconCutscene.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/IconCutscene.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item"><img alt="IconItem.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d2/IconItem.png" width="14" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map"><img alt="IconMap.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/IconMap.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map" title="Map">Map</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant"><img alt="IconMerchant.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/IconMerchant.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchant</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable"><img alt="IconPlaceable.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/3/30/IconPlaceable.png" width="13" height="13" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">Placeable</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot"><img alt="IconPlot.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/IconPlot.png" width="12" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot" title="Plot">Plot</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script"><img alt="IconScript.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1e/IconScript.png" width="12" height="14" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Script</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound"><img alt="IconSound.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/97/IconSound.png" width="10" height="12" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound" title="Sound">Sound</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage"><img alt="IconStage.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f6/IconStage.png" width="16" height="16" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">Stage</a>
+</td></tr>
+<tr>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger"><img alt="IconTrigger.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c6/IconTrigger.png" width="16" height="15" /></a> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">Trigger</a>
+</td></tr>
+<tr>
+<th colspan="2"> <u><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/List%20of%20file%20types" title="List of file types">File Types</a></b></u>
+</th></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA file">2DA file</a>
+</td></tr>
+<tr>
+<td> </td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF file">GFF file</a>
+</td></tr></table>
+</td></tr></table>
+<p>The term <strong class="selflink">design resource</strong>  is used to describe the subset of resources that are created within the  toolset by designers. It is used to distinguish resources created  within the toolset by artists (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">art resources</a>)  and the primary source files created using external applications (such  as modelling applications, sound editors, image editors, etc.). 
+</p><p>All design resources are stored in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset" title="Dragon Age Toolset (page does not exist)">Dragon Age Toolset</a>'s <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Database" title="Database">database</a> and must be exported prior to creating a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">Builder to player</a>, or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">DAZIP</a>, file.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Organisation"><span class="tocnumber">1</span> <span class="toctext">Organisation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Creating_resources"><span class="tocnumber">2</span> <span class="toctext">Creating resources</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Modifying_resources"><span class="tocnumber">3</span> <span class="toctext">Modifying resources</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Deleting_resources"><span class="tocnumber">4</span> <span class="toctext">Deleting resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Dependencies"><span class="tocnumber">4.1</span> <span class="toctext">Dependencies</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Circular_dependencies"><span class="tocnumber">4.2</span> <span class="toctext">Circular dependencies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Exporting_resources"><span class="tocnumber">5</span> <span class="toctext">Exporting resources</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Resource_Properties"><span class="tocnumber">6</span> <span class="toctext">Resource Properties</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Organisation">Organisation</span></h2>
+<p>All design resources (and the sound and model source files) are listed in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20palette" title="Resource Palette">Resource Palette</a>, normally located on the right-hand  side of the toolset. The resources are categorized into types which can  be displayed by clicking on the appropriate icon in the resource  palette's toolbar. 
+</p><p>In a new module the resources displayed are all from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>  module and used by all modules (including the Single Player campaign)  created in the toolset and are best left untouched. A better idea is to  copy existing resources into your own module. <i>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module" title="Creating a module">Creating a module</a></i>
+</p><p>Resources are named using a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions#Resource_Naming_Convention" title="Naming conventions">resource naming convention</a>  and organised using a folder structure for convenience. While advisable  these conventions are not compulsory and is up to a designer to follow  them or institute their own.
+</p><p>Each resource type opens up a  different editor in the toolset, as  requirements for editing are  different. The properties of each is explained at the particular  resource type.
+</p>
+<h2><span class="mw-headline" id="Creating_resources">Creating resources</span></h2>
+<p>You can create a new resource either from the "File" menu, or by right-clicking on the resource palette, and selecting "New". You'll be presented with a list of the sorts of resources that you can create.
+</p><p>Once you select a resource type to create, you'll be presented with a window where you can enter some of the basic resource properties. The only thing that must be filled out is Resource Name, the name by which this resource will be known by the game engine, which must be unique across all modules in the toolset's database..
+</p><p>For a description of the properties see information for the <b>General</b> tab in the <a href="#Resource_Properties">Resource Properties</a> section below.
+</p>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 335px"><div style="width: 335px">
+			<div class="thumb" style="width: 330px;"><div style="margin:15px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20resource.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/111px-New_resource.png" width="111" height="175" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/167px-New_resource.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/223px-New_resource.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>Create New Resource menu
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 335px"><div style="width: 335px">
+			<div class="thumb" style="width: 330px;"><div style="margin:16.5px auto;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cnr.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1d/Cnr.png/300px-Cnr.png" width="300" height="172" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1d/Cnr.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1d/Cnr.png 2x" /></a></div></div>
+			<div class="gallerytext">
+<p>New Resource properties
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Modifying_resources">Modifying resources</span></h2>
+<p>After a resource, such as a placeable, has been created and placed in your areas, you might want to customize some of those instances. For example, you can change some of the properties of the placed instances. But if you change the properties of the resource itself (using the palette menus), the placed instances will not be updated to reflect your changes. To push your changes in the palette resource down to the placed instances, use the "Refresh" menu item on the palette menu. Refresh will update all instances in all areas, even if the areas are not open in the toolset.
+</p>
+<h2><span class="mw-headline" id="Deleting_resources">Deleting resources</span></h2>
+<p>A resource can't be deleted while it's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Checking%20in%20and%20checking%20out%20resources" title="Checked out">checked out</a>. To delete a resource, either check the resource back in or undo the checkout first. You can then delete it by selecting it in the resource palette and right-clicking on it to get a menu with the "delete" command.
+</p><p>To recover a deleted resource, select the "Deleted Resources" command from the "Tools" menu. This will bring up a deleted resource browser that allows you to examine and restore deleted resources.
+</p>
+<h3><span class="mw-headline" id="Dependencies">Dependencies</span></h3>
+<p>The toolset has some built-in safety mechanisms to ensure that resources don't wind up referencing non-existent resources as dependencies. For example, it will refuse to delete a resource that another resource has as a dependency. If you had an area layout with a creature in it, you wouldn't be able to delete the creature's template from your database until you'd removed it from the area layout first.
+</p><p>This can interact with checked out resources in a potentially non-obvious way. If you check out the area layout and remove the creature, the toolset still won't let you delete the creature's template until you actually check in the layout. That's because if you were to delete the creature and then undo your area checkout you'd wind up with an area layout referencing a deleted creature template.
+</p><p>If you wish to delete resources, make sure that all of the other resources that may have depended on it are checked in beforehand.
+</p>
+<h3><span class="mw-headline" id="Circular_dependencies">Circular dependencies</span></h3>
+<p>It can sometimes occur that resource A references resource B, which references resource A. One set of resource where this is commonly possible are <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">areas</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage" title="Stage">stages</a>; an area references a stage that's placed in it, and the stage can itself reference the area. Another common pairing is a plot and its associated plot script.
+</p><p>The only way to delete resources involved in a circular dependency chain is to edit one or more of the resource to break the chain. For example, you could edit the area to remove the stage before deleting the stage, and then delete the area afterward. The toolset doesn't recognize a group of deletions as a single transaction.
+</p>
+<h2><span class="mw-headline" id="Exporting_resources">Exporting resources</span></h2>
+<dl><dd><i>See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module" title="Exporting a module">Exporting a module</a></i></dd></dl>
+<h2><span class="mw-headline" id="Resource_Properties">Resource Properties</span></h2>
+<div class="floatright"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Resource%20properties.png"><img alt="Resource properties.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Resource_properties.png" width="330" height="447" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Resource_properties.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/Resource_properties.png 2x" /></a></div> Every resource has the same set of basic properties that can be viewed by right-clicking on it in the palette window and selecting <b>Properties</b> to open the <b>Resource Properties</b> pop-up window.
+<p>In order to edit any of a resource's properties, for example to change its name, you must <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Checking%20in%20and%20checking%20out%20resources" title="Check in">check it in</a> before opening the Resource Properties pop-up window. Moreover one the changes have been applied be sure to right click on the resource name once  more and select <b>Refresh</b> to update all the instances in the  module with the new changes. 
+</p><p>The <b>General</b> tab displays the following editable properties:
+</p>
+<ul><li> <b>Resource Name</b> -  The name of a resource must be unique across the entire database (not  just the current module) and must be in lower case. When the resource is  created this name is also set as its tag (the tag must be in lower case  also). </li></ul>
+<ul><li> <b>Folder</b> -  Determines the position of a resource within the Resource Palette's  folder structure for that type of resource. Changing this path will  effectively move a resource to another folder. This is only for  navigational aid. </li></ul>
+<ul><li> <b>Module</b> - Determines the which module and/or which folder a resource will be exported to: 
+<ul><li> "Core Game Resources" means the resource will be exported to the <code>&lt;My Documents&gt;\BioWare\Dragon Age\AddIns\&lt;module&gt;\core\override\toolsetexport\</code> folder.</li>
+<li> "Single Player"  means the resource will be exported to the <code>&lt;My Documents&gt;\BioWare\Dragon Age\Modules\Single Player\override\toolsetexport\</code> folder.</li>
+<li> &lt;module&gt; means the resource will be exported to the <code>&lt;My Documents&gt;\BioWare\Dragon Age\AddIns\&lt;module&gt;\module\override\toolsetexport\</code> folder.</li></ul></li></ul>
+<ul><li> <b>Owner Module</b> -  Determines which modules a resource is accessible in. A resource will  only be accessible, i.e. appear in the resource palette, if it is owned  by the currently module or one of the module's in the current module's  hierarchy. Changing this setting will effectively move an resource from  one module to another. Note that a newly created module will open in the  current module regardless of its owner if the <b>Checkout resource after creation</b> attribute was checked.</li></ul>
+<ul><li> <b>State</b> - Indicates the resources current state: 
+<ul><li> NONE</li>
+<li> Written </li>
+<li> Edited </li>
+<li> Pre-localization </li>
+<li> Localization </li>
+<li> Voice over </li>
+<li> Voice over ready</li></ul></li></ul>
+<p>The <b>References</b> tab lists all of the other resources that this one contains references to.
+</p><p>The <b>Referenced By</b> tab lists all of the other resources that contain references to this one.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20list" title="Resource list">resource list</a> provides a quick overview of the main resource types.</li></ul>
+<ul><li> The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor" title="String editor">String editor</a> is a tool that allows access to all text that might be presented to the player.</li></ul>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20layouts%20used%20in%20the%20single%20player%20module" title="Area layouts used in the single player module">Area layouts used in the single player module</a></li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

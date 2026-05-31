@@ -1,0 +1,258 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Lighting"><span class="tocnumber">1</span> <span class="toctext">Lighting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Basic_Lighting"><span class="tocnumber">1.1</span> <span class="toctext">Basic Lighting</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Render_Lighting"><span class="tocnumber">1.2</span> <span class="toctext">Render Lighting</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Lightmaps_.2F_Lightprobes"><span class="tocnumber">1.3</span> <span class="toctext">Lightmaps / Lightprobes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Making_a_Basic_Room"><span class="tocnumber">2</span> <span class="toctext">Making a Basic Room</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Create_a_new_level"><span class="tocnumber">2.1</span> <span class="toctext">Create a new level</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Setting_the_Grid"><span class="tocnumber">2.2</span> <span class="toctext">Setting the Grid</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#New_Room"><span class="tocnumber">2.3</span> <span class="toctext">New Room</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Spawning_Objects"><span class="tocnumber">2.4</span> <span class="toctext">Spawning Objects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Interiors"><span class="tocnumber">3</span> <span class="toctext">Interiors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Models"><span class="tocnumber">3.1</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Groups"><span class="tocnumber">3.2</span> <span class="toctext">Groups</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Connecting_Rooms"><span class="tocnumber">3.3</span> <span class="toctext">Connecting Rooms</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Populating_Rooms"><span class="tocnumber">3.4</span> <span class="toctext">Populating Rooms</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Best_Practices"><span class="tocnumber">3.5</span> <span class="toctext">Best Practices</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Tips_and_Tricks"><span class="tocnumber">3.6</span> <span class="toctext">Tips and Tricks</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Troubleshooting"><span class="tocnumber">3.7</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Exteriors"><span class="tocnumber">4</span> <span class="toctext">Exteriors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Creating_Terrain_Worlds"><span class="tocnumber">4.1</span> <span class="toctext">Creating Terrain Worlds</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Modifying_Terrain_Worlds"><span class="tocnumber">4.2</span> <span class="toctext">Modifying Terrain Worlds</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Materials"><span class="tocnumber">4.3</span> <span class="toctext">Materials</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Skyboxes"><span class="tocnumber">4.4</span> <span class="toctext">Skyboxes</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Creating_an_Exportable_Area"><span class="tocnumber">4.5</span> <span class="toctext">Creating an Exportable Area</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Texturing"><span class="tocnumber">5</span> <span class="toctext">Texturing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Loading_up_the_Palette"><span class="tocnumber">5.1</span> <span class="toctext">Loading up the Palette</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Texture_Settings"><span class="tocnumber">5.2</span> <span class="toctext">Texture Settings</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Important_Things_you_should_know"><span class="tocnumber">5.3</span> <span class="toctext">Important Things you should know</span></a>
+<ul>
+<li class="toclevel-3 tocsection-28"><a href="#Layering_Textures"><span class="tocnumber">5.3.1</span> <span class="toctext">Layering Textures</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Why_don.27t_my_textures_blend_well.3F"><span class="tocnumber">5.3.2</span> <span class="toctext">Why don't my textures blend well?</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Lighting">Lighting</span></h2>
+<ol><li> Basic lighting (or advanced lighting)</li>
+<li> Render Lighting</li>
+<li> Save the Lightmap</li>
+<li> Test the Level</li></ol>
+<h3><span class="mw-headline" id="Basic_Lighting">Basic Lighting</span></h3>
+<p>To light an area with basic lighting, do the following:
+</p><p>In the first room:
+</p>
+<ul><li> Static Light (Change Light Radius to 600)</li>
+<li> Ambient Light</li>
+<li> Light Probe</li></ul>
+<p>In all other rooms:
+</p>
+<ul><li> Static Light (Light Radius = 600)</li>
+<li> Light Probe</li></ul>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Light-basicsetup.jpg"><img alt="Light-basicsetup.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/15/Light-basicsetup.jpg" width="544" height="558" /></a>
+</p><p>Thats it! Now continue on to the "Render Lighting" step.
+</p>
+<h3><span class="mw-headline" id="Render_Lighting">Render Lighting</span></h3>
+<p>Just click the Render lightmaps button, and then wait for the light maps to render. When they are done rendering RE-OPEN the level you were working on, and click the visualization button on.
+Save the Lightmap (back to top)
+</p><p>With visualization on. Click the
+</p>
+<ul><li> Render lightprobes button - Wait for them to process</li>
+<li> Generate pathfinding</li>
+<li> From File Menu choose "Save As" and click save.</li></ul>
+<p>All you are doing is saving over top of the original map. This is needed to create or update the ERF lighting map that is created with your level.
+</p>
+<h3><span class="mw-headline" id="Lightmaps_.2F_Lightprobes">Lightmaps / Lightprobes</span></h3>
+<p>A light map is pre-rendered lighting information which:
+</p>
+<ul><li> Is only affected by baked and static lights.</li>
+<li> Makes things pretty.</li></ul>
+<h2><span class="mw-headline" id="Making_a_Basic_Room">Making a Basic Room</span></h2>
+<h3><span class="mw-headline" id="Create_a_new_level">Create a new level</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20New%20resource.png"><img alt="New resource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/200px-New_resource.png" width="200" height="314" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0a/New_resource.png/300px-New_resource.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0a/New_resource.png 2x" /></a>
+</p><p>Select "Room Level" and click next and finish.
+</p>
+<h3><span class="mw-headline" id="Setting_the_Grid">Setting the Grid</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20snap%20options.png"><img alt="Level editor snap options.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1f/Level_editor_snap_options.png" width="285" height="217" /></a>
+</p><p>Set the grid by clicking on the magnet button.
+</p>
+<ul><li> Set the grid size to 4</li>
+<li> Ensure the "Snap to surface" box is checked.</li></ul>
+<p>NOTE: You should always try to use the highest grid setting possible.
+</p>
+<h3><span class="mw-headline" id="New_Room">New Room</span></h3>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20newroommenu.jpg"><img alt="Level editor newroommenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ca/Level_editor_newroommenu.jpg" width="529" height="394" /></a>
+</p><p>Create a new room by right clicking on "New area" under "Room World". Then left click on the new room to select it.
+</p><p>Each room contains a list of models or objects including some lights, but it also has properties.
+</p>
+<h3><span class="mw-headline" id="Spawning_Objects">Spawning Objects</span></h3>
+<p>Right click on the "New Room" and select "Insert" then "Spawn Model"
+</p><p>You should see a window like this:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnmodelmenu.jpg"><img alt="Level editor spawnmodelmenu.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8e/Level_editor_spawnmodelmenu.jpg" width="766" height="463" /></a>
+</p><p>Click on any item in the window to select it then click on the small squareish icon in the top right hand corner of the window. It should look something like this:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20spawnitemwinprev.jpg"><img alt="Level editor spawnitemwinprev.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/75/Level_editor_spawnitemwinprev.jpg" width="700" height="362" /></a>
+</p><p>Go to the files labeled "dwi_" and select "dwi_livgroom_strt01". Press "Ok" and you should have this:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20firstitem.jpg"><img alt="Level editor firstitem.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/Level_editor_firstitem.jpg" width="422" height="337" /></a>
+</p><p>Now press the 3D axis button. It should look like this: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Icon3AxisMovement.png"><img alt="Icon3AxisMovement.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Icon3AxisMovement.png" width="15" height="15" /></a>. Your piece will have a 3D manipulator on it and look like this:
+</p><p>NOTE ABOUT TILESETS: All tilesets will fit together differently. Be sure to use the same tileset for a single map.
+</p>
+<h2><span class="mw-headline" id="Interiors">Interiors</span></h2>
+<p>Exteriors and Interiors (Room Levels) are different beasts. We'll start with Interiors. A lot of the things you'll do in interiors are equally applicable to Exteriors, too.
+</p><p>First thing you need to do is enter a "Layout Name" in the Object Inspector. This is the name of the file you’ll be referencing in the designer toolset.
+</p><p>To do anything you need to create a room:
+</p>
+<ul><li> Right-click on “New Area” then Insert -&gt; New Room.</li></ul>
+<p>Rooms are solely in the art tool for visibility reasons. If something isn’t visible, the models inside it don’t have to be in memory. Sometimes a room will be comprised of several art “rooms.” The goal should always be to break up visibility so only necessary art resources are in memory at any given time.
+</p><p>Room names are only important internally. They are never used in the design toolset.
+</p><p>Now that you have a room, right-click on it then select "Insert". Check out all the things you can add to a room. The following sections cover some of the options.
+</p>
+<h3><span class="mw-headline" id="Models">Models</span></h3>
+<p>When inserting a Spawn Model, currently you just see a file list with no preview. Hopefully a model preview system makes its way into the toolset soon. So select a few different files and see what they are.
+</p>
+<ul><li> For work flow, it’s best to grab areas similar to the ones you are and copy and paste rooms or groups.</li>
+<li> Another work flow tip, it can be good to put any piece you could possibly need all together in a group in some sort of palette room. Then copy those and paste them where you need.</li></ul>
+<p>If you copy and paste an object, the new object is placed immediately on top of the other one. So visually you can’t tell if the operation was successful.
+</p><p>You can also place things with the "Model Placement" button. In the Object Inspector click on Name and you can then add a model name. Then when you left-click that object will appear in the world.
+If create something with a right-click insert that model will appear at position 0,0,0 right now. Hopefully that’ll change.
+</p>
+<h3><span class="mw-headline" id="Groups">Groups</span></h3>
+<p>"Model" Groups can be copied, pasted, imported, exported, and dragged between rooms/areas.
+</p><p>To create a Model Group:
+</p>
+<ul><li> Right click on the desired room/area and select Insert -&gt; New Group.</li>
+<li> Now you can insert new models into the group or drag existing models into the group.</li>
+<li> You can also create a group from existing models by selecting the desired models and then right clicking on them and selecting Grouping -&gt; Create Group from Selection.</li></ul>
+<p>Groups can exist inside other groups.
+</p>
+<h3><span class="mw-headline" id="Connecting_Rooms">Connecting Rooms</span></h3>
+<p>To "connect" rooms, click on a room and add connected and visible rooms.
+</p>
+<ul><li> Connected rooms share pathfinding information (you can walk to them.)</li>
+<li> Visible rooms are rendered from the current room (any rooms you can actually see from inside this room.)</li></ul>
+<h3><span class="mw-headline" id="Populating_Rooms">Populating Rooms</span></h3>
+<p>If you have a room selected, now you can place a variety of things. Right-click on your newly created room and look at what you can “Insert”.
+</p>
+<h3><span class="mw-headline" id="Best_Practices">Best Practices</span></h3>
+<p>These practices are in place to ensure a successful export every time of a level that is playable and functional (also every time). Please add to this if you find more practice that avoid issues.
+</p>
+<ul><li> Try to make sure each art “room” is visible to as few other rooms as possible. Having multiple rooms loaded in memory will be a BIG performance hit. Jags in halls are your friend.</li>
+<li> Put a dynamic, ambient light in each and every room until a more global ambient light solution is in place. Which rooms are visible to which will change, so walls of blackness may greet the player.</li>
+<li> Run through every room in your level in Preview Mode before posting it to the network.</li>
+<li> When beginning a level, it is best to start at 0,0,0 so that all your floor and wall tiles are multiples of 8 and it is easy to quickly glance at their position to see they are correct.</li>
+<li> When placing wall and floor tiles, set your snap size to at least 2. 4 and 8 are also recommended for quick area creation.</li>
+<li> Always have your interior map have 0x, 0y on a playable room. Either the beginning of the level or the center.</li>
+<li> Village tiles are much smaller than other tiles. Half the size. So are the Ferelden Castle Interior pieces.</li></ul>
+<h3><span class="mw-headline" id="Tips_and_Tricks">Tips and Tricks</span></h3>
+<p>The following list helps make level building go much quicker:
+</p>
+<ul><li> For building interiors “Change Snap Options” is invaluable. The default values are .5 and 45 degrees.</li>
+<li> Selection Lock allows you to make an object (or group of objects) non-selectable when you click on them in the world view.
+<ul><li> This is most often used to make the interior tiles non-selectable as you are placing and moving around props.</li></ul></li></ul>
+<h3><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h3>
+<ol><li>  I load an interior area in the engine and everything is black. Or, alternatively, I'm running through an area and suddenly I enter a black patch and am now stuck.
+<ul><li> Rooms have to have a light, or be attached to a room that has a light, for anything to be visible. Artists and tech designers can fix this by attaching a Dynamic Ambient light to that room.</li>
+<li> An alternate problem that could cause this other than lighting is improper physics for floor pieces. This can cause the player to "fall through" the floor and have it seem like everything went black. Typically, if this happens, you can notice it by the fact that if you walk backwards the room does not show up again. If it were lighting that was causing this, you could walk back and see the room again the way it was before. The solution to this is to find the model which is causing you to fall in the art toolset and fix it.</li></ul></li>
+<li> My placeables in an interior area are not showing up in the engine. I see them in the toolset, but not in the game.
+<ul><li> A tile needs to have physics attached to it, otherwise any placeable put on top of it will not appear in the engine. The model for the tile will need to be fixed.</li></ul></li></ol>
+<h2><span class="mw-headline" id="Exteriors">Exteriors</span></h2>
+<p>Exterior levels can turn themselves into rather large projects and it will be rare that they will be tackled for light content. Regardless, they are important to know and understand.
+</p>
+<h3><span class="mw-headline" id="Creating_Terrain_Worlds">Creating Terrain Worlds</span></h3>
+<p>The first thing you will notice after creating a new exterior level is that there is an "Advanced" button when you are picking the size of the area. These greatly effects how your textures look in the area. We have been advised to use the following settings for ALL exterior levels until further notice:
+</p>
+<ul><li> Cells Per Sector: 16</li>
+<li> Base Cell Resolution: 8</li>
+<li> Blend Texel Size: 320</li>
+<li> Cell Length: 128</li>
+<li> Cell Width: 128</li>
+<li> Tesselation Level: 4</li></ul>
+<h3><span class="mw-headline" id="Modifying_Terrain_Worlds">Modifying Terrain Worlds</span></h3>
+<p>There are many unique interface features available to exterior areas, some of which may need some explaining:
+</p>
+<ul><li> Smooth -  Smooths all terrain within the brush radius. This will turn your monstrous mountains into puny hills.</li>
+<li> Tesselate - Splits up the polygons of the area into smaller ones, allowing for more delicate modifications. There is a limit of how many times this can be applied, but the smallest size should be enough for any endeavor. Right clicking undoes the Teselation.</li>
+<li> Texture Smooth -  Smooths two or more materials together. You will use this if you want them to look nice.</li>
+<li> Relax Map - If the terrain texture has been stretched by distortion of the terrain mesh, this tool restores it to its original scale.</li>
+<li> Terrain Chunk Management - Used for naming and setting Blend Mask Size for Terrain Chunks.</li>
+<li> Show/Hide Terrain Chunk Boundries - Shows Terrain Chunk boundries that make up the Terrain World.</li></ul>
+<p>Aside from morphing terrain, like interiors, you can add spawn models and lighting anywhere you wish. At the moment, lighting does not effect terrain in the toolset, but it does effect all the spawn models you have placed. Right clicking on "Terrain World" will allow you to insert any object.
+</p>
+<h3><span class="mw-headline" id="Materials">Materials</span></h3>
+<p>In order to add a new material, right click on the Palette Object and select Insert -&gt; New Material. Following that, give the material a name and set its Scale and Textures.
+</p><p>Scale:
+</p>
+<ul><li> Relief: How many times the texture is mapped onto the material (???)</li>
+<li> UVTile: Scale of the texture. Higher numbers shrink the texture down (for instance smaller cobblestones). Default value is 1.</li></ul>
+<p>Textures:
+</p>
+<ul><li> Diffuse: Defines the color and intensity of light reflected back by the material.</li>
+<li> Heightmap: Defines the height of individual pixels on the material.</li>
+<li> Normal: Defines the direction the material appears to be facing.</li>
+<li> Specular: Defines “shiny-ness”. The lighter it is, the shinier the material will be.</li></ul>
+<h3><span class="mw-headline" id="Skyboxes">Skyboxes</span></h3>
+<p>Clicking on the "Exportable Area Property Box"
+</p><p>Find "Skydome Model" Under the Atmosphere Settings. Select sb_newlayout from the list. This is a dynamic shell, you can change it's characteristics. Don't use any of the other shells.
+</p>
+<h3><span class="mw-headline" id="Creating_an_Exportable_Area">Creating an Exportable Area</span></h3>
+<p>In order to export an exterior, you must first designate what part of your Terrain world it takes up:
+</p>
+<ul><li> Create an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">exportable area</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconAddExportableArea.png"><img alt="IconAddExportableArea.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/a/aa/IconAddExportableArea.png" width="12" height="12" /></a> button in the toolbar)
+<ul><li> When you are ready to export a part of your Terrain World, press this button. It will bring up a window allowing you to set many options that will effect the export. For now, you are only concerned with Defining the Area. (TODO: Other options are not covered.)</li>
+<li> After defining an area, close the window and select the Exportable Area you just created from the list. With this selected, you may now access the standard export and preview buttons on the menu.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Texturing">Texturing</span></h2>
+<h3><span class="mw-headline" id="Loading_up_the_Palette">Loading up the Palette</span></h3>
+<p>When you first create an exterior level you will have to add textures to the palette.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20PaletteTab.jpg"><img alt="Level editor PaletteTab.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/fb/Level_editor_PaletteTab.jpg" width="242" height="101" /></a>
+</p><p>Go to the object window and click on the diffuse section. Click on the little dots to open the window.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20SelectMaterial.jpg"><img alt="Level editor SelectMaterial.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/8c/Level_editor_SelectMaterial.jpg" width="493" height="272" /></a>
+</p><p>All textures for terrain you will need start with the "ter_" prefix. Or you can find your own textures by name. So if you wanted to add a rock texture from DAO look for <b>ter_rock_d</b>
+</p><p><b>Note that all textures, will have 4 suffixes. d, n, h, and s. These stand for diffuse, normal, height, and specular respectively.</b> So when you finish selecting the diffuse you like, go back and choose the corresponding textures for normal, height and specular to complete the texture.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ObjectIns-NewMat1.jpg"><img alt="Level editor ObjectIns-NewMat1.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/18/Level_editor_ObjectIns-NewMat1.jpg" width="388" height="604" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20OpenTexture.jpg"><img alt="Level editor OpenTexture.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b0/Level_editor_OpenTexture.jpg" width="579" height="478" /></a>
+</p><p>Limit of 8 Textures
+</p>
+<h3><span class="mw-headline" id="Texture_Settings">Texture Settings</span></h3>
+<p><b>UV Setting - UVTile is 1 by default but you need to change it to 8 if you use your own textures - this way texture will loooks like in the file itself.</b>
+</p><p>Relief Settings
+</p><p>Sound material Type
+</p><p>Typical Textures to use
+</p><p>Texture Tools
+</p><p>Texture Paint
+</p><p>Brush Settings
+</p><p>Grid Opacity
+</p>
+<h3><span class="mw-headline" id="Important_Things_you_should_know">Important Things you should know</span></h3>
+<h4><span class="mw-headline" id="Layering_Textures">Layering Textures</span></h4>
+<p>When you paint a slightly transparent texture on top of another you will see the textures blend together. You can only blend 3 textures on top of each other in this way. If you add a 4th the first texture will disappear on the area you painted the newest texture. And it will look odd.
+</p><p>Instead of making a big mix of textures, set base textures for an area and use those to paint. You should only worry about blending at the seems of the textures for the most part.
+Chunk Boundaries
+</p>
+<h4><span class="mw-headline" id="Why_don.27t_my_textures_blend_well.3F">Why don't my textures blend well?</span></h4>
+<p>If you are starting a new map your textures will likely blend together in a very pixelated fashion. If this is the case, you have to play with "Chunk Size".
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkCheckers.jpg"><img alt="Level editor ChunkCheckers.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/600px-Level_editor_ChunkCheckers.jpg" width="600" height="282" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/13/Level_editor_ChunkCheckers.jpg/900px-Level_editor_ChunkCheckers.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/13/Level_editor_ChunkCheckers.jpg 2x" /></a>
+</p><p>Look for the checkerboard "View/Hide Terrain Chunk Boundaries" button. Turn it on and your terrain will look like an orange checkerboard. Each of these squares is a "chunk". Now look for the other checkerboard button. (Chunk Management Tool)
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Level%20editor%20ChunkSelected.jpg"><img alt="Level editor ChunkSelected.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/24/Level_editor_ChunkSelected.jpg" width="779" height="619" /></a>
+</p><p>With this open;
+</p>
+<ul><li> Click on the "Select Chunk" button</li>
+<li> Click on the square you want to modify</li>
+<li> Change the "Blend Mask Size" to either 128(low quality), 256(fair quality) or 512(High quality)</li></ul>
+<p>Limitation of 3 Textures on top of each other
+</p>

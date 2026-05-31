@@ -1,0 +1,29 @@
+<p>As a public-facing semi-formal bug tracking system we're going to use a set of categories on this wiki organize bug report pages, with one page per issue. You can still report a bug via other means (such as the toolset support email address) but ideally this set of pages and categories will serve as a one-stop destination for dealing with bugs and other toolset-related issues.
+</p><p>Bugs will be in the category <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Toolset%20bugs" title="Category:Toolset bugs">Category:Toolset bugs</a>, with <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Closed%20bugs" title="Category:Closed bugs">Category:closed bugs</a> for those that no longer apply to the current version of the toolset.
+</p><p><br />
+You can view a current list of reported bugs <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Toolset%20bugs" title="Category:Toolset bugs">here</a>.
+</p>
+<h2><span class="mw-headline" id="Creating_a_new_bug_page">Creating a new bug page</span></h2>
+<p>Bug pages should have a title that serves as a brief description of the problem that the bug causes. You can create a new page a number of different ways in MediaWiki.
+</p><p>One of the easiest is to type the intended page title into the search field and then when the failed search page appears click on the red link to that page title.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:802px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20create%20a%20new%20bug%20page.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0e/How_to_create_a_new_bug_page.png/800px-How_to_create_a_new_bug_page.png" width="800" height="398" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/0/0e/How_to_create_a_new_bug_page.png/1200px-How_to_create_a_new_bug_page.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/0/0e/How_to_create_a_new_bug_page.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20How%20to%20create%20a%20new%20bug%20page.png" title="Enlarge"></a></div>The red link for the searched-for page is directly below the "Search results" title</div></div></div></div>
+<p>In the new blank page that this brings you to, copy and paste the following template:
+</p>
+<pre>
+*'''Version found:''' &lt;!-- put the version number of your toolset here --&gt;
+*'''Status:''' Open
+
+== Description ==
+&lt;!-- Describe the bug here including as many details as possible. What situations trigger it and what effects it causes are the most important. --&gt;
+
+== Workarounds ==
+&lt;!-- if you know of any ways to work around the bug describe them here. --&gt;
+
+[[Category:Toolset bugs]]
+</pre>
+<p>As BioWare developers and members of the community work on the issue the bug's description will be expanded and its status updated, you don't need to worry too much about getting every detail filled in immediately. Just knowing the bug exists is an important first step.
+</p>
+<h2><span class="mw-headline" id="Editing_an_existing_bug_page">Editing an existing bug page</span></h2>
+<p>If there's already a page describing the bug you'd like to report and you have new details you'd like to add to it, feel free to edit the page to include them. You can also add comments on the bug's associated talk page if you want to discuss certain aspects - for example if you're not certain whether the problem you've encountered is really the same bug, or if you've got questions about a suggested workaround.
+</p>

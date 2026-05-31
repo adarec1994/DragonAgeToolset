@@ -1,0 +1,87 @@
+<p>Community Code Monkey
+</p>
+<h2><span class="mw-headline" id="Work_in_progress">Work in progress</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%2090210" title="User:Sunjammer/90210">90210</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Abrigand%27s%20Arena%20of%20Agony" title="User:Sunjammer/Abrigand's Arena of Agony">Abrigand's Arena of Agony</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Item%20upgrades%20%28draft%29" title="User:Sunjammer/Item upgrades (draft)">Item upgrades (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Items%20with%20codex%20entries%20tutorial%20%28draft%29" title="User:Sunjammer/Items with codex entries tutorial (draft)">Items with codex entries tutorial (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Move%20resources%20%28draft%29" title="User:Sunjammer/Move resources (draft)">Move resources (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Operator%20%28draft%29" title="User:Sunjammer/Operator (draft)">Operator (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Placeables%20with%20codex%20entries%20tutorial%20%28draft%29" title="User:Sunjammer/Placeables with codex entries tutorial (draft)">Placeables with codex entries tutorial (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Plot%20flags%20%28draft%29" title="User:Sunjammer/Plot flags (draft)">Plot flags (draft)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Struct%20keyword%20%28draft%29" title="User:Sunjammer/Struct keyword (draft)">Struct keyword (draft)</a></li></ul>
+<h2><span class="mw-headline" id="Tests">Tests</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Wiki%20extensions%20test" title="User:Sunjammer/Wiki extensions test">/Wiki extensions test</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer%20-%20Main%20Page" title="User:Sunjammer/Main Page">/Main Page</a></li></ul>
+<h2><span class="mw-headline" id="To_Do_List">To Do List</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20ApplyUpkeepEffects" title="Ability ApplyUpkeepEffects">Ability ApplyUpkeepEffects</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder" title="Builder to builder">Builder to builder</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment" title="Comment">Comment</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20PROPERTY" title="Talk:PROPERTY *">PROPERTY *</a></li></ul>
+<p><br />
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Keywords" title="Category:Keywords">Keywords</a> &amp; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Keyword" title="Keyword">Keyword</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Directives" title="Category:Directives">Directives</a> &amp; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Directive" title="Directive">Directive</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Operators" title="Category:Operators (page does not exist)">Operators</a> &amp; <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Operator" title="Operator (page does not exist)">Operator</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Core%20scripts" title="Category:Core scripts (page does not exist)">Core scripts</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Broken%20functions" title="Category:Broken functions">Broken functions</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20keyword" title="Itemproperty keyword">Itemproperty keyword</a></li></ul>
+<p><br />
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AWantedCategories" title="Special:WantedCategories">Wanted categories</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Special%3AWantedPages" title="Special:WantedPages">Wanted pages</a></li></ul>
+<p><br />
+No pages meet these criteria.
+</p>
+<ul><li> confirm common root for M2DA_base m2da files</li>
+<li> update links in all 2da files</li>
+<li> make formatting consistent</li>
+<li> remove negative assertions</li></ul>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da constants h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">Ability h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h" title="Combat h">Combat h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">Core h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20constants%20h" title="Effect constants h">Effect constants h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20heal%20h" title="Effect heal h">Effect heal h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">Events h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20ambient%20h" title="Sys ambient h">Sys ambient h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20chargen%20h" title="Sys chargen h">Sys chargen h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20disease" title="Sys disease">Sys disease</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20injury" title="Sys injury">Sys injury</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20traps%20h" title="Sys traps h">Sys traps h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">Utility h</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">Wrappers h</a></li></ul>
+<p><br />
+</p>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">Bool (2da type)</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)">Comment (2da type)</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">Float (2da type)</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">Int (2da type)</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20%282da%20type%29" title="Resource (2da type)">Resource (2da type)</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">String (2da type)</a></li></ul>
+<p><br />
+</p>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Admin%20Templates" title="Category:Admin Templates">Category:Admin Templates</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20containing%20BioWare%20Social%20Network%20links" title="Category:Articles containing BioWare Social Network links">Category:Articles containing BioWare Social Network links</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20in%20need%20of%20review" title="Category:Articles in need of review">Category:Articles in need of review</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Category:Articles with documentation requests</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Feature%20requests" title="Category:Feature requests">Category:Feature requests</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Generated" title="Category:Generated">Category:Generated</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Maintenance%20templates" title="Category:Maintenance templates">Category:Maintenance templates</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Marked%20For%20Deletion" title="Category:Marked For Deletion">Category:Marked For Deletion</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Marked%20For%20Review" title="Category:Marked For Review">Category:Marked For Review</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Orphaned%20constants" title="Category:Orphaned constants">Category:Orphaned constants</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Orphaned%20event%20types" title="Category:Orphaned event types">Category:Orphaned event types</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Orphaned%20include%20files" title="Category:Orphaned include files">Category:Orphaned include files</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Orphaned%20structs" title="Category:Orphaned structs">Category:Orphaned structs</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Toolset%20bugs" title="Category:Toolset bugs">Category:Toolset bugs</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Uncategorised%20constants" title="Category:Uncategorised constants">Category:Uncategorised constants</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Uncategorised%20function" title="Category:Uncategorised function">Category:Uncategorised function</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Unknown%20version" title="Category:Unknown version">Category:Unknown version</a></li></ul>
+<p><br />
+</p>
+<ul><li> New Tutorial Navigation icons</li></ul>

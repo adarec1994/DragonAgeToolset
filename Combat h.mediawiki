@@ -1,0 +1,53 @@
+<p>The <strong class="selflink">combat_h</strong> include file holds the combat resolution logic for the tactic game.
+</p><p>Item specific functions are included from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20h" title="Items h (page does not exist)">items_h</a>. Damage specific functions (such as attack damage calculations and resists) are included from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h" title="Combat damage h (page does not exist)">combat_damage_h</a>
+</p><p>Be aware that this is a core game resource - any change to this file has the potential to wreck the combat system so handle with care.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#References"><span class="tocnumber">1</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Constants"><span class="tocnumber">2</span> <span class="toctext">Constants</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Structs"><span class="tocnumber">3</span> <span class="toctext">Structs</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Functions"><span class="tocnumber">4</span> <span class="toctext">Functions</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%20h" title="Effects h (page does not exist)">effects_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h" title="Combat damage h (page does not exist)">combat_damage_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Items%20h" title="Items h (page does not exist)">items_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stats%20core%20h" title="Stats core h (page does not exist)">stats_core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sys%20soundset%20h" title="Sys soundset h (page does not exist)">sys_soundset_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ui%20h" title="Ui h (page does not exist)">ui_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> ATTACK_LOOP_DURATION_INVALID <span class="sy0">=</span> <span class="nu0">999.0f</span>; 
+&#160;
+<span class="co1">// General bias in the system towards hits instead of misses. </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> ATTACK_HIT_BIAS <span class="sy0">=</span> <span class="nu0">4.0f</span>; 
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> ATTACK_TYPE_MELEE <span class="sy0">=</span> <span class="nu0">1</span>; 
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> ATTACK_TYPE_RANGED <span class="sy0">=</span> <span class="nu0">2</span>;
+&#160;
+<span class="co1">// at this&#160;% of health, any meelee attack may trigger the deathblow of special bosses; </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> SPECIAL_BOSS_DEATHBLOW_THRESHOLD <span class="sy0">=</span> <span class="nu0">0.04</span>; 
+&#160;
+<span class="co1">// Point blank range (no penalty range for bows) </span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword"><span class="kw1">const</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> POINT_BLANK_RANGE <span class="sy0">=</span> <span class="nu0">8.0f</span>;</pre></div></div>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CombatAttackResultStruct" title="CombatAttackResultStruct">CombatAttackResultStruct</a></li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckForDeathblow" title="CheckForDeathblow">CheckForDeathblow</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20CheckBackStab" title="Combat CheckBackStab">Combat CheckBackStab</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackHand" title="Combat GetAttackHand">Combat GetAttackHand</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackResult" title="Combat GetAttackResult">Combat GetAttackResult</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackType" title="Combat GetAttackType">Combat GetAttackType</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetFlankingBonus" title="Combat GetFlankingBonus">Combat GetFlankingBonus</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetValidDeathblow" title="Combat GetValidDeathblow">Combat GetValidDeathblow</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleAbilityAttackImpact" title="Combat HandleAbilityAttackImpact">Combat HandleAbilityAttackImpact</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleAttackImpact" title="Combat HandleAttackImpact">Combat HandleAttackImpact</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleCommandAttack" title="Combat HandleCommandAttack">Combat HandleCommandAttack</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleCreatureDisappear" title="Combat HandleCreatureDisappear">Combat HandleCreatureDisappear</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20PerformAttack" title="Combat PerformAttack">Combat PerformAttack</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsCombatHit" title="IsCombatHit">IsCombatHit</a></li></ul>

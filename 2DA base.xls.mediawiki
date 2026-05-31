@@ -1,0 +1,5 @@
+<p>The <strong class="selflink">2DA_base.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> data that defines which other 2da files are <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> files and can be <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">extended</a> using m2da fragments.
+</p><p>The workbook contains the following worksheets: 
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base%202da" title="2DA base 2da">2DA_base</a> (legacy)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base</a></li></ul>

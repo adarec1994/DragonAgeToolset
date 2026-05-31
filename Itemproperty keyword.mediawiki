@@ -1,0 +1,30 @@
+<p>The <b>itemproperty</b> type represents a dynamic property which can be added to or removed from an item.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>There is no <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> for an itemproperty.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<p>There is no explicit or implicit conversion to or from an itemproperty.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow an itemproperty to exist outside of the scope of the current script by storing it on an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalItemProperty" title="SetLocalItemProperty">SetLocalItemProperty</a></li></ul>
+<p>The following functions allow an itemproperty which exists outside of the scope of the current script to be used in the current script by retrieving it from an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalItemProperty" title="GetLocalItemProperty">GetLocalItemProperty</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Item properties are added to an item using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemProperty" title="AddItemProperty">AddItemProperty</a> and removed using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveItemProperty" title="RemoveItemProperty">RemoveItemProperty</a>. An array of the item properties on an item can be retrieved using <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemProperties" title="GetItemProperties">GetItemProperties</a>.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20keyword"><span class="kw2">itemproperty</span></a> ipDefault;
+&#160;
+    <span class="co1">// initialised using a function</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20keyword"><span class="kw2">itemproperty</span></a> ipExample <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalItemProperty"><span class="kw4">GetLocalItemProperty</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>, <span class="st0">&quot;example&quot;</span><span class="br0">&#41;</span>;    
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemproperty%20functions" title="Itemproperty functions (page does not exist)">Itemproperty functions</a>
+</p>

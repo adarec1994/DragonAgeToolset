@@ -1,0 +1,690 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20set" title="Item set">Item sets</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20properties" title="Item properties">Item properties</a></li>
+<li><strong class="selflink">BITM base.xls</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a></li></ul>
+</td></tr></table>
+<p>Defines base items, such as "Weapon - Longsword", used in the item editor.
+</p><p>Several worksheets in this Excel file are not actual 2DAs, they are present only for informational purposes.
+</p><p>A note when editing:
+</p>
+<ul><li>SourceData - This is the worksheet where the information for the 2da should be edited.</li>
+<li>BITM_base - This worksheet is a mirror of the data from SourceData (but only the columns that the game cares about)</li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#BITM_base_worksheet"><span class="tocnumber">1</span> <span class="toctext">BITM_base worksheet</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#ItemStats_worksheet"><span class="tocnumber">2</span> <span class="toctext">ItemStats worksheet</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#itemstatdefines_worksheet"><span class="tocnumber">3</span> <span class="toctext">itemstatdefines worksheet</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#ArmorData_worksheet"><span class="tocnumber">4</span> <span class="toctext">ArmorData worksheet</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#SourceData_worksheet"><span class="tocnumber">5</span> <span class="toctext">_SourceData worksheet</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#EquipSlots_worksheet"><span class="tocnumber">6</span> <span class="toctext">_EquipSlots worksheet</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="BITM_base_worksheet">BITM_base worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  NameStrRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  DescStrRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  InvSlotWidth
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  InvSlotHeight
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  EquippableSlots
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  A bitfield indicating which slots the item can be equipped into. See the _EquipSlots worksheet for an explanation of these values.
+</td></tr>
+<tr>
+<th>  WearR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int </a>
+</td>
+<td>  Index into the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Parts.xls" title="Parts.xls">parts.xls</a> file. Indicates where right hand weapons are worn on the body.
+</td></tr>
+<tr>
+<th>  WearL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Index into the parts.xls file. Indicates where left hand weapons are worn on the body.
+</td></tr>
+<tr>
+<th>  WieldR
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Index into the parts.xls file. Indicates where wielded right hand weapons are attached in combat.
+</td></tr>
+<tr>
+<th>  WieldL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Index into the parts.xls file. Indicates where wielded left hand weapons are attached in combat.
+</td></tr>
+<tr>
+<th>  Heraldry
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Whether or not items using this base type can have heraldry applied
+</td></tr>
+<tr>
+<th>  WeaponOffset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  CanRotateIcon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  TargetType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  Variation_WorkSheet
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Items with Variants refer to M2DA_base.GDA by its ID
+</td></tr>
+<tr>
+<th>  DefaultMaterial
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  DefaultModel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  DefaultIcon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  DefaultResource
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  WeaponWield
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  WieldModel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  WieldModelOverlay
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  CombatRating
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  StrengthModifier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  BaseDamage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  StackSize
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  The meanings of these values can be found in the ItemTypes worksheet in this document.
+</td></tr>
+<tr>
+<th>  Speed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Range
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Distance is in meters.
+</td></tr>
+<tr>
+<th>  Projectile
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  If the item can be fired as a projectile (e.g. arrows), this field should relate to a projectile in PRJ 2da.
+</td></tr>
+<tr>
+<th>  ProjectileOffset
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>  Height distance to move a projectile launch position relative to the hand of the user.
+</td></tr>
+<tr>
+<th>  Ammo
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Which base item type serves as ammo for this item
+</td></tr>
+<tr>
+<th>  StorePanel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  ModalAbilityBlendTree
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Specifies if the item is able to work with modal ability blend trees. This is currently only relevant for MAIN and OFFHAND slot items.
+</td></tr>
+<tr>
+<th>  InvSoundType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  ID sound materials defined in "<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Sound%20Item%20Materials.xls" title="Sound Item Materials.xls (page does not exist)">Sound_Item_Materials.xls</a>"
+</td></tr>
+<tr>
+<th>  ArmorType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  2 - medium, 3 - heavy, 4 - massive, 5 - cloth
+</td></tr>
+<tr>
+<th>  DoNotDrop
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  if true, the treasure system will never drop this item.
+</td></tr>
+<tr>
+<th>  ReqProp1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  ID of the first property requirement for the item from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">properties.xls</a>
+</td></tr>
+<tr>
+<th>  ReqProp1Val
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  minimum property value to allow item to be equipped
+</td></tr>
+<tr>
+<th>  ReqProp2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  ID of the second property requirement for the item from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">properties.xls</a>
+</td></tr>
+<tr>
+<th>  ReqProp2Val
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  minimum property value to allow item to be equipped
+</td></tr>
+<tr>
+<th>  piercingtype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  1 bladed, 2 blunt, 3 ranged
+</td></tr>
+<tr>
+<th>  RuneSlots
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Mask  for the rune slot (same as equipment slots)
+</td></tr>
+<tr>
+<th>  RuneCount
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Base number of runes. Note that 0 and even negative numbers can be increased into positive by the material types, so we use a rather large negative number to prevent runes on most items.
+</td></tr>
+<tr>
+<th>  SoundVariation
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Specifies the sound variation for each object type. Note that 0 means the default sound is used: cloth for armor, sharp weapon for weapons and generic for everything else.
+</td></tr>
+<tr>
+<th>  IsHeavy
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Considered to be heavy for dual wielding purposes. Requires dual wielding mastery to equip in the offhand.
+</td></tr>
+<tr>
+<th>  ShowMaterial
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  If an item of this base type should show its material type in the inventory UI.
+</td></tr>
+<tr>
+<th>  SuppressPropertyVFX
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)"> bool </a>
+</td>
+<td>  Avoid displaying a VFX that would be added through item properties
+</td></tr></table>
+<h2><span class="mw-headline" id="ItemStats_worksheet">ItemStats worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Attack
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Damage
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  DamageRange
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Armor
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  ArmorPenetration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Defense
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  BaseAimDelay
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Dspeed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>  Speed change within style from default anim speed.
+</td></tr>
+<tr>
+<th>  CritChanceModifier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  AbilityCostModifier
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  MissileDeflection
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  OptimumRange
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  SpellPower
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  RngdPenalty
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  AttributeMod
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Attribute0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Attribute1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="itemstatdefines_worksheet">itemstatdefines worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  This label must match the name of the column where this stat is found in the BITM_base 2da.
+</td></tr>
+<tr>
+<th>  NameStrRef
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  CreatureProp
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  This number is the ID of the creature property that this item stat affects. When the item is equipped, the creature property will automatically be modified by the value found for this stat in the BITM_base.
+</td></tr>
+<tr>
+<th>  bShowInUI
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Precision
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Number of decimal places to show in the UI
+</td></tr></table>
+<h2><span class="mw-headline" id="ArmorData_worksheet">ArmorData worksheet</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Chest
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Boots
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Gloves
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Helmet
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Total
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment</a>
+</td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="SourceData_worksheet">_SourceData worksheet</span></h2>
+<p>This worksheet is not exported directly as a 2DA file.
+</p>
+<ul><li> Name - If the rows or columns change, macros need updating</li>
+<li> (no label) - an ID column</li>
+<li> Label</li>
+<li> NameStrRef - A string ID that leads to a string with the name of this kind of item. For example, boots have an English string that reads "Boot".</li>
+<li> DescStrRef</li>
+<li> InvSlotWidth</li>
+<li> InvSlotHeight</li>
+<li> InvSoundType</li>
+<li> EquippableSlots - a bitfield indicating which inventory slots the item can be equipped in.</li>
+<li> WearR - Index into the parts.xls file. Indicates where right hand weapons are worn on the body.</li>
+<li> WearL - Index into the parts.xls file. Indicates where left hand weapons are worn on the body.</li>
+<li> WieldR - Index into the parts.xls file. Indicates where wielded right hand weapons are attached in combat.</li>
+<li> WieldL - Index into the parts.xls file. Indicates where wielded left hand weapons are attached in combat.</li>
+<li> CanRotateIcon</li>
+<li> TargetType</li>
+<li> Variation_WorkSheet</li>
+<li> DefaultModel</li>
+<li> DefaultIcon</li>
+<li> WeaponWield</li>
+<li> WieldModel</li>
+<li> CombatRating</li>
+<li> StrengthModifier - How strength damage is scaled when using this weapon.</li>
+<li> BaseDamage</li>
+<li> ArmourPenetration - Rules. Design-Materials. Armor penetrating capability of this weapon. Serves dual purpose. Also the field for the ARMOR value of Armor. This is also used for the shield base modifier</li>
+<li> ArmourValue</li>
+<li> Attribute - This is an index into the attribute.xls. It iis used by rules to determine the required attribute score.</li>
+<li> AttributeValue</li>
+<li> StackSize</li>
+<li> MinItemProps</li>
+<li> MaxItemProps</li>
+<li> PropColumn - This column references ItemProperties.xls (the ItemPropDef page). It assigns each item into a category. Tools then uses this to figure out which properties are allowed for each item type.</li>
+<li> StartingCharges</li>
+<li> QBBehaviour</li>
+<li> StorePanel</li>
+<li> StorePanelSort</li>
+<li> Type</li>
+<li> Speed</li>
+<li> BaseDamageReduction</li>
+<li> AttackExtra</li>
+<li> BaseDefenseBonus</li>
+<li> Type</li>
+<li> BaseArmorPenetration</li>
+<li> LightArmor</li>
+<li> AbilityScoreRequired</li>
+<li> BasePreReqAbility</li>
+<li> StaminaUpkeep</li>
+<li> BaseDamage</li>
+<li> StrengthModifierMultiplier</li>
+<li> AbilityScoreRequired2</li>
+<li> BasePreReqAbility2</li></ul>
+<h2><span class="mw-headline" id="EquipSlots_worksheet">_EquipSlots worksheet</span></h2>
+<p>This worksheet is not exported directly as a 2DA file.
+</p>
+<ul><li>LABEL</li>
+<li>MASK</li>
+<li>SET1</li>
+<li>SET2</li></ul>

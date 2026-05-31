@@ -1,0 +1,20 @@
+<p>Returns an effect which heals an object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> EffectHeal(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fValue,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bIgnoreBloodMagic&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fValue<dd>The amount of health.<dt style="font-weight:normal; font-style:italic;">bIgnoreBloodMagic<dd>Whether or not ignore Blood Magic OR whether or not to resurrect and heal dead creatures (the description is somewhat contradictory).
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20heal%20h" title="Effect heal h">effect_heal_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Constructor for the heal health effect.
+</p><p>When applied to an object, this effect restores the given amount of health to the object. The object’s health will not be raised above its maximum health.
+If the object is a creature which is dead no health will be healed unless <code>bHealIfDead</code> is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Boolean%20constants" title="Boolean constants">TRUE</a>, in which case the creature will be resurrected and healed.
+</p><p>Look at <code>spell_drainlife.nss</code> to see how this works.
+</p>

@@ -1,0 +1,145 @@
+<table style="float:right;">
+
+<tr>
+<td>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Item topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20tutorial" title="Item tutorial">Item tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20set" title="Item set">Item sets</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20properties" title="Item properties">Item properties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%20base.xls" title="BITM base.xls">BITM base.xls</a></li>
+<li><strong class="selflink">ItemVariations.xls</strong></li></ul>
+</td></tr></table>
+</td></tr>
+<tr>
+<td>
+<table align="right" border="2" cellpadding="5" cellspacing="0">
+<caption><b>Integration</b>
+</caption>
+<tr style="background-color:white;">
+<td align="center" width="300pt" style="background-color:#E0E0E0"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item (*.uti) Properties</a></b>
+</td></tr>
+<tr>
+<td align="center"><i>(Enable Variation)</i>
+</td></tr>
+<tr>
+<td align="center" style="background-color:#C0C0E0"><b>&#8593;&#8595; ItemVariations.XLS &#8593;&#8595;</b>
+</td></tr>
+<tr>
+<td align="center"><i>(Find Model File)</i>
+</td></tr>
+<tr>
+<td align="center" width="300pt" style="background-color:#E0E0E0"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model Files in the Filesystem</a></b>
+</td></tr></table>
+</td></tr></table>
+<p>This <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a> lists variant <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">models</a> for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">items</a>.
+</p><p>The different worksheet's are associated with the "Base Item Type" when defining an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>. The contents of each enable the particular "Item Variation" of said <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Item</a>, while they also refer to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model" title="Model">Model's</a> filename via 3 strings which are joined with a prefix and suffix to find the actual file. <i>(see: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions#Model_File_Naming_Convention" title="Naming conventions">Model File Naming Convention</a>)</i>
+</p><p>Some Item Types are defined with other <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA's</a>, and are not listed here. This is only for <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">Items</a> that can have variant models.
+</p>
+<h2><span class="mw-headline" id="The_different_worksheets">The different worksheets</span></h2>
+<ul><li>mace_variation</li>
+<li>greatsword_Variation</li>
+<li>gloves_heavy_variation</li>
+<li>gloves_medium_variation</li>
+<li>gloves_light_variation</li>
+<li>gloves_massive_variation</li>
+<li>boots_massive_variation</li>
+<li>boots_heavy_variation</li>
+<li>boots_light_variation</li>
+<li>boots_medium_variation</li>
+<li>helmet_mage_variation</li>
+<li>helmet_massive_variation</li>
+<li>helmet_heavy_variation</li>
+<li>helmet_medium_variation</li>
+<li>helmet_light_variation</li>
+<li>armor_massive_variation</li>
+<li>armor_medium_variation</li>
+<li>armor_light_variation</li>
+<li>armor_heavy_variation</li>
+<li>longsword_variation</li>
+<li>staff_variation</li>
+<li>wand_variation</li>
+<li>dagger_variation</li>
+<li>waraxe_variation</li>
+<li>battleaxe_variation</li>
+<li>maul_variation</li>
+<li>lround_shield_variation</li>
+<li>sround_shield_variation</li>
+<li>kite_shield_variation</li>
+<li>tower_shield_variation</li>
+<li>crossbow_variation</li>
+<li>shortbow_variation</li>
+<li>longbow_variation</li>
+<li>bolt_variation</li>
+<li>arrow_variation</li>
+<li>clothing_variation</li>
+<li>dog_collar_variation</li>
+<li>dog_warpaint_variation</li></ul>
+<h2><span class="mw-headline" id="Bug_when_using_M2DA">Bug when using M2DA</span></h2>
+<p>When extending (most certainly) all of these 2DA's via M2DAs, and giving ID Ranges above 255, a bug occurs when trying to use an Item based on a Variation in game. It may also crash the Toolset when equiping that Item to an NPC. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game" title="Bug: High M2DA ID ranges might work in the toolset, but not in game">Bug report</a>.
+</p>
+<h2><span class="mw-headline" id="Layout">Layout</span></h2>
+<p>Each of these worksheets has the same set of columns:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th> LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Name as displayed in the Toolset
+</td></tr>
+<tr>
+<th> MODELTYPE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> First of 3 Strings of assigned Model <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> File.  <i>[MainClass]_<b>[MODELTYPE]</b>_[MODELSUBTYPE][MODELVARIATION]_[LOD].MMH</i>
+</td></tr>
+<tr>
+<th> MODELSUBTYPE
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Second of 3 Strings of assigned Model <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> File.  <i>[MainClass]_[MODELTYPE]_<b>[MODELSUBTYPE]</b>[MODELVARIATION]_[LOD].MMH</i>
+</td></tr>
+<tr>
+<th> MODELVARIATION
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Third of 3 Strings of assigned Model <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/MMH" title="MMH">MMH</a> File.  <i>[MainClass]_[MODELTYPE]_[MODELSUBTYPE]<b>[MODELVARIATION]</b>_[LOD].MMH</i>
+</td></tr>
+<tr>
+<th> ICONNAME
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  This is the name for the ingame icon that appears on the quickbar, inventory, et cetera
+</td></tr>
+<tr>
+<th> DEFAULTMATERIAL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Material set by the Toolset for this variation by default. As set in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes.xls" title="Materialtypes.xls">Materialtypes.xls</a>
+</td></tr></table>

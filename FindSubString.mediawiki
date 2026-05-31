@@ -1,0 +1,24 @@
+<p>Returns the position of a substring within a string.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> FindSubString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sSubString,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStart&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sString<dd>The string to search<dt style="font-weight:normal; font-style:italic;">sSubString<dd>The substring to search for<dt style="font-weight:normal; font-style:italic;">nStart<dd>The position to start the search from
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the position of the substring, returns -1 on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the starting index of the first occurence of the substring sSubstring within the string sString
+beginning at position nStart. Returns -1 if the string sSubstring does not occur in the string sString
+after position nStart. The result is 0 indexed, meaning this function will return 0 if the substring 
+occurs at the very beginning of the string.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20FindSubString" title="UT FindSubString">UT FindSubString</a>
+</p>

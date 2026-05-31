@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> 1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Some animations listed in ANIM_base.xls won't play. This is caused by a use of capital letters in animation names in humanoid.acb. It seems to be case sensitive environment and all letters should be in lower-case. These names are located in a light blue boxies.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Can be fixed by editing humanoid.acb
+</p>

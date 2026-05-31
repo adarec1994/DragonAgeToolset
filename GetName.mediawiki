@@ -1,0 +1,20 @@
+<p>Gets an object's name.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> GetName(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oidObject<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oidObject<dd>The object to get the name of
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The object's name
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Gets an object's name. The non-localized name is returned if it is set, otherwise the localized name will be returned.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>In Toolset v1.0.982.0 GetName() returns nothing for waypoints.
+</p>

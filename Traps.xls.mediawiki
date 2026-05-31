@@ -1,0 +1,7 @@
+<p>The <strong class="selflink">traps.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the difficulty categories for locks and traps; and various elements that constitute each trap in the game. A reference sheet giving the meaning of the trap effects and their associated parameters is also included.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lock%20difficulty%202da" title="Lock difficulty 2da">lock_difficulty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trap%20difficulty%202da" title="Trap difficulty 2da">trap_difficulty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Traps%202da" title="Traps 2da">traps</a></li>
+<li> _trap_effects</li></ul>

@@ -1,0 +1,117 @@
+<p>The <strong class="selflink">ANIM_ 2da</strong> defines the creature and placeable animations. 
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>0</b>. It can be extended by m2da fragments which have names starting with <b>ANIM_</b>. It can also be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_BASE_ANIMATIONS</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_COMBAT_ANIMATIONS</a> constants defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>  This should be generic animation name regardless of creature model. The exact animation based on creature is references inside the animation blend trees
+</td></tr>
+<tr>
+<th>  Strref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  String Reference for the name of the animation. Used primarily for the toolset and animation states on placeables.
+</td></tr>
+<tr>
+<th>  Type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  The type of the animation. This is a bitfield indicating if the animation is a looping animation, fire and forget, overlay, movement animation, stationary… etc.
+<ul><li> 0x0001 - Looping</li>
+<li> 0x0002 - Overlay</li>
+<li> 0x0004 - Ambient</li>
+<li> 0x0008 - Moving</li>
+<li> 0x0010 - Equip</li>
+<li> 0x0020 - Unequip</li>
+<li> 0x0040 - PartyAttack</li>
+<li> 0x0080 - SimpleAttack</li>
+<li> 0x0100 - Parry</li>
+<li> 0x0200 - Dodge</li>
+<li> 0x0400 - Damage</li>
+<li> 0x0800 - Deathblow</li>
+<li> 0x1000 - Spellcasting</li>
+<li> 0x2000 - Visual Effect</li>
+<li> 0x4000 - Twitchs</li></ul>
+</td></tr>
+<tr>
+<th>  AnimName
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  This is the actual name of the animation specified in the model file.
+</td></tr>
+<tr>
+<th>  WieldType
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Specifies the type of weapon wields the specified animation is supposed to work with.
+</td></tr>
+<tr>
+<th>  SynchAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  If it's a synchronized animation the index of the synchronized animation will be specified here.
+</td></tr>
+<tr>
+<th>  TransitionTo
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> The Id of the looping animation that will be played after this one.
+</td></tr>
+<tr>
+<th>  Priority
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 - Invalid</li>
+<li> 1 - Low</li>
+<li> 2 - Medium</li>
+<li> 3 - High</li>
+<li> 4 - Max</li></ul>
+</td></tr>
+<tr>
+<th>  DisableLookat
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool</a>
+</td>
+<td>  Specifies if the lookat behavior should be disabled while playing this animation.
+</td></tr>
+<tr>
+<th>  State
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> Transition animations have their end state:
+<ul><li> 0 - Pause/Ready (standing up) </li>
+<li> 1 - Lying down (dead, knocked down, sleeping, etc..)</li></ul>
+</td></tr>
+<tr>
+<th>  Replacement
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  This animation replaces the original animation if it is missing from the blend tree
+</td></tr></table>

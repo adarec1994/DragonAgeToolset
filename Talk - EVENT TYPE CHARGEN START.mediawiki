@@ -1,0 +1,3 @@
+<p>CHARGEN_MODE_CREATE or CHARGEN_MODE_LEVELUP doesn't exist as constants, if they are located in a include somewhere it should be noted where.
+</p><p>Object 0 is the Creature that goes through the character creator.
+</p>

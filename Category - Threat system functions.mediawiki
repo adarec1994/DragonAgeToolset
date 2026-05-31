@@ -1,0 +1,12 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Threat system functions"</h2>
+<p>The following 7 pages are in this category, out of 7 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearEnemyThreat" title="ClearEnemyThreat">ClearEnemyThreat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearThreatTable" title="ClearThreatTable">ClearThreatTable</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetThreatEnemy" title="GetThreatEnemy">GetThreatEnemy</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetThreatTableSize" title="GetThreatTableSize">GetThreatTableSize</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetThreatValueByIndex" title="GetThreatValueByIndex">GetThreatValueByIndex</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetThreatValueByObjectID" title="GetThreatValueByObjectID">GetThreatValueByObjectID</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UpdateThreatTable" title="UpdateThreatTable">UpdateThreatTable</a></li></ul></div></div></div>
+</div></div>

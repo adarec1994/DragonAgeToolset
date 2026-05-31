@@ -1,0 +1,14 @@
+<p>Returns the value of a plot flag, optionally running the plot event script
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> WR_GetPlotFlag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> strPlot,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nFlag,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCallScript&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">strPlot<dd>name of the plot<dt style="font-weight:normal; font-style:italic;">nFlag<dd>which flag in the plot to get the value of<dt style="font-weight:normal; font-style:italic;">nCallScript<dd>whether to call the event script associated with this plot
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the value of the plot flag
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">wrappers_h</a>
+</p>
+</dl>

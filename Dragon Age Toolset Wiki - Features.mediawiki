@@ -1,0 +1,11 @@
+<h2><span class="mw-headline" id="Features">Features</span></h2>
+<ul><li> Create your own add-ons to extend the main campaign in new directions</li>
+<li> Tell stand-alone stories in the Dragon Age setting or in a setting of your own devising</li>
+<li> Share resources with other modders to enhance each others' works</li>
+<li> Look "under the hood" to see how memorable moments in Dragon Age were done</li>
+<li> more!</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The level editor supports both indoor and outdoor terrain, with complete control over the placement of structures and props. You can create a dungeon by piecing together large prefabricated tunnel pieces, or stack wooden mugs one by one on a tavern counter. Visual effects and lighting conditions can be combined to produce any mood.
+</p><p>Conversations, plots and scripting are tightly integrated; you can use simple plots and pre-defined triggers to handle most common aspects of adventuring or delve deeply into the game's inner workings to produce more specialized effects. Much of the functionality that in previous games would be hard-coded into the engine is instead handled by scripts that an experienced modder can easily override.
+</p><p>Also included is a dedicated cutscene editor with a wide variety of powerful cinematic capabilities. The cutscene editor is a movie-making toolset in its own right; it is quite capable of producing stand-alone works of machinima if one so desired. All of the in-game footage in Dragon Age was produced using it. Lip-syncing and facial animation is fully automated, making lifelike performances easy to accomplish.
+</p>

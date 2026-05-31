@@ -1,0 +1,42 @@
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:25%;"><div style="text-align:center;"></div></div>  
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Template:Rubox">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Информационное окно, привязанное к правой стороне и шириной 25%(по умолчанию).
+</p>
+<h2><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5:">Использование:</span></h2>
+<p><b>Заметки:</b>
+</p>
+<table style="widht:100%">
+<tr>
+<td><pre>{{rubox|
+*Не забудьте сделать это.
+*Некоторые делают это по другому!
+}}
+</pre>
+</td></tr>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:25%;"><div style="text-align:center;"></div>
+<ul><li>Не забудьте сделать это.</li>
+<li>Некоторые делают это по другому!</li></ul>
+</div>
+</table>
+<p><b>Ссылки по теме:</b>
+</p>
+<table style="widht:100%">
+<tr>
+<td><pre>
+{{rubox|
+*{{ulink|2DA|Информация о 2DA|ru}}
+*{{ulink|Compiling 2DAs|Преобразование 2DA|ru}}
+|'''Ссылки по теме:'''|25}}
+</pre>
+</td></tr>
+<div style="float:right; background-color:#EEF; border:thin solid grey; padding:4px; margin:4px; width:25%;"><div style="text-align:center;"><b>Ссылки по теме:</b></div>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">Информация о 2DA</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru" title="Compiling 2DAs/ru">Преобразование 2DA</a></li></ul>
+</div>
+</table>
+<p><br />
+</p>

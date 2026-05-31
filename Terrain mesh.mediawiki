@@ -1,0 +1,203 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Level editor topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level editor">Level editor</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20new%20level" title="Creating a new level">Creating a new level</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exportable%20area" title="Exportable area">Exportable area</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20Editor%20Tutorial" title="Level Editor Tutorial">Level Editor Tutorial</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exterior%20Level%20Manual" title="Exterior Level Manual">Exterior Level Manual</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20Placement" title="Model Placement">Model Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Model%20list" title="Model list">Model list</a> <small>(screenshots)</small></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vista%20object" title="Vista object">Vista objects</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation" title="Vegetation">Vegetation Placement</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vegetation%20list" title="Vegetation list">Vegetation list</a> <small>(screenshots)</small></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Lighting" title="Lighting">Lighting</a></li>
+<li><strong class="selflink">Terrain mesh</strong>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Terrain%20list" title="Terrain list">Terrain list</a> <small>(screenshots)</small></li></ul></li></ul>
+</td></tr></table>
+<p>The terrain mesh is a deformable surface used in exterior levels to provide a "ground". This toolbar contains the tools that deals with the terrain mesh:
+</p><p><img alt="Level editor toolbar terrain editing.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/95/Level_editor_toolbar_terrain_editing.png" width="194" height="107" />
+</p><p>Each of these buttons brings up a "brush" that's used for various tasks.
+</p>
+<ul><li> <img alt="IconTerrainDeform.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b8/IconTerrainDeform.png" width="16" height="16" /> "Deform" allows the terrain mesh to be raised or lowered, or it can extrude the ground "outward" or "inward" along its surface normal. In other words, if you were to apply the brush to the side of a cliff in extrude mode you could create a cave-like hollow or a bulging overhang. Note that the walkmesh used by the game is two-dimensional, ie, it doesn't allow pathfinding both over and under an overhang. The walkmesh will always be generated on the overhanging part of the land. Also note that you cannot have an overhang from one terrain chunk into another terrain chunk - turn on "view chunk boundaries" to check if this has happened and reposition any overhangs that violate these boundaries.</li></ul>
+<ul><li><img alt="IconTerrainPlateau.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/6/65/IconTerrainPlateau.png" width="16" height="16" /> "Plateau" flattens out the land the brush is applied to, removing bumps or dips and making the ground level. It grabs the height at the center of the brush and makes the terrain inside the brush radius that same height.  It can go faster or slower depending on the max strength. This is a good tool for making a path through rough terrain, or for smoothing out a flat field.</li></ul>
+<ul><li><img alt="IconTerrainSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/cc/IconTerrainSmooth.png" width="16" height="16" /> "Smooth" is a more generic form of flattening tool. It doesn't force the ground toward a horizontal plane, instead just averaging out the nearby terrain in whatever orientation it averages out to.</li></ul>
+<ul><li><img alt="IconTerrainTessellate.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e6/IconTerrainTessellate.png" width="16" height="16" /> "Tessellate" changes the resolution of the terrain's mesh, increasing or decreasing the number of triangles a given region. This allows for a more fine-grained control of the shape of the land and prevents small features from being given obvious straight edges caused by the underlying triangle mesh. Left-clicking increases the number of triangular subdivisions and right-clicking reduces it. The "max level" and "min level" settings on the tool constrain these values - lower numbers indicate a coarser mesh with fewer, larger triangles.</li></ul>
+<ul><li><img alt="IconTexturePaint.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/23/IconTexturePaint.png" width="16" height="16" /> "Texture paint" paints materials from the material palette onto the terrain. The material palette for any given level can hold up to eight materials, and they can be blended together seamlessly.</li></ul>
+<ul><li><img alt="IconTextureSmooth.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/44/IconTextureSmooth.png" width="16" height="16" /> "Texture smooth" blurs the boundaries between different material types, allowing them to fade more gradually from one terrain material type to another.</li></ul>
+<ul><li><img alt="IconTextureRelax.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/IconTextureRelax.png" width="16" height="16" /> "Relax map" causes stretched ground textures to relax back toward their default resolution. Terrain texture stretching can occur when you deform the ground. For example, if you were to stretch the ground upward in a small area to form a tall cliff, the texture on the cliff's face would be vertically stretched and could look unrealistic as a result.</li></ul>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Brush type</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Deform mode</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Grid Opacity</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Visible level</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Deform Tool</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Distance</td>
+<td>  This is the strength of the deform, a higher number makes it deform by larger increments.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Round Brush</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Enable Noise</td>
+<td>  When this is enabled it enters noise into the deform, so instead of smooth it will appear rough.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Inner Radius%</td>
+<td>  This is the percentage of the radius that extrudes.  For example, if it is set to 100%, all the mesh in the radius rises (or falls) the same amount.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Max Strength</td>
+<td>  This controls the rate at which the deform is applied.  Set it to a smaller number to allow for finer control.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Noise Frequency</td>
+<td>  This controls how bumpy the noise brush is, the higher the number the bumpier it is.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Outer Radius</td>
+<td>  This controls how big the deform brush is.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Tessellation Tool</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Max level</td>
+<td>is the maximum level that the brush will tessellate the terrain.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Min level</td>
+<td>is the minimum level that the brush will tessellate the terrain.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Painting Tool</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Max Contribution</td>
+<td>  This is the maximum contribution that this material will contribute to the texel, even with continued painting.  The number is a percentage of the total value of the texel, with 100% being full and 0% being none.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Smoothing Passes</td>
+<td>  This is the number of smoothing passes that the editor applies after each paint.  A smoothing pass is basically smoothing the current values with the texels on each side, in order to minimize the visible lines in between each one.  Keep in mind that smoothing is expensive on the CPU so the higher this number is, the slower painting will be.  There is also a tool that allows the artist to do this manually, the Texture Smooth Tool.</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Material_Palette">Material Palette</span></h2>
+<p>The Material Palette has 2 parts, the floating palette shown above that shows a picture of the diffuse channel of the material, and allows the artist to quickly choose materials to paint with.  There is also the material editor.  If you open up the palette in the hierarchy list, under Terrain World/Terrain Mesh, you will see a list of the materials in the palette.  By default there are 4.  Click on a material and you will see the material editor.
+</p><p>In the material editor you can see an entry for each of the parts of the terrain material, Diffuse, Heightmap, Normal, and Specular.  This editor allows you to click on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Ellipsis.png"><img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" /></a> button and select from a list of textures in resources.  It also shows a preview of this texture.
+</p><p>You can add new materials by right clicking on the Palette in the hierarchy.
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Material ID</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Name</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Selection Lock</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Sound Material Type</td>
+<td></td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Visible</td>
+<td></td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Scales</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Relief</td>
+<td>  This is the strength of the relief (height) map.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">UVTile</td>
+<td>  This specifies the number of times the material tiles on a sector, the higher the number the smaller the material will show up.</td>
+</tr>
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Textures</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Diffuse</td>
+<td>The diffuse texture defines the material's color at each pixel.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Normal</td>
+<td>Normal maps are used to add shading to the texture, faking the effect of "bumpiness"</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular</td>
+<td>Specular maps define how shiny the texture is. the Level Editor simply takes the image you assign to the specular Texture and converts it to grayscale and writes it to the alpha channel of your LAYOUT__pal.dds texture</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Color</td>
+<td>Tints the reflected light</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Specular Exponent</td>
+<td></td>
+</tr>
+</table>

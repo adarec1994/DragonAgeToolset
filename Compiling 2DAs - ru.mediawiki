@@ -1,0 +1,110 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Создание 2DA</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Compiling_2DAs/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>В папке <b>"Dragon Age\tools\ResourceBuild\Processors"</b> находится программа, называемая <b>"ExcelProcessor.exe"</b>, которая преобразует 2DA-файлы из формата электронной таблицы (XLS) в <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA%20-%20ru" title="GDA/ru">GDA</a></b>. В данной инструкции приведены 3 способа проведения этой операции.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9D.D0.B5.D0.BE.D0.B1.D1.85.D0.BE.D0.B4.D0.B8.D0.BC.D1.8B.D0.B5_.D1.83.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D1.8F"><span class="tocnumber">1</span> <span class="toctext">Необходимые условия</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9F.D1.80.D0.B5.D0.BE.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5"><span class="tocnumber">2</span> <span class="toctext">Преобразование</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D1.82.D0.B0.D1.89.D0.B8_.D0.B8_.D0.B1.D1.80.D0.BE.D1.81.D1.8C"><span class="tocnumber">2.1</span> <span class="toctext">Перетащи и брось</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.9A.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D0.BD.D0.B0.D1.8F_.D1.81.D1.82.D1.80.D0.BE.D0.BA.D0.B0"><span class="tocnumber">2.2</span> <span class="toctext">Командная строка</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.BAT-.D0.BD.D0.B8.D0.BA.D0.B0"><span class="tocnumber">2.3</span> <span class="toctext">Использование .BAT-ника</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.92.D1.81.D1.82.D1.80.D0.B0.D0.B8.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.8D.D0.BA.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0_2DA_.D0.B2_.D0.9F.D1.80.D0.BE.D0.B2.D0.BE.D0.B4.D0.BD.D0.B8.D0.BA_Windows_XP"><span class="tocnumber">2.4</span> <span class="toctext">Встраивание экспорта 2DA в Проводник Windows XP</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.9F.D0.BE.D1.81.D0.BB.D0.B5.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5"><span class="tocnumber">3</span> <span class="toctext">Послесловие</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9D.D0.B5.D0.BE.D0.B1.D1.85.D0.BE.D0.B4.D0.B8.D0.BC.D1.8B.D0.B5_.D1.83.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D1.8F">Необходимые условия</span></h2>
+<ul><li>Убедитесь, что электронная таблица, преобразование которой требуется, имеет надлежащий формат. В противном случае неизбежны ошибки. Смотрите статью: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA</a></li>
+<li>Требования к наименованиям:
+<ul><li>Убедитесь в корректности имён листов в таблице. Если вы расширяете M2DA убедитесь в правильном префиксе.  Смотрите статью: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls%20-%20ru" title="2DA base.xls/ru (page does not exist)">2DA_base.xls</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">(en)</a>.</li>
+<li>Убедитесь в уникальности имён листов в таблице, разумеется кроме случаев коррекции существующих 2DA.</li>
+<li>Имя самой таблицы значения не имеет, так как преобразование в GDA происходит на основе листов, расположенных в ней.</li>
+<li>Не используйте в названиях кириллицу.</li></ul></li>
+<li>Убедитесь, что таблица закрыта, так как ExcelProcessor работает только с таблицами, не открытыми в других программах.</li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B5.D0.BE.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5">Преобразование</span></h2>
+<p>Ниже перечислены три метода преобразования.
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D1.82.D0.B0.D1.89.D0.B8_.D0.B8_.D0.B1.D1.80.D0.BE.D1.81.D1.8C">Перетащи и брось</span></h3>
+<ol><li> Скопируйте файл ExcelProcessor.exe и исходные таблицы в новую директорию(не обязательно, но предпочтительно).</li>
+<li> Выберите мышкой необходимые таблицы и перетащите их на ExcelProcessor.exe.</li>
+<li> Полученные в результате преобразования файлы GDA должны появиться в папке расположения ExcelProcessor'а, или же в активной папке, что определяется операционной системой, её языком и некоторыми другими факторами.</li></ol>
+<hr />
+<ul><li> Насколько я знаю, таких проблем на рускоязычных ОС не возникало, полученные GDA появляются в той же папке - <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a></li></ul>
+<hr />
+<h3><span class="mw-headline" id=".D0.9A.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D0.BD.D0.B0.D1.8F_.D1.81.D1.82.D1.80.D0.BE.D0.BA.D0.B0">Командная строка</span></h3>
+<ol><li> Скопируйте ExcelProcessor.exe в папку, в которой расположены исходные таблицы.</li>
+<li> Запустите командную строку, перейдите в папку, в которой распложены ExcelProcessor и таблицы.</li>
+<li> Наберите: ExcelProcessor "filename.xls" (где "filename" - имя таблицы, двойные кавычки необязательны).</li>
+<li> Полученные в результате преобразования файлы GDA появятся там же, где и при использовании предыдущего метода.</li></ol>
+<p>Пример:<br />
+<code>
+C:\2DA\&gt;ExcelProcessor guitypes.xls
+</p><p></code>
+</p>
+<h3><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.BAT-.D0.BD.D0.B8.D0.BA.D0.B0">Использование .BAT-ника</span></h3>
+<p>Этот способ более удобен, чем предыдущие:
+</p>
+<ol><li> Создайте папку, например <b>"C:\2DA\"</b>.</li>
+<li> В этой папке создайте новый файл и назовите его <b>"2DACompile.BAT"</b>. </li>
+<li> Откройте новый файл в Блокноте и введите следующую строку:</li></ol>
+<pre>
+cd /d&#160;%0\..
+"C:\*DragonAgeInstallDir*\tools\ResourceBuild\Processors\ExcelProcessor.exe"&#160;%1
+PAUSE
+</pre>
+<p><b>Внимание:</b> Замените <b>"C:\*DragonAgeInstallDir*"</b> на путь, по которому у вас установлена игра.
+</p>
+<ol><li> Выберите мышкой необходимые таблицы и перетащите их на ваш новый BAT-ник. При использовании этого метода отпадает необходимость держать таблицы и ExcelProcessor в одной папке.</li>
+<li> Полученные в результате преобразования файлы GDA появятся в папке <b>"C:\2DA\"</b>.</li>
+<li> Окно BAT-ника останется открытым, в результате чего вы сможете просмотреть сообщения о возможных ошибках.</li></ol>
+<p>Также вы можете расположить BAT-ник на рабочем столе, в этом случае GDA бдут появляться на рабочем столе. Если вы предпочитаете лёгкий и быстрый доступ к файлам. Исходные таблицы могут располагаться в любом месте.
+</p>
+<h3><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.80.D0.B0.D0.B8.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D1.8D.D0.BA.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0_2DA_.D0.B2_.D0.9F.D1.80.D0.BE.D0.B2.D0.BE.D0.B4.D0.BD.D0.B8.D0.BA_Windows_XP">Встраивание экспорта 2DA в Проводник Windows XP</span></h3>
+<p>Ну и наиболее удобный способ, который позволит вам использовать контекстное меню Проводника. 
+</p>
+<ol><li> Откройте Проводник Windows и выберите в меню <b>Сервис | Параметры папок</b>.</li>
+<li> На закладке <b>Типы файлов</b> выберите из списка расширение <b>XLS</b> и нажмите на кнопку <b>"Дополнительно"</b>.</li>
+<li> Нажмите на кнопку <b>Новый</b> и введите "Преобразование 2DA" в поле.</li>
+<li> Вставьте следующий текст в поле "Программа" и нажмите <b>ОК</b> (обновите имена диска и папки для соответствия с вашим клиентом): <tt>"C:\*DragonAgeInstallDir*\Dragon Age\tools\ResourceBuild\Processors\ExcelProcessor.exe"  "%1"  -outdir="C:\Documents and Settings\YOURNAME\My Documents\BioWare\Dragon Age\packages\core\override"</tt>
+<ol><li> Для Steam-версии используйте следующее: <tt>"C:\Program Files\Steam\steamapps\common\dragon age origins\tools\ResourceBuild\Processors\ExcelProcessor.exe"  "%1" -outdir="C:\Documents and Settings\YOURNAME\My Documents\BioWare\Dragon Age\packages\core\override"</tt></li></ol></li></ol>
+<p>Обратите внимание, что пробелы в написании пути могут привести к проблемам(Windows), поэтому не забывайте о кавычках.
+</p><p>Использование:
+</p>
+<ol><li> Используя проводник перейдите в папку, где находятся ваши 2DA, и выберите необходимые таблицы. Нажмите правую кнопку мыша  и в контекстном меню выберите "Преобразование 2DA".</li>
+<li> Убедитесь, что все GDA-файлы, которые должны были появиться - появились.</li></ol>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Adding%20binarize%202da%20to%20Windows%20XP%20explorer.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png" width="300" height="278" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Adding%20binarize%202da%20to%20Windows%20XP%20explorer.png" title="Enlarge"></a></div>An example of how setting this up in Windows XP looks</div></div></div></div>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D1.81.D0.BB.D0.B5.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5">Послесловие</span></h2>
+<p>Размещайте свои GDA-файлы в папке переопределения(override). Как её определить:
+</p>
+<ul><li>Если это GDA-файл вашего модуля, но расширяющий основные M2DA: (Минимизирует появление косяков и ошибок)</li></ul>
+<pre>My Documents\BioWare\Dragon Age\AddIns\yourmodulename\core\override\</pre>
+<ul><li>Если это GDA-файл вашего модуля, но 2DA не касаются исходных файлов игры:</li></ul>
+<pre>My Documents\BioWare\Dragon Age\AddIns\yourmodulename\module\override\</pre>
+<p>Желательно, чтобы когда вы упаковываете модуль, файлы располагались в одном месте.
+</p><p><b>Внимание:</b> Название папки "My Documents" может различаться в разных ОС. "yourmodulename" название вашего модуля.
+</p>
+<ul><li>Для всех других случаев, когда GDA не является частью вашего модуля: <i>(используется только для переопределения значений конкретных строк, и модификации игры без использования тулсета)</i></li></ul>
+<pre>*DragonAgeInstalldir*\packages\core\override\</pre>
+<p><b>Внимание:</b> *DragonAgeInstalldir* папка установки игры.
+</p><p><i>Смотрите также: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities%20-%20ru" title="Source directory priorities/ru (page does not exist)">Source directory priorities</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">(en)</a> - для получения большего объёма информации по приоритетам папок, используемых для переопределения DA.</i>
+</p>
+<hr />
+<p><b>Подсказка:</b> Для получения эффекта вы должны перегрузить тулсет(или игру) после размещения GDA.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs" title="Compiling 2DAs">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

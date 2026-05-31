@@ -1,0 +1,32 @@
+<table style="background:#fdfdfd;" width="50%">
+
+<caption style="background:#ccccff; font-weight:bold;"> Dragon Age Toolset screenshot
+</caption>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Toolset version
+</th>
+<td> Unknown
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Editor depicted
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left" style="background:#ddddff;" width="33%"> Operating system
+</th>
+<td> Unknown
+</td></tr>
+<tr>
+<td colspan="2">
+</td></tr></table>
+<p>Usage:
+</p>
+<pre>
+{{Toolset screenshot
+|version=
+|editor=
+|OS=
+|desc=
+}}
+</pre>

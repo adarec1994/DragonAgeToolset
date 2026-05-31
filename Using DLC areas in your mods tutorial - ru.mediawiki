@@ -1,0 +1,33 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Инструкция по использованию локаций из DLC</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Using_DLC_areas_in_your_mods_tutorial/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Эта инструкция покажет вам, как использовать локации из официальных дополнений при создании ваших модов на примере DLC "Пик Стражей" и "Каменная пленница".
+</p>
+<h2><span class="mw-headline" id=".D0.A7.D1.82.D0.BE_.D1.83_.D0.B2.D0.B0.D1.81_.D0.B4.D0.BE.D0.BB.D0.B6.D0.BD.D0.BE_.D0.B1.D1.8B.D1.82.D1.8C">Что у вас должно быть</span></h2>
+<ol><li> Игра Dragon Age Начало.</li>
+<li> DAO Toolset.</li>
+<li> Официальные дополнения "Пик стража" и/или "Каменная пленница".</li></ol>
+<h2><span class="mw-headline" id=".D0.98.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.BA.D1.86.D0.B8.D1.8F_.D0.BF.D0.BE_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D1.8E">Инструкция по применению</span></h2>
+<ol><li> Закройте Toolset, если он открыт.</li>
+<li> Откройте папку C:\Documents and Settings\username\My Documents\BioWare\Dragon Age\AddIns.ns</li>
+<li> Там находятся две папки: dao_prc_cp_2(keep) or dao_prc_nrx_1(shale area).</li>
+<li> Зайдите в папку и далее по пути core -&gt; env.</li>
+<li> Скопируйте всё из папки "env" DLC-ки в папку Папка установки\Dragon Age\packages\core\env.</li>
+<li> Откройте Toolset.</li>
+<li> Теперь, когда вы выберите Area layout, локации из DLC-ок будут видны как gwb110d(Пик Стражи) / shl100d(Деревня Шейлы)</li></ol>
+<p>Таким образом вы сможете создавать моды с применением локаций из DLC-ок.
+То же сработает и для ПРобуждения
+<a rel="nofollow" class="external text" href="http://forums.nexusmods.com/index.php?/topic/223468-awakening-resources/page__st__10__p__1970294#entry1970294">Source</a>
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Using%20DLC%20areas%20in%20your%20mods%20tutorial" title="Using DLC areas in your mods tutorial">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

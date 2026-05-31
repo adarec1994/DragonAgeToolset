@@ -1,0 +1,132 @@
+<p>We first need to discuss how the game makes use of scripts, and in   particular our module event scripts (every mod has one). Every time   something happens in the game, e.g., you open or close the inventory,   talents, skills, or world map gui, all the module event scripts you  have  installed are fire and processed (probably in the order the mods  where  installed) as well as the core game scripts (typically these are   processed first). 
+</p><p>So if we want to capture the behavior of our   NPC follower or a major event of the game it can be done here, e.g.,  the  PC selected or dropped the follower in the partypicker, you begin   travel, or the PC just finished talking to everyone at the gates in the   climax, or the game is over and we're at the slideshow.
+</p><p>This  game  structure is indeed brilliant since it allows the main game and  all  mods installed to handle and process the same event, say <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20BEGIN%20TRAVEL" title="EVENT TYPE BEGIN TRAVEL">EVENT_TYPE_BEGIN_TRAVEL</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20MODULE%20HANDLE%20GIFT" title="EVENT TYPE MODULE HANDLE GIFT">EVENT_TYPE_MODULE_HANDLE_GIFT</a> or  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20WORLD%20MAP%20CLOSED" title="EVENT TYPE WORLD MAP CLOSED">EVENT_TYPE_WORLD_MAP_CLOSED</a> and so forth.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_we_can.27t_and_can_do"><span class="tocnumber">1</span> <span class="toctext">What we can't and can do</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_do_we_need.3F"><span class="tocnumber">2</span> <span class="toctext">What do we need?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Basic_structure_of_the_module_event_handler"><span class="tocnumber">3</span> <span class="toctext">Basic structure of the module event handler</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Capturing_Main_Campaign_Event.2FFlag_Changes.2C_the_function_check_plot_changed.28.29"><span class="tocnumber">4</span> <span class="toctext">Capturing Main Campaign Event/Flag Changes, the function check_plot_changed()</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Potential_Disadvantage_.28not_certain.2C_it_might_cause_lag_in_slow_systems.29"><span class="tocnumber">5</span> <span class="toctext">Potential Disadvantage (not certain, it might cause lag in slow systems)</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="What_we_can.27t_and_can_do">What we can't and can do</span></h1>
+<p>The   only major resource we have to change is the partypicker, otherwise  our  NPC's won't show up. There is a way around this(item 4 below).
+</p><p>If   you want your NPC to interject in the middle of a major dialog, that   dialog resource has to be changed (I can't see any way around this one).
+</p><p>The   thing to keep in mind is that every time something happens in the  game,  certain flags from core game resources are set. We can capture  when  these are set and continue the process appropriately.
+</p><p>In this way, I'll show you how <b>we can do</b> the following (I've done these for my mod Valeria, WITHOUT changing any core game resources, I'll use her as a reference):
+</p><p>1) Valeria banters with the party randomly WITHOUT changing any original game scripts.
+</p><p>2) Valeria accepts specific gifts WITHOUT changing the game scripts.
+</p><p>3) Valeria is in a nightmare area WITHOUT changing the game scripts.
+</p><p>4)   Valeria has a dialog option to eliminate problems with partypicker   compatibility. If she doesn't show up in the partypicker she can still   be picked up or sent back to camp.
+</p><p>5) Valeria has her own dialog after major cutscenes (where appropriate) of the game WITHOUT changing resources of the game.
+</p><p>6)   Valeria appears in all camps (basic camp, Arl Eamon's estates, post   coronation), most cutscenes from the original game and at the city  gates  WITHOUT changing resources of the game.
+</p><p>7) Valeria behaves appropriately if the PC gets captured WITHOUT changing resources of the game.
+</p><p>8) Slideshow post coronation WITHOUT changing the resources of the game.
+</p><p><br />
+Everything   on this wiki is currently written in such a way that only item 2,   requires further modifications to make the scripts disjoint, so we can   all use it(should you choose to) without conflicts and bugs.
+</p><p>General   Note: The dynamic stage acl_1p is used in most dialogs you see below.   Remember to check the "At current location" tick box. Actor1 should be   PLAYER, Actor2 should be owner.
+</p>
+<h1><span class="mw-headline" id="What_do_we_need.3F">What do we need?</span></h1>
+<p>Well, basic knowledge of the toolset and scripting.
+</p><p>a) The NPC mod event handler, say "valeria_event_handler". The companion Valeria is given the tag, "valeria_npc"
+</p><p>b) A plot to hold all our NPC flags, call it "valeria_npc_hire". In the handler we should have the include:
+</p>
+<dl><dd><b>#include "plt_valeria_npc_hire"</b></dd></dl>
+<p>c) We need the following basic FLAGS: 
+</p>
+<ul><li>PARTY_VALERIA_IN_PARTY</li>
+<li> PARTY_VALERIA_JOINED</li>
+<li> VALERIA_CHECK_RUNIT</li></ul>
+<p>These   are there to handle Valeria(is she in party?, has she joined? do we   need to run the script? it has to be done if we're in a camp site.   you'll see what script)
+</p><p>d) Other flags to set when needed:  
+</p>
+<ul><li> VALERIA_WYNNE_KILLED</li>
+<li> VALERIA_RESPONSE_TO_BAD</li>
+<li> VALERIA_ENTER_FADE</li>
+<li> VALERIA_HAS_NIGHTMARE_A</li>
+<li> VALERIA_HAS_NIGHTMARE_B</li>
+<li> VALERIA_HAS_NIGHTMARE_C</li>
+<li> VALERIA_SLOTH_DEMON_ATTACKS</li>
+<li> VALERIA_SLOTH_DEMON_DEFEATED</li>
+<li> VALERIA_WYNNE_KILLED_AT_CULLEN</li>
+<li> VALERIA_DEN_CAPTURED_PC_CAPTURED</li>
+<li> VALERIA_CLI_MAIN_PC_FINISHED_SETTING_FINAL_PARTY</li>
+<li> VALERIA_EPI_JUMP_TO_SLIDE_SHOW, VALERIA_FIGHTING_ARCHDEMON</li></ul>
+<p>If  you  drop the valeria_ prefix (FOR YOUR MOD USE A DIFFERENT PREFIX   EVERYWHERE) you'll recognize some flags from the original game.   Everytime those are set, we'll need to set a corresponding flag in our   NPC plot, so we run things only once.
+</p><p>I'll tell you which plots from the main game we need depending on what we're trying to do.
+</p>
+<h1><span class="mw-headline" id="Basic_structure_of_the_module_event_handler">Basic structure of the module event handler</span></h1>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">//core includes here</span>
+&#160;
+<span class="co1">//core plot includes</span>
+&#160;
+<span class="co1">//valeria function, plots etc, includes</span>
+&#160;
+<span class="co2">#include &quot;plt_valeria_npc_hire&quot;</span>
+&#160;
+<span class="co1">//constant definitions here</span>
+&#160;
+<span class="co1">//function definitions here</span>
+&#160;
+<span class="br0">&#40;</span>all this part <span class="nu0">1</span><span class="br0">&#41;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oPC <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,me<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword"><span class="kw1">OBJECT_SELF</span></a>,ohire;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> ev <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>ev<span class="br0">&#41;</span>;
+    <span class="co1">//function calls here, other important checks (part 2)</span>
+    <span class="co1">//capture events</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+     .....<span class="br0">&#40;</span>part <span class="nu0">3</span><span class="br0">&#41;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="co1">//functions here (part 4)</span></pre></div></div>
+<p>For   what follows, I'll break the event script into four parts for quick   reference: Includes, (Main) Body, (Event) Handling, Functions
+</p>
+<h1><span class="mw-headline" id="Capturing_Main_Campaign_Event.2FFlag_Changes.2C_the_function_check_plot_changed.28.29">Capturing Main Campaign Event/Flag Changes, the function check_plot_changed()</span></h1>
+<p>The next script can be placed in the event handler, and allows us to capture and process main plot changes.
+</p><p>I'll do this structure a first time here
+</p><p>In 'includes' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> check_plot_changed<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="br0">&#41;</span>;</pre></div></div>
+<p>In 'body' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">...
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag"><span class="kw4">UT_GetNearestObjectByTag</span></a><span class="br0">&#40;</span>oPC,<span class="st0">&quot;valeria_npc&quot;</span><span class="br0">&#41;</span>;
+...
+&#160;
+<span class="me1">check_plot_changed</span><span class="br0">&#40;</span>oVal<span class="br0">&#41;</span>;
+...</pre></div></div>
+<p>In 'functions' add:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">//check if plot flags changed and act appropriately</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> check_plot_changed<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oVal<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oPC<span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//if Valeria has not joined return</span>
+<span class="co1">//leave some room here for the slideshow script addition</span>
+<span class="co1">//it has to go above this check, otherwise if you don't pick her up</span>
+<span class="co1">//the script won't fire and the appropriate slides won't be shown</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>WR_GetPlotFlag<span class="br0">&#40;</span>PLT_VALERIA_NPC_HIRE, PARTY_VALERIA_JOINED<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>;
+<span class="co1">//every other addition to this function should be made below this check</span>
+...
+<span class="co1">//here depending on which core flag changed, act appropriately</span>
+...
+&#160;
+<span class="br0">&#125;</span></pre></div></div>
+<p>We will be changing this function appropriately below, depending on what we wish to do.
+</p>
+<h1><span class="mw-headline" id="Potential_Disadvantage_.28not_certain.2C_it_might_cause_lag_in_slow_systems.29">Potential Disadvantage (not certain, it might cause lag in slow systems)</span></h1>
+<p>Now   that we know how the handlers behave (from mods and the core game) we   need to discuss the possible problems with this approach.
+</p><p>It all comes down to lag (although I don't really experience it but I put it here for completeness).
+</p><p>Whenever   we intercept an event in Event handling, all the commands in the event   handler Body will fire. That might slow some low end systems down.
+</p>
+<div class="tutorialnavbar" align="center"><img alt="Icon wiki arrow left disabled.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/89/Icon_wiki_arrow_left_disabled.png" width="64" height="64" /> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation" title="Compatible Companion Mod Creation"><img alt="Compatible Companion Mod Creation" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d1/Icon_wiki_home_enabled.png" width="64" height="64" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compatible%20Companion%20Mod%20Creation%20-%20Random%20Banter" title="Random Banter"><img alt="Random Banter" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/e/e3/Icon_wiki_arrow_right_enabled.png" width="64" height="64" /></a>
+</div>

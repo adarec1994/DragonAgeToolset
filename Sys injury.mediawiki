@@ -1,0 +1,26 @@
+<p>The Injury System, <strong class="selflink">sys_injury</strong>, uses special, permanently applied effects to a party member to mimic last damage sustained when dropping in combat.
+</p><p>Injury effects are normal effects, however they are applied with an id of 50000 (INJURY_SPELL_ID) + injury index.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plt%20tut%20combat%20injury" title="Plt tut combat injury (page does not exist)">plt_tut_combat_injury</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plt%20tut%20combat%20injury%20lots" title="Plt tut combat injury lots (page does not exist)">plt_tut_combat_injury_lots</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stats%20core%20h" title="Stats core h (page does not exist)">stats_core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Wrappers%20h" title="Wrappers h">wrappers_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TUTORIAL" title="TUTORIAL *">TUTORIAL *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20AddInjury" title="Injury AddInjury">Injury AddInjury</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20DetermineInjury" title="Injury DetermineInjury">Injury DetermineInjury</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20GetInjuriesNum" title="Injury GetInjuriesNum">Injury GetInjuriesNum</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20GetInjuryEffects" title="Injury GetInjuryEffects">Injury GetInjuryEffects</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20GetInjuryIdFromEffect" title="Injury GetInjuryIdFromEffect">Injury GetInjuryIdFromEffect</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20RemoveAllInjuries" title="Injury RemoveAllInjuries">Injury RemoveAllInjuries</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20RemoveAllInjuriesFromParty" title="Injury RemoveAllInjuriesFromParty">Injury RemoveAllInjuriesFromParty</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injury%20RemoveInjury" title="Injury RemoveInjury">Injury RemoveInjury</a></li></ul>

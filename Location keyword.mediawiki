@@ -1,0 +1,35 @@
+<p>The <b>location</b> type is a structure which consists of three members: an area <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>, a position <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> and a facing <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a>.
+</p>
+<h2><span class="mw-headline" id="Constructor">Constructor</span></h2>
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#constructor" title="Scripting terminology">constructor</a> for a location is the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location" title="Location">Location</a> function.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>There is no <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> for a location.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<p>There is no explicit or implicit conversion to or from a location.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow a location to exist outside of the scope of the current script by storing it on an object or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalLocation" title="SetLocalLocation">SetLocalLocation</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventLocation" title="SetEventLocation">SetEventLocation</a></li></ul>
+<p>The following functions allow a location which exists outside of the scope of the current script to be used in the current script by retrieving it from an object or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalLocation" title="GetLocalLocation">GetLocalLocation</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventLocation" title="GetEventLocation">GetEventLocation</a></li></ul>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lDefault;
+&#160;
+    <span class="co1">// initialised using the constructor</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lConstructed <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location"><span class="kw4">Location</span></a><span class="br0">&#40;</span>oArea, vPosition, fFacing<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// assigned using the Player's location</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lAssigned <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;    
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation" title="GetLocation">GetLocation</a>
+</p>

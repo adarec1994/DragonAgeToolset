@@ -1,0 +1,95 @@
+<p>A creature or container object can contain one or more <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item" title="Item">items</a> in inventory. 
+</p><p>If a container is destroyed the contents of its inventory are transferred to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bodybag" title="Bodybag">Bodybag</a>.
+</p><p>Each item can have the following properties set:
+</p>
+<ul><li>Subgroup</li>
+<li>Slot - Sets whether the creature has equipped the item. "Not equipped" leaves the item in the general inventory, "Main" puts the item into the creature's main hand, and "off-hand" puts the item into the creature's off hand.</li>
+<li>Set - Items that are part of a set are meant to be given as a group.&#160;!!This is handled in the giving/taking script?!!</li>
+<li>StackSize - how many copies of this item are present in a stack</li>
+<li>Droppable - a checkbox that indicates whether the item is dropped when the creature is killed</li>
+<li>Stealable - a checkbox that indicates whether the item can be stolen from the creature</li></ul>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png" width="400" height="189" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/73/Creature_inventory.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Creature%20inventory.png" title="Enlarge"></a></div>A typical creature inventory screen</div></div></div></div>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Merchant" title="Merchant">Merchants</a> also have an inventory.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%20system" title="Treasure system">Treasure system</a> for auto-generated loot.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inventory_Count_-_basic_syntax"><span class="tocnumber">1</span> <span class="toctext">Inventory Count - basic syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Inventory_Subgroup_Codes"><span class="tocnumber">2</span> <span class="toctext">Inventory Subgroup Codes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Armor"><span class="tocnumber">2.1</span> <span class="toctext">Armor</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Glove"><span class="tocnumber">2.2</span> <span class="toctext">Glove</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Boots"><span class="tocnumber">2.3</span> <span class="toctext">Boots</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Helmets"><span class="tocnumber">2.4</span> <span class="toctext">Helmets</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Shields"><span class="tocnumber">2.5</span> <span class="toctext">Shields</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Magic_Staff"><span class="tocnumber">2.6</span> <span class="toctext">Magic Staff</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Melee_Weapons"><span class="tocnumber">2.7</span> <span class="toctext">Melee Weapons</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Ranged_Weapons"><span class="tocnumber">2.8</span> <span class="toctext">Ranged Weapons</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Other"><span class="tocnumber">2.9</span> <span class="toctext">Other</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Special"><span class="tocnumber">2.10</span> <span class="toctext">Special</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inventory_Count_-_basic_syntax">Inventory Count - basic syntax</span></h2>
+<p>How do you know if the user has enough inventory space before adding items?
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"> <span class="co1">//Get max inventory size</span>
+ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> iMaxInventorySize <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetMaxInventorySize"><span class="kw4">GetMaxInventorySize</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> oInv <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory"><span class="kw4">GetItemsInInventory</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="kw3">GET_ITEMS_OPTION_BACKPACK</span>, <span class="nu0">0</span>, <span class="st0">&quot;&quot;</span>, <span class="nu0">1</span><span class="br0">&#41;</span>;
+&#160;
+ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><span class="st0">&quot;Max Inventory size:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span>iMaxInventorySize<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+ <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><span class="st0">&quot;Current Inventory count:&quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IntToString"><span class="kw4">IntToString</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>oInv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;</pre></div></div>
+<p>This returned 102 items in my inventory out of a total of 120.
+</p>
+<h2><span class="mw-headline" id="Inventory_Subgroup_Codes">Inventory Subgroup Codes</span></h2>
+<h3><span class="mw-headline" id="Armor">Armor</span></h3>
+<ul><li>351000 - Mage Robe / Clothing</li>
+<li>331000 - Light Armor   </li>
+<li>332000 - Medium Armor    </li>
+<li>333000 - Heavy Armor    </li>
+<li>334000 - Massive Armor</li></ul>
+<h3><span class="mw-headline" id="Glove">Glove</span></h3>
+<ul><li>311000 - Light Gloves</li>
+<li>312000 - Medium Gloves</li>
+<li>311000 - Heavy Gloves</li>
+<li>314000 - Massive Gloves</li></ul>
+<h3><span class="mw-headline" id="Boots">Boots</span></h3>
+<ul><li>321000 - Light Boots</li>
+<li>322000 - Medium Boots</li>
+<li>323000 - Heavy Boots</li>
+<li>324000 - Massive Boots</li></ul>
+<h3><span class="mw-headline" id="Helmets">Helmets</span></h3>
+<ul><li>301000 - Light Helmet</li>
+<li>302000 - Medium Helmet</li>
+<li>303000 - Heavy Helmet</li>
+<li>304000 - Massive Helmet</li>
+<li>351500 - Mage Helmet</li></ul>
+<h3><span class="mw-headline" id="Shields">Shields</span></h3>
+<ul><li>343000 - Kite Shield</li>
+<li>342000 - Large Shield    </li>
+<li>341000 - Small Shield</li>
+<li>344000 - Tower Shield</li></ul>
+<h3><span class="mw-headline" id="Magic_Staff">Magic Staff</span></h3>
+<ul><li>221000 - Staff</li></ul>
+<h3><span class="mw-headline" id="Melee_Weapons">Melee Weapons</span></h3>
+<ul><li>201000 - Waraxes</li>
+<li>202000 - Battleaxes</li>
+<li>203000 - Daggers</li>
+<li>204000 - Greatswords</li>
+<li>205000 - Longswords</li>
+<li>206000 - Maces</li>
+<li>207000 - Mauls</li></ul>
+<h3><span class="mw-headline" id="Ranged_Weapons">Ranged Weapons</span></h3>
+<ul><li>211000 - Shortbows</li>
+<li>212000 - Longbows</li>
+<li>213000 - Crossbows</li>
+<li>214000 - Ammo</li></ul>
+<h3><span class="mw-headline" id="Other">Other</span></h3>
+<ul><li>411000 - Amulets</li>
+<li>421000 - Belts</li>
+<li>431000 - Rings</li></ul>
+<h3><span class="mw-headline" id="Special">Special</span></h3>
+<ul><li>361000 - Collar</li>
+<li>362000 - Warpaint</li></ul>

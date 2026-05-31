@@ -1,0 +1,4 @@
+<p>Is this page quite up to date? I just tried to set up the lighting for my new (exterior) level as described here, but the lightmap won't render. Either there's some information missing in this section or it's so well hidden that I didn't see it&#160;;-) -- Nimue
+</p>
+<dl><dd>The lightmapper wasn't included with build 888 - there were still a little bit of legal issues for us to work through. It'll be in the next build we send out, which should be soon now. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 19:48, 25 September 2009 (UTC)</dd></dl>
+<dl><dd><dl><dd>That explains the error messages I'm getting&#160;;-) Thanks for the info, I'll wait for the next build before trying again. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nimue%20KV" title="User:Nimue KV (page does not exist)">Nimue KV</a> 08:10, 26 September 2009 (UTC)</dd></dl></dd></dl>

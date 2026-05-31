@@ -1,0 +1,28 @@
+<p>This function will compute a new safe location based on the specified location.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> GetSafeLocation(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLocation<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">lLocation<dd>The location to base a new safe location off of (if necessary)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid safe location
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function will compute a new safe location based on the specified location.
+If the specified location is a safe location, then that location will be returned.
+A safe location is a walkable section of terrain that is not occupied by a creature.
+It should be noted that walkable also means that the specified location would not be occupied by a placeable object,
+unless the placeable object had no walkmesh.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>This function is expensive, and as such should not be called frequently if it can be helped.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsLocationSafe" title="IsLocationSafe">IsLocationSafe</a>
+</p>

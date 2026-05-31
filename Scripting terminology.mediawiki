@@ -1,0 +1,22 @@
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<th> Contents
+</th></tr>
+<tr>
+<td><div style="text-align:left;">    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a> <br />
+</div>
+</td></tr></table>
+<h3><span class="mw-headline" id="C"><span id="C">C</span></span></h3>
+<dl><dt> <span id="Constant">Constant</span>&#160;</dt>
+<dd> A value which is known at compile time and does not change. A constant is declared using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Const%20keyword" title="Const keyword (page does not exist)">const keyword</a> and must be initialised with a value when it is declared.</dd>
+<dt> <span id="Constructor">Constructor</span>&#160;</dt>
+<dd> A function that creates an instance of a data type.</dd></dl>
+<h3><span class="mw-headline" id="I"><span id="I">I</span></span></h3>
+<dl><dt> <span id="Include_file">Include file</span>&#160;</dt>
+<dd> A non-executable script that can be referenced from, and merged with, another script using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Include%20directive" title="Include directive">#include directive</a>.</dd></dl>
+<h3><span class="mw-headline" id="L"><span id="L">L</span></span></h3>
+<dl><dt> <span id="literal">literal</span>&#160;</dt>
+<dd> A textual representation of a value for a data type, for example, 12345 is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> literal, 123.45 is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> and, "Hello World" is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> literal</dd></dl>
+<h3><span class="mw-headline" id="R"><span id="R">R</span></span></h3>
+<dl><dt> <span id="resref">resref</span>&#160;</dt>
+<dd> A resource's name without the extension, for example, "archdemon" would be the resref for an "archdeamon.utc" resource.</dd></dl>

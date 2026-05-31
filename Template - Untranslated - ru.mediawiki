@@ -1,0 +1,20 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Шаблон: Помогите перевести</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/Template:Untranslated/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Шаблон добавляет в текст небольщой тэг, указывающий на то, что в данном месте страницы нужна помощь в переводе.
+</p>
+<h2><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5:">Использование:</span></h2>
+<p><b>1 параметр</b> - В первом параметре можно уточнить, помощь какого рода требуется.
+</p>
+<pre>{{untranslated/ru|Не могу перевести описание параметров объекта.}}</pre>
+<p>Данный код выведет на странице следующий текст и добавит страницу в категорию "Требуется помощь в переводе":
+</p><p><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A2%D1%80%D0%B5%D0%B1%D1%83%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D0%B2%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D0%B5" title="Category:Требуется помощь в переводе">Помогите перевести</a>]</sup> <sup><i>Не могу перевести описание параметров объекта.</i><sup>
+</p><p></sup>
+</sup>
+</p>

@@ -1,0 +1,3 @@
+<p>The plot actions GUI, also known as the "army picker", is a set of up to four buttons that's displayed below the minimap. In the main campaign it's used to trigger shapeshifting in the Fade portion of the Broken Circle plot and to summon army assistance in the climax.
+</p><p>The buttons of the plot action GUI are defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plotactions.xls" title="Plotactions.xls">Plotactions.xls</a>.
+</p>

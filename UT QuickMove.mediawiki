@@ -1,0 +1,21 @@
+<p>This function quickly moves a creature to a location.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_QuickMove(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTag,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sWP&#160;= "0",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bRun&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bFollowPath&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bNewHome&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bStaticCommand&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sTag<dd>The tag of the creature that will be moved<dt style="font-weight:normal; font-style:italic;">sWP<dd>The string of the waypoint it will  move to. By default it is "mp_[sTag]_0". If a number is passed then it moves the object to "_#".<dt style="font-weight:normal; font-style:italic;">bRun<dd>Indicates whether the creature will walk or run. By default it's walk.<dt style="font-weight:normal; font-style:italic;">bFollowPath<dd>Uses <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandMoveToMultiLocations" title="CommandMoveToMultiLocations">CommandMoveToMultiLocations</a>. If a numbered waypoint is specified, the creature will move to each waypoint in turn until the specified waypoint is reached.<dt style="font-weight:normal; font-style:italic;">bNewHome<dd>By default a creature's new "Home" is updated when you tell them to move someplace. Set this to FALSE if you want to keep their home point as is.<dt style="font-weight:normal; font-style:italic;">bStaticCommand<dd>(for plot critical movements) If this is TRUE the movement commands will be static (not cleared by a standard <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ClearAllCommands" title="ClearAllCommands">ClearAllCommands</a>)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Moves a creature to the location of the specified waypoint, or along a path if a number is given and bFollowPath is TRUE.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20QuickMoveObject" title="UT QuickMoveObject">UT_QuickMoveObject</a>
+</p>

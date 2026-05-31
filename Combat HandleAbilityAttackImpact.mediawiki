@@ -1,0 +1,17 @@
+<p>Called by:
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// GZ: Temporary function to prevent the world from collapsing upon itself</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Combat_HandleAbilityAttackImpact<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackResult, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamage<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> Combat_HandleAbilityAttackImpact<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackResult, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fDamage<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword"><span class="kw2">effect</span></a> eImpactEffect <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EffectImpact"><span class="kw4">EffectImpact</span></a><span class="br0">&#40;</span>fDamage, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword"><span class="kw1">OBJECT_INVALID</span></a><span class="br0">&#41;</span>;
+&#160;
+    Combat_HandleAttackImpact<span class="br0">&#40;</span>oAttacker, oTarget, nAttackResult, eImpactEffect<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>

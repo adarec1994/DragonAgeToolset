@@ -1,0 +1,20 @@
+<p>Gets the state of the specified placeable object.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetPlaceableState(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oPlaceable<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oPlaceable<dd>The placeable to get the state of
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the state of the placeable object
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the current state of a specified placeable object. The state will be a valid state defined by the state controller for the specified placeable. The placeable states are defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeables.xls" title="Placeables.xls">placeables.xls</a> file.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPlaceableState" title="SetPlaceableState">SetPlaceableState</a>
+</p>

@@ -1,0 +1,5 @@
+<p>The AddIns.xml file can be found in your My Documents directory, under BioWare\Dragon Age\Settings.
+</p><p>This file contains information telling your game which addins you have installed (both paid DLC from BioWare and user-generated content), as well as giving information about where the addins' files can be found and other configuration information.
+</p><p>There's an &lt;AddInItem&gt; tag for each addin you have installed. If you wish to remove an addin from your system, delete the addin's directory from My Documents\BioWare\Dragon Age\AddIns (the directory's name will be the same as the addin's UID) and then remove the corresponding &lt;AddInItem&gt; tag from your AddIns.xml file. Make sure to take out the entire contents of the addin's tag, starting at "&lt;AddInItem" and going to "&lt;/AddInItem&gt;".
+</p><p>For explanations of the various fields and contained tags in AddIns.xml, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module" title="Module">module</a>'s property list.
+</p>

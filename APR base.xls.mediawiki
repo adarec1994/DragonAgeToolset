@@ -1,0 +1,22 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Creature topics:
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">Creature</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20group" title="Creature group">Creature groups</a> - who is hostile to whom.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">Ambient behaviour</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI" title="AI">AI</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Morph" title="Morph">Morphs</a></li>
+<li><strong class="selflink">APR base.xls</strong></li></ul>
+</td></tr></table>
+<p>The <strong class="selflink">APR_base.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the different appearances for the Player, non-player characters and creatures.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> _Creature_Types</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%202da" title="APR base 2da">APR_base</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <b>_Creature_Types</b> worksheet lists the basic creature types that are used in the <b>CREATURE_TYPE</b> column in the APR_base 2da.
+</p>

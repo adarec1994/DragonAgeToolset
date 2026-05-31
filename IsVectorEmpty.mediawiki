@@ -1,0 +1,18 @@
+<p>Determines if a vector is empty.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> IsVectorEmpty(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> vVector<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">vVector<dd>The vector which may be empty
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns TRUE if the vector vVector is empty, FALSE if it is not.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns TRUE if the vector vVector is empty, otherwise returns FALSE. An empty vector is a vector with
+x, y and z values of 0.0f.
+</p>

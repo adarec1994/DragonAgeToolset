@@ -1,0 +1,35 @@
+<p>Gets all items in an object inventory
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] GetItemsInInventory(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nGetItemsOptions&#160;= GET_ITEMS_OPTION_ALL,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nBaseItemType&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTagFilter&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bIgnorePlotItems&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>A creature or placeable with an inventory<dt style="font-weight:normal; font-style:italic;">nGetItemsOptions<dd>A <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GET%20ITEMS%20OPTION" title="GET ITEMS OPTION *">GET_ITEMS_OPTION_*</a> constant<dt style="font-weight:normal; font-style:italic;">nBaseItemType<dd>Only return items with a matching base item type or 0 to disable this filter<dt style="font-weight:normal; font-style:italic;">sTagFilter<dd>Only return items with a matching tag or "" to disable this filter<dt style="font-weight:normal; font-style:italic;">bIgnorePlotItems<dd>Only return items which are NOT plot items or FALSE to disable this filter
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>An array of all items in/on the object that match the specified filters
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Provides access to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature" title="Creature">creature's</a> or <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable" title="Placeable">placeable's</a> inventory and equipped items.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The <code>nGetItemsOptions</code> filter is not a bit field, i.e. you cannot use the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bitwise%20or%20operator" title="Bitwise or operator (page does not exist)">bitwise or operator</a> to combine options.
+</p><p>The <code>nBaseItemType</code> filter does not work on placeable's inventories.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Remove all equipped items from a creature and put them in the creature's inventory.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> UnequipAllEquippedItems<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nItem;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a><span class="br0">&#91;</span><span class="br0">&#93;</span> oItems <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemsInInventory"><span class="kw4">GetItemsInInventory</span></a><span class="br0">&#40;</span>oCreature, <span class="kw3">GET_ITEMS_OPTION_EQUIPPED</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nItems <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetArraySize"><span class="kw4">GetArraySize</span></a><span class="br0">&#40;</span>oItems<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/For%20keyword"><span class="kw1">for</span></a><span class="br0">&#40;</span>nItem <span class="sy0">=</span> <span class="nu0">0</span>; nItem <span class="sy0">&lt;</span> nItems; nItem<span class="sy0">++</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UnequipItem"><span class="kw4">UnequipItem</span></a><span class="br0">&#40;</span>oCreature, oItems<span class="br0">&#91;</span>nItem<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>

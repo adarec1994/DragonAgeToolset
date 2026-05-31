@@ -1,0 +1,22 @@
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Languages:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>{{Languages|PageName}}
+</pre>
+<p><b>PageName</b>
+</p><p>The PageName parameter is the name of the original English page to display language links for. 
+</p><p>This parameter can be omitted on the original English page but, because subpages are not active for all namespaces, must be included on the translated page.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>The following example represent the text needed to add the language bar to a) this page and b) a translated version of this page:
+</p>
+<pre> a) {{Languages}}
+ b) {{Languages|Template:Languages}}
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language policy</a> for additional information including supported languages</li></ul>

@@ -1,0 +1,5 @@
+<p>The <strong class="selflink">ambient_ai.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the ambient animation patterns which form part of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20behaviour" title="Ambient behaviour">ambient behaviours</a> for non-player characters and creatures.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> _read_me</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">ambient_anim_patterns</a></li></ul>

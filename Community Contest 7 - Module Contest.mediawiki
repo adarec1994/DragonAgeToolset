@@ -1,0 +1,235 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Brief"><span class="tocnumber">1</span> <span class="toctext">Brief</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Requirements"><span class="tocnumber">1.1</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Guidelines"><span class="tocnumber">1.2</span> <span class="toctext">Guidelines</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Suggestions"><span class="tocnumber">1.3</span> <span class="toctext">Suggestions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Allowable"><span class="tocnumber">1.4</span> <span class="toctext">Allowable</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Not_Allowable"><span class="tocnumber">1.5</span> <span class="toctext">Not Allowable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Groups_and_Prizes"><span class="tocnumber">2</span> <span class="toctext">Groups and Prizes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Groups"><span class="tocnumber">2.1</span> <span class="toctext">Groups</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Best_Newcomer_Award"><span class="tocnumber">2.2</span> <span class="toctext">Best Newcomer Award</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Prizes"><span class="tocnumber">2.3</span> <span class="toctext">Prizes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Helpful_Links"><span class="tocnumber">3</span> <span class="toctext">Helpful Links</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Submitting_an_Entry"><span class="tocnumber">4</span> <span class="toctext">Submitting an Entry</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Entry_File.28s.29"><span class="tocnumber">4.1</span> <span class="toctext">Entry File(s)</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Checklist"><span class="tocnumber">4.2</span> <span class="toctext">Checklist</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Consent_to_Share"><span class="tocnumber">4.3</span> <span class="toctext">Consent to Share</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Entries"><span class="tocnumber">5</span> <span class="toctext">Entries</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#1st_Place_-_Spiders_.26_Knives_by_BlackPhi"><span class="tocnumber">5.1</span> <span class="toctext">1st Place - Spiders &amp; Knives by BlackPhi</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#Judges.27_Comments"><span class="tocnumber">5.1.1</span> <span class="toctext">Judges' Comments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="#2nd_Place_-_Eye_and_Shadow_by_Mengtzu"><span class="tocnumber">5.2</span> <span class="toctext">2nd Place - Eye and Shadow by Mengtzu</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Judges.27_Comments_2"><span class="tocnumber">5.2.1</span> <span class="toctext">Judges' Comments</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Brief">Brief</span></h2>
+<p><b>Create a short playable module</b>. The module must be compatible with the Contest 7 Framework and must include content from at least three contests in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Catalogue" title="Community Contest Catalogue">Community Contest Catalogue</a>. See requirements for more information.
+</p><p>We're adding on to a "jobs board"-esque framework, so try and think of short modules which might make sense from that starting point.
+</p><p>The contest discussion thread can be found <a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/discussion/13221/1496060/#post_1496060">here</a>.
+</p><p><b>Contest is now closed. The bundle can be found on our <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=1559">Dragon Age Nexus page</a></b>
+</p><p>DEADLINE: Monday 4 April - Contest is now closed. Modifications to your submission are welcomed - the newest version of your entry will be judged, although modifications made <i>after</i> the submission date will not be judged.
+</p>
+<h3><span class="mw-headline" id="Requirements">Requirements</span></h3>
+<p>All entries must:
+</p>
+<ul><li> reserve a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges" title="Community Contest ID Ranges">string range</a> before starting</li>
+<li> reserve all <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges#2da_Ranges" title="Community Contest ID Ranges">M2DA ranges</a> they use:
+<ul><li> Entrants <b>will</b> need to extend the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges#JobBoardPlots" title="Community Contest ID Ranges">JobBoardPlots</a> M2DA</li>
+<li> Entrants <b>may</b> have to extend the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges#prcscr" title="Community Contest ID Ranges">PRCSCR</a> M2DA</li>
+<li> Entrants <b>may</b> also extend other M2DAs - please also reserve these as needed, staying within the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges" title="Community Contest ID Ranges">community contest range</a>.</li></ul></li>
+<li> use the <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4161/&amp;v=files">Contest 7 Framework</a></li>
+<li> use at least 1 piece of content from 3 or more of the following catalogue sections:
+<ul><li> settlement level</li>
+<li> room SEL</li>
+<li> prop model</li>
+<li> Character (party/merchant/quest giver)</li>
+<li> Head morph</li>
+<li> minigame script</li>
+<li> equipment</li></ul></li>
+<li> <b>must be a SHORT module</b> - 5-15 minutes gameplay is a good target, but there is no "limit"</li>
+<li> fulfil the following as a minimum:
+<ul><li> at least 100 words dialogue</li>
+<li> a journal entry to track the progress of the quest from being visible on the job board through acceptance to completion</li>
+<li> at least one combat encounter</li>
+<li> reward the player, but do so appropriately (do not give a massive reward or overpowered gear for a small job)</li></ul></li>
+<li> scale to all levels of player (preferred) OR include a "recommended level" in the job board description</li>
+<li> complete the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%206%20-%20Equipment%20Contest#Checklist" title="Community Contest 6: Equipment Contest">entry checklist</a> below and agree to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%206%20-%20Equipment%20Contest#Consent_to_Share" title="Community Contest 6: Equipment Contest">Consent to Share</a></li></ul>
+<h3><span class="mw-headline" id="Guidelines">Guidelines</span></h3>
+<p>Strong entries will:
+</p>
+<ul><li> not attempt an epic module - a <b>smaller scope</b> will allow you time to really polish your module.</li>
+<li> provide an engaging and interesting experience, favouring quality above quantity.</li>
+<li> avoid repetition and tiresome/uninteresting dialogues and combat.</li>
+<li> include one or more cutscenes to heighten drama</li></ul>
+<h3><span class="mw-headline" id="Suggestions">Suggestions</span></h3>
+<ul><li> My *friend/relative* has gone missing while in the *dangerous area*, please investigate!</li>
+<li> Bounty hunt</li>
+<li> Any other short quest, really.</li></ul>
+<h3><span class="mw-headline" id="Allowable">Allowable</span></h3>
+<p>While no "bonus points" will be given for the following, entrants may: 
+</p>
+<ul><li> enter the contest several times.</li>
+<li> include new custom content provided it can be shared (see not allowable custom content below)</li></ul>
+<h3><span class="mw-headline" id="Not_Allowable">Not Allowable</span></h3>
+<p>Please:
+</p>
+<ul><li> do not use custom content for which you do not have permission to share, or you do not wish to be shared in the catalogue.</li>
+<li> do not override core resources unless under exceptional circumstances (if in doubt, ask in the contest thread)</li></ul>
+<h2><span class="mw-headline" id="Groups_and_Prizes">Groups and Prizes</span></h2>
+<h3><span class="mw-headline" id="Groups">Groups</span></h3>
+<p>This contest has one group, with higher prizes than normal!
+</p>
+<ul><li> 1st place - 30 points, chooses first</li>
+<li> 2nd place - 20 points, chooses second</li>
+<li> 3rd place - 10 points, chooses third</li>
+<li> Best Newcomer - 5 points (unless 1st, 2nd or 3rd place)</li>
+<li> All other entries meeting requirements - 3 points</li></ul>
+<h3><span class="mw-headline" id="Best_Newcomer_Award">Best Newcomer Award</span></h3>
+<p>If an entrant has not entered a Community Contest before, they qualify for the Best Newcomer Award. This award is given to the newcomer with the highest number of votes.
+</p>
+<h3><span class="mw-headline" id="Prizes">Prizes</span></h3>
+<p>Please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Prizes" title="Community Contest Prizes">Community Contest Prizes</a>
+</p>
+<h2><span class="mw-headline" id="Helpful_Links">Helpful Links</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20ID%20Ranges" title="Community Contest ID Ranges">Reserve your string and GDA IDs here</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Catalogue" title="Community Contest Catalogue">Browse Catalogue content here</a></li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4161/">Community Contest 7 Framework</a> - includes a *very* useful readme (essential reading!)</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20tutorial" title="Module tutorial">Module Tutorial</a> - the CC7 framework readme supercedes much information here</li></ul>
+<h1><span class="mw-headline" id="Submitting_an_Entry">Submitting an Entry</span></h1>
+<h3><span class="mw-headline" id="Entry_File.28s.29">Entry File(s)</span></h3>
+<p><b>Builder File Contents:</b>
+</p>
+<ul><li> dadbdata of your module (do not include core resources)</li>
+<li> any data/override files required. mike will be impressed if you put them in the correct folder... module/data is usually sufficient! core/override is usually over-the-top and conflict-prone)</li></ul>
+<p><b>Player File:</b>
+(the player file is optional - we'll be bundling them all together)
+</p><p><b>File Format:</b>
+.7z file (preferred)
+</p>
+<h3><span class="mw-headline" id="Checklist">Checklist</span></h3>
+<ol><li> Create your file (see above)</li>
+<li> Create a <a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/">Dragon Age Nexus</a> page for your entry and upload the above file. Please include "Community Contest" in the title.</li>
+<li> Edit <b>this</b> page with a description and pictures of your content. 
+<ul><li> Please include pictures which are both functional as well as attractive (so your work can be seen clearly)</li>
+<li> Link to your DA Nexus page. See the sample entry.</li></ul></li>
+<li> Optionally, let us know in the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/2535/#discussions">Contest Discussion Thread</a> that you've entered</li></ol>
+<p>For the general entry guidelines (as well as more detail on the above steps), please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Entry%20FAQ" title="Community Contest Entry FAQ">Entry FAQs</a>
+</p><p>For information on Judging, please see the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Judging" title="Community Contest Judging">Judging</a> page.
+</p>
+<h2><span class="mw-headline" id="Consent_to_Share">Consent to Share</span></h2>
+<pre><font size="5" color="red"><b><u>IMPORTANT - consent to share</u></b></font>
+
+<font color="red"><b>By entering this competition you consent to share your work for other community members to benefit from.
+Where appropriate, source files should be shared (prop models, VFXProj files). 
+The work *MUST* be your own (obviously you may use DA assets).
+Others may use and modify your work in their Dragon Age mods, though are encouraged to give credit. 
+As the entries are judged, local copies will be saved If your work is taken down.
+If your work is taken down, you allow for it to be re-uploaded, crediting the work in your name. </b> </font>
+</pre>
+<h1><span class="mw-headline" id="Entries">Entries</span></h1>
+<h2><span class="mw-headline" id="1st_Place_-_Spiders_.26_Knives_by_BlackPhi">1st Place - Spiders &amp; Knives by BlackPhi</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2535">Dragon Age Nexus project page</a></b></li></ul>
+<p><br />
+<i>"First catch your client", to misquote Paragon Beeton.</i>
+</p><p><i>It seemed a simple enough job: earn a few coins by clearing a wandering band of darkspawn out of a Lothering Knight's home. Except that the client has gone missing!</i>
+</p><p><br />
+<b>Spiders &amp; Knives takes place in and around Lothering, so it needs to be completed before Lothering is destroyed by the darkspawn.</b> The mod is suitable for any class - the main reward item at the end of the main path is tailored to the main player character.
+</p><p>As far as I can tell, the difficulty level is broadly similar to other Lothering quests, whilst the rewards are a little higher - although hopefully not to an unbalancing extent. The main quest path has around 30 minutes of gameplay; there is an alternative, shorter, path of around 15-20 minutes which also provides a nice item as a reward, but less gold.
+</p><p>To begin the quest, look at either the new Job Board in Denerim or the Chanter's Board in Lothering. You might also stumble upon the starting point of the quest whilst exploring around Lothering.
+</p><p><b>Note that this mod is silent. Instead of VO I have used timed silences, so I recommend you use subtitles.</b>
+<br />
+</p><p><br />
+<b>Thanks To/Resources Used:</b>
+</p>
+<ul><li> Nimee: for 'A place to call home', from CC5. With apologies for the mess the darkspawn have made of the place.</li>
+<li> Lord Uber Dowzen (uberdowzen): for Arbither, from CC3-mini. Also Vaylise whose character's nickname I nicked for her.</li>
+<li> Vaylise: The Valorous, armour from CC6.<br /></li>
+<li> Adonnay: Crow &amp; Crane, twin swords from CC6.<br /></li>
+<li> Nattfodd: HjorrMikill, greatsword from CC6.<br /></li>
+<li> Helekanalaith: Knotwood Staff, mages staff from CC6.<br /></li>
+<li> Gisle Aune: Dagger of Ashyera's Cult, from CC6.<br /></li>
+<li> mikemike37: Warhammer, from CC6.</li></ul>
+<p>Note that whilst I have used the authors' models for these items, the actual items are mostly my handiwork - so if there's anything wrong it's likely my fault not theirs.
+</p>
+<ul><li> Sunjammer: CC7 Framework, including the new Job Board, and his Builders' Guide.</li></ul>
+<p>If I've forgotten anyone, please let me know. 
+</p><p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC7%20Web2.jpg" title="Spider Web"><img alt="Spider Web" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f5/CC7_Web2.jpg" width="400" height="225" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f5/CC7_Web2.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f5/CC7_Web2.jpg 2x" /></a>     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC7-Knives.jpg" title="Knives"><img alt="Knives" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/47/CC7-Knives.jpg" width="400" height="225" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/47/CC7-Knives.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/47/CC7-Knives.jpg 2x" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC7%20My%20Home3.jpg" title="Look what they have done to my home!"><img alt="Look what they have done to my home!" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/CC7_My_Home3.jpg" width="400" height="225" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/CC7_My_Home3.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/d/d3/CC7_My_Home3.jpg 2x" /></a>     <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20CC7%20Storage%20Chest.jpg" title="Storage Chest"><img alt="Storage Chest" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/CC7_Storage_Chest.jpg" width="400" height="225" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/CC7_Storage_Chest.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/4/4a/CC7_Storage_Chest.jpg 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="Judges.27_Comments">Judges' Comments</span></h3>
+<p>mikemike37
+</p>
+<ul><li> Well-rounded pair of short quests which fit in great with main campaign.</li>
+<li> Nice to see so many community contest entries in here!</li>
+<li> Really liked the messed up place and being able to use it throughout the rest of the game as a player house with storage.</li></ul>
+<p>Sunjammer
+</p>
+<ul><li> Perfect example of the type of module we had hoped CC7 would produce.</li>
+<li> Nice use of the camera angle to hide the engines limitations in the cutscene.</li>
+<li> Great (if slightly OTT) characterisation for Ser Arbither: I hope someone gives you the VO it deserves!</li>
+<li> Nice to be able to attempt to keep the swords (lie/threaten) however, while fun, the consequences seem somewhat unrealistic. Perhaps you could explore alternatives that don't end in a pitched battle with the Templars in front of a bunch of disciples and refugees?</li>
+<li> Since the player is thrown straight into combat when entering the manor it would be helpful if Ser Arbither warned the player to be ready and gave them the chance make preparations.</li>
+<li> I didn't even realise the house was available until I read mike's comments! This is a great addition so it could probably benefit from greater emphasis in game (I don't tend to read the final journal entries).</li></ul>
+<h2><span class="mw-headline" id="2nd_Place_-_Eye_and_Shadow_by_Mengtzu">2nd Place - Eye and Shadow by Mengtzu</span></h2>
+<ul><li> <b><a rel="nofollow" class="external text" href="http://www.dragonagenexus.com/downloads/file.php?id=2563">Dragon Age Nexus project page</a></b></li></ul>
+<p><b>For Players:</b>
+</p>
+<ul><li> Challenging encounters designed to teach key skills (focus fire, target selection, burn phases and positioning) - though easier and a bit more accessible than my standalones.</li>
+<li> Tuned for geared, high level parties, but accessible early to any looking for a profitable challenge</li>
+<li> Supply-based rewards scaled with level, intended to be conveniently imported to DLC and the expansion</li>
+<li> A curious situation with some fun twists on Qunari and Elven lore.</li>
+<li> A total of four possible resolutions to the adventure.</li></ul>
+<p><b>For Builders</b>
+</p><p>While this odd little scenario may not appeal to all players, the .dadbdata should be of interest to almost any builder.  The module features commented examples of some useful encounter design tricks and scripting practices, including:
+</p>
+<ul><li> Area heartbeats (timed encounter phases, periodic damage auras, boss health regen)</li>
+<li> Creature events (damage mitigation based on phase, add spawns on death)</li>
+<li> Solid basics like function and constant libraries, plot scripting etc.</li></ul>
+<p><b>CC Resources used:</b>
+</p>
+<ul><li> Community Contest #1: Lord of Fangs ("Hakkon's Gift"/Eight Knots)  </li>
+<li> Community Contest #3: Vaylise ("Knives"/Anaris), uberdowzen ("Saarebas"/Kithshok)</li>
+<li> Community Contest #6: Adonnay ("Crow &amp; Crane"/Geldauran's swords)</li></ul>
+<p><br />
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Spiritsleli.jpg" title="Leliana against the spirits"><img alt="Leliana against the spirits" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1c/Spiritsleli.jpg/400px-Spiritsleli.jpg" width="400" height="327" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1c/Spiritsleli.jpg/600px-Spiritsleli.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/thumb/1/1c/Spiritsleli.jpg/800px-Spiritsleli.jpg 2x" /></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Geldauran.jpg" title="Geldauran"><img alt="Geldauran" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/Geldauran.jpg" width="390" height="328" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/Geldauran.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/bb/Geldauran.jpg 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="Judges.27_Comments_2">Judges' Comments</span></h3>
+<p>mikemike37
+</p>
+<ul><li> good creative story with beleivable canon and immersion.</li>
+<li> really enjoyable boss fights which required a bit of thinking and a bit of skill.</li>
+<li> regrettably, my sub-optimal party was entirely unable to defeat final boss on easy. pretty sure i wasnt playing "badly" (other than being sub-optimal). imo easy difficulty should always be available for frustrated players to fall back on to just "get it over with" once theyre fed up of getting beaten. </li>
+<li> to address above, consider adding difficulty checks into area damage and regeneration script to soften up easy difficulty. im guessing these things have been hardcoded and do not scale with difficulty?</li>
+<li> consider sending messages to the actively controlled character, rather than floaties over the main PC (who might be offscreen)</li>
+<li> representing bunching/spreading by damage type was good, but this could be enhanced with a more permanent visual clue, like a red or blue aura from the enemy.</li></ul>
+<p>Sunjammer
+</p>
+<ul><li> Fully realised with great attention to detail and challenging combat: an excellent example for up-and-coming modders.</li>
+<li> An abundance of lore delivered through conversations, codex entries and points-of-interest placeables.</li>
+<li> Good NPC dialogue. Bonus points for including the companions although I can't really imagine Leliana ever addressing Alistair as "<i>Ser</i> Alistair"!</li>
+<li> Good opportunity for the Player to role-play though sometimes the options all seemed to variations of the sarcastic/wisecrack option.</li>
+<li> Nice to be able to side step the combat using persuade though being an obsessive persuader my first play-through was incredibly short (no combat, no tokens).</li>
+<li> Setheneran keeps saying she can't assist but both she and Uthen got stuck in to each and every fight ... although that was just as well because I usually ended up with just one of my party surviving!</li>
+<li> I found being jumped out of combat when fighting Geldauran rather disorientating: perhaps I am missing something there or something could be better explained.</li></ul>

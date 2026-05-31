@@ -1,0 +1,8 @@
+<h2><span class="mw-headline" id="View_Options">View Options</span></h2>
+<p>How did the person who took the custom longsword screenshot get the skeleton lines to disappear?  I'm referring to the red and white mesh lines that stand out on most models, obscuring them. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Lazuli" title="User:Lazuli">Lazuli</a> 23:08, 15 November 2009 (UTC)
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Read_Only_Mode">Read Only Mode</span></h2>
+<p>No matter what i load and no mater what i do everyhting is read only mode, and if i select new -&gt; item it says fails to create...any help? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Jedigazelle" title="User:Jedigazelle (page does not exist)">Jedigazelle</a> 14:00, 18 December 2009 (CST)
+</p>
+<dl><dd>We've had "unable to save resource" errors from people whose computers are set to non-English languages or locales, which can cause the underlying database to become confused about the usernames or dates that are being fed to it. What language/locale is your computer set to? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 20:20, 18 December 2009 (UTC)</dd></dl>

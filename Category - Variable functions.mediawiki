@@ -1,0 +1,33 @@
+<p>Functions relating to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">local variables</a>.
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Variable functions"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>*</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Local%20variable" title="Local variable">Local variable</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalCommand" title="GetLocalCommand">GetLocalCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalEffect" title="GetLocalEffect">GetLocalEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalEvent" title="GetLocalEvent">GetLocalEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalFloat" title="GetLocalFloat">GetLocalFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalInt" title="GetLocalInt">GetLocalInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalLocation" title="GetLocalLocation">GetLocalLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalObject" title="GetLocalObject">GetLocalObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalPlayer" title="GetLocalPlayer">GetLocalPlayer</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalResource" title="GetLocalResource">GetLocalResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalString" title="GetLocalString">GetLocalString</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalCommand" title="SetLocalCommand">SetLocalCommand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalEffect" title="SetLocalEffect">SetLocalEffect</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalEvent" title="SetLocalEvent">SetLocalEvent</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalFloat" title="SetLocalFloat">SetLocalFloat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalInt" title="SetLocalInt">SetLocalInt</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalLocation" title="SetLocalLocation">SetLocalLocation</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalObject" title="SetLocalObject">SetLocalObject</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalPlayer" title="SetLocalPlayer">SetLocalPlayer</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalResource" title="SetLocalResource">SetLocalResource</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalString" title="SetLocalString">SetLocalString</a></li></ul></div></div></div>
+</div></div>

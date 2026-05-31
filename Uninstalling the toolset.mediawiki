@@ -1,0 +1,8 @@
+<p>When uninstalling the toolset you'll be presented with three options related to the database.
+</p>
+<ul><li><i>Keep database files; keep MS SQL Express 2005</i> - this leaves MSSQL Express installed, and leaves your toolset database files intact. Choose this option if you want to reinstall later and still have your designer database in place (though for safety's sake you should probably back up your database first anyway)</li>
+<li><i>Remove database files; keep MS SQL Express 2005</i> - This leaves MSSQL Express installed but removes your toolset database files. Use this option if you need MSSQL Express to remain installed for some purpose other than the Dragon Age Toolset.</li>
+<li><i>Remove database files; remove MS SQL Express 2005</i> - this takes out all MSSQL Express-related files, including both the database engine and the database for the toolset. Use this option if you want to remove all traces of the toolset and are not otherwise using MSSQL Express for anything.</li></ul>
+<h2><span class="mw-headline" id="Uninstalling_user-generated_addins">Uninstalling user-generated addins</span></h2>
+<p>Addins can be disabled from the Downloadable Content screen's Installed Content tab. If you want to remove added content completely rather than just disabling it, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddIns.xml" title="AddIns.xml">AddIns.xml</a> for instructions. The game doesn't currently have an uninstaller application but manual removal is not difficult.
+</p>

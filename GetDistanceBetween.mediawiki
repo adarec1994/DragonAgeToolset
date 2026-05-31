@@ -1,0 +1,21 @@
+<p>Returns the distance between two objects.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> GetDistanceBetween(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObjectA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObjectB<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObjectA<dd>The first object<dt style="font-weight:normal; font-style:italic;">oObjectB<dd>The second object
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the distance between the two objects. Returns -1.0f on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns the distance between object oObjectA and object oObjectB. Distance is measured through three dimensional space and not just along the xy plane, so the hieght component of each object's location is relevant.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetDistanceBetweenLocations" title="GetDistanceBetweenLocations">GetDistanceBetweenLocations</a>
+</p>

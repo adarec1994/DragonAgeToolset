@@ -1,0 +1,39 @@
+<ul><li><b>Version found:</b> 1.0.1008.0 (Installer Version 1.01)</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>A Builder-to-Builder Load may result in resources that have missing detail.
+</p><p>For instance, 
+</p>
+<ul><li> A female NPC may load as a male with the default head and no inventory.</li>
+<li> All lines may disappear from a conversation.</li>
+<li> All flags may vanish from a plot.</li>
+<li> A cutscene may load without its dependent resources - consequently, it does nothing when viewed.</li></ul>
+<p>These are just examples - in general, the unwanted result is a "default" (blank) resource with no properties.
+</p><p>Sometimes, there are no error messages. In other cases, there is a cryptic message "Unable to load" for each resource affected. Neither situation achieves the expected result, or provides an adequate explanation.
+</p><p>Other symptoms include alarming messages about core resources being loaded when none have been selected, and changes to the check in/out status of core resources. To date, there's no evidence that this has harmed anything, but at the very least it's bad for builder confidence.
+</p>
+<h3><span class="mw-headline" id="The_string_id_aspect">The string id aspect</span></h3>
+<p>One aspect of this bug seems to be <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="String ID">String ID</a> incompatibility between modules.
+</p><p>Builder-to-Builder Load has two options for string ids (Create New or Use Theirs).
+</p><p>To isolate this aspect, when loading, Show Dependencies and ensure only the new resources are checked.
+</p><p>If we try to load to a new module with a different string id range in the module properties, Create New works perfectly, but Use Theirs seems to fail for any resource that has text content - a default resource is created, with "Unable to load" message.
+</p><p>Since the only difference between the successful and unsuccessful loads is the string id range, it seems that the toolset is bouncing resources whose string ids are outside of the range set for the module.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>This doesn't seem to happen if you choose the following options:
+</p>
+<ul><li> Show Dependents (which is not the default)</li>
+<li> Create New (strings)</li>
+<li> Do not select any resources which already exist (default)</li>
+<li> Ensure all new resources are selected</li></ul>
+<p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="String ID">String ID</a> for further discussion of the string options.
+</p><p>If you want to overwrite some resources which already exist, check them in first, then select them for load.          
+</p><p>If the target data base already contains a resource named X within module A, don't attempt to load X to module B. If A is not a parent of B, depending on the resource type, the toolset may report an error or attempt to work around the name duplication by creating a resource X_1. This can make the above-mentioned bug even worse (though it is not the sole cause). 
+</p><p>A new resource x_1 also results if you attempt to force the load of a checked-out resource by selecting Create New at the resource level on the load screen.
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Builder%20to%20Builder%20Load%20may%20not%20reproduce%20resource%20detail%20correctly%20-%20ru" title="Bug: Builder to Builder Load may not reproduce resource detail correctly/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

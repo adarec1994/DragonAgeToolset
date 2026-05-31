@@ -1,0 +1,11 @@
+<p>Dom&gt; Sunjammer, are you sure we want to wikifi in script function declaration? That'd generate like half a million pages. We should probably stick to file level and make your tool write out an anchor for each function
+</p>
+<dl><dd> That was our original plan (Byran being a co-conspirator) but I'm happy to look at alternatives if they would be better for the end user.</dd>
+<dd>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 01:16, 28 October 2009 (UTC)
+<dl><dd>Dom&gt; I did some test implementation on the page, we can automate this later.
+<dl><dd>Looking at the examples I don't see this approach as being particularly beneficial to the end user. They can get whole definition (i.e. function body) in the script editor so all we really want is an abstraction, explanation  and/or notes on usage: reproducing the function body here seems somewhat redundant.  Also this approach prevents us from including the functions in the <b>GeSHi</b> config file (which automatically links defined functions in snippets wrapped with the <b>dascript</b> tags). </dd>
+<dd>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 18:33, 28 October 2009 (UTC)
+<dl><dd>Dom&gt; I kind of like the ability of people being able to discuss certain parts of the code (which you can't do in the toolset). There's a lot of obscure stuff in there that profoundly affects how combat resolution works out. The other option might be to spin off a seperate wiki like the good old NWN Lexicon...</dd></dl></dd></dl></dd></dl></dd></dl>
+<p><br />
+Georg&gt; Regarding questions of why backstabs get demoted by misdirection hexes while critical hits do not: This is intentional to ensure misdirection hex is effective against high level rogues. Misdirection hex is a very powerful curse and one of the few options an AI mage has of ridding himself of a rogue who got close. The code could be structured to make this clearer, but yes, this is intentional.
+</p>

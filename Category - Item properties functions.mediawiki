@@ -1,0 +1,22 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Item properties functions"</h2>
+<p>The following 17 pages are in this category, out of 17 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>A</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddItemProperty" title="AddItemProperty">AddItemProperty</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemMaterialProgression" title="GetItemMaterialProgression">GetItemMaterialProgression</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemProperties" title="GetItemProperties">GetItemProperties</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemPropertyPower" title="GetItemPropertyPower">GetItemPropertyPower</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemStat" title="GetItemStat">GetItemStat</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemUnique" title="GetItemUnique">GetItemUnique</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemValue" title="GetItemValue">GetItemValue</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemDroppable" title="IsItemDroppable">IsItemDroppable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemIndestructible" title="IsItemIndestructible">IsItemIndestructible</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemIrremovable" title="IsItemIrremovable">IsItemIrremovable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsItemStealable" title="IsItemStealable">IsItemStealable</a></li></ul></div><div class="mw-category-group"><h3>R</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RemoveItemProperty" title="RemoveItemProperty">RemoveItemProperty</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ScaleEquippedItems" title="ScaleEquippedItems">ScaleEquippedItems</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemDamaged" title="SetItemDamaged">SetItemDamaged</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemDroppable" title="SetItemDroppable">SetItemDroppable</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemIndestructible" title="SetItemIndestructible">SetItemIndestructible</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemIrremovable" title="SetItemIrremovable">SetItemIrremovable</a></li></ul></div></div></div>
+</div></div>

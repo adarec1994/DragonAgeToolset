@@ -1,0 +1,19 @@
+<p>Sets up a creature to surrender when they get low on health in combat.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_SetSurrenderFlag(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSurrender&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sPlotName&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPlotFlag&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bInitConversation&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>The surrendering creature<dt style="font-weight:normal; font-style:italic;">bSurrender<dd>Set or un-set the creature's surrender functionality.<dt style="font-weight:normal; font-style:italic;">sPlotName<dd>The name of the plot which should have a flag set as the creature surrenders, if any. Default is empty.<dt style="font-weight:normal; font-style:italic;">nPlotFlag<dd>The plot flag to be set as the creature surrenders, if any. The variable is irrelevant if sPlotName is empty.<dt style="font-weight:normal; font-style:italic;">bInitConversation<dd>Creature will initiate a conversation on surrendering if this is TRUE.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Enables the creature to surrender during combat and sets up the surrender plot flag if specified.
+</p><p><br />
+</p><p><br />
+</p>

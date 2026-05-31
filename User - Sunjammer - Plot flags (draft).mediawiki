@@ -1,0 +1,223 @@
+<p>There are many categories of plot but fortunately only two types of <b>plot flags</b>:
+</p>
+<ul><li> Main flags</li>
+<li> Defined flags</li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Main_Flags"><span class="tocnumber">1</span> <span class="toctext">Main Flags</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Defined_Flags"><span class="tocnumber">2</span> <span class="toctext">Defined Flags</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Little_Red_Riding_Hood_Redux"><span class="tocnumber">3</span> <span class="toctext">Little Red Riding Hood Redux</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Setting_.28and_Checking.29_Expectations"><span class="tocnumber">3.1</span> <span class="toctext">Setting (and Checking) Expectations</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Schroedinger.27s_Flag.3F"><span class="tocnumber">3.2</span> <span class="toctext">Schroedinger's Flag?</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Little_Red_Riding_Hood_Redux_Redux.3F"><span class="tocnumber">3.3</span> <span class="toctext">Little Red Riding Hood Redux Redux?</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Option_A"><span class="tocnumber">3.3.1</span> <span class="toctext">Option A</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Option_B"><span class="tocnumber">3.3.2</span> <span class="toctext">Option B</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Main_Flags">Main Flags</span></h2>
+<p>A Main Flag is a bit like NWN Plot Entry only with a few added features and fields. Just as with their NWN equivalent, they can be either "Not set" or "Set". They have the following properties/fields:
+</p>
+<ul><li> Flag Name</li>
+<li> Flag</li>
+<li> Reward</li>
+<li> Has Journal</li>
+<li> Final</li>
+<li> Repeatable</li>
+<li> Default Value</li>
+<li> Area Location Tag</li>
+<li> Offer ID</li>
+<li> Journal Text</li>
+<li> Plot Assist</li>
+<li> Comments</li></ul>
+<p>You can set the Flag Name to whatever you like, however you'll want to get your naming conventions sorted out early on and stick to them like glue (it will pay dividends when it comes to using them). The Flag is a incrementing and unique integer. If you choose a reward the Reward field displays the label of the row from the rewards.2da*. Entering anything in to Journal Text will cause Has Journal to change from nothing to "Yes". Final, Repeatable and Default Value should be self explanatory.
+</p><p>The significance of Area Location Tag, Offer Id and Plot Assist remain a mystery to me.
+</p><p>You can have a total of 128 Main Flags (numbered 0 to 127) in any single plot.
+</p>
+<h2><span class="mw-headline" id="Defined_Flags">Defined Flags</span></h2>
+<p>On the face of it Defined Flags are much simpler than Main Flags. These too can be either "Not set" or "Set" but have fewer properties/fields, namely:
+</p>
+<ul><li> Flag Name</li>
+<li> Flag</li>
+<li> Reward</li>
+<li> Area Location Tag</li>
+<li> Offer ID</li>
+<li> Plot Assist</li>
+<li> Comments</li></ul>
+<p>You can have a seemingly unlimited number of Defined Flags (numbered from 256 upwards). However after adding about 800 Defined Flags to a single plot the Plot Editor began to run a little slow.
+</p><p>I said "on the face of it" because as I was about to find out Defined Flags are evil and twisted ...
+</p>
+<h2><span class="mw-headline" id="Little_Red_Riding_Hood_Redux">Little Red Riding Hood Redux</span></h2>
+<p>In <a rel="nofollow" class="external text" href="http://social.bioware.com/project/334/">Little Red Riding Hood Redux</a> (our Builders Event module) you had to collect some food, drink and flowers before Grandmother would allow the plot to progress. I, naively, thought I could achieve this by setting up three Defined Flags (one for each item) and setting them using the equivalent of the Module's OnAcquireItem event.
+</p><p>The submission deadline was fast approaching when I threw together a module event script that looked a lot like this:
+</p>
+ <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co2">#include &quot;wrappers_h&quot; </span>
+    <span class="co2">#include &quot;events_h&quot;    </span>
+    <span class="co2">#include &quot;plt_no_good_deed&quot;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bEventHandled;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evEvent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>evEvent<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nEventType<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>      
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> EVENT_TYPE_CAMPAIGN_ITEM_ACQUIRED<span class="sy0">:</span>
+            <span class="br0">&#123;</span>   
+                <span class="co1">// the item's owner is the creature who triggered this event</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oOwner <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator"><span class="kw4">GetEventCreator</span></a><span class="br0">&#40;</span>evEvent<span class="br0">&#41;</span>; 
+&#160;
+                <span class="co1">// the item is the first entry in the event's objects list</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oItem <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject"><span class="kw4">GetEventObject</span></a><span class="br0">&#40;</span>evEvent, <span class="nu0">0</span><span class="br0">&#41;</span>;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sItemTag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetTag"><span class="kw4">GetTag</span></a><span class="br0">&#40;</span>oItem<span class="br0">&#41;</span>;
+&#160;
+                <span class="co1">// check the tag for special cases and raise appropriate defined flag</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;food&quot;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span> 
+                    WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FOOD, TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;drink&quot;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span> 
+                    WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_DRINK, TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>sItemTag <span class="sy0">==</span> <span class="st0">&quot;flower&quot;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span> 
+                    WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FLOWER, TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>  
+&#160;
+                <span class="co1">// check if all defined flags have been raised: and raise main flag</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FOOD<span class="br0">&#41;</span>
+                <span class="sy0">&amp;&amp;</span> WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_DRINK<span class="br0">&#41;</span>
+                <span class="sy0">&amp;&amp;</span> WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FLOWER<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    WR_SetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_ALL_ITEMS, TRUE<span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+&#160;
+                bEventHandled <span class="sy0">=</span> TRUE;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span> 
+&#160;
+        <span class="co1">// fall through logic</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>bEventHandled <span class="sy0">==</span> FALSE<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HandleEvent"><span class="kw4">HandleEvent</span></a><span class="br0">&#40;</span>evEvent, RESOURCE_SCRIPT_MODULE_CORE<span class="br0">&#41;</span>;
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span></pre></div></div>
+<p>It looks sound enough: each time a plot item is acquired we set the appropriate Defined Flag. If all three Defined Flags are set then we set the Main Flag which controls the a node in Grandmother's conversation.
+</p><p>Unfortunately we didn't have time to test it and so we were somewhat confused and a little chagrined with it our demonstration ended a little prematurely with Grandmother refusing to say much more than "Yes deary?"
+</p><p>To understand why we have to know a little bit more about the differences between a Main Flag and a Defined Flag.
+</p>
+<h3><span class="mw-headline" id="Setting_.28and_Checking.29_Expectations">Setting (and Checking) Expectations</span></h3>
+<p>What we didn't know at the Builders Event was that although the state Main Flag can be checked and/or updated, the state of a Defined Flag can only be checked. My attempts to update the Defined Flags in the above script were always doomed to fail.
+</p><p>In addition, while a Main Flag can be checked and/or updated just using without resorting to scripting (by merely selecting options on a conversation's "Plots and Scripting" tab), checking a Defined Flag will always involve a call to the appropriate plot script ... and we hadn't written one of those!
+</p><p>With Defined Flags there's simply no getting away from scripting.
+</p><p>To check the state either type of flag through scripting we can use the native GetPartyPlotFlag function or the derived WR_GetPlotFlag function. To update the state of a Main Flag we can use the native SetPartyPlotFlag function or the derived WR_SetPlotFlag function. Normally Main flags are changed from "Not set" to "Set" (0 to 1) but the reverse is possible too.
+</p>
+<h3><span class="mw-headline" id="Schroedinger.27s_Flag.3F">Schroedinger's Flag?</span></h3>
+<p>It took me a while to get my head round Defined Flags mostly because I find referring to these as "flags" rather unhelpful. Calling them flags makes me think they have an intrinsic state and can be set or unset just like the Main Flags. Unfortunately this is not the case.
+</p><p>So if it isn't really a flag what is it?
+</p>
+<pre>   Quote: by Craig Graff (BioWare)
+   I tend to think of it as ... peering in on Schroedinger's cat
+</pre>
+<p>In reality a Defined Flag is just an integer constant that is used to identify which snippet of code to run in a plot script. The snippet of code is scripted to return a true/false value just as StartingConditional script were in NWN. The difference here is that you would normally have several Defined Flags in a single plot script.
+</p>
+<h3><span class="mw-headline" id="Little_Red_Riding_Hood_Redux_Redux.3F">Little Red Riding Hood Redux Redux?</span></h3>
+<p>So if I had to remake LRRHR again what would I need to do to make it work? There are a couple of options however at this stage I can't really say which is better.
+</p>
+<h4><span class="mw-headline" id="Option_A">Option A</span></h4>
+<p>In this option we change PLAYER_HAS_FOOD, PLAYER_HAS_DRINK and PLAYER_HAS_FLOWER from Defined Flags to Main Flags. These are just temporary flags so we don't give them any Journal Entry, Reward, etc. In this way they become settable so we can leave the part of the original script that checks tags and updates flags.
+</p><p>Conversely we leave PLAYER_HAS_ALL_ITEMS as a Defined Flag but we relocate that part of the code to the plot script. The resulting script should look something like:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co2">#include &quot;wrappers_h&quot;</span>
+    <span class="co2">#include &quot;plot_h&quot;</span>
+&#160;
+    <span class="co2">#include &quot;PLT_NO_GOOD_DEED&quot;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> StartingConditional<span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// default result is false</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nResult;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evEvent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>evEvent<span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// the plot flag is the second value in the event's ints list</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPlotFlag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>evEvent, <span class="nu0">1</span><span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nEventType <span class="sy0">==</span> <span class="kw3">EVENT_TYPE_GET_PLOT</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>   
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nPlotFlag<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> PLAYER_HAS_ALL_ITEMS<span class="sy0">:</span>
+                <span class="br0">&#123;</span>
+                    <span class="co1">// check if all main flags have been raised</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FOOD<span class="br0">&#41;</span>
+                    <span class="sy0">&amp;&amp;</span> WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_DRINK<span class="br0">&#41;</span>
+                    <span class="sy0">&amp;&amp;</span> WR_GetPlotFlag<span class="br0">&#40;</span><span class="st0">&quot;PLT_NO_GOOD_DEED&quot;</span>, PLAYER_HAS_FLOWER<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        nResult <span class="sy0">=</span> TRUE;
+                    <span class="br0">&#125;</span>               
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nResult;
+    <span class="br0">&#125;</span></pre></div></div>
+<h4><span class="mw-headline" id="Option_B">Option B</span></h4>
+<p>In this option we do away with the module script altogether. Instead of using Main Flags to determine if the player acquired the quest item we can use the dynamic nature of the Defined Flag and use the plot script to evaluate the current value of the PLAYER_HAS_ALL_ITEMS flag.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1">    <span class="co2">#include &quot;wrappers_h&quot;</span>
+    <span class="co2">#include &quot;plot_h&quot;</span>
+&#160;
+    <span class="co2">#include &quot;PLT_NO_GOOD_DEED&quot;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> StartingConditional<span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// default result is false</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nResult;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword"><span class="kw2">event</span></a> evEvent <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCurrentEvent"><span class="kw4">GetCurrentEvent</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nEventType <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventType"><span class="kw4">GetEventType</span></a><span class="br0">&#40;</span>evEvent<span class="br0">&#41;</span>;
+&#160;
+        <span class="co1">// the plot flag is the second value in the event's ints list</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nPlotFlag <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger"><span class="kw4">GetEventInteger</span></a><span class="br0">&#40;</span>evEvent, <span class="nu0">1</span><span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nEventType <span class="sy0">==</span> <span class="kw3">EVENT_TYPE_GET_PLOT</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>   
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Switch%20keyword"><span class="kw1">switch</span></a><span class="br0">&#40;</span>nPlotFlag<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword"><span class="kw1">case</span></a> PLAYER_HAS_ALL_ITEMS<span class="sy0">:</span>
+                <span class="br0">&#123;</span>       
+                    <span class="co1">// get a reference to the player</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oHero <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHero"><span class="kw4">GetHero</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+&#160;
+                    <span class="co1">// check if all items have been collected</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemPossessedBy"><span class="kw4">GetItemPossessedBy</span></a><span class="br0">&#40;</span>oHero, <span class="st0">&quot;food&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemPossessedBy"><span class="kw4">GetItemPossessedBy</span></a><span class="br0">&#40;</span>oHero, <span class="st0">&quot;drink&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemPossessedBy"><span class="kw4">GetItemPossessedBy</span></a><span class="br0">&#40;</span>oHero, <span class="st0">&quot;flower&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        nResult <span class="sy0">=</span> TRUE;
+                    <span class="br0">&#125;</span>               
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword"><span class="kw1">break</span></a>;
+                <span class="br0">&#125;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> nResult;
+    <span class="br0">&#125;</span></pre></div></div>
+<ul><li> Incidentally just to prove BioWare developers do have a sense of humour one of the entries in rewards.2da is "HorseDrownsWhileFlying DO NOT USE". Okay may be that says more about my sense of humour than theirs.</li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p>I've also produced a number of demo modules which illustrate different aspects of the plot system:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2583/">Sunjammer's Deep Roads Courier</a></li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2584/">Sunjammer's Rats in the Cellar</a></li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2604/">Sunjammer's Joe Versus the Brecilian</a></li>
+<li> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2664/">Sunjammer's Late Night In the Library</a></li></ul>

@@ -1,0 +1,21 @@
+<div style="background:#f6f6f6; border: 1px solid #d0a5a5; padding:4px; margin-left:20%; margin-right:20%;">
+<p>The documentation on this page is incomplete, obsolete, or otherwise in need of a thorough review. The current content may provide a good starting point for this, but do not rely on its accuracy when using it to design content.
+</p>
+</div>
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Events%20h" title="Events h">events_h</a>
+<dt>Sent when:
+<dd>
+<dt>Sent from:
+<dd>area of effect 'trigger'
+<dt>Sent to:
+<dd>trap's signal target(s).
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: Trap placeable</li><li>Target: Object that triggered the trap</li><li>String 0: Lower case tage of AOE trigger associated with the trap</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_TRAP_TRIGGER_ENTER:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTrap = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// Trap placeable</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventTarget" title="GetEventTarget">GetEventTarget</a>(ev); <span style="color: #007F00; font-style: italic;">// Object that triggered the trap</span><br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sAOE = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventString" title="GetEventString">GetEventString</a>(ev, <span style="color: #7F007F;">0</span>); <span style="color: #007F00; font-style: italic;">// Lower case tage of AOE trigger associated with the trap</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>

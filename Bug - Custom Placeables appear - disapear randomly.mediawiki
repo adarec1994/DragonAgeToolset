@@ -1,0 +1,11 @@
+<ul><li><b>Version found:</b> 1.0.1008.0</li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Custom Placeables appear/disappear randomly from the game between area exports from the Toolset. Sometimes when opening an area in the toolset an error message is printed in the log "<i>E: 16:31:34 - Could not get the name for the appearance: Resource "keystone.utp", Tag "keystone".</i>". Usually restarting the Toolset will make the error to go away but it's usual that a placeable doesn't appear in the game evenif there were no errors during export. Sometimes everything is working perfectly fine. Also the same error is sometimes displayed for Creatures using a custom appearance.   
+</p><p>The problem will only appear with custom placeables/appearances those are brought to the toolset using the 2DA "system" like <i>placeable_types_myplaceables.GDA</i> or <i>APR_myappearances.GDA</i>. I would presume that the Toolset somehow fails to collect and combine all these GDAs.
+</p><p>If the Toolset manage to export everything properly, I don't recall seeing anything to disappear from the game when restarting or reloading a saved game. I am aware of that some modifications doesn't appear in the game unless restart the module from a "clean table". But that's not the problem here.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Restarting the Toolset before exporting anything will reduce the frequency of the problem and improves a chance of successful export.
+</p><p>This may well be a special case of the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Toolset%20loses%20M2DA%20dropdown%20selection%2C%20resets%20to%20default" title="Bug: Toolset loses M2DA dropdown selection, resets to default"> M2DA dropdown bug</a>. Close the toolset as soon as the error message is encountered, and export the resource affected again on reopening.
+</p>

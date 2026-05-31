@@ -1,0 +1,17 @@
+<p>This function is an equip item command constructor.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Command%20keyword" title="Command keyword">command</a> CommandEquipItem(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oItem,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nEquipSlot&#160;= INVENTORY_SLOT_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nWeaponSet&#160;= INVALID_WEAPON_SET<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oItem<dd>the item that the object should equip<dt style="font-weight:normal; font-style:italic;">nEquipSlot<dd>The optinal equip slot number. Use the INVENTORY_SLOT constants to specify a particular slot<dt style="font-weight:normal; font-style:italic;">nWeaponSet<dd>The optinal weapon set number, it can be 0 or 1
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>a valid command
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>This function is an equip item command constructor. It creates an equip item command which can then be added to any object's command queue. This command, when processed will attempt to equip the specified item on the object.
+</p>

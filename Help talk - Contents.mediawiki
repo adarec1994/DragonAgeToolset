@@ -1,0 +1,33 @@
+<p>I don't think we want the help page turning into a question and answer page (that what's forums are for) so what do we want to use it for?  My idea is to turn it into a starting point guide.  You want to do levels?  Start with these articles.  Want to do scripting?  Start with those articles.  Want to help edit?  Go over here.  Thoughts? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 20:30, 15 November 2009 (UTC)
+</p>
+<dl><dd>I was actually hoping to turn the main page into something like this when I ran out of free time around launch. My work-in-progress for a new main page is currently stashed at <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen%20-%20Sandbox" title="User:BryanDerksen/Sandbox">User:BryanDerksen/Sandbox</a>. Is this the sort of thing you had in mind? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 07:51, 16 November 2009 (UTC)</dd></dl>
+<dl><dd><dl><dd>I think what you have there would be good for the front page, but not so much for help.  If someone is coming to the help page they will most likely be A)overwhelmed or B)to lazy to read the front page.  While what you have is very comprehensive, it is very comprehensive&#160;;)  Perhaps a scaled back version of what you have.  If you don't mind I'll yoink some of the info off of your page and work on a draft of what I see a good help page being. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 20:48, 19 November 2009 (UTC)</dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd>The <b>Help</b> namespace is intended for help with the wiki itself rather than the game or the toolset. There are pre-existing links built in that direct people to this page.  For example the Search page which says "<i>For more information about searching DA Builder Wiki, see Help.</i>" and links here. At the very least we have to catalogue and answer these quesions.  In addition the <b>Help</b> namespace would be where I would put the likes of Allan's suggested "advice for timid editors"; information on how to edit articles; information on the mark up format, templates to use; information on page naming conventions; information on using the <b>dascript</b> tag and scripting conventions, etc. Also bear in mind that there is a <b>Project</b> namespace which we are not using. Finally issue like this could be more easily discussed in the Wiki Editor's Group (which we are all members of) --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 21:39, 19 November 2009 (UTC)</dd></dl></dd></dl></dd></dl>
+<dl><dd><dl><dd><dl><dd><dl><dd>Good point, overlooked that.  Don't need markup-help, that's <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Editing" title="Help:Editing">Help:Editing</a>.  Contiuning on over at the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/239">Wiki Editor Group</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 14:53, 20 November 2009 (UTC)</dd></dl></dd></dl></dd></dl></dd></dl>
+<hr />
+<div style="margin:0; background:#cedff2; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;">
+<p>Moving the old contents of help here. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 04:20, 24 April 2010 (UTC)
+</p>
+</div>
+<hr />
+<p>Not sure if this is the right place for it tho
+</p><p>my party stopted follwing me and attacking themselves automaticly when combat starts
+a minor bug perhaps&#160;?
+</p>
+<hr />
+<p>Im also unsure if I am in the right place.
+But I'm assuming that I caused this problem myself, I am now unable to start new games in game. Any ideas what could be causing this issue?
+</p>
+<dl><dd>Unfortunately, a subtle but very damaging flaw has been discovered in the core resources that were distributed with the toolset (caused by a subtle but damaging flaw in the toolset's builder-to-builder feature) that can break the main campaign if you export things, even things outside of the single player module itself. See <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/114380">http://social.bioware.com/forum/1/topic/8/index/114380</a> for discussion of this flaw and ways to clean up after it so that your game is working again.</dd></dl>
+<dl><dd>We're working on a fix for this. In the meantime I'll put an announcement on the main page. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 23:40, 12 November 2009 (UTC)</dd></dl>
+<p>Thanks I Figured it out. - --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Blakhawkdown" title="User:Blakhawkdown (page does not exist)">Blakhawkdown</a> 01:48, 13 November 2009 (UTC)Original poster about inability to start new games. 
+</p>
+<hr />
+<p>I am having issues with merchants. I have followed the tutorial to the .  I need help. everything is set like the tutorial tells me to. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Blakhawkdown" title="User:Blakhawkdown (page does not exist)">Blakhawkdown</a> 01:48, 13 November 2009 (UTC)
+</p>
+<hr />
+<p>I can´t run datoolset on win7 Pro 64, when I try it get installed, it writes some mssql error during instalation, and when I try to run it through exe after instalation, I get a messege that it could not connect to database...
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Robin%20Seina" title="User:Robin Seina (page does not exist)">Robin Seina</a> 23:59, 22 December 2009 (CET)
+</p>
+<dl><dd>I am also having this issue and since this is over 3 months old I suspect no support is coming. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ghurshog" title="User:Ghurshog (page does not exist)">John Potter</a> 23:56, 19 March 2010 (PDT)</dd>
+<dd><b>Update</b> - I found this blog talking about getting the tools set running under Win7 x64 bit. <a rel="nofollow" class="external free" href="http://www.evansims.com/2009/11/getting-the-dragon-age-toolset-running-on-windows-7-x64">http://www.evansims.com/2009/11/getting-the-dragon-age-toolset-running-on-windows-7-x64</a>. I haven't tried it yet but will when I have a chance and report back.</dd></dl>

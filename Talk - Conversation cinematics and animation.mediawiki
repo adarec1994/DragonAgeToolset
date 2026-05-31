@@ -1,0 +1,9 @@
+<p>Can we export the animations we make into a new .ani file?
+</p>
+<h2><span class="mw-headline" id="Cinematics">Cinematics</span></h2>
+<p>"Conversations that can occur at any of a variety of different locations cannot have stages set and instead use a generic "over the shoulder" style of presentation. "
+</p><p>So Alistair uses "acl_1p" as Stage at a variety of lines which can appear at different locations. Is this a special case? The Article doesnt cover what "Tag" does, or "At current location" because this is also set.
+</p><p>What to do when you start conversation, and are moved under ground.
+</p><p>It would also be great if it was told, what needs to be set if the partner is a Placeable you interact with.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 07:18, 6 February 2010 (UTC)
+</p>

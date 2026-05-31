@@ -1,0 +1,8 @@
+<ul><li><b>Version found:</b> 1.0.982.19 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>The toolset freezes when exporting modules, compiling scripts, or saving scripts. Typically the freeze happens when the log reaches the effect_death_h.nss log entry.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>This problem seems to be related to one of the language settings in windows. In the language control panel of Windows, the "Language for Non-Unicode programs" option must be set to English (United States). So far this fix seems to remove the freeze problem.
+</p>

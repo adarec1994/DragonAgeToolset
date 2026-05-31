@@ -1,0 +1,91 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> FOLLOWER_STATE_ACTIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td> Add follower to party pool + active party
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_AVAILABLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td> Add follower to party pool and remove from active party
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td> Remove follower from party pool and active party
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_LOADING
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_LOCKEDACTIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">7
+</td>
+<td> Add follower to active party and lock him active in the party picker.
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_SUSPENDED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td> Remove follower from active party and store it for putting it back later into the party
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> FOLLOWER_STATE_UNAVAILABLE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td> Remove follower from active party and do not allow adding it to active party again
+</td>
+<td align="center"> script.ldf
+</td></tr></table>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetFollowerState" title="SetFollowerState">SetFollowerState</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetFollowerState" title="GetFollowerState">GetFollowerState</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WR%20SetFollowerState" title="WR SetFollowerState">WR_SetFollowerState</a></li></ul>

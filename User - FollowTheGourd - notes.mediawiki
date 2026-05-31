@@ -1,0 +1,42 @@
+<p>Page of stuff that should be wikified:
+</p><p>- nonlinear plots (comes up from time to time in the forum, different threads)
+e.g., <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/74/index/2353801/1#2358783">http://social.bioware.com/forum/1/topic/74/index/2353801/1#2358783</a>
+</p><p>- retexturing/metadata
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/72/index/2252558">http://social.bioware.com/forum/1/topic/72/index/2252558</a>
+</p><p>- blue mini map problem (is it solved enough yet?)
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/74/index/770365">http://social.bioware.com/forum/1/topic/74/index/770365</a>
+</p><p><br />
+- HSVMatrix and areadata.gda
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/74/index/1178839/1#1188049">http://social.bioware.com/forum/1/topic/74/index/1178839/1#1188049</a>
+</p><p>- thebigmuh's building tips from about jan-feb.. e.g., some of the invisible collision props for interiors.
+</p><p>- Buffer effects from scripting
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1277218">http://social.bioware.com/forum/1/topic/71/index/1277218</a>
+</p><p>- Apparently you can get the object area boundries if they're in the list, yet not alter it.
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1806071">http://social.bioware.com/forum/1/topic/71/index/1806071</a>
+(example: <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1614241">http://social.bioware.com/forum/1/topic/71/index/1614241</a>)
+</p><p>- Some event routing info:
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/372089/1#2292214">http://social.bioware.com/forum/1/topic/71/index/372089/1#2292214</a>
+</p><p>- Recursive struct death:
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/2235100">http://social.bioware.com/forum/1/topic/71/index/2235100</a>
+</p><p>- AI with lots of combatants:
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1326927/2#2345011">http://social.bioware.com/forum/1/topic/71/index/1326927/2#2345011</a>
+</p><p>- Restoring the origina morphed character appearance with setappearance.
+</p><p>- List of new functions (maybe dalex has that covered already).
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1809510">http://social.bioware.com/forum/1/topic/71/index/1809510</a>
+</p><p>- AddNonPartyFollower useful info:
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/2290638#2297463">http://social.bioware.com/forum/1/topic/71/index/2290638#2297463</a>
+</p><p>- SetPartyPickerStage and needing to do it during the correct event.
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1436426/1#1685480">http://social.bioware.com/forum/1/topic/71/index/1436426/1#1685480</a>
+</p><p>- Some interesting alternate attempts to event overriding. Some consolidated link info there.
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/2103794">http://social.bioware.com/forum/1/topic/8/index/2103794</a>
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/Dragon-Age-Toolset/Toolset-Scripting/Events---How-To-properly-Override-them-255550-1.html">http://social.bioware.com/forum/Dragon-Age-Toolset/Toolset-Scripting/Events---How-To-properly-Override-them-255550-1.html</a>
+</p><p>- Autosave only works in GM_EXPLORE
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/2045524">http://social.bioware.com/forum/1/topic/71/index/2045524</a>
+</p><p>- Roam distance
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1806015">http://social.bioware.com/forum/1/topic/71/index/1806015</a>
+</p><p>- Making NPC items stealable (i.e., dont - use a stealing success event and create a new item)
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1602025">http://social.bioware.com/forum/1/topic/71/index/1602025</a>
+</p><p>- Map too large
+<a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/71/index/1635611">http://social.bioware.com/forum/1/topic/71/index/1635611</a>
+</p><p>- Rubber banding
+</p>

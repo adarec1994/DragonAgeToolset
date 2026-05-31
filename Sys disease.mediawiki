@@ -1,0 +1,18 @@
+<p>The Disease System, <strong class="selflink">sys_disease</strong>, uses special, permanently applied effects to a party member to mimic diseases contracted during combat or due to some event.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20h" title="Core h">core_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20disease%20h" title="Effect disease h (page does not exist)">effect_disease_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%20h" title="Effects h (page does not exist)">effects_h</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Log%20h" title="Log h (page does not exist)">log_h</a></li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20AddDisease" title="Disease AddDisease">Disease AddDisease</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20HasDisease" title="Disease HasDisease">Disease HasDisease</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveAllDiseases" title="Disease RemoveAllDiseases">Disease RemoveAllDiseases</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveAllDiseasesFromParty" title="Disease RemoveAllDiseasesFromParty">Disease RemoveAllDiseasesFromParty</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Disease%20RemoveDisease" title="Disease RemoveDisease">Disease RemoveDisease</a></li></ul>

@@ -1,0 +1,14 @@
+<p>Set the status of a world map icon.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> SetWorldMapLocationStatus(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oLocation,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nStatusId,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSuppressActiveFlash&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oLocation<dd>the location<dt style="font-weight:normal; font-style:italic;">nStatusId<dd>the status<dt style="font-weight:normal; font-style:italic;">bSuppressActiveFlash<dd>If nStatusId == WM_LOCATION_ACTIVE, set this flag to TRUE if you do not want the location to "flash". This flag has no effect if nStatusId&#160;!= WM_LOCATION_ACTIVE
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

@@ -1,0 +1,14 @@
+<p>Start traveling on the world map to the location clicked. If a random encounter area tag and waypoint tag were specified then travel on the world map and have a random encounter at the specified location. Otherwise, sends the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20FINISH%20TRAVEL" title="EVENT TYPE FINISH TRAVEL">EVENT_TYPE_FINISH_TRAVEL</a> event when completed.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> WorldMapStartTravelling(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sRandomEncounterArea&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sRandomEncounterWaypointTag&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oSourceLocationOverride&#160;= OBJECT_INVALID<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sRandomEncounterArea<dd>tag of the random encounter target area<dt style="font-weight:normal; font-style:italic;">sRandomEncounterWaypointTag<dd>tag of the random encounter target waypoint<dt style="font-weight:normal; font-style:italic;">oSourceLocationOverride<dd>map pin override object to start travelling from on the world map
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

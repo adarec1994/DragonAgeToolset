@@ -1,0 +1,18 @@
+<p>Get the specified attribute from oCreature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetCreaturePropertyType(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nProperty<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature whose property type is requested<dt style="font-weight:normal; font-style:italic;">nProperty<dd>the property (stat) we want to know about
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the selected property's type.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Gets the type of property for a given property index.
+</p><p>The property types are: ATTRIBUTE, SIMPLE, DEPLETABLE and DERIVED. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20TYPE" title="PROPERTY TYPE *">PROPERTY TYPE_*</a>
+</p>

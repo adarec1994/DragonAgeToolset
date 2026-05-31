@@ -1,0 +1,708 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>ABI base.xls</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://datoolset.net/wiki/ABI_base.xls/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Здесь есть 2DA-файлы со всеми талантами и заклинаниями из игры. Они определяют их названия, иконки, требования, и другие детали, описывающие их функцию (анимации, время перезарядки, и т. л.) 
+</p><p>Лучший способ создания новых способностей, это копирование похожей способности и редактирования необходимых параметров.
+</p><p>Во время разработки Dragon Age, этот файл обновлялся автоматически из базы данных. Мы же можем редактировать его вручную.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ABI_Base"><span class="tocnumber">1</span> <span class="toctext">Рабочий лист ABI_Base</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ability_data"><span class="tocnumber">2</span> <span class="toctext">Рабочий лист ability_data</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ability_effects_.28.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B5.D0.B9.29"><span class="tocnumber">3</span> <span class="toctext">Рабочий лист ability_effects (эффекты способностей)</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_passive_abilities_.28.D0.BF.D0.B0.D1.81.D1.81.D0.B8.D0.B2.D0.BD.D1.8B.D1.85_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B5.D0.B9.29"><span class="tocnumber">4</span> <span class="toctext">Рабочий лист passive_abilities (пассивных способностей)</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ABI_Base">Рабочий лист ABI_Base</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  Описания для игроков. Способности, ориентированные на предметы отображается в списке <b>Активные способности</b>.
+</td></tr>
+<tr>
+<th>  namestrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  ID string-переменной, которая содержит название способности.
+</td></tr>
+<tr>
+<th>  descstrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  ID string-переменной, которая содержит описание способности.
+</td></tr>
+<tr>
+<th>  tooltipstrref
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  String Ref ID of the buff/deff format on mouse over. (Caution: Abilities with ID over 500000 is considered as debuff and will not take the format of normal buffs.)
+</td></tr>
+<tr>
+<th>  strid_effect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  ID-номер строчки, в которой содержится описания способности, которое можно увидеть при наведении мышки.
+</td></tr>
+<tr>
+<th>  icon
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  Название иконки без расширения.
+</td></tr>
+<tr>
+<th>  abilitytype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td> Тип способности. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abilitytype.xls" title="Abilitytype.xls (page does not exist)">abilitytype.xls</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20TYPE" title="ABILITY TYPE *">ABILITY_TYPE_*</a>, а константые переменные в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>:
+<ul><li> 1 - талант</li>
+<li> 2 - заклинание</li>
+<li> 3 - умение</li>
+<li> 4 - предмет</li></ul>
+</td></tr>
+<tr>
+<th>  abilitymode
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  conditions
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Флаги, которые определяют, какие условие должны выполняться, чтобы игрок мог использовать описанною способность:
+<ul><li> 1 - экипировано одноручное оружие</li>
+<li> 2 - экипирован щит</li>
+<li> 4 - экипировано дальнобойное оружие</li>
+<li> 8 - игрок находится за спиной цели</li>
+<li> 16 - активирован нужный режим</li>
+<li> 32 - использующий способность является человекообразным созданием</li>
+<li> 64 - dual wielding</li>
+<li> 128 - экипировано два оружия</li>
+<li> 256 - использующий способноть является псом.</li>
+<li> 512 - использующий является магом</li></ul>
+</td></tr>
+<tr>
+<th>  condition_mode
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Если значения условий(Conditions) равно 16, в этой колонке содержится ID-номер способности продолжительного действия, которая должна быть активирована перед использованием данной способности.
+</td></tr>
+<tr>
+<th>  condition_group
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Связь между способностями продолжительного действия. Используйте минимальное значение группы. Когда активна одна из связанных способностей, другие выключаются.
+</td></tr>
+<tr>
+<th>  cost
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float</a>
+</td>
+<td>  Количество Маны\Выносливость, которое будет потрачено на использование способности.
+</td></tr>
+<tr>
+<th>  costupkeep
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Сколько маны\выносливости резервирует способность. (только способности продолжительного действия)
+</td></tr>
+<tr>
+<th>  prereqability
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int </a>
+</td>
+<td>  ID-номер способности, которую нужно знать для изучания данной.
+</td></tr>
+<tr>
+<th>  prereqlevel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Минимальный уровень персонажа для изучения способности.
+</td></tr>
+<tr>
+<th>  prereqattribute
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Какой аттрибут нужен для способности. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">properties.xls</a> for what this number maps to.
+</td></tr>
+<tr>
+<th>  prereqattvalue
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Минимальное значения указанного аттрибута, которое нужно для использования способности.
+</td></tr>
+<tr>
+<th>  guitype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Категория способности. К примеру, "Создание" и "Основные". Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Guitypes.xls" title="Guitypes.xls">guitypes.xls</a>.
+</td></tr>
+<tr>
+<th>  targettype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Оператор, который определяет тип цели, которая может быть поражена способностью. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Targettype.xls" title="Targettype.xls (page does not exist)">targettype.xls</a> и <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability#Targeting_Behavior" title="Ability">Ability#Targeting Behavior</a>
+</td></tr>
+<tr>
+<th>  autotarget
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Если TRUE, игра автоматически выберит цель способности, будь то друг или враг.
+</td></tr>
+<tr>
+<th>  range
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Область действия:
+<ul><li> 0 - ближний бой (прикасаясь к цели)</li>
+<li> 1 - заклинания ближнего расстояния (почти ближний бой)</li>
+<li> 2 - moderate spell range (заклинания с конусообразной областью действия)</li>
+<li> 3 - заклинания дальнего расстояния (расстояние действия равно расстоянии обнаружения противника)</li>
+<li> 4+ - очень большое расстояние</li></ul>
+</td></tr>
+<tr>
+<th>  speed
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>   Значение колонки определяет, как долго способность будет готовиться к использованию. 0 - сработает сразу, 1 - проиграется выбранная анимация. 2+ - над головой использующего будет создана полоса прогресса, после заполнения которой проиграется выбранная анимация, а затем сработет способность.
+</td></tr>
+<tr>
+<th>  usetype
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int </a>
+</td>
+<td>  Является ли способность пассивной, способностью длительного действия или одноразовой. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Abilityusetype.xls" title="Abilityusetype.xls (page does not exist)">abilityusetype.xls</a>:
+<ul><li> 2 - sustained</li>
+<li> 3 - пассивные</li>
+<li> 4 - activated</li></ul>
+</td></tr>
+<tr>
+<th>  spellscript
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td>  Скрипт, который запустится после использования способности. Расширения скрипта типа ".ncs" также сработают.
+</td></tr>
+<tr>
+<th>  cooldown
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  Время восстановления способности в секундах.
+</td></tr>
+<tr>
+<th>  conjurevfx
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Визуальный(VFX) эффект, который проигрывается во время подготовки и наложения заклинания.. Значения определены в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20base.xls" title="VFX base.xls">VFX_base.xls</a>.
+</td></tr>
+<tr>
+<th>  blendtree
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string</a>
+</td>
+<td>  Устанавливается для способностей, которые требуют изменения стандартных анимаци игрока или сопартийца. К примеру во время использования способности "Стена щита" персонаж занимает защитную позицию и прикрывается щитом.
+</td></tr>
+<tr>
+<th>  conjureanim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Анимация, которая проигрывается во время подготовки заклинания. Список возможных значений расположен здесь <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%20base.xls" title="ANIM base.xls">ANIM_base.xls</a>.
+</td></tr>
+<tr>
+<th>  castanim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  Анимация, которая проигрывается во время наложения заклинания. Список возможных значений расположен здесь <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%20base.xls" title="ANIM base.xls">ANIM_base.xls</a>.
+</td></tr>
+<tr>
+<th>  projectile
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>   Название используемых снарядов. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRJ%20base.xls" title="PRJ base.xls">PRJ_base.xls</a>. 1 - стрела.
+</td></tr>
+<tr>
+<th>  autocancel
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Устаревшее
+</td></tr>
+<tr>
+<th>  autodraw
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Определяет поведение способности по отношению к оружие. 0 - способность игнорирует состояние оружия, 1 - перед использованием способности оружие нужно вытянуть, 2 - перед использованием оружие нужно вложить в ножны.
+<p>Значение любого заклинания со скоростью больше, чем 1, должно быть равно 2. The sheathing animation occurs during the conjure sequence without slowing it down, and putting away the weapon will prevent clipping.
+</p>
+</td></tr>
+<tr>
+<th>  threat_use
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Устаревшее
+</td></tr>
+<tr>
+<th>  threat_impact
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Урон,наносимый каждый ударом. Использовать не обязательно.
+</td></tr>
+<tr>
+<th>  aoe_type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  1 - круг, 2 - конус.
+</td></tr>
+<tr>
+<th>  aoe_idx
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Определяет области действия. Расположены в <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20base.xls" title="VFX base.xls">VFX_base.xls</a>.
+</td></tr>
+<tr>
+<th>  aoe_param1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Радиус круга действия или размер конуса.
+</td></tr>
+<tr>
+<th>  aoe_param2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Устаревшее
+</td></tr>
+<tr>
+<th>  vfx_impact0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Визуальный(VFX) эффект, который проигрывается при каждом ударе. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20base.xls" title="VFX base.xls">VFX_base.xls</a>. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactLocationVfxId" title="Ability GetImpactLocationVfxId">Ability_GetImpactLocationVfxId</a>
+</td></tr>
+<tr>
+<th>  vfx_impact1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Не используется движком, но может быть использовано в качестве константы в скриптах.  При помощи этого параметра многие ПРЕДМЕТЫ удерживает свой VFX-эффект. Смотрите <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20GetImpactObjectVfxId" title="Ability GetImpactObjectVfxId">Ability_GetImpactObjectVfxId</a>
+<p>Как правило, используется для длительных способностей или способностей продолжительного действия. Указывается на VFX-эффект, который будет использован.
+</p>
+</td></tr>
+<tr>
+<th>  flags
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Установить значение 1 для способности, которая использует анимации атаки с оружие дальнего боя, значение 64 для способностей длительного действия, которые выключаются когда у существа заканчивается выносливость, 128 для снятия заклинания с субъекта (?), значение 192 для способностей длительного действия, которые выключаются когда у существа заканчивается мана
+</td></tr>
+<tr>
+<th>  showintactics
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Установите значение 1 тем способностям, которые герой или его сопартийцы захотят использовать в тактической системе.
+</td></tr>
+<tr>
+<th>  showinchargen
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Возможные значения:
+<ul><li> 1 - <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup></li>
+<li> 2 - показывать только в окне генерации персонажа</li>
+<li> 4 - показывать в таланте\заклинании\навыке\книге</li></ul>
+<p>Если вы, к примеру, установите значение 7, будет отображаться и в окне генерации, и в таланте\заклинании\навыке\книге
+</p>
+</td></tr>
+<tr>
+<th>  passive_id
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Соответствует ID-номеру способности в листе passive_abilities документа <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base.xls">ABI_base.xls</a>.
+</td></tr>
+<tr>
+<th>  crust_id
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Устаревшее
+</td></tr>
+<tr>
+<th>  resistance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  damageinfo
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  condition_appgroup
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  ProcessWithEvent
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int</a>
+</td>
+<td>  Если установить флаг в этой колонке, при применении способности будет запускаться и обрабатываться событие. Работает даже когда игра поставлена на паузу. Использовать осторожно.
+</td></tr>
+<tr>
+<th>  fatigue
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  Если способность является способостью продолжительного действия, значения этой колонки определяет степень усталости в то время, как способность активна.
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ability_data">Рабочий лист ability_data</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  bHostileint
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effectImpact
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effectResisted
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effectDuration
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+<ul><li> positive: temporary</li>
+<li> 0.0 instant</li>
+<li> negative permanent </li></ul>
+</td></tr>
+<tr>
+<th>  dmg_function
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  dmg_param0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  dmg_param1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  dmg_type
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li>const int DAMAGE_TYPE_INVALID                       - 0;</li>
+<li>const int DAMAGE_TYPE_PHYSICAL                      - 1;</li>
+<li>const int DAMAGE_TYPE_FIRE                          - 2;</li>
+<li>const int DAMAGE_TYPE_COLD                          - 3;</li>
+<li>const int DAMAGE_TYPE_ELECTRICITY                   - 4;</li>
+<li>const int DAMAGE_TYPE_POISON                        - 5;</li>
+<li>const int DAMAGE_TYPE_LETHAL                        - 6;</li>
+<li>const int DAMAGE_TYPE_TBD                           - 7;</li></ul>
+</td></tr>
+<tr>
+<th>  dmg_flags
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li>const int DAMAGE_EFFECT_FLAG_NONE        - 0x00000000&#160;;</li>
+<li>const int DAMAGE_EFFECT_FLAG_CRITICAL    - 0x00000001; //критический удар</li>
+<li>const int DAMAGE_EFFECT_FLAG_DEATHBLOW   - 0x00000002; //фаталити</li>
+<li>const int DAMAGE_EFFECT_FLAG_UPDATE_GORE - 0x00000004; //на атакующем существе появляется кровь</li>
+<li>const int DAMAGE_EFFECT_FLAG_LEECH_50    - 0x00000008; //возвращает атакующему 50% здоровья</li>
+<li>const int DAMAGE_EFFECT_FLAG_LEECH_75    - 0x00000010; //возвращает атакующему 75% здоровья</li>
+<li>const int DAMAGE_EFFECT_FLAG_LEECH_100   - 0x00000020; //возвращает атакующему 100% здоровья</li>
+<li>const int DAMAGE_EFFECT_FLAG_LEECH_MANA  - 0x00000040; //возвращает ману вместо жизни</li></ul>
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_ability_effects_.28.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D1.8B_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B5.D0.B9.29">Рабочий лист ability_effects (эффекты способностей)</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_int1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_int2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_int3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_float0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_float1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  effect_object0
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li> 0 - не установлено</li>
+<li> 1 - set to OBJECT_SELF</li>
+<li> 2 - set to caster</li></ul>
+</td></tr>
+<tr>
+<th>  scaled_field
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>
+<ul><li>0 - none</li>
+<li> 1 - float0</li>
+<li> 2 - float1</li></ul>
+</td></tr>
+<tr>
+<th>  vfx
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  <sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</td></tr>
+<tr>
+<th>  resistance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+<ul><li>const int PROPERTY_ATTRIBUTE_RESISTANCE_MENTAL     - 32;</li>
+<li>const int PROPERTY_ATTRIBUTE_RESISTANCE_AVOIDANCE  - 31;</li>
+<li>const int PROPERTY_ATTRIBUTE_RESISTANCE_PHYSICAL   - 33;</li></ul>
+</td></tr></table>
+<h2><span class="mw-headline" id=".D0.A0.D0.B0.D0.B1.D0.BE.D1.87.D0.B8.D0.B9_.D0.BB.D0.B8.D1.81.D1.82_passive_abilities_.28.D0.BF.D0.B0.D1.81.D1.81.D0.B8.D0.B2.D0.BD.D1.8B.D1.85_.D1.81.D0.BF.D0.BE.D1.81.D0.BE.D0.B1.D0.BD.D0.BE.D1.81.D1.82.D0.B5.D0.B9.29">Рабочий лист passive_abilities (пассивных способностей)</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Prop1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td>  Ссылка на <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">properties.xls</a>
+</td></tr>
+<tr>
+<th>  Modifier1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)">float</a>
+</td>
+<td>  Этот модификатор применяет способность только на персонажа-владельца.
+</td></tr>
+<tr>
+<th>  Prop2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Modifier2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Prop3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Modifier3
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Comment
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Comment%20%282da%20type%29" title="Comment (2da type)"> comment </a>
+</td>
+<td>  Итог способности в читабельной форме.
+</td></tr></table>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%20base.xls" title="ABI base.xls">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

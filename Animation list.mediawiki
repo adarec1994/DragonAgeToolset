@@ -1,0 +1,703 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">Cutscene actions</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Play%20animation" title="Play animation">Play animation</a>
+<ul><li><strong class="selflink">Animation list</strong></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">Cutscene capture</a></li></ul>
+</td></tr></table>
+<p>This is a listing of some Animations of Dragon Age. They are an Art resource to be used with the Toolsets <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animation blend tree editor</a> to create cinematics and the like. They can also be used directly by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">cutscenes</a> and can be triggered by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">scripts</a>.
+</p><p>See also: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">Art Resource</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20blend%20tree%20editor" title="Animation blend tree editor">Animation blend tree editor</a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Naming_conventions"><span class="tocnumber">1</span> <span class="toctext">Naming conventions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#List_with_descriptions"><span class="tocnumber">2</span> <span class="toctext">List with descriptions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Run"><span class="tocnumber">3</span> <span class="toctext">Run</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Walk"><span class="tocnumber">4</span> <span class="toctext">Walk</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Stand"><span class="tocnumber">5</span> <span class="toctext">Stand</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Sit"><span class="tocnumber">6</span> <span class="toctext">Sit</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Hands"><span class="tocnumber">7</span> <span class="toctext">Hands</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Lay"><span class="tocnumber">8</span> <span class="toctext">Lay</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Turn"><span class="tocnumber">9</span> <span class="toctext">Turn</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Look"><span class="tocnumber">10</span> <span class="toctext">Look</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#List_with_animation"><span class="tocnumber">11</span> <span class="toctext">List with animation</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Naming_conventions">Naming conventions</span></h2>
+<dl><dd><i>See Article <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions#Animation_File_Naming_Convention" title="Naming conventions">Naming conventions</a></i></dd></dl>
+<h2><span class="mw-headline" id="List_with_descriptions">List with descriptions</span></h2>
+<p><i>(Note that this list is not the complete list of Animations)</i>
+</p><p>The list below is for dialogue animations and animations currently in the default drop down menu.  There are many more interesting animations that are intended for animals, creatures or custom cutscenes that can produce some interesting effects such as flying through the air or suspended in mid air.  If you are looking for something out of the ordinary I would suggest testing out any or all of the other animations not listed here.
+</p>
+<h2><span class="mw-headline" id="Run">Run</span></h2>
+<table>
+<tr>
+<td> mh_m.mov_rf </td>
+<td> Running straight ahead
+</td></tr>
+<tr>
+<td> mh_m.mov_rf_leanr </td>
+<td> Running leaning to the right
+</td></tr>
+<tr>
+<td> mh_m.mov_rf_leanl </td>
+<td> Running leaning to the left
+</td></tr>
+<tr>
+<td> mh_m.cmov_rf </td>
+<td> Running slowly leaning to the right
+</td></tr>
+<tr>
+<td> mh_m.cmov_rf_leanl </td>
+<td> Running slowly leaning to the left
+</td></tr>
+<tr>
+<td> mh_m.cmov_rf_leanr </td>
+<td> Running slowly leaning to the right
+</td></tr>
+<tr>
+<td> mh.dg_f_r_5p_en </td>
+<td> Run forward 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_f_r_5p_en_v2 </td>
+<td> Run forward 5 paces version 2
+</td></tr>
+<tr>
+<td> mh.dg_r_dth_en </td>
+<td> Runs forward shot in back falls forward
+</td></tr>
+<tr>
+<td>mh_m.mov_rf </td>
+<td> Running forward
+</td></tr></table>
+<h2><span class="mw-headline" id="Walk">Walk</span></h2>
+<table>
+<tr>
+<td> mh.dg_5p_tn_l_45 </td>
+<td> Walks 5 paces at 45 degree angle from the left and then turns 45 degrees right
+</td></tr>
+<tr>
+<td> mh.dg_5p_tn_l_90 </td>
+<td> Walks 5 paces straight and then looks to the left
+</td></tr>
+<tr>
+<td> mh.dg_5p_tn_r_45 </td>
+<td> Walks 5 paces at 45 degree angle from the right and then turns 45 degrees left
+</td></tr>
+<tr>
+<td> mh.dg_5p_tn_r_90 </td>
+<td> Walks 5 paces straight and then looks to the right
+</td></tr>
+<tr>
+<td> mh.dg_b_1p </td>
+<td> Walks backwards 1 pace
+</td></tr>
+<tr>
+<td> mh.dg_f_1p </td>
+<td> Walks forward 1 pace
+</td></tr>
+<tr>
+<td> mh.dg_f_5p </td>
+<td> Walks forward 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_f_5p_ng </td>
+<td> Walks forward 5 paces (Starts 5 paces back)
+</td></tr>
+<tr>
+<td> mh.dg_tk_serg </td>
+<td> Walking back and forth making forceful hand gestures
+</td></tr>
+<tr>
+<td> mh.dg_tn_20_l_5p </td>
+<td> Walks at a 20 degree angle left to right 5 paces (starts back 5 paces)
+</td></tr>
+<tr>
+<td> mh.dg_tn_20_r_5p </td>
+<td> Walks at a 20 degree angle right to left 5 paces (starts back 5 paces)
+</td></tr>
+<tr>
+<td> mh.dg_tn_45_l_5p </td>
+<td> Walks at a 45 degree angle left to right 5 paces (starts in front of view)
+</td></tr>
+<tr>
+<td> mh.dg_tn_45_r_5p </td>
+<td> Walks at a 45 degree angle right to left 5 paces (starts in front of view)
+</td></tr></table>
+<h2><span class="mw-headline" id="Stand">Stand</span></h2>
+<table>
+
+<tr>
+<td> mh_m.p </td>
+<td> Standing still
+</td></tr></table>
+<h2><span class="mw-headline" id="Sit">Sit</span></h2>
+<table>
+<tr>
+<td> mh.wi_sit_dk_slp_en </td>
+<td> Sitting puts head down (Enter)
+</td></tr>
+<tr>
+<td> mh.wi_sit_dk_slp_ex </td>
+<td> Sitting head down to up (Exit)
+</td></tr>
+<tr>
+<td> mh.wi_sit_dk_slp_lp </td>
+<td> Sitting puts head down (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_sit_throne_lp </td>
+<td> Sitting straight up (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_sit_throne_tw_v1 </td>
+<td> Sitting scratches head with right hand
+</td></tr>
+<tr>
+<td> mh.wi_sit_throne_tw_v2 </td>
+<td> Sitting shifts around in chair
+</td></tr>
+<tr>
+<td> mh.wi_sit_throne_tw_v3 </td>
+<td> Sitting raises right hand as if toasting
+</td></tr>
+<tr>
+<td> mh.wi_sit_tw_v </td>
+<td> Sitting and looking around
+</td></tr>
+<tr>
+<td> mh.wi_sit_lp </td>
+<td> Sitting (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_sit_lean_tw_v1 </td>
+<td> Sitting and looks right
+</td></tr>
+<tr>
+<td> mh.2p_dwarf_beg_a </td>
+<td> Sitting on ground begging
+</td></tr>
+<tr>
+<td> mh.wi_sit_grnd_lp </td>
+<td> Sitting on ground (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_sit_lean_lp </td>
+<td> Sitting at table (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_sit_grnd_tw </td>
+<td> Sitting on ground looking around
+</td></tr>
+<tr>
+<td> mh.wi_sit_lean_tw_v2 </td>
+<td> Sitting writing or counting
+</td></tr>
+<tr>
+<td> mh.wi_sit_lean_tw_v3 </td>
+<td> Sitting eating
+</td></tr>
+<tr>
+<td> mh.wi_sit_grnd_ex </td>
+<td> Getting up from sitting on the ground (Exit)
+</td></tr></table>
+<h2><span class="mw-headline" id="Hands">Hands</span></h2>
+<table>
+<tr>
+<td> mh.dg_armc_en </td>
+<td> Fold arms (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_armc_ex </td>
+<td> Unfolds arms (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_armc_l_en </td>
+<td> Folds arms (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_armc_l_ex </td>
+<td> Unfolds arms (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_armc_l_lp </td>
+<td> Folds arms (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_armc_lk_l </td>
+<td> Arms folded look left
+</td></tr>
+<tr>
+<td> mh.dg_armc_lk_r </td>
+<td> Arms folded look right
+</td></tr>
+<tr>
+<td> mh.dg_armc_lp </td>
+<td> Arms folded (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_bless_en </td>
+<td> Right hand thrust out bless (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_bless_ex </td>
+<td> Right hand pulls back bless (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_bless_lp </td>
+<td> Right hand thrust out bless (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_body_ang </td>
+<td> "Moves arms slightly, body language angry"
+</td></tr>
+<tr>
+<td> mh.dg_body_norm </td>
+<td> "Moves arms slightly, body language normal"
+</td></tr>
+<tr>
+<td> mh.dg_cast_blood_en </td>
+<td> Cut left hand with blade
+</td></tr>
+<tr>
+<td> mh.dg_cast_blood_ex </td>
+<td> Crouch Hands thrust forward step back
+</td></tr>
+<tr>
+<td> mh.dg_cast_blood_ex02 </td>
+<td> Crouch hands pull back step back
+</td></tr>
+<tr>
+<td> mh.dg_cast_blood_lp </td>
+<td> Crouch Hands thrust forward step back (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_cast_en </td>
+<td> Cast spell step forward hands thrust forward (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_cast_ex </td>
+<td> Cast spell step back hands pulled back stand normal (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_charge_1h_f_30p </td>
+<td> Charge forward 30 paces 1 hand gesturing in air
+</td></tr>
+<tr>
+<td> mh.dg_charge_2h_f_30p </td>
+<td> Charge forward 30 paces 2 hands gesturing in air
+</td></tr>
+<tr>
+<td> mh.dg_draw_r_stab </td>
+<td> Draw weapon run 3 paces and stab with right hand
+</td></tr>
+<tr>
+<td> mh.dg_draw_w_stab </td>
+<td> Draw weapon walk 7 paces and stand
+</td></tr>
+<tr>
+<td> mh.dg_hnd_b_en </td>
+<td> Fold hands behind back (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_b_ex </td>
+<td> Unfold hands from behind back (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_b_lp </td>
+<td> Fold hands behind back (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_beckon </td>
+<td> Beckon with right hand
+</td></tr>
+<tr>
+<td> mh.dg_hnd_chop_v1 </td>
+<td> Right hand chopping motion gesture 1
+</td></tr>
+<tr>
+<td> mh.dg_hnd_chop_v2 </td>
+<td> Right hand chopping motion gesture 2
+</td></tr>
+<tr>
+<td> mh.dg_hnd_chop_v3 </td>
+<td> Right hand chopping motion gesture 3
+</td></tr>
+<tr>
+<td> mh.dg_hnd_cover_ear_en </td>
+<td> Both hands over ears (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_cover_ear_ex </td>
+<td> Both hands over ears (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_cover_ear_lp </td>
+<td> Both hands over ears (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_flat </td>
+<td> "Right hand flat swipes, ""No"""
+</td></tr>
+<tr>
+<td> mh.dg_hnd_l </td>
+<td> Right hand motions to the left (As if referring to person or place.)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_face_en </td>
+<td> Both hands clasped over face. (sorrow) (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_face_ex </td>
+<td> Both hands clasped over face. (sorrow) (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_face_lp </td>
+<td> Both hands clasped over face. (sorrow) (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_en </td>
+<td> Both hands on hips (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_enb </td>
+<td> Left hand on left hip. (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_ex </td>
+<td> Both hands off hips (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_exb </td>
+<td> Left hand off left hip (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_lp </td>
+<td> Both hands on hips. (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_on_hip_lpb </td>
+<td> Left hand on left hip. (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_other </td>
+<td> Right hand gesture palm up.
+</td></tr>
+<tr>
+<td> mh.dg_hnd_r </td>
+<td> "Right hand palm up gesture, look right."
+</td></tr>
+<tr>
+<td> mh.dg_hnd_salute_01 </td>
+<td> Double arms cross the chest head bow.
+</td></tr>
+<tr>
+<td> mh.dg_hnd_salute_02 </td>
+<td> Right hand pounds left chest 1 </td>
+<td> These the same?
+</td></tr>
+<tr>
+<td> mh.dg_hnd_salute_03 </td>
+<td> Right hand pounds left chest 2 </td>
+<td> These the same?
+</td></tr>
+<tr>
+<td> mh.dg_hnd_self </td>
+<td> Right hand flat to chest (motions to sefl)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_shake_fist_en </td>
+<td> Right hand shakes fist (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_stop </td>
+<td> Both hands palms outward (stop)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_stop_v2 </td>
+<td> Right hand palms outward (stop)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_up </td>
+<td> Both hands gesturing in conversation.
+</td></tr>
+<tr>
+<td> mh.dg_hnd_wave_en </td>
+<td> Right hand up and waves. (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_wave_ex </td>
+<td> Right hand up and waves. (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_wave_lp </td>
+<td> Right hand up and waves. (Hold pose)
+</td></tr>
+<tr>
+<td> mh.dg_hnd_wringing </td>
+<td> Wringing hands together (Almost but not quite together)
+</td></tr></table>
+<h2><span class="mw-headline" id="Lay">Lay</span></h2>
+<table>
+<tr>
+<td> shared.diegetup </td>
+<td> Lying dead on back and then get up
+</td></tr>
+<tr>
+<td> shared.dieloop </td>
+<td> Lying dead
+</td></tr>
+<tr>
+<td> mh.am_die_b_lp_v3 </td>
+<td> Laying on back dead
+</td></tr>
+<tr>
+<td> mh.wi_ly_lp </td>
+<td> Laying down (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_ly_knee_en </td>
+<td> Laying down raise left knee (Enter)
+</td></tr>
+<tr>
+<td> mh.wi_ly_knee_ex </td>
+<td> Laying down lower left knee (Exit)
+</td></tr>
+<tr>
+<td> mh.wi_ly_knee_lp </td>
+<td> Laying down with left knee up (Hold pose)
+</td></tr>
+<tr>
+<td> mh.am_die_f_lp </td>
+<td> Laying on face dead
+</td></tr>
+<tr>
+<td> mh.am_die_p_lp_v4 </td>
+<td> Laying on back dead
+</td></tr>
+<tr>
+<td> mh.cb_faint_ex </td>
+<td> From laying down gets back up (Exit)
+</td></tr>
+<tr>
+<td> mh.cb_faint_lp </td>
+<td> Laying down (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_ly_en </td>
+<td> Lays down to sleep (Enter)
+</td></tr>
+<tr>
+<td> mh.wi_ly_ex </td>
+<td> Gets up from playing down (Exit)
+</td></tr>
+<tr>
+<td> mh.wi_ly_inj_en </td>
+<td> "Laying on back, gets up on right elbow (Enter)"
+</td></tr>
+<tr>
+<td> mh.wi_ly_inj_ex </td>
+<td> Lays down after leaning on right elbow (Exit)
+</td></tr>
+<tr>
+<td> mh.wi_ly_inj_lp </td>
+<td> Laying down leaning on right elbow (Hold pose)
+</td></tr>
+<tr>
+<td> mh.wi_ly_sleep_lp </td>
+<td> Sleeping on right side (Hold pose)
+</td></tr>
+<tr>
+<td> mh.cu_idle </td>
+<td> Injured laying on stomach
+</td></tr>
+<tr>
+<td> mh.am_die_b_lp_v2 </td>
+<td> Laying on back dead
+</td></tr></table>
+<h2><span class="mw-headline" id="Turn">Turn</span></h2>
+<table>
+<tr>
+<td> mh.dg_tn_180_l </td>
+<td> Turn 180 degrees to the left
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_l_5p </td>
+<td> Turn 180 degrees to the left and walk 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_l_ng </td>
+<td> Turn 180 degrees to the left
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_l_ng2 </td>
+<td> Facing away turn 180 degrees left
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_l_rn_5p </td>
+<td> Turn 180 degrees to the left and run 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_r </td>
+<td> Turn 180 degrees to the right
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_r_5p </td>
+<td> Turn 180 degrees to the right and walk 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_r_ng </td>
+<td> Turn 180 degrees to the right
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_r_ng2 </td>
+<td> Facing away turn 180 degrees right
+</td></tr>
+<tr>
+<td> mh.dg_tn_180_r_rn_5p </td>
+<td> Turn 180 degrees to the right and run 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_l </td>
+<td> Turns left 90 degrees
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_l_5p </td>
+<td> Turns left 90 degrees and walks 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_l_rn_5p </td>
+<td> Turns left 90 degrees and runs 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_r </td>
+<td> Turns right 90 degrees
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_r_5p </td>
+<td> Turns right 90 degrees and walks 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_tn_90_r_rn_5p </td>
+<td> Turns right 90 degrees and runs 5 paces
+</td></tr>
+<tr>
+<td> mh.dg_turn_l_45 </td>
+<td> Turns 45 degrees to the left
+</td></tr>
+<tr>
+<td> mh.dg_turn_r_45 </td>
+<td> Turns 45 degrees to the right
+</td></tr>
+<tr>
+<td> mh.dg_wander_s_en </td>
+<td> Turns around and walks away (Enter)
+</td></tr>
+<tr>
+<td> mh.dg_wander_s_ex </td>
+<td> Starts back turns around and walks towards (Exit)
+</td></tr>
+<tr>
+<td> mh.dg_wanderwest </td>
+<td> Turns to the left and wanders left then back right
+</td></tr>
+<tr>
+<td> mh.dg_wanderwest_en </td>
+<td> Turns to the left and wanders a few paces left
+</td></tr></table>
+<h2><span class="mw-headline" id="Look">Look</span></h2>
+<table>
+
+<tr>
+<td> mh.dg_b_5p </td>
+<td> Looks right and down walks backwards 5 pace
+</td></tr>
+<tr>
+<td> mh.dg_lk_l </td>
+<td> Look left
+</td></tr>
+<tr>
+<td> mh.dg_lk_r </td>
+<td> Look right
+</td></tr>
+<tr>
+<td> mh.dg_lkd </td>
+<td> Look down
+</td></tr>
+<tr>
+<td> mh.dg_lku </td>
+<td> Look up
+</td></tr>
+<tr>
+<td> mh.dg_lost_wander </td>
+<td> Looking around confused wanders a few steps (continues a long time)
+</td></tr>
+<tr>
+<td> mh.dg_tk_down </td>
+<td> Looking down
+</td></tr>
+<tr>
+<td> mh.dg_tk_lk_l </td>
+<td> Look left
+</td></tr>
+<tr>
+<td> mh.dg_tk_lk_r </td>
+<td> Look right
+</td></tr>
+<tr>
+<td> mh.dg_tk_nervous </td>
+<td> Looks around nervously
+</td></tr>
+<tr>
+<td> mh.am_cust_en </td>
+<td> Looking down and searching (Enter)
+</td></tr>
+<tr>
+<td> mh.am_cust_ex </td>
+<td> Looking down and searching (Exit)
+</td></tr>
+<tr>
+<td> mh.am_cust_lp </td>
+<td> Looking down and searching (Hold pose)
+</td></tr>
+<tr>
+<td> mh.po_pose_g </td>
+<td> Looking down
+</td></tr>
+<tr>
+<td> mh_m.mov_tw_v1 </td>
+<td> Looking upwards to the left and then the right
+</td></tr>
+<tr>
+<td> mh_m.mov_tw_v2 </td>
+<td> Looking to the left and then the right
+</td></tr>
+<tr>
+<td> shared.dazed </td>
+<td> Standing looking down
+</td></tr>
+<tr>
+<td> mh.dg_tk_scared </td>
+<td> Looking around in a scared manner.
+</td></tr>
+<tr>
+<td> mh.dg_tk_scared_v2 </td>
+<td> Looking forward in a scared manner.
+</td></tr></table>
+<h2><span class="mw-headline" id="List_with_animation">List with animation</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.nexusmods.com/dragonage/mods/4929">List with description of animation by Beerfish</a>
+</p>

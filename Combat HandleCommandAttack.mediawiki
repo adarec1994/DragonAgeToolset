@@ -1,0 +1,184 @@
+<p>Called by:
+</p><p>Calls: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackHand" title="Combat GetAttackHand">Combat_GetAttackHand</a>
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/**
+*  @brief Handles processing an Attack Command
+*
+*  @param oAttacker       The command owner, usually OBJEC_TSE
+*  @param oTarget         The Target of the command
+*  @param nCommandId      The command Id
+*  @param nCommandSubType The command subtype
+*
+*  @returns COMBAT_RESULT_* constant
+*
+*  @author Georg Zoeller
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>  Combat_HandleCommandAttack<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCommandSubType<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a>  Combat_HandleCommandAttack<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nCommandSubType<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> CombatAttackResultStruct stAttack1;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> CombatAttackResultStruct stAttack2;
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWeapon2;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nHand <span class="sy0">=</span> Combat_GetAttackHand<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_MAIN<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        oWeapon <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_MAIN</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_OFFHAND<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        oWeapon <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_OFFHAND</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Double Weapon Strike.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsModalAbilityActive"><span class="kw4">IsModalAbilityActive</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_DUAL_WEAPON_DOUBLE_STRIKE<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        nHand<span class="sy0">=</span>HAND_BOTH;
+        oWeapon <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_MAIN</span><span class="br0">&#41;</span>;
+        oWeapon2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_OFFHAND</span><span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAttackType <span class="sy0">=</span> Combat_GetAttackType<span class="br0">&#40;</span>oAttacker, oWeapon<span class="br0">&#41;</span>;
+&#160;
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// Handle Attack #1</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    stAttack1 <span class="sy0">=</span> Combat_PerformAttack<span class="br0">&#40;</span>oAttacker, oTarget, oWeapon<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_BOTH<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+           stAttack2 <span class="sy0">=</span> Combat_PerformAttack<span class="br0">&#40;</span>oAttacker, oTarget, oWeapon2<span class="br0">&#41;</span>;
+&#160;
+           <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stAttack1.<span class="me1">nAttackResult</span> <span class="sy0">!=</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span> <span class="sy0">&amp;&amp;</span>  stAttack2.<span class="me1">nAttackResult</span> <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span><span class="br0">&#41;</span>
+           <span class="br0">&#123;</span>
+                stAttack1 <span class="sy0">=</span> stAttack2;
+                nHand <span class="sy0">=</span> HAND_MAIN; <span class="co1">// Deathblows just use the main hand.</span>
+           <span class="br0">&#125;</span>
+&#160;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// If we execute a deathblow, we gain the death fury effect for a couple of</span>
+    <span class="co1">// seconds and apply the deathblow command</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stAttack1.<span class="me1">nAttackResult</span> <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_DEATHBLOW</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+&#160;
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <span class="co1">// Georg: Do Not Modify the following section.</span>
+        <span class="co1">// START &gt;&gt;</span>
+        <span class="co1">// GM - Adding the deathblow should be the last thing done because it</span>
+        <span class="co1">// will clear the attack command.</span>
+        <span class="co1">// Specifically, SetAttackResult MUST be executed before adding the deathblow.</span>
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult"><span class="kw4">SetAttackResult</span></a><span class="br0">&#40;</span>oAttacker,  stAttack1.<span class="me1">nAttackResult</span>, stAttack1.<span class="me1">eImpactEffect</span>,
+                                    <span class="kw3">COMBAT_RESULT_INVALID</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>  <span class="br0">&#41;</span>;
+&#160;
+&#160;
+        WR_AddCommand<span class="br0">&#40;</span>oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandDeathBlow"><span class="kw4">CommandDeathBlow</span></a><span class="br0">&#40;</span>oTarget, stAttack1.<span class="me1">nDeathblowType</span><span class="br0">&#41;</span>, TRUE, TRUE<span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMMAND_RESULT_SUCCESS</span>;
+        <span class="co1">// ----------------------------------------------------------------------</span>
+        <span class="co1">// &lt;&lt; END</span>
+        <span class="co1">// ----------------------------------------------------------------------</span>
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <span class="co1">// SetAttackResult requires a result in either the first or second result</span>
+    <span class="co1">// field to determine which hand should attack.</span>
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_MAIN <span class="sy0">||</span> stAttack1.<span class="me1">nAttackResult</span> <span class="sy0">==</span> <span class="kw3">COMBAT_RESULT_BACKSTAB</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult"><span class="kw4">SetAttackResult</span></a><span class="br0">&#40;</span>oAttacker,  stAttack1.<span class="me1">nAttackResult</span>, stAttack1.<span class="me1">eImpactEffect</span>,
+                                    <span class="kw3">COMBAT_RESULT_INVALID</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>  <span class="br0">&#41;</span>;
+&#160;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_OFFHAND<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult"><span class="kw4">SetAttackResult</span></a><span class="br0">&#40;</span>oAttacker,  <span class="kw3">COMBAT_RESULT_INVALID</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>,
+                                        stAttack1.<span class="me1">nAttackResult</span>, stAttack1.<span class="me1">eImpactEffect</span> <span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nHand <span class="sy0">==</span> HAND_BOTH<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult"><span class="kw4">SetAttackResult</span></a><span class="br0">&#40;</span>oAttacker,  stAttack1.<span class="me1">nAttackResult</span>, stAttack1.<span class="me1">eImpactEffect</span>,stAttack2.<span class="me1">nAttackResult</span>, stAttack2.<span class="me1">eImpactEffect</span> <span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <span class="br0">&#123;</span>
+          <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackResult"><span class="kw4">SetAttackResult</span></a><span class="br0">&#40;</span>oAttacker,  stAttack1.<span class="me1">nAttackResult</span>, stAttack1.<span class="me1">eImpactEffect</span>,
+                                    <span class="kw3">COMBAT_RESULT_INVALID</span>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect"><span class="kw4">Effect</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>  <span class="br0">&#41;</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>stAttack1.<span class="me1">fAttackDuration</span> <span class="sy0">!=</span> ATTACK_LOOP_DURATION_INVALID<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsHumanoid"><span class="kw4">IsHumanoid</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+&#160;
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nAttackType <span class="sy0">==</span> ATTACK_TYPE_RANGED<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+                <span class="co1">// the &quot;attack duration&quot; for ranged weapons actually overrides</span>
+                <span class="co1">// the time spent drawing and preparing to aim</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetBaseItemType"><span class="kw4">GetBaseItemType</span></a><span class="br0">&#40;</span>oWeapon<span class="br0">&#41;</span> <span class="sy0">==</span> BASE_ITEM_TYPE_STAFF <span class="br0">&#41;</span>
+                <span class="br0">&#123;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">0.30</span><span class="br0">&#41;</span>;
+                <span class="br0">&#125;</span>
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                <span class="br0">&#123;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oArmor <span class="sy0">=</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetItemInEquipSlot"><span class="kw4">GetItemInEquipSlot</span></a><span class="br0">&#40;</span><span class="kw3">INVENTORY_SLOT_CHEST</span><span class="br0">&#41;</span>;
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> <span class="sy0">!</span>IsArmorMassive<span class="br0">&#40;</span>oArmor<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_MASTER_ARCHER<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">0.8</span><span class="br0">&#41;</span>;
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">1.5</span><span class="br0">&#41;</span>;
+                    <span class="br0">&#125;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsArmorHeavyOrMassive<span class="br0">&#40;</span>oArmor<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+                    <span class="br0">&#123;</span>
+                         <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">2.0</span><span class="br0">&#41;</span>;
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">2.5</span><span class="br0">&#41;</span>;
+                    <span class="br0">&#125;</span>
+                    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                    <span class="br0">&#123;</span>
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsFollower"><span class="kw4">IsFollower</span></a><span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span><span class="br0">&#41;</span>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">0.8</span><span class="br0">&#41;</span>;
+                        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+                            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker, <span class="nu0">1.5</span><span class="br0">&#41;</span>;
+                    <span class="br0">&#125;</span>
+                <span class="br0">&#125;</span>
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAimLoopDuration"><span class="kw4">SetAimLoopDuration</span></a><span class="br0">&#40;</span>oAttacker, stAttack1.<span class="me1">fAttackDuration</span> <span class="br0">&#41;</span>;
+&#160;
+                <span class="co2">#ifdef DEBUG</span>
+                Log_Trace<span class="br0">&#40;</span><span class="kw3">LOG_CHANNEL_COMBAT</span>,<span class="st0">&quot;combat_h.HandleCommandAttack&quot;</span>,<span class="st0">&quot;RangedAim Loop Duration set to &quot;</span> <span class="sy0">+</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FloatToString"><span class="kw4">FloatToString</span></a><span class="br0">&#40;</span>stAttack1.<span class="me1">fAttackDuration</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
+                <span class="co2">#endif</span>
+            <span class="br0">&#125;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>nAttackType <span class="sy0">==</span> ATTACK_TYPE_MELEE<span class="br0">&#41;</span>
+            <span class="br0">&#123;</span>
+&#160;
+                <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetAttackDuration"><span class="kw4">SetAttackDuration</span></a><span class="br0">&#40;</span>oAttacker,stAttack1.<span class="me1">fAttackDuration</span><span class="br0">&#41;</span>;
+&#160;
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMMAND_RESULT_SUCCESS</span>;
+<span class="br0">&#125;</span></pre></div></div>

@@ -1,0 +1,12 @@
+<p>A <strong class="selflink">directive</strong> is a special instruction in a script that directs the compiler to perform a specific action while the script is compiled. 
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dascript" title="Dascript (page does not exist)">dascript</a> compiler recognizes the following directives:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Defsym%20directive" title="Defsym directive (page does not exist)">#defsym</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Endif%20directive" title="Endif directive (page does not exist)">#endif</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ifdef%20directive" title="Ifdef directive (page does not exist)">#ifdef</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Include%20directive" title="Include directive">#include</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>The C preprocessor directive <code>#define</code> exists in several scripting comments however this directive is not supported in dascript.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Directives" title="Category:Directives">Directives</a></li></ul>

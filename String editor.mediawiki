@@ -1,0 +1,53 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Basics"><span class="tocnumber">1</span> <span class="toctext">Basics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Generated_string_IDs"><span class="tocnumber">2</span> <span class="toctext">Generated string IDs</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Creating_a_string_with_a_specific_ID"><span class="tocnumber">3</span> <span class="toctext">Creating a string with a specific ID</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Editing_a_checked-out_string"><span class="tocnumber">4</span> <span class="toctext">Editing a checked-out string</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Editing_a_string_with_a_specific_ID"><span class="tocnumber">5</span> <span class="toctext">Editing a string with a specific ID</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Basics">Basics</span></h2>
+<p>The string editor can be found under the "Tools" menu.
+</p><p>In Dragon Age, all strings of text that could be seen by the user are stored in a separate table and are refered to by resources by their <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20ID" title="String ID">string ID</a> number. This makes tasks such as spell checking, translation to other languages, and so forth much easier - all of the text that might need this is all stored in one easy-to-process place, and the game can be localized by simply swapping in a substitute talk table.
+</p><p>The string editor is a basic means of accessing this collection of strings.
+</p><p>Of course, strings associated with resources can often be edited in the object inspector, but viewing strings en masse is sometimes convenient, especially when engaged in global activities like trying to remove Ferelden lore from core descriptions. 
+</p><p>IMPORTANT - all objects must be checked in if you want to see the latest text. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20editor#Generated_string_IDs" title="String editor"> Generated string IDs</a> for more details.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20main%20screen.png"><img alt="String editor main screen.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/7/7e/String_editor_main_screen.png" width="918" height="393" /></a>
+</p><p>At the top of the main screen is a set of options to help winnow down the displayed strings to just the set that you want to work with. First you will need to identify which string table you want to edit; this table is generated on a per-module basis, so select the table that's been generated for your module.
+</p><p>If you want to access a single string that you know the ID for, such as a line in a conversation, you can enter it into the "String ID" field to bring it up immediately. (To find the string ID for a line in a conversation, look in the lower left corner of that line's Dialogue tab in the conversation editor).
+</p><p>If you want to load the entire string table into the editor's string display, ensure that the filter button reads "Filter: Off" and check the "Do NOT use Filter" checkbox.
+</p><p>If you aren't sure where the line is, or if you want to look at a whole class of lines, you can filter the displayed list of strings on a wide variety of criteria. Click on the "Filter: Off" button and you'll be presented with a screen where you can add filters:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20filters.png"><img alt="String editor filters.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c2/String_editor_filters.png" width="554" height="383" /></a>
+</p><p>For a string to pass the filters all conditions have to evaluate true - they are "AND" conditions.
+</p><p>There seems to be a bug - both "Contains" and "Is Exactly" sometimes only return a match if you enter the entire string you're searching for. The workaround seems to be to do a successful "Is Exactly" search, after which "Contains" works as expected.
+</p><p>Once you've found the string you're interested in editing, double-click to open it:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20String%20editor%20edit%20string.png"><img alt="String editor edit string.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c3/String_editor_edit_string.png" width="545" height="369" /></a>
+</p><p>When finished, use Tools &gt; Export &gt; Export String Table then Tools &gt; Export &gt; Export Talk Table so that the results are available in game.
+</p><p>There is a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bug</a> in Export Talk Table.
+</p>
+<h2><span class="mw-headline" id="Generated_string_IDs">Generated string IDs</span></h2>
+<p>It is important to eventually check resources back in so that the toolset will automatically update or assign string IDs to certain text entries you've written - such as conversation entries, or the names and descriptions of placeables or creatures. Once available, they'll show in the string table as string type "Exported &lt;type&gt; text". Even though it may seem unnecessary as the tlkstring contains the original text, some strings are referenced in the game by their string ID alone, such as the conversation history in the player's journal.
+</p>
+<h2><span class="mw-headline" id="Creating_a_string_with_a_specific_ID">Creating a string with a specific ID</span></h2>
+<p>When a string is created, its id is determined automatically by incrementing the String ID Last Used field in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module#Properties" title="Module"> module properties</a>. 
+</p><p>Occasionally, it is necessary to use a different range (for example, owing to a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial#Creating_the_background_strings" title="Backgrounds tutorial"> bug</a>, smaller numbers are required for some GUI functions).
+</p><p>This can be achieved by temporarily changing the String ID Begin and String ID Last Used module properties to one less than the required number.
+</p><p>It's wise to back up the data base and make a careful note of the original module properties before attempting this!
+</p>
+<h2><span class="mw-headline" id="Editing_a_checked-out_string">Editing a checked-out string</span></h2>
+<p>The string editor will not allow a string to be edited if it is checked out.
+</p><p>For strings associated with campaign resources, this is easily resolved, by checking in the resource.
+</p><p>Doing this for core resources is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bugged</a> and should be avoided. Such changes affect all campaigns, which is not helpful to players or other builders. For some reason, the toolset does not allow string changes to be local to the module if they belong to a core resource. A safer technique is to duplicate the core resource into the module (with a new resource name) then edit it. There can be repercussions - some systems (e.g. treasure, recipes) refer to core resource names explicitly, so 2DA files have to be changed. Other aspects (e.g. recipe ingredients) are tag-based, so they will work with the new item as long as you don't change the tag.
+</p><p>Certain core strings are associated with system components (e.g. GUI) which cannot be duplicated or checked in. The normal procedure in such cases is to create a new string, then change the corresponding 2DA to use the new string id (for an example, see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%20tutorial#Creating_the_background_strings" title="Backgrounds tutorial"> Background Tutorial</a>). Don't be tempted to edit the core string, because the same <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bug</a> applies.
+</p><p>There are rare instances in which even this cannot be done, because the string id is hard-coded in the game (for example, the gender description used in Character Generation). See next section for a solution.
+</p>
+<h2><span class="mw-headline" id="Editing_a_string_with_a_specific_ID">Editing a string with a specific ID</span></h2>
+<p>To edit a string whose id is outside of the normal range for the module, change the String ID Begin module property temporarily to a value which is less than the string id in question (but not zero).
+</p><p>The string will no longer be regarded as checked out, and can be edited.
+</p><p>Normally, this technique should not be used for core strings - see above. A known exception is the gender descriptions, whose string id is hard-coded. It's OK to change them - by a happy coincidence, they are not affected by the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Talk%20table%20exported%20to%20packages%20override" title="Bug: Talk table exported to packages override"> bug</a>.
+</p><p>When customising a core string, change the Owner Module to the current module, and the Table to the current module's talk table. Otherwise, the custom string will override all campaigns.  
+</p><p>It's wise to back up the data base and make a careful note of the original module properties before attempting this!
+</p><p>As previously noted, while the toolset allows this technique on core gameplay strings, including the GUI, it will not permit the current module to have a local version of a core resource description.
+</p>

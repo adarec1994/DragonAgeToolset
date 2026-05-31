@@ -1,0 +1,3 @@
+<p>The <strong class="selflink">ARL</strong> file type is used to store area layout data using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> file format.
+</p><p>An ARL file is created when a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Level%20editor" title="Level">level</a> is compiled, for example using the Do All Local Posts function. The file is a layout that can then be assigned to the Area Layout property of an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">Area</a> resource.
+</p>

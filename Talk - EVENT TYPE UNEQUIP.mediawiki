@@ -1,0 +1,5 @@
+<p>It appears that the behavior of EVENT_TYPE_UNEQUIP has changed in patch 1.04.
+</p><p>Prior to patch 1.04, calling GetEventCreator on this event would return the item being unequipped. Getting the event object at index 0 returned either the item being unequipped or nothing, I'm not sure.
+</p><p>In patch 1.04, calling GetEventCreator on this event now returns the creature doing the unequipping . Getting the event object at index 0 returns the item being unequipped.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nezroy" title="User:Nezroy (page does not exist)">Nezroy</a> 10:18, 9 August 2010 (UTC)
+</p>

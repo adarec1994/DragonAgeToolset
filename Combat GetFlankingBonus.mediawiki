@@ -1,0 +1,75 @@
+<p>Called by: 
+</p><p>Calls:
+</p><p>Parameters:
+</p><p>Variables:
+</p><p>Returns:
+</p><p>Used for:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> Combat_GetFlankingBonus<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oAttacker, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oTarget<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oTarget, ABILITY_TALENT_SHIELD_TACTICS<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>IsUsingShield<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">0.0</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetHasEffects"><span class="kw4">GetHasEffects</span></a><span class="br0">&#40;</span>oTarget, EFFECT_TYPE_FLANK_IMMUNITY<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">0.0</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fAngle <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetAngleBetweenObjects"><span class="kw4">GetAngleBetweenObjects</span></a><span class="br0">&#40;</span>oTarget, oAttacker<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fFactor <span class="sy0">=</span> <span class="nu0">0.0</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fMaxModifier <span class="sy0">=</span> <span class="nu0">15.0</span>;
+&#160;
+    <span class="co1">// The attackers ability to flank is stored in a creature property</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fFlankingAngle <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetCreatureProperty"><span class="kw4">GetCreatureProperty</span></a><span class="br0">&#40;</span>oAttacker, PROPERTY_ATTRIBUTE_FLANKING_ANGLE<span class="br0">&#41;</span>;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fFlankingAngle <span class="sy0">&lt;=</span> <span class="nu0">10.0</span> <span class="br0">&#41;</span> <span class="coMULTI">/*old savegames have this at 10*/</span>
+    <span class="br0">&#123;</span>
+        fFlankingAngle <span class="sy0">=</span> <span class="nu0">60.0</span>; <span class="co1">// old savegames need this to avoid divby0 later</span>
+    <span class="br0">&#125;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span>fFlankingAngle<span class="sy0">&gt;</span><span class="nu0">180.0</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        fFlankingAngle <span class="sy0">=</span> <span class="nu0">180.0</span>;
+    <span class="br0">&#125;</span>
+&#160;
+&#160;
+    <span class="co1">// -------------------------------------------------------------------------</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oAttacker, ABILITY_TALENT_COMBAT_MOVEMENT<span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        fMaxModifier <span class="sy0">=</span> <span class="nu0">20.0</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> fMaxModifier <span class="sy0">&lt;=</span> <span class="nu0">0.0</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="nu0">0.0</span>;
+    <span class="br0">&#125;</span>
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span> <span class="br0">&#40;</span>fAngle<span class="sy0">&gt;=</span> <span class="br0">&#40;</span><span class="nu0">180.0</span> <span class="sy0">-</span> fFlankingAngle<span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> fAngle<span class="sy0">&lt;=</span><span class="br0">&#40;</span><span class="nu0">180.0</span> <span class="sy0">+</span> fFlankingAngle <span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="co1">// Shield block negats flanking on the left.</span>
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bShieldBlock <span class="sy0">=</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/HasAbility"><span class="kw4">HasAbility</span></a><span class="br0">&#40;</span>oTarget,ABILITY_TALENT_SHIELD_BLOCK<span class="br0">&#41;</span>;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bUsingShield <span class="sy0">=</span> IsUsingShield<span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span>;
+&#160;
+        <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> <span class="br0">&#40;</span><span class="sy0">!</span>bShieldBlock <span class="sy0">||</span> fAngle <span class="sy0">&lt;</span> <span class="nu0">180.0</span> <span class="sy0">||</span> <span class="br0">&#40;</span>bShieldBlock <span class="sy0">&amp;&amp;</span> <span class="sy0">!</span>bUsingShield<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+            fFactor <span class="sy0">=</span> <span class="br0">&#40;</span>fFlankingAngle <span class="sy0">-</span>  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Fabs"><span class="kw4">fabs</span></a><span class="br0">&#40;</span> <span class="nu0">180.0</span> <span class="sy0">-</span> fAngle<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">/</span>fFlankingAngle;
+        <span class="br0">&#125;</span>
+&#160;
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// Only rogues get the full positional benefits on the battlefield,</span>
+    <span class="co1">// everyone else gets halfa</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fClassModifier <span class="sy0">=</span> GetCreatureCoreClass<span class="br0">&#40;</span>oAttacker<span class="br0">&#41;</span> <span class="sy0">==</span> CLASS_ROGUE<span class="sy0">?</span><span class="nu0">1.0f</span><span class="sy0">:</span><span class="nu0">0.5f</span>;
+&#160;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> fFactor <span class="sy0">*</span> fMaxModifier <span class="sy0">*</span> fClassModifier;
+<span class="br0">&#125;</span></pre></div></div>

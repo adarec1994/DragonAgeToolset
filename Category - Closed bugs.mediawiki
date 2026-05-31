@@ -1,0 +1,22 @@
+<p>Bugs on this page no longer apply to the current version of the toolset, either by having been fixed, by no longer applying, or by having been declared unfixable (details should be noted on individual bug pages).
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Closed bugs"</h2>
+<p>The following 10 pages are in this category, out of 10 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>B</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20cutscene%20editor%20in%20toolset%20lags%20when%20headtracking%20is%20set" title="Bug: cutscene editor in toolset lags when headtracking is set">Bug: cutscene editor in toolset lags when headtracking is set</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Endless%20reboot%20cycles%20after%20install%20under%20Windows%20XP%20SP%202" title="Bug: Endless reboot cycles after install under Windows XP SP 2">Bug: Endless reboot cycles after install under Windows XP SP 2</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20ExcelProcessor%20doesn%27t%20handle%20row%20IDs%20above%208.3%20million%20correctly" title="Bug: ExcelProcessor doesn't handle row IDs above 8.3 million correctly">Bug: ExcelProcessor doesn't handle row IDs above 8.3 million correctly</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20FaceFX%20not%20appearing%20in%20menus" title="Bug: FaceFX not appearing in menus">Bug: FaceFX not appearing in menus</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20GFF%20and%20ERF%20editors%20require%20a%20keyfile" title="Bug: GFF and ERF editors require a keyfile">Bug: GFF and ERF editors require a keyfile</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Installer%20hangs%20at%20the%20stage%20of%20Execute%20-%20regsvr32.exe%20-%20s%20-%20C%20-%20Dragon%20Age%20-%20tools%20-%20Engine.dll" title="Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;">Bug: Installer hangs at the stage of Execute:regsvr32.exe /s &quot;C:\Dragon Age\tools\Engine.dll&quot;</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Lightmapper%20causes%20shading%20artifacts%20along%20chunk%20boundaries" title="Bug: Lightmapper causes shading artifacts along chunk boundaries">Bug: Lightmapper causes shading artifacts along chunk boundaries</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20Leliana%27s%20head%20morph%20has%20her%20eyes%20in%20her%20mouth" title="Bug:Leliana's head morph has her eyes in her mouth">Bug:Leliana's head morph has her eyes in her mouth</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Installation%20into%20a%20directory%20with%20a%20long%20path%20name" title="Installation into a directory with a long path name">Installation into a directory with a long path name</a></li></ul></div><div class="mw-category-group"><h3>P</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20GUID%20bug" title="Plot GUID bug">Plot GUID bug</a></li></ul></div></div></div>
+</div></div>

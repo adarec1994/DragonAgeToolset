@@ -1,0 +1,17 @@
+<p>Create an area of effect.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> EffectAreaOfEffect(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nId,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rScript,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAoEVfx&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nId<dd>The ID of an area of effect in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Persistent%202da" title="Persistent 2da">persistent 2da</a><dt style="font-weight:normal; font-style:italic;">rScript<dd>The AOE event handler script<dt style="font-weight:normal; font-style:italic;">nAoEVfx<dd>The ID of a visual effect in visual from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%202da" title="VFX 2da">VFX_ 2da</a>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>An area of effect.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Creates an area of effect (AOE), optionally with an embedded visual effect (VFX) that is synced to the lifetime of the AOE.
+</p>

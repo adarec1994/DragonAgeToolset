@@ -1,0 +1,4 @@
+<p>The <strong class="selflink">ANIM_placeables.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> file that defines all placeable animations.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">ANIM_placeables</a></li></ul>

@@ -1,0 +1,934 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">TABLE_ABILITIES_SPELLS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">TABLE_ABILITIES_TALENTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20data%202da" title="Ability data 2da">TABLE_ABILITY_DATA</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">189
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20effects%202da" title="Ability effects 2da">TABLE_ABILITY_EFFECTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">190
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Achievements%202da" title="Achievements 2da">TABLE_ACHIEVEMENTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">268
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ai%20abilities%20cond%202da" title="Ai abilities cond 2da">TABLE_AI_ABILITY_COND</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">186
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Aibehaviors%202da" title="Aibehaviors 2da (page does not exist)">TABLE_AI_BEHAVIORS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">187
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TacticsTargetTypes%202da" title="TacticsTargetTypes 2da (page does not exist)">TABLE_AI_TACTICS_TARGET_TYPE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">140
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ambient%20anim%20patterns%202da" title="Ambient anim patterns 2da">TABLE_AMBIENT</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">170
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Follower%20bonuses%202da" title="Follower bonuses 2da (page does not exist)">TABLE_APP_FOLLOWER_BONUSES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">226
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%202da" title="APR 2da">TABLE_APPEARANCE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Motivations%202da" title="Motivations 2da (page does not exist)">TABLE_APPROVAL_MOTIVATIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">168
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Approval%20ranges%202da" title="Approval ranges 2da (page does not exist)">TABLE_APPROVAL_NORMAL_RANGES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">166
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Romance%20ranges%202da" title="Romance ranges 2da (page does not exist)">TABLE_APPROVAL_ROMANCE_RANGES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">167
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Music%202da" title="Music 2da (page does not exist)">TABLE_AREA_MUSIC</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">177
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Atmosphere%202da" title="Atmosphere 2da (page does not exist)">TABLE_ATMOSPHERE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">179
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Autoscale%202da" title="Autoscale 2da (page does not exist)">TABLE_AUTOSCALE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">175
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/As%20data%202da" title="As data 2da (page does not exist)">TABLE_AUTOSCALE_DATA</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">176
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/-%20-%20-%20-%202da" title="**** 2da (page does not exist)">TABLE_AUTOSCALE_EASY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">279
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/-%20-%20-%20-%202da" title="**** 2da (page does not exist)">TABLE_AUTOSCALE_HARD</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">280
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">TABLE_BASE_ANIMATIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20Category%202da" title="TS Category 2da (page does not exist)">TABLE_CATEGORY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">198
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Characters%202da" title="Characters 2da (page does not exist)">TABLE_CHARACTERS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">191
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20DS%20Alienage%202da" title="CLI Army DS Alienage 2da (page does not exist)">TABLE_CLIMAX_ALIENAGE_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">217
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Armies%202da" title="CLI Armies 2da (page does not exist)">TABLE_CLIMAX_ARMIES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">216
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20DS%20GatesAtt%202da" title="CLI Army DS GatesAtt 2da (page does not exist)">TABLE_CLIMAX_GATESATT_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">220
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20DS%20GatesDef%202da" title="CLI Army DS GatesDef 2da (page does not exist)">TABLE_CLIMAX_GATESDEF_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">221
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20Good%20Guys%202da" title="CLI Army Good Guys 2da (page does not exist)">TABLE_CLIMAX_GOODGUYS_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">222
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20DS%20Market%202da" title="CLI Army DS Market 2da (page does not exist)">TABLE_CLIMAX_MARKET_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">218
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLI%20Army%20DS%20Palace%202da" title="CLI Army DS Palace 2da (page does not exist)">TABLE_CLIMAX_PALACE_ARMY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">219
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Clouds%202da" title="Clouds 2da (page does not exist)">TABLE_CLOUDS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">178
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ANIM%202da" title="ANIM 2da">TABLE_COMBAT_ANIMATIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CommandTypes%202da" title="CommandTypes 2da (page does not exist)">TABLE_COMMAND_TYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">141
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Commands%202da" title="Commands 2da (page does not exist)">TABLE_COMMANDS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">94
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20rules%202da" title="Core rules 2da (page does not exist)">TABLE_CORE_RULES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">169
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Crafting%20recipes%202da" title="Crafting recipes 2da (page does not exist)">TABLE_CRAFTING</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">144
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creatureranks%202da" title="Creatureranks 2da (page does not exist)">TABLE_CREATURERANKS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">174
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Damagetypes%202da" title="Damagetypes 2da (page does not exist)">TABLE_DAMAGETYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1008
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Difficulty%202da" title="Difficulty 2da (page does not exist)">TABLE_DIFFICULTY</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">211
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20immunities%202da" title="Effect immunities 2da">TABLE_EFFECT_IMMUNITIES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">165
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20regeneration%202da" title="Effect regeneration 2da">TABLE_EFFECT_REGENERATION</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">173
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effects%202da" title="Effects 2da">TABLE_EFFECTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">136
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engineevents%202da" title="Engineevents 2da">TABLE_EVENTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">114
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exptable%202da" title="Exptable 2da (page does not exist)">TABLE_EXPERIENCE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">164
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Fog%202da" title="Fog 2da (page does not exist)">TABLE_FOG</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">183
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FrameBuffer%202da" title="FrameBuffer 2da (page does not exist)">TABLE_FRAMEBUFFER</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">194
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Gift%20values%202da" title="Gift values 2da (page does not exist)">TABLE_GIFT_VALUES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">201
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Item%20sets%202da" title="Item sets 2da (page does not exist)">TABLE_ITEM_SETS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">184
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Itemprps%202da" title="Itemprps 2da (page does not exist)">TABLE_ITEMPRPS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">107
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BITM%202da" title="BITM 2da (page does not exist)">TABLE_ITEMS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">6
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemStats%202da" title="ItemStats 2da (page does not exist)">TABLE_ITEMSTATS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">110
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20Material%202da" title="TS Material 2da (page does not exist)">TABLE_MATERIAL</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">199
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Materialtypes%202da" title="Materialtypes 2da (page does not exist)">TABLE_MATERIAL_TYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">89
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Packages%20base%202da" title="Packages base 2da (page does not exist)">TABLE_PACKAGES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">163
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Placeable%20types%202da" title="Placeable types 2da">TABLE_PLACEABLE_TYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">93
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plottypes%202da" title="Plottypes 2da (page does not exist)">TABLE_PLOT_TYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">108
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plotactiondefines%202da" title="Plotactiondefines 2da (page does not exist)">TABLE_PLOTACTIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">142
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRJ%20base%202da" title="PRJ base 2da (page does not exist)">TABLE_PROJECTILES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1006
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Proving%20fights%202da" title="Proving fights 2da (page does not exist)">TABLE_PROVING_FIGHTS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">195
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/-%20-%20-%20-%202da" title="**** 2da (page does not exist)">TABLE_PROVING_TYPES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">196
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Qbar%202da" title="Qbar 2da (page does not exist)">TABLE_QBAR</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">181
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ranges%202da" title="Ranges 2da (page does not exist)">TABLE_RANGES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">134
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rewards%202da" title="Rewards 2da (page does not exist)">TABLE_REWARDS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">197
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ArmorData%202da" title="ArmorData 2da (page does not exist)">TABLE_RULES_ARMOR_DATA</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">172
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Backgrounds%202da" title="Backgrounds 2da">TABLE_RULES_BACKGROUNDS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">97
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CLA%202da" title="CLA 2da">TABLE_RULES_CLASSES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Diseases%202da" title="Diseases 2da (page does not exist)">TABLE_RULES_DISEASES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">185
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Injuries%202da" title="Injuries 2da (page does not exist)">TABLE_RULES_INJURIES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">160
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE%20base%202da" title="RACE base 2da">TABLE_RULES_RACES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">5
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Screenshake%202da" title="Screenshake 2da (page does not exist)">TABLE_SCREEN_SHAKE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">193
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Shapechange%202da" title="Shapechange 2da (page does not exist)">TABLE_SHAPECHANGE</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">188
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ss%20types%202da" title="Ss types 2da (page does not exist)">TABLE_SOUNDSETS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">138
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Spellconjuringspeeds%202da" title="Spellconjuringspeeds 2da (page does not exist)">TABLE_SPELL_CONJURINGSPEED</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">135
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Background%20defaults%202da" title="Background defaults 2da">TABLE_STARTING_EQUIPMENT</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1001
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TS%20Stealing%202da" title="TS Stealing 2da (page does not exist)">TABLE_STEALING</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">200
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Summons%202da" title="Summons 2da (page does not exist)">TABLE_SUMMONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1000
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TacticsBaseConditions%202da" title="TacticsBaseConditions 2da (page does not exist)">TABLE_TACTICS_BASE_CONDITIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">139
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TacticsConditions%202da" title="TacticsConditions 2da (page does not exist)">TABLE_TACTICS_CONDITIONS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">137
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TacticsUserPresets%202da" title="TacticsUserPresets 2da (page does not exist)">TABLE_TACTICS_USER_PRESETS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">214
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Traps%202da" title="Traps 2da">TABLE_TRAPS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">182
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Treasure%202da" title="Treasure 2da (page does not exist)">TABLE_TREASURES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">192
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ui%20messages%202da" title="Ui messages 2da (page does not exist)">TABLE_UI_MESSAGES</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">180
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Persistent%202da" title="Persistent 2da">TABLE_VFX_PERSISTENT</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">96
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Worldmaps%202da" title="Worldmaps 2da (page does not exist)">TABLE_WORLD_MAPS</a>
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">171
+</td>
+<td>
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>

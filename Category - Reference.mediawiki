@@ -1,0 +1,31 @@
+<p>The <b>Reference</b> category lists all reference sub-categories.
+</p>
+
+
+
+
+
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 14 subcategories, out of 14 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>2</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%202da%20files" title="Category:2da files">2da files</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%202da%20files%20by%20source" title="Category:2da files by source">2da files by source</a></li></ul></div><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Constants" title="Category:Constants">Constants</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Constants%20by%20source" title="Category:Constants by source">Constants by source</a></li></ul></div><div class="mw-category-group"><h3>D</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Directives" title="Category:Directives">Directives</a></li></ul></div><div class="mw-category-group"><h3>E</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Event%20types%20by%20source" title="Category:Event types by source">Event types by source</a></li></ul></div><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions" title="Category:Functions">Functions</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions%20by%20source" title="Category:Functions by source">Functions by source</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Functions%20by%20version" title="Category:Functions by version">Functions by version</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Include%20files" title="Category:Include files">Include files</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Include%20files%20by%20module" title="Category:Include files by module">Include files by module</a></li></ul></div><div class="mw-category-group"><h3>K</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Keywords" title="Category:Keywords">Keywords</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Structs" title="Category:Structs">Structs</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Structs%20by%20source" title="Category:Structs by source">Structs by source</a></li></ul></div></div></div>
+</div><div id="mw-pages">
+<h2>Pages in category "Reference"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a></li></ul></div>
+</div></div>

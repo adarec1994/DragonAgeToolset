@@ -1,0 +1,17 @@
+<p>Returns an array with all objects in an area.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a>[] GetObjectsInArea(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oArea,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sTag&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oArea<dd>an area object<dt style="font-weight:normal; font-style:italic;">sTag<dd>If specified, only objects will this tag will be returned
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>an array with all objects in an area
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns an array with all objects in an area. You can also specify a tag so the array only has all objects with that tag in that area. Check the size afterwards with GetArraySize.
+</p>

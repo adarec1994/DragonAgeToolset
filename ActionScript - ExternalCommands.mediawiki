@@ -1,0 +1,37 @@
+<h2><span class="mw-headline" id="Class_Methods">Class Methods</span></h2>
+<ul><li> Warning</li>
+<li> LoadMovie</li>
+<li> PlayMovie</li>
+<li> StopMovie</li>
+<li> HideGuiScene</li>
+<li> SendMessage</li>
+<li> SendMessageArgs</li>
+<li> SendMessageValues</li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ActionScript%20-%20ExternalCommands.GetValue" title="ActionScript:ExternalCommands.GetValue">GetValue</a></li>
+<li> GetNumber</li>
+<li> GetString</li>
+<li> GetBool</li>
+<li> SetValue</li>
+<li> SetValueUnicode</li>
+<li> GetNumMembers</li>
+<li> SetTimeScale</li>
+<li> ListMemberNames</li>
+<li> MoveToFront</li>
+<li> ReplaceDesignerTags</li>
+<li> GetNum2DARows</li>
+<li> Get2DAValue</li>
+<li> Get2DAValueByColumnName</li>
+<li> Get2DAValueByIndex</li>
+<li> Get2DAValueByRowIndexColumnHash</li>
+<li> Get2DAValueByRowIndexColumnName</li>
+<li> GetNumM2DARows</li>
+<li> GetM2DAValue</li>
+<li> GetM2DAValueByIndex</li>
+<li> GetTlkString</li>
+<li> PlayGUISound</li>
+<li> StopGUISound</li>
+<li> FormatFloat</li>
+<li> AdvanceFrame</li>
+<li> SendTelemetryInfo</li>
+<li> FilterKeyboardInput</li>
+<li> SetCursor</li></ul>

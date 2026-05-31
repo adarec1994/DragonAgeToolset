@@ -1,0 +1,18 @@
+<ul><li><b>Version found:</b> 1.0.1008.0 </li>
+<li><b>Status:</b> Open</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Some attempts to add new content or modify existing content are causing a CTD in the game. Everything is working fine in the Toolset. This has nothing to do with the line ID limitations.
+</p>
+<ul><li> Convert APR_base.xls to APR_base.GDA and place it into <i>../Dragon Age/packages/code/override/toolsetexport/</i> and you got a CTD while loading any module. (even the main campaign). </li>
+<li> Create APR_xxx.GDA that is containing a new line to be merged with the core APR_base. Place it into <i>../Dragon Age/AddIns/YourModule/module/override/toosetexport/</i> You got a CTD while the game is trying to use the new appearance. Even if your appearance is just a copy from the "Human" appearance.</li></ul>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>This problem doesn't seem to occur when making simple changes to APR_base in the AddIns folder (e.g. just altering the codex references without adding appearances).
+</p><p>Keep things simple enough so that you don't need to amend this file too much.
+</p>
+<h2><span class="mw-headline" id="Discussion">Discussion</span></h2>
+<p>Are you using OpenOffice? I had the exact same issue with APR_ (worked in the toolset, crashed in the game) until I opened up the GDA it was creating and noticed that the FLOAT32 values were truncated. Using Google Docs instead allowed me to compile a GDA that worked fine. I updated the 2DA page with this info, but I have no idea why OpenOffice causes these problems. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 14:27, 17 February 2010 (UTC)
+</p>
+<hr />
+<p>Yes, I was using OpenOffice. This seems to be OpenOffice related problem then. After editing the APR_base with GDApp it started to work as it should. Thanks.<br />
+Yet still, it would be good idea to identify the reason for the CTD. That could improve stability of the DA:O
+</p>

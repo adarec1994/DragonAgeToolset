@@ -1,0 +1,77 @@
+<p>Converts a string to a vector.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> StringToVector(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sString<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sString<dd>The string to convert
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the vector contained in the string. Returns an empty vector on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns a new vector from the string sString. The format must be "x y z" where x, y and z are floating point numbers.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>In testing this function always returned an empty vector.
+</p><p>If you require the ability to convert a string to a vector you can use the following <code>Wiki_StringToVector</code> function:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="coMULTI">/** 
+* Attempts to convert a string into a vector. The string must contain all three elements: x, y and
+* z. The elements can be separated by a comma and/or a space. The elements can have the &quot;f&quot; suffix.
+* If the string does not adhere to the supported formats it will result in a malformed vector.
+*
+* @brief Converts a string to a vector.
+* @param sVector - The string to convert.
+* @returns The vector contained in the string.
+**/</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> Wiki_StringToVector<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sVector<span class="br0">&#41;</span>;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> Wiki_StringToVector<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sVector<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>    
+    <span class="co1">// find the first delimiter: try comma then space</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nIndex1 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString"><span class="kw4">FindSubString</span></a><span class="br0">&#40;</span>sVector, <span class="st0">&quot;,&quot;</span>, <span class="nu0">0</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nIndex1 <span class="sy0">==</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> nIndex1 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString"><span class="kw4">FindSubString</span></a><span class="br0">&#40;</span>sVector, <span class="st0">&quot; &quot;</span>, <span class="nu0">0</span><span class="br0">&#41;</span>; <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// extract the first element and consume the delimiter</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fX <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat"><span class="kw4">StringToFloat</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SubString"><span class="kw4">SubString</span></a><span class="br0">&#40;</span>sVector, <span class="nu0">0</span>, nIndex1<span class="br0">&#41;</span><span class="br0">&#41;</span>;  
+    nIndex1<span class="sy0">++</span>;
+&#160;
+    <span class="co1">// find the second delimiter: try comma then space</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nIndex2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString"><span class="kw4">FindSubString</span></a><span class="br0">&#40;</span>sVector, <span class="st0">&quot;,&quot;</span>, nIndex1<span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>nIndex2 <span class="sy0">==</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> nIndex2 <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString"><span class="kw4">FindSubString</span></a><span class="br0">&#40;</span>sVector, <span class="st0">&quot; &quot;</span>, nIndex1<span class="br0">&#41;</span>; <span class="br0">&#125;</span>
+&#160;
+    <span class="co1">// extract the second element and consume the delimiter</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fY <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat"><span class="kw4">StringToFloat</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SubString"><span class="kw4">SubString</span></a><span class="br0">&#40;</span>sVector, nIndex1, nIndex2 <span class="sy0">-</span> nIndex1<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+    nIndex2<span class="sy0">++</span>;
+&#160;
+    <span class="co1">// extract the final element</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fZ <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat"><span class="kw4">StringToFloat</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SubString"><span class="kw4">SubString</span></a><span class="br0">&#40;</span>sVector, nIndex2, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetStringLength"><span class="kw4">GetStringLength</span></a><span class="br0">&#40;</span>sVector<span class="br0">&#41;</span> <span class="sy0">-</span> nIndex2<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// construct and return the vector</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector"><span class="kw4">Vector</span></a><span class="br0">&#40;</span>fX, fY, fZ<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// Output: Script    1.100000 2.200000 3.300000</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vTest1 <span class="sy0">=</span> Wiki_StringToVector<span class="br0">&#40;</span><span class="st0">&quot;1.1 2.2 3.3&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString"><span class="kw4">VectorToString</span></a><span class="br0">&#40;</span>vTest1<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// Output: Script    2.200000 3.300000 4.400000</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vTest2 <span class="sy0">=</span> Wiki_StringToVector<span class="br0">&#40;</span><span class="st0">&quot;2.2,3.3,4.4&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString"><span class="kw4">VectorToString</span></a><span class="br0">&#40;</span>vTest2<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// Output: Script    3.300000 4.400000 5.500000</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vTest3 <span class="sy0">=</span> Wiki_StringToVector<span class="br0">&#40;</span><span class="st0">&quot;3.3, 4.4, 5.5&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString"><span class="kw4">VectorToString</span></a><span class="br0">&#40;</span>vTest3<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// Output: Script    4.400000 5.500000 6.600000</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword"><span class="kw2">vector</span></a> vTest4 <span class="sy0">=</span> Wiki_StringToVector<span class="br0">&#40;</span><span class="st0">&quot;4.4f 5.5f 6.6f&quot;</span><span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog"><span class="kw4">PrintToLog</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString"><span class="kw4">VectorToString</span></a><span class="br0">&#40;</span>vTest4<span class="br0">&#41;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VectorToString" title="VectorToString">VectorToString</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToInt" title="StringToInt">StringToInt</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringToFloat" title="StringToFloat">StringToFloat</a>
+</p>

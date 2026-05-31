@@ -1,0 +1,33 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Add_a_new_topic_by_creating_a_new_header_like_this_one"><span class="tocnumber">1</span> <span class="toctext">Add a new topic by creating a new header like this one</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#NDA"><span class="tocnumber">2</span> <span class="toctext">NDA</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Ten_Minute_Tutorials"><span class="tocnumber">3</span> <span class="toctext">Ten Minute Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Google"><span class="tocnumber">4</span> <span class="toctext">Google</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Huh.3F"><span class="tocnumber">5</span> <span class="toctext">Huh?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Add_a_new_topic_by_creating_a_new_header_like_this_one">Add a new topic by creating a new header like this one</span></h2>
+<p>And then write your comment below it. Sign your comment with four tildes, like so: ~~~~. It is automatically substituted with your user name and a link to your user page.
+</p>
+<dl><dd>To respond to someone else's comment, use a colon at the beginning of your response to indent it.</dd></dl>
+<dl><dd><dl><dd>Two colons indent twice, and so forth.</dd></dl></dd></dl>
+<h2><span class="mw-headline" id="NDA">NDA</span></h2>
+<p>I suspect that the NDA no longer applies to the Wiki, since the latter does not touch on the three topics that Chris Priestly asked us not to discuss in his e-mail of 13-Jul-2009.
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 09:42, 25 July 2009 (UTC)
+</p>
+<dl><dd>Surely no NDA applies now, as the wiki is in the public domain? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">Proleric1</a> 07:47, 15 October 2009 (UTC)
+<dl><dd>Probably not. I'll ask around to make sure, though. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 19:44, 15 October 2009 (UTC)</dd>
+<dd>I've been asked to ask you to hold off on talking about the wiki until next week, to help spread the "buzz" out a bit. Right now everyone's talking about character creator, we don't want to distract from that. The folks who busted their humps on CC need their due. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 15:07, 16 October 2009 (UTC)</dd>
+<dd>Heh. I see Sunjammer just posted about the wiki on the forum, directing people here. Oh well.&#160;:) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 15:41, 16 October 2009 (UTC)</dd></dl></dd></dl>
+<h2><span class="mw-headline" id="Ten_Minute_Tutorials">Ten Minute Tutorials</span></h2>
+<p>I think we should create a category and or easily accessible launch page where people can contribute quick 10 minute tutorials on a variety of subjects <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Allan%20Smith" title="User:Allan Smith">Allan Smith</a> 01:54, 13 November 2009 (UTC)
+</p>
+<h2><span class="mw-headline" id="Google">Google</span></h2>
+<p>The Wiki isn't accessible unless you have a Bioware social account; are there exceptions for Googlebot?  I understand wanting to protect the contents but being searchable is a great way to be found.  --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Talonius" title="User:Talonius">Talonius</a> 04:30, 17 November 2009 (UTC)
+</p>
+<dl><dd> Good idea, I'll pass it along to Jesse to see if such an exception is easy/possible. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 21:35, 25 November 2009 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Huh.3F">Huh?</span></h2>
+<p>This "discussion" appears to be nothing more than a duplication of sections arbitrarily copied (not moved) from <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20-%20Main%20Page" title="Talk:Main Page">Talk:Main_Page</a>.  In addition the actual "primary discussion forum" for wiki editors is presumably the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/239/">Dragon Age Toolset Wiki Editors</a> group.  So what is the actual role of the Community Portal page going to be? It's all very well for someone to randomly declare it to be X but if we have no intention to use it for X then it is redundant and/or misleading.  I have started a <a rel="nofollow" class="external text" href="http://social.bioware.com/group/239/discussion/2016/">thread</a> to discuss this further  --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 21:30, 26 November 2009 (UTC)
+</p>

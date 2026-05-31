@@ -1,0 +1,1075 @@
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Community%20Contest%20Main%20Page" title="Community Contest Main Page"><img alt="Community Contest back.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/2/21/Community_Contest_back.jpg" width="310" height="110" /></a> <a href="http://social.bioware.com/group/2535/&amp;v=discussions" rel="nofollow"><img alt="CC BSN GetInvolved.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/55/CC_BSN_GetInvolved.jpg" width="400" height="90" /></a>
+</p><p>So that all Community Contest entries are compatible with one another and also with other mods that are around, IDs must not conflict. To ensure this, we must reserve ID ranges for strings and 2da ranges.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#String_ranges"><span class="tocnumber">1</span> <span class="toctext">String ranges</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Why_reserve_an_ID_range.3F"><span class="tocnumber">1.1</span> <span class="toctext">Why reserve an ID range?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#How_many_do_I_reserve.3F"><span class="tocnumber">1.2</span> <span class="toctext">How many do I reserve?</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#How_do_I_set_my_module_to_use_those_strings.3F"><span class="tocnumber">1.3</span> <span class="toctext">How do I set my module to use those strings?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#2da_Ranges"><span class="tocnumber">2</span> <span class="toctext">2da Ranges</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#General"><span class="tocnumber">2.1</span> <span class="toctext">General</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#M2DA_base"><span class="tocnumber">2.1.1</span> <span class="toctext">M2DA_base</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#ABI_base"><span class="tocnumber">2.1.2</span> <span class="toctext">ABI_base</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#placeable_types"><span class="tocnumber">2.1.3</span> <span class="toctext">placeable_types</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#areadata"><span class="tocnumber">2.1.4</span> <span class="toctext">areadata</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#BITM_base"><span class="tocnumber">2.1.5</span> <span class="toctext">BITM_base</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#guitypes"><span class="tocnumber">2.1.6</span> <span class="toctext">guitypes</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#itemprps"><span class="tocnumber">2.1.7</span> <span class="toctext">itemprps</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#itemstats"><span class="tocnumber">2.1.8</span> <span class="toctext">itemstats</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#JobBoardPlots"><span class="tocnumber">2.1.9</span> <span class="toctext">JobBoardPlots</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#JobBoards"><span class="tocnumber">2.1.10</span> <span class="toctext">JobBoards</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#materialrules"><span class="tocnumber">2.1.11</span> <span class="toctext">materialrules</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#materialtypes"><span class="tocnumber">2.1.12</span> <span class="toctext">materialtypes</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#prcscr"><span class="tocnumber">2.1.13</span> <span class="toctext">prcscr</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#sound_item_materials"><span class="tocnumber">2.1.14</span> <span class="toctext">sound_item_materials</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#sound_weapon_actions"><span class="tocnumber">2.1.15</span> <span class="toctext">sound_weapon_actions</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#sound_weapon_hits"><span class="tocnumber">2.1.16</span> <span class="toctext">sound_weapon_hits</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#ts_material"><span class="tocnumber">2.1.17</span> <span class="toctext">ts_material</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#vfx_base"><span class="tocnumber">2.1.18</span> <span class="toctext">vfx_base</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#Variation_sheets"><span class="tocnumber">2.2</span> <span class="toctext">Variation sheets</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#weapons_and_shields"><span class="tocnumber">2.2.1</span> <span class="toctext">weapons and shields</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#armour_and_clothes"><span class="tocnumber">2.2.2</span> <span class="toctext">armour and clothes</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#World_Map_Pins"><span class="tocnumber">3</span> <span class="toctext">World Map Pins</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="String_ranges">String ranges</span></h1>
+<p>Please modify this table to reserve String IDs <b>before you use them</b> (to avoid lost work). Append within our range if required. Please do not use from outside this range.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>89000000</b>
+</td>
+<td> <b>89999999</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 89000000
+</td>
+<td> 89099999
+</td>
+<td> Organiser reserved range
+</td></tr>
+<tr>
+<td> <i>89001000</i>
+</td>
+<td> <i>89001999</i>
+</td>
+<td> <i>CC6 bundle</i>
+</td></tr>
+<tr>
+<td> <i>89002000</i>
+</td>
+<td> <i>89002099</i>
+</td>
+<td> <i>CC7 framework</i>
+</td></tr>
+<tr>
+<td> 89100000
+</td>
+<td> 89100999
+</td>
+<td> Cuvieronius
+</td></tr>
+<tr>
+<td> 89101000
+</td>
+<td> 89101999
+</td>
+<td> Vaylise
+</td></tr>
+<tr>
+<td> 89102000
+</td>
+<td> 89102999
+</td>
+<td> BAPACop
+</td></tr>
+<tr>
+<td> 89103000
+</td>
+<td> 89103999
+</td>
+<td> BloodsongVengeance
+</td></tr>
+<tr>
+<td> 89104000
+</td>
+<td> 89104999
+</td>
+<td> Jackkel Dragon
+</td></tr>
+<tr>
+<td> 2023729186
+</td>
+<td> 2023739186
+</td>
+<td> Ladyofpayne (The Demon)
+</td></tr>
+<tr>
+<td> 89105000
+</td>
+<td> 89105999
+</td>
+<td> Lord Uber Dowzen (uberdowzen)
+</td></tr>
+<tr>
+<td> 89106000
+</td>
+<td> 89106999
+</td>
+<td> Shadow5973
+</td></tr>
+<tr>
+<td> 89107000
+</td>
+<td> 89107999
+</td>
+<td> Lobo
+</td></tr>
+<tr>
+<td> 89108000
+</td>
+<td> 89108999
+</td>
+<td> mikemike37
+</td></tr>
+<tr>
+<td> 89109000
+</td>
+<td> 89109999
+</td>
+<td> Mengtzu
+</td></tr>
+<tr>
+<td> 89110000
+</td>
+<td> 89110999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89111000
+</td>
+<td> 89111999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89112000
+</td>
+<td> 89112999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89113000
+</td>
+<td> 89113999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89114000
+</td>
+<td> 89114999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89115000
+</td>
+<td> 89115999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89116000
+</td>
+<td> 89116999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89117000
+</td>
+<td> 89117999
+</td>
+<td> Fenodsnacer (Fenod)
+</td></tr>
+<tr>
+<td> 89118000
+</td>
+<td> 89118999
+</td>
+<td> InBleedingRapture
+</td></tr>
+<tr>
+<td> 89119000
+</td>
+<td> 89122999
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> 89123000
+</td>
+<td> 89123999
+</td>
+<td> uberdowzen
+</td></tr>
+<tr>
+<td> 89124000
+</td>
+<td> 89124999
+</td>
+<td> Sunjammer
+</td></tr>
+<tr>
+<td> 89125000
+</td>
+<td> 89125999
+</td>
+<td> Mengtzu
+</td></tr>
+<tr>
+<td> 89126000
+</td>
+<td> 89126999
+</td>
+<td> Mengtzu
+</td></tr>
+<tr>
+<td> 89127000
+</td>
+<td> 89127999
+</td>
+<td> AngelusMortem
+</td></tr>
+<tr>
+<td> 89128000
+</td>
+<td> 89128999
+</td>
+<td> joyous1ariella
+</td></tr>
+<tr>
+<td> 89129000
+</td>
+<td> 89129999
+</td>
+<td> TheWretchedOne
+</td></tr>
+<tr>
+<td> 89130000
+</td>
+<td> 89130999
+</td>
+<td> Bokthersa
+</td></tr>
+
+<h3><span class="mw-headline" id="Why_reserve_an_ID_range.3F">Why reserve an ID range?</span></h3>
+<p>This prevents the need for other modders to change your strings. This prevents any chance of overlapping IDs with other entries or other mods. This means that if you attach voice to conversations, or specify a StringID in a 2da, these connections will not be broken when others use your mod.
+</p>
+<h3><span class="mw-headline" id="How_many_do_I_reserve.3F">How many do I reserve?</span></h3>
+<p>Just take 1000 unless you need more. Do not take less, we've got plenty to spare&#160;;)
+</p>
+<h3><span class="mw-headline" id="How_do_I_set_my_module_to_use_those_strings.3F">How do I set my module to use those strings?</span></h3>
+<ul><li> While logged in to builder wiki (same as login here), edit the page to put your name next to the range.</li>
+<li> In Toolset, go File &gt; Manage Modules &gt; (select your module) &gt; Properties</li>
+<li> Set the following:
+<ul><li> StringID Begin</li>
+<li> StringID End</li>
+<li> StringID Last Used</li></ul></li>
+<li> Hit OK and close dialogue.</li></ul>
+<h1><span class="mw-headline" id="2da_Ranges">2da Ranges</span></h1>
+<p>We have reserved 24000 - 26000 in most 2das. Please reserve as many as you anticipate you will need, but don't be wasteful (reserving 200 when you only need 6 is wasteful). If you need hundreds, it's probably worth reserving your own range outside of the contest range.
+</p>
+<h2><span class="mw-headline" id="General">General</span></h2>
+<h3><span class="mw-headline" id="M2DA_base">M2DA_base</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24499
+</td>
+<td> Organiser reserved range
+</td></tr>
+<tr>
+<td> 24500
+</td>
+<td> 24509
+</td>
+<td> mikemike37
+</td></tr>
+<tr>
+<td> 24510
+</td>
+<td> 24519
+</td>
+<td> (please keep extending this list as requried)
+</td></tr></table>
+<h3><span class="mw-headline" id="ABI_base">ABI_base</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24499
+</td>
+<td> Organiser reserved range
+</td></tr>
+<tr>
+<td> 24500
+</td>
+<td> 24509
+</td>
+<td> mikemike37
+</td></tr>
+<tr>
+<td> 24510
+</td>
+<td> 24513
+</td>
+<td> InBleedingRapture
+</td></tr>
+<tr>
+<td> 24513
+</td>
+<td> 24519
+</td>
+<td> (please keep extending this list as requried)
+</td></tr></table>
+<h3><span class="mw-headline" id="placeable_types">placeable_types</span></h3>
+<p><i>nb a bug is causing the range of 24000 and above to not work in-game so we're using 14000-16000 instead.</i>
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>14000</b>
+</td>
+<td> <b>16000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 14000
+</td>
+<td> 14499
+</td>
+<td> Organiser reserved range
+</td></tr>
+<tr>
+<td> 14500
+</td>
+<td> 14509
+</td>
+<td> mikemike37
+</td></tr>
+<tr>
+<td> 14510
+</td>
+<td> 14519
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> 14520
+</td>
+<td> 14529
+</td>
+<td> (please keep extending this list as requried)
+</td></tr></table>
+<h3><span class="mw-headline" id="areadata">areadata</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24009
+</td>
+<td> BlackPhi
+</td></tr></table>
+<h3><span class="mw-headline" id="BITM_base">BITM_base</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="guitypes">guitypes</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="itemprps">itemprps</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24003
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="itemstats">itemstats</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="JobBoardPlots">JobBoardPlots</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> CC7 Framework
+</td></tr>
+<tr>
+<td> 24002
+</td>
+<td> 24006
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> 24007
+</td>
+<td> 24007
+</td>
+<td> Mengtzu
+</td></tr></table>
+<h3><span class="mw-headline" id="JobBoards">JobBoards</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24000
+</td>
+<td> CC7 Framework
+</td></tr></table>
+<h3><span class="mw-headline" id="materialrules">materialrules</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="materialtypes">materialtypes</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="prcscr">prcscr</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr>
+<tr>
+<td> 24002
+</td>
+<td> 24002
+</td>
+<td> CC7 Framework
+</td></tr>
+<tr>
+<td> 24003
+</td>
+<td> 24006
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> 24007
+</td>
+<td> 24007
+</td>
+<td> CC7 Framework
+</td></tr>
+<tr>
+<td> 24008
+</td>
+<td> 24019
+</td>
+<td> BlackPhi
+</td></tr></table>
+<h3><span class="mw-headline" id="sound_item_materials">sound_item_materials</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="sound_weapon_actions">sound_weapon_actions</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="sound_weapon_hits">sound_weapon_hits</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="ts_material">ts_material</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24001
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h3><span class="mw-headline" id="vfx_base">vfx_base</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Range Begin
+</th>
+<th> Range End
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>24000</b>
+</td>
+<td> <b>26000</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> 24000
+</td>
+<td> 24003
+</td>
+<td> InBleedingRapture
+</td></tr></table>
+<h2><span class="mw-headline" id="Variation_sheets">Variation sheets</span></h2>
+<h3><span class="mw-headline" id="weapons_and_shields">weapons and shields</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Sheet
+</th>
+<th> ID reserved
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>All variations sheets</b>
+</td>
+<td> <b>140 - 160</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> mace_variation
+</td>
+<td> 140
+</td>
+<td> mikemike37
+</td></tr>
+<tr>
+<td> mace_variation
+</td>
+<td> 141
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> mace_variation
+</td>
+<td> 142
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> staff_variation
+</td>
+<td> 140
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> staff_variation
+</td>
+<td> 141
+</td>
+<td> Helekanalaith
+</td></tr>
+<tr>
+<td> waraxe_variation
+</td>
+<td> 140
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> maul_variation
+</td>
+<td> 140
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> longsword_variation
+</td>
+<td> 150 - 151
+</td>
+<td> Adonnay
+</td></tr>
+<tr>
+<td> greatsword_variation
+</td>
+<td> 140 and 143
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> greatsword_variation
+</td>
+<td> 142
+</td>
+<td> Nattfodd
+</td></tr>
+<tr>
+<td> dagger_variation
+</td>
+<td> 140-141
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> dagger_variation
+</td>
+<td> 142
+</td>
+<td> Gisle Aune
+</td></tr>
+<tr>
+<td> battleaxe_variation
+</td>
+<td> 140
+</td>
+<td> Fenodsnalcer
+</td></tr>
+<tr>
+<td> bolt_variation
+</td>
+<td> 140
+</td>
+<td> InBleedingRapture
+</td></tr>
+<tr>
+<td> kite_shield_variation
+</td>
+<td> 155
+</td>
+<td> ladyofpayne
+</td></tr>
+
+<h3><span class="mw-headline" id="armour_and_clothes">armour and clothes</span></h3>
+<table class="wikitable">
+
+<tr>
+<th> Sheet
+</th>
+<th> ID reserved
+</th>
+<th> Used by
+</th></tr>
+<tr style="color:#ff6666;">
+<td> <b>All variations sheets</b>
+</td>
+<td> <b>140 - 160</b>
+</td>
+<td> <b>Entire CC Range (to be divided up)</b>
+</td></tr>
+<tr>
+<td> armor_light_variation
+</td>
+<td> 140
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> clothing_variation
+</td>
+<td> 140
+</td>
+<td> joyous1ariella
+</td></tr>
+<tr>
+<td> clothing_variation
+</td>
+<td> 161
+</td>
+<td> ladyofpayne
+</td></tr>
+<tr>
+<td> armor_light_variation
+</td>
+<td> 142
+</td>
+<td> Vaylise
+</td></tr>
+<tr>
+<td> helmet_light_variation
+</td>
+<td> 140
+</td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> staff_variation
+</td>
+<td> 142
+</td>
+<td> TheWretchedOne
+</td></tr>
+<tr>
+<td> gloves_massive_variation
+</td>
+<td> 141
+</td>
+<td> example - delete me!
+</td></tr></table>
+<h1><span class="mw-headline" id="World_Map_Pins">World Map Pins</span></h1>
+<p>Community Contest #7 requires map pins to be added to the existing Single Player maps.
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Map </th>
+<th> X </th>
+<th> Y </th>
+<th> Used by
+</th></tr>
+<tr>
+<td> Wide Open World </td>
+<td> 605 </td>
+<td> 570 </td>
+<td> CC#7 Framework Tutorial
+</td></tr>
+<tr>
+<td> Wide Open World </td>
+<td> 371 </td>
+<td> 424 </td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> Wide Open World </td>
+<td> 600 </td>
+<td> 278 </td>
+<td> BlackPhi
+</td></tr>
+<tr>
+<td> Wide Open World </td>
+<td> 699 </td>
+<td> 293 </td>
+<td> uberdowzen
+</td></tr>
+<tr>
+<td> Wide Open World </td>
+<td> 72 </td>
+<td> 594 </td>
+<td> Mengtzu
+</td></tr></table>
+</table>
+</table>

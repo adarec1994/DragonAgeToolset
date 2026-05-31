@@ -1,0 +1,5 @@
+<p>I'm not sure how exhaustive that list is: creatures, placeables vs. merchants. It's just that there are still many more object types. Also, the wording might be a little confusing: merchant vs. OBJECT_TYPE_STORE, since merchant could make it sound like storekeeper NPCs aren't creatures.  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 07:45, 13 November 2009 (UTC)
+</p>
+<h2><span class="mw-headline" id="Speculative_Additions">Speculative Additions</span></h2>
+<p>If something is speculative in nature it should be restricted to the Talk/Discussion page until it can be confirmed. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 07:47, 20 November 2009 (UTC)
+</p>

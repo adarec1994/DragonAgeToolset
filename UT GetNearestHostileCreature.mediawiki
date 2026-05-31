@@ -1,0 +1,20 @@
+<p>Returns the nearest hostile creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> UT_GetNearestHostileCreature(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nCheckLiving&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>the object that we try to find a nearest creature from<dt style="font-weight:normal; font-style:italic;">nCheckLiving<dd><sup>[<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Articles%20with%20documentation%20requests" title="Category:Articles with documentation requests">Undocumented</a>]</sup>
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>the nearest creature to oObject
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestCreatureByTag" title="UT GetNearestCreatureByTag">UT_GetNearestCreatureByTag</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestObjectByTag" title="UT GetNearestObjectByTag">UT_GetNearestObjectByTag</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20GetNearestCreatureByGroup" title="UT GetNearestCreatureByGroup">UT_GetNearestCreatureByGroup</a>
+</p>

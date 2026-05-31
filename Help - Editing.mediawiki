@@ -1,0 +1,232 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Most_frequent_Wiki_markup_explained"><span class="tocnumber">1</span> <span class="toctext">Most frequent Wiki markup explained</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Section_headings"><span class="tocnumber">1.1</span> <span class="toctext">Section headings</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Lists_and_indents"><span class="tocnumber">1.2</span> <span class="toctext">Lists and indents</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Links"><span class="tocnumber">1.3</span> <span class="toctext">Links</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Most_frequent_Wiki_markup_explained">Most frequent Wiki markup explained</span></h2>
+<p>Here are the most frequently used types of wiki markup.  You can also go to <a class="external text" href="http://www.mediawiki.org/wiki/Help:Formatting">Media Wiki</a> for more information on Wiki editing.
+</p><p><br clear="right" />
+</p>
+<table class="wikitable">
+<tr>
+<th style="width: 50%"> What it looks like
+</th>
+<th style="width: 50%"> What you type
+</th></tr>
+<tr>
+<td>
+<p>You can <i>italicize text</i> by putting 2 
+apostrophes on each side. 
+</p><p>3 apostrophes will embolden <b>the text</b>. 
+</p><p>5 apostrophes will embolden and italicize 
+<i><b>the text</b></i>.
+</p><p>(4 apostrophes don't do anything special -- there's just '<b>one left over'</b>.)
+</p>
+</td>
+<td><pre>
+You can ''italicize text'' by putting 2 
+apostrophes on each side. 
+
+3 apostrophes will embolden '''the text'''. 
+
+5 apostrophes will embolden and italicize 
+'''''the text'''''.
+
+(4 apostrophes don't do anything
+special -- there's just ''''one left
+over''''.)
+</pre>
+</td></tr>
+<tr>
+<td>
+<p>You should "sign" your comments on talk pages:
+</p>
+<ul><li> Three tildes give your user name: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Example" title="User:Example (page does not exist)">Example</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Example" title="User talk:Example (page does not exist)">talk</a>)<br /></li>
+<li> Four tildes give your user name plus date/time: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Example" title="User:Example (page does not exist)">Example</a> (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20talk%20-%20Example" title="User talk:Example (page does not exist)">talk</a>) 07:46, 27 November 2005 (UTC)</li>
+<li> Five tildes give the date/time alone: 07:46, 27 November 2005 (UTC)</li></ul>
+</td>
+<td><pre>
+You should "sign" your comments 
+on talk pages:
+* Three tildes give your user
+name: ~~~
+* Four tildes give your user 
+name plus date/time: ~~~~
+* Five tildes give the 
+date/time alone: ~~~~~
+</pre>
+</td></tr>
+<tr>
+<td colspan="2">
+<h3><span class="mw-headline" id="Section_headings">Section headings</span></h3>
+</td></tr>
+<tr>
+<th style="width: 50%"> What it looks like
+</th>
+<th style="width: 50%"> What you type
+</th></tr>
+<tr>
+<td>
+<div style="font-size:150%;border-bottom:1px solid rgb(170,170,170);">Section headings</div>
+<p><i>Headings</i> organize your writing into sections.
+The Wiki software can automatically generate
+a <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Section" title="Help:Section (page does not exist)">table of contents</a> from them.
+</p>
+<div style="font-size:132%;font-weight:bold;">Subsection</div>
+<p>Using more equals signs creates a subsection.
+</p>
+<div style="font-size:116%;font-weight:bold;">A smaller subsection</div>
+<p>Don't skip levels, like from two to four equals signs.
+</p><p>Start with 2 equals signs not 1 because 1 creates H1 tags which should be reserved for page title.
+</p>
+</td>
+<td><pre>
+== Section headings ==
+
+''Headings'' organize your writing into sections.
+The Wiki software can automatically generate
+a table of contents from them.
+
+=== Subsection ===
+
+Using more equals signs creates a subsection.
+
+==== A smaller subsection ====
+Don't skip levels, 
+like from two to four equals signs.
+
+Start with 2 equals signs not 1 
+because 1 creates H1 tags
+which should be reserved for page title.
+</pre>
+</td></tr>
+<tr>
+<td colspan="2">
+<h3><span class="mw-headline" id="Lists_and_indents">Lists and indents</span></h3>
+</td></tr>
+<tr>
+<th style="width: 50%"> What it looks like
+</th>
+<th style="width: 50%"> What you type
+</th></tr>
+<tr>
+<td>
+<ul><li> <i>Unordered <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20List" title="Help:List (page does not exist)">lists</a></i> are easy to do:
+<ul><li> Start every line with a star.
+<ul><li> More stars indicate a deeper level.</li></ul></li></ul></li>
+<li> Previous item continues.
+<ul><li> A new line</li></ul></li>
+<li> in a list  </li></ul>
+<p>marks the end of the list.
+</p>
+<ul><li>Of course you can start again.</li></ul>
+</td>
+<td><pre>
+* ''Unordered lists'' are easy to do:
+** Start every line with a star.
+*** More stars indicate a deeper level.
+* Previous item continues.
+** A new line
+* in a list  
+marks the end of the list.
+* Of course you can start again.
+</pre>
+</td></tr>
+<tr>
+<td>
+<ol><li> <i>Numbered lists</i> are:
+<ol><li> Very organized</li>
+<li> Easy to follow</li></ol></li>
+<li> Previous item continues</li></ol>
+<p>A new line marks the end of the list.
+</p>
+<ol><li> New numbering starts with 1.</li></ol>
+</td>
+<td><pre>
+# ''Numbered lists'' are:
+## Very organized
+## Easy to follow
+# Previous item continues
+A new line marks the end of the list.
+# New numbering starts with 1.
+</pre>
+</td></tr>
+<tr>
+<td>
+<dl><dd> A colon (:) indents a line or paragraph.</dd></dl>
+<p>A newline starts a new paragraph. <br />
+Often used for discussion on <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Talk%20pages" title="Talk pages (page does not exist)">talk pages</a>.
+</p>
+<dl><dd> We use 1 colon to indent once.
+<dl><dd> We use 2 colons to indent twice.
+<dl><dd> 3 colons to indent 3 times, and so on.</dd></dl></dd></dl></dd></dl>
+</td>
+<td><pre>
+: A colon (:) indents a line or paragraph.
+A newline starts a new paragraph. &lt;br&gt;
+Often used for discussion on talk pages.
+: We use 1 colon to indent once.
+:: We use 2 colons to indent twice.
+::: 3 colons to indent 3 times, and so on.
+</pre>
+</td></tr>
+<tr>
+<td colspan="2">
+<h3><span class="mw-headline" id="Links">Links</span></h3>
+</td></tr>
+<tr>
+<th style="width: 50%"> What it looks like
+</th>
+<th style="width: 50%"> What you type
+</th></tr>
+<tr>
+<td>
+<p>Here's a link to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">Main Page</a>.
+</p><p>But be careful - capitalization counts!  
+</p>
+</td>
+<td><pre>
+Here's a link to the [[Main Page]].
+</pre>
+</td></tr>
+<tr>
+<td>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Intentionally%20permanent%20red%20link" title="Intentionally permanent red link (page does not exist)">Intentionally permanent red link</a> is a page that doesn't exist
+yet. You could create it by clicking on the link.
+</p>
+</td>
+<td><pre>
+[[Intentionally permanent red link]] is 
+a page that doesn't exist
+yet. You could create it by 
+clicking on the link.
+</pre>
+</td></tr>
+<tr>
+<td>
+<p>You can link to a page section by placing a "#" before its title:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Help%20-%20Contents#For_editors" title="Help:Contents">Help:Contents#For editors</a>.</li></ul>
+<p>If multiple sections have the same title, add
+a number. <a href="#Example_section_3">#Example section 3</a> goes to the
+third section named "Example section".
+</p>
+</td>
+<td><pre>
+
+You can link to a page section by its title:
+
+* [[Help:Contents#For editors]].
+
+If multiple sections have the same title, add
+a number. [[#Example section 3]] goes to the
+third section named "Example section".
+</pre>
+</td></tr></table>

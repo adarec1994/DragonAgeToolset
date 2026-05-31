@@ -1,0 +1,43 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Step_One"><span class="tocnumber">1.1</span> <span class="toctext">Step One</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Step_Two"><span class="tocnumber">1.2</span> <span class="toctext">Step Two</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Step_Three"><span class="tocnumber">1.3</span> <span class="toctext">Step Three</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Explanation"><span class="tocnumber">1.4</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Extendable_DLC_Listing"><span class="tocnumber">1.5</span> <span class="toctext">Extendable DLC Listing</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>I have decided to write this tutorial to help other mod authors create content that works well with Origins, the Awakening Expansion, and any DLC that allows player mods to extend them in some way (Leliana's Song, Golems of Amgarrak and Witch Hunt do, at this time). While other content created in the toolset could be similarly extended, proper support should be the responsibility of the module creator and I therefore suggest discussing it with any mod author you wish to have add support for your mod.
+</p>
+<h3><span class="mw-headline" id="Step_One">Step One</span></h3>
+<p>First of all, you need to have your mods (I have three slightly different versions of my Tevinter Warden Class mod) set up to extend a particular campaign mod; the toolset only will extend Core Game Resources and Single Player (Origins) by default. To extend the Awakening Expansion you need to create a project in the toolset named "dao_prc_ep1"; do not open this project in the toolset, or you will be unable to play the expansion. Similarly, you will need to create a project for Golems of Amgarrak or Leliana's Song; I will post the proper project names later, as I don't have the toolset open right now.
+</p>
+<h3><span class="mw-headline" id="Step_Two">Step Two</span></h3>
+<p>When you create a project, you have the option of which existing project it will extend; in the drop-down list, select "Single Player" to extend Origins, then scroll down until you see the project property "Priority". By default, all projects created are at priority 100, which means they will all try to load at the same time (assuming they are distributed as dazip files); for the Origins version, enter a value numerically higher, like 152 or 202.
+</p>
+<h3><span class="mw-headline" id="Step_Three">Step Three</span></h3>
+<p>To extend Awakening with a mod that contains the same content, follow the steps above, substituting "dao_prc_ep1" for the extended module property; when you scroll down to the priority property enter a value ther that is numerically lower than the one used in the first project, like 151 or 201.
+</p>
+<h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p>Now, what does this do, you may wonder, which is a fair question. You may have seen modders that make two different dazip versions of their mods tell you not to have both mods active at the same time, since they think doing so will cause problems in the expansion; they are correct, to a point. In my own case, I have seen the files for my Tevinter Warden Origins mod override the Awakening character generation files if I forgot to disable it and enabled the Awakening version as well; setting the Awakening version to a lower numerical value in the priority property actually sets it as a higher priority than the Origins version, but only if I am playing Awakening.
+</p>
+<h3><span class="mw-headline" id="Extendable_DLC_Listing">Extendable DLC Listing</span></h3>
+<p>The following list is the directory names of the various DLCs that could be modded:
+</p><p>Leliana's Song: dao_prc_lel
+</p><p>Golems of Amgarrak: dao_prc_gib
+</p><p>Witch Hunt: dao_prc_str
+</p><p>Use the above names as the modules for the toolset to extend. 
+</p><p>I have not included Darkspawn Chronicles in the list for the simple reason that the only thing in that that could be modded is the companion face morphs; there is no level progression so other kinds of mods aren't really useful, unless you want to change combat some.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

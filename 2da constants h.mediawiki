@@ -1,0 +1,21 @@
+<p>The 2DA Constants include file, <strong class="selflink">2da_constants_h</strong>, contains many of the 2da-related constants. It was BioWare's intention that any constants in here should be synched with a specific 2da.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Constants">Constants</span></h2>
+<ul>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20TYPE" title="ABILITY TYPE *">ABILITY TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/BASE%20ITEM%20TYPE" title="BASE ITEM TYPE *">BASE ITEM TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20RANK" title="CREATURE RANK *">CREATURE RANK *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CREATURE%20TYPE" title="CREATURE TYPE *">CREATURE TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAMAGE%20TYPE" title="DAMAGE TYPE *">DAMAGE TYPE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLOT%20ACTIONSTATE" title="PLOT ACTIONSTATE *">PLOT ACTIONSTATE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY" title="PROPERTY *">PROPERTY *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE" title="RACE *">RACE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SS" title="SS *">SS *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE *</a></li> 
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/WM" title="WM *">WM *</a></li></ul>
+<h2><span class="mw-headline" id="Structs">Structs</span></h2>
+<ul><li> None</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<ul><li> None</li></ul>

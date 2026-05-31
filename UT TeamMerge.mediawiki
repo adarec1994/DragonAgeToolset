@@ -1,0 +1,14 @@
+<p>All the members of nTeam join nNewTeam.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> UT_TeamMerge(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nTeam,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nNewTeam,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nMembersType&#160;= OBJECT_TYPE_CREATURE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nTeam<dd>the team merging into nNewTeam.<dt style="font-weight:normal; font-style:italic;">nNewTeam<dd>the team being joined<dt style="font-weight:normal; font-style:italic;">nMembersType<dd>The type of members to retrieve (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20TYPE" title="OBJECT TYPE *">OBJECT_TYPE_CREATURE</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20TYPE" title="OBJECT TYPE *">OBJECT_TYPE_PLACEABLE</a>)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Utility%20h" title="Utility h">utility_h</a>
+</p>
+</dl>

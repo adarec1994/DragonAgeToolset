@@ -1,0 +1,17 @@
+<p>EffectDamage Constructor.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect%20keyword" title="Effect keyword">effect</a> EffectDamage(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> fValue,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDamageType&#160;= 1,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nFlags&#160;= 0,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nImpactVFX&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">fValue<dd>Amount of damage to be applied<dt style="font-weight:normal; font-style:italic;">nDamageType<dd>Damage Type to be applied (Physical, Fire):  Default of 1 is physical<dt style="font-weight:normal; font-style:italic;">nFlags<dd>Special behavior bitfield:  Default is no flags (0)<dt style="font-weight:normal; font-style:italic;">nImpactVFX<dd>Impact VFX to play.  Default of 0 is no impact VFX
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Effect" title="Effect">effect</a> to deliver the damage indicated.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>EffectDamage Constructor
+</p>

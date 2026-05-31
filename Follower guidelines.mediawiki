@@ -1,0 +1,603 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_Tips_for_Companion_Mods"><span class="tocnumber">1</span> <span class="toctext">General Tips for Companion Mods</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Making_Your_Companion_Mod_Compatible"><span class="tocnumber">2</span> <span class="toctext">Making Your Companion Mod Compatible</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Basic_Tips"><span class="tocnumber">2.1</span> <span class="toctext">Basic Tips</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Common_Core_Resources"><span class="tocnumber">2.2</span> <span class="toctext">Common Core Resources</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Companion_Compatibility_Core_Package"><span class="tocnumber">2.3</span> <span class="toctext">Companion Compatibility Core Package</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Companion_Names.2C_Races.2C_.26_Tags"><span class="tocnumber">2.4</span> <span class="toctext">Companion Names, Races, &amp; Tags</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Occupied_Locations"><span class="tocnumber">2.5</span> <span class="toctext">Occupied Locations</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Party_Camp"><span class="tocnumber">2.5.1</span> <span class="toctext">Party Camp</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Denerim_Castle"><span class="tocnumber">2.5.2</span> <span class="toctext">Denerim Castle</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Redcliffe_Castle"><span class="tocnumber">2.5.3</span> <span class="toctext">Redcliffe Castle</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Post-Coronation"><span class="tocnumber">2.5.4</span> <span class="toctext">Post-Coronation</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Gauntlet_Doppelgangers"><span class="tocnumber">2.5.5</span> <span class="toctext">Gauntlet Doppelgangers</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_Tips_for_Companion_Mods">General Tips for Companion Mods</span></h2>
+<p>1. Permanent companions should have many dialogue options available. If you do not intend to write extensive dialogue for your companion, please consider making him/her a temporary companion instead.
+</p><p>2. ALWAYS include a way for the player to fire the companion.
+</p><p>3. ALWAYS include an approval bar. Romance is not necessary, but approval is.
+</p><p>4. Your mod should be lore-friendly. Do some research beforehand.
+</p><p>5. Companions should have a unique personality, head morph, and history.
+</p><p>6. Try to make the companion's race, gender, specialization, and skill set different than those of the currently available companions. (Obviously if you plan to use characters already existing in the game, this may be difficult, but for new companions, this is a must.)
+</p><p>7. Dialogue (including that for your companion) should have multiple lines available for the player to choose from. Generally the pathways are good/nice, evil/greedy, and neutral. The different pathways should have different effects on approval, depending on the personality and motivation of the companion.
+</p><p>8. Design your mod with compatibility in mind! (See below)
+</p>
+<h2><span class="mw-headline" id="Making_Your_Companion_Mod_Compatible">Making Your Companion Mod Compatible</span></h2>
+<h3><span class="mw-headline" id="Basic_Tips">Basic Tips</span></h3>
+<p>1. Incorporate the changes other mods make to the common core resources into your mod.
+</p><p>2. Minimize the number of core resources you have to overwrite.
+</p><p>3. Use the same naming scheme as Bioware, except add a unique prefix or suffix.
+</p><p>4. Make sure your char_stage and partypicker 2das include the companion tags listed below.
+</p><p>5. Make sure that the common core dialogues (listed below) contain the additional lines for the other companion mods (also listed below).
+</p><p>6. Do not place your companion in any of the occupied locations listed below.
+</p><p>7. Add your information to this page!
+</p>
+<h3><span class="mw-headline" id="Common_Core_Resources">Common Core Resources</span></h3>
+<p>Most companion mods must overwrite or overlay certain core files. A list of these commonly altered files is below:
+</p><p>- cutscene_slideshow.dlg (Ser Gilmore, Karma's Companions, ... add lines to these dialogues)
+</p><p>- party_events.dlg (Ser Gilmore, Karma's Companions, ... add lines to these dialogues)
+</p><p>- cir300_sloth_demon.dlg
+</p><p>- urn230_guardian.dlg
+</p><p>- char_stage.are (or xxx_char_stage.are)
+</p><p>The partypicker.gda's are not overwritten but extended.
+- partypicker.gda (or partypicker_xxx.gda) [included only so that stature and animations can be altered]
+</p><p>- party_picker.gda (or party_picker_xxx.gda) [included only so that stature and animations can be altered]
+</p><p>- there are others that are less commonly overwritten!
+</p><p>At some point, the <a rel="nofollow" class="external text" href="http://social.bioware.com/group/935/">Custom class and Companion Core Group</a> will upload a Builder-to-Builder package containing the up-to-date <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3137/">Common Core Resources</a> listed above. If you alter any of these files, please send them a Builder-to-Builder package of any core resources you alter so that they can update the package.
+</p>
+<h3><span class="mw-headline" id="Companion_Compatibility_Core_Package">Companion Compatibility Core Package</span></h3>
+<p>The latest version of the <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4110/">Companion Compatibility Core</a> refines the approach pioneered by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Noob766" title="User:Noob766 (page does not exist)">Noob766</a> to provides a 2DA driven dialogue loading system which enables NPC Companion modders to extend two frequently modded conversations (<b>party_events.dlg</b> and <b>cutscene_slideshow.dlg</b>) without the need for constant edits and/or successive overwrites.
+</p><p>The Core also includes several fixes and tweaks to the former dialogue by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Ejoslin" title="User:Ejoslin (page does not exist)">ejoslin</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20TerraEx" title="User:TerraEx (page does not exist)">TerraEx</a> which were implemented by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20DLAN%20Immortality" title="User:DLAN Immortality">DLAN_Immortality</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a>.
+</p>
+<h3><span class="mw-headline" id="Companion_Names.2C_Races.2C_.26_Tags">Companion Names, Races, &amp; Tags</span></h3>
+<table border="1" cellspacing="0" cellpadding="3">
+
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1617">Karma's Companions</a>:
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Cullen
+</td>
+<td> Human
+</td>
+<td> kc_cir230cr_cullen
+</td></tr>
+<tr>
+<td> Jowan
+</td>
+<td> Human
+</td>
+<td> kc_arl210cr_jowan
+</td></tr>
+<tr>
+<td> Gorim
+</td>
+<td> Dwarf
+</td>
+<td> kc_bdn120cr_gorim
+</td></tr>
+<tr>
+<td> Ser Gilmore
+</td>
+<td> Human
+</td>
+<td> kc_bhn100cr_gilmore
+</td></tr>
+<tr>
+<td> Tamlen
+</td>
+<td> Elf
+</td>
+<td> kc_bed100cr_tamlen
+</td></tr>
+<tr>
+<td> Tamlen
+</td>
+<td> Elf/Shriek
+</td>
+<td> kc_cam110cr_tamlen
+</td></tr>
+<tr>
+<td> Soris
+</td>
+<td> Elf
+</td>
+<td> kc_bec100cr_soris
+</td></tr>
+<tr>
+<td> Leske
+</td>
+<td> Dwarf
+</td>
+<td> kc_bdc200cr_leske
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=851">Ser Gilmore recruitable NPC</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Ser Roland Gilmore
+</td>
+<td> Human
+</td>
+<td> ser_gilmore_lbc
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1690">Lady Desire's Tevinter Wardens</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Lealion
+</td>
+<td> Human
+</td>
+<td> gen00fl_lealion
+</td></tr>
+<tr>
+<td> Legion
+</td>
+<td> Dog
+</td>
+<td> gen00fl_legion
+</td></tr>
+<tr>
+<td> Lanna
+</td>
+<td> Human
+</td>
+<td> gen00fl_lanna
+</td></tr>
+<tr>
+<td> Marric
+</td>
+<td> Elf
+</td>
+<td> gen00fl_marric
+</td></tr>
+<tr>
+<td> Martin
+</td>
+<td> Human
+</td>
+<td> gen00fl_martin
+</td></tr>
+<tr>
+<td> Willam
+</td>
+<td> Human
+</td>
+<td> gen00fl_willam
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1716">Saarebas</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Saarebas
+</td>
+<td> Qunari
+</td>
+<td> gen00fl_saarebas
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1432">Return to Korcari Wilds</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Douglas
+</td>
+<td> Human
+</td>
+<td> party_douglas
+</td></tr>
+<tr>
+<td> Ser Kenneth
+</td>
+<td> Human
+</td>
+<td> party_serken
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonagenexus.com/downloads/file.php?id=1397">The Bloodworks</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Chris
+</td>
+<td> Human
+</td>
+<td> chrischar
+</td></tr>
+<tr>
+<td> Lucius
+</td>
+<td> Human
+</td>
+<td> luciuschar
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2157/">Dark Times: The Confederacy of Malkuth</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Lethe
+</td>
+<td> Humanoid
+</td>
+<td> dt_fol_lethe_demon
+</td></tr>
+<tr>
+<td> Lethe
+</td>
+<td> Human
+</td>
+<td> dt_fol_lethe_human
+</td></tr>
+<tr>
+<td> Thazulok
+</td>
+<td> Elf
+</td>
+<td> dt_fol_thazulok
+</td></tr>
+<tr>
+<td> Myrdo
+</td>
+<td> Human
+</td>
+<td> dt_fol_myrdo
+</td></tr>
+<tr>
+<td> Fetch
+</td>
+<td> Dwarf
+</td>
+<td> dt_fol_fetch
+</td></tr>
+<tr>
+<td> Marukhan
+</td>
+<td> Werewolf
+</td>
+<td> dt_fol_marukhan
+</td></tr>
+<tr>
+<td> Dragon
+</td>
+<td> Dragonling
+</td>
+<td> dt_fol_dragon_i
+</td></tr>
+<tr>
+<th colspan="3">
+</th></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/3152/">Valeria Addon</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Valeria
+</td>
+<td> Human
+</td>
+<td> valeria_npc
+</td></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/4024/">Sanguine Sunrise</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Maethan
+</td>
+<td> Elf
+</td>
+<td> gen00fl_maethan
+</td></tr>
+
+<tr>
+<td> Rioghan
+</td>
+<td> Human
+</td>
+<td> gen00fl_rioghan
+</td></tr>
+<tr>
+<td> Siofra
+</td>
+<td> Dwarf
+</td>
+<td> gen00fl_siofra
+</td></tr>
+
+<tr>
+<td> Gawain
+</td>
+<td> Human
+</td>
+<td> gen00fl_gawain
+</td></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/5173/">Gina and Sisters</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Gina
+</td>
+<td> Human
+</td>
+<td> wdg_gina
+</td></tr>
+<tr>
+<td> Tory
+</td>
+<td> Elf
+</td>
+<td> dtn_tory
+</td></tr>
+<tr>
+<td> Britney
+</td>
+<td> Dwarf
+</td>
+<td> tdn_britney
+</td></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://social.bioware.com/project/2739/">In Search of Raina'</a>
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Terra'
+</td>
+<td> Human
+</td>
+<td> terra
+</td></tr>
+<tr>
+<th colspan="3"> <a rel="nofollow" class="external text" href="http://dragonage.nexusmods.com/mods/3910/?">MerAnnes Dwarf Companions</a>:
+</th></tr>
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Race
+</th>
+<th scope="col"> Tag
+</th></tr>
+<tr>
+<td> Silfranar
+</td>
+<td> Dwarf
+</td>
+<td> merd_dwarf1
+</td></tr>
+<tr>
+<td> Jasmine
+</td>
+<td> Dwarf
+</td>
+<td> merd_dwarf2
+</td></tr>
+<tr>
+<td> Lady Danika
+</td>
+<td> Dwarf
+</td>
+<td> merd_dwarf3
+</td></tr>
+<tr>
+<td> Hilda
+</td>
+<td> Dwarf
+</td>
+<td> merd_dwarf4
+</td></tr>
+<tr>
+<td> Petras
+</td>
+<td> Dwarf
+</td>
+<td> merd_dwarf5
+</td></tr>
+</table>
+<h3><span class="mw-headline" id="Occupied_Locations">Occupied Locations</span></h3>
+<h4><span class="mw-headline" id="Party_Camp">Party Camp</span></h4>
+<p><b>Karma's Companions:</b>
+</p>
+<dl><dd>Cullen's position: 138.564f, 111.815f, -1.08586f</dd>
+<dd>Jowan's position: 174.687f, 147.589f, -1.33659f</dd>
+<dd>Gorim's position: 135.159f, 123.599f, -0.20766f</dd>
+<dd>Gilmore's position: 125.402f, 116.783f, -0.924384f</dd>
+<dd>Tamlen's position: 171.71f, 150.038f, -1.02744f</dd>
+<dd>Soris' position: 138.381f, 119.108f, -0.17616f</dd>
+<dd>Leske's position: 144.049f, 146.718f, -0.97327f</dd></dl>
+<p><b>Karma's Bloodworks Compatibility Plugin:</b>
+</p>
+<dl><dd>Lucius' and Chris' position: 167.154f, 139.113f, -1.54743f</dd></dl>
+<p><b>Saarebas:</b>
+</p>
+<dl><dd>Saarebas's position: 135.252625, 118.686562, -0.274021</dd></dl>
+<p><b>Return to Korcari Wilds:</b>
+</p>
+<dl><dd>Douglas' position: 134.41, 113.905, -0.552629</dd>
+<dd>Ser Kenneth's position: 137.62, 133.833, 0.629564</dd></dl>
+<p><b>Lady Desire's Lealion the Mage:</b>
+</p>
+<dl><dd>Lealion's position: 135.252625f, 113.905f, -0.274021f</dd>
+<dd>Legion's position: 135.252625f, 113.905f, -0.274021f </dd>
+<dd>(Please note that they stand next to each other, sharing a common reference point.)</dd></dl>
+<p><b>Gina and Sisters:</b>
+</p>
+<dl><dd>Gina's position: 155.061f, 150.714f, -1.85217f</dd>
+<dd>Tory's position: 140.564f, 111.815f, -1.08586f </dd>
+<dd>Britney's position: 160.061f, 155.714f, -1.85217f</dd></dl>
+<p>'<b>In Search of Raina&#160;:</b>
+</p>
+<dl><dd>Terra's position: 137.564f, 115.815f, -1.08586f</dd></dl>
+<p><b>MerAnne's Dwarves:</b>
+</p>
+<dl><dd>Silfranar: 162.22f, 159.05f, -0.26f</dd>
+<dd>Jasmine: 161.38f, 156.47f, -0.28f</dd>
+<dd>Lady Danika: 163.27f, 155.25f, -0.10f</dd>
+<dd>Hilda: 164.97f, 158.91f, 0.21f</dd>
+<dd>Petras: 164.76f, 156.25f, 0.19f</dd></dl>
+<h4><span class="mw-headline" id="Denerim_Castle">Denerim Castle</span></h4>
+<p><b>Karma's Companions:</b>
+</p>
+<dl><dd>Cullen's position: 138.564f, 111.815f, -1.08586f</dd>
+<dd>Jowan's position: 174.687f, 147.589f, -1.33659f</dd>
+<dd>Gorim's position: 144.049f, 146.718f, -0.97327f</dd>
+<dd>Gilmore's position: 125.402f, 116.783f, -0.924384f</dd>
+<dd>Tamlen's position: 33.8068f, 20.4451f, 0.804601f</dd>
+<dd>Soris' position: 77.679f, 11.5635f, 5.02284f</dd>
+<dd>Leske's position: 83.8656f, 31.9483f, 5.00912f</dd></dl>
+<p><b>MerAnne's Dwarves:</b>
+</p>
+<dl><dd>Silfranar: 20.91f, -13.21f, 0.02f </dd>
+<dd>Jasmine: 21.87f, -11.19f, 0.02f</dd>
+<dd>Lady Danika: 23.96f, -3.78f, 0.02f </dd>
+<dd>Hilda: 22.68f, -12.88f, 0.02f</dd>
+<dd>Petras: 20.17f, -12.24f, 0.02f</dd></dl>
+<h4><span class="mw-headline" id="Redcliffe_Castle">Redcliffe Castle</span></h4>
+<p><b>Karma's Companions:</b>
+</p>
+<dl><dd>Cullen's position: 9.62579f, -17.3753f, 0.022839f</dd>
+<dd>Jowan's position: 7.59896f, -5.17459f, 0.022839f</dd>
+<dd>Gorim's position: 26.3124f, -8.75641f, 0.022839f</dd>
+<dd>Gilmore's position: 20.797f, -14.1758f, 0.022839f</dd>
+<dd>Tamlen's position: 36.626f, -9.17714f, 0.022839f</dd>
+<dd>Soris' position: 34.8394f, -17.4045f, 0.022839f</dd>
+<dd>Leske's position: 34.2706f, -7.74061f, 0.022839f</dd></dl>
+<p><b>MerAnne's Dwarves:</b>
+</p>
+<dl><dd>Silfranar:  32.59f, -4.79f, 0.02f</dd>
+<dd>Jasmine: 21.84f, -11.19f, 0.02f</dd>
+<dd>Lady Danika: 31.21f, -4.42f, 0.02f  </dd>
+<dd>Hilda: 29.07f, -5.28f, 0.02f</dd>
+<dd>Petras:  27.81f, -5.98f, 0.02f</dd></dl>
+<h4><span class="mw-headline" id="Post-Coronation">Post-Coronation</span></h4>
+<p><b>Karma's Companions:</b>
+</p>
+<dl><dd>Cullen's position: 15.0103f, 4.66715f, 0.022839f</dd>
+<dd>Jowan's position: -1.93367f, -3.92452f, 0.022839f</dd>
+<dd>Gorim's position: 12.3308f, -5.61697f, 0.022839f</dd>
+<dd>Gilmore's position: 16.5714f, -4.42749f, 0.022839f</dd>
+<dd>Tamlen's position: </dd>
+<dd>Soris' position: </dd>
+<dd>Leske's position:</dd></dl>
+<p><b>MerAnne's Dwarves:</b>
+</p>
+<dl><dd>Silfranar: 47.74f, -7.81f, 0.02f </dd>
+<dd>Jasmine: 45.32f, -5.31f, 0.02f</dd>
+<dd>Lady Danika: 49.06f, -5.00f, 0.02f  </dd>
+<dd>Hilda: 48.69f, -6.82f, 0.02f</dd>
+<dd>Petras: 45.48f, -7.02f, 0.02f</dd></dl>
+<h4><span class="mw-headline" id="Gauntlet_Doppelgangers">Gauntlet Doppelgangers</span></h4>
+<p><b>Karma's Companions:</b>
+</p>
+<dl><dd>Cullen's position: 15.0103f, 4.66715f, 0.022839f</dd>
+<dd>Jowan's position: -1.93367f, -3.92452f, 0.022839f</dd>
+<dd>Gorim's position: 12.3308f, -5.61697f, 0.022839f</dd>
+<dd>Gilmore's position: 16.5714f, -4.42749f, 0.022839f</dd>
+<dd>Tamlen's position: 81.9272f, 1.60791f, 0.011455f</dd>
+<dd>Soris' position: 78.4324f, 0.0464842f, 0.011455f</dd>
+<dd>Leske's position: 78.4908f, -3.069f, 0.000986939f</dd></dl>
+<p><b>MerAnne's Dwarves:</b>
+</p>
+<dl><dd>Silfranar: 76.50f, 2.5f, 0.02f</dd>
+<dd>Jasmine: 76.62f, -8.38f, 0.02f</dd>
+<dd>Lady Danika: 76.57f, -5.92f, 0.02f</dd>
+<dd>Hilda: 76.82f, 0.10f, 0.02f</dd>
+<dd>Petras: 79.37f, -0.50f, 0.02f</dd></dl>

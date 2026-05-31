@@ -1,0 +1,6 @@
+<p>Formatting problem here. Function description is split between top of page and Description section.
+</p><p>-- Axe Murderer 17:34 PST, 24 Oct 2009
+</p>
+<dl><dd> Thanks these pages are auto-generated from script.ldf (the equivalent of nwscript.nss) so it means one of the BioWare devs didn't follow the correct doxgen conventions.  I'll fix it and bug it.</dd></dl>
+<dl><dd> --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">Sunjammer</a> 01:00, 25 October 2009 (UTC)</dd></dl>
+<dl><dd><dl><dd> Yeah that's what I figured so I didn't want to change it.</dd></dl></dd></dl>

@@ -1,0 +1,17 @@
+<p>Returns the platform that the game is running under.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> GetPlatform(<br />);</div>
+<dl>
+<dt>Parameters:
+<dd>None
+</dl><dl><dt>Returns:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PLATFORM" title="PLATFORM *">PLATFORM_*</a> constant
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Return the ID of the platform that the game is running under.
+</p><p>User-generated content is only usable with the PC version of the game, so this function is unlikely to be of much use to end users.
+</p>

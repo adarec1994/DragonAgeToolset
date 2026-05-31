@@ -1,0 +1,20 @@
+<p>Sets the specified string on the event.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> SetEventString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> evEvent,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sValue<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">evEvent<dd>The event to set the string on<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The index of the string to set<dt style="font-weight:normal; font-style:italic;">sValue<dd>The value of the string to set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the modified event, returns an invalid event on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the specified string on the event.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It should be noted that there is no maximum number of values on an event, as the array of values on the event expands as needed.
+</p>

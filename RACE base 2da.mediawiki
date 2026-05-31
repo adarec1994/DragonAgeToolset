@@ -1,0 +1,153 @@
+<p>The <strong class="selflink">RACE_base 2da</strong> defines each of the playable and non-playable races.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> is defined as an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2da" title="M2da (page does not exist)">m2da</a> in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base 2da</a> and has an <b>ID</b> of <b>5</b>. It can be extended by m2da fragments which have names starting with "RACE_". It can be referenced in scripting using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE" title="TABLE *">TABLE_RULES_RACES</a> constant defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>.
+</p>
+<h2><span class="mw-headline" id="Structure">Structure</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> Column </th>
+<th> Type </th>
+<th> Description
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> A number that uniquely identifies the entry (unless creating an <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="M2DA override">M2DA override</a>). ID numbers are listed from smallest to highest within a given file but do not need to be consecutive.
+</td></tr>
+<tr>
+<th>  Label
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  Abbreviation
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  Abbreviation for the race
+</td></tr>
+<tr>
+<th>  Name
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  The string reference ID in the string table that contains the name of the race.
+</td></tr>
+<tr>
+<th>  ConvNamePlural
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  The string reference ID in the string table that contains the plural version of the name of the race.
+</td></tr>
+<tr>
+<th>  Description
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  The string reference ID in the string table that contains the short description of the race.
+</td></tr>
+<tr>
+<th>  Tooltip
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  The string reference ID in the string table that contains the tooltip text for the race.
+</td></tr>
+<tr>
+<th>  Appearance
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  A row ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/APR%202da" title="APR base 2da">APR_base 2da</a> representing the appearance of the race.
+</td></tr>
+<tr>
+<th>  StrAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting strength attribute.
+</td></tr>
+<tr>
+<th>  ConAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting constitution attribute.
+</td></tr>
+<tr>
+<th>  WillAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting willpower attribute.
+</td></tr>
+<tr>
+<th>  MagAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting magic attribute.
+</td></tr>
+<tr>
+<th>  IntAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting cunning attribute.
+</td></tr>
+<tr>
+<th>  DexAdjust
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20%282da%20type%29" title="Float (2da type)"> float  </a>
+</td>
+<td>  A bonus this race gets to starting dexterity attribute.
+</td></tr>
+<tr>
+<th>  BackgroundTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  ClassTable
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>
+</td></tr>
+<tr>
+<th>  PlayerRace
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  Determines whether this race can be taken by a player.
+</td></tr>
+<tr>
+<th>  Constant
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE" title="RACE *">RACE_*</a> constant used in scripts to refer to this race, for example "RACE_DWARF".
+</td></tr>
+<tr>
+<th>  Ability1
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  A row ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">ABI 2da</a>. If its valid it will add that ability to the character when you take this race.
+</td></tr>
+<tr>
+<th>  Ability2
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int    </a>
+</td>
+<td>  A row ID in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABI%202da" title="ABI 2da">ABI 2da</a>. If its valid it will add that ability to the character when you take this race.
+</td></tr></table>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/RACE" title="RACE *">RACE_*</a> constants</li></ul>

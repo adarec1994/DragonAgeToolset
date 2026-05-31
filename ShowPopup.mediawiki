@@ -1,0 +1,18 @@
+<p>Show a pop-up message box.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> ShowPopup(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nMessageStrRef,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nPopupType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oOwner&#160;= OBJECT_INVALID,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bShowInputField&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDefaultInputStrRef&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nMessageStrRef<dd>a string reference to the text of the message box<dt style="font-weight:normal; font-style:italic;">nPopupType<dd>a reference to the popup type, defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">popups 2da</a><dt style="font-weight:normal; font-style:italic;">oOwner<dd>the owner of this popup<dt style="font-weight:normal; font-style:italic;">bShowInputField<dd>a boolean which controls whether the pop-up will have a text-input field<dt style="font-weight:normal; font-style:italic;">nDefaultInputStrRef<dd>a string reference to the default text for the text-input. If 0, the input field will start empty
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>When a button is pressed and the pop-up is closed, the contents of the text-field will be returned as the 0th string argument to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20POPUP%20RESULT" title="EVENT TYPE POPUP RESULT">EVENT_TYPE_POPUP_RESULT</a> event to the module.
+</p><p>The text is filtered as it is typed using the same filter that is applied to the player's name; thus, you cannot enter spaces nor many forms of punctuation. The text-field is currently limited to 20 characters (same as the player name).
+</p>

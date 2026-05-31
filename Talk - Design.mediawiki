@@ -1,0 +1,14 @@
+<h2><span class="mw-headline" id="Page_name">Page name</span></h2>
+<p>This page doesn't seem to contain anything on game design. The content is all about database resources. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Stuntpope" title="User:Stuntpope (page does not exist)">Stuntpope</a>
+</p>
+<dl><dd>Those are the resources that are used when doing the "game designy" part of building. I'm quite open to suggestions about better titles, though, or just generally about better organization in general. One of the reasons I split the main page up into these "portal" pages was to give more people opportunity to edit this stuff.&#160;:) <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 21:34, 25 November 2009 (UTC)</dd></dl>
+<dl><dd>Fair enough - I guess with some more content to help define it, it will make some more sense. I think one problem at the moment is that a lot of the top level category stuff is a bit hidden. So yes hopefully someone will find the time to get in and edit things a bit. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Stuntpope" title="User:Stuntpope (page does not exist)">Stuntpope</a> 09:59, 26 November 2009 (UTC)</dd></dl>
+<hr />
+<p>I am digging thru the toolset trying to understand how to make an item. And this Wiki hasnt exactly helped me find a starting point to go to. Perhaps this is because i am too much expecting a tutorial.
+</p><p>As such, it should be "somewhere" that it gets told you have to create a new module, and how you can be sure that you do not touch the singleplayer stuff. I assume this is the starting point for anyone trying to edit something (which this page is all about). 
+</p><p>So i do not know. Is the Design page the first thing people see when they just want to make an Item? I know i wasnt, because "Design" is somewhat off what i expected. But there should be a warning or a note however i dont know. Which gives me a problem, as i have found no such page explaining how to create a new module. And i dont know myself.
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 06:58, 25 January 2010 (UTC)
+</p>
+<hr />
+<p>While at it, Design isnt exactly what has attracted me. The Description on the frontpage should be changed into what it does, not what the prerequisites are. Just like the Art category says "..like import a model.." the Design page should say like ".. create this or that or umm.. well whatever i am not so experienced as some i am only rearranging"<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 07:03, 25 January 2010 (UTC)
+</p>

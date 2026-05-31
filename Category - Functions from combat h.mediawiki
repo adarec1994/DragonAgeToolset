@@ -1,0 +1,18 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Functions from combat h"</h2>
+<p>The following 13 pages are in this category, out of 13 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>C</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CheckForDeathblow" title="CheckForDeathblow">CheckForDeathblow</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20CheckBackStab" title="Combat CheckBackStab">Combat CheckBackStab</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackHand" title="Combat GetAttackHand">Combat GetAttackHand</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackResult" title="Combat GetAttackResult">Combat GetAttackResult</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetAttackType" title="Combat GetAttackType">Combat GetAttackType</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetFlankingBonus" title="Combat GetFlankingBonus">Combat GetFlankingBonus</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20GetValidDeathblow" title="Combat GetValidDeathblow">Combat GetValidDeathblow</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleAbilityAttackImpact" title="Combat HandleAbilityAttackImpact">Combat HandleAbilityAttackImpact</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleAttackImpact" title="Combat HandleAttackImpact">Combat HandleAttackImpact</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleCommandAttack" title="Combat HandleCommandAttack">Combat HandleCommandAttack</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20HandleCreatureDisappear" title="Combat HandleCreatureDisappear">Combat HandleCreatureDisappear</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20PerformAttack" title="Combat PerformAttack">Combat PerformAttack</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsCombatHit" title="IsCombatHit">IsCombatHit</a></li></ul></div></div></div>
+</div></div>

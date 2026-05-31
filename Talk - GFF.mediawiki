@@ -1,0 +1,43 @@
+<p>Here's some more info on it for consideration. As is, the wiki article leaves you to guess at a lot of what's going on. Listing it here for now so I don't lose track of it.
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/464166">http://social.bioware.com/forum/1/topic/8/index/464166</a></li>
+<li> <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/72/index/508109">http://social.bioware.com/forum/1/topic/72/index/508109</a></li></ul>
+<p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20FollowTheGourd" title="User:FollowTheGourd">FollowTheGourd</a> 06:56, 26 January 2010 (UTC)
+</p>
+<hr />
+<h2><span class="mw-headline" id="Field_information_incorrect">Field information incorrect</span></h2>
+<p>After checking a .das file with the GFF editor that comes with the toolset, it would appear that FieldType is TypeID *then* flags. Also the flags are Reference (MSB, bit 16), List (bit 15), and Struct (bit 14).
+</p><p>This can be verified with:
+</p>
+<pre>
+# let data be an array of the gff file
+# let offset be the start of a field in the field array
+(id, type, flags, index) = unpack("I H H I),data[offset:offset+12])
+
+isList = (flags &amp; (1 &lt;&lt; 15) &gt;0)
+isStruct = (flags &amp; (1 &lt;&lt; 14) &gt;0)
+isRef = (flags &amp; (1 &lt;&lt; 16) &gt;0)
+</pre>
+<p>Given this, I'm going to change the page. If I'm incorrect, feel free to revert and explain why here.
+</p><p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Overture1943" title="User:Overture1943 (page does not exist)">Overture1943</a> 19:22, 6 November 2009 (UTC)
+</p>
+<dl><dd>I say this is not easy, however i think the original was correct. I dont have big explanation at hand, the Bonesused List in MMH for example has Bit 1 set. The "Generic List" has Bit 1 and 3 set (Where with Bit3 Data contains a Struct reference). And lastly "Struct List" has Bit 1 and 2 set. (Where with bit2 the Data contains the Struct itself) All of them data are referenced in itself, however i think that is a given for Lists. </dd>
+<dd>With which if only Bit3 is set, then the Data isnt referenced, but a struct is referenced ,and it is not a list or so it seems to me. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 07:25, 15 March 2010 (UTC)
+<dl><dd>This appears true in GAD files as well, solely Bit1 is set for a Float32 list. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Eshme" title="User:Eshme (page does not exist)">Eshme</a> 22:51, 15 March 2010 (UTC)</dd></dl></dd></dl>
+<h2><span class="mw-headline" id="GFF_V4.1">GFF V4.1</span></h2>
+<p>Due to the new ERF V3.0 format, we don't have a lot to go on for the new GFF V4.1 format. The only example I know of is profile.dap. However, here are my thoughts. The header has two additional uint32 fields, giving us:
+</p>
+<pre>struct header {
+  char[8] magic = "GFF V4.1";
+  char[4] platform;
+  char[4] file_type;
+  char[4] file_version;
+  uint32 struct_count;
+  uint32 unknown_1;
+  uint32 string_offset;
+  uint32 data_offset;
+}</pre>
+<p>I haven't figured out what the first new field is, but the field I call string_offset appears to be an offset from the beginning of the file to a new list of zero-terminated strings, just like the ERF V3.0 format has for filenames. And as a result of this, it appears that ECStrings are now represented as offsets into this string section. They also do not start with the length of the string, and it appears the strings are most probably encoded in utf-8, but definitely not in utf-16 anymore.
+</p><p>I had an alternate theory that involved the the strings still being part of the data section and the root structure being able to start later in the data section, but the offsets for lists are still relative to the root structure's start, so they appear to be different sections.
+</p><p>I imagine there will be a few more surprises in store for us beyond these, like what the purpose of the first new field is, but it looks like we need to puzzle out the ERF V3.0 format or wait for a toolset so we can get more GFF V4.1 samples. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Mephales" title="User:Mephales (page does not exist)">Mephales</a> 04:20, 28 February 2011 (UTC)
+</p>

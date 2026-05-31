@@ -1,0 +1,30 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Локации
+</th></tr>
+<tr>
+<td>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20-%20ru" title="Area/ru">Обзор</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20tutorial%20-%20ru" title="Area tutorial/ru">Инструкция</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list%20-%20ru" title="Area list/ru">Группы локаций</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint%20-%20ru" title="Waypoint/ru (page does not exist)">Флажки</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Waypoint" title="Waypoint">(en)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object%20-%20ru" title="Volume object/ru (page does not exist)">Объекты</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Volume object">(en)</a> 
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger%20-%20ru" title="Trigger/ru">Триггеры</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Audio%20volume%20-%20ru" title="Audio volume/ru (page does not exist)">Аудио</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Audio volume">(en)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Reverb%20volume%20-%20ru" title="Reverb volume/ru (page does not exist)">Отражение звука</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Reverb volume">(en)</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Music%20volume%20-%20ru" title="Music volume/ru (page does not exist)">Музыка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Volume%20object" title="Music volume">(en)</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options%20-%20ru" title="Area editor options/ru (page does not exist)">Свойства редактора</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20editor%20options" title="Area editor options">(en)</a></li></ul>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Меню раздела "Локации"</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=https://www.datoolset.net/wiki/Template:Infobox_area/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<p>Для отображения этого меню на нужной странице вставьте следующий код:
+</p>
+<pre>{{Infobox area/ru}}</pre>

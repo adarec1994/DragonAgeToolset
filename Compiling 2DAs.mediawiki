@@ -1,0 +1,99 @@
+<p>In the "Dragon Age\tools\ResourceBuild\Processors" folder there is an executable named "ExcelProcessor.exe". This is the file that handles conversions of 2DAs from XLS to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDA</a> format. Below are described 3 ways in which this file may be used.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Precautions"><span class="tocnumber">1</span> <span class="toctext">Precautions</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Converting"><span class="tocnumber">2</span> <span class="toctext">Converting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Drag_.26_Drop_Method"><span class="tocnumber">2.1</span> <span class="toctext">Drag &amp; Drop Method</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Command_Line_method"><span class="tocnumber">2.2</span> <span class="toctext">Command Line method</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Using_a_.BAT_file"><span class="tocnumber">2.3</span> <span class="toctext">Using a .BAT file</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Adding_2DA_export_to_the_Windows_XP_file_explorer"><span class="tocnumber">2.4</span> <span class="toctext">Adding 2DA export to the Windows XP file explorer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Afterwards"><span class="tocnumber">3</span> <span class="toctext">Afterwards</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Precautions">Precautions</span></h2>
+<ul><li>Be sure the Excel document's format is correct. Excelprocessor may give hints on errors. See Article: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DA</a></li>
+<li>Be sure your worksheet's name is correct. If you're extending an M2DA make sure you're using the correct prefix (see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">2DA_base.xls</a>).</li>
+<li>Be sure your worksheet's name is different from those already in use, unless you want to override an existing 2DA.</li>
+<li>The filename of the Excel document doesn't matter, it is solely the worksheet's name which does.</li>
+<li>Save and close the spreadsheet, Excelprocessor can't process files that are currently open in other programs.</li></ul>
+<h2><span class="mw-headline" id="Converting">Converting</span></h2>
+<p>3 convenient Methods are listed.
+</p>
+<h3><span class="mw-headline" id="Drag_.26_Drop_Method">Drag &amp; Drop Method</span></h3>
+<ol><li> Copy ExcelProcessor.exe and source .XLS files to a new directory (not explicitly neccessary, but advised)</li>
+<li> Select source .XLS files and drag them onto ExcelProcessor.exe</li>
+<li> Resulting .GDA files, will be located in your users folder, or in the internally "active" folder which differs from Situation, OS and Language used.</li></ol>
+<h3><span class="mw-headline" id="Command_Line_method">Command Line method</span></h3>
+<ol><li> Copy ExcelProcessor.exe to the source .XLS files' directory.</li>
+<li> Fire up command line, navigate into the directory where both the XLS files, and the ExcelProcessor can be found.</li>
+<li> Type: ExcelProcessor "filename.xls" (where filename is the name of the xls spreadsheet, and of course the double quotes aren't needed)</li></ol>
+<p>Example code:<br />
+<code>
+C:\2DA\&gt;ExcelProcessor guitypes.xls
+</p><p></code>
+</p>
+<h3><span class="mw-headline" id="Using_a_.BAT_file">Using a .BAT file</span></h3>
+<p>The following method adds some comfort:
+</p>
+<ul><li>Create a folder called C:\2DA\</li>
+<li>There create a File called "2DACompile.BAT" and add following lines with Notepad.</li></ul>
+<pre>
+cd /d&#160;%0\..
+"C:\*DragonAgeInstallDir*\tools\ResourceBuild\Processors\ExcelProcessor.exe"&#160;%1
+PAUSE
+</pre>
+<p><b>Note:</b> Replace "C:\*DragonAgeInstallDir*" with where you installed your game.
+</p>
+<ul><li>Drag and Drop the XLS file over the new BAT file. It doesnt need to be in the same directory.</li>
+<li>The GDA File will be placed into C:\2DA\</li>
+<li>The window will stay open ,so you can view eventual Error messages.</li></ul>
+<p>Alternativly you can place the BAT ("Batch") file on your desktop, in which case the GDA will also be put on the Desktop. If you prefer easier access and convert often. Just drag the XLS from wherever it is over it.
+</p>
+<h3><span class="mw-headline" id="Adding_2DA_export_to_the_Windows_XP_file_explorer">Adding 2DA export to the Windows XP file explorer</span></h3>
+<p>The following gets the most comfort, and adds a right click context menu item. But it is tricky to set up. 
+</p><p>Setup: 
+</p>
+<ol><li> Open Windows Explorer and click Tools | Folder Options.</li>
+<li> In the File Types tab, select the XLS extension from the list and click the Advanced button.</li>
+<li> Click the New button and put 'Binarize 2DA' in the Action field.</li>
+<li> Paste the following in the Application field and click OK (update the drive and folder names to match your client): <tt>"C:\*DragonAgeInstallDir*\Dragon Age\tools\ResourceBuild\Processors\ExcelProcessor.exe"  "%1"  -outdir="C:\Documents and Settings\YOURNAME\My Documents\BioWare\Dragon Age\packages\core\override"</tt>
+<ol><li> For the Steam version, use the following: <tt>"C:\Program Files\Steam\steamapps\common\dragon age origins\tools\ResourceBuild\Processors\ExcelProcessor.exe"  "%1" -outdir="C:\Documents and Settings\YOURNAME\My Documents\BioWare\Dragon Age\packages\core\override"</tt></li></ol></li></ol>
+<p>Note that paths with spaces in them can cause Windows trouble, if your paths have spaces in them remember to wrap them in quotation marks. 
+</p><p>Usage:
+</p>
+<ol><li> Using Windows Explorer, navigate to your 2DA folder and select the Excel file(s) to process. Right click and select 'Binarize 2DA' from the context menu. </li>
+<li> Confirm a corresponding GDA file is created in your override folder for each Excel file processed.</li></ol>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:302px;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Adding%20binarize%202da%20to%20Windows%20XP%20explorer.png"><img alt="" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png" width="300" height="278" class="thumbimage" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/8/87/Adding_binarize_2da_to_Windows_XP_explorer.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Adding%20binarize%202da%20to%20Windows%20XP%20explorer.png" title="Enlarge"></a></div>An example of how setting this up in Windows XP looks</div></div></div></div>
+<h2><span class="mw-headline" id="Afterwards">Afterwards</span></h2>
+<p>Place the GDA(s) into the game's override directory. Which one, is determined the following:
+</p>
+<ul><li>When it should be included into a custom Module, but extending Core M2DA's: (This is pretty much failproof)</li></ul>
+<pre>My Documents\BioWare\Dragon Age\AddIns\yourmodulename\core\override\</pre>
+<ul><li>When it should be included into a custom Module, and 2DA's not available to Core:</li></ul>
+<pre>My Documents\BioWare\Dragon Age\AddIns\yourmodulename\module\override\</pre>
+<ul><li>This is a cleaner solution, when packaging up the Module ,the files will be all in one place.</li></ul>
+<ul><li><b>Note:</b> "My Documents" is different to each OS Version and OS language. "yourmodulename" is created with your custom Module.</li></ul>
+<p><br />
+</p>
+<hr />
+<p>For all other cases, when not making a Module copy them into: <i>(this only makes sense when adjusting values of existing rows, and override without the toolset)</i>
+</p>
+<pre>*DragonAgeInstalldir*\packages\core\override\</pre>
+<ul><li><b>Note:</b> *DragonAgeInstalldir* is the Installation Directory you have chosen.</li></ul>
+<p><i>See also: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Source%20directory%20priorities" title="Source directory priorities">Source directory priorities</a> - for a more detailed list of priorities of each override folder.</i>
+</p>
+<hr />
+<p><b>Tip:</b> You will need to restart the Toolset, or Game for the changes to take effect.
+<br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru" title="Compiling 2DAs/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

@@ -1,0 +1,12 @@
+<p>Worth mentioning that the Level editor only works with the 3dsmax mouse controls. -- <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Proleric1" title="User:Proleric1 (page does not exist)">User:Proleric1</a>
+</p>
+<dl><dd> And also the flycam mode, which I tend to use myself since I've no experience with 3DS Max and find it very nonintuitive. I've added this to the lead paragraph, though I expect there'll eventually be a better place to move it to. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 21:54, 19 July 2009 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Exportable_Area">Exportable Area</span></h2>
+<p>Start Point Name - what in the heck is this for?  It doesn't affect pathfinding, and I have found no place anywhere in the editor that actually uses this field.  Is it a legacy field that just hasn't been removed? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard" title="User:Languard">Languard</a> 17:37, 16 November 2009 (UTC)
+</p>
+<h2><span class="mw-headline" id="Pathfinding">Pathfinding</span></h2>
+<p>Didn't even notice someone had already put in instructions for the terrain tools.  Since I had missed it, and at least one other person on the forums missed it, I removed the old text and kept my own.  The differences are that I put in two screen shots instead of one and explained all three icons.
+</p>
+<h2><span class="mw-headline" id="Room_visibility_and_connectivity">Room visibility and connectivity</span></h2>
+<p>These instructions seem incomplete. I see no such "checkbox" in room properties. Perhaps the description is just unclear?
+</p>

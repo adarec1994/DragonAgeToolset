@@ -1,0 +1,10 @@
+<h2><span class="mw-headline" id="Template">Template</span></h2>
+<p><i>This sub-template doesn't display properly when not included.  Please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Languages" title="Template:Languages">Template:Languages</a> for the complete version.</i>
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>This template is designed to simplify <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Languages" title="Template:Languages">Template:Languages</a>, by allowing a simpler syntax for adding new languages.  Each language is included by calling this template with the following parameters:
+</p>
+<ul><li> <b>Language code</b> (e.g. fr)</li>
+<li> (optional) <b>Page name</b> - if not supplied the page is automatically worked out based on where the language template is included.</li></ul>
+<p>This template should not be used anywhere except in the Languages template.
+</p>

@@ -1,0 +1,41 @@
+<p><br />
+This template set includes the following templates:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Inspector%20start" title="Template:Inspector start">Template:Inspector start</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Inspector%20section" title="Template:Inspector section">Template:Inspector section</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Inspector%20row" title="Template:Inspector row">Template:Inspector row</a></li>
+<li><strong class="selflink">Template:Inspector end</strong></li></ul>
+<p>It's intended to allow quick and easy creation of "object inspector" tables for documentation purposes.
+</p><p>For exmample, the following set of templates:
+</p>
+<pre>
+{{Inspector start}}
+{{Inspector section| General}}
+{{Inspector row| Area Layout | One of the existing area models in the database}}
+{{Inspector row| AreaList | Assigns this area to an area list.}}
+{{Inspector row| Comments | General information about this resource}}
+{{Inspector end}}
+</pre>
+<p>Produces:
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Area Layout</td>
+<td>One of the existing area models in the database</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">AreaList</td>
+<td> Assigns this area to an area list.</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Comments</td>
+<td>General information about this resource</td>
+</tr>
+</table>

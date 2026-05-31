@@ -1,0 +1,20 @@
+<p>Destroy the specified object. GEORG SAYS: DO NOT USE. EVER. Use core_h.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Safe%20Destroy%20Object" title="Safe Destroy Object">Safe_Destroy_Object</a> instead
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> DestroyObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oObject,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nDelay&#160;= 0<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oObject<dd>Object to destroy<dt style="font-weight:normal; font-style:italic;">nDelay<dd>Time in milliseconds to delay the destruction of the object. Immediate destruction by default
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject" title="CreateObject">CreateObject</a>
+</p>

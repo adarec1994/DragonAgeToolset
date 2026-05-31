@@ -1,0 +1,61 @@
+<p>The <b>ECLog.ini</b> file, found in <code>&lt;DragonAgeInstallDirectory&gt;\bin_ship\</code>, defines what sorts of messages are put into the game's log file. If it does not exist the defaults will be used. The log file created is  <code>&lt;My Documents&gt;\BioWare\Dragon Age\Logs\DragonAge_1.log</code>.
+</p><p>An example ECLog.ini file:
+</p>
+<pre>
+[LogTypes]
+2DASystem=0
+AI Manager=1
+Animation=0
+AreaTransition=1
+Assert=1
+Audio=1
+Combat=0
+CombatDebug=0
+Compiler=1
+Compression=1
+DA Download Manager (DADM)=1
+Dialog=1
+DialogLog=1
+EA Download Manager=1
+Environments=1
+Error=1
+Facial Animation=1
+File Access=1
+Finite State=1
+Game Object Update=0
+Gameside Animation=0
+General=1
+GFF=0
+Graphics=1
+GUI=0
+INISystem=1
+Input=1
+LayoutStreaming=0
+Logging=1
+Memory Heap=1
+Memory=1
+Netlayer=1
+Network=1
+OnlineFeatures=0
+Pathfinding=0
+Physics=1
+Plasma=0
+Platform=1
+Profiling=1
+ResMan=1
+Script=1
+ScriptClient=1
+Smart Objects=1
+SniffTest=1
+Stats=0
+Toolset Main Application=1
+Toolset Plugin System=1
+Warning=1
+World Database=1
+
+[Format]
+AppendFileNLine=1
+</pre>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PrintToLog" title="PrintToLog">PrintToLog</a>
+</p>

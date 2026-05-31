@@ -1,0 +1,31 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Hiding_abilities_from_the_tactics_menu"><span class="tocnumber">1</span> <span class="toctext">Hiding abilities from the tactics menu</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Cooldown"><span class="tocnumber">2</span> <span class="toctext">Cooldown</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Hiding_abilities_from_the_tactics_menu">Hiding abilities from the tactics menu</span></h2>
+<p>According to <a rel="nofollow" class="external text" href="http://social.bioware.com/forum/1/topic/71/index/682991/1#943915">this thread</a>, you need to be careful when setting <i>ABI_base'</i>s <i>usetype</i> column because of how a column by the same name is used in the <i>CommandTypes</i> worksheet of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AI%20TacticsConditions.xls" title="AI TacticsConditions.xls (page does not exist)">AI_TacticsConditions.xls</a>. Supposedly, <i>usetype</i> in the <i>CommandTypes</i> worksheet determines the groupings, so a <i>usetype</i> of something other than of 0, 2, or 4 (what's used in <i>CommandTypes</i> so far) should help ensure it doesn't show up in the tactics menu.
+</p>
+<h2><span class="mw-headline" id="Cooldown">Cooldown</span></h2>
+<p>In order to address one of the problems with Ranger pets (that they are dismissed after zoning, which also activates the cooldown), I tried to change the cooldown timer for each of the summon talents to 1 second so that I could quickly re-summon them after zoning.  Based on the text in the Page, it sounds like all I had to do was open ABI_base.xls in Excel and change the value in the cooldown column (column Z) from 30, 60, or 120 (for wolf, bear, and spider) to 1.  I made this change and loaded my game but there was no effect.  The cooldown is still 30, 60, and 120 seconds.  
+</p>
+<ul><li> Did I do something wrong?</li>
+<li> Do the changes only affect new games?</li>
+<li> Is there another file I need to change?</li></ul>
+<p>Thanks for any help you all can offer on how to mod the game more successfully.  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20ServiTemplari" title="User:ServiTemplari (page does not exist)">ServiTemplari</a> 14:54, 2 December 2009 (UTC)
+</p>
+<hr />
+<p>You are missing several steps before your changes take effect.
+</p>
+<ul><li> You should not be overriding the entire ABI_base file as it will conflict with any other mods/changes in the future.  Instead use the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">M2DA</a> technique for this</li>
+<li> You also have to compile your xls files before they are readable by the game.  You do this by dragging your xls files over the ExcelProcessor.exe program, included with the toolset</li>
+<li> After that you move the generated *.gda file to your /yourname/documents/bioware/dragon age/packages/core/override directory</li></ul>
+<p>--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Joshua%20Raven" title="User:Joshua Raven (page does not exist)">Joshua Raven</a> 15:41, 2 December 2009 (UTC)
+</p>
+<dl><dd> Can you point me towards a step-by-step guide for modding existing entities, spells, talents, etc.?  The M2DA method is not well explained on that page. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20ServiTemplari" title="User:ServiTemplari (page does not exist)">ServiTemplari</a> 16:28, 4 December 2009 (UTC)</dd></dl>
+<hr />
+<p>Anybody knows wether there is an unarmed condition?
+Hirutenshi 19:10, 5 December 2009
+</p>

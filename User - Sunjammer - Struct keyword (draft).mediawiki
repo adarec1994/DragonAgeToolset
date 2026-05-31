@@ -1,0 +1,58 @@
+<p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword" title="Struct keyword (page does not exist)">struct keyword</a> is used to construct a composite data type, or structure, consisting of a set related members/variables/values which can be accessed individually using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dot%20operator" title="Dot operator (page does not exist)">dot operator</a>.
+</p><p>The <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Vector%20keyword" title="Vector keyword">vector</a> data type is a predefined struct which consists of three <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">values</a>: x, y and z. To access or modify the y value of a vector, v, we would use v.y for example v.y = 1.2.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> name
+<span class="br0">&#123;</span>
+    type identifier1;
+    type identifier2,identifier3;
+    type identifier4;
+<span class="br0">&#125;</span>;</pre></div></div>
+<p>Things to note: braces, semi-colon after member declaration, semi-colon after struct declaration. 
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<ul><li> you cannot nest structs</li></ul>
+<ul><li> you can include the command, effect, event, float, int, location, object or string data types and they all appear to work</li>
+<li> you can include the itemproperty data type however there is no point (it is not used by anything other than its Get/SetLocal functions)</li>
+<li> you can include the vector data type or another struct but it will either fail to compile (can generate a "Void expression where non void required" error) or fail at runtime when you try to access it/its members</li>
+<li> you cannot include the resource data type: it will not compile (generates a "Bad type specifier" error)</li>
+<li> you cannot include an array (can generate an "Incorrect variable state left on stack" or "Void expression where non void required" error)</li>
+<li> you cannot declare an array of structs</li></ul>
+<p><br />
+</p>
+<ul><li> wrapping a vector in a dummy location</li>
+<li> wrapping a resource in a dummy event</li>
+<li> a pseudo-array could be created using an effect (limited to floats, ints, objects and/or strings)</li>
+<li> a pseudo-array could be created using an event (limited to floats, ints, locations, objects, resources and/or strings)</li></ul>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// user-defined type</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> w, x, y, z;
+<span class="br0">&#125;</span>;
+&#160;
+<span class="co1">// constructor</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion Quaternion<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fW, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fX, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fY, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword"><span class="kw2">float</span></a> fZ<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion q;
+&#160;
+    q.<span class="me1">w</span> <span class="sy0">=</span> fW;
+    q.<span class="me1">x</span> <span class="sy0">=</span> fX;
+    q.<span class="me1">y</span> <span class="sy0">=</span> fY;
+    q.<span class="me1">z</span> <span class="sy0">=</span> fZ;
+&#160;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> q;
+<span class="br0">&#125;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Struct%20keyword"><span class="kw2">struct</span></a> quaternion q <span class="sy0">=</span> Quaternion<span class="br0">&#40;</span><span class="nu0">0.0</span>, <span class="nu0">0.0</span>, <span class="nu0">0.0</span>, <span class="nu0">0.0</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<ul><li> Declaration</li>
+<li> Definition</li>
+<li> Assignment</li>
+<li> Comparison</li>
+<li> Member access</li>
+<li> Passing into a function</li>
+<li> Returning from a function</li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Structs" title="Category:Structs">Category:Structs</a> for structs defined in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign" title="Single Player Campaign (page does not exist)">Single Player Campaign</a>.</li></ul>

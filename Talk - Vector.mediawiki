@@ -1,0 +1,7 @@
+<p>x = what?
+y = what?
+z = what?
+</p><p>us none programers dont know which is which, how can we do say height?
+</p><p><br />
+- The vector's meaning is arbitrary. Its just a container for three values. The meaning you place upon them is your own and not imposed by the game.
+</p>

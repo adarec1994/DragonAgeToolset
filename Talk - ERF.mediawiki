@@ -1,0 +1,8 @@
+<p>Who in their right mind thinks that brute-forcing the Blowfish encryption will take "no more than 1 minute"?
+</p><p>Am I missing something here? As far as I can see, the checksum is the weakest point there. Still, 2^64 md5sum operations (worst-case) to brute-force the password from its checksum will take <i>considerable</i> more time than 1000 years, let alone 1 minute. From what I can see using a quick Google search, even using a dedicated FPGA won't get you into a reasonable time span. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20DocMcCoy" title="User:DocMcCoy (page does not exist)">DocMcCoy</a> 03:47, 15 March 2011 (UTC)
+</p>
+<dl><dd> As far as I can tell, scheme 2 blowfish has a huge restriction on what passwords can be (8 digit passwords), this severely limits what possible passwords there are (100000000 AFAIK?). &#8212;<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Thought%20Process" title="User:Thought Process">Thought Process</a> 00:21, 17 March 2011 (UTC)</dd></dl>
+<dl><dd><dl><dd> Okay, that would indeed move it into the reasonably brute-forcable range. A very peculiar decision by BioWare... <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20DocMcCoy" title="User:DocMcCoy (page does not exist)">DocMcCoy</a> 01:41, 17 March 2011 (UTC)</dd></dl></dd></dl>
+<p><br />
+What's the difference between "2 Blowfish" and "3 Blowfish (Dragon Age 2 only)" encryptions? <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20SergeySW" title="User:SergeySW (page does not exist)">SergeySW</a> 23:40, 30 July 2011 (UTC)
+</p>

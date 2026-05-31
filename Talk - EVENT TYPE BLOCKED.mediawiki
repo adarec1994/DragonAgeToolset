@@ -1,0 +1,7 @@
+<h2><span class="mw-headline" id="Sent_When:">Sent When:</span></h2>
+<p>The wording here is a little ambiguous and I don't know enough about placeables and walkmeshes in DA to resolve it.
+</p><p>You could say it is implying that there can be placeables which do change the walkmesh &amp; terrain and others that cannot. And this event is never sent when you bump into those that cannot. One is left to assume that it is always sent when you're blocked by those that can.
+</p><p>It can also be read to be saying that because all placeables cannot change the walkmesh and terrain, this event is never sent when you get blocked by any placeable for that reason.
+</p><p>If it is the latter, it should simply state it isn't sent when you bump placeables. Or, actually, take it out completely since you are really explaining, in the Sent When section, situations when you don't send it. And so it isn't all that relevant unless you plan to list along side it all the other situations when it also is not sent. Maybe it would be better to make this clarification in a Remarks section where it can be detailed better.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Axe%20Murderer" title="User:Axe Murderer (page does not exist)">Axe Murderer</a> 00:19, 1 November 2009 (UTC)
+</p>

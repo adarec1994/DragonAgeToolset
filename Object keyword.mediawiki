@@ -1,0 +1,47 @@
+<p>The <b>object keyword</b> denotes a data type that stores the integer ID of a game object, also referred to as an <i>instance</i>. The default value is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a> or -1.
+</p><p>The object type is valid as a variable, a parameter and a return type.
+</p>
+<h2><span class="mw-headline" id="Literals">Literals</span></h2>
+<p>There is no <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20terminology#literal" title="Scripting terminology">literal</a> representation of the object type.
+</p>
+<h2><span class="mw-headline" id="Conversion">Conversion</span></h2>
+<h3><span class="mw-headline" id="Explicit">Explicit</span></h3>
+<p>The following function can be used to convert an object to another data type: 
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ObjectToString" title="ObjectToString">ObjectToString</a></li></ul>
+<p>There is no explicit conversion from the object type.
+</p>
+<h3><span class="mw-headline" id="Implicit">Implicit</span></h3>
+<p>There is no implicit conversion to or from the object type.
+</p>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>The following functions allow a object to exist outside of the scope of the current script by storing it on an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetLocalObject" title="SetLocalObject">SetLocalObject</a>    </li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEffectObject" title="SetEffectObject">SetEffectObject</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetEventObject" title="SetEventObject">SetEventObject</a></li></ul>
+<p>The following functions allow a object which exists outside of the scope of the current script to be used in the current script by retrieving it from an object, effect or event:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocalObject" title="GetLocalObject">GetLocalObject</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEffectObject" title="GetEffectObject">GetEffectObject</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventObject" title="GetEventObject">GetEventObject</a></li></ul>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>In scripting, the "object" data type contains instances of game resources that have been created in-game.  Most objects are created by the toolset, for example by placing  creatures in an area or by inserting items into an inventory. However,  they can also be dynamically created using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject" title="CreateObject">CreateObject</a> function.
+</p>
+<h3><span class="mw-headline" id="Object_Currency">Object Currency</span></h3>
+<p>Objects which are not in the current <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area%20list" title="Area list">area list</a> are not accessible by <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Tag" title="Tag (page does not exist)">tag</a>-based searches.
+</p><p>So,  plot flags are generally used to store information about areas and  their objects which might be referenced when the player is elsewhere. As  long as you don't add a journal entry, no journal is given to the  player when the plot flag is set. For situations that require more than  binary values, local variables can be set on the player or the module.
+</p><p>If  the story calls for a creature to travel between area lists, the  general approach is to place different instances of the same creature in  all areas that will use it, setting them inactive or active as  necessary. 
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="co1">// uninitialised</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oDefault;
+&#160;
+    <span class="co1">// initialised using a function</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oFunction <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;example&quot;</span><span class="br0">&#41;</span>;  
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword" title="OBJECT INVALID keyword (page does not exist)">OBJECT_INVALID</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20SELF%20keyword" title="OBJECT SELF keyword (page does not exist)">OBJECT_SELF</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Object%20functions" title="Category:Object functions">Object functions</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Object%20constants" title="Category:Object constants (page does not exist)">Object constants</a>
+</p>

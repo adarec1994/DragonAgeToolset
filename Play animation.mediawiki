@@ -1,0 +1,192 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> Cutscene topics
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene" title="Cutscene">Cutscene</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20tutorial" title="Cutscene tutorial">Cutscene tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">Cutscene actions</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Headtracking" title="Headtracking">Headtracking</a></li>
+<li><strong class="selflink">Play animation</strong>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">Animation list</a></li></ul></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20effect" title="Cutscene effect">Cutscene effects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/VFX%20list" title="VFX list">VFX list</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">Curve editor</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20object" title="Cutscene object">Cutscene objects</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20capture" title="Cutscene capture">Cutscene capture</a></li></ul>
+</td></tr></table>
+<p>The Play Animation <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Cutscene%20action" title="Cutscene action">cutscene action</a> is used to apply animations to actors. Cameras, Creatures, Placeables, VFX objects, and Proxies can have play animation actions applied to them,
+</p><p>Playing single animations on objects is very simple —  all that needs to be done is a Play Animation action is assigned, and an animation is chosen. There are also more complex options that allow the user to blend two or more animations together.
+</p><p>See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Animation%20list" title="Animation list">animation list</a> for a list of many of the useful animations that come with Dragon Age.
+</p><p>In the case of Creatures, the Creature's "Pose" property can be used to set a default looping animation that plays when no Play Animation actions have been set for it.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Setting_the_animation"><span class="tocnumber">1</span> <span class="toctext">Setting the animation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Looping_animations"><span class="tocnumber">2</span> <span class="toctext">Looping animations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Animation_speed"><span class="tocnumber">3</span> <span class="toctext">Animation speed</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Using_animation_in_conjunction_with_actor_movement"><span class="tocnumber">4</span> <span class="toctext">Using animation in conjunction with actor movement</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#GAD"><span class="tocnumber">4.1</span> <span class="toctext">GAD</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Movement_Link_Ratio"><span class="tocnumber">4.2</span> <span class="toctext">Movement Link Ratio</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Start.2FEnd_Offsets"><span class="tocnumber">5</span> <span class="toctext">Start/End Offsets</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Blending_Animations"><span class="tocnumber">6</span> <span class="toctext">Blending Animations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Transitions"><span class="tocnumber">6.1</span> <span class="toctext">Transitions</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Weight_Curves"><span class="tocnumber">6.2</span> <span class="toctext">Weight Curves</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Setting_the_animation">Setting the animation</span></h2>
+<p>To select which animation to play first click on the Play Animation action to select it. Then look to the Animation field that is displayed in the Object Inspector. Clicking the ellipsis (<img alt="Ellipsis.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/1/1c/Ellipsis.png" width="17" height="18" />) button there will open up the Select Animation window. This will list all animations that the object has available. Select the animation and hit OK.
+</p>
+<h2><span class="mw-headline" id="Looping_animations">Looping animations</span></h2>
+<p>By default the animation will play through once. To loop the animation the Looping End Time value must be changed. There are two methods for doing this.
+</p><p>The first way is to type in a new Looping End Time in the Object Inspector.
+</p><p>The second way is to drag the looping icon (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20IconLoopAnimation.png"><img alt="IconLoopAnimation.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5f/IconLoopAnimation.png" width="8" height="8" /></a>) on the Play Animation action. Click and drag the Looping Icon to the right. The animation will then loop until it hits the end of the action.
+</p>
+<h2><span class="mw-headline" id="Animation_speed">Animation speed</span></h2>
+<p>To change the speed of the animation, use the Speed field in the Object Inspector. A value of 1.0 is the normal speed of the animation. Smaller values mean the animation plays slower, and larger values will play the animation faster. A value of 0.5 will play it at half-speed; a value of 2.0 will play twice as fast as normal.
+</p><p>Some animations can be sped up or slowed down if you drag the end of the animation out longer (slows down) or pull the end of the animation in shorter (speeds up).
+</p><p>An alternative to GAD animation displacement (see below) is to use the animation's Movement Link Ratio property to make the animation play as the actor moves. The particular optimum value of the animation's Movement Link Ratio will vary from animation to animation and may require some trial and error to find, but once found that value will remain the same any time you use that animation.
+</p>
+<h2><span class="mw-headline" id="Using_animation_in_conjunction_with_actor_movement">Using animation in conjunction with actor movement</span></h2>
+<p>There are two basic methods of matching an actor's animation to an actor's movement through space (eg, as in a walking animation where you want the actor to move forward while his legs take steps).
+</p>
+<h3><span class="mw-headline" id="GAD">GAD</span></h3>
+<p>GAD is a displacement that is automatically added to the actor's current position as the animation plays. Each animation has its own GAD information built into it, custom-designed to make the actor move in a manner appropriate to its actions. If we enable it the actor will be moved forward as the animation plays.
+</p><p>Not all animations have GAD associated with them. For example, having an actor wave his hand wouldn't displace him, so there would be no GAD assocaited with that animation. We only need to worry about GAD in cases where the animation should accompany movement.
+</p><p>To enable GAD select the animation action and set "Play Gad" to true in the object inspector. If no key frames have been defined for the actor the cutscene editor will pop up a warning at this point suggesting that we add position and orientation keys before we add GAD:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20gad%20warning.png"><img alt="Cutscene gad warning.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5a/Cutscene_gad_warning.png" width="1013" height="170" /></a>
+</p><p>It's important to set at least one set of keys for an object using GAD. The animation's GAD may seem to work correctly without it at first, but unexpected and unpredictable errors could occur later that send the actor careening off into the distance.
+</p><p>The other GAD properties are set to the most appropriate defaults automatically when you select an animation.
+</p><p>Note that if you use orientation keys to change an actor's orientation while the actor is playing an animation with GAD, the actor will change direction in an appropriate manner. For example, an actor that is walking north due to a GAD animation and then has its orientation changed 90 degrees to the right will continue walking in an easterly direction after the turn.
+</p>
+<h3><span class="mw-headline" id="Movement_Link_Ratio">Movement Link Ratio</span></h3>
+<p>The Movement Link Ratio property will cause the animation to play at a certain rate depending on the speed with which the actor is moving. For example, if you assign a movement link ratio to a walking animation, then when you subsequently cause the actor to move through the scene the animation will automatically play at a matching speed. The particular ratio that gives the best result varies from animation to animation, you may need to find the correct ratio by trial and error.
+</p><p>The intention of Movement Link Ratio is to allow more complex behaviors than those pre-encoded into GAD, allowing the actor's trajectory to be fine-tuned using position keys.
+</p><p>You may also wish to use these animations in conjunction with the "Orientation Follows Curve" action to cause the actor to always face in the direction that it's moving, and the "Snap to Walkmesh" action to cause the actor to keep its feet solidly on the ground.
+</p>
+<h2><span class="mw-headline" id="Start.2FEnd_Offsets">Start/End Offsets</span></h2>
+<p>The Start Offset value is used to start the animation somewhere other than its normal start point. For example if an animation is 4.0 seconds long and a Start Offset of 1.5 is used, when the animation action is reached the first 1.5 seconds of the animation is skipped, and only the last 2.5 seconds of it is played.
+</p><p>The End Offset value works much the same way, but is used to skip the end portion of an animation.
+</p><p>If offsets are used with a looping animation, the offset will be used for every loop. For example if a start offset of 0.5 is used, and the animation loops numerous times, every time the animation restarts is will skip the first 0.5 seconds of the animation.
+</p><p>Both offsets default to zero.
+</p>
+<h2><span class="mw-headline" id="Blending_Animations">Blending Animations</span></h2>
+<p>The basic setup of blended animations is pretty simple. The animations to be blended just need to be playing on the same object at the same time. To do this the animations are added to two different tracks (or more tracks, if more are being blended).
+</p>
+<h3><span class="mw-headline" id="Transitions">Transitions</span></h3>
+<p>A transition can be added between two blended animations. The transition affects how much each animation is blended.
+</p><p>To add a transition, select both of the animations, right-click one of them and select Add Transition. The transition is represented by a triangle between the two animations.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20add%20animation%20transition.png"><img alt="Cutscene add animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b0/Cutscene_add_animation_transition.png" width="329" height="295" /></a>
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20transition.png"><img alt="Cutscene animation transition.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/ce/Cutscene_animation_transition.png" width="289" height="78" /></a>
+</p><p>Selecting the transition (clicking the triangle) will display the Transition Type field in the Object Inspector. The different transition types will blend the two animations differently. The types are: Linear, Ease In, Ease Out, Ease In/Out, and Instant.
+</p>
+<h3><span class="mw-headline" id="Weight_Curves">Weight Curves</span></h3>
+<p>For more complex control of the blending the weight curves can be edited. Selecting a animation action will display its weight curve in the timeline. By default animations are weighted at 100% throughout. 
+</p><p>To add a weight key, ensure the animation is selected and then press "k" or select "key selection" from the right-click menu. See <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Curve%20editor" title="Curve editor">curve editor</a> for more detail on the use of the curve editor.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Cutscene%20animation%20weight%20curve.png"><img alt="Cutscene animation weight curve.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/b/b6/Cutscene_animation_weight_curve.png" width="1018" height="522" /></a>
+</p>
+<table cellspacing="0px" cellpadding="2px" style="background-color:transparent;">
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">General</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Time</td>
+<td> The time that the action ends </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Infinite</td>
+<td> If true this action extends on forever. It never ends. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Looping End Time</td>
+<td> The time that the action stops looping. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Time</td>
+<td> The time that the action begins </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Animation</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Animation</td>
+<td> The animation resource to play </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">End Offset</td>
+<td> The offset from the end of the animation at which to stop playing. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Movement Link Ratio</td>
+<td> If zero the animation plays normally. If non-zero this field represents a ratio of the number of animation cycles to the distance moved. It can be used to automatically tie the speed of an animation to how far the actor moves. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Speed</td>
+<td> The speed at which to play the animation. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Start Offset</td>
+<td> The offset into the beginning of the animation at which to start playing. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">GAD</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Play Gad</td>
+<td> If true, gad information associated with this animation will be played. The animation will actually move the actor around. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Extend Gad Beyond Action</td>
+<td> If true, the movement caused by the gad will persist after this action has ended. If false, the actor will snap back to its actual keyed location. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Apply Rotation To Future Gads</td>
+<td> If true, the rotation of the gad is applied to future gads. This field should always be true, and mainly exists to support legacy assets. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Blend Gad</td>
+<td> If true and another gad plays at the same time as this one, the two gads' information will be blended together. Otherwise the two gads are added together. </td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Entrance Gad</td>
+<td> For normal gad behavior this flag should be false. However, for special entrance GADs it should be set to true. This field is automatically populated with the expected value when you set the animation. </td>
+</tr>
+
+<tr>
+<td width="13px" style="background-color:#d4d0c8;text-align:center; border: 1px solid #d4d0c8;">&#8863;</td>
+<td width="187px" style="background-color:#d4d0c8; text-align:left; color:#aca899; border: 1px solid #d4d0c8; font-weight:bold;">Keyable</td>
+</tr>
+<tr>
+<td style="background-color:#d4d0c8; border:1px solid #d4d0c8;"> </td>
+<td style="background-color:#ffffff; border:1px solid #d4d0c8; vertical-align:top">Weight</td>
+<td> The blend weight of the animation from 0 to 100 </td>
+</tr>
+</table>

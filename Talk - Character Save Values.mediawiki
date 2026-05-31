@@ -1,0 +1,11 @@
+<h2><span class="mw-headline" id="Savegame_format">Savegame format</span></h2>
+<p>what syntax/language are .das in? might be helpful to state how to read the file.
+</p>
+<dl><dd>I believe savegames are perfectly ordinary <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> files. See that page for information about the format. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20BryanDerksen" title="User:BryanDerksen">BryanDerksen</a> 07:49, 16 November 2009 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Editing_skills_and_talent_columns">Editing skills and talent columns</span></h2>
+<p>Just editing the section with the skills and talents for easier reference for me and others.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Power_of_Blood_Talents.3F">Power of Blood Talents?</span></h2>
+<p>Does anyone have these?
+</p>

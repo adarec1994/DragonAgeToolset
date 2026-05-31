@@ -1,0 +1,218 @@
+<p>Dragon Age makes extensive use of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a> to define things. As such, a fundamental requirement for many mods is editing the information contained within one or more 2DAs, be it changing existing values or adding additional content. As the game can only address a single copy of any one file, problems would occur if multiple mods each included edited copies of the same 2DA. Fortunately, the 2DA system makes provision for this via <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA#Extending_the_game_via_M2DAs" title="2DA">M2DAs</a> (Multiple 2DA). This system allows most 2DAs to be <i>extended</i> (only replacing specific content/adding new content) rather than <i>overridden</i> (replacing the entire file). In this way, edits of a single 2DA across multiple mods can effectively stack without conflicting with one another. 
+</p><p>A note on file formats/nomenclature. Whilst 2DAs are essentially just simple spreadsheets and the source files are provided in XLS (Excel) format, the game (and toolset) requires that they be encapsulated in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GFF" title="GFF">GFF</a> formatted version known as <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GDA" title="GDA">GDAs</a> in order to be useable. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Source_File_Preparation"><span class="tocnumber">2</span> <span class="toctext">Source File Preparation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#2DA_Editing"><span class="tocnumber">3</span> <span class="toctext">2DA Editing</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Compiling_GDAs"><span class="tocnumber">4</span> <span class="toctext">Compiling GDAs</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Testing"><span class="tocnumber">5</span> <span class="toctext">Testing</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Troubleshooting"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Resources"><span class="tocnumber">7</span> <span class="toctext">Resources</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>In order to illustrate the process of extending a GDA, we will use a set of armour as an example. Weapons and armour collectively are one of the most common types of mod, and both are functionally identical in terms of GDA extension. The general principles are also applicable to all other types of GDA extension.
+</p><p>In this particular instance, we will make a new set of massive armour comprising the chest piece, gloves, and boots. Rather than override the appearance of existing items, we will take advantage of GDA extension to add these to the game as an additional set of item appearances. In terms of DA items, this is referred to as adding a new variation. Note that a variation is just a physical appearance (i.e. a specific model and texture combination) and separate from the concept of an item in its in-game usage (i.e. stats and properties). A single item can use any of the different variations that have been defined for that particular item type by the appropriate GDA.
+</p>
+<h2><span class="mw-headline" id="Source_File_Preparation">Source File Preparation</span></h2>
+<p>To begin with, we need the model files and associated textures. Models may be custom made, or, as in this example, simply renamed copies of base game models. In either case, it is important to follow the appropriate <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Naming%20conventions#Items" title="Naming conventions">DA naming conventions</a>. The Human male models for our example will be named as follows:
+</p>
+<table>
+<tr>
+<td> Chest piece: </td>
+<td> hm_arm_goldena_0
+</td></tr>
+<tr>
+<td> Boots: </td>
+<td> hm_boo_goldena_0
+</td></tr>
+<tr>
+<td> Gloves: </td>
+<td> hm_glv_goldena_0
+</td></tr></table>
+<p>Models for LODs and other sex/races should follow the same format.
+</p><p>Now we need to obtain the relevant 2DAs. The source files for the game’s 2DAs are located in &lt;DA install dir&gt;\tools\Source\2DA\ and its sub-folders. For M2DAs, a list is given in the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/M2DA%20base%202da" title="M2DA base 2da">M2DA_base</a> sheet of <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20base.xls" title="2DA base.xls">2DA_base.xls</a>. Note that M2DA_base only lists the <i>worksheet</i> name, not the <i>file</i> name. As many 2DAs are often stored together as separate worksheets in a single file, particular 2DAs are sometimes difficult to locate due to obscure/unintuitive file naming on Bioware’s part. In these instances it may be more expedient to simply extract the compiled GDA version of the 2DA from the game files and convert it to an XLS using <a rel="nofollow" class="external text" href="http://social.bioware.com/project/755/">GDApp</a>. Alternatively, refer to this <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20matrix" title="2da matrix">table of 2DA files/worksheets</a>.
+</p><p>In this case we are interested in the worksheets armor_massive_variation, boots_massive_variation and gloves_heavy_variation. These can be found in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ItemVariations.xls" title="ItemVariations.xls">ItemVariations.xls</a>, located in &lt;DA install dir&gt;\tools\Source\2DA\rules\. Rather than editing the source file, copy these 3 worksheets to a new file (keeping each to their own worksheet).
+</p>
+<h2><span class="mw-headline" id="2DA_Editing">2DA Editing</span></h2>
+<p>Using the existing rows as a guide, add a new row to each sheet with the pertinent info for the corresponding model. This is why following the proper file naming convention is important. You can duplicate the cell values of the existing rows for the icon, material and sound columns. The label column dictates what name for the variation will appear in the toolset, so use a value in this cell that is descriptive enough to recognise later. Finally, we need to add a custom ID number for each row. The original intention for this system was to allow IDs to range up into the billions, thereby reducing the likelihood of incompatibilities between mods due to ID clashes. Unfortunately, due to the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20High%20M2DA%20ID%20ranges%20might%20work%20in%20the%20toolset%2C%20but%20not%20in%20game" title="Bug: High M2DA ID ranges might work in the toolset, but not in game">presence of a bug</a> in the GFF item file format (UTI), items can only use IDs up to 255. <i><b>Therefore, if you are releasing your mod publicly there is a high likelihood of it being incompatible with some other mods due to ID clashes.</b></i> Bearing this in mind, choose a suitable ID higher than the existing values but below 255 for each sheet. These don’t have to be the same – each ID number is only relevant to the specific item class of its associated variation 2DA.
+</p><p>Once each worksheet has a fully filled out row for each of your new item variations, you can delete the other existing rows <i>except for the two header rows</i>. You should be left with something like this:
+</p>
+<table class="wikitable">
+<caption> Extended armor_massive_variation Worksheet
+</caption>
+<tr>
+<th scope="col"> ID
+</th>
+<th scope="col"> LABEL
+</th>
+<th scope="col"> MODELTYPE
+</th>
+<th scope="col"> MODELSUBTYPE
+</th>
+<th scope="col"> MODELVARIATION
+</th>
+<th scope="col"> ICONNAME
+</th>
+<th scope="col"> DEFAULTMATERIAL
+</th>
+<th scope="col"> SoundMatType
+</th></tr>
+<tr>
+<td> int
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> int
+</td>
+<td> int
+</td></tr>
+<tr>
+<td> 105
+</td>
+<td> Golden Armour
+</td>
+<td> arm
+</td>
+<td> golden
+</td>
+<td> a
+</td>
+<td> ****
+</td>
+<td> 2
+</td>
+<td> 13
+</td></tr></table>
+<table class="wikitable">
+<caption> Extended gloves_massive_variation Worksheet
+</caption>
+<tr>
+<th scope="col"> ID
+</th>
+<th scope="col"> LABEL
+</th>
+<th scope="col"> MODELTYPE
+</th>
+<th scope="col"> MODELSUBTYPE
+</th>
+<th scope="col"> MODELVARIATION
+</th>
+<th scope="col"> ICONNAME
+</th>
+<th scope="col"> DEFAULTMATERIAL
+</th></tr>
+<tr>
+<td> int
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> int
+</td></tr>
+<tr>
+<td> 105
+</td>
+<td> Golden Gloves
+</td>
+<td> glv
+</td>
+<td> golden
+</td>
+<td> a
+</td>
+<td> ****
+</td>
+<td> 2
+</td></tr></table>
+<table class="wikitable">
+<caption> Extended boots_massive_variation Worksheet
+</caption>
+<tr>
+<th scope="col"> ID
+</th>
+<th scope="col"> LABEL
+</th>
+<th scope="col"> MODELTYPE
+</th>
+<th scope="col"> MODELSUBTYPE
+</th>
+<th scope="col"> MODELVARIATION
+</th>
+<th scope="col"> ICONNAME
+</th>
+<th scope="col"> DEFAULTMATERIAL
+</th></tr>
+<tr>
+<td> int
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> string
+</td>
+<td> int
+</td></tr>
+<tr>
+<td> 105
+</td>
+<td> Golden Boots
+</td>
+<td> boo
+</td>
+<td> golden
+</td>
+<td> a
+</td>
+<td> ****
+</td>
+<td> 2
+</td></tr></table>
+<p>The final remaining step is to give each worksheet an appropriate name. In accordance with the M2DA system, each worksheet name must have a unique epithet appended to it. However, the character limit for the full worksheet name is capped at 27. Because the epithet must be prefixed with an underscore, many extended variation GDAs only have room for extremely short epithets. In the case of the current example, the chest piece and boots worksheet names both have 23 characters, whilst the gloves worksheet has 24. With 1 character lost to the underscore, that leaves 3 characters available for the former and only 2 for the latter. In the current example, the following was chosen:
+</p><p>armor_massive_variation_gld
+</p><p>boots_massive_variation_gld
+</p><p>gloves_massive_variation_gd
+</p><p><i><b>N.B. As with the ID number bug, the restrictions of the epithet length greatly increase the likelihood of clashes in some instances, so keep this in mind if publicly releasing a mod.</b></i>
+</p>
+<h2><span class="mw-headline" id="Compiling_GDAs">Compiling GDAs</span></h2>
+<p>With the 2DA worksheet editing finished, they now need to be compiled into the GDA format so that they are useable by the game and toolset. Move/paste a copy of the XLS into &lt;DA install dir&gt;\tools\ResourceBuild\Processors\ and then drag and drop it over ExcelProcessor.exe. A command-line window (i.e. DOS box) will briefly appear. If there are no problems, the window will close and one GDA for each worksheet will appear in the folder. If the window stays open, there has been some sort of error, which the processor should detail (commonly worksheet names longer than 27 characters). If this is the case, fix the XLS and try again.
+</p><p>The GDAs can now be moved to the appropriate folder for your Addin. You may first wish to check them with <a rel="nofollow" class="external text" href="http://social.bioware.com/project/755/">GDApp</a> to confirm all the values are correct. GDApp will allow you to edit GDAs directly, saving the need for recompiling from source XLS files.
+</p>
+<h2><span class="mw-headline" id="Testing">Testing</span></h2>
+<p>With the toolset open and your module loaded, either open an existing item or create a new one. In either case, make sure it is the appropriate type for the variation/s you have created. Now you should be able to go to the Item Variation section and select your newly added variation from the drop-down list. If all went to plan, you should get something like this:
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Extending%20GDA%20Toolset.jpg"><img alt="Extending GDA Toolset.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Extending_GDA_Toolset.jpg" width="500" height="283" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Extending_GDA_Toolset.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/c/c9/Extending_GDA_Toolset.jpg 2x" /></a>
+</p><p>If everything works as expected then you can export your items/module for use in the game. Make sure you test any content in the game before releasing it publicly.
+</p><p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/File%20-%20Extending%20GDA%20Game%20Test.jpg"><img alt="Extending GDA Game Test.jpg" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/94/Extending_GDA_Game_Test.jpg" width="500" height="377" srcset="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/94/Extending_GDA_Game_Test.jpg 1.5x, https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/9/94/Extending_GDA_Game_Test.jpg 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>The two most likely issues to occur are either your variation not appearing in the drop-down list, or when selecting it for there to be no model present. Both can be caused by GDA issues, but the latter may also be caused by problems with the model/s.
+</p><p>If the variation doesn’t appear in the list, check that the GDA filename (i.e. 2DA worksheet name) is correct. Also check if there is a clash between your chosen ID number and those of any other mods you may have installed.
+</p><p>If there is no model visible when you select your variation in the toolset, ensure that your GDA specifies the correct model name/s. Also make sure that you have models for the specific race/sex combination you are making an item for. As you will have noticed, when adding the filename information to the 2DA, you don’t enter any MainClass (i.e. race/sex) detail. Thus, a single row makes provision for all race/sex combinations. Therefore the toolset will apply your variation to any item of that class, expecting there to be a model present. Additionally, when extending GDAs outside of items, be aware that you may have to extend multiple GDAs to get the toolset to recognise your custom content. This is primarily the case in instances such as custom monsters/races, where specific creature/part variation GDAs may need to be extended as well as the appearance GDA.
+</p><p>If your item appears in the toolset but not in the game, it is almost always due to the aforementioned high ID bug. Check your GDA and lower the ID number under 255 if necessary.
+</p>
+<h2><span class="mw-headline" id="Resources">Resources</span></h2>
+<p>The source material used for the above example is available <a rel="nofollow" class="external text" href="http://dpmods.wheb.org/files/dao/DAO_GDA_Extension_Example.7z">here</a>.
+</p>

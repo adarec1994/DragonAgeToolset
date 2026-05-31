@@ -1,0 +1,33 @@
+<p><b>Back up your database before attempting the to move any resources.</b>
+</p><p>Only move custom resources: do not move core resources or resources from the Single Player campaign.
+</p><p>If you are only moving individual resources (rather than all of them) and you are trying to create two separate and distinct modules that are not connected through their hierarchy then you need to pay particular attention to the resources' dependencies. You may have to move additional custom resources or remove the dependency. For example if you are moving an area which contains a creature you will also have to move the creature resource or remove the creature from the area. If the dependencies are core resources or resources a third module, for example the Single Player campaign, you can ignore them.
+</p>
+<ol>
+<li>Create or open your new module
+<li>Select <b>File &gt; Manage Module</b> from the menu bar
+<li>Select you new module (if not already selected) and click the <b>Hierarchy ...</b> button
+<li>Check the check box next to your original module's name
+<li>Click the <b>OK</b> button to close the <b>Module Hierarchy</b> window
+<li>Click the <b>Close</b> button to close the <b>Manage Module</b> window
+</ol>
+<p>This now allows you to see all of your original module's resources in your new module. You may find it useful to go to the All palette (that's the last icon in the palette toolbar) and check in any resources that are currently checked out. 
+</p><p>The resources that belong to your original module should now have this icon: <img alt="IconOtherModuleResource.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/f/f1/IconOtherModuleResource.png" width="16" height="16" />
+</p><p>Note that resources from all the modules in your new module's hierarchy will have that icon. If you inherit from other modules or the Single Player campaign then you must be careful not to only select the resources from your original module.
+</p>
+<ol>
+<li value="7">Select the resource or resources you created for your original module
+<li>Right-click on one and select <b>Properties</b> from the context menu
+<li>Select the name of your new module from the <b>Module</b> and <b>Owner Module</b> lists
+<li>Click the <b>OK</b> button.
+</ol>
+<p>The resources that used to belong to your original module should now have this icon: <img alt="Checked in resource icon.png" src="https://raw.githubusercontent.com/adarec1994/DragonAgeToolset/main/assets/mw/images/5/5b/Checked_in_resource_icon.png" width="16" height="16" />
+</p>
+<ol>
+<li value="11">Select <b>File &gt; Manage Module</b> from the menu bar
+<li>Select you new module (if not already selected) and click the <b>Hierarchy ...</b> button
+<li>Uncheck the check box next to your original module's name
+<li>Click the <b>OK</b> button to close the <b>Module Hierarchy</b> window
+<li>Click the <b>Close</b> button to close the <b>Manage Module</b> window
+</ol>
+<p>If you have done things correctly then the selected resources from your original module will have been transferred to your new module. If you have missed any dependencies you will get some error messages saying resources are missing. Don't panic! Click through the error messages and then repeat steps 2 to 15 paying closer attention to any resources you may have missed.
+</p>

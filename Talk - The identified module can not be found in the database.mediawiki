@@ -1,0 +1,9 @@
+<p>Hi, I'm Nancy and I know absolutely nothing about programming but I solved finally with a brute force, I have Windows XP, but I believe that Windows 7 should be very similar. The files of the database are in the folder
+C: \ Program Files \ DAODB \ Data (Win XP)
+(bw_dragonage_content.mdf and. ldf)
+</p><p>if you copy in
+C: \ Program Files \ DAODB \ MSSQL.1 \ MSSQL \ Data
+</p><p>files will be included in the database sql default, which is what loads when you open Dragon Age Toolset.
+I did so and when I opened the window DAToolset Windows palette was the Global folder with its branches and resources.
+So far I can use the toolset and test module that I'm starting to do in the game
+</p>

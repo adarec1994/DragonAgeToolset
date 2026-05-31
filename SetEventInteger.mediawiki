@@ -1,0 +1,34 @@
+<p>Sets the specified integer on the event.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> SetEventInteger(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">event</a> evEvent,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nIndex,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nValue<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">evEvent<dd>The event to set the integer on<dt style="font-weight:normal; font-style:italic;">nIndex<dd>The index of the integer to set<dt style="font-weight:normal; font-style:italic;">nValue<dd>The value of the integer to set
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the modfied event, returns an invalid event on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Sets the specified integer on the event.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>It should be noted that there is no maximum number of values on an event, as the array of values on the event expands as needed.
+</p><p>The event returned is a new event. So, for example,
+</p>
+<pre>
+event ev       = GetCurrentEvent();
+event evEvent2 = Event(EVENT_TYPE_SPELLSCRIPT_AFTER_EFFECTS);
+
+eEvent2 = SetEventInteger(evEvent2, 0, ABILITY_SPELL_BLIZZARD);
+DelayEvent(1.0f, GetEventTarget(ev), evEvent2, "my_script");
+</pre>
+<p>will not work without the assignment in the third line. 
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventInteger" title="GetEventInteger">GetEventInteger</a>
+</p>

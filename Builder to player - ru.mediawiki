@@ -1,0 +1,74 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Создание архива для игрока</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://datoolset.net/wiki/Builder_to_player/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;" class="collapsible">
+
+<tr>
+<th align="center"> Модули
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20-%20ru" title="Module/ru">Основная информация</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20a%20module%20-%20ru" title="Creating a module/ru">Создание модуля</a> </li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Manage%20modules%20-%20ru" title="Manage modules/ru">Управление модулями</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Feature%20request%20-%20Deleting%20a%20module%20-%20ru" title="Feature request: Deleting a module/ru">Удаление модуля</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20a%20module%20-%20ru" title="Exporting a module/ru">Экспорт модуля</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Exporting%20and%20running%20a%20module%20-%20ru" title="Exporting and running a module/ru">Cтартовая локация</a></li>
+<li><strong class="selflink">Архив для игрока</strong></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20builder%20-%20ru" title="Builder to builder/ru">Архив для разработчика</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Module%20Priority%20Tutorial%20-%20ru" title="Module Priority Tutorial/ru">Новый модуль и DLC</a></li></ul>
+<dl><dd><small>Обеспечение совместимости между новым модулем и официальными DLC</small></dd></dl>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events%20-%20ru" title="Category:Module events/ru (page does not exist)">События модуля</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Module%20events" title="Category:Module events">(en)</a></li></ul>
+<dl><dd><small>Категория, содержащая описания и параметры событий модуля</small></dd></dl>
+</td></tr></table>
+<p>"Builder to player" - это функция упаковки ресурсов модуля в файл, который легко устанавливается игроками на своих компьютерах.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9E.D0.B1.D0.B7.D0.BE.D1.80"><span class="tocnumber">1</span> <span class="toctext">Обзор</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.9E.D1.80.D0.B3.D0.B0.D0.BD.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2"><span class="tocnumber">2</span> <span class="toctext">Организация ресурсов</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9F.D0.BE.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.B0.D1.8F_.D0.B8.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.BA.D1.86.D0.B8.D1.8F"><span class="tocnumber">3</span> <span class="toctext">Пошаговая инструкция</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D0.B7.D0.BE.D1.80">Обзор</span></h2>
+<p>"Builder to player" упаковывает любые ресурсы, которые необходимо установить на другом компьютере в один файл, именуемый <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP%20-%20ru" title="DAZIP/ru (page does not exist)">DAZIP</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">(en)</a>. Вам же необходимо выбрать ресурсы и файлы в окне, в котором доступные ресурсы представлены древовидной структурой. Доступными будут ресурсы, находящиеся в папках "core" и "module" вашего модуля, и папки "override" основных ресурсов ("(Мои документы)\BioWare\Dragon Age\packages\core\override\toolsetexport"). 
+</p><p><b>Таким образом очень важно, чтобы ресурсы вашего модуля были правильно организованы.</b>
+</p><p>Пункт "Builder to player" находится в меню "Tools -&gt; Builder".
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D1.80.D0.B3.D0.B0.D0.BD.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2">Организация ресурсов</span></h2>
+<p>Хотя тулсет экспортирует ресурсы из базы данных в правильные папки, однако художка и 2DA-файлы, создаваемые в сторонних программах, вы располагаете вручную.
+</p><p>Обычно, при первом изучении тулсета и начале разработки модов, такие файлы располагают в первую попавшуюся папку "override", по принципу "лишь бы работало". Тулсет и игра могут прочитать любую такую папку и до поры до времени это не причиняет вреда. Однако, функция "builder to player" требует чёткой организации файлов, для того, чтобы она могла упаковать все необходимые файлы, так как модуль будет запускаться на другом компьютере. Так что учитесь изначально правильно организовывать папки.
+</p><p>Основной выбор лежит между двумя папками, в зависимости от того, хотите ли вы, чтобы ресурс использовался только вашим модулем("module"), или всеми модулями ("core"). 
+</p>
+<pre>(Мои Документы)\BioWare\Dragon Age\AddIns\(Имя модуля)\module\override\toolsetexport\
+(Мои Документы)\BioWare\Dragon Age\AddIns\(Имя модуля)\core\override\toolsetexport\</pre>
+<p>Другая папка, файлы которой могут быть включены в dazip, это папка "override", основных ресурсов. Используйте эту папку очень осторожно, так как она зарезервирована для переопределения всех ресурсов игры, независимо от того, включен ли ваш модуль.
+</p>
+<pre>(Мои Документы)\BioWare\Dragon Age\packages\core\override\toolsetexport\</pre>
+<p>Кроме того, во время экспорта ресурсов в эту папку экспортируются и основные ресурсы игры, которые являются просто своими дубликатами, если вы их не редактировали, конечно. Эти дубликаты должны удаляться, так как создают потенциальную опасность возникновения проблем в основной кампании (смотрите: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20export%20creates%20unnecessary%20core%20override%20-%20ru" title="Bug: export creates unnecessary core override/ru (page does not exist)">Ошибка: Создание при экспорте ненужных файлов</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bug%20-%20export%20creates%20unnecessary%20core%20override" title="Bug: export creates unnecessary core override">(en)</a>).
+Если же все ваши ресурсы расположены в папке вашего модуля, вы всегда можете легко их отыскать, выбрать, удалить.
+</p><p>Итак, файлы, которые должны иметься на момент создания архива для игрока(конечно в случае их наличия в вашем модуле):
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Designer%20Resources%20-%20ru" title="Designer Resources/ru">Ресурсы из базы данных</a>.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources%20-%20ru" title="Art Resources/ru (page does not exist)">Художка</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Art%20Resources" title="Art Resources">(en)</a>.</li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA-файлы</a>.</li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D1.88.D0.B0.D0.B3.D0.BE.D0.B2.D0.B0.D1.8F_.D0.B8.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.BA.D1.86.D0.B8.D1.8F">Пошаговая инструкция</span></h2>
+<p>1. Начало: Начните процесс создания архива для игрока выбрав в меню "Tools -&gt; Builder -&gt; Builder to player package".
+</p><p>2. Выбор манифеста: Манифест, это список экспортируемых ресурсов. Манифест можно будет сохранить после выбора экспортируемых ресурсов для того, чтобы при следующем экспорте этого модуля не было необходимости заново выбирать все ресурсы. На этом этапе нужно выбрать сохранённый ранее манифест, либо нажать кнопку отмены.
+</p><p>3. Теперь тулсет выведет списком все ресурсы, которые он может упаковать, включая 2DA-файлы, художку и ресурсы из базы данных. В этом списке вы можете выбрать ресурсы, которые будут упакованы (обычно нет необходимости упаковывать основные ресурсы игры, например из папки "(Мои документы)\BioWare\Dragon Age\packages\core\override\toolsetexport"). В процессе упаковки создаются 3 файла <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF%20-%20ru" title="ERF/ru (page does not exist)">ERF</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ERF" title="ERF">(en)</a> (один на каждую вышеперечисленную директорию), которые упаковываются в один <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP%20-%20ru" title="DAZIP/ru (page does not exist)">DAZIP</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DAZIP" title="DAZIP">(en)</a> вместе с файлом манифеста. Для установки на компьютер игроков можно использовать поставляемую вместе с игрой программу DAUpdater, либо сторонние утилиты, например DAModder.
+</p><p>4. После того как вы выбрали <b>ВСЕ</b> необходимые ресурсы (если каких-то файлов нет, то читайте выше про организацию файлов), вы можете выбрать место для сохранения dazip'a и завершить процесс подготовки к упаковке. Нажмите кнопку сохранения.
+</p><p>5. При желании создайте Манифест, который вы сможете использовать при следующем экспорте.
+</p><p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Builder%20to%20player" title="Builder to player">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

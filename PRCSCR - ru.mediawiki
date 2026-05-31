@@ -1,0 +1,49 @@
+<table style="width:100%;">
+<tr>
+<td style="font-size:18pt; font-weight:bold;"><b>Система PRCSCR</b>
+</td></tr></table> 
+<table style="width:100%;">
+<tr>
+<td style="font-size:8pt;"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Начало</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20DA%20Builder%20Wiki" title="Category:Русская DA Builder Wiki">Русская DA Builder Wiki</a> / <a rel="nofollow" class="external text" href="http://vk.com/share.php?url=http://www.datoolset.net/wiki/PRCSCR/ru">Поделиться ВКонтакте</a>
+<hr />
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.92.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Введение</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#PRCSCR_M2DA"><span class="tocnumber">2</span> <span class="toctext">PRCSCR M2DA</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B"><span class="tocnumber">3</span> <span class="toctext">Скрипты</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">4</span> <span class="toctext">Применение</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.92.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5">Введение</span></h2>
+<p>Система PRCSCR позволяет моддеру добавить свой контент в существующие локации кампании, запуская выбранный скрипт при загрузке локации. Эта система полностью совместима с существующими ресурсами игры и сторонними модами, чем она и особо ценна.
+</p><p>Преимущество PRCSCR в том, что данная схема позволяет избежать изменений ресурсов основной компании, которые могут повлечь сбои в работе игры.   При использовании данной системы, с помощью PRCSCR-файла, игра определяет скрипт, которые необходимо запустить на исполнение при входе в локацию, принадлежащую выбранному скрипту. При использовании нескольких PRCSCR-файлов для одной локации все связанные скрипты будут запущены на исполнение.
+</p>
+<h2><span class="mw-headline" id="PRCSCR_M2DA">PRCSCR M2DA</span></h2>
+<p>Система PRCSCR работает используя M2DA-файл. Более подробное описание 2DA, создание таблицы и её преобразование, описаны в статьях <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Compiling%202DAs%20-%20ru" title="Compiling 2DAs/ru">Создание 2DA</a>.
+</p><p>Обязательным условием для того, чтобы игра нашла ваш PRCSCR-файл, является то, что лист в книге Excel, а также и сам файл после компиляции, должен именоваться начиная с <b>"PRCSCR_"</b>, суффикс же может быть любой на ваш выбор (главное не используйте кириллицу).
+</p><p>Более подробно про создание собственно самого PRCSCR-фала вы сможете прочитать по ссылке <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR.xls%20-%20ru" title="PRCSCR.xls/ru">PRCSCR.xls</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B">Скрипты</span></h2>
+<p>Весьма полезным свойством PRCSCR является то, что она может запустить любой скрипт по вашему желанию. Запуская скрипты с помощью системы PRCSCR вы сможете: поместить вещи в существующие контейнеры либо продавцам; добавить точку выхода на карту; заспаунить НПС; установить двери/переходы в другие локации; установить значение Plot-флага... и т.д. и т.п. 
+На странице с <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR%20Script%20Templates%20-%20ru" title="PRCSCR Script Templates/ru">шаблонами скриптов PRCSCR</a> вы найдёте подборку скриптов, заточенных под эту систему.
+</p><p><b>Обратите внимание</b>: Скрипт запускается каждый раз, когда игрок заходит в локацию. Используйте <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Plot%20-%20ru" title="Plot/ru">Plot-флаги</a> или условия в скрипте, если вам необходимо, чтобы скрипт запускался только один раз.
+</p><p><b>Обратите внимание</b>: При использовании скриптов есть небольшие ограничения, а именно добавление на локацию торговца или <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Stage%20-%20ru" title="Stage/ru">сцены</a>. Для добавления торговца посредством PRCSCR-системы вам необходимо проделать дополнительную работу (например создайте торговца в локации, находящейся в том же списке локации, что и требуемая вам и тогда посредством PRCSCR-системы переместите торговца в открываемую локацию).
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5">Применение</span></h2>
+<p><b>Когда применять:</b>
+</p>
+<ul><li>Вы сделали новую локацию и вам требуется, что бы дверь из существующей локации появилась в новой. С помощью PRCSCR  вы можете поместить нужную дверь без изменения самой локации.</li></ul>
+<ul><li>Вы сделали новую вещь. С помощью PRCSCR вы можете добавить свою вещь торговцу или в контейнер при загрузке локации без непосредственного изменения торговца или контейнера.</li></ul>
+<ul><li>Вы добавили на карту мира значок созданной вами локации (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial%20-%20ru" title="Map tutorial/ru (page does not exist)">учебник по картам</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Map%20tutorial" title="Map tutorial">(en)</a>). С помощью PRCSCR вы можете вызвать её появление на карте мира, а также отслеживать условия его появления с помощью условий в скрипте или Plot-флагов (например значок должен появляться на карте только после уничтожения Лотеринга).</li></ul>
+<p><b>Когда применять нет смысла:</b>
+</p>
+<ul><li>Вы сделали новую локацию, разместили в ней вещи и персонажей. Так как эта локация является уникальным содержанием вашего мода у вас нет необходимости применять PRCSCR для его изменения. Хотя в данном случае можно использовать PRCSCR для добавления ссылки на вашу локацию из другой локации или с карты мира.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Язык:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PRCSCR" title="PRCSCR">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><strong class="selflink">русский</strong></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

@@ -1,0 +1,16 @@
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "String functions"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-category"><div class="mw-category-group"><h3>F</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/FindSubString" title="FindSubString">FindSubString</a></li></ul></div><div class="mw-category-group"><h3>G</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetStringByStringId" title="GetStringByStringId">GetStringByStringId</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetStringLength" title="GetStringLength">GetStringLength</a></li></ul></div><div class="mw-category-group"><h3>I</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/InsertString" title="InsertString">InsertString</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsStringEmpty" title="IsStringEmpty">IsStringEmpty</a></li></ul></div><div class="mw-category-group"><h3>S</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringLeft" title="StringLeft">StringLeft</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringLowerCase" title="StringLowerCase">StringLowerCase</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringRight" title="StringRight">StringRight</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/StringUpperCase" title="StringUpperCase">StringUpperCase</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SubString" title="SubString">SubString</a></li></ul></div><div class="mw-category-group"><h3>U</h3>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UT%20FindSubString" title="UT FindSubString">UT FindSubString</a></li></ul></div></div></div>
+</div></div>

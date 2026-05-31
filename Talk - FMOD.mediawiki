@@ -1,0 +1,10 @@
+<p>Getting WAVs into the Toolset:  Quick and Step By Step.
+</p><p>1)  Fire up FMOD.  Mine is C:/Program Files/Dragon Age/tools/FMOD Designer/fmod_designer.exe
+</p><p>2)  In FMOD select File, New Project.  The file name you use (without the directory or extension) will be the outermost folder in the Toolset's Sounds palette list.  The game uses names like 'bcd_proving' here.  Note:  Caps and spaces are OK.  Imagine that.
+</p><p>3)  FMOD's main window should be showing the Events tab with the Hierarchy subtab.  Click on 'untitled' in the hierarchy and change it's name in the Hierarchy Properties box, lower right.  The name you enter will be used as a subfolder in the Toolkit's Sounds palette list.  The game uses names like '3d_areaeffect' here.
+</p><p>4)  Set the output or Build directory in the Project Properties box, upper right.  Mine is 'My Documents/Bio Ware/Dragon Age/AddIns/&lt;module name&gt;/module/override'
+</p><p>5)  Drag-and-Drop .wav files (.midi too!) onto the hierarchy folder you renamed in step 3 above.
+</p><p>6)  The file should be displayed under the folder.  If you can't see it, make sure the folder is open (click the + to the left of the folder.)  Double-click it.  FMOD should switch to the Events tab.  The defaults work for me, I can tweak it up later.
+</p><p>7)  In the main menu click Build, Build project...  Check the default wave bank check box (or Select All), click Build, OK, then Close.
+</p><p>8)  Fire up the Toolset and check out your wav file in the Sounds palette under the folders you created in FMOD.  Too cool!
+</p>

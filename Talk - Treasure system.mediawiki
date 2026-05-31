@@ -1,0 +1,3 @@
+<p>I modified the table in regards to "TS_OVERRIDE_EQUIPMENT_CHANCE". This value is actually a percent chance of any particular piece of equipped gear dropping. Furthermore, if you leave it at 0.0, then the stupid treasure system pulls a default value out of the AUTOSCALE table.
+--<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20JJM152" title="User:JJM152">JJM152</a> 05:00, 20 December 2009 (UTC)
+</p>

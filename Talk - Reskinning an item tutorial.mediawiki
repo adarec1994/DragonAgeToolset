@@ -1,0 +1,19 @@
+<p>Thanks for the tutorial on reskinning an item!
+</p><p>One question:  How do I <i>recolor</i> a texture?  The colors that the characters are wearing in-game seem to have nothing to do with the colors of the textures in the .dds files.
+</p><p>The main mage robe texture file, pf_rob_appb_0dl2.dds, has very little color, and if I recolor it, as you'd expect, nothing happens.  And if I look at pf_rob_appb_0t.dds, it's intense shades of red, blue, and green, which seem designed to tell the game where to put various colors, rather than which colors those are.  So where do the specific colors come from?
+</p><p>I've recolored a lot of files for <i>The Witcher,</i> so I know how to recolor a .dds file.  But in <i>The Witcher,</i> you get whatever color you've made the texture.  Where are the colors stored for <i>Dragon Age</i>?
+</p><p>My mage has an orange-and-green set of robes, and I'd like a different color scheme. 
+</p><p>Thanks!
+</p><p><br />
+Corylea
+</p>
+<dl><dd>You'll want to read up on the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Material%20Tint%20System" title="Material Tint System">Material Tint System</a> and check out the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creating%20recolors%20of%20existing%20items%20tutorial" title="Creating recolors of existing items tutorial">Creating recolors of existing items tutorial</a> and <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Overriding%20and%20creating%20tints%20tutorial" title="Overriding and creating tints tutorial">Overriding and creating tints tutorial</a> on tinting. <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nezroy" title="User:Nezroy (page does not exist)">Nezroy</a> 18:00, 26 February 2010 (UTC)</dd></dl>
+<p><br />
+Where are the files for the Blood Dragon Armor called?
+</p><p>What program do you use to open the ERFs?
+---Skyintheeye
+</p>
+<dl><dd>The toolset can open ERFs. Just use the File-&gt;Open command and locate the ERF to open. Then right-click on a file in the list and select "Extract Resource" (or alternatively you can use "Extract All Resources" to dump the contents of the entire ERF somewhere). <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Nezroy" title="User:Nezroy (page does not exist)">Nezroy</a> 18:01, 26 February 2010 (UTC)</dd></dl>
+<h2><span class="mw-headline" id="Complete_nonsense">Complete nonsense</span></h2>
+<p>This "tutorial" states "In this File is a hidden reference to the MAO Material file." referring to the MMH file. Rubbish. The material object filename is towards the end of the MMH. This, and what follows, is seriously misleading. Will fix when I get some time. --<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Gaxkang55" title="User:Gaxkang55">Gaxkang55</a> 11:30, 15 December 2010 (UTC)
+</p>

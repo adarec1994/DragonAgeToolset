@@ -1,0 +1,155 @@
+<div class="redirectMsg"><p>Redirect to:</p><ul class="redirectText"><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0" title="Я редактор">Я редактор</a></li></ul></div><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9E.D0.B1_.D1.8D.D1.82.D0.BE.D0.B9_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Об этой странице</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A0.D0.B5.D0.B3.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.86.D0.B8.D1.8F_.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0"><span class="tocnumber">2</span> <span class="toctext">Регистрация и настройка</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4"><span class="tocnumber">3</span> <span class="toctext">Перевод</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.94.D0.BE.D0.BF.D0.BE.D0.BB.D0.BD.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE"><span class="tocnumber">4</span> <span class="toctext">Дополнительно</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.9C.D0.B5.D0.BD.D1.8E_.D0.B2.D1.8B.D0.B1.D0.BE.D1.80.D0.B0_.D1.8F.D0.B7.D1.8B.D0.BA.D0.BE.D0.B2"><span class="tocnumber">4.1</span> <span class="toctext">Меню выбора языков</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.A0.D1.83.D1.81.D1.81.D0.BA.D0.BE.D0.B5_.D0.BD.D0.B0.D0.B8.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5"><span class="tocnumber">4.2</span> <span class="toctext">Русское наименование</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8E_Translations_ru"><span class="tocnumber">4.3</span> <span class="toctext">Добавление в категорию <b>Translations_ru</b></span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BD.D0.B0.D0.BF.D1.80.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.81.D1.8B.D0.BB.D0.BE.D0.BA"><span class="tocnumber">4.4</span> <span class="toctext">Перенаправление ссылок</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.D0.A0.D1.83.D1.81.D1.81.D0.BA.D0.B0.D1.8F_.D0.BD.D0.B0.D0.B2.D0.B8.D0.B3.D0.B0.D1.86.D0.B8.D1.8F"><span class="tocnumber">4.5</span> <span class="toctext">Русская навигация</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4.D1.87.D0.B8.D0.BA.D0.B8"><span class="tocnumber">5</span> <span class="toctext">Переводчики</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9E.D0.B1_.D1.8D.D1.82.D0.BE.D0.B9_.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B8.D1.86.D0.B5">Об этой странице</span></h2>
+<p>Итак, как переводить DA Builder Wiki, а если по русски, то Базу знаний разработчика расширений Dragon Age?
+Для начала назовём её Вики, так будет удобнее.
+</p><p>Все очень просто!
+</p>
+<h2><span class="mw-headline" id=".D0.A0.D0.B5.D0.B3.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.86.D0.B8.D1.8F_.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0">Регистрация и настройка</span></h2>
+<ul><li> Зарегистрируйтесь на Вики.</li>
+<li> Поменяйте в настройках язык интерфейса на "<b>ru</b>".</li></ul>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4">Перевод</span></h2>
+<ul><li> Выберите страницу, которую вы хотите перевести и перейдите на неё.</li>
+<li> Добавьте в строке адреса, после названия страницы, постфикс "/ru".
+<ul><li> Если страница откроется и будет содержать какие-либо данные, значит кто-то уже занялся ее переводом. Вы можете помочь ему, перейдя в режим редактирования.</li>
+<li> Если вам сообщат, что такой страницы нет - создайте ее, после чего, перейдя в режим редактирования, начинайте ввод данных. Легче всего будет скопировать все содержимое иноязычной версии страницы в новую, после чего начать редактировать, меняя содержимое по несколько абзацев.</li></ul></li>
+<li> После завершения перевода страницы или ее части - нажмите кнопку предпросмотра и, если вас все устроит, сохраните изменения.</li></ul>
+<p><b>Внимание:</b>
+</p>
+<ul><li> Будьте очень аккуратны при редактировании страниц. Следите за тем - какую страницу вы редактируете (чтобы не испортить чужую). </li>
+<li> Если вы прежде не работали в таких системах как Вики, то будьте вдвойне внимательны и постарайтесь изучить синтаксис вики-разметки. </li>
+<li> Если же вы все-таки что-то испортили, перейдите в раздел истории страницы и восстановите предыдущую версию.</li></ul>
+<h2><span class="mw-headline" id=".D0.94.D0.BE.D0.BF.D0.BE.D0.BB.D0.BD.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE">Дополнительно</span></h2>
+<p>Для того, чтобы ваш перевод заметили, а другие пользователи могли вам помочь, а также для удобства работы и навигации, необходимо:
+</p>
+<ul><li> Вставить меню выбора языка.</li>
+<li> Указать русское наименование.</li>
+<li> Указать категорию, к которой относится страница, в русской части Вики.</li></ul>
+<h3><span class="mw-headline" id=".D0.9C.D0.B5.D0.BD.D1.8E_.D0.B2.D1.8B.D0.B1.D0.BE.D1.80.D0.B0_.D1.8F.D0.B7.D1.8B.D0.BA.D0.BE.D0.B2">Меню выбора языков</span></h3>
+<ul><li> В конце (перед списком категорий) страницы, которую вы переводите, вставьте шаблон меню выбора языков:
+<ul><li> На странице оригинала: <b>{{Languages}}</b>.</li>
+<li> На переведённой странице: <b>{{Languages|Название оригинальной страницы}}</b>.</li></ul></li></ul>
+<p>Это создаст внизу страницы (перед категориями) меню выбора языков.
+</p><p><b>Пример:</b>
+</p>
+<table>
+<tr>
+<td>Исходный код:
+</td>
+<td>&#160;
+</td>
+<td>На выходе:
+</td></tr>
+<tr>
+<td> <pre>
+{{Languages|Translation}}
+</pre>
+</td>
+<td>
+<table cellspacing="10">
+<tr>
+<td>&#160;
+</td>
+<td>&#160;
+</td></tr></table>
+</td>
+<td>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Translation" title="Translation (page does not exist)">English</a></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%83" title="Translation/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>
+</td></tr></table>
+<p><b>Внимание:</b>
+</p>
+<ul><li> Заменять пробел между словами в названии оригинальной страницы подчёркиванием <b>не надо</b>.</li>
+<li> Убедитесь что строчка меню прописана и на странице оригинала - тогда пользователи смогут перейти на ее русский вариант.</li>
+<li> Меню выбора языка располагайте только в нижней части страницы! Это требование администрации Вики!</li>
+<li> Более подробно с языковой политикой Вики вы можете ознакомиться на <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy%20-%20ru" title="Dragon Age Toolset Wiki:Language policy/ru">Языковая политика</a>.</li></ul>
+<h3><span class="mw-headline" id=".D0.A0.D1.83.D1.81.D1.81.D0.BA.D0.BE.D0.B5_.D0.BD.D0.B0.D0.B8.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5">Русское наименование</span></h3>
+<p>Для того, чтобы вставить русское наименование страницы вставьте в самом её верху следующий шаблон:
+</p>
+<pre>{{rupage|Наименование|Перевод: [[User:Kelamor|kelamor]] / [[:Category:Русская_DA_Builder_Wiki|Переводим Wiki]]}}</pre>
+<p>В данном шаблоне вам необходимо заменить <b>Наименование</b> и <b>[[User:Kelamor|kelamor]]</b>.
+</p><p>Если над страницей работает несколько переводчиков, то шаблон должен иметь следующий вид:
+</p>
+<pre>{{rupage|Наименование|Перевод: [[User:Kelamor|kelamor]], [[User:Equilibrium Keeper|Equilibrium Keeper]] / [[:Category:Русская_DA_Builder_Wiki|Переводим Wiki]]}}</pre>
+<p>Если вы не хотите указывать себя в качестве переводчика, то шаблон должен иметь следующий вид:
+</p>
+<pre>{{rupage|Наименование|[[:Category:Русская_DA_Builder_Wiki|Переводим Wiki]]}}</pre>
+<h3><span class="mw-headline" id=".D0.94.D0.BE.D0.B1.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B2_.D0.BA.D0.B0.D1.82.D0.B5.D0.B3.D0.BE.D1.80.D0.B8.D1.8E_Translations_ru">Добавление в категорию <b>Translations_ru</b></span></h3>
+<p>В конце страницы, которую вы переводите, вставьте следующую строку: <b>[[Category:Translations_ru]]</b>. Это добавит страницу в категорию <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20%D0%9E%D0%B1%D1%89%D0%B8%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B4%D1%91%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86" title="Category:Translations ru">Translations_ru</a>, где пользователи смогут увидеть - переводы каких страниц уже существуют.
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BD.D0.B0.D0.BF.D1.80.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.81.D1.8B.D0.BB.D0.BE.D0.BA">Перенаправление ссылок</span></h3>
+<p>Если в тексте страницы, которую вы переводите, будут встречаться ссылки на другие страницы на языках отличных от русского, следует изменить их, перенаправив на русские версии страниц(в случае отсутствия переведённой страницы автоматически добавится ссылка на оригинальную английскую страницу <b>(en)</b>).
+</p><p><b>Чтобы упростить себе (и другим) жизнь</b>, рекомендуется использовать универсальный шаблон <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Translate-link" title="Template:Translate-link">Template:Translate-link</a> (примеры использования по ссылке) или его короткую версию <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%20Ulink" title="Template:Ulink">Template:Ulink</a>.
+</p><p><b>Основные способы использования:</b>
+</p>
+<table style="border:thin solid grey" cellpadding="3" cellspacing="0">
+<tr>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey">Исходный код:
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey;border-right:thin solid grey">Условие использования:
+</td>
+<td style="background-color:#EEF;border-bottom:thin solid grey">На выходе:
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><pre>{{ulink|Main Page}}</pre>
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">С русскоязычной страницы (с суффиксом <b>"/ru"</b>) без указания русского названия страницы
+</td>
+<td style="border-bottom:thin solid grey"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">Translate-link: <span style="color:#CC2200">GETTING_LANGUAGE_ERROR</span></a>
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><pre>{{ulink|Main Page|Wiki - Начало}}</pre>
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">С русскоязычной страницы (с суффиксом <b>"/ru"</b>) с указанием русского названия страницы
+</td>
+<td style="border-bottom:thin solid grey"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Home" title="Main Page">Translate-link: <span style="color:#CC2200">GETTING_LANGUAGE_ERROR</span></a>
+</td></tr>
+<tr>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey"><pre>{{ulink|Main Page||ru}}
+
+или
+
+{{ulink|Main Page|3=ru}}</pre>
+</td>
+<td style="border-bottom:thin solid grey;border-right:thin solid grey">С оригинальной(англоязычной) либо иноязычной страницы без указания русского названия страницы
+</td>
+<td style="border-bottom:thin solid grey"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Main Page</a>
+</td></tr>
+<tr>
+<td style="border-right:thin solid grey"><pre>{{ulink|Main Page|Wiki - Начало|ru}}</pre>
+</td>
+<td style="border-right:thin solid grey">С оригинальной(англоязычной) либо иноязычной страницы с указанием русского названия страницы
+</td>
+<td><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Main Page/ru">Wiki - Начало</a>
+</td></tr></table>
+<h3><span class="mw-headline" id=".D0.A0.D1.83.D1.81.D1.81.D0.BA.D0.B0.D1.8F_.D0.BD.D0.B0.D0.B2.D0.B8.D0.B3.D0.B0.D1.86.D0.B8.D1.8F">Русская навигация</span></h3>
+<p>Для того, чтобы справа отображалось русскоязычное меню с навигацией, необходимо на странице, которую вы переводите, заменять шаблоны <b>infobox</b> по приведённой ниже схеме:
+</p>
+<ul><li> <b>Скрипты:</b> {{Infobox script}} заменяем на {{Infobox script/ru}}</li></ul>
+<p><b>Внимание:</b> Добавление шаблона на страницу, на которой его нет, не приведёт к появлению в меню ссылки на эту страницу.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B2.D0.BE.D0.B4.D1.87.D0.B8.D0.BA.D0.B8">Переводчики</span></h2>
+<p>Equilibrium Keeper / <a rel="nofollow" class="external text" href="mailto:equilibriumkeeper@yandex.ru">Почта</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Страница</a> /<br />
+kelamor / <a rel="nofollow" class="external text" href="mailto:kelamor@inbox.ru">Почта</a> / <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">Страница</a> /<br />
+</p>

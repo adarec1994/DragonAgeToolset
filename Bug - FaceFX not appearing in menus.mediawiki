@@ -1,0 +1,9 @@
+<ul><li><b>Version found:</b> 1.0.982.19</li>
+<li><b>Status:</b> Fixed in  1.0.1008.0 </li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>FaceFx is not appearing in consistently in some menus. The installer wasn't putting a value into the HKCU\Software\BioWare\Dragon Age\Toolset\Environment\FaceFXStudioPath key.
+</p>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<p>Set the registry key it to &lt;da install path&gt;\tools\FaceFX and it should appear in the menu.
+</p><p>Workaround can be found here: <a rel="nofollow" class="external free" href="http://social.bioware.com/forum/1/topic/8/index/139865">http://social.bioware.com/forum/1/topic/8/index/139865</a>
+</p>

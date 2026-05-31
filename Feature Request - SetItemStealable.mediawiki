@@ -1,0 +1,3 @@
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Currently it is impossible to set items stealable via scripting but one can check IsItemStealable.
+</p>

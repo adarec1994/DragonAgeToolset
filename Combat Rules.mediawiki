@@ -1,0 +1,147 @@
+<table style="float:right; background-color:#eeeeee; border:2px #999999 solid; padding:4px; margin:4px; width:220px;">
+
+<tr>
+<th align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script" title="Script">Scripting</a>
+</th></tr>
+<tr>
+<td>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20overview" title="Scripting overview">Scripting overview</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Scripting%20tutorial" title="Scripting tutorial">Scripting tutorial</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20keyword" title="Event keyword">Event</a>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Event%20override" title="Event override">Event override</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Useful%20Scripts" title="Useful Scripts">Useful Scripts</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script%20error" title="Script error">Script errors</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Rules" title="Rules">Rules</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Attribute" title="Attribute">Attributes</a></li></ul></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Classes</a></li>
+<li> <strong class="selflink">Combat Rules</strong></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a></li></ul></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts" title="Category:Scripts">Scripts category</a>
+<dl><dd> <small>Contains articles on hundreds of individual functions</small></dd></dl></li></ul>
+</td></tr></table>
+<p><b>This page is work in progress</b>
+</p><p>This page describes the technical implementation and flow of combat logic in the game scripts.
+It deals mostly with weapon based combat, for spells and abilities, please see <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability" title="Ability">Abilities</a>.
+</p><p>Note: The term 'property' used on this page refers to <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20Properties" title="Creature Properties">Creature Properties</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Detailed_Description"><span class="tocnumber">1</span> <span class="toctext">Detailed Description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Hit_Resolution"><span class="tocnumber">1.1</span> <span class="toctext">Hit Resolution</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Attack_Rating"><span class="tocnumber">1.1.1</span> <span class="toctext">Attack Rating</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Defense_Rating"><span class="tocnumber">1.1.2</span> <span class="toctext">Defense Rating</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Flanking_Bonus_Determination"><span class="tocnumber">1.1.3</span> <span class="toctext">Flanking Bonus Determination</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Backstab_Determination"><span class="tocnumber">1.1.4</span> <span class="toctext">Backstab Determination</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Critical_Hit_Determination"><span class="tocnumber">1.1.5</span> <span class="toctext">Critical Hit Determination</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Damage_Resolution"><span class="tocnumber">1.2</span> <span class="toctext">Damage Resolution</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Critical_Hit_Damage_Modification"><span class="tocnumber">1.2.1</span> <span class="toctext">Critical Hit Damage Modification</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Backstab_Damage_Modification"><span class="tocnumber">1.2.2</span> <span class="toctext">Backstab Damage Modification</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Detailed_Description">Detailed Description</span></h2>
+<p>Combat in Dragon Age: Origin is handled mainly through scripts - the game engine itself has little knowledge of rule concepts such as 'Strength', 'Damage Modifier' or 'Armor Penetration'.
+</p>
+<h3><span class="mw-headline" id="Hit_Resolution">Hit Resolution</span></h3>
+<p>Hit resolution is implemented in the function <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss#Combat_GetAttackResult" title="Combat h.nss">Combat_GetAttackResult</a> in the script library <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss" title="Combat h.nss">combat_h.nss</a>, which is invoked from the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Creature%20core.nss" title="Creature core.nss (page does not exist)">creature_core.nss</a> script whenever an attack event is received. The function returns one of several <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/COMBAT%20RESULT" title="COMBAT RESULT *">COMBAT_RESULT_*</a> constants and handles messaging to the game engine which animation to play.
+</p><p>Overall, Dragon Age: Origin's combat system is 'hit heavy' as a target's armor does not modify its chance of getting hit.
+</p><p>The simplified decision tree for to hit resolution is as follows:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> Target Is Placeable Object
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_HIT</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> Target Displacement<span class="sy0">/</span>Dodge <span class="sy0">&lt;</span> RandomF<span class="br0">&#40;</span><span class="nu0">100.0</span><span class="br0">&#41;</span>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_MISS</span>  
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> Attacker Is Using BASE_ITEM_TYPE_STAFF
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_HIT</span>
+&#160;
+bHit <span class="sy0">=</span> RandomF<span class="br0">&#40;</span><span class="nu0">100.0</span><span class="br0">&#41;</span> <span class="sy0">&lt;</span> AttackRating <span class="sy0">-</span> DefenseRating
+bCrit <span class="sy0">=</span> CheckCricital<span class="br0">&#40;</span><span class="br0">&#41;</span>
+bBackstab <span class="sy0">=</span> CheckBackstab<span class="br0">&#40;</span><span class="br0">&#41;</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> bHit
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a>  HasEffect<span class="br0">&#40;</span>attacker, EFFECT_TYPE_MISDIRECTION_HEX<span class="br0">&#41;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> bCrit 
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_HIT</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+      <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_MISS</span>
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> bBackstab
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_BACKSTAB</span>
+&#160;
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a> bCrit
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> COMBAT_RESULT_CRITICAL_HIT
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a>  <span class="kw3">COMBAT_RESULT_HIT</span>
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Else%20keyword"><span class="kw1">else</span></a>
+  <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <span class="kw3">COMBAT_RESULT_MISS</span></pre></div></div>
+<h4><span class="mw-headline" id="Attack_Rating">Attack Rating</span></h4>
+<p>Attack rating includes:
+</p>
+<ul><li> Base attack value (54.0f)</li>
+<li> + <a href="#Flanking_Bonus_Determination">Flanking Bonus</a> (position based, modified by attacker and enemy talents and effects as well as shields. Rogues have a bonus here).</li>
+<li> + Distance based penalties (for ranged attacks)</li>
+<li> + Attacker's attack property value (this includes modifiers from buffs, etc.)</li>
+<li> + Any +attack item bonuses on the weapon that performs the attack.</li>
+<li> + Any external bonuses or penalties passed into the function (from talent scripts, etc.)</li>
+<li> + Difficulty setting based modifications</li></ul>
+<h4><span class="mw-headline" id="Defense_Rating">Defense Rating</span></h4>
+<p>Defense rating includes:
+</p>
+<ul><li> Defender defense value (and missile deflection if attack was ranged). This includes items, effects and magical bonus.</li>
+<li> Difficulty setting based modifications</li></ul>
+<h4><span class="mw-headline" id="Flanking_Bonus_Determination">Flanking Bonus Determination</span></h4>
+<ul><li> Flanking bonus is a floating point value that applies to both AttackRating and to the chance to score a critical hit.</li>
+<li> It is essentially a representation of how close the character is to the best position when attacking the enemy (directly in the back)</li>
+<li> Various shield abilities on the target reduce or prevent the attacker from getting the bonus.</li>
+<li> The further away the character is from that position, the more the bonus is diluted.</li>
+<li> The magnitude of the bonus ranges from +0 to +15 (+20 with combat_movement) and is applied to AttackRating and partially (1+(FlankingBonus/5)) to critical hit chance.</li>
+<li> Most characters only flank 60 degrees in each direction, combat movement allows an increase to 90 degrees (the full back 180).</li>
+<li> Only rogues get the full flanking bonus, everyone else still gets half.</li>
+<li> The full logic is implemented in the function <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss#Combat_GetFlankingBonus" title="Combat h.nss">Combat_GetFlankingBonus</a> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss" title="Combat h.nss">combat_h.nss</a>.</li></ul>
+<h4><span class="mw-headline" id="Backstab_Determination">Backstab Determination</span></h4>
+<ul><li> Backstab is determined for each melee attack only.</li>
+<li> Backstab requires the attacker to have a flanking bonus &gt; 0 (some talents waive this restriction)</li>
+<li> Only creatures with the Rogue <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Classes" title="Classes">Character Class</a> may backstab. This is a class benefit.</li>
+<li> Only humanoid attackers can backstab (this includes darkspawn)</li>
+<li> The full logic is implemented in the function <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss#Combat_CheckBackstab" title="Combat h.nss">Combat_CheckBackstab</a> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss" title="Combat h.nss">combat_h.nss</a>.</li>
+<li> The damage logic is implemented in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h.nss#Combat_Damage_GetBackstabDamage" title="Combat damage h.nss">Combat_Damage_GetBackstabDamage</a>.</li></ul>
+<h4><span class="mw-headline" id="Critical_Hit_Determination">Critical Hit Determination</span></h4>
+<ul><li> Critical Hit Chance uses the attackers Melee or Ranged critical hit modifier based on attack type.</li>
+<li> + the attacking weapon's critical hit modifier stat.</li>
+<li> + 1.20x (1.1x for non rogues) the attacker's <a href="#Flanking_Bonus_Determination">Flanking Bonus</a> in the current situation.</li>
+<li> + 3.5 for each enemy past the 2nd that is fighting a warrior with the bravery talent.</li>
+<li> A critical hit occurs when the resulting CriticalHitChance is smaller than RandomFloat()*100.0f.</li>
+<li> Certain effects and spells (e.g. Death Hex) can always override the result, as will attacking from stealth (always hits critical).</li>
+<li> The logic is  implemented in the function <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss#Combat_GetAttackResult" title="Combat h.nss">Combat_GetAttackResult</a> in the script library <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20h.nss" title="Combat h.nss">combat_h.nss</a></li></ul>
+<h3><span class="mw-headline" id="Damage_Resolution">Damage Resolution</span></h3>
+<p>Damage resolution logic is implemented in the script <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h.nss" title="Combat damage h.nss">combat_damage_h.nss</a>.
+</p>
+<h4><span class="mw-headline" id="Critical_Hit_Damage_Modification">Critical Hit Damage Modification</span></h4>
+<ul><li> Critical hits increase the amount of damage done by an attack by a fixed multiplier.</li>
+<li> The magnitude of the multiplier can be affected by items and effects, but is not affected by any of the character's attributes.</li>
+<li> Historical Note: Critical damage used to be variable 'up to...', but was changed to constant to provide a more predictable flow of damage.</li>
+<li> The logic for critical damage is implemented in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h.nss#GetCriticalDamageModifier" title="Combat damage h.nss">combat_damage_h.nss#GetCriticalDamageModifier</a>.</li></ul>
+<h4><span class="mw-headline" id="Backstab_Damage_Modification">Backstab Damage Modification</span></h4>
+<ul><li> Backstab damage is essentially identical to critical damage, but modified by certain rogue talents.</li>
+<li> The full logic is implemented <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h.nss#Combat_Damage_GetBackstabDamage" title="Combat damage h.nss">Combat_Damage_GetBackstabDamage</a> in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20damage%20h.nss" title="Combat damage h.nss">combat_damage_h.nss</a>.</li></ul>
+<p><br />
+</p>
+<table class="nmbox" style="width:100%; border:1px solid #AAAAAA; border-collapse:collapse; clear:both; font-size:85%; margin:0.25em 0;">
+<tr style="background: #CFDFEF;">
+<th style="border:none; padding:4px 1em; border-right:1px solid #AAAAAA; text-align:center; white-space:nowrap;"> <b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dragon%20Age%20Toolset%20Wiki%20-%20Language%20policy" title="Dragon Age Toolset Wiki:Language policy">Language:</a></b></th>
+<td style="border:none; padding:0.25em 0.9em; width:100%; background:#DFEFFF;"><b><strong class="selflink">English</strong></b> <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>&#160;&#8226;&#32;<span lang="ru"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Combat%20Rules%20-%20ru" title="Combat Rules/ru">русский</a></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></td>
+</tr></table>

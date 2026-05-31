@@ -1,0 +1,20 @@
+<p>Simple wrapper to use a modal ability on a creature
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword" title="Void keyword">void</a> Ability_UseAbilityWrapper(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbility,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oTarget,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bAddIfNeeded&#160;= FALSE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bAddCommandToTop&#160;= TRUE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>Creature using the ability<dt style="font-weight:normal; font-style:italic;">nAbility<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20-" title="ABILITY* (page does not exist)">ABILITY*</a> to use<dt style="font-weight:normal; font-style:italic;">oTarget<dd>The ability target (should be same as oCreature for modal talents<dt style="font-weight:normal; font-style:italic;">bAddIfNeeded<dd>Add the talent to the creature if it doesn't have it<dt style="font-weight:normal; font-style:italic;">bAddCommandToTop<dd>Whether or not to add the use ability command at the top or bottom of the action queue
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Nothing.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Makes a creature use a talent or ability. Will add ability to the creature if asked to Ability Use command is added to the top of the action queue unless otherwise specified. This function is asynchronous as it uses a command.
+</p><p>The command can still fail if the creature doesn't have the mana to use it, etc.
+</p><p><br />
+</p><p><br />
+</p>

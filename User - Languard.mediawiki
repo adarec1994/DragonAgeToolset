@@ -1,0 +1,40 @@
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Dragon_Age_Modding_Terms"><span class="tocnumber">1</span> <span class="toctext">Dragon Age Modding Terms</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Wacom_Settings"><span class="tocnumber">2</span> <span class="toctext">Wacom Settings</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Settings_Editor"><span class="tocnumber">3</span> <span class="toctext">Settings Editor</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Help_Page_Prototype"><span class="tocnumber">4</span> <span class="toctext">Help Page Prototype</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Dragon_Age_Modding_Terms">Dragon Age Modding Terms</span></h2>
+<ul><li> Level - A Level is an art asset, a static shell.  Whether interior or exterior, a Level file is never directly experienced by the player, and must have a 'Post Local' operation done to it for it to be usable by Areas.</li>
+<li> Area - An Area is where the player actually adventures.  When you create an area you must specify a layout which is a Level that has been posted to the database.</li>
+<li> Map - A map refers to the overland map with the clickable icons.  This is the travel screen in the main campaign.</li>
+<li> Module - A module is a container of sorts.  In order for a player to play your custom content, you must assign it to a module.  Modules can be 'Add-Ins' which expand existing modules, including the main campaign, or they can be campaigns that are completely separate from the main one.</li></ul>
+<p>Not sure where to put this, but confusion on terminology is cropping up a lot on the forums.
+</p>
+<h2><span class="mw-headline" id="Wacom_Settings">Wacom Settings</span></h2>
+<p>Pen:
+</p>
+<ul><li> Nib is Click</li>
+<li> Eraser is Right Click</li>
+<li> Thumb button (not sure what the official name is) is Middle Click</li>
+<li> All other pen options are default</li></ul>
+<p>Mapping:
+I use dual monitors, so I have the pad mapped to one monitor only.
+</p><p>Function Keys:
+I have an Intuos3 tablet, so I have 4 functions keys on the left and right.  For the moment I'm ignoring the right-hand side.  I'm sure I'll come up with things later.  The functions on the left are - 
+</p>
+<ul><li> Ctrl (default)</li>
+<li> = (increase brush size)</li>
+<li> - (decrease brush size)</li>
+<li> Pan/Scroll (default)</li></ul>
+<p>I'm right handed, so I have the tablet to the right and keyboard to the left.  I mostly keep my left hand on WASD, and use a combination of that plus the pen plus the thumb button to move around.  Much easier than it sounds.  When adjusting the brush sizes, I just left the pen out of sensor range and then click on the appropriate function button.  So far this has been working well.
+</p>
+<h2><span class="mw-headline" id="Settings_Editor">Settings Editor</span></h2>
+<p>After being directed to the DefaultSettings.xml file, I can see all sorts of possibilities regarding the customization of hotkeys.  I can read in the xml file, working on parsing the commands.
+</p>
+<h2><span class="mw-headline" id="Help_Page_Prototype">Help Page Prototype</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Languard%20-%20Sandbox" title="User:Languard/Sandbox">Sandbox</a>
+</p>

@@ -1,0 +1,92 @@
+<p>Эта страница описывает работу следующего набора шаблонов:
+</p>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20start%20-%20ru" title="Template:2da start/ru">Template:2da start/ru</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20column" title="Template:2da column">Template:2da column</a></li>
+<li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20end" title="Template:2da end">Template:2da end</a></li></ul>
+<p>Данный набор позволяет достаточно легко и быстро создавать таблицы с описанием полей <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA</a>. Обратите внимание, что наименование шаблона <b>2da column</b> хоть и подразумевает создание колонки, но в итоге в таблице с описанием создаёт строку. 
+</p><p>При использовании шаблона  первая строка, а именно <b>ID</b>, пропускается (добавится автоматически из шаблона <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Template%20-%202da%20start%20-%20ru" title="Template:2da start/ru">2da start/ru</a>), так как она является общей для всех <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru" title="2DA/ru">2DA</a>. В стартовом шаблоне необходимо только указать название таблицы 2DA, которое будет использовано в качестве названия для таблицы с описанием.
+</p><p>Ниже приведены несколько примеров:
+</p>
+<pre>
+{{2da start/ru  | ANIM_base}}
+{{2da column | LABEL | string | Название модели }}
+{{2da column | bHasAppearAnim | int | 0: По умолчанию существо не имеет анимации появления &lt;br/&gt;1: По умолчанию существо имеет анимацию появления}}
+{{2da end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Столбец </th>
+<th> Тип </th>
+<th> Описание
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29%20-%20ru" title="Int (2da type)/ru (page does not exist)">int</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">(en)</a>
+</td>
+<td> Уникальный идентификатор (ключ) строки  (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru#.D0.97.D0.B0.D1.80.D0.B5.D0.B7.D0.B5.D1.80.D0.B2.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B4.D0.B8.D0.B0.D0.BF.D0.B0.D0.B7.D0.BE.D0.BD.D1.8B_ID_.D0.B8_.D0.BF.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D1.82.D1.80.D0.BE.D0.BA" title="2DA/ru">диапазоны ID и переопределение строк</a>). Идентификаторы перечисляются от меньшего к большему внутри одного 2DA, хотя и не обязательно по порядку.
+</td></tr>
+<tr>
+<th>  LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)"> string </a>
+</td>
+<td>  Название модели
+</td></tr>
+<tr>
+<th>  bHasAppearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)"> int </a>
+</td>
+<td>  0: По умолчанию существо не имеет анимации появления <br />1: По умолчанию существо имеет анимацию появления
+</td></tr></table>
+<p>Можно использовать и именованные параметры, например:
+</p>
+<pre>
+{{2da start/ru
+|name        = ANIM_base}}
+{{2da column
+|name        = LABEL
+|type        = string
+|description = Название модели
+}}
+{{2da column
+|name        = bHasAppearAnim
+|type        = int
+|description = 0: По умолчанию существо не имеет анимации появления &lt;br/&gt;1: По умолчанию существо имеет анимацию появления
+}}
+{{2da end}}
+</pre>
+<p>Produces:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Столбец </th>
+<th> Тип </th>
+<th> Описание
+</th></tr>
+<tr>
+<th> ID
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29%20-%20ru" title="Int (2da type)/ru (page does not exist)">int</a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">(en)</a>
+</td>
+<td> Уникальный идентификатор (ключ) строки  (<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA%20-%20ru#.D0.97.D0.B0.D1.80.D0.B5.D0.B7.D0.B5.D1.80.D0.B2.D0.B8.D1.80.D0.BE.D0.B2.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.B4.D0.B8.D0.B0.D0.BF.D0.B0.D0.B7.D0.BE.D0.BD.D1.8B_ID_.D0.B8_.D0.BF.D0.B5.D1.80.D0.B5.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5_.D1.81.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D1.83.D1.8E.D1.89.D0.B8.D1.85_.D1.81.D1.82.D1.80.D0.BE.D0.BA" title="2DA/ru">диапазоны ID и переопределение строк</a>). Идентификаторы перечисляются от меньшего к большему внутри одного 2DA, хотя и не обязательно по порядку.
+</td></tr>
+<tr>
+<th> LABEL
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20%282da%20type%29" title="String (2da type)">string</a>
+</td>
+<td> Название модели
+</td></tr>
+<tr>
+<th> bHasAppearAnim
+</th>
+<td align="center"> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20%282da%20type%29" title="Int (2da type)">int</a>
+</td>
+<td> 0: По умолчанию существо не имеет анимации появления <br />1: По умолчанию существо имеет анимацию появления
+</td></tr></table>

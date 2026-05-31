@@ -1,0 +1,78 @@
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B0.D0.B2.D0.B8.D0.BB.D0.B0_.D0.BE.D0.B1.D1.81.D1.83.D0.B6.D0.B4.D0.B5.D0.BD.D0.B8.D1.8F">Правила обсуждения</span></h2>
+<ul><li>Для обсуждения в конкретном разделе жмите ссылку справа от названия раздела - <b>"[править]"</b>.</li>
+<li>Для добавления раздела жмите <b>"+"</b> вверху страницы.</li>
+<li>Сообщение пишите ниже последнего имеющегося.</li>
+<li>В начале сообщения введите четыре тильды <b>"~~~~"</b>, что добавит имя пользователя и дату сообщения.</li>
+<li>В последней строке введите пять тире <b>"-----"</b>, что отделит ваше сообщение от последующих.</li>
+<li>Категорически запрещено править сообщения других пользователей.</li></ul>
+<h2><span class="mw-headline" id=".D0.92.D0.BE.D0.BF.D1.80.D0.BE.D1.81.D1.8B_.D0.B8_.D0.BF.D1.80.D0.B5.D0.B4.D0.BB.D0.BE.D0.B6.D0.B5.D0.BD.D0.B8.D1.8F">Вопросы и предложения</span></h2>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 03:34, 9 November 2010 (UTC)</b>:
+</p><p>Если есть какие-либо вопросы и предложения по проекту, то, прошу панове, задавайте здесь.
+</p>
+<hr />
+<table class="collapsible collapsed" style="style" width="500pt" align="" cellpadding="0" cellspacing="0">
+
+<tr>
+<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black">Архив<font style="color:black; font-weight: bold;">&#160;&#160;&#160;→</font></div>
+</th></tr>
+<tr>
+<td><div style="background-color: #F6F6F6; padding:4px 4px 4px 4px; border-top:0; border-bottom:thin solid #AAAAAA; border-left:thin dashed #AAAAAA; border-right:thin dashed #AAAAAA; border-bottom-right-radius:7px; border-bottom-left-radius:7px; clear: both;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 12:36, 9 November 2010 (UTC):</b>
+<ul><li> Нужен глоссарий.</li>
+<li> Нужны шаблоны: "Требуется помощь переводчика", "Требуется помощь редактора"</li>
+<li> Нужны категории: "Незавершенные переводы", "Переводы, требующие проверки"</li></ul>
+<p><i>Подробнее:</i>
+</p>
+<ul><li> Нужно составить глоссарий. Все здорово, но с увеличением числа переводчиков, увеличится и количество вариантов переводов одних и тех же названий. Даже банальное toolset, можно перевести, как "набор инструментов" или "редактор". Но если в случае с ним все понятно, то при разном переводе таких понятий, как Plot, Area... Script (как сценарий) и т.д. возникнет недопонимание... О чем это я? Ах да - нужно создать глоссарий!&#160;:)</li>
+<li> Давайте обмозгуем - какие еще шаблоны, помимо существующих, нам нужны. К примеру, мне сейчас очень бы пригодился шаблон "Помощь переводчика", который я бы разместил на главной странице в разделе Art, который ныне перевел, как "Художественность", но понимаю, что это криво. С вас - идеи и названия (удобные для использования). С меня реализация (надо синтаксис вики по случаю освоить).</li>
+<li> Аналогично с категориями. Незавершенные сейчас есть (хотя и не используются). Нужно подумать над названиями и, вообще - какие нужны.</li></ul>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 05:48, 11 November 2010 (UTC):</b>
+</p>
+<ul><li>По глоссарию - нужен, значит надо делать.</li>
+<li>По шаблонам - по мере необходимости и писать. Сейчас сделай два указанных тобой пока.</li>
+<li>По категориям - пока, думаю, что надо в рамках имеющихся категорий действовать, единственное, что делать русские версии категорий, то есть, например, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Category%20-%20Scripts%20-%20ru" title="Category:Scripts/ru (page does not exist)">Category:Scripts/ru</a>, и на русскоязычных страницах(переведённых и новых) уже указывать эту категорию. А там, при необходимости(если будут появляться свои статьи), будем новые создавать.</li></ul>
+<hr /></div>
+</td></tr></table>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 21:37, 11 November 2010 (UTC):</b>
+</p>
+<ul><li>По глоссарию - сейчас сварганю.</li>
+<li>По шаблонам - есть пожелания по именам? А то ведь людям его еще и использовать, причем желательно набирая лапами.&#160;:)</li>
+<li>Да, русифицировать категории надо, согласен. Что касается существующих, то как минимум к означенным шаблонам нужны соответствующие категории. Ибо в отсутствии ботов, это единственный способ отследить наличие или отсутствия шаблона на страницах (или я не прав) и соответственно исправить.</li></ul>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 11:47, 12 November 2010 (UTC):</b>
+</p><p>Создал <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/%D0%93%D0%BB%D0%BE%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B9" title="Translation:Glossary/ru">глоссарий</a>, можно приступать к наполнению.
+</p>
+<hr />
+<h2><span class="mw-headline" id=".D0.9C.D0.B5.D0.BD.D1.8E_.D0.B2.D1.8B.D0.B1.D0.BE.D1.80.D0.B0_.D1.8F.D0.B7.D1.8B.D0.BA.D0.B0_.D0.BD.D0.B0_Main_Page">Меню выбора языка на Main Page</span></h2>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 12:02, 9 November 2010 (UTC):</b>
+</p><p>С целью привлечения новых переводчиков (а также оповещения читателей) этой Wiki, неплохо бы разместить на главной странице меню выбора языков. Как бы это сделать?
+</p><p><b>kelamor</b>, тебе писал простой юзверь или админ? Может, подсобит?
+</p>
+<hr />
+<table class="collapsible collapsed" style="style" width="500pt" align="" cellpadding="0" cellspacing="0">
+
+<tr>
+<th><div style="background-color: #B6D1ED; border:thin solid #AAAAAA; padding:2px 2px 2px 4px; font-size:14px; font-weight:normal; text-align:left: color:black">Архив<font style="color:black; font-weight: bold;">&#160;&#160;&#160;→</font></div>
+</th></tr>
+<tr>
+<td><div style="background-color: #F6F6F6; padding:4px 4px 4px 4px; border-top:0; border-bottom:thin solid #AAAAAA; border-left:thin dashed #AAAAAA; border-right:thin dashed #AAAAAA; border-bottom-right-radius:7px; border-bottom-left-radius:7px; clear: both;"><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 00:12, 10 November 2010 (UTC)</b>:
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Sunjammer" title="User:Sunjammer">User:Sunjammer</a>. Точно не знаю, но думаю, что помочь может. Сегодня свяжусь с ним.
+</p>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 21:55, 10 November 2010 (UTC):</b>
+</p><p>Как оно?&#160;:)
+</p>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 03:55, 11 November 2010 (UTC):</b>
+</p><p>Отписался на Социале. Пока не отвечал.
+</p>
+<hr /></div>
+</td></tr></table>
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Kelamor" title="User:Kelamor (page does not exist)">kelamor</a> 23:49, 11 November 2010 (UTC):</b>
+</p><p>Sunjammer с биоварцами поговорит по этому поводу, но думаю, что не откажут.
+</p>
+<hr />
+<p><b><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/User%20-%20Equilibrium%20Keeper" title="User:Equilibrium Keeper (page does not exist)">Equilibrium Keeper</a> 11:48, 12 November 2010 (UTC):</b>
+</p><p>Здорово!
+</p>
+<hr />

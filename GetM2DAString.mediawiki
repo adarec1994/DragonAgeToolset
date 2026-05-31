@@ -1,0 +1,20 @@
+<p>Returns a value from a 2DA in string format.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> GetM2DAString(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> n2DA,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sColumn,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nRow,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> s2DA&#160;= ""<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">n2DA<dd>The 2DA to access<dt style="font-weight:normal; font-style:italic;">sColumn<dd>The name of the column to access<dt style="font-weight:normal; font-style:italic;">nRow<dd>The 0 based index of the row to access<dt style="font-weight:normal; font-style:italic;">s2DA<dd>(optional) if n2da is -1 and this is a valid resource, it will retrieve the 2da based on the name instead of the index. Note that this should be avoided when possible.
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns the string specified by the parameters. Returns an empty string on error.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Returns a 2DA string based on the specified Row and Column values.
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Note that nRow is the value in the ID field of the row you wish to access.
+</p>

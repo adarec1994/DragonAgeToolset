@@ -1,0 +1,4 @@
+<p>The <strong class="selflink">popups.xls</strong> file contains the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2da">2da</a> files that define the different types of popup message box that can be presented using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ShowPopup" title="ShowPopup">ShowPopup</a> scripting function.
+</p><p>The workbook contains the following worksheets:
+</p>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Popups%202da" title="Popups 2da">popups</a></li></ul>

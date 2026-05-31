@@ -1,0 +1,12 @@
+<p>The StringID you requested (%d) is already used.
+</p><p>This generally occurs when you are doing a Builder to Builder Load having selected the Use Theirs option for String IDs. Basically what has happened in this case is that the String ID in the package already exists in your database and isn't controlled in your database by the existing resource that you are importing.
+</p><p>Example:
+Import 'creature1' with String ID 10001 with 'Use Theirs'
+</p>
+<ul><li> In your DB 'creature1' now references ID 10001.</li></ul>
+<p>Import 'creature1' with String ID 10001 with 'Create New' 
+</p>
+<ul><li> In your DB 'creature1' now references ID 99. String ID 10001 is orphaned.</li></ul>
+<p>Import 'creature1' with String ID 10001 with 'Use Theirs'
+</p>
+<ul><li> Error 101 - Since 'creature1' in your DB is using ID 99 we try to create a string with ID 10001, but it already exists, so the error is thrown.</li></ul>

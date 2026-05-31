@@ -1,0 +1,35 @@
+<ul><li><b>Version found:</b> 1.0.982.19</li>
+<li><b>Status:</b> Fixed. Version 1.01 of the toolset installer installs the SQL instance to a shorter path to avoid this issue.  It now installs to Program Files\DAODB\</li></ul>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>MSSQL Express 2005's installer has a limitation that prevents it from installing to a directory path that's longer than 58 characters. Microsoft's Knowledge Base has details here: <a rel="nofollow" class="external free" href="http://support.microsoft.com/kb/935371">http://support.microsoft.com/kb/935371</a>
+</p><p>Unfortunately, the default installation path used by Steam goes over this limit. When you hit this error you'll get the error message
+</p><p>"SQL Server Setup failed to execute a command for server configuration. The error was [Microsoft] [SQL Native Client] [SQL Server]Incorrect syntax near '='. "
+</p>
+<h2><span class="mw-headline" id="Workaround">Workaround</span></h2>
+<p>A workaround has been developed that allows installation to work correctly.
+</p><p>Open the file  C:\games\BioWare\dragon age origins\tools\toolssql\MSSQL.1\MSSQL\Install\Sysdbupg.sql
+</p><p>Find the line [it's near the bottom] that reads:
+</p>
+<pre>
+SELECT @certificate_name = QUOTENAME(@certificate_name, '''')
+</pre>
+<p>Replace it with the following line:
+</p>
+<pre>
+SELECT @certificate_name = '''' + REPLACE(@certificate_name, '''', '''''') + ''''
+</pre>
+<p>Re-install toolset.
+</p><p>If you can't find these files, you can try doing it while the installation process is ongoing. When the error message above pops up, edit the Sysdbupg.sql file and then click "retry" after you save the modified version. When attempting to save the modified version you may encounter a message saying that the file cannot be saved because it is in use. In this case save the edited file elsewhere with the same name (Sysdbupg.sql), then drag the the modified version into the correct folder and select the copy and replace option. Then click "retry" on the error message.
+</p><p>Alternatively, if you can't find these files due to the \tools\toolssql\ folder only containing one empty folder named Data, you may need to uninstall MSXML6 SP2 (which was improperly installed during a Windows Update) using the <a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/290301">Microsoft Windows Installer CleanUp Utility</a>, before reinstalling the toolset.
+</p><p>If you still run into problems, Delete temp_MS_AgentSigningCertificate_database.MDF and LDF from C:\games\BioWare\dragon age origins\tools\toolssql\MSSQL.1\MSSQL\Data
+</p><p>You may also run into the following error message:
+</p><p>"SQL Server Setup failed to execute a command for server configuration. The error was [Microsoft][SQL Native Client][SQL Server]CREATE DATABASE failed."
+</p><p>This one can be worked around by replacing the Sysdbupg.sql file with a blank file of the same name.
+</p><p>How to edit sql files for the technologically challenged:
+</p>
+<ul><li>Copy the Sysdbupg.sql file to your desktop.</li>
+<li>Open it with Notepad.  You will probably have to select Notepad manually from the list.</li>
+<li>Make changes.</li>
+<li>Save to your desktop.</li>
+<li>Cut/paste the Sysdbupg.sql from your desktop back into its original folder.</li>
+<li>Choose to replace the file.</li></ul>

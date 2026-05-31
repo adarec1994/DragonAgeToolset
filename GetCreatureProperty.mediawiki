@@ -1,0 +1,27 @@
+<p>Returns the value of the specified property from a creature.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Float%20keyword" title="Float keyword">float</a> GetCreatureProperty(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oCreature,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nProperty,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nValueType&#160;= PROPERTY_VALUE_TOTAL<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">oCreature<dd>the creature whose property is being requested<dt style="font-weight:normal; font-style:italic;">nProperty<dd>the property whose value is being requested<dt style="font-weight:normal; font-style:italic;">nValueType<dd>the type of property value to be returned (TOTAL, BASE, CURRENT, MODIFIER)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>Returns a creature's property value
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p>Get oCreature's property value.
+</p><p>Property types have slightly different definitions of each of the 4 value types:
+</p>
+<ul><li> A SIMPLE or DERIVED property has a BASE and TOTAL value as the same number and doesn't have CURRENT or MODIFIER.</li>
+<li> An ATTRIBUTE property has a BASE value and a MODIFIER value. Its TOTAL value is the clamped (between its min and max) sum of the BASE plus the MODIFIER.</li>
+<li> A DEPLETABLE property is similar to an ATTRIBUTE property but in addition has a CURRENT value, which must be between the property min and the TOTAL value.</li></ul>
+<p>Properties are defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Properties.xls" title="Properties.xls">Properties.xls</a>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetCreatureProperty" title="SetCreatureProperty">SetCreatureProperty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/UpdateCreatureProperty" title="UpdateCreatureProperty">UpdateCreatureProperty</a></li>
+<li> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/PROPERTY%20VALUE" title="PROPERTY VALUE *">PROPERTY_VALUE_*</a></li></ul>

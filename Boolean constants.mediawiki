@@ -1,0 +1,104 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> FALSE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr>
+<tr>
+<td> TRUE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td>
+</td>
+<td align="center"> script.ldf
+</td></tr></table>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>In <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Dascript" title="Dascript (page does not exist)">dascript</a> there is no Boolean type. Instead <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int">integer</a> values are used to represent the Boolean states: zero represents the <b>false</b> state and any non-zero integer represents the <b>true</b> state. For convenience the <strong class="selflink">boolean constants</strong> have been defined in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a> to represent the <b>true</b> and <b>false</b> states.
+</p><p>These constants are used in the following ways in <b>script.ldf</b>, the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a> and the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Single%20Player%20Campaign" title="Single Player Campaign (page does not exist)">Single Player Campaign</a>:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Assigning a value to a integer variable.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bStillLooking <span class="sy0">=</span> TRUE;
+&#160;
+<span class="co1">// Setting the a value of an integer argument in a function call.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetItemDroppable"><span class="kw4">SetItemDroppable</span></a><span class="br0">&#40;</span>oItem, TRUE<span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Setting the default value of an integer argument in a function's declaration or definition.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AddAbility"><span class="kw4">AddAbility</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oObject, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nAbility, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bSendNotification <span class="sy0">=</span> FALSE<span class="br0">&#41;</span>;
+&#160;
+<span class="co1">// Setting a return value from an integer function.</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> TRUE;</pre></div></div>
+<p>The constants are also referenced in the comments describing a function's return values, for example, as seen is <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid" title="IsObjectValid">IsObjectValid</a>, to indicate that the function is constrained to return 0 or 1. This is probably reliable for engine functions (i.e. those in <b>script.ldf</b>) which are presumably converting from a native C++ <b>bool</b> type but should be treated with scepticism for scripted functions.
+</p><p>Finally the constants are also used in boolean expressions, for example, in an <b>if</b> statement:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">&lt;</span>expression<span class="sy0">&gt;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ...
+<span class="br0">&#125;</span></pre></div></div>
+<p>Typically this will be seen in connection with the various <b>Is*</b> and <b>Has*</b> functions, for example, as seen with the use of <b>IsObjectValid</b> in the <b>item_singletarget</b> script:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// make sure there is a location, just in case</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    stEvent.<span class="me1">lTarget</span> <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span>stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>While not technically wrong - provided the function returns 0 or 1 as it does here - the comparison with the boolean constant is redundant and is not considered best practice. The above example should have been simplified to:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// make sure there is a location, just in case</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    stEvent.<span class="me1">lTarget</span> <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span>stEvent.<span class="me1">oTarget</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>The rationale for avoiding comparisons with the boolean constants, specifically with the <b>TRUE</b> constant, is because the <b>TRUE</b> constant is only one of many values that can represent the <b>true</b> state and therefore can introduce ambiguity or unintended behaviour (i.e. a bug). 
+</p><p>An example of this might be where an include file contains the following function:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> HasSuperValuableGems<span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oCreature<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CountItemsByTag"><span class="kw4">CountItemsByTag</span></a><span class="br0">&#40;</span>oCreature, <span class="st0">&quot;SuperValuableGem&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<p>And the action script or plot script contains the following:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// The PC needs a &quot;super valuable gem&quot; in order to bribe the noble!</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span>HasSuperValuableGems<span class="br0">&#40;</span>oHero<span class="br0">&#41;</span> <span class="sy0">==</span> TRUE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ...
+<span class="br0">&#125;</span></pre></div></div>
+<p>The logic may appear correct however because the function is not constrained to return a boolean constant but is being compared against one the result will be that the PC can only bribe the noble when they have EXACTLY one gem which is probably not the intended behaviour. Removing the comparison against the <b>TRUE</b> constant would resolve this (although it could also be argued that the function should also be renamed to better indicate its behaviour).
+</p><p>Note that while comparisons against the <b>FALSE</b> constant do not suffer from the same ambiguity (as both it and the <b>false</b> state only ever equate to zero) they are nonetheless redundant and should be simplified using the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Logical%20negation%20operator" title="Logical negation operator (page does not exist)">logical negation operator</a>:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// Replace this:</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span> <span class="sy0">==</span> FALSE<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ...
+<span class="br0">&#125;</span>
+&#160;
+<span class="co1">// With this:</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span><span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span>oTarget<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ...
+<span class="br0">&#125;</span></pre></div></div>
+<p>In conclusion it is best to only use the boolean constants for the following purposes:
+</p>
+<ol><li> Assigning a value to a integer variable.</li>
+<li> Setting the a value of an integer argument in a function call.</li>
+<li> Setting the default value of an integer argument in a function's declaration or definition.</li>
+<li> Setting a return value from an integer function.</li></ol>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Bool%20%282da%20type%29" title="Bool (2da type)">bool (2da type)</a> for boolean values in <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2DA" title="2DA">2DAs</a></li></ul>

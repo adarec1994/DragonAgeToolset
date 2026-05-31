@@ -1,0 +1,14 @@
+<p>Links the minimaps of two areas - what is explored in one will appear as explored in the other.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> LinkAreaMiniMaps(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sFirstArea,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sSecondArea<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">sFirstArea<dd>The resource reference for the first area<dt style="font-weight:normal; font-style:italic;">sSecondArea<dd>The resource reference for the second area
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TRUE on success, FALSE otherwise.
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>

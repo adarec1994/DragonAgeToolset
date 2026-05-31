@@ -1,0 +1,19 @@
+<p>Returns the <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/TABLE%20-" title="TABLE* (page does not exist)">TABLE*</a> constants for 2da lookups for a specific abiltiy
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> Ability_GetAbilityTable(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nAbilityType<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nAbilityType<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/ABILITY%20TYPE%20-" title="ABILITY TYPE* (page does not exist)">ABILITY_TYPE*</a> constant
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>TABLE* constant
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Resources" title="Core Resources (page does not exist)">Core Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Ability%20h" title="Ability h">ability_h</a>
+</p>
+</dl>
+<p><br />
+Talents, Spells, Skills and Items use different 2das, even tho they have the same structure. This function returns the constant for use with the GetM2DA* functions.
+</p><p><br />
+</p><p><br />
+</p>

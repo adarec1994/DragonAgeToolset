@@ -1,0 +1,6 @@
+<p>The <strong class="selflink">ContestNavBar</strong> template inserts the Community Contest's "back to main page" and "get involved" buttons.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<pre>
+{{ContestNavBar}}
+</pre>

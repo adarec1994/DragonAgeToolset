@@ -1,0 +1,65 @@
+<p>Create an object in the specified location. Will attempt to use a corresponding pool if one exists.
+</p>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> CreateObject(<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> nObjectType,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword" title="Resource keyword">resource</a> rTemplate,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword" title="Location keyword">location</a> lLoc,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword" title="String keyword">string</a> sOverrideScript&#160;= "",<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bSpawnActive&#160;= TRUE,<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a> bNoPermDeath&#160;= FALSE<br />);</div>
+<dl>
+<dt>Parameters:
+<dd><dl><dt style="font-weight:normal; font-style:italic;">nObjectType<dd>The object type (placeable, creature, etc)<dt style="font-weight:normal; font-style:italic;">rTemplate<dd>The template to use<dt style="font-weight:normal; font-style:italic;">lLoc<dd>Location of the object<dt style="font-weight:normal; font-style:italic;">sOverrideScript<dd>Script assigned to the object. If empty, the engine will use the template script<dt style="font-weight:normal; font-style:italic;">bSpawnActive<dd>Whether or not this object is enabled at spawn time<dt style="font-weight:normal; font-style:italic;">bNoPermDeath<dd>Set to TRUE to avoid destroying the object permanently (only valid for pool creatures)
+</dl>
+</dl><dl><dt>Returns:
+<p><dd>The new object, OBJECT_INVALID on failure
+</p>
+</dl><dl><dt>Source:
+<p><dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+</p>
+</dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Remarks">Remarks</span></h2>
+<p>Note that dynamic creation of objects in the engine is subject to a host of limitations, reason being attempts to cut down 'unaccounted' memory usage.
+</p><p>Avoid using CreateObject whenever possible.
+</p><p><br />
+These objects can be created with CreateObject:<br />
+- Creature<br />
+- Placeable<br />
+</p><p>These objects can not be created with CreateObject:<br />
+- Merchant (Store)<br />
+</p><p><br />
+The function appears to assume that the lLoc parameter represents a valid safe location. If it is valid but not safe, it will be adjusted to the nearest safe location and the object will be created there instead. This is not completely confirmed, but it is clear that placeables cannot be created above the ground level in the air (z-coordinate gets adjusted). However, using SetPosition after creating the object allows you to immediately move the object to an unsafe location if that is desired (see the custom function called CreateObjectIn3DSpace provided in the example below).
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Void%20keyword"><span class="kw2">void</span></a> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>     
+    <span class="co1">// get a location from a waypoint with a unique tag</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWaypoint <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetObjectByTag"><span class="kw4">GetObjectByTag</span></a><span class="br0">&#40;</span><span class="st0">&quot;wp_werewolf_spawn&quot;</span><span class="br0">&#41;</span>; 
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lWaypoint <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetLocation"><span class="kw4">GetLocation</span></a><span class="br0">&#40;</span>oWaypoint<span class="br0">&#41;</span>;
+&#160;
+    <span class="co1">// create a werewolf object at the location</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oWerewolf <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span><span class="kw3">OBJECT_TYPE_CREATURE</span>, R<span class="st0">&quot;werewolf_core.utc&quot;</span>, lWaypoint<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="dascript source-dascript"><pre class="de1"><span class="co1">// CreateObjectIn3DSpace - Creates a new object allowing for</span>
+<span class="co1">//                         locations that are valid but unsafe.</span>
+<span class="co1">//</span>
+<span class="co1">// Same as CreateObject except the lLoc parameter is not adjusted to</span>
+<span class="co1">// the nearest safe location allowing for creation of objects anywhere</span>
+<span class="co1">// in the area including up in the air and below ground.</span>
+<span class="co1">//</span>
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> CreateObjectIn3DSpace<span class="br0">&#40;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nObjectType, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rTemplate,
+                              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lLoc, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sOverrideScript <span class="sy0">=</span> <span class="st0">&quot;&quot;</span>,
+                              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bSpawnActive <span class="sy0">=</span> TRUE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bNoPermDeath <span class="sy0">=</span> FALSE <span class="br0">&#41;</span>;
+&#160;
+<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> CreateObjectIn3DSpace<span class="br0">&#40;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> nObjectType, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Resource%20keyword"><span class="kw2">resource</span></a> rTemplate,
+                              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Location%20keyword"><span class="kw2">location</span></a> lLoc, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/String%20keyword"><span class="kw2">string</span></a> sOverrideScript <span class="sy0">=</span> <span class="st0">&quot;&quot;</span>,
+                              <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bSpawnActive <span class="sy0">=</span> TRUE, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword"><span class="kw2">int</span></a> bNoPermDeath <span class="sy0">=</span> FALSE <span class="br0">&#41;</span>
+<span class="br0">&#123;</span>     
+    <span class="co1">// Create the object using CreateObject.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword"><span class="kw2">object</span></a> oNewObject <span class="sy0">=</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreateObject"><span class="kw4">CreateObject</span></a><span class="br0">&#40;</span> nObjectType, rTemplate, lLoc, sOverrideScript, bSpawnActive, bNoPermDeath <span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/If%20keyword"><span class="kw1">if</span></a><span class="br0">&#40;</span> <span class="sy0">!</span><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/IsObjectValid"><span class="kw4">IsObjectValid</span></a><span class="br0">&#40;</span> oNewObject <span class="br0">&#41;</span> <span class="br0">&#41;</span> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20INVALID%20keyword"><span class="kw1">OBJECT_INVALID</span></a>;
+&#160;
+    <span class="co1">// Move the object to absolute location in 3D space even if it is</span>
+    <span class="co1">// unsafe, then return the new object.</span>
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/SetPosition"><span class="kw4">SetPosition</span></a><span class="br0">&#40;</span> oNewObject, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetPositionFromLocation"><span class="kw4">GetPositionFromLocation</span></a><span class="br0">&#40;</span> lLoc <span class="br0">&#41;</span>, FALSE <span class="br0">&#41;</span>;
+    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Return%20keyword"><span class="kw1">return</span></a> oNewObject;
+<span class="br0">&#125;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/CreatePool" title="CreatePool">CreatePool</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/DestroyObject" title="DestroyObject">DestroyObject</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/OBJECT%20TYPE" title="OBJECT TYPE *">OBJECT_TYPE_*</a>
+</p>

@@ -1,0 +1,54 @@
+<table class="wikitable sortable">
+<caption> Source: <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Core%20Game%20Resources" title="Core Game Resources">Core Game Resources</a>.<a href="https://github.com/adarec1994/DragonAgeToolset/wiki/2da%20constants%20h" title="2da constants h">2da_constants_h</a>
+</caption>
+<tr>
+<th> Constant name </th>
+<th> Type </th>
+<th> Value </th>
+<th> Description </th>
+<th> Source
+</th></tr>
+<tr>
+<td> PLOT_ACTIONSTATE_INVALID
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">0
+</td>
+<td> action will not appear in the control.
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PLOT_ACTIONSTATE_ENABLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">1
+</td>
+<td> action appears in the control and can be activated by the user unless the control is disabled
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PLOT_ACTIONSTATE_DISABLED
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">2
+</td>
+<td> action has been already used by the user and cannot be used again.
+</td>
+<td align="center"> 2da_constants_h
+</td></tr>
+<tr>
+<td> PLOT_ACTIONSTATE_ACTIVE
+</td>
+<td> <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Int%20keyword" title="Int keyword">int</a>
+</td>
+<td align="right">3
+</td>
+<td> action is currently active.
+</td>
+<td align="center"> 2da_constants_h
+</td></tr></table>

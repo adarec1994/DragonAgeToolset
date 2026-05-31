@@ -1,0 +1,24 @@
+<dl>
+<dt>Source:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Script.ldf" title="Script.ldf">script.ldf</a>
+<dt>Sent when:
+<dd>A creature enters the object receiving the event
+<dt>Sent from:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Engine" title="Engine (page does not exist)">engine</a>
+<dt>Sent to:
+<dd><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/AOE" title="AOE">AOEs</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Area" title="Area">areas</a>, <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Trigger" title="Trigger">triggers</a>
+<dt>Parameters:
+<dd>
+<ul>
+<li>Creator: creature entering the object</li>
+</ul>
+</dl>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<div class="dascript" style="font-family:monospace; background-color:#F9F9F9; border: 1px dashed #2F6FAB; white-space:pre; line-height:1.25em; padding:1.0em;"><span style="color: #0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Case%20keyword" title="Case keyword (page does not exist)">case</a></span> EVENT_TYPE_ENTER:<br />{<br />    <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Object%20keyword" title="Object keyword">object</a> oEnterer = <a href="https://github.com/adarec1994/DragonAgeToolset/wiki/GetEventCreator" title="GetEventCreator">GetEventCreator</a>(ev); <span style="color: #007F00; font-style: italic;">// creature entering the object</span><br /><br />    <span style="color:#007F00; font-style:italic;">// insert event-handling code here</span><br /><br />    <span style="color:#0000FF;"><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/Break%20keyword" title="Break keyword (page does not exist)">break</a></span>;<br />}</div>
+<h2><span class="mw-headline" id="Comments">Comments</span></h2>
+<p>Surprisingly, for a trigger placed at the entry point for an area, this event fires for the trigger before EVENT_TYPE_AREALOAD_PRELOADEXIT.
+</p><p>Further work is needed to establish when EVENT_TYPE_ENTER for an area fires, relative to the above-mentioned events.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<p><a href="https://github.com/adarec1994/DragonAgeToolset/wiki/EVENT%20TYPE%20EXIT" title="EVENT TYPE EXIT">EVENT_TYPE_EXIT</a>
+</p>
